@@ -58,7 +58,7 @@ body {
 	/*also written as...  font: normal normal 400 100%/1.5em;*/
 	font-family: Futura,sans-serif;
 	margin-top: 1em;
-	margin-left: 1em;
+	margin-left: -5em;
 	color: #2B3856;
 }
 
@@ -93,11 +93,11 @@ ul {
 }
 
 /*uncomment to get dashes in the list*/
-/*li:before {
+#list li:before {
 	content: "-";
 	position: relative;
 	left: -0.25em;
-}*/
+}
 
 li {
 	/*second line indent*/
