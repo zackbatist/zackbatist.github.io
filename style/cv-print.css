@@ -191,3 +191,11 @@ strong {
      body {margin-top: 5mm; margin-bottom: 5mm;
            margin-left: 0mm; margin-right: 0mm}
 }
+
+#academic-service {
+	page-break-before: always;
+}
+
+#software {
+	page-break-before: always;
+}
