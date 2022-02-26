@@ -1,0 +1,939 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A clean template for an academic CV
+%
+% Uses tabularx to create two column entries (date and job/edu/citation).
+% Defines commands to make adding entries simpler.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt, a4paper]{article}
+
+% Full Unicode support for non-ASCII characters
+\usepackage[utf8]{inputenc}
+
+% Useful aliases
+\newcommand{\UERJ}{Universidade do Estado do Rio de Janeiro}
+\newcommand{\UHM}{University of Hawai`i at M\={a}noa}
+\newcommand{\SOEST}{School of Ocean and Earth Science and Technology}
+\newcommand{\UHEARTH}{Department of Earth Sciences}
+\newcommand{\TORINF}{Faculty of Information}
+\newcommand{\TOR}{University of Toronto}
+
+% Identifying information
+\newcommand{\Title}{Curriculum Vit\ae}
+\newcommand{\FirstName}{Zachary}
+\newcommand{\LastName}{Batist}
+\newcommand{\Initials}{Z}
+\newcommand{\MyName}{\FirstName\ \LastName}
+\newcommand{\Me}{\LastName, \Initials}  % For citations
+\newcommand{\Email}{z.batist@mail.utoronto.ca}
+\newcommand{\PersonalWebsite}{zackbatist.ca}
+% \newcommand{\LabWebsite}{compgeolab.org}
+\newcommand{\ORCID}{0000-0003-0435-508X}
+\newcommand{\Affiliation}{\TORINF \\ \TOR}
+\newcommand{\Address}{
+  Bissell Building, 140 St. George Street \\ M5S 3G6, Toronto, Ontario, Canada
+}
+
+% Names for citing coauthors
+\newcommand{\CostisDallas}{Dallas, C}
+\newcommand{\ValMasters}{Masters, V}
+\newcommand{\TiffanyTorma}{Torma, TC}
+\newcommand{\NielFerris}{Ferris, N}
+\newcommand{\IstoHuvila}{Huvila, I}
+\newcommand{\SeamusRoss}{Ross, S}
+\newcommand{\MichaelCarter}{Carter, WM}
+\newcommand{\TristanCarter}{Carter, T}
+\newcommand{\DanContreras}{Contreras, D}
+\newcommand{\CiaraZogheib}{Zogheib, C}
+\newcommand{\KatieCampeau}{Campeau, K}
+\newcommand{\YosefGarfinkel}{Garfinkel, Y}
+\newcommand{\KatharinaStreit}{Streit, K}
+\newcommand{\KyleFreund}{Freund, KP}
+\newcommand{\ShawnGraham}{Graham, S}
+\newcommand{\NehaGupta}{Gupta, N}
+\newcommand{\JoleneSmith}{Smith, J}
+\newcommand{\AndreasAngourakis}{Angourakis, A}
+\newcommand{\AndrewReinhard}{Reinhard, A}
+\newcommand{\KateEllenberger}{Ellenberger, K}
+\newcommand{\JoelRivard}{Rivard, J}
+\newcommand{\BenMarwick}{Marwick, B}
+\newcommand{\BethCompton}{Compton, B}
+\newcommand{\RobBlades}{Blades, R}
+\newcommand{\CristinaWood}{Wood, C}
+\newcommand{\GaryNobles}{Nobles, G}
+\newcommand{\JoeRoe}{Roe, J}
+\newcommand{\DRosenberg}{Rosenberg, D}
+\newcommand{\YorkRowan}{Rowan, Y}
+
+
+
+
+
+\newcommand{\MartinLoignon}{Loignon, M}
+\newcommand{\WeiminMiao}{Miao, W}
+\newcommand{\LianggaoHu}{Hu, L}
+\newcommand{\AndrewBier}{Bier, A}
+\newcommand{\TarekBismar}{Bismar, TA}
+\newcommand{\JamesScrivens}{Scrivens, PJ}
+\newcommand{\KorenMann}{Mann, K}
+\newcommand{\MarkBasik}{Basik, M}
+\newcommand{\AmelieBouchard}{Bouchard, A}
+\newcommand{\PierreFiset}{Fiset, PO}
+\newcommand{\GeraldBatist}{Batist, G}
+
+
+
+\newcommand{\Val}{Barbosa, VCF}
+\newcommand{\Bi}{Oliveira Jr, VC}
+\newcommand{\Paul}{Wessel, P}
+\newcommand{\Joaquim}{Luis, J}
+\newcommand{\Remko}{Scharroo, R}
+\newcommand{\Florian}{Wobbe, F}
+\newcommand{\Walter}{Smith, WHF}
+\newcommand{\Dongdong}{Tian, D}
+\newcommand{\Bridget}{Smith-Konter, B}
+\newcommand{\Eric}{Xu, X}
+\newcommand{\David}{Sandwell, DT}
+\newcommand{\Carla}{Braitenberg, C}
+\newcommand{\Naomi}{Ussami, N}
+\newcommand{\Manoel}{D'Agrella-Filho, MS}
+\newcommand{\JB}{Silva, JBC}
+\newcommand{\Dai}{Sales, DP}
+\newcommand{\Figura}{Melo, FF}
+\newcommand{\Dio}{Carlos, DU}
+\newcommand{\BragaVale}{Braga, MA}
+\newcommand{\YLi}{Li, Y}
+\newcommand{\Angeli}{Angeli, G}
+\newcommand{\Peres}{Peres, G}
+\newcommand{\Everton}{Bomfim, EP}
+\newcommand{\Eder}{Molina, E}
+\newcommand{\Gomes}{Gomes, AAS}
+\newcommand{\Santiago}{Soler, SR}
+\newcommand{\Agustina}{Pesce, A}
+\newcommand{\Gimenez}{Gimenez, ME}
+\newcommand{\Kristoffer}{Hallam, KAT}
+\newcommand{\Guangdong}{Zhao, G}
+\newcommand{\Bo}{Chen, B}
+\newcommand{\JLiu}{Liu, J}
+\newcommand{\LChen}{Chen, L}
+\newcommand{\RGuo}{Guo, R}
+\newcommand{\MKaban}{Kaban, MK}
+\newcommand{\Lindsey}{Heagy, LJ}
+\newcommand{\Lion}{Krischer, L}
+\newcommand{\Rene}{Gassmoeller, R}
+\newcommand{\Bane}{Sullivan, CB}
+\newcommand{\Jens}{Klump, JF}
+\newcommand{\LBarba}{Barba, LA}
+\newcommand{\JBazan}{Bazan, J}
+\newcommand{\JBrown}{Brown, J}
+\newcommand{\RGuimera}{Guimera, RV}
+\newcommand{\MGymrek}{Gymrek, M}
+\newcommand{\AHanna}{Alex Hanna}
+\newcommand{\KHuff}{Huff, KD}
+\newcommand{\DKatz}{Katz, DS}
+\newcommand{\CMadan}{Madan, CR}
+\newcommand{\KMoerman}{Moerman, KM}
+\newcommand{\KNiemeyer}{Niemeyer, KE}
+\newcommand{\JPoulson}{Poulson, JL}
+\newcommand{\PPrins}{Prins, P}
+\newcommand{\KRam}{Ram, K}
+\newcommand{\ARokem}{Rokem, A}
+\newcommand{\Arfon}{Smith, AM}
+\newcommand{\GThiruvathukal}{Thiruvathukal, GK}
+\newcommand{\KThyng}{Thyng, KM}
+\newcommand{\BWilson}{Wilson, BE}
+\newcommand{\Yehudi}{Yehudi, Y}
+\newcommand{\Remi}{Rampin, R}
+\newcommand{\Hugo}{van Kemenade, H}
+\newcommand{\MattTurk}{Turk, M}
+\newcommand{\Shapero}{Shapero, D}
+\newcommand{\Anderson}{Banihirwe, A}
+\newcommand{\Leeman}{Leeman, J}
+\newcommand{\JEbbing}{Ebbing, J}
+\newcommand{\AGuy}{Guy, A}
+\newcommand{\JFarquharson}{Farquharson, J}
+\newcommand{\AKushnir}{Kushnir, A}
+\newcommand{\FWadsworth}{Wadsworth, F}
+\newcommand{\LPerozzi}{Perozzi, L}
+\newcommand{\MWieczorek}{Wieczorek, MA}
+\newcommand{\LLi}{Li, L}
+
+
+% Template configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Disable hyphenation
+\usepackage[none]{hyphenat}
+
+% Control the font size
+\usepackage{anyfontsize}
+
+% Icon fonts (requires using xelatex or luatex)
+\usepackage[fixed]{fontawesome5}
+\usepackage{academicons}
+
+% Template variables for styling
+\newcommand{\TablePad}{\vspace{-0.4cm}}
+\newcommand{\SoftwareTitle}[1]{{\bfseries #1}}
+\newcommand{\TableTitle}[1]{{\fontsize{12pt}{0}\selectfont \itshape #1}}
+
+% For fancy and multipage tables
+\usepackage{tabularx}
+\usepackage{ltablex}
+
+% Define a new environment to place all CV entries in a 2-column table.
+% Left column are the dates, right column the entries.
+\usepackage{environ}
+\NewEnviron{EntriesTable}{
+\TablePad
+\begin{tabularx}{\textwidth}{@{}p{0.12\textwidth}@{\hspace{0.02\textwidth}}p{0.86\textwidth}@{}}
+  \BODY
+\end{tabularx}
+}
+
+% Macros to add links and mark publications
+\newcommand{\DOI}[1]{doi:\href{https://doi.org/#1}{#1}}
+\newcommand{\DOILink}[1]{\href{https://doi.org/#1}{doi.org/#1}}
+\newcommand{\Preprint}[1]{\newline • Preprint: \faFilePdf\ \DOILink{#1}}
+\newcommand{\Youtube}[1]{\newline • Recording: \faYoutube\, \href{https://www.youtube.com/watch?v=#1}{youtube.com/watch?v=#1}}
+\newcommand{\GitHub}[1]{\newline • Code: \faGithub\ \href{https://github.com/#1}{#1}}
+\newcommand{\Gist}[1]{\newline • Code: \faGithub\ \href{https://gist.github.com/#1}{#1}}
+\newcommand{\ZenodoDOI}[1]{\newline • Zenodo: \href{https://doi.org/#1}{#1}}
+\newcommand{\Role}[1]{\newline • Role: #1}
+\newcommand{\Website}[1]{\newline • Website: \href{https://#1}{#1}}
+\newcommand{\Slides}[1]{\newline • Slides: \faTv\ \href{https://#1}{#1}}
+\newcommand{\SlidesDOI}[1]{\newline • Slides: \faTv\ \DOILink{#1}}
+\newcommand{\PosterDOI}[1]{\newline • Poster: \faImage\ \DOILink{#1}}
+\newcommand{\OA}{\aiOpenAccess\enspace}
+\newcommand{\Invited}{\newline • \textbf{Invited talk}}
+
+% Macros to set the year and duration on the left column
+\newcommand{\Duration}[2]{\fontsize{10pt}{0}\selectfont #1 -- #2}
+\newcommand{\Year}[1]{\fontsize{10pt}{0}\selectfont #1}
+\newcommand{\Ongoing}{present}
+%\newcommand{\Ongoing}{$\ast$}
+\newcommand{\Future}{future}
+\newcommand{\Review}{in review}
+\newcommand{\Accepted}{accepted}
+\newcommand{\Appointment}[4]{\textbf{#1} \newline #2 \newline #3 \newline #4}
+
+% Define command to insert month name and year as date
+\usepackage{datetime}
+\newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
+
+% Set the page margins
+\usepackage[a4paper,margin=1.5cm,includehead,headsep=5mm]{geometry}
+
+% To get the total page numbers (\pageref{LastPage})
+\usepackage{lastpage}
+
+% No indentation
+\setlength\parindent{0cm}
+
+% Increase the line spacing
+\renewcommand{\baselinestretch}{1.1}
+% and the spacing between rows in tables
+\renewcommand{\arraystretch}{1.5}
+
+% Remove space between items in itemize and enumerate
+\usepackage{enumitem}
+\setlist{nosep}
+
+% Use custom colors
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Set fonts. Requires compilation with xelatex
+% \usepackage{fontspec}  % required to make older xelatex compile with UTF8
+
+% Configure the font style for sections
+\usepackage{sectsty}
+\sectionfont{\vspace{0.5cm}\bfseries\fontsize{12pt}{0}\selectfont\uppercase}
+\subsectionfont{\vspace{0.2cm}\mdseries\fontsize{12pt}{0}\selectfont\uppercase}
+
+% Set the spacing for sections
+%\usepackage{titlesec}
+%\titlespacing{\section}{0pt}{0cm}{0.3cm}
+%\titlespacing{\subsection}{0pt}{0.3cm}{0.3cm}
+
+% Disable number of sections. Use this instead of "section*" so that the sections still
+% appear as PDF bookmarks. Otherwise, would have to add the table of contents entries
+% manually.
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% Set fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\chead{
+  \fontsize{10pt}{12pt}\selectfont
+  \MyName
+  \hspace{0.2cm} -- \hspace{0.2cm}
+  \Title
+  \hspace{0.2cm} -- \hspace{0.2cm}
+  \monthyear\today
+}
+\rhead{\fontsize{10pt}{0}\selectfont \thepage/\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+% Metadata for the PDF output and control of hyperlinks
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{
+  pdftitle={\MyName\ - \Title},
+  pdfauthor={\MyName},
+  linkcolor=blue,
+  citecolor=blue,
+  filecolor=black,
+  urlcolor=MidnightBlue
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% No header for the first page
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HEADER
+{\fontsize{22pt}{0}\selectfont\MyName}\\[-0.1cm]
+\rule{\textwidth}{0.2pt}
+\begin{minipage}[t]{0.595\textwidth}
+  \Affiliation
+  \\
+  \Address
+\end{minipage}
+\begin{minipage}[t]{0.405\textwidth}
+  \begin{flushright}
+  Last updated: \monthyear\today
+  \\
+    ORCID: \href{https://orcid.org/\ORCID}{\ORCID}
+    \\
+    email: \href{mailto:\Email}{\Email}
+    \\
+    Website: \href{https://www.\PersonalWebsite}{\PersonalWebsite}
+  \end{flushright}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Professional Appointments}
+
+% \begin{EntriesTable}
+%   \Duration{2018}{\Ongoing}  &
+%   \Appointment{Affiliate Researcher}{\UHEARTH}{\SOEST}{\UHM, USA}
+%   \\
+%   \Duration{2017}{2018}  &
+%   \Appointment{Visiting Research Scholar}{\UHEARTH}{\SOEST}{\UHM, USA}
+%   \\
+%   \Duration{2014}{2018}  &
+%   \Appointment{Assistant Professor}{Departamento de Geologia Aplicada}{Faculdade de Geologia}{\UERJ, Brazil}
+% \end{EntriesTable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+
+\begin{EntriesTable}
+  \Duration{2016}{\Ongoing}  &
+  \textbf{PhD}, Faculty of Information, University of Toronto
+  \\
+  \Duration{2012}{2014}  &
+  \textbf{MA}, Department of Anthropology, McMaster University
+  \\
+  \Duration{2009}{2012}  &
+  \textbf{BA} Directed Interdisciplinary Studies, Carleton University
+  \\
+  \Duration{2007}{2009}  &
+  \textbf{DEC}, Social Sciences, Dawson College
+\end{EntriesTable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Grants \& Fellowships}
+
+\begin{EntriesTable}
+  \Duration{2019}{2021}  &
+  \textbf{SSHRC Doctoral Fellowship}. From pipelines to pragmatic engagement: Archaeological data curation as continuous and collaborative practice.
+  Award ID: {752-2019-2233}.
+  \\
+  
+\end{EntriesTable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards \& Honors}
+
+\begin{EntriesTable}
+  \Year{2019}  &
+  \textbf{Research Travel Grant} (\$500)
+  \newline
+  Faculty of Arts and Science and the Ontario Institute for Studies in Education, University of Toronto
+  \\
+  \Year{2017}  &
+  \textbf{Joseph and Maria Shaw Graduate Student Travel Award} (\$500)
+  \newline
+  The Archaeology Centre, University of Toronto 
+  \\
+  \Year{2015}  &
+  \textbf{McMaster University Travel Scholarship for OpenCon 2015} (\$2500)
+  \newline
+  McMaster University Library, McMaster University
+  \\
+  \Year{2015}  &
+  \textbf{Edith M. Wightman Travel Scholarship} (\$1000)
+  \newline
+  School of Graduate Studies, McMaster University
+  \\
+  \Year{2015}  &
+  \textbf{Travel Assistance Grant} (\$500)
+  \newline
+  School of Graduate Studies, McMaster University
+  \\
+  \Year{2015}  &
+  \textbf{Graduate Student Travel Award} (\$120)
+  \newline
+  Archaeological Institute of America
+  \\
+  \Year{2014}  &
+  \textbf{Robert P. Wolff Thesis Prize}
+  \newline
+  Society for Philosophy \& Culture, McMaster University
+  \\
+  \Year{2014}  &
+  \textbf{McMaster University Travel Scholarship for OpenCon 2014} (\$2500, declined)
+  \newline
+  McMaster University Library, McMaster University
+  \\
+  \Year{2012}  &
+  \textbf{Dean's Honour List}
+  \newline
+  Carleton University
+  \\
+  \Year{2012}  &
+  \textbf{Michael Kelway Oliver Scholarship} (\$2000)
+  \newline
+  Carleton University
+  \\
+  \Year{2011}  &
+  \textbf{Full Tuition Scholarship} (declined)
+  \newline
+  Digital Humanities Summer Institute, University of Victoria
+  \\
+  
+\end{EntriesTable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+
+\subsection{Journal articles}
+
+\begin{EntriesTable}
+\Year{2021}  &
+  \Me, \ValMasters, \TiffanyTorma, \NielFerris, \IstoHuvila, \SeamusRoss, \MichaelCarter { \&} \CostisDallas.
+  \textbf{Figurations of Digital Archaeological Practice in Two Mediterranean Fieldwork Projects.}
+  Open Archaeology (Special Issue on Archaeological Practice on Shifting Grounds)
+  7(1):1731-1755.
+  \DOI{10.1515/opar-2020-0217}.
+  \ZenodoDOI{10.5281/zenodo.5831760}
+  \\
+\Year{2021}  &
+  \DanContreras, \Me, \CiaraZogheib { \&} \TristanCarter.
+  \textbf{Matching Pragmatic Lithic Analysis and Proper Data Architecture: The QuARI R Shiny Database Interface.}
+  Advances in Archaeological Practice
+  9(4):299-311.
+  \DOI{10.1017/aap.2021.11}.
+  \GitHub{zackbatist/QuARI}
+  \\
+\Year{2017}  &
+  \TristanCarter, \Me, \KatieCampeau, \YosefGarfinkel { \&} \KatharinaStreit.
+  \textbf{Investigating Pottery Neolithic Socio-Economic “Regression” in the Southern Levant: Characterising Obsidian Consumption at Sha’ar Hagolan (N. Israel).}
+  Journal of Archaeological Science: Reports
+  15:305-317.
+  \DOI{10.1016/j.jasrep.2017.08.016}.
+  \\
+\Year{2014}  &
+  \KyleFreund { \&} \Me.
+  \textbf{Sardinian Obsidian Circulation and Early Maritime Navigation in the Neolithic as Shown through Social Network Analysis.}
+  Journal of Island and Coastal Archaeology
+  9(3):364-380.
+  \DOI{10.1080/15564894.2014.881937}.
+  \\
+\Year{2009}  &
+  \MartinLoignon, \WeiminMiao, \LianggaoHu, \AmelieBouchard, \TarekBismar, \JamesScrivens, \KorenMann, \MarkBasik, \PierreFiset, \Me { \&} \GeraldBatist.
+  \textbf{Frequent Nrf2 depletion due to Cul3 overexpression in breast cancer is associated with sensitivity to carcinogens, oxidative stress and chemotherapy.}
+  Molecular Cancer Therapeutics
+  8(8):2432-2440.
+  \DOI{10.1158/1535-7163.MCT-08-1186}.
+\end{EntriesTable}
+
+\subsection{Book contributions}
+\begin{EntriesTable}
+\Year{2018}  &
+  \ShawnGraham, \NehaGupta, \JoleneSmith, \AndreasAngourakis, \AndrewReinhard, \KateEllenberger, \Me, \JoelRivard, \BenMarwick, \MichaelCarter, \BethCompton, \RobBlades, \CristinaWood { \&} \GaryNobles.
+  \textbf{The Open Digital Archaeology Textbook.}
+  eCampus Ontario.
+  \Website{https://o-date.github.io}.
+\end{EntriesTable}
+
+% \subsection{Conference proceedings}
+% \begin{EntriesTable}
+% \Year{2022}  &
+%   \Me.
+%   Documenting archaeological knowledge construction as information practices.
+%   \emph{Proceedings of the 46th Conference on Computer Applications and Quantitative Methods in Archaeology},
+%   \DOI{XXXX}.
+%   \\
+% \end{EntriesTable}
+
+\subsection{Open-source Software}
+
+\begin{EntriesTable}
+  \Duration{2020}{2021} &
+  \textbf{Queryable Artefact Record Interface (QuARI)}
+  \newline
+  A database interface designed to facilitate the irregular, iterative, and non-linear workflows that are commonly employed in lithic analysis.
+  \GitHub{zackbatist/QuARI}
+  \\
+  \Year{2018} &
+  \textbf{FetchAbstracts.R}
+  \newline
+  A small script that reads DOIs from a bibtex file, fetches abstracts from Crossref when they are available, and exports another bibtex file with that added info.
+  \Gist{zackbatist/bfeaa66b64c7afe749a7f5c6f9e596c2}
+  \\
+
+\end{EntriesTable}
+
+\subsection{Open Datasets}
+
+\begin{EntriesTable}
+\Duration{2018}{\Ongoing}  &
+  \textbf{open-archaeo}
+  A list of open source archaeological software and resources.
+  \GitHub{zackbatist/open-archaeo}
+  \Website{https://open-archaeo.info}
+  \\
+\Duration{2014}{2017}  &
+  \textbf{The Database of Obsidian Sourcing Studies (DObsiSS)}
+  A listing of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records.
+  \DOI{10.5281/zenodo.55848}
+  \GitHub{zackbatist/DObsiSS}
+  \Website{https://zackbatist.github.io/DObsiSS/}
+  \\  
+  
+  \end{EntriesTable}
+
+% \section{Presentations}
+
+\subsection{Conference presentations}
+
+\begin{EntriesTable}
+\Year{2021}  &
+  \Me { \&} \JoeRoe.
+  \textbf{Open archaeology: a survey of collaborative software engineering in archaeological research.}
+  Paper presented at On shifting grounds – the study of archaeological practices in a changing world, COST-Arkwork and the Department of History and Archaeology, University of Crete.
+  Rethymno, Crete, October 2019.
+  \\
+  
+  \Year{2019}  &
+  \Me.
+  \textbf{Untangling and extending the discursive relations mediated by archaeological data through grounded research.}
+  Paper presented at the 49th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2021).
+  Limassol, Cyprus (Virtual), 14-18 June 2021.
+  \\
+  
+  \Year{2018}  &
+  \Me.
+  \textbf{Documenting archaeological knowledge construction as socially-embedded information practices.}
+  Paper presented at PhD Research Days 2018, Faculty of Information, University of Toronto.
+  Toronto, Ontario, April 2018.
+  \\
+  
+  \Year{2018}  &
+  \Me.
+  \textbf{Documenting archaeological knowledge construction as distributed information practices.}
+  Paper presented at the 46th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2018).
+  Tübingen, Germany, March 2018.
+  \\
+  
+  \Year{2017}  &
+  \Me { \&} \CostisDallas.
+  \textbf{A view from the bridge: human- and thing-centred approaches to research practice, disciplinary discourse and local engagement with the archaeological record.}
+  Paper presented at TAG (North America) 2017 - The Medium is the Message: Media and Mediation in Archaeology.
+  Toronto, Ontario, May 2017.
+  \\
+  
+  \Year{2017}  &
+  \TristanCarter, \KatieCampeau, \Me, \YosefGarfinkel, \DRosenberg, \YorkRowan { \&} \KatharinaStreit.
+  \textbf{Social Interaction at Distance Over the Long Term: Obsidian Sourcing from the Southern Levant (9th – 4th millennia cal BC).}
+  Paper presented at the Society for American Archaeology 82nd Annual Meeting.
+  Vancouver, British Columbia, March – April 2017.
+  \\
+  
+  \Year{2017}  &
+  \Me.
+  \textbf{Identifying Obsidian Procurement Habits during the Pre-Pottery Neolithic in the Levant using Network Analysis.}
+  Poster presented at the Archaeological Institute of America 118th Annual Meeting.
+  Toronto, Ontario, January 2017.
+  \\
+  
+  \Year{2015}  &
+  \Me.
+  \textbf{The Database of Obsidian Sourcing Studies (DObsiSS): Using Git for Collaborative Management of Archaeological Data.}
+  Poster presented at the American Archaeological Institute 116th Annual Meeting.
+  New Orleans, Louisiana, January 2015.
+  \\ 
+  
+  \Year{2014}  &
+  \Me.
+  \textbf{An Examination of Obsidian Circulation Patterns in Terms of Relational and Geographical Distance in Southwest Asia and Anatolia from the Epi-Palaeolithic to Chalcolithic Periods (14000 – 5700 B.P.).}
+  Paper presented at Archaeological Sciences and the Ancient Mediterranean Environment.
+  The Archaeological Centre, University of Toronto, March 2014.
+  \\
+
+  \Year{2014}  &
+  \Me.
+  \textbf{Using Network Analysis to Examine Relative Resource Procurement Strategies in Anatolia and Southwest Asia from the Epipaleolithic to Chalcolithic Periods (14,000 – 5700 BP).}
+  Paper presented at the American Archaeological Institute 115th Annual Meeting.
+  Chicago, Illinois, January 2014.
+  \\
+  
+  \Year{2013}  &
+  \KyleFreund { \&} \Me.
+  \textbf{Tracking the Circulation of Sardinian Obsidian using Network Analysis: Lithic Procurement, Cultural Interaction, and Early Maritime Navigation in the Neolithic.}
+  Paper presented at Networks of maritime connectivity in the ancient Mediterranean: Structure, continuity, and change over the longue durée. The Archaeology Centre, University of Toronto. Toronto, Ontario, November 2013.
+  \\
+  
+  \Year{2013}  &
+  \Me.
+  \textbf{Using network analysis to examine obsidian assemblage variability in Anatolia and Southwest Asia from the Epi-Palaeolithic to Chalcolithic periods (14000 – 5700 BP).}
+  Paper presented at The Future of Historical Network Research Conference. Historical Network Research, University of Hamburg. Hamburg, Germany, September 2013.
+  \\
+
+  \Year{2012}  &
+  \Me.
+  \textbf{Eat, Drink and Be Networked: Feasting and Bronze Age Networks.}
+  Invited panelist at the Colloquium on Digital History and the Transnational History of Nursing. Department of History, Carleton University. Ottawa, Ontario, March 2012.
+  \\
+
+\end{EntriesTable}
+
+% \subsection{Other}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research positions}
+\begin{EntriesTable}
+  \Duration{2018}{\Ongoing}  &
+  \textbf{Research Assistant}
+  \newline
+  E{\textendash}CURATORS: Pervasive Digital Curation Activities, Objects and Infrastructures in Archaeological Research and Communication
+  \newline
+  Faculty of Information, University of Toronto
+  \\
+  \Duration{2016}{2021}  &
+  \textbf{Database Manager}
+  \newline
+  Stelida Naxos Archaeology Project
+  \\
+  \Year{2009}  &
+  \textbf{Research Assistant}
+  \newline
+  Redpath Museum, McGill University
+  \\
+  \Duration{2007}{2009}  &
+  \textbf{Research Assistant}
+  \newline
+  Molecular Pharmacology Laboratory
+  \newline
+  Lady Davis Institute for Medical Research
+\end{EntriesTable}
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Teaching}
+\subsection{Teaching Assistant}
+
+\begin{EntriesTable}
+  \Year{2020}  &
+  \textbf{Curatorial Practice}
+  (MSL 2000)
+  \newline
+  Faculty of Information, University of Toronto
+  \\
+  \Duration{2017}{2020}  &
+  \textbf{Representing, Documenting, and Accessing the Cultural Record}
+  (INF 1321)
+  \newline
+  Faculty of Information, University of Toronto
+  \\
+  \Year{2017}  &
+  \textbf{Information Policy, Regulation and Law}
+  (INF 2181)
+  \newline
+  Faculty of Information, University of Toronto
+  \\
+  \Year{2016}  &
+  \textbf{Archaeology and Popular Culture}
+  (ANTH 2PC3)
+  \newline
+  Department of Anthropology, McMaster University
+  \\
+  \Duration{2014}{2015}  &
+  \textbf{World Archaeology}
+  (ANTH 2WA3E)
+  \newline
+  Department of Anthropology, McMaster University
+  \\
+  \Year{2012, 2015}  &
+  \textbf{Introduction to Anthropology: Identity, Race and Power}
+  (ANTH 1AB3E)
+  \newline
+  Department of Anthropology, McMaster University
+  \\
+  \Year{2013}  &
+  \textbf{Introduction to Anthropology: Sex, Food and Death}
+  (ANTH 1AA3)
+  \newline
+  Department of Anthropology, McMaster University
+
+\end{EntriesTable}
+
+
+\subsection{Workshops \& Short Courses}
+
+\begin{EntriesTable}
+
+  \Year{2022}  &
+  \textbf{Using Qualitative Data Analysis Software}
+  \newline
+  The Ethnography Lab Methods Café: Software in Ethnographic Research Methods
+  \newline
+  Department of Anthropology, University of Toronto
+  \\
+
+  \Year{2018}  &
+  \textbf{Designing and Implementing Relational Databases}
+  \newline
+  Archaeological Information Interest Group
+  \newline
+  The Archaeology Centre, University of Toronto
+  \GitHub{zackbatist/archaeo-db-workshop}
+  \\
+  
+\end{EntriesTable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Student supervision}
+
+% \subsection{P\lowercase{h}D \lowercase{(main advisor)}}
+
+% \begin{EntriesTable}
+% \Duration{2021}{\Ongoing}  &
+%   India Uppal
+%   \newline
+%   \LIV, UK.
+%   \newline
+%   Co-advisors: Vanderlei C. Oliveira Jr., Richard Holme
+% \end{EntriesTable}
+
+% \subsection{P\lowercase{h}D \lowercase{(co-advisor)}}
+
+% \begin{EntriesTable}
+% \Duration{2021}{\Ongoing}  &
+%   Gelson Ferreira de Souza Junior
+%   \newline
+%   Universidade de São Paulo, Brazil.
+%   \newline
+%   Advisor: Ricardo I.F. Trindade
+%   \\
+% \Duration{2017}{2022}  &
+%   Santiago R. Soler
+%   \newline
+%   Universidad Nacional de San Juan, Argentina.
+%   \newline
+%   Advisor: Mario E. Gimenez
+% \end{EntriesTable}
+
+% \subsection{Master's}
+
+% \begin{EntriesTable}
+% \Duration{2020}{2021}  &
+%   Aidan Hernaman
+%   \newline
+%   \LIV, UK.
+% \end{EntriesTable}
+
+% \subsection{Undergraduate}
+
+% \begin{EntriesTable}
+% \Duration{2021}{2022}  &
+%   Sarah Askevold, Laura Nicholls, and Hamed R.H. Al-Salehi
+%   \newline
+%   \LIV, UK.
+%   \\
+% \Duration{2020}{2021}  &
+%   Majed M.A. Abura, Ali A.A. Alhazmi, Daniel P. Gilbert, and Mustafa M.M.
+%   Alordowny
+%   \newline
+%   \LIV, UK.
+%   \\
+% \Duration{2019}{2020}  &
+%   Lottie Cooper, Steven Heer, Charles Thomson, and Alexander Borges
+%   \newline
+%   \LIV, UK.
+%   \\
+% \Duration{2015}{2017}  &
+%   Vinicius V. Riguete
+%   \newline
+%   \UERJ, Brazil.
+%   \\
+% \end{EntriesTable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Outreach}
+
+% I maintain a blog about my research, geoscience, and programming at
+% \href{https://www.leouieda.com/blog}{leouieda.com/blog}
+% \\
+
+% \begin{EntriesTable}
+% \Year{2018}  &
+%   Interviewed by the geoscience podcast \textit{Don't Panic Geocast}, episode 166
+%   \textit{``You are headed to a warm and sunny place''}:
+%   \href{http://www.dontpanicgeocast.com/?p=638}{dontpanicgeocast.com/?p=638}
+%   \\
+% \Year{2017}  &
+%   Volunteer for the \textit{Hour of Code} at Salt Lake Elementary School, Honolulu,
+%   USA.
+%   \\
+% \Year{2016}  &
+%   Interviewed by the geoscience podcast \textit{Undersampled Radio}, episode
+%   \textit{``Open Sourcery''}:
+%   \href{https://undersampledrad.io/home/2016/7/open-sourcery}{undersampledrad.io/home/2016/7/open-sourcery}
+% \end{EntriesTable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Academic Service \& Affiliations}
+
+% \subsection{Editor}
+
+% \begin{EntriesTable}
+%   \Duration{2019}{\Ongoing} & Topic editor for the \textit{Journal of Open Source Software}
+% \end{EntriesTable}
+
+\subsection{Community service}
+
+\begin{EntriesTable}
+  \Year{2022} &
+  \textbf{Peer Mentor}
+  \newline
+  UofT Coders Peer Mentorship Program, University of Toronto
+  \\
+  \Duration{2017}{2021} &
+  \textbf{Coordinator}, Archaeological Information Interest Group
+  \newline
+  The Archaeology Centre, University of Toronto
+  \\
+
+\end{EntriesTable}
+
+\subsection{Committees}
+
+\begin{EntriesTable}
+\Duration{2019}{2020} &
+  \textbf{Graduate Student Union Faculty Representative}
+  \newline
+  Faculty of Information Doctoral Student Association \TOR
+  \\
+\Duration{2016}{2019} &
+  \textbf{Tech Fund Committee Member and Coordinator}
+  \newline
+  Faculty of Information Doctoral Student Association, \TOR
+  \\
+\Duration{2013}{2014} &
+  \textbf{Graduate Student Association Faculty Representative}
+  \newline
+  Faculty of Social Sciences, McMaster University
+  \\
+
+\end{EntriesTable}
+
+% \subsection{Examiner}
+
+% \begin{EntriesTable}
+% \Year{2022} &
+%   External PhD thesis examiner (Peter Haas), Christian-Albrechts-Universität zu
+%   Kiel.
+%   \\
+% \Year{2022} &
+%   Internal PhD thesis examiner (Yael Annemiek Engbers), \LIV.
+%   \\
+% \Year{2016} &
+%   Internal MSc dissertation examiner (Natacha Medeiros Rocha), \UERJ.
+% \end{EntriesTable}
+
+
+\subsection{Conference Organizer}
+\begin{EntriesTable}
+\Year{2014} &
+  \textbf{Second Annual Interdisciplinary Colloquium}
+  \newline
+  Faculty of Social Sciences, McMaster University
+  \\
+\end{EntriesTable}
+
+
+% \subsection{Conference Convener}
+
+% \begin{EntriesTable}
+
+% \Year{2021} &
+%   Session: EOS5.3 - The evolving open-science landscape in geosciences: open
+%   data, software, publications and community initiatives.
+%  \newline
+%  Nijzink, RC,
+%  Drost, N,
+%  \JFarquharson,
+%  \AKushnir,
+%   Pianosi, F,
+%   Schymanski, S,
+%   \Me,
+%   \FWadsworth.
+%   \newline
+%   \emph{EGU 2021}, Vienna, Austria.
+%   \\
+
+% \end{EntriesTable}
+
+\subsection{Affiliations}
+
+\begin{EntriesTable}
+  \Duration{2018}{\Ongoing} & Computer Applications in Archaeology
+  \\
+  \Duration{2020}{\Ongoing} & UofT Coders
+  \\
+
+\end{EntriesTable}
+
+
+\subsection{Reviewer}
+
+\begin{itemize}
+  \item Open Information Science
+\end{itemize}
+
+\section{Languages}
+
+
+
+\TablePad
+\begin{tabularx}{\textwidth}{@{}p{0.1\textwidth} p{0.85\textwidth}@{}}
+  \textbf{English} & Mother tongue
+  \\
+  \textbf{French} & Basic reading and writing
+\end{tabularx}
+
+\end{document}

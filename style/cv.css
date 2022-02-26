@@ -62,34 +62,29 @@ body {
 }
 
 p {
-	position: relative;
-	left: 28%;
+	text-align: left;
 	margin-bottom: 0.2em;
-	margin-left: -5mm;
-	width: 70%;
-}
-
-code {
-	font: normal normal;
-	font-size: 100%;
-	/*line-height: 1em;*/
-	font-family: Futura,monospace,sans-serif;
-	color: #2B3856;
-	margin-right: 2mm;
+	margin-left: 350px;
 }
 
 p code {
 	position: absolute;
-	left: -10%;
+	margin-left: 200px;
+	left: 50px;
+	font-family: Futura,monospace,sans-serif;
+	color: #2B3856;
+	font-size: 100%;
+}
+
+b {
+	font-weight: bold;
 }
 
 ul {
-	position: relative;
-	left: 28%;
-	width: 65%;
+	text-align: left;
+	left: 350px;
 	margin-bottom: 1em;
-	/*margin-top: -0.5em;*/
-	margin-left: -5mm;
+	margin-left: 350px;
 }
 
 /*uncomment to get dashes in the list*/
@@ -100,19 +95,8 @@ ul {
 	margin-left: 0mm;
 }
 
-li {
-	/*second line indent*/
-	/*padding-left: .5em;
-	/*text-indent: .5em;
-	/*color: #777;*/
-}
 
-li ul {
-	position: relative;
-	width: 100%;
-	margin-top: 0.25em;
-	left: 0%;
-}
+
 
 h1,h2,h3,h4 {
 	font-weight: 400;
@@ -124,9 +108,8 @@ h1 {
 	text-align: left;
 	font-size: 3em;
 	line-height: 1em;
-	position: relative;
-	left: 28%;
 	margin-top: .4em;
+	text-align: center;
 }
 
 h1+p {
@@ -142,7 +125,7 @@ h2 {
 	position: relative;
 	top: 1.2em;
 	text-align: right;
-	width: 15%;
+	width: 10%;
 	font-weight: bold;
 	margin-left: 1mm;
 	left: 2%;
@@ -154,7 +137,7 @@ h3 {
 	color: #2B3856;
 	position: relative;
 	text-align: right;
-	width: 15%;
+	width: 10%;
 	font-weight: bold;
 	margin-left: 1mm;
 	top: 1.3em;
@@ -186,7 +169,11 @@ strong {
 }
 
 #webaddress {
+/*
   display: none;
+*/
+	text-align: center;
+	margin-top: .5em;
 }
 
 @page {
