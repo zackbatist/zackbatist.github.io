@@ -7,3 +7,5 @@ Icons available under the [Creative Commons BY 3.0 license] (http://creativecomm
 [Nherwin Ardoña] (https://thenounproject.com/term/book/23612/)
 
 [Github] (https://github.com/logos)
+
+[Mastodon] (https://joinmastodon.org/branding)
