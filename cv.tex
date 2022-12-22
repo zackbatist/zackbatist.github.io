@@ -27,7 +27,10 @@
 \newcommand{\MyName}{\FirstName\ \LastName}
 \newcommand{\Me}{\LastName, \Initials}  % For citations
 \newcommand{\Email}{z.batist@mail.utoronto.ca}
-\newcommand{\PersonalWebsite}{zackbatist.ca}
+\newcommand{\PersonalWebsite}{zackbatist.info}
+\newcommand{\GitHub}{github.com/zackbatist}
+%\newcommand{\Twitter}{@mtl\_zack}
+\newcommand{\Mastodon}{archaeo.social/@zackbatist}
 % \newcommand{\LabWebsite}{compgeolab.org}
 \newcommand{\ORCID}{0000-0003-0435-508X}
 \newcommand{\Affiliation}{\TORINF \\ \TOR}
@@ -114,8 +117,7 @@
 }
 
 % Macros to add links and mark publications
-\newcommand{\DOI}[1]{doi:\href{https://doi.org/#1}{#1}}
-\newcommand{\DOILink}[1]{\href{https://doi.org/#1}{doi.org/#1}}
+ \newcommand{\DOI}[1]{DOI: \href{https://doi.org/#1}{#1}}
 \newcommand{\Preprint}[1]{\newline • Preprint: \faFilePdf\ \DOILink{#1}}
 \newcommand{\Youtube}[1]{\newline • Recording: \faYoutube\, \href{https://www.youtube.com/watch?v=#1}{youtube.com/watch?v=#1}}
 \newcommand{\GitHub}[1]{\newline • Code: \faGithub\ \href{https://github.com/#1}{#1}}
@@ -196,7 +198,7 @@
   \hspace{0.2cm} -- \hspace{0.2cm}
   \monthyear\today
 }
-\rhead{\fontsize{10pt}{0}\selectfont \thepage/\pageref*{LastPage}}
+%\rhead{\fontsize{10pt}{0}\selectfont \thepage/\pageref*{LastPage}}
 \renewcommand{\headrulewidth}{0pt}
 
 % Metadata for the PDF output and control of hyperlinks
@@ -225,16 +227,23 @@
   \Affiliation
   \\
   \Address
+
 \end{minipage}
 \begin{minipage}[t]{0.405\textwidth}
   \begin{flushright}
   Last updated: \monthyear\today
   \\
+    Email: \href{mailto:\Email}{\Email}
+    \\
+    GitHub: \href{https://github.com/\GitHub}{\GitHub}
+    \\
     ORCID: \href{https://orcid.org/\ORCID}{\ORCID}
     \\
-    email: \href{mailto:\Email}{\Email}
-    \\
     Website: \href{https://www.\PersonalWebsite}{\PersonalWebsite}
+    %\\
+    %Mastodon: \href{https://www.\Mastodon}{\Mastodon}
+    %\\
+    %Twitter: \href{https://www.\Twitter}{\Twitter}
   \end{flushright}
 \end{minipage}
 
@@ -259,12 +268,18 @@
 \begin{EntriesTable}
   \Duration{2016}{\Ongoing}  &
   \textbf{PhD}, Faculty of Information, University of Toronto
+  \newline
+  Examining the continuous and situated curation of archaeological data
   \\
   \Duration{2012}{2014}  &
   \textbf{MA}, Department of Anthropology, McMaster University
+%  \newline
+%  \href{https://macsphere.mcmaster.ca/handle/11375/16528}{Obsidian Circulation Networks in Southwest Asia and Anatolia (12,000 - 5700 B.P.)}
   \\
   \Duration{2009}{2012}  &
   \textbf{BA}, Directed Interdisciplinary Studies, Carleton University
+%  \newline
+%  Feasting In Bronze Age Greece: A Network Analysis Approach
   \\
   \Duration{2007}{2009}  &
   \textbf{DEC}, Social Sciences, Dawson College
@@ -451,11 +466,32 @@
 \subsection{Conference presentations}
 
 \begin{EntriesTable}
-\Year{2021}  &
+%  \Year{2023}  &
+%  \Me.
+%  \textbf{Translating established collaborative research practices towards global data sharing initiativess.}
+%  Paper presented at the 50th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2023).
+%  Amsterdam, The Netherlands, 3-6 April 2023.
+%  \\
+
+%  \Year{2023}  &
+%  \Me.
+%  \textbf{Documenting the collaborative commitments that support data sharing within archaeological project collectives.}
+%  Paper presented at Digital Archaeology Bern 2023. Bern Computational and Digital Archaeology lab, University of Bern.
+%  Bern, Switzerland, 1-3 February 2023.
+%  \\
+
+  \Year{2021}  &
   \Me { \&} \JoeRoe.
   \textbf{Open archaeology: a survey of collaborative software engineering in archaeological research.}
   Paper presented at the 49th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2021).
   Limassol, Cyprus (Virtual), 14-18 June 2021.
+  \\
+
+  \Year{2019}  &
+  \Me.
+  \textbf{Distributing Knowledge Of Digital Workflows Via Workshops And Support Groups.}
+  Lightning talk presented at Our Networks, Re: Infrastructure.
+  Toronto, Ontario, September 20–22, 2019
   \\
 
   \Year{2019}  &
@@ -546,7 +582,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Research positions}
 \begin{EntriesTable}
-  \Duration{2018}{\Ongoing}  &
+  \Duration{2018}{2022}  &
   \textbf{Research Assistant}
   \newline
   E{\textendash}CURATORS: Pervasive Digital Curation Activities, Objects and Infrastructures in Archaeological Research and Communication
@@ -571,7 +607,6 @@
   Lady Davis Institute for Medical Research
 \end{EntriesTable}
 
-\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Teaching}
 \subsection{Teaching Assistant}
@@ -748,6 +783,11 @@
 \subsection{Community service}
 
 \begin{EntriesTable}
+  \Year{2022} &
+  \textbf{Community Moderator}
+  \newline
+  \href{https://archaeo.social}{archaeo-social} Mastodon instance
+  \\
   \Year{2022} &
   \textbf{Peer Mentor}
   \newline
