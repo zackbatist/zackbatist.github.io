@@ -6,6 +6,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% !TEX program = xelatex
 \documentclass[11pt, a4paper]{article}
 
 % Full Unicode support for non-ASCII characters
@@ -28,8 +29,8 @@
 \newcommand{\Me}{\LastName, \Initials}  % For citations
 \newcommand{\Email}{z.batist@mail.utoronto.ca}
 \newcommand{\PersonalWebsite}{zackbatist.info}
-\newcommand{\GitHub}{github.com/zackbatist}
-%\newcommand{\Twitter}{@mtl\_zack}
+\newcommand{\MyGitHub}{zackbatist}
+\newcommand{\Twitter}{@mtl\_zack}
 \newcommand{\Mastodon}{archaeo.social/@zackbatist}
 % \newcommand{\LabWebsite}{compgeolab.org}
 \newcommand{\ORCID}{0000-0003-0435-508X}
@@ -117,14 +118,14 @@
 }
 
 % Macros to add links and mark publications
- \newcommand{\DOI}[1]{DOI: \href{https://doi.org/#1}{#1}}
+\newcommand{\DOI}[1]{\newline \aiDoi\ \href{https://doi.org/#1}{#1}}
 \newcommand{\Preprint}[1]{\newline • Preprint: \faFilePdf\ \DOILink{#1}}
 \newcommand{\Youtube}[1]{\newline • Recording: \faYoutube\, \href{https://www.youtube.com/watch?v=#1}{youtube.com/watch?v=#1}}
-\newcommand{\GitHub}[1]{\newline • Code: \faGithub\ \href{https://github.com/#1}{#1}}
-\newcommand{\Gist}[1]{\newline • Code: \faGithub\ \href{https://gist.github.com/#1}{#1}}
-\newcommand{\ZenodoDOI}[1]{\newline • Zenodo: \href{https://doi.org/#1}{#1}}
+\newcommand{\GitHub}[1]{\newline \faGithub \href{https://github.com/#1}{#1}}
+\newcommand{\Gist}[1]{\newline \faGithub \href{https://gist.github.com/#1}{#1}}
+\newcommand{\ZenodoDOI}[1]{\newline \aiZenodo\ \href{https://doi.org/#1}{#1}}
 \newcommand{\Role}[1]{\newline • Role: #1}
-\newcommand{\Website}[1]{\newline • Website: \href{https://#1}{#1}}
+\newcommand{\Website}[1]{\newline \faGlobe \href{https://#1}{#1}}
 \newcommand{\Slides}[1]{\newline • Slides: \faTv\ \href{https://#1}{#1}}
 \newcommand{\SlidesDOI}[1]{\newline • Slides: \faTv\ \DOILink{#1}}
 \newcommand{\PosterDOI}[1]{\newline • Poster: \faImage\ \DOILink{#1}}
@@ -198,7 +199,7 @@
   \hspace{0.2cm} -- \hspace{0.2cm}
   \monthyear\today
 }
-%\rhead{\fontsize{10pt}{0}\selectfont \thepage/\pageref*{LastPage}}
+\rhead{\fontsize{10pt}{0}\selectfont \thepage/\pageref*{LastPage}}
 \renewcommand{\headrulewidth}{0pt}
 
 % Metadata for the PDF output and control of hyperlinks
@@ -227,23 +228,26 @@
   \Affiliation
   \\
   \Address
+  % \\
+  % \href{mailto:\Email}{\Email}
+ 
 
 \end{minipage}
 \begin{minipage}[t]{0.405\textwidth}
   \begin{flushright}
-  Last updated: \monthyear\today
-  \\
+    % Last updated: \monthyear\today
+    % \\
     Email: \href{mailto:\Email}{\Email}
-    \\
-    GitHub: \href{https://github.com/\GitHub}{\GitHub}
     \\
     ORCID: \href{https://orcid.org/\ORCID}{\ORCID}
     \\
-    Website: \href{https://www.\PersonalWebsite}{\PersonalWebsite}
-    %\\
-    %Mastodon: \href{https://www.\Mastodon}{\Mastodon}
-    %\\
-    %Twitter: \href{https://www.\Twitter}{\Twitter}
+    Website: \href{https://\PersonalWebsite}{\PersonalWebsite}
+    \\
+    GitHub: \href{https://github.com/\MyGitHub}{\MyGitHub}
+    % \\
+    % Mastodon: \href{https://\Mastodon}{\Mastodon}
+    % \\
+    % Twitter: \href{https://\Twitter}{\Twitter}
   \end{flushright}
 \end{minipage}
 
@@ -411,7 +415,7 @@
   \ShawnGraham, \NehaGupta, \JoleneSmith, \AndreasAngourakis, \AndrewReinhard, \KateEllenberger, \Me, \JoelRivard, \BenMarwick, \MichaelCarter, \BethCompton, \RobBlades, \CristinaWood { \&} \GaryNobles.
   \textbf{The Open Digital Archaeology Textbook.}
   eCampus Ontario.
-  \Website{https://o-date.github.io}.
+  \Website{o-date.github.io}.
 \end{EntriesTable}
 
 % \subsection{Conference proceedings}
@@ -449,17 +453,17 @@
   \textbf{open-archaeo}
   A list of open source archaeological software and resources.
   \GitHub{zackbatist/open-archaeo}
-  \Website{https://open-archaeo.info}
+  \Website{open-archaeo.info}
   \\
 \Duration{2014}{2017}  &
   \textbf{The Database of Obsidian Sourcing Studies (DObsiSS)}
   A listing of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records.
   \DOI{10.5281/zenodo.55848}
   \GitHub{zackbatist/DObsiSS}
-  \Website{https://zackbatist.github.io/DObsiSS/}
+  \Website{zackbatist.github.io/DObsiSS/}
   \\
 
-  \end{EntriesTable}
+\end{EntriesTable}
 
 % \section{Presentations}
 
@@ -478,6 +482,7 @@
 %  \textbf{Documenting the collaborative commitments that support data sharing within archaeological project collectives.}
 %  Paper presented at Digital Archaeology Bern 2023. Bern Computational and Digital Archaeology lab, University of Bern.
 %  Bern, Switzerland, 1-3 February 2023.
+% \GitHub{zackbatist/DAB23}
 %  \\
 
   \Year{2021}  &
@@ -485,6 +490,7 @@
   \textbf{Open archaeology: a survey of collaborative software engineering in archaeological research.}
   Paper presented at the 49th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2021).
   Limassol, Cyprus (Virtual), 14-18 June 2021.
+  \GitHub{zackbatist/caa2021-openarchaeo}
   \\
 
   \Year{2019}  &
