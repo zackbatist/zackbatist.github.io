@@ -87,7 +87,7 @@
 \usepackage{anyfontsize}
 
 % Icon fonts (requires using xelatex or luatex)
-\usepackage[fixed]{fontawesome5}
+\usepackage{fontawesome5}
 \usepackage{academicons}
 
 % Template variables for styling
@@ -111,18 +111,19 @@
 
 % Macros to add links and mark publications
 \newcommand{\DOI}[1]{\newline \aiDoi\ \href{https://doi.org/#1}{#1}}
-\newcommand{\Preprint}[1]{\newline • Preprint: \faFilePdf\ \DOILink{#1}}
-\newcommand{\Youtube}[1]{\newline • Recording: \faYoutube\ \href{https://www.youtube.com/watch?v=#1}{youtube.com/watch?v=#1}}
-\newcommand{\GitHub}[1]{\newline \faGithub \href{https://github.com/#1}{#1}}
-\newcommand{\Gist}[1]{\newline \faGithub \href{https://gist.github.com/#1}{#1}}
+\newcommand{\GitHub}[1]{\newline \faGithub\ \href{https://github.com/#1}{#1}}
+\newcommand{\Gist}[1]{\newline \faGithub\ \href{https://gist.github.com/#1}{#1}}
+\newcommand{\Website}[1]{\newline \faGlobe\ \href{https://#1}{#1}}
 \newcommand{\ZenodoDOI}[1]{\newline \aiZenodo\ \href{https://doi.org/#1}{#1}}
-\newcommand{\Role}[1]{\newline • Role: #1}
-\newcommand{\Website}[1]{\newline \faGlobe \href{https://#1}{#1}}
 \newcommand{\Slides}[1]{\newline • Slides: \faTv\ \href{https://#1}{#1}}
 \newcommand{\SlidesDOI}[1]{\newline • Slides: \faTv\ \DOILink{#1}}
 \newcommand{\PosterDOI}[1]{\newline • Poster: \faImage\ \DOILink{#1}}
 \newcommand{\OA}{\aiOpenAccess\enspace}
 \newcommand{\Invited}{\newline • \textbf{Invited talk}}
+\newcommand{\Role}[1]{\newline • Role: #1}
+\newcommand{\Preprint}[1]{\newline • Preprint: \faFilePdf\ \DOILink{#1}}
+\newcommand{\Youtube}[1]{\newline • Recording: \faYoutube\ \href{https://www.youtube.com/watch?v=#1}{youtube.com/watch?v=#1}}
+
 
 % Macros to set the year and duration on the left column
 \newcommand{\Duration}[2]{\fontsize{10pt}{0}\selectfont #1 -- #2}
@@ -259,7 +260,7 @@
 \Year{2023}  &
   \textbf{PhD}, Faculty of Information, University of Toronto
   \newline
-  Archaeological data work as continuous and collaborative practice
+  \href{https://doi.org/10.5281/zenodo.8373390}{Archaeological data work as continuous and collaborative practice}
   \\
 \Year{2014}  &
   \textbf{MA}, Department of Anthropology, McMaster University
@@ -287,13 +288,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Research positions}
 \begin{EntriesTable}
-  %\Duration{2023}{\Ongoing}  &
-  %\textbf{Postdoctoral Fellow}
-  %\newline
-  %CAPTURE: Capturing paradata for documenting data creation and use for the research of the future
-  %\newline
-  %Department of Archives, Libraries and Museums, Uppsala University
-  %\\
 \Duration{2018}{2023}  &
   \textbf{Research Assistant}
   \newline
