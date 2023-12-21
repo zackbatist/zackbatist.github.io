@@ -16,7 +16,7 @@
 \newcommand{\TORINF}{Faculty of Information}
 \newcommand{\TOR}{University of Toronto}
 \newcommand{\UTorontoAddress}{Bissell Building, 140 St. George Street \\ M5S 3G6, Toronto, Ontario, Canada}
-\newcommand{\Address}{4653 Clark Street \\ Montreal, Quebec, Canada \\ H2T 2T3}
+\newcommand{\Address}{4653 Rue Clark \\ Montreal, Quebec, Canada \\ H2T 2T3}
 \newcommand{\Affiliation}{\TORINF \\ \TOR}
 \newcommand{\Title}{Curriculum Vit\ae}
 
@@ -27,7 +27,7 @@
 \newcommand{\MyName}{\FirstName\ \LastName}
 \newcommand{\Me}{\LastName, \Initials}  % For citations
 
-\newcommand{\Email}{z.batist@mail.utoronto.ca}
+\newcommand{\Email}{zacharybatist@gmail.com}
 \newcommand{\PersonalWebsite}{zackbatist.info}
 \newcommand{\MyGitHub}{zackbatist}
 \newcommand{\Twitter}{@mtl\_zack}
@@ -111,7 +111,7 @@
 
 % Macros to add links and mark publications
 \newcommand{\DOI}[1]{\newline \aiDoi\ \href{https://doi.org/#1}{#1}}
-\newcommand{\GitHub}[1]{\newline \faGithub\ \href{https://github.com/#1}{#1}}
+\newcommand{\GitHub}[1]{\newline \faGithub\ \href{https://github.com/#1}{\detokenize{#1}}}
 \newcommand{\Gist}[1]{\newline \faGithub\ \href{https://gist.github.com/#1}{#1}}
 \newcommand{\Website}[1]{\newline \faGlobe\ \href{https://#1}{#1}}
 \newcommand{\ZenodoDOI}[1]{\newline \aiZenodo\ \href{https://doi.org/#1}{#1}}
@@ -121,7 +121,8 @@
 \newcommand{\OA}{\aiOpenAccess\enspace}
 \newcommand{\Invited}{\newline • \textbf{Invited talk}}
 \newcommand{\Role}[1]{\newline • Role: #1}
-\newcommand{\Preprint}[1]{\newline • Preprint: \faFilePdf\ \DOILink{#1}}
+\newcommand{\Preprint}[1]{\newline \faParagraph\ \href{https://doi.org/#1}{#1}}
+\newcommand{\Note}[1]{\newline \faExclamationCircle\ {#1}}
 \newcommand{\Youtube}[1]{\newline • Recording: \faYoutube\ \href{https://www.youtube.com/watch?v=#1}{youtube.com/watch?v=#1}}
 
 
@@ -132,6 +133,7 @@
 %\newcommand{\Ongoing}{$\ast$}
 \newcommand{\Future}{future}
 \newcommand{\Review}{in review}
+\newcommand{\Progress}{In progress}
 \newcommand{\Accepted}{accepted}
 \newcommand{\Appointment}[4]{\textbf{#1} \newline #2 \newline #3 \newline #4}
 
@@ -260,7 +262,7 @@
 \Year{2023}  &
   \textbf{PhD}, Faculty of Information, University of Toronto
   \newline
-  \href{https://doi.org/10.5281/zenodo.8373390}{Archaeological data work as continuous and collaborative practice}
+  \href{https://tspace.library.utoronto.ca/handle/1807/130306}{Archaeological data work as continuous and collaborative practice}
   \\
 \Year{2014}  &
   \textbf{MA}, Department of Anthropology, McMaster University
@@ -319,11 +321,6 @@
 \subsection{Journal articles}
 
 \begin{EntriesTable}
-% \Review &
-%   \Me { \&} \JoeRoe.
-%   \textbf{Open archaeology, open source? Collaborative practices in an emerging community of archaeological software engineers.}
-%   Internet Archaeology.
-%   \\
 \Year{2023}  &
   \Me { \&} \JoeRoe.
   \textbf{Open-archaeo: a resource for documenting archaeological software development practices.}
@@ -369,6 +366,40 @@
   \DOI{10.1158/1535-7163.MCT-08-1186}
 \end{EntriesTable}
 
+% \subsubsection{Articles in Progress}
+% \begin{EntriesTable}
+%   \Year{\Progress}  &
+%     \Me { \&} \JoeRoe.
+%     \textbf{Open archaeology, open source? Collaborative practices in an emerging community of archaeological software engineers.}
+%     \Preprint{10.5281/zenodo.8393043} (draft preprint)
+%   \\
+%   \Year{\Progress}  &
+%     \Me { \&} \JoeRoe.
+%     \textbf{Archaeology in the fediverse.}
+%     \Note{Position paper articulating the discussion held during our panel at ArcheoFOSS XVII.}
+%   \\
+%   \Year{\Progress}  &
+%     \Me.
+%     \textbf{Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.}
+%     \Note{Draft produced from a paper presented at ArcheoFOSS XVII.}
+%   \\
+%   \Year{\Progress}  &
+%     \Me.
+%     \textbf{Valuation of formal and informal media in archacological information infrastructures.}
+%     \Note{Will be submitted to Open Archaeology.}
+%   \\
+%   \Year{\Progress}  &
+%     \Me.
+%     \textbf{Data Management Infrastructures and the Distribution of Agency in Archaeological Projects.}
+%     \Note{Will be submitted to Open Information Science.}
+%   \\
+%   \Year{\Progress}  &
+%     \Me.
+%     \textbf{Open data, overstated:
+%     an exploration of small-scale, offline and private acts of data-sharing within archaeological projects.}
+%     \Note{Will be submitted to the Journal of Electronic Publishing Special Issue \emph{On Gathering: Exploring Collective and Embodied Modes of Scholarly Communication.}}
+% \end{EntriesTable}
+
 \subsection{Book contributions}
 \begin{EntriesTable}
 \Year{2018}  &
@@ -376,7 +407,7 @@
   \textbf{The Open Digital Archaeology Textbook.}
   eCampus Ontario.
   \Website{o-date.github.io}\newline
-  \faIcon{award}Award for Outstanding Work in Digital Archaeology, Archaeological Institute of America
+  \faIcon{award}\ Award for Outstanding Work in Digital Archaeology, Archaeological Institute of America
 \end{EntriesTable}
 
 % \subsection{Conference proceedings}
@@ -403,10 +434,11 @@
   \newline
   A small script that reads DOIs from a bibtex file, fetches abstracts from Crossref when they are available, and exports another bibtex file with that added info.
   \Gist{zackbatist/bfeaa66b64c7afe749a7f5c6f9e596c2}
+  \\
+  \\
 \end{EntriesTable}
 
 \subsection{Open Datasets}
-
 \begin{EntriesTable}
 \Duration{2018}{\Ongoing}  &
   \textbf{open-archaeo}
@@ -428,6 +460,13 @@
 \subsection{Conference presentations}
 
 \begin{EntriesTable}
+\Year{2023}  &
+  \Me.
+  \textbf{Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.}
+  Paper presented at ArcheoFOSS XVII -- Open Science and Archaeology: Archiving the Knowledge. Department of Historical Studies, University of Turin.
+  Turin, Italy, 12-13 December 2023.
+  %LINK
+  \\
 \Year{2023}  &
   \Me.
   \textbf{Documenting the collaborative commitments that support data sharing within archaeological project collectives.}
@@ -465,6 +504,7 @@
   \textbf{Documenting archaeological knowledge construction as distributed information practices.}
   Paper presented at the 46th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2018).
   Tübingen, Germany, March 2018.
+  \DOI{10.15496/publikation-87754}
   \\
 \Year{2017}  &
   \Me { \&} \CostisDallas.
@@ -626,6 +666,8 @@
   (ANTH 1AA3)
   \newline
   Department of Anthropology, McMaster University
+  \\
+  \\
 \end{EntriesTable}
 
 \subsection{Workshops \& Short Courses}
@@ -804,42 +846,31 @@
 %   Internal MSc dissertation examiner (Natacha Medeiros Rocha), \UERJ.
 % \end{EntriesTable}
 
-
-\subsection{Conference Organizer}
+\subsection{Conference \& Panel Organizer}
 \begin{EntriesTable}
-\Year{2014} &
-  \textbf{Second Annual Interdisciplinary Colloquium}
-  \newline
-  Faculty of Social Sciences, McMaster University
+  \Year{2023} &
+    \textbf{archaeo.social: archaeology in the Fediverse and the future of scholarly social media}
+    \newline
+    Panel convened for \href{https://www.archeofoss.org/2023/}{ArcheoFOSS XVII}
+    \newline
+    Department of Historical Studies, University of Turin
+    \GitHub{archaeo-social/archeofoss23_fediverse}
+    \DOI{10.5281/zenodo.10362684}
+  \\
+  \Year{2014} &
+    \textbf{Second Annual Interdisciplinary Colloquium}
+    \newline
+    Faculty of Social Sciences, McMaster University
+  \\
+  \\
 \end{EntriesTable}
 
-% \subsection{Conference Convener}
-
-% \begin{EntriesTable}
-
-% \Year{2021} &
-%   Session: EOS5.3 - The evolving open-science landscape in geosciences: open
-%   data, software, publications and community initiatives.
-%  \newline
-%  Nijzink, RC,
-%  Drost, N,
-%  \JFarquharson,
-%  \AKushnir,
-%   Pianosi, F,
-%   Schymanski, S,
-%   \Me,
-%   \FWadsworth.
-%   \newline
-%   \emph{EGU 2021}, Vienna, Austria.
-%   \\
-
-% \end{EntriesTable}
-
 \subsection{Interest Groups}
-
 \begin{EntriesTable}
 \Duration{2018}{\Ongoing} &
-  Scientific Scripting Languages in Archaeology Special Interest Group, Computer Applications in Archaeology
+  Scientific Scripting Languages in Archaeology Special Interest Group,
+  \newline
+  Computer Applications in Archaeology
   \\
 \Duration{2020}{2022} &
   UofT Coders
@@ -853,6 +884,7 @@
 \subsection{Reviewer}
 \begin{itemize}
   \item Open Information Science
+  \item Computer Applications in Archaeology
 \end{itemize}
 
 \section{Languages}
