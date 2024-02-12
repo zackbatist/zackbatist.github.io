@@ -1,31 +1,14 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% A clean template for an academic CV
-%
-% Uses tabularx to create two column entries (date and job/edu/citation).
-% Defines commands to make adding entries simpler.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % !TEX program = xelatex
 \documentclass[11pt, a4paper]{article}
 
 % Full Unicode support for non-ASCII characters
 \usepackage[utf8]{inputenc}
 
-% Useful aliases
-\newcommand{\TORINF}{Faculty of Information}
-\newcommand{\TOR}{University of Toronto}
-\newcommand{\UTorontoAddress}{Bissell Building, 140 St. George Street \\ M5S 3G6, Toronto, Ontario, Canada}
-\newcommand{\Address}{4653 Rue Clark \\ Montreal, Quebec, Canada \\ H2T 2T3}
-\newcommand{\Affiliation}{\TORINF \\ \TOR}
-\newcommand{\Title}{Curriculum Vit\ae}
-
 % Identifying information
 \newcommand{\FirstName}{Zachary}
 \newcommand{\LastName}{Batist}
 \newcommand{\Initials}{Z}
 \newcommand{\MyName}{\FirstName\ \LastName}
-\newcommand{\Me}{\LastName, \Initials}  % For citations
 
 \newcommand{\Email}{zacharybatist@gmail.com}
 \newcommand{\PersonalWebsite}{zackbatist.info}
@@ -33,9 +16,16 @@
 \newcommand{\Twitter}{@mtl\_zack}
 \newcommand{\Mastodon}{archaeo.social/@zackbatist}
 \newcommand{\ORCID}{0000-0003-0435-508X}
+%\newcommand{\Address}{4653 Rue Clark \\ Montreal, Quebec, Canada \\ H2T 2T3}
+\newcommand{\Address}{\phantom{text} \\ \phantom{text} \\ \phantom{text}}
+\newcommand{\UTorontoAddress}{Bissell Building, 140 St. George Street \\ M5S 3G6, Toronto, Ontario, Canada}
+\newcommand{\Affiliation}{\TORINF \\ \TOR}
+\newcommand{\TORINF}{Faculty of Information}
+\newcommand{\Title}{Curriculum Vit\ae}
 %\newcommand{\LabWebsite}{compgeolab.org}
 
 % Names for citing coauthors
+\newcommand{\Me}{\LastName, \Initials}
 \newcommand{\CostisDallas}{Dallas, C}
 \newcommand{\ValMasters}{Masters, V}
 \newcommand{\TiffanyTorma}{Torma, TC}
@@ -142,7 +132,7 @@
 \newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
 
 % Set the page margins
-\usepackage[a4paper,margin=1.5cm,includehead,headsep=5mm]{geometry}
+\usepackage[a4paper,margin=1.5cm,includehead,headsep=2mm]{geometry}
 
 % To get the total page numbers (\pageref{LastPage})
 \usepackage{lastpage}
@@ -214,32 +204,19 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % HEADER
-{\fontsize{22pt}{0}\selectfont\MyName}\\[-0.1cm]
-\rule{\textwidth}{0.2pt}
-\begin{minipage}[t]{0.595\textwidth}
-  %\Affiliation
-  %\\
-  \Address
-  % \\
-  % \href{mailto:\Email}{\Email}
-\end{minipage}
-\begin{minipage}[t]{0.405\textwidth}
+{\fontsize{22pt}{0}\selectfont\MyName}\\[-1.5cm]
+\begin{minipage}[t]{1\textwidth}
   \begin{flushright}
-    % Last updated: \monthyear\today
-    % \\
+    % Last updated: \monthyear\today\\
+    Website: \href{https://\PersonalWebsite}{\PersonalWebsite}\\
+    ORCID: \href{https://orcid.org/\ORCID}{\ORCID}\\
     Email: \href{mailto:\Email}{\Email}
-    \\
-    ORCID: \href{https://orcid.org/\ORCID}{\ORCID}
-    \\
-    Website: \href{https://\PersonalWebsite}{\PersonalWebsite}
-    \\
-    %GitHub: \href{https://github.com/\MyGitHub}{\MyGitHub}
-    % \\
-    % Mastodon: \href{https://\Mastodon}{\Mastodon}
-    % \\
+    %GitHub: \href{https://github.com/\MyGitHub}{\MyGitHub}\\
+    % Mastodon: \href{https://\Mastodon}{\Mastodon}\\
     % Twitter: \href{https://\Twitter}{\Twitter}
   \end{flushright}
-\end{minipage}
+\end{minipage}\\[0.1cm]
+\rule{\textwidth}{0.2pt}\\[-1cm]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \section{Professional Appointments}
@@ -257,7 +234,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
-
 \begin{EntriesTable}
 \Year{2023}  &
   \textbf{PhD}, Faculty of Information, University of Toronto
@@ -271,20 +247,18 @@
   \\
 \Year{2012}  &
   \textbf{BA}, Directed Interdisciplinary Studies, Carleton University
-%  \newline
-%  Feasting In Bronze Age Greece: A Network Analysis Approach
+  %\newline
+  %Feasting In Bronze Age Greece: A Network Analysis Approach
   \\
 \Year{2009}  &
-  \textbf{DEC}, Social Sciences, Dawson College
+  \textbf{DEC}, Social Sciences, Dawson College\\[-0.5cm]
 \end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Grants \& Fellowships}
-
 \begin{EntriesTable}
 \Duration{2019}{2021}  &
-  \textbf{SSHRC Doctoral Fellowship}. Archaeological data curation as continuous and collaborative practice.
-  Award ID: {752-2019-2233}.
+  \textbf{SSHRC Doctoral Fellowship}. Archaeological data curation as continuous and collaborative practice. Award ID: {752-2019-2233}.\\[-0.5cm]
 \end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -312,15 +286,25 @@
   \newline
   Molecular Pharmacology Laboratory
   \newline
-  Lady Davis Institute for Medical Research
+  Lady Davis Institute for Medical Research\\[-0.5cm]
 \end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Publications}
-
 \subsection{Journal articles}
-
 \begin{EntriesTable}
+\Year{\Review}  &
+  \Me.
+  \textbf{The value of formal and situated representations in archaeological data work.}
+  Open Archaeology.
+  \\
+\Year{\Review}  &
+  \Me { \&} \JoeRoe.
+  \textbf{Open archaeology, open source? Collaborative practices in an emerging community of archaeological software engineers.}
+  Internet Archaeology.
+  \GitHub{zackbatist/openarchaeo-collaboration}
+  \Website{zackbatist.info/openarchaeo-collaboration} (draft pre-print)
+  \\
 \Year{2023}  &
   \Me { \&} \JoeRoe.
   \textbf{Open-archaeo: a resource for documenting archaeological software development practices.}
@@ -334,7 +318,7 @@
   Open Archaeology (Special Issue on Archaeological Practice on Shifting Grounds)
   7(1):1731-1755.
   \DOI{10.1515/opar-2020-0217}
-  % \ZenodoDOI{10.5281/zenodo.5831760}
+  %\ZenodoDOI{10.5281/zenodo.5831760}
   \\
 \Year{2021}  &
   \DanContreras, \Me, \CiaraZogheib { \&} \TristanCarter.
@@ -366,39 +350,33 @@
   \DOI{10.1158/1535-7163.MCT-08-1186}
 \end{EntriesTable}
 
-% \subsubsection{Articles in Progress}
-% \begin{EntriesTable}
-%   \Year{\Progress}  &
-%     \Me { \&} \JoeRoe.
-%     \textbf{Open archaeology, open source? Collaborative practices in an emerging community of archaeological software engineers.}
-%     \Preprint{10.5281/zenodo.8393043} (draft preprint)
-%   \\
-%   \Year{\Progress}  &
-%     \Me { \&} \JoeRoe.
-%     \textbf{Archaeology in the fediverse.}
-%     \Note{Position paper articulating the discussion held during our panel at ArcheoFOSS XVII.}
-%   \\
-%   \Year{\Progress}  &
-%     \Me.
-%     \textbf{Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.}
-%     \Note{Draft produced from a paper presented at ArcheoFOSS XVII.}
-%   \\
-%   \Year{\Progress}  &
-%     \Me.
-%     \textbf{Valuation of formal and informal media in archacological information infrastructures.}
-%     \Note{Will be submitted to Open Archaeology.}
-%   \\
-%   \Year{\Progress}  &
-%     \Me.
-%     \textbf{Data Management Infrastructures and the Distribution of Agency in Archaeological Projects.}
-%     \Note{Will be submitted to Open Information Science.}
-%   \\
-%   \Year{\Progress}  &
-%     \Me.
-%     \textbf{Open data, overstated:
-%     an exploration of small-scale, offline and private acts of data-sharing within archaeological projects.}
-%     \Note{Will be submitted to the Journal of Electronic Publishing Special Issue \emph{On Gathering: Exploring Collective and Embodied Modes of Scholarly Communication.}}
-% \end{EntriesTable}
+\subsubsection{Articles in Progress}
+\begin{EntriesTable}
+\Year{\Progress}  &
+  \Me.
+  \textbf{Digital workflows and the alienation of archaeological labour}
+  %\Note{Will be submitted to Computer Supported Cooperative Work}
+  \\
+\Year{\Progress}  &
+  \Me.
+  \textbf{Scaffolding archaeological data work}
+  %\Note{Will be submitted to the Journal of Archaeological Method and Theory}
+  \\
+\Year{\Progress}  &
+  \Me.
+  \textbf{Open data, overstated: an exploration of small-scale, offline and private acts of data-sharing within archaeological projects.}
+  %\Note{Will be submitted to the editied volume \emph{Politics of Open Infrastructures: Exploring open digital knowledge infrastructures and socio-political dynamics}}
+  \\
+\Year{\Progress}  &
+  \Me.
+  \textbf{Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data}
+  %\Note{Deriving from a paper presented at ArcheoFOSS XVII}
+  \\
+\Year{\Progress}  &
+  \Me { \&} \JoeRoe.
+  \textbf{Archaeology in the fediverse: reclaiming ownership of scholarly social media}
+  %\Note{Position paper articulating the discussion held during our panel at ArcheoFOSS XVII}
+\end{EntriesTable}
 
 \subsection{Book contributions}
 \begin{EntriesTable}
@@ -420,22 +398,14 @@
 %   \\
 % \end{EntriesTable}
 
+\newpage
 \subsection{Open-source Software}
-
 \begin{EntriesTable}
 \Duration{2020}{2021} &
   \textbf{Queryable Artefact Record Interface (QuARI)}
   \newline
   A database interface designed to facilitate the irregular, iterative, and non-linear workflows that are commonly employed in lithic analysis.
   \GitHub{zackbatist/QuARI}
-  \\
-\Year{2018} &
-  \textbf{FetchAbstracts.R}
-  \newline
-  A small script that reads DOIs from a bibtex file, fetches abstracts from Crossref when they are available, and exports another bibtex file with that added info.
-  \Gist{zackbatist/bfeaa66b64c7afe749a7f5c6f9e596c2}
-  \\
-  \\
 \end{EntriesTable}
 
 \subsection{Open Datasets}
@@ -458,7 +428,6 @@
 % \section{Presentations}
 
 \subsection{Conference presentations}
-
 \begin{EntriesTable}
 \Year{2023}  &
   \Me.
@@ -561,10 +530,10 @@
 % \subsection{Other}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Awards \& Honors}
-
 \begin{EntriesTable}
-  \Year{2019}  &
+\Year{2019}  &
   \textbf{Research Travel Grant} (\$500)
   \newline
   Faculty of Arts and Science, University of Toronto
@@ -623,9 +592,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Teaching}
 \subsection{Teaching Assistant}
-
 \begin{EntriesTable}
-  \Year{2020}  &
+\Year{2020}  &
   \textbf{Curatorial Practice}
   (MSL 2000)
   \newline
@@ -666,12 +634,9 @@
   (ANTH 1AA3)
   \newline
   Department of Anthropology, McMaster University
-  \\
-  \\
 \end{EntriesTable}
 
 \subsection{Workshops \& Short Courses}
-
 \begin{EntriesTable}
 \Year{2022}  &
   \textbf{Using Qualitative Data Analysis Software}
@@ -691,9 +656,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \section{Student supervision}
-
 % \subsection{P\lowercase{h}D \lowercase{(main advisor)}}
-
 % \begin{EntriesTable}
 % \Duration{2021}{\Ongoing}  &
 %   India Uppal
@@ -704,7 +667,6 @@
 % \end{EntriesTable}
 
 % \subsection{P\lowercase{h}D \lowercase{(co-advisor)}}
-
 % \begin{EntriesTable}
 % \Duration{2021}{\Ongoing}  &
 %   Gelson Ferreira de Souza Junior
@@ -722,7 +684,6 @@
 % \end{EntriesTable}
 
 % \subsection{Master's}
-
 % \begin{EntriesTable}
 % \Duration{2020}{2021}  &
 %   Aidan Hernaman
@@ -731,7 +692,6 @@
 % \end{EntriesTable}
 
 % \subsection{Undergraduate}
-
 % \begin{EntriesTable}
 % \Duration{2021}{2022}  &
 %   Sarah Askevold, Laura Nicholls, and Hamed R.H. Al-Salehi
@@ -756,41 +716,23 @@
 %   \\
 % \end{EntriesTable}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Outreach}
-
-% I maintain a blog about my research, geoscience, and programming at
-% \href{https://www.leouieda.com/blog}{leouieda.com/blog}
-% \\
-
-% \begin{EntriesTable}
-% \Year{2018}  &
-%   Interviewed by the geoscience podcast \textit{Don't Panic Geocast}, episode 166
-%   \textit{``You are headed to a warm and sunny place''}:
-%   \href{http://www.dontpanicgeocast.com/?p=638}{dontpanicgeocast.com/?p=638}
-%   \\
-% \Year{2017}  &
-%   Volunteer for the \textit{Hour of Code} at Salt Lake Elementary School, Honolulu,
-%   USA.
-%   \\
-% \Year{2016}  &
-%   Interviewed by the geoscience podcast \textit{Undersampled Radio}, episode
-%   \textit{``Open Sourcery''}:
-%   \href{https://undersampledrad.io/home/2016/7/open-sourcery}{undersampledrad.io/home/2016/7/open-sourcery}
-% \end{EntriesTable}
+\section{Outreach}
+\begin{EntriesTable}
+\Duration{2022}{\Ongoing} &
+  \textbf{Personal blog}, \href{https://blog.zackbatist.info}{blog.zackbatist.info}
+  \newline
+  Posts about my research and professional activities
+\end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Academic Service \& Affiliations}
-
 % \subsection{Editor}
-
 % \begin{EntriesTable}
 %   \Duration{2019}{\Ongoing} & Topic editor for the \textit{Journal of Open Source Software}
 % \end{EntriesTable}
 
-\subsection{Community service}
-
+\subsection{Community leadership}
 \begin{EntriesTable}
 \Duration{2018}{\Ongoing} &
   \textbf{Founder and Maintainer}, \href{https://open-archaeo.info}{open-archaeo.info}
@@ -811,20 +753,24 @@
   \textbf{Founder and Coordinator}, Archaeological Information Interest Group
   \newline
   The Archaeology Centre, University of Toronto
+  \\
+\Duration{2013}{2014} &
+  \textbf{Webmaster}, Nexus: The Canadian Student Journal of Anthropology
+  \newline
+  Department of Anthropology, McMaster University
 \end{EntriesTable}
 
 \subsection{Committees}
-
 \begin{EntriesTable}
 \Duration{2019}{2020} &
   \textbf{Graduate Student Union Faculty Representative}
   \newline
-  Faculty of Information Doctoral Student Association \TOR
+  Faculty of Information Doctoral Student Association, University of Toronto
   \\
 \Duration{2016}{2019} &
   \textbf{Tech Fund Committee Member and Coordinator}
   \newline
-  Faculty of Information Doctoral Student Association, \TOR
+  Faculty of Information Doctoral Student Association, University of Toronto
   \\
 \Duration{2013}{2014} &
   \textbf{Graduate Student Association Faculty Representative}
@@ -833,7 +779,6 @@
 \end{EntriesTable}
 
 % \subsection{Examiner}
-
 % \begin{EntriesTable}
 % \Year{2022} &
 %   External PhD thesis examiner (Peter Haas), Christian-Albrechts-Universität zu
@@ -846,34 +791,47 @@
 %   Internal MSc dissertation examiner (Natacha Medeiros Rocha), \UERJ.
 % \end{EntriesTable}
 
+\newpage
 \subsection{Conference \& Panel Organizer}
 \begin{EntriesTable}
-  \Year{2023} &
-    \textbf{archaeo.social: archaeology in the Fediverse and the future of scholarly social media}
-    \newline
-    Panel convened for \href{https://www.archeofoss.org/2023/}{ArcheoFOSS XVII}
-    \newline
-    Department of Historical Studies, University of Turin
-    \GitHub{archaeo-social/archeofoss23_fediverse}
-    \DOI{10.5281/zenodo.10362684}
+\Year{2023} &
+  \textbf{archaeo.social: archaeology in the Fediverse and the future of scholarly social media}
+  \newline
+  Panel convened for \href{https://www.archeofoss.org/2023/}{ArcheoFOSS XVII} with Joe Roe
+  \newline
+  Department of Historical Studies, University of Turin
+  \GitHub{archaeo-social/archeofoss23_fediverse}
+  \DOI{10.5281/zenodo.10362684}
   \\
-  \Year{2014} &
-    \textbf{Second Annual Interdisciplinary Colloquium}
-    \newline
-    Faculty of Social Sciences, McMaster University
-  \\
-  \\
+\Year{2014} &
+  \textbf{Second Annual Interdisciplinary Colloquium}
+  \newline
+  Co-organized with Priscilla Medeiros
+  \newline
+  Faculty of Social Sciences, McMaster University
 \end{EntriesTable}
 
 \subsection{Interest Groups}
 \begin{EntriesTable}
 \Duration{2018}{\Ongoing} &
-  Scientific Scripting Languages in Archaeology Special Interest Group,
+  Scientific Scripting Languages in Archaeology Special Interest Group (\href{https://sslarch.github.io/}{sslarch.github.io})
   \newline
   Computer Applications in Archaeology
   \\
-\Duration{2020}{2022} &
-  UofT Coders
+\Duration{2018}{2022} &
+  UofT Coders (\href{https://uoftcoders.github.io/studyGroup/}{uoftcoders.github.io})
+  \newline
+  University of Toronto
+  \\
+\Duration{2018}{2019} &
+  Digitality Reading Group
+  \newline
+  University of Toronto
+  \\
+\Duration{2017}{2019} &
+  Archaeological Theory Interest Group
+  \newline
+  The Archaeology Centre, University of Toronto
 \end{EntriesTable}
 
 \subsection{Certifications}
@@ -888,12 +846,11 @@
 \end{itemize}
 
 \section{Languages}
-
 \TablePad
 \begin{tabularx}{\textwidth}{@{}p{0.1\textwidth} p{0.85\textwidth}@{}}
   \textbf{English} & Mother tongue
   \\
-  \textbf{French} & Basic reading and writing
+  \textbf{French}  & Basic reading and writing
 \end{tabularx}
 
 \end{document}
