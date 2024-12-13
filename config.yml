@@ -28,7 +28,7 @@ menu:
 
 
 params:
-    description: "Postdoctoral Researcher at McGill University"
+    description: ""
     author: Zack Batist
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -54,7 +54,7 @@ params:
     profileMode:
           enabled: true
           title: Zack Batist
-          subtitle: "Postdoctoral Researcher at McGill University"
+          subtitle: ""
           imageUrl: "picture.png"
           imageWidth: 160
           imageHeight: 160
