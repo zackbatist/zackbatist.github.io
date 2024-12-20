@@ -1,0 +1,52 @@
+[
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2024-10-01-informal-communication-and-archaeological-data-work/index.html",
+      "/posts/2024-07-18-exploring-collaborative-practices-in-archaeological-software-development/index.html",
+      "/posts/2024-02-02-pruning-open-archaeo/index.html",
+      "/posts/2023-12-17-archeofoss-xvii/index.html",
+      "/posts/2023-09-24-finished-my-dissertation/index.html",
+      "/posts/2023-09-11-open-archaeo-data-paper/index.html",
+      "/posts/2023-06-13-some-thoughts-on-data-formality/index.html",
+      "/posts/2023-02-06-recap-digital-archaeology-bern-2023/index.html",
+      "/posts/2023-01-10-i-like-latex/index.html",
+      "/posts/2022-12-17-comments-on-the-rise-and-fall-of-peer-review/index.html",
+      "/posts/2022-12-08-review-of-a-recent-science-mapping-paper/index.html",
+      "/posts/2022-11-28-open-science-and-its-weird-conception-of-data/index.html",
+      "/posts/2022-11-27-abstract-submitted-for-dab23-bern-switzerland/index.html",
+      "/posts/2022-11-23-mastodon-and-the-potential-for-community-growth/index.html"
+    ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": [
+      "/publications/does-not-compute/index.html",
+      "/publications/informal-communication/index.html",
+      "/publications/open-archaeology-open-source/index.html",
+      "/publications/dissertation/index.html",
+      "/publications/open-archaeo-joad/index.html",
+      "/publications/figurations-of-digital-practice/index.html",
+      "/publications/quari/index.html",
+      "/publications/odate/index.html",
+      "/publications/shaar-hagolan/index.html",
+      "/publications/ma-thesis/index.html",
+      "/publications/sardinian-maritime-interaction/index.html",
+      "/publications/onco/index.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/citf-postdoc/index.html",
+      "/projects/open-archaeo/index.html",
+      "/projects/dobsiss/index.html"
+    ]
+  },
+  {
+    "listing": "/notes.html",
+    "items": [
+      "/notes/ant-limits/index.html"
+    ]
+  }
+]
