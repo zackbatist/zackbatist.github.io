@@ -56,6 +56,5 @@ Thumbs.db
 ######################
 .gdsheet
 .hugo_build.lock
-public/
-
-
+/.quarto/
+/_site/

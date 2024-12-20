@@ -1,0 +1,17 @@
+---
+title: Database of Obsidian Sourcing Studies
+description: "2012 -- 2015"
+subtitle: A list of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records
+categories: 
+  - obsidian sourcing
+rank: 1
+links:
+- icon: globe
+  name: Website
+  url: https://zackbatist.info/DObsiSS/
+- icon: github
+  name: GitHub
+  url: https://github.com/zackbatist/DObsiSS
+---
+## Description
+DObsiSS is...

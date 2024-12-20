@@ -1,0 +1,11 @@
+title-block-banner: true
+date-format: long
+author:
+  - name: Zack Batist
+format: 
+  html: 
+    code-overflow: wrap
+    template-partials: 
+      - ../assets/_partials/title-block-link-buttons/title-block.html
+bibliography: ../assets/zack.bib
+csl: ../assets/chicago-author-date.csl

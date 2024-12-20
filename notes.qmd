@@ -1,0 +1,25 @@
+---
+title: "Notes" 
+description: |
+  </br>Just some extended strands of thought
+title-block-banner: false
+date-format: "YYYY"
+listing: 
+  contents: notes
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, date]
+  image-align: left
+
+format: 
+  html: 
+    page-layout: full
+
+header-includes: >
+  <link rel="stylesheet" href="assets/listing-default.css">
+resources:
+  - assets/listing-default.css
+---

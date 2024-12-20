@@ -1,0 +1,29 @@
+---
+title: Blog
+description: |
+  </br>Rambles about archaeological practice, open science, and collaboration
+title-block-banner: false
+date-format: long
+listing: 
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: false
+  feed: true
+  fields: [date, title, categories]
+  image-align: left
+  table-striped: true
+  table-hover: true
+repo-actions: false
+
+format: 
+  html: 
+    page-layout: full
+
+header-includes: >
+  <link rel="stylesheet" href="assets/listing-default.css">
+resources:
+  - assets/listing-default.css
+
+---
+

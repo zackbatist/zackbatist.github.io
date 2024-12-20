@@ -1,0 +1,50 @@
+---
+title: "Open-archaeo: A Resource for Documenting Archaeological Software Development Practices"
+author: 
+  - name: Zachary Batist
+    orcid: 0000-0003-0435-508X
+  - name: Joe Roe
+    orcid: 0000-0002-1011-1244
+date: 2023-09-11
+categories:
+  - Archaeological practice
+  - open source software
+  - web-based resources
+description: |
+  Journal of Open Archaeology Data</br>
+  <a href="https://doi.org/10.5334/joad.111" target="_blank_" rel="noopener">10.5334/joad.111</a>
+subtitle: Outlines the data collection methods and conceptual model for <a href="https://open-archaeo.info" target="_blank_" rel="noopener">open-archaeo</a>, and highlights its value as a public resource and as a dataset for examining the emerging community of practice surrounding open source software development in research contexts
+links:
+- icon: file-richtext
+  name: Paper
+  url: https://doi.org/10.5334/joad.111
+---
+## Abstract
+Open-archaeo (https://open-archaeo.info) is a comprehensive list of open software and resources created by and for archaeologists. It is a living collection—itself an open project—which as of writing includes 548 entries and associated metadata. Open-archaeo documents what kinds of software and resources archaeologists have produced, enabling further investigation of research software engineering and digital peer-production practices in the discipline, both under-explored aspects of archaeological research practice.
+
+---
+
+![Conceptual model documenting relationships between data recorded in open-archaeo and other relevant information in the source material and elsewhere on the web](open-archaeo-cm.png)
+
+---
+
+::: {.callout-note collapse=true icon=false}
+## {{< fa code >}} BibTeX
+
+```BibTeX
+@article{batist2023,
+title = {Open-archaeo: A Resource for Documenting Archaeological Software Development Practices},
+author = {Batist, Zachary and Roe, Joe},
+date = {2023-09-11},
+journaltitle = {Journal of Open Archaeology Data},
+volume = {11},
+number = {9},
+pages = {1-7},
+issn = {2049-1565},
+doi = {10.5334/joad.111},
+url = {https://openarchaeologydata.metajnl.com/articles/10.5334/joad.111},
+abstract = {Open-archaeo (https://open-archaeo.info) is a comprehensive list of open software and resources created by and for archaeologists. It is a living collection&mdash;itself an open project&mdash;which as of writing includes 548 entries and associated metadata. Open-archaeo documents what kinds of software and resources archaeologists have produced, enabling further investigation of research software engineering and digital peer-production practices in the discipline, both under-explored aspects of archaeological research practice.},
+langid = {english},
+}
+```
+:::

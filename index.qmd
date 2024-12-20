@@ -1,0 +1,35 @@
+---
+title: Zack Batist
+pagetitle: Zack Batist
+subtitle: ""
+image: assets/picture.png
+
+about:
+  template: solana
+  image-width: 26em
+  id: hero-heading
+  links:
+    - icon: github
+      href: https://github.com/zackbatist
+      target: _blank
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0000-0003-0435-508X
+      target: _blank
+    - icon: mastodon
+      href: https://archaeo.social/@zackbatist
+      target: _blank
+    - icon: rss-fill
+      href: posts.xml
+      target: _blank
+    - icon: star-fill
+      text: CV
+      href: cv.pdf
+      target: _blank
+
+page-layout: full
+
+---
+
+I’m an information studies scholar investigating collaborative aspects of data work, records management and open science.
+
+I’m interested in how scientists contribute to and govern collectively-maintained information commons, and the technical infrastructures that scaffold these efforts.

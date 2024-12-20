@@ -1,0 +1,56 @@
+---
+title: "Comments on a recent 'science mapping' paper"
+date: 2022-12-08
+aliases: 
+  - https://blog.zackbatist.info/2022/12/08/review-of-a-recent-science-mapping-paper/
+categories: 
+  - bibliometrics
+  - network analysis
+  - science studies
+citation: true
+draft: false
+---
+
+A new paper examining published research outputs to describe the makeup of archaeology as a discipline just dropped, and it's getting a lot of positive attention.
+
+> Sinclair, A. 2022 Archaeological Research 2014 to 2021: an examination of its intellectual base, collaborative networks and conceptual language using science maps, Internet Archaeology 59. [https://doi.org/10.11141/ia.59.10](https://doi.org/10.11141/ia.59.10)
+
+I see some issues with the paper that I think are worth addressing. This is not a comprehensive review, more like a commentary based on my own interests and experiences. I welcome dialog with the author and anyone else who is interested in discussing this further.
+
+I'm a bit hesitant to post this because I do not know the author, Anthony Sinclair, and I don't want to come across as too harsh. I intentionally did not look him up prior to writing this post. This is a commentary of the paper, not the person behind it.
+
+## Simplistic description of network graphs
+My first criticism is about the surface-level description of the network visualizations. Network visualizations are one of many ways of rendering a dataset, and this would have really benefited from more multifaceted statistical analysis of the underlying data. For example, it would have been nice to see the distribution of nodes with different degrees of centrality compared against some other variable, such as gender. The author reverts back to a plain and simple citation count in his analysis of gender disparities, and misses a great opportunity to draw upon centrality measurements as a key indicator of inequitable aspects of professional development across the genders.
+
+The author also annotated the graphs with diagrams that look kind of like a compass rose. I only found one instance in the text describing them and their function:
+
+"In certain maps, the key dimensions that affect the layout of the maps are identified in one of the upper corners of the map."
+
+![One of the network visualizations from the original paper. Note the compass rose in the top left corner.](figure6.png)
+
+What do these compass roses actually represent? Are they derived from the author's interpretations, or are they derived from the dataset? This is unclear. In either case, I would have liked to understand the reasoning or approach for identifying the extremes at each end of the gradients, and how a node's situation along the scale is determined.
+
+## Framing of science and non-science
+This paper perpetuates an outdated dichotomy between science and the arts and humanities. It never really defined either of these things, or attempts to reconcile the terms used by the citations databases against their own notion of what science and arts and humanities means to them. But these terms appear in the compass roses and in their descriptions of the graph visualizations as if their meanings are self-evident.
+
+Also very interesting is they say a lot about science but not much about arts and humanities. In fact, it may be more apt to say that this paper describes science and non-science, rather than some alternative other cohesive entity. The author describe journals, topics and methods that they identify as scientific, but do not do this at all for entities that they relate to as belonging to the arts and humanities. The lack of distinction between these terms reveals a lack of willingness to treat the things they represent as things in themselves rather than a lack of something, namely, science.
+
+The paper also relies on really outdated visions of the character of various disciplines and of archaeology specifically. As far as I can tell, it relies on two sources:
+
+
+- Pantin, C.F.A. 1968 The Relations Between the Sciences, Cambridge: Cambridge University Press
+- Becher, T. and Trowler, P.R. 2001 Academic Tribes and Territories, 2nd Edition, Maidenhead: Society for Research into Higher Education/Open University Press.
+
+Becher is extremely outdated and falls within a period when scientists (especially social scientists, including Binford) were aching to make their disciplines seem more scientific. So there is a strange value judgement at play, and they often failed to capture the reality of how science actually works. The other source is mentioned only very briefly in passing, but follows a similar essentialist rhetoric regarding the fundamental nature of specific disciplines, which rubs me the wrong way. A lot of excellent work that examines the pragmatic reality of scientific practice, which highlights contradictions and misrepresentations, and that presents the fluidity across disciplines rather than hard distinctions, is simply ignored (e.g. Latour and Woolgar's Laboratory Life, Latour's Pandora's Hope, Knorr-Cetina's Epistemic Cultures, Bowker's Science on the Run, to name just a few).
+
+## Critical reflection on what the networks actually represent
+The value of analyzing citation networks is unclear to me, and the author don't really convince me that they represent a "window on the shape of the discipline". Citation networks depict clusters of citations, but the jump to making these clusters meaningful in relation to some broader social or epistemic phenomenon is never really articulated. Moreover, the author indicates they he applied the Girvan-Newman method for identifying clusters, but doesn't really incorporate the means through which this algorithm operates, including its limitations, into the analysis. Clusters do not simply exist, they are highlighted through some method, which impacts what we see.
+
+After writing an initial draft I found that the author has done other relevant scientometric work with a more targeted scope:
+
+> Sinclair, A. (2020). From Specialty to Specialist: a citation analysis of Evolutionary Anthropology, Palaeolithic Archaeology and the Work of John Gowlett 1970-2018. In J. Cole, J. McNabb, M. Grove, & R. Hosfield (Eds.), Landscapes of Evolution: Studies in Honour of John Gowlett (pp. 175-201). Oxford: Archaeopress.
+
+Although I do not have access to this paper, it is likely to be much more effective since these kinds of analyses tend to work better when a more specific objective is outlined, since it's easier to ground the relationships within a specific set of experiences, rather than relying too much on generalizations and abstractions.
+
+## Analysis of language and push for standardized terminology
+I like the analysis of language and keywords. I think it's the strongest part of the paper, and there's a lot of potential there. However the author draws this into a push towards standardization, which seems kind of forced and not relevant to the analysis of key words across the literature. The author frames the diverse array of terminology as a problem that needs to be overcome, rather than a very interesting aspect of archaeological research practice with its own benefits and affordances. Standards implemented in harder sciences are stated as goals worth attaining, but I'm left unconvinced that this is really worth doing based on the findings presented here.

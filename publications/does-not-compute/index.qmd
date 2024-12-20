@@ -1,0 +1,65 @@
+---
+title: Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data
+author: 
+  - name: Zachary Batist
+    orcid: 0000-0003-0435-508X
+date: 2024-12-31
+categories:
+  - figuration
+  - archaeological practice
+  - digital workflows
+  - craft
+  - DIY archaeology
+description: |
+  Archeologia e Calcolatori</br>
+  <a href="https://doi.org/10.19282/ac.35.2.2024.06" target="_blank_" rel="noopener">10.19282/ac.35.2.2024.06</a>
+subtitle: A reflection on the challenges I experienced integrating and reusing data during my Masters thesis
+links:
+- icon: file-richtext
+  name: Paper
+  url: https://doi.org/10.19282/ac.35.2.2024.06
+- icon: globe
+  name: Website
+  url: https://zackbatist.info/DObsiSS/
+- icon: github
+  name: GitHub
+  GitHub: https://github.com/zackbatist/DObsiSS
+format:
+  html:
+    resources: 
+      - DObsiSS.bib
+    code-fold: true
+    code-summary: "Show the code"
+execute: 
+  freeze: true
+---
+##### Abstract
+The Database of Obsidian Sourcing Studies (DObsiSS; [https://zackbatist.info/DObsiSS](https://zackbatist.info/DObsiSS)) is an openly accessible integrated dataset comprising the results of dozens of obsidian sourcing studies published over a 50-year span. While the history of technological and professional progress pertaining to obsidian sourcing methods has yielded immense positive returns, this also produced extremely inconsistent data that were very difficult to integrate. This contributed to a sense of epistemic anxiety deriving from the struggle to reconcile the myriad outlooks that informed each data point -- with each other, and with a new objective of analyzing the dataset as an integrated whole. These challenges were further deepened by the Author’s position as a student and relatively uninitiated novice at the time when DObsiSS was being compiled. This paper reflects on various social, technical and epistemic challenges that the Author faced while assembling DObsiSS and while attempting to use this integrated dataset for a failed network analysis study, and relates this experience to a broader commentary on practices relating to data re-use.
+
+---
+
+![](dobsiss-distribution.png)
+
+---
+
+::: {.callout-note collapse=true icon=false}
+## {{< fa code >}} BibTeX
+
+```BibTeX
+@article{batist2024b,
+title = {Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data},
+author = {Batist, Zachary},
+date = {2021-12-31},
+journaltitle = {Archeologia e Calcolatori},
+volume = {35},
+number = {2},
+pages = {47--54},
+publisher = {All’Insegna del Giglio},
+issn = {1120-6861},
+doi = {10.19282/ac.35.2.2024.06},
+url = {xxxx},
+abstract = {The Database of Obsidian Sourcing Studies (DObsiSS; https://zackbatist.info/DObsiSS) is an openly accessible integrated dataset comprising the results of dozens of obsidian sourcing studies published over a 50-year span. While the history of technological and professional progress pertaining to obsidian sourcing methods has yielded immense positive returns, this also produced extremely inconsistent data that were very difficult to integrate. This contributed to a sense of epistemic anxiety deriving from the struggle to reconcile the myriad outlooks that informed each data point -- with each other, and with a new objective of analyzing the dataset as an integrated whole. These challenges were further deepened by the Author’s position as a student and relatively uninitiated novice at the time when DObsiSS was being compiled. This paper reflects on various social, technical and epistemic challenges that the Author faced while assembling DObsiSS and while attempting to use this integrated dataset for a failed network analysis study, and relates this experience to a broader commentary on practices relating to data re-use.},
+langid = {english},
+}
+```
+:::

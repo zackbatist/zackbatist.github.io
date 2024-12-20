@@ -1,0 +1,18 @@
+---
+title: CITF Postdoc
+description: "2025 -- Present"
+subtitle: ""
+categories: 
+  - data-sharing
+rank: 3
+links:
+- icon: globe
+  name: Website
+  url: https://zackbatist.info/CITF-Postdoc/
+- icon: github
+  name: GitHub
+  url: https://github.com/zackbatist/CITF-Postdoc
+
+---
+## Description
+CITF Postdoc is...

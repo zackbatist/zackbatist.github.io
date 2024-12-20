@@ -1,0 +1,46 @@
+---
+title: Limits of Actor-Network Theory
+---
+Previous work examining the apparatus of science relies heavily on Actor-Network Theory (ANT) or similar approaches that highlight the agency and impacts of tools on research practice.
+These draw attention to how non-human objects not only frame how human beings inhabit the world, but "push back" upon human actions with significant effects [@latour1992].
+In the context of early studies of scientific research, ANT was used to understand the physical and communicative mechanisms --- made up of non-human agents and information objects --- upon which scientists rely to capture, document and ascribe meaning to particular facets of the world [cf. @latour1986].
+ANT posits that scientists can only identify, characterize and understand objects of interest by co-creating their conceptions of reality alongside non-human agents.
+
+For instance, [@latour1986] initially applied ANT to investigate how knowledge is produced by molecular biologists in a laboratory setting.
+In this work, they identified the processes of transcription and translation as mechanisms through which material engagements between non-human objects (i.e. objects of nature) are rendered in ways that may be understood by humans.
+For instance, in a biomolecular lab, a bioassay determines and represents the existence and qualities of discrete proteins that have been extracted from cell samples through reactions with specially selected reagents, marked with dyes selected for their non-reactive qualities, and pulled through a filtration medium that separates proteins according to their mass, molecular structure, and electromagnetic properties.
+A large number of material entities are thus selected and mobilized due to the researcher's understanding that such an assemblage might contribute to the representation of a targeted set of phenomena.
+More specifically, certain reagents are added to cell samples that bind with proteins that constitute cell walls, allowing for inner proteins to be extracted.
+Other reagents that only bind to particular targeted proteins and that have been engineered to have certain identifiable physical and electromagnetic properties impart these qualities onto the now merged molecule composed of both targeted protein and reagent.
+Dyes that complement the design of the reagent and of the overall bioassay protocol are bound to these molecules, rendering them visible to the human eye.
+Molecules are then pulled through a conductive gel whose own material characteristics and density allow for only electrically charged molecules to be pulled through, given the placement of a polar-opposite charge at the far end of the gel.
+Once movement of the proteins have settled, (caused, in part, by the gradual solidification of the gel that inhibits further movement) the entire gel is photographed and the relative positions of dyed molecules are marked to denote their discrete existence and other relevant qualities rendered through association with their respective reagents.
+Knowledge was thus obtained by humans through the selective assembly of various material actors, whose interactions are already understood and deemed reliable, in order to render an account of reality based upon their projected experiences.
+
+Such a comprehensive view of the system of interacting agents, however, betrays the pragmatic and situated nature of the process.
+Indeed, Latour and Woolgar [-@latour1986 245] concluded that science is primarily concerned with the creation of an ordered account of reality, rather than the transfer of information pertaining to the world into human-understandable formats, and they characterize latter as the practices enacted in order to fulfill the former aim.
+However through a pragmatic lens, these two processes may be rendered as intertwined and inseparable threads of a unified experience of knowledge production.
+
+Realizing this, @knorrcetina2001 highlighted how every action taken in the production of knowledge is underpinned by a desire to fill a gap in knowledge.
+Integral to this approach is her definition of knowledge objects, which are defined as settled statements about the world, which tend to be the goal of most scientific pursuits.
+Knorr-Cetina illustrates this as drawers in a filing cabinet, which have been organized squarely and that are accessible for retrieval.
+In contrast, gaps in knowledge or unexpected behaviour are characterized as untidy and incomplete drawers that exist in an unresolved state.
+Knowledge objects are comparable to Latour and Woolgar's [-@latour1986 76] definition of facts as timeless and author-less accounts of reality, which have been elevated from the material systems that would otherwise constrain them as contingent to the specific material setup of the lab.
+However, Knorr-Cetina's concept renders knowledge production as a more dynamic, constructive and situated process that involves the use of already established knowledge in the validation of newly arrived at ideas [@knorrcetina2001 181-182].
+
+Her approach adds pragmatic and discursive elements, which help frame scholarly practices from the perspectives of the practitioners themselves, in terms of potentiality, certainty and desire.
+For instance, the desire of a lab technician to have the protein react as she expects it to will guide her practices, including her selection of reagents used to interact with it [@knorrcetina2001 181].
+She thus alters the material assemblage of the system based upon her contextualization of what has or has not worked before, her educated hypothetical suppositions concerning the ways various actors might interact, and a reiteration of her goal.
+Her concern with the elusive nature of the protein thereby derives from her consideration of how the knowledge she might obtain will fit into the established order.
+
+Knorr Cetina's work reveals how ANT does not adequately account for the circumstances through which the structures that support science come into being, nor the intentionality of human agents who assemble material apparatus to meet their goals.
+She refocuses attention on discursive aspects of knowledge production by considering expressions of potentiality, certainty and desire elicited by scientists as subjects acting with intent.
+This emphasis on the role of the subject, who conceives of other things from a unique perspective, introduces some asymmetry with respect to the roles of actors in the overall system.
+However, it does not totally dismiss the agency of non-human actors; it merely recognizes that the agency of objects are harnessed by humans and strategically configured into productive systems.
+
+In other words, this approach recognizes that a scientific observer is needed to intervene, who ascribes meanings to materials, who delineates natural phenomena from modern cultural processes, and who selects signal from noise.
+It also enables science to be viewed as a collaborative and discursive process, comprising a convergence of methodologies and theoretical outlooks, often upon the same materials.
+This prompts recognition that 'the scientific record' exists in multiple forms, and varies according to the diverse range of perspectives that may characterize the objects of enquiry in different ways.
+When presenting their findings, scientists thus engage in discursive processes of semantic negotiation, comparing our own conceptions to those held by others.
+
+Scientific data may therefore be considered as a connective medium that enables research to be conducted in a continuous and collaborative manner.

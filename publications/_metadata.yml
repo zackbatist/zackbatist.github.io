@@ -1,0 +1,8 @@
+title-block-banner: true
+date-format: "YYYY"
+format: 
+  html: 
+    code-overflow: wrap
+    template-partials: 
+      - ../assets/_partials/title-block-link-buttons/title-block.html
+

@@ -1,0 +1,57 @@
+---
+title: "Investigating Pottery Neolithic Socio-Economic “Regression” in the Southern Levant: Characterising Obsidian Consumption at Sha’ar Hagolan (N. Israel)."
+author: 
+  - name: Tristan Carter
+  - name: Zachary Batist
+    orcid: 0000-0003-0435-508X
+  - name: Kathryn Campeau
+  - name: Yosef Garfinkel
+  - name: Katharina Streit
+    orcid: 0000-0003-2573-6738
+date: 2017-09-01
+categories:
+  - obsidian
+  - pottery neolithic
+  - Ssouthern levant
+  - yarmukian
+  - socio-economic regression
+  - social network analyses
+  - Göllü Dağ
+  - Nenezi Dağ
+  - Nemrut Dağ
+description: |
+  Journal of Archaeological Science: Reports</br>
+  <a href="https://doi.org/10.1016/j.jasrep.2017.08.016" target="_blank_" rel="noopener">10.1016/j.jasrep.2017.08.016</a>
+subtitle: ""
+links:
+- icon: file-richtext
+  name: Paper
+  url: https://doi.org/10.1016/j.jasrep.2017.08.016
+---
+## Abstract
+This paper details the characterisation of 34 obsidian artefacts from Sha'ar Hagolan in the Jordan Valley, a major Pottery Neolithic Site of the southern Levantine Yarmukian culture (6400–6000 cal BCE). Employing an integrated approach that melds sourcing data from EDXRF spectroscopy with the artefacts’ techno-typological characteristics, we contrast Sha'ar Hagolan's lithic traditions with those of the Pre-Pottery Neolithic southern Levantine sites in the context of alleged socio-economic disruptions in the Pottery Neolithic. The results indicate that community's obsidian consumption habits largely followed deep-time regional traditions (with only the slightest decrease in relative quantities), i.e. the use of Cappadocian raw materials (Göllü Dağ and Nenezi Dağ) to make pressure blades, and occasional projectiles, with only a small proportion of eastern Anatolian products (Nemrut Dağ). While the Sha'ar Hagolan material seems to embody continuity of southern Levantine cultural tradition, other broadly contemporary assemblages attest to the initiation of new procurement networks, and novel modes of consumption that reflect the increasing degree of cultural heterogeneity of the period. Finally, the distribution of obsidian across the site does not support the idea that social distinction at Sha'ar Hagolan was part-based on the preferential access to these exotic resources.
+
+---
+
+![Relative proportion of obsidian within chipped stone assemblages of the southern Levant from the Neolithic to Early Chalcolithic](shaar-hagolan-nets.png)
+
+---
+
+::: {.callout-note collapse=true icon=false}
+## {{< fa code >}} BibTeX
+
+```BibTeX
+@article{carter2017,
+title = {Investigating Pottery Neolithic Socio-Economic “Regression” in the Southern Levant: Characterising Obsidian Consumption at Sha'ar Hagolan (N. Israel)},
+shorttitle = {Investigating Pottery Neolithic Socio-Economic “Regression” in the Southern Levant},
+author = {Carter, Tristan and Batist, Zachary and Campeau, Kathryn and Garfinkel, Yosef and Streit, Katharina},
+date = {2017-10},
+journaltitle = {Journal of Archaeological Science: Reports},
+volume = {15},
+pages = {305--317},
+issn = {2352-409X},
+url = {http://www.sciencedirect.com/science/article/pii/S2352409X17303528},
+abstract = {This paper details the characterisation of 34 obsidian artefacts from Sha'ar Hagolan in the Jordan Valley, a major Pottery Neolithic Site of the southern Levantine Yarmukian culture (6400–6000 cal BCE). Employing an integrated approach that melds sourcing data from EDXRF spectroscopy with the artefacts’ techno-typological characteristics, we contrast Sha'ar Hagolan's lithic traditions with those of the Pre-Pottery Neolithic southern Levantine sites in the context of alleged socio-economic disruptions in the Pottery Neolithic. The results indicate that community's obsidian consumption habits largely followed deep-time regional traditions (with only the slightest decrease in relative quantities), i.e. the use of Cappadocian raw materials (Göllü Dağ and Nenezi Dağ) to make pressure blades, and occasional projectiles, with only a small proportion of eastern Anatolian products (Nemrut Dağ). While the Sha'ar Hagolan material seems to embody continuity of southern Levantine cultural tradition, other broadly contemporary assemblages attest to the initiation of new procurement networks, and novel modes of consumption that reflect the increasing degree of cultural heterogeneity of the period. Finally, the distribution of obsidian across the site does not support the idea that social distinction at Sha'ar Hagolan was part-based on the preferential access to these exotic resources.},
+}
+```
+:::
