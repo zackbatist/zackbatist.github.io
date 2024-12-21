@@ -15,7 +15,7 @@ subtitle: |
   Journal of Open Archaeology Data --- 
   <a class="link me-1" href="https://doi.org/10.5334/joad.111" target="_blank_" rel="exterbal">10.5334/joad.111</a>
 ---
-## Abstract
+##### Abstract
 Open-archaeo (https://open-archaeo.info) is a comprehensive list of open software and resources created by and for archaeologists. It is a living collection—itself an open project—which as of writing includes 548 entries and associated metadata. Open-archaeo documents what kinds of software and resources archaeologists have produced, enabling further investigation of research software engineering and digital peer-production practices in the discipline, both under-explored aspects of archaeological research practice.
 
 ---

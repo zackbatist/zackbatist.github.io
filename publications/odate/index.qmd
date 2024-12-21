@@ -7,7 +7,7 @@ date: 2018-10-01
 # description: Guide for setting up a DIY fieldwork database.
 subtitle: |
   The Open Digital Archaeology Textbook Environment --- 
-  <a class="link me-1" href="https://o-date.github.io/draft/book/" target="_blank_" rel="external">https://o-date.github.io/draft/book/</a>
+  <a class="link me-1" href="https://o-date.github.io/draft/book/" target="_blank_" rel="external">https://o-date.github.io/draft/book</a>
 ---
 ##### Abstract
 Archaeology is an inherently collaborative process that happens in various places simulataneously. It is therefore often challening to ensure that archaeological databases, which serve to store and organize inter-related information obtained through various methods and practices, are kept up to date and syncronized across research environments. In order to deal with these challenges it might be necessary to set up a database hosted on a network, which would enable multiple users to simultaneously engage with the database while ensuring that the data remains orderly and complete.

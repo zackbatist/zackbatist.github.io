@@ -24,7 +24,7 @@ subtitle: |
   Journal of Archaeological Science: Reports --- 
   <a class="link me-1" href="https://doi.org/10.1016/j.jasrep.2017.08.016" target="_blank_" rel="external">10.1016/j.jasrep.2017.08.016</a>
 ---
-## Abstract
+##### Abstract
 This paper details the characterisation of 34 obsidian artefacts from Sha'ar Hagolan in the Jordan Valley, a major Pottery Neolithic Site of the southern Levantine Yarmukian culture (6400–6000 cal BCE). Employing an integrated approach that melds sourcing data from EDXRF spectroscopy with the artefacts’ techno-typological characteristics, we contrast Sha'ar Hagolan's lithic traditions with those of the Pre-Pottery Neolithic southern Levantine sites in the context of alleged socio-economic disruptions in the Pottery Neolithic. The results indicate that community's obsidian consumption habits largely followed deep-time regional traditions (with only the slightest decrease in relative quantities), i.e. the use of Cappadocian raw materials (Göllü Dağ and Nenezi Dağ) to make pressure blades, and occasional projectiles, with only a small proportion of eastern Anatolian products (Nemrut Dağ). While the Sha'ar Hagolan material seems to embody continuity of southern Levantine cultural tradition, other broadly contemporary assemblages attest to the initiation of new procurement networks, and novel modes of consumption that reflect the increasing degree of cultural heterogeneity of the period. Finally, the distribution of obsidian across the site does not support the idea that social distinction at Sha'ar Hagolan was part-based on the preferential access to these exotic resources.
 
 ---
