@@ -19,6 +19,21 @@
     ]
   },
   {
+    "listing": "/notes.html",
+    "items": [
+      "/notes/continuum-of-practice/index.html",
+      "/notes/limits-of-ant/index.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/citf-postdoc/index.html",
+      "/projects/open-archaeo/index.html",
+      "/projects/dobsiss/index.html"
+    ]
+  },
+  {
     "listing": "/publications.html",
     "items": [
       "/publications/does-not-compute/index.html",
@@ -33,20 +48,6 @@
       "/publications/ma-thesis/index.html",
       "/publications/sardinian-maritime-interaction/index.html",
       "/publications/onco/index.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/citf-postdoc/index.html",
-      "/projects/open-archaeo/index.html",
-      "/projects/dobsiss/index.html"
-    ]
-  },
-  {
-    "listing": "/notes.html",
-    "items": [
-      "/notes/ant-limits/index.html"
     ]
   }
 ]

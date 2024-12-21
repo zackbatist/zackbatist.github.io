@@ -25,7 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -39,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-22381ab97ffb8a420d3841344730e94d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9583c2d66753f238abd66955c1aec078.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -103,7 +102,11 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<link rel="stylesheet" href="assets/listing-default.css">
+<style>
+.listing-title {
+    width: 1000px;
+}
+</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -137,7 +140,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -159,12 +162,16 @@ window.Quarto = {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.pdf" target="_blank"> 
-<span class="menu-text">CV</span></a>
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./posts.html"> 
 <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.pdf" target="_blank"> 
+<span class="menu-text">CV</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -173,14 +180,64 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./publications.html">Publications</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./assets/picture.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publications.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Publications</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blog</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -189,12 +246,12 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    <p><br>A list of creative works that I created and contributed to</p>
+    <p>A list of creative works that I created and contributed to</p>
   </div>
 </div>
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -212,13 +269,13 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-categories="ZmlndXJhdGlvbiUyQ2FyY2hhZW9sb2dpY2FsJTIwcHJhY3RpY2UlMkNkaWdpdGFsJTIwd29ya2Zsb3dzJTJDY3JhZnQlMkNESVklMjBhcmNoYWVvbG9neQ==" data-listing-date-sort="1735621200000" data-listing-file-modified-sort="1734729496114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<div class="quarto-post image-left" data-index="0" data-categories="ZmlndXJhdGlvbiUyQ2FyY2hhZW9sb2dpY2FsJTIwcHJhY3RpY2UlMkNkaWdpdGFsJTIwd29ya2Zsb3dzJTJDY3JhZnQlMkNESVklMjBhcmNoYWVvbG9neQ==" data-listing-date-sort="1735621200000" data-listing-file-modified-sort="1734809237735" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/does-not-compute/index.html" class="no-external">Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/does-not-compute/index.html" class="no-external">A reflection on the challenges I experienced integrating and reusing data during my Masters thesis</a>
+<a href="./publications/does-not-compute/index.html" class="no-external">Archeologia e Calcolatori — </a><a class="link me-1" href="https://doi.org/10.19282/ac.35.2.2024.06" target="_blank_" rel="external">10.19282/ac.35.2.2024.06</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('ZmlndXJhdGlvbg=='); return false;">
@@ -241,7 +298,7 @@ DIY archaeology
 <div class="metadata">
 <a href="./publications/does-not-compute/index.html" class="no-external">
 <div class="listing-date">
-2024
+2024-12-31
 </div>
 <div class="listing-author">
 Zachary Batist
@@ -249,13 +306,13 @@ Zachary Batist
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="1" data-categories="YXJjaGFlb2xvZ2ljYWwlMjBkYXRhJTJDZGF0YS1zaGFyaW5nJTJDaW5mb3JtYXRpb24lMjBpbmZyYXN0cnVjdHVyZXM=" data-listing-date-sort="1727668800000" data-listing-file-modified-sort="1734729496140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
+<div class="quarto-post image-left" data-index="1" data-categories="YXJjaGFlb2xvZ2ljYWwlMjBkYXRhJTJDZGF0YS1zaGFyaW5nJTJDaW5mb3JtYXRpb24lMjBpbmZyYXN0cnVjdHVyZXM=" data-listing-date-sort="1727668800000" data-listing-file-modified-sort="1734809246457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/informal-communication/index.html" class="no-external">On the Value of Informal Communication in Archaeological Data Work</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/informal-communication/index.html" class="no-external">On the role of informal communication processes in archaeological knowledge production, and how they complement more formally structured documentary media</a>
+<a href="./publications/informal-communication/index.html" class="no-external">Open Archaeology — </a><a class="link me-1" href="https://doi.org/10.1515/opar-2024-0014" target="_blank_" rel="external">10.1515/opar-2024-0014</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('YXJjaGFlb2xvZ2ljYWwlMjBkYXRh'); return false;">
@@ -272,7 +329,7 @@ information infrastructures
 <div class="metadata">
 <a href="./publications/informal-communication/index.html" class="no-external">
 <div class="listing-date">
-2024
+2024-09-30
 </div>
 <div class="listing-author">
 Zachary Batist
@@ -280,13 +337,13 @@ Zachary Batist
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="2" data-categories="b3BlbiUyMGFyY2hhZW9sb2d5JTJDb3BlbiUyMHNvdXJjZSUyQ29wZW4lMjBzY2llbmNlJTJDYXJjaGFlb2xvZ2ljYWwlMjBwcmFjdGljZQ==" data-listing-date-sort="1721275200000" data-listing-file-modified-sort="1734729496152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
+<div class="quarto-post image-left" data-index="2" data-categories="b3BlbiUyMGFyY2hhZW9sb2d5JTJDb3BlbiUyMHNvdXJjZSUyQ29wZW4lMjBzY2llbmNlJTJDYXJjaGFlb2xvZ2ljYWwlMjBwcmFjdGljZQ==" data-listing-date-sort="1721275200000" data-listing-file-modified-sort="1734809622075" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/open-archaeology-open-source/index.html" class="no-external">Open Archaeology, Open Source? Collaborative practices in an emerging community of archaeological software engineers</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/open-archaeology-open-source/index.html" class="no-external">Applied exploratory data analysis and network analysis to discern trends regarding collaborative experiences involved in open source archaeological software development</a>
+<a href="./publications/open-archaeology-open-source/index.html" class="no-external">Internet Archaeology — </a><a class="link me-1" href="https://doi.org/10.11141/ia.67.13" target="_blank_" rel="external">10.11141/ia.67.13</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('b3BlbiUyMGFyY2hhZW9sb2d5'); return false;">
@@ -306,7 +363,7 @@ archaeological practice
 <div class="metadata">
 <a href="./publications/open-archaeology-open-source/index.html" class="no-external">
 <div class="listing-date">
-2024
+2024-07-18
 </div>
 <div class="listing-author">
 Zachary Batist, Joe Roe
@@ -314,13 +371,13 @@ Zachary Batist, Joe Roe
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="3" data-categories="YXJjaGFlb2xvZ2ljYWwlMjBkYXRhJTJDZGF0YSUyMG1hbmFnZW1lbnQlMkNkYXRhLXNoYXJpbmclMkNpbmZvcm1hdGlvbiUyMGNvbW1vbnM=" data-listing-date-sort="1698811200000" data-listing-file-modified-sort="1734729496113" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="444">
+<div class="quarto-post image-left" data-index="3" data-categories="YXJjaGFlb2xvZ2ljYWwlMjBkYXRhJTJDZGF0YSUyMG1hbmFnZW1lbnQlMkNkYXRhLXNoYXJpbmclMkNpbmZvcm1hdGlvbiUyMGNvbW1vbnM=" data-listing-date-sort="1698811200000" data-listing-file-modified-sort="1734809234397" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="444">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/dissertation/index.html" class="no-external">Archaeological data work as continuous and collaborative practice</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/dissertation/index.html" class="no-external">I observed and interviewed archaeologists while they worked, focusing on how they collaborate to produce information commons within relatively small, bounded communities</a>
+<a href="./publications/dissertation/index.html" class="no-external">Dissertation — </a><a class="link me-1" href="http://hdl.handle.net/1807/130306" target="_blank_" rel="external">handle.net/1807/130306</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('YXJjaGFlb2xvZ2ljYWwlMjBkYXRh'); return false;">
@@ -340,7 +397,7 @@ information commons
 <div class="metadata">
 <a href="./publications/dissertation/index.html" class="no-external">
 <div class="listing-date">
-2023
+2023-11-01
 </div>
 <div class="listing-author">
 Zachary Batist
@@ -348,13 +405,13 @@ Zachary Batist
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="4" data-categories="QXJjaGFlb2xvZ2ljYWwlMjBwcmFjdGljZSUyQ29wZW4lMjBzb3VyY2UlMjBzb2Z0d2FyZSUyQ3dlYi1iYXNlZCUyMHJlc291cmNlcw==" data-listing-date-sort="1694404800000" data-listing-file-modified-sort="1734729496151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
+<div class="quarto-post image-left" data-index="4" data-categories="QXJjaGFlb2xvZ2ljYWwlMjBwcmFjdGljZSUyQ29wZW4lMjBzb3VyY2UlMjBzb2Z0d2FyZSUyQ3dlYi1iYXNlZCUyMHJlc291cmNlcw==" data-listing-date-sort="1694404800000" data-listing-file-modified-sort="1734809564874" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/open-archaeo-joad/index.html" class="no-external">Open-archaeo: A Resource for Documenting Archaeological Software Development Practices</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/open-archaeo-joad/index.html" class="no-external">Outlines the data collection methods and conceptual model for </a><a href="https://open-archaeo.info" target="_blank_" rel="noopener">open-archaeo</a>, and highlights its value as a public resource and as a dataset for examining the emerging community of practice surrounding open source software development in research contexts
+<a href="./publications/open-archaeo-joad/index.html" class="no-external">Journal of Open Archaeology Data — </a><a class="link me-1" href="https://doi.org/10.5334/joad.111" target="_blank_" rel="exterbal">10.5334/joad.111</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('QXJjaGFlb2xvZ2ljYWwlMjBwcmFjdGljZQ=='); return false;">
@@ -371,7 +428,7 @@ web-based resources
 <div class="metadata">
 <a href="./publications/open-archaeo-joad/index.html" class="no-external">
 <div class="listing-date">
-2023
+2023-09-11
 </div>
 <div class="listing-author">
 Zachary Batist, Joe Roe
@@ -379,13 +436,13 @@ Zachary Batist, Joe Roe
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="5" data-categories="ZmlndXJhdGlvbiUyQ2FyY2hhZW9sb2dpY2FsJTIwcHJhY3RpY2UlMkNkaWdpdGFsJTIwd29ya2Zsb3dzJTJDY3JhZnQlMkNESVklMjBhcmNoYWVvbG9neQ==" data-listing-date-sort="1640926800000" data-listing-file-modified-sort="1734729496114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="565">
+<div class="quarto-post image-left" data-index="5" data-categories="ZmlndXJhdGlvbiUyQ2FyY2hhZW9sb2dpY2FsJTIwcHJhY3RpY2UlMkNkaWdpdGFsJTIwd29ya2Zsb3dzJTJDY3JhZnQlMkNESVklMjBhcmNoYWVvbG9neQ==" data-listing-date-sort="1640926800000" data-listing-file-modified-sort="1734809489744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="565">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/figurations-of-digital-practice/index.html" class="no-external">Figurations of Digital Archaeological Practice in Two Mediterranean Fieldwork Projects</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/figurations-of-digital-practice/index.html" class="no-external">This article discusses the collective imaginings regarding the present and future of digital archaeological practice held by researchers working in two archaeological projects in the Eastern Mediterranean, who have normalized the use of digital tools and the adoption of digital processes in their studies</a>
+<a href="./publications/figurations-of-digital-practice/index.html" class="no-external">Open Archaeology — </a><a class="link me-1" href="https://doi.org/10.1515/opar-2020-0217" target="_blank_" rel="external">10.1515/opar-2020-0217</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('ZmlndXJhdGlvbg=='); return false;">
@@ -408,7 +465,7 @@ DIY archaeology
 <div class="metadata">
 <a href="./publications/figurations-of-digital-practice/index.html" class="no-external">
 <div class="listing-date">
-2021
+2021-12-31
 </div>
 <div class="listing-author">
 Zachary Batist, Val Masters, Tiffany C. Torma, Michael Carter, Neal Ferris, Isto Huvila, Seamus Ross, Costis Dallas
@@ -416,13 +473,13 @@ Zachary Batist, Val Masters, Tiffany C. Torma, Michael Carter, Neal Ferris, Isto
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="6" data-categories="bGl0aGljJTIwYW5hbHlzaXMlMkNkYXRhYmFzZSUyQ1IlMkNSJTIwU2hpbnklMkNxdWFycnklMjBhcmNoYWVvbG9neQ==" data-listing-date-sort="1627358400000" data-listing-file-modified-sort="1734729496153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="377">
+<div class="quarto-post image-left" data-index="6" data-categories="bGl0aGljJTIwYW5hbHlzaXMlMkNkYXRhYmFzZSUyQ1IlMkNSJTIwU2hpbnklMkNxdWFycnklMjBhcmNoYWVvbG9neQ==" data-listing-date-sort="1627358400000" data-listing-file-modified-sort="1734809660086" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="377">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/quari/index.html" class="no-external">Matching Pragmatic Lithic Analysis and Proper Data Architecture: The QuARI R Shiny Database Interface</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/quari/index.html" class="no-external"></a>
+<a href="./publications/quari/index.html" class="no-external">Advances in Archaeological Practice — </a><a class="link me-1" href="https://doi.org/10.1017/aap.2021.11" target="_blank_" rel="external">10.1017/aap.2021.11</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bGl0aGljJTIwYW5hbHlzaXM='); return false;">
@@ -445,7 +502,7 @@ quarry archaeology
 <div class="metadata">
 <a href="./publications/quari/index.html" class="no-external">
 <div class="listing-date">
-2021
+2021-07-27
 </div>
 <div class="listing-author">
 Daniel Contreras, Zachary Batist, Ciara Zogheib, Tristan Carter
@@ -453,19 +510,19 @@ Daniel Contreras, Zachary Batist, Ciara Zogheib, Tristan Carter
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="7" data-listing-date-sort="1538366400000" data-listing-file-modified-sort="1734729496149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="403">
+<div class="quarto-post image-left" data-index="7" data-listing-date-sort="1538366400000" data-listing-file-modified-sort="1734809765931" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="403">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/odate/index.html" class="no-external">Using Raspberry Pi in the Field</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/odate/index.html" class="no-external">Guide for setting up a DIY fieldwork database</a>
+<a href="./publications/odate/index.html" class="no-external">The Open Digital Archaeology Textbook Environment — </a><a class="link me-1" href="https://o-date.github.io/draft/book/" target="_blank_" rel="external">https://o-date.github.io/draft/book/</a> 
 </div>
 </div>
 <div class="metadata">
 <a href="./publications/odate/index.html" class="no-external">
 <div class="listing-date">
-2018
+2018-10-01
 </div>
 <div class="listing-author">
 Zachary Batist
@@ -473,13 +530,13 @@ Zachary Batist
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="8" data-categories="b2JzaWRpYW4lMkNwb3R0ZXJ5JTIwbmVvbGl0aGljJTJDU3NvdXRoZXJuJTIwbGV2YW50JTJDeWFybXVraWFuJTJDc29jaW8tZWNvbm9taWMlMjByZWdyZXNzaW9uJTJDc29jaWFsJTIwbmV0d29yayUyMGFuYWx5c2VzJTJDRyVDMyVCNmxsdSVDQyU4OCUyMERhJUM0JTlGJTJDTmVuZXppJTIwRGElQzQlOUYlMkNOZW1ydXQlMjBEYSVDNCU5Rg==" data-listing-date-sort="1504238400000" data-listing-file-modified-sort="1734729496156" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="473">
+<div class="quarto-post image-left" data-index="8" data-categories="b2JzaWRpYW4lMkNwb3R0ZXJ5JTIwbmVvbGl0aGljJTJDU3NvdXRoZXJuJTIwbGV2YW50JTJDeWFybXVraWFuJTJDc29jaW8tZWNvbm9taWMlMjByZWdyZXNzaW9uJTJDc29jaWFsJTIwbmV0d29yayUyMGFuYWx5c2VzJTJDRyVDMyVCNmxsdSVDQyU4OCUyMERhJUM0JTlGJTJDTmVuZXppJTIwRGElQzQlOUYlMkNOZW1ydXQlMjBEYSVDNCU5Rg==" data-listing-date-sort="1504238400000" data-listing-file-modified-sort="1734809741574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="473">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/shaar-hagolan/index.html" class="no-external">Investigating Pottery Neolithic Socio-Economic “Regression” in the Southern Levant: Characterising Obsidian Consumption at Sha’ar Hagolan (N. Israel).</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/shaar-hagolan/index.html" class="no-external"></a>
+<a href="./publications/shaar-hagolan/index.html" class="no-external">Journal of Archaeological Science: Reports — </a><a class="link me-1" href="https://doi.org/10.1016/j.jasrep.2017.08.016" target="_blank_" rel="external">10.1016/j.jasrep.2017.08.016</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('b2JzaWRpYW4='); return false;">
@@ -514,7 +571,7 @@ Nemrut Dağ
 <div class="metadata">
 <a href="./publications/shaar-hagolan/index.html" class="no-external">
 <div class="listing-date">
-2017
+2017-09-01
 </div>
 <div class="listing-author">
 Tristan Carter, Zachary Batist, Kathryn Campeau, Yosef Garfinkel, Katharina Streit
@@ -522,13 +579,13 @@ Tristan Carter, Zachary Batist, Kathryn Campeau, Yosef Garfinkel, Katharina Stre
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="9" data-categories="bmV0d29yayUyMGFuYWx5c2lzJTJDb2JzaWRpYW4lMjBjaXJjdWxhdGlvbg==" data-listing-date-sort="1420088400000" data-listing-file-modified-sort="1734729496140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="421">
+<div class="quarto-post image-left" data-index="9" data-categories="bmV0d29yayUyMGFuYWx5c2lzJTJDb2JzaWRpYW4lMjBjaXJjdWxhdGlvbg==" data-listing-date-sort="1420088400000" data-listing-file-modified-sort="1734809486007" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="421">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/ma-thesis/index.html" class="no-external">Obsidian Circulation Networks in Southwest Asia and Anatolia (12,000 - 5700 B.P.): A Comparative Approach</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/ma-thesis/index.html" class="no-external"></a>
+<a href="./publications/ma-thesis/index.html" class="no-external">Masters Thesis — </a><a class="link me-1" href="http://hdl.handle.net/11375/16528" target="_blank_" rel="external">handle.net/11375/16528</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bmV0d29yayUyMGFuYWx5c2lz'); return false;">
@@ -542,7 +599,7 @@ obsidian circulation
 <div class="metadata">
 <a href="./publications/ma-thesis/index.html" class="no-external">
 <div class="listing-date">
-2015
+2015-01-01
 </div>
 <div class="listing-author">
 Zachary Batist
@@ -550,13 +607,13 @@ Zachary Batist
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="10" data-categories="ZWFybHklMjBtYXJpdGltZSUyMG5hdmlnYXRpb24lMkNOZW9saXRoaWMlMkNvYnNpZGlhbiUyQ3NvY2lhbCUyMG5ldHdvcmslMjBhbmFseXNpcyUyMChTTkEpJTJDV2VzdCUyME1lZGl0ZXJyYW5lYW4=" data-listing-date-sort="1415250000000" data-listing-file-modified-sort="1734729496155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="312">
+<div class="quarto-post image-left" data-index="10" data-categories="ZWFybHklMjBtYXJpdGltZSUyMG5hdmlnYXRpb24lMkNOZW9saXRoaWMlMkNvYnNpZGlhbiUyQ3NvY2lhbCUyMG5ldHdvcmslMjBhbmFseXNpcyUyMChTTkEpJTJDV2VzdCUyME1lZGl0ZXJyYW5lYW4=" data-listing-date-sort="1415250000000" data-listing-file-modified-sort="1734809702031" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="312">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/sardinian-maritime-interaction/index.html" class="no-external">Sardinian Obsidian Circulation and Early Maritime Navigation in the Neolithic as Shown Through Social Network Analysis</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/sardinian-maritime-interaction/index.html" class="no-external"></a>
+<a href="./publications/sardinian-maritime-interaction/index.html" class="no-external">Journal of Island and Coastal Archaeology — </a><a class="link me-1" href="https://doi.org/10.1080/15564894.2014.881937" target="_blank_" rel="external">10.1080/15564894.2014.881937</a> 
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('ZWFybHklMjBtYXJpdGltZSUyMG5hdmlnYXRpb24='); return false;">
@@ -579,7 +636,7 @@ West Mediterranean
 <div class="metadata">
 <a href="./publications/sardinian-maritime-interaction/index.html" class="no-external">
 <div class="listing-date">
-2014
+2014-11-06
 </div>
 <div class="listing-author">
 Kyle P. Freund, Zachary Batist
@@ -587,19 +644,19 @@ Kyle P. Freund, Zachary Batist
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="11" data-listing-date-sort="1248753600000" data-listing-file-modified-sort="1734729496151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="582">
+<div class="quarto-post image-left" data-index="11" data-listing-date-sort="1248753600000" data-listing-file-modified-sort="1734809476637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="582">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./publications/onco/index.html" class="no-external">Cul3 overexpression depletes Nrf2 in breast cancer and is associated with sensitivity to carcinogens, to oxidative stress, and to chemotherapy</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./publications/onco/index.html" class="no-external"></a>
+<a href="./publications/onco/index.html" class="no-external">Molecular Cancer Therapeutics — </a><a class="link me-1" href="https://doi.org/10.1158/1535-7163.MCT-08-1186" target="_blank_" rel="external">10.1158/1535-7163.MCT-08-1186</a> 
 </div>
 </div>
 <div class="metadata">
 <a href="./publications/onco/index.html" class="no-external">
 <div class="listing-date">
-2009
+2009-07-28
 </div>
 <div class="listing-author">
 Martin Loignon, Weimin Miao, Lianggao Hu, Andrew Bier, Tarek A. Bismar, P. James Scrivens, Koren Mann, Mark Basik, Amélie Bouchard, Pierre O. Fiset, Zachary Batist, Gerald Batist
@@ -1033,14 +1090,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Made with <a href="https://quarto.org">Quarto</a></p>
-</div>   
+      &nbsp;
+    </div>   
     <div class="nav-footer-center">
 <p><a class="link me-1" href="https://github.com/zackbatist" title="github" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-label="github"></i></a> <a class="link me-1" href="https://orcid.org/0000-0003-1072-5198" title="orcid" target="_blank" rel="noopener"><i class="ai  ai-orcid"></i></a> <a class="link me-1" href="https://archaeo.social/@zackbatist" title="Mastodon" target="_blank" rel="noopener"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></a> <a class="link me-1" href="https://zackbatist.info/blog/index.xml" title="rss" target="_blank" rel="noopener"><i class="fa-solid fa-rss-square" aria-label="rss-square"></i></a></p>
 </div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+<p>This page built with ❤️ and <a href="https://quarto.org/" target="_blank" rel="noopener">Quarto</a> | <a class="link me-1" href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a></p>
+</div>
   </div>
 </footer>
 

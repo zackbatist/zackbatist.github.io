@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Some initiatives that I led or workon on">
+<meta name="description" content="Some initiatives that I led or worked on">
 
 <title>Projects – Zack Batist</title>
 <style>
@@ -25,7 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -39,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-22381ab97ffb8a420d3841344730e94d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9583c2d66753f238abd66955c1aec078.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -84,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-subtitle','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -103,7 +102,11 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<link rel="stylesheet" href="assets/listing-default.css">
+<style>
+.listing-title {
+    width: 1000px;
+}
+</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -137,7 +140,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -155,16 +158,20 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link active" href="./publications.html" aria-current="page"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.pdf" target="_blank"> 
-<span class="menu-text">CV</span></a>
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./posts.html"> 
 <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.pdf" target="_blank"> 
+<span class="menu-text">CV</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -173,14 +180,64 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./projects.html">Projects</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./assets/picture.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publications</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blog</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -189,12 +246,12 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    <p><br>Some initiatives that I led or workon on</p>
+    <p>Some initiatives that I led or worked on</p>
   </div>
 </div>
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -212,13 +269,16 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZGF0YS1zaGFyaW5n" data-listing-file-modified-sort="1734729496112" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
+<div class="g-col-1" data-index="0" data-categories="ZGF0YS1zaGFyaW5n" data-listing-file-modified-sort="1734810790278" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
 <a href="./projects/citf-postdoc/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
+</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects/citf-postdoc/index.html" class="quarto-grid-link">
+</a><div class="card-body post-contents"><a href="./projects/citf-postdoc/index.html" class="quarto-grid-link">
 <h5 class="no-anchor card-title listing-title">
 CITF Postdoc
 </h5>
+</a><div class="card-subtitle listing-subtitle"><a href="./projects/citf-postdoc/index.html" class="quarto-grid-link">
+</a><a class="link me-1" href="https://zackbatist.info/CITF-Postdoc" target="_blank_">zackbatist.info/CITF-Postdoc</a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('ZGF0YS1zaGFyaW5n'); return false;">
 data-sharing
@@ -226,15 +286,18 @@ data-sharing
 </div>
 </div>
 </div>
-</a>
+
 </div>
-<div class="g-col-1" data-index="1" data-categories="b3BlbiUyMHNvdXJjZSUyMHNvZnR3YXJlJTJDcmVzZWFyY2glMjBzb2Z0d2FyZSUyMGVuZ2luZWVyaW5n" data-listing-file-modified-sort="1734729496113" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<div class="g-col-1" data-index="1" data-categories="b3BlbiUyMHNvdXJjZSUyMHNvZnR3YXJlJTJDcmVzZWFyY2glMjBzb2Z0d2FyZSUyMGVuZ2luZWVyaW5n" data-listing-file-modified-sort="1734810778020" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
 <a href="./projects/open-archaeo/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
+</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects/open-archaeo/index.html" class="quarto-grid-link">
+</a><div class="card-body post-contents"><a href="./projects/open-archaeo/index.html" class="quarto-grid-link">
 <h5 class="no-anchor card-title listing-title">
 open-archaeo
 </h5>
+</a><div class="card-subtitle listing-subtitle"><a href="./projects/open-archaeo/index.html" class="quarto-grid-link">
+</a><p><a href="./projects/open-archaeo/index.html" class="quarto-grid-link"></a><a class="link me-1" href="https://open-archaeo.info/" target="_blank_">open-archaeo.info</a><br> <a class="link me-1" href="https://github.com/zackbatist/open-archaeo" target="_blank_">github.com/zackbatist/open-archaeo</a></p>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('b3BlbiUyMHNvdXJjZSUyMHNvZnR3YXJl'); return false;">
 open source software
@@ -245,15 +308,18 @@ research software engineering
 </div>
 </div>
 </div>
-</a>
+
 </div>
-<div class="g-col-1" data-index="2" data-categories="b2JzaWRpYW4lMjBzb3VyY2luZw==" data-listing-file-modified-sort="1734729496113" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<div class="g-col-1" data-index="2" data-categories="b2JzaWRpYW4lMjBzb3VyY2luZw==" data-listing-file-modified-sort="1734810783971" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <a href="./projects/dobsiss/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
+</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects/dobsiss/index.html" class="quarto-grid-link">
+</a><div class="card-body post-contents"><a href="./projects/dobsiss/index.html" class="quarto-grid-link">
 <h5 class="no-anchor card-title listing-title">
 Database of Obsidian Sourcing Studies
 </h5>
+</a><div class="card-subtitle listing-subtitle"><a href="./projects/dobsiss/index.html" class="quarto-grid-link">
+</a><p><a href="./projects/dobsiss/index.html" class="quarto-grid-link"></a><a class="link me-1" href="https://zackbatist.info/DObsiSS/" target="_blank_">zackbatist.info/DObsiSS</a><br> <a class="link me-1" href="https://github.com/zackbatist/DObsiSS" target="_blank_">github.com/zackbatist/DObsiSS</a></p>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('b2JzaWRpYW4lMjBzb3VyY2luZw=='); return false;">
 obsidian sourcing
@@ -261,7 +327,7 @@ obsidian sourcing
 </div>
 </div>
 </div>
-</a>
+
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -689,14 +755,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Made with <a href="https://quarto.org">Quarto</a></p>
-</div>   
+      &nbsp;
+    </div>   
     <div class="nav-footer-center">
 <p><a class="link me-1" href="https://github.com/zackbatist" title="github" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-label="github"></i></a> <a class="link me-1" href="https://orcid.org/0000-0003-1072-5198" title="orcid" target="_blank" rel="noopener"><i class="ai  ai-orcid"></i></a> <a class="link me-1" href="https://archaeo.social/@zackbatist" title="Mastodon" target="_blank" rel="noopener"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></a> <a class="link me-1" href="https://zackbatist.info/blog/index.xml" title="rss" target="_blank" rel="noopener"><i class="fa-solid fa-rss-square" aria-label="rss-square"></i></a></p>
 </div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+<p>This page built with ❤️ and <a href="https://quarto.org/" target="_blank" rel="noopener">Quarto</a> | <a class="link me-1" href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a></p>
+</div>
   </div>
 </footer>
 
