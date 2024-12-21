@@ -10,14 +10,10 @@ categories:
   - Archaeological practice
   - open source software
   - web-based resources
-description: |
-  Journal of Open Archaeology Data</br>
-  <a href="https://doi.org/10.5334/joad.111" target="_blank_" rel="noopener">10.5334/joad.111</a>
-subtitle: Outlines the data collection methods and conceptual model for <a href="https://open-archaeo.info" target="_blank_" rel="noopener">open-archaeo</a>, and highlights its value as a public resource and as a dataset for examining the emerging community of practice surrounding open source software development in research contexts
-links:
-- icon: file-richtext
-  name: Paper
-  url: https://doi.org/10.5334/joad.111
+# description: Outlines the data collection methods and conceptual model for <a href="https://open-archaeo.info" target="_blank_" rel="noopener">open-archaeo</a>, and highlights its value as a public resource and as a dataset for examining the emerging community of practice surrounding open source software development in research contexts.
+subtitle: |
+  Journal of Open Archaeology Data --- 
+  <a class="link me-1" href="https://doi.org/10.5334/joad.111" target="_blank_" rel="exterbal">10.5334/joad.111</a>
 ---
 ## Abstract
 Open-archaeo (https://open-archaeo.info) is a comprehensive list of open software and resources created by and for archaeologists. It is a living collection—itself an open project—which as of writing includes 548 entries and associated metadata. Open-archaeo documents what kinds of software and resources archaeologists have produced, enabling further investigation of research software engineering and digital peer-production practices in the discipline, both under-explored aspects of archaeological research practice.

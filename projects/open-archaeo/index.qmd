@@ -1,21 +1,13 @@
 ---
 title: open-archaeo
 description: "2018 -- Present"
-subtitle: A list of open source archaeological software and resources
+subtitle: |
+  <a class="link me-1" href="https://open-archaeo.info/" target="_blank_">open-archaeo.info</a></br>
+  <a class="link me-1" href="https://github.com/zackbatist/open-archaeo" target="_blank_">github.com/zackbatist/open-archaeo</a>
 categories: 
   - open source software
   - research software engineering
 rank: 2
-links:
-- icon: globe
-  name: Website
-  url: https://open-archaeo.info/
-- icon: github
-  name: GitHub
-  url: https://github.com/zackbatist/open-archaeo
-- name: "{{< ai archive >}} Internet Archive"
-  url: https://archive.org/details/open-archaeo
-
 ---
-## Description
-open-archaeo is...
+
+A list of open source archaeological software and resources

@@ -1,5 +1,5 @@
 ---
-title: Limits of Actor-Network Theory
+title: On the limits of actor-network theory
 ---
 Previous work examining the apparatus of science relies heavily on Actor-Network Theory (ANT) or similar approaches that highlight the agency and impacts of tools on research practice.
 These draw attention to how non-human objects not only frame how human beings inhabit the world, but "push back" upon human actions with significant effects [@latour1992].

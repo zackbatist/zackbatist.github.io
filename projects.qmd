@@ -1,24 +1,25 @@
 ---
 title: Projects
 description: |
-  </br>Some initiatives that I led or workon on
-title-block-banner: false
+  Some initiatives that I led or worked on
 date-format: "YYYY"
 listing: 
   contents: projects
-  sort: "rank desc"
   type: grid
   categories: false
-  sort-ui: false
-  filter-ui: false
-  fields: [date, title, categories]
   image-align: left
-repo-actions: false
+  sort: "rank desc"
+  fields: [date, title, subtitle, categories]
 format: 
   html: 
-    page-layout: full
-header-includes: >
-  <link rel="stylesheet" href="assets/listing-default.css">
-resources:
-  - assets/listing-default.css
+    grid: 
+      body-width: 1000px
+include-in-header: 
+  - text: |
+      <style>
+      .listing-title {
+          width: 1000px;
+      }
+      </style>
+      
 ---

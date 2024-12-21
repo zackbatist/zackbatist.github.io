@@ -58,3 +58,5 @@ Thumbs.db
 .hugo_build.lock
 /.quarto/
 /_site/
+
+/.luarc.json

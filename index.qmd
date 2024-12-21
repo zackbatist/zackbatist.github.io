@@ -1,13 +1,10 @@
 ---
 title: Zack Batist
 pagetitle: Zack Batist
-subtitle: ""
-image: assets/picture.png
+# subtitle: "Postdoctoral Researcher at McGill University"
 
 about:
   template: solana
-  image-width: 26em
-  id: hero-heading
   links:
     - icon: github
       href: https://github.com/zackbatist
@@ -26,7 +23,16 @@ about:
       href: cv.pdf
       target: _blank
 
-page-layout: full
+include-in-header: 
+  - text: |
+      <style>
+      div.about-entity {
+        margin-top: -25px;
+      }
+      div.about-links {
+        margin-top: -5px;
+      }
+      </style>
 
 ---
 

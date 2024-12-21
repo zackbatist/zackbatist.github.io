@@ -10,20 +10,10 @@ categories:
   - digital workflows
   - craft
   - DIY archaeology
-description: |
-  Archeologia e Calcolatori</br>
-  <a href="https://doi.org/10.19282/ac.35.2.2024.06" target="_blank_" rel="noopener">10.19282/ac.35.2.2024.06</a>
-subtitle: A reflection on the challenges I experienced integrating and reusing data during my Masters thesis
-links:
-- icon: file-richtext
-  name: Paper
-  url: https://doi.org/10.19282/ac.35.2.2024.06
-- icon: globe
-  name: Website
-  url: https://zackbatist.info/DObsiSS/
-- icon: github
-  name: GitHub
-  GitHub: https://github.com/zackbatist/DObsiSS
+# description: A reflection on the challenges I experienced integrating and reusing data during my Masters thesis.
+subtitle: |
+  Archeologia e Calcolatori --- 
+  <a class="link me-1" href="https://doi.org/10.19282/ac.35.2.2024.06" target="_blank_" rel="external">10.19282/ac.35.2.2024.06</a>
 format:
   html:
     resources: 

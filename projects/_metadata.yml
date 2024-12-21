@@ -1,9 +1,3 @@
-title-block-banner: true
-freeze: true
+title-block-banner: false
 date-format: "YYYY"
-format: 
-  html: 
-    code-overflow: wrap
-    template-partials: 
-      - ../assets/_partials/title-block-link-buttons/title-block.html
-
+toc: false

@@ -1,25 +1,25 @@
 ---
-title: "Publications" 
+title: Publications
 description: |
-  </br>A list of creative works that I created and contributed to
-title-block-banner: false
-date-format: "YYYY"
+  A list of creative works that I created and contributed to
 listing: 
   contents: publications
-  sort: "date desc"
   type: default
   categories: false
-  sort-ui: false
-  filter-ui: false
-  fields: [title, author, categories, date]
   image-align: left
-
+  sort: "date desc"
+  fields: [title, author, categories, date]
+  date-format: iso
 format: 
   html: 
-    page-layout: full
-
-header-includes: >
-  <link rel="stylesheet" href="assets/listing-default.css">
-resources:
-  - assets/listing-default.css
+    grid: 
+      body-width: 1000px
+include-in-header: 
+  - text: |
+      <style>
+      .listing-title {
+          width: 1000px;
+      }
+      </style>
+      
 ---

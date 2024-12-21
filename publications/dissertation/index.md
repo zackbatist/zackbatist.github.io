@@ -9,14 +9,10 @@ categories:
   - data management
   - data-sharing
   - information commons
-description: |
-  Dissertation</br>
-  <a href="http://hdl.handle.net/1807/130306" target="_blank_" rel="noopener">handle.net/1807/130306</a>
-subtitle: I observed and interviewed archaeologists while they worked, focusing on how they collaborate to produce information commons within relatively small, bounded communities
-links:
-- icon: file-richtext
-  name: TSpace
-  url: http://hdl.handle.net/1807/130306
+# description: I observed and interviewed archaeologists while they worked, focusing on how they collaborate to produce information commons within relatively small, bounded communities.
+subtitle: |
+  Dissertation --- 
+  <a class="link me-1" href="http://hdl.handle.net/1807/130306" target="_blank_" rel="external">handle.net/1807/130306</a>
 ---
 ##### Abstract
 This dissertation critically examines the sociotechnical structures that archaeologists rely on to coordinate their research and manage their data. I frame data as discursive media that communicate archaeological encounters, which enable archaeologists to form productive collaboration relationships. All archaeological activities involve data work, as archaeologists simultaneously account for the decisions and circumstances that framed the information they rely on to perform their own practices, while anticipating how their information outputs will be used by others in the future. All archaeological activities are therefore loci of practical epistemic convergence, where meanings are negotiated in relation to communally-held objectives.

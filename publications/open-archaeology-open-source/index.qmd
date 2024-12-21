@@ -11,23 +11,10 @@ categories:
   - open source
   - open science
   - archaeological practice
-description: |
-  Internet Archaeology</br>
-  <a href="https://doi.org/10.11141/ia.67.13" target="_blank_" rel="noopener">10.11141/ia.67.13</a>
-subtitle: Applied exploratory data analysis and network analysis to discern trends regarding collaborative experiences involved in open source archaeological software development
-links:
-- icon: file-richtext
-  name: Paper
-  url: https://doi.org/10.11141/ia.67.13
-- icon: postage-heart
-  name: Postprint
-  url: https://zackbatist.info/openarchaeo-collaboration
-- icon: file-binary
-  name: Data
-  url: https://zenodo.org/records/12752060
-- icon: github
-  name: Research Compendium
-  url: https://github.com/zackbatist/openarchaeo-collaboration
+# description: Applied exploratory data analysis and network analysis to discern trends regarding collaborative experiences involved in open source archaeological software development.
+subtitle: |
+  Internet Archaeology --- 
+  <a class="link me-1" href="https://doi.org/10.11141/ia.67.13" target="_blank_" rel="external">10.11141/ia.67.13</a>
 
 ---
 ## Abstract

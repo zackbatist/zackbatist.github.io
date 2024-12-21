@@ -8,14 +8,10 @@ categories:
   - archaeological data
   - data-sharing
   - information infrastructures
-description: |
-  Open Archaeology</br>
-  <a href="https://doi.org/10.1515/opar-2024-0014" target="_blank_" rel="noopener">10.1515/opar-2024-0014</a>
-subtitle: On the role of informal communication processes in archaeological knowledge production, and how they complement more formally structured documentary media
-links:
-- icon: file-richtext
-  name: Paper
-  url: https://doi.org/10.1515/opar-2024-0014
+# description: On the role of informal communication processes in archaeological knowledge production, and how they complement more formally structured documentary media.
+subtitle: |
+  Open Archaeology --- 
+  <a class="link me-1" href="https://doi.org/10.1515/opar-2024-0014" target="_blank_" rel="external">10.1515/opar-2024-0014</a>
 ---
 ## Abstract
 Archaeological data simultaneously serve as formal documentary evidence that supports and legitimizes chains of analytical inference and as communicative media that bind together scholarly activities distributed across time, place, and social circumstance. This contributes to a sense of “epistemic anxiety,” whereby archaeologists require that data be objective and decisive to support computational analysis but also intuitively understand data to be subjective and situated based on their own experiences as participants in an archaeological community of practice. In this article, I present observations of and elicitations about archaeological practices relating to the constitution and transformation of data in three cases in order to articulate this tension and document how archaeologists cope with it. I found that archaeologists rely on a wide variety of situated representations of archaeological experiences – which are either not recorded at all or occupy entirely separate and unpublished data streams – to make sense of more formal records. This undervalued information is crucial for ensuring that relatively local, bounded, and private collaborative ties may be extended beyond the scope of a project and, therefore, should be given more attention as we continue to develop open data infrastructures.

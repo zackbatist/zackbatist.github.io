@@ -1,0 +1,29 @@
+---
+title: Archaeology as continuum of practice
+---
+This notion of a continuum or network of practice is characterized by recognition of the diverse array of work enacted through collective effort to contribute to information commons.
+It accomplishes this by taking a pragmatic approach to understanding the situatedness, historicity and social contingency of work [@dallas2015 440; @dallas2016a].[^4] @dallas2016a is explicit in his promotion of a landscape metaphor whose ecosystems and inhabitants negotiate their differences in a pragmatic manner rather than one that emphasizes control and resource.
+Moreover, this relates to Cole's [-@cole1996a] notion that culture is a permeable and layered substance that nurtures growth and development across uneven social landscapes.
+These views exemplify a broader trajectory that imagines knowledge work in ecological terms [cf. @star1995].
+
+In writing about specific issues regarding how scholarly content originating from various domains is professionally curated, Dallas brings attention to the ways in which such ecological metaphors might actually be applied.
+In his view, intellectual and pragmatic inquiry pertaining to the mindsets of the domains of knowledge production is necessary in order to better curate the meanings and intents behind archived material.
+Curation, for Dallas, is a continual process of interpretation and re-presentation; as objects (either physical or conceptual) are engaged with from various perspectives, they are ascribed new meanings.
+In other words, each interlocutor who engages with an object passing through their care as part of a curatorial process renews the object's meaning in ways that both reflect the object's history and shape its potential down the line.
+It is thus necessary, according to Dallas, to inquire about the ways in which domain specialists come to know an object and situate it as part of their lives in order to preserve and present the object in ways that adequately reflect its accrued meanings.
+This requires greater integration of domain specialists as part of curatorial workflows in order to better account for their outlooks as active stakeholders.
+
+This outlook is interesting because it more clearly makes use of the notion that objects are sites of negotiation.
+@dallas2015 applies these ideas to consider the ways in which the archaeological record is formulated and made meaningful in various ways throughout inherently collaborative, discursive and interdisciplinary archaeological projects.
+Indeed, his use-case is exemplary since relics, ruins and artefacts out of their original contexts serve as opportunistic lenses through which fragmentary glimpses of alternative realities might be captured.
+As @huvila2016a notes, archaeological site reports, which are typically considered to represent the conclusive findings of a project, are produced from a series of complex negotiations among stakeholder specialists, but also present lopsided accounts of the knowledge recovered from the site; the organizational structure of archaeological projects, and the inherent epistemic limitations that guide the logistics and culture of the discipline, shape the final product and influence how it will be used in later secondary research contexts.
+In this sense, archaeological projects resemble, to some degree, "wicked" problems, whose contradictions, incompleteness and social complexity render them resistant to completely satisfying resolutions [@rittel1973].
+However, further inquiry into the ways in which meanings are ascribed throughout the course of a project, as they accrue via pragmatic and situated experiences, may help to gain a better understanding of the tensions and relationships at play.
+By highlighting the complex textures of work contributed by various members of a project, those who wish to use the generated knowledge in alternative arenas of practice may gain a better feel for the ways in which it was woven, and thus use it more effectively.
+
+Paying close attention to the minute and pragmatic aspects of practice, is, according to Latour and Woolgar [-@latour1999 24], what those in the fields of 'science studies' do best.
+By studying the particularities of what scientists actually do, and the ways in which they relate to things through series of coordinated social and technological mechanisms, we may be able to understand flows of knowledge across a continuum of understanding.
+By observing how professionals communicate and connect with each other and with the phenomena that captivate their interests, we can come to better understand the epistemic culture --- the mindsets that drive curiosity and foster growth --- which shapes the ways that they understand the world [@knorrcetina1999].
+As a result, scientific research, framed as a wide variety of active and cooperative engagements among people and objects, become situated alongside other ways of knowing.
+This is particularly important in a world where Mertonian notions of scholarly tribalism between the sciences, social sciences and humanities remain pervasive, despite many years of critique demonstrating that all scholarship actually occurs along an open continuum.
+In addition to helping foster more genuine cross-disciplinary encounters, recognition of the cultural situatedness of scholarship will enable scholars to more effectively operate in public and contribute towards the potential resolution of wicked problems.
