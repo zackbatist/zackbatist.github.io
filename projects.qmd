@@ -5,21 +5,23 @@ description: |
 date-format: "YYYY"
 listing: 
   contents: projects
-  type: grid
+  type: table
+  sort-ui: false
+  filter-ui: false
+  table-striped: true
+  table-hover: true
+  field-display-names: 
+    years: Time
+    title: Project
+    subtitle: Links
+    categories: Tags
+    description: Description
   categories: false
   image-align: left
   sort: "rank desc"
-  fields: [date, title, subtitle, categories]
+  fields: [title, description, categories]
 format: 
   html: 
     grid: 
       body-width: 1000px
-include-in-header: 
-  - text: |
-      <style>
-      .listing-title {
-          width: 1000px;
-      }
-      </style>
-      
 ---

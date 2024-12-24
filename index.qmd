@@ -22,6 +22,10 @@ about:
       text: CV
       href: cv.pdf
       target: _blank
+format: 
+  html: 
+    grid: 
+      body-width: 1000px
 
 include-in-header: 
   - text: |
