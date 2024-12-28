@@ -1,0 +1,18 @@
+---
+title: Indexicality
+permalink: /Indexicality/
+---
+
+This draws from Gardin's [-@gardin1989: 15-16] logicist approach, which considers descriptive propositions as constituting the evidential basis for derived interpretive propositions, as linked together through a series of intermediate propositions via argumentation.
+The articulation (e.g. jointed, hinged in nature) of **mediating objects** and **activities** may be drawn out as long chains, which may be used to infer propositions about connected mediating object and notions that they represent.
+
+**For example:** Soil samples are the mediating objects that flow into the activity of flotation, which produces different sets of mediating objects including botanical samples and heavy residue.
+Botanical samples may then be processed by an activity that entails identifying and sorting the materials, and carbonized remains might be produced as a derived set of \[objects\].
+In turn, these may be used as mediating objects for the purpose of radiocarbon analysis activities, which produces uncalibrated datasets (mediating objects) that are fed into a calibration program (activity) to produce calibrated dates (mediating objects).
+In this sense, \[objects\] are entities that play a practical role in ongoing work.
+This contrasts with my conception of [knowledge](knowledge "wikilink"), which is more distant, abstract, borderless and fundamental (in the sense that new work has to reckon with existing knowledge).
+
+
+## Mediating objects
+The physical and conceptual entities that activities rely upon and produce.
+They are processed and transformed through an activity's curatorial processes/flows.

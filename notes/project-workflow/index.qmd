@@ -1,0 +1,44 @@
+---
+title: project workflow
+---
+
+We don't have a comprehensive task sequence plan (Gannt / PERT etc.). But here is a table representing the Work Breakdown Structure for the core tasks in the project, not taking into account, however, aspects of validating the results with the community, sustainability, impact etc.
+
+## Conceptual modelling
+
+'''(a)''' Systematic literature review and desk research on archaeological research practice and related scholarly work, to identify theoretical concepts and ideas, relevant to the study
+
+'''(b)''' Scope definition, consisting of refining study concepts and research questions, and identifying relevant sensitizing concepts on the basis of evidence and insights from the literature review and desk research
+
+'''(c)''' Definition of formal conceptual model aimed to capture successfully relevant aspects of archaeological research, based on a review of relevant ontologies and models
+
+'''(d)''' Definition of analytical schema, including. a “code system”, amenable for use as an instrument for qualitative data analysis of transcribed and annotated data in research sites of the project, and a graph database schema for further data analysis, visualization and summarization.
+
+## Data constitution
+
+'''(a)''' Identification and appraisal of case studies and participants who will be approached in each case study site to be involved in the study
+
+'''(b)''' Research ethics protocol, involving assessment of risk, informed consent, data retention and privacy issues, and research ethics approval
+
+'''(c)''' Solicitation and informed consent obtained from the research site coordinator and from each individual participant, who agree to provide evidence for the study, and to have personal information on their activities and views shared publicly as part of project research communication and outreach
+
+'''(d)''' Fieldwork planning and data collection, consisting of 3-4 day visits to each research site, resulting in audio and video recording of interviews, note-taking, and documentary research data collection
+
+'''(e)''' Transcription and data processing of recorded interviews, observation notes and documentary evidence
+
+'''(f)''' Memoing, to capture initial research team reflection on questions, insights and sensitising concepts from each case study
+
+'''(g)''' Descriptive coding of transcripts, documentary evidence and observational notes, using and extending the analytical scheme adopted
+
+## Analysis and theory building
+
+'''(a)''' Analysis, including tabulation, filtering, summarisation, and visualisation of coded and annotated data
+
+'''(b)''' Theoretical coding, based on identification of themes, explanatory concepts and ideas linking coded data with sensitising concepts of the study and theoretical frameworks in the literature
+
+'''(c)''' Theory building, based on modelling and formal representation of interpretive and explanatory concepts and syllogisms derived from memos and coded qualitative data
+
+'''(d)''' Saturation, based on identifying gaps and performing additional data collection, and iteration of the data constitution steps above
+
+'''(e)''' Synthesis and triangulation across levels of analysis, multiple case studies, as well as explanations and interpretive insights from applicable theoretical frameworks
+[[Category:E-CURATORS]]

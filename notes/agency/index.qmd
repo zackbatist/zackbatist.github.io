@@ -1,0 +1,43 @@
+---
+title: Agency
+alias: https://wiki.zackbatist.info/index.php/Agency
+---
+
+I do not consider agency to be a measurable or rankable quality. For me, agency is a relational quality. It is about how people fit into particular roles, as part of specific situations.
+One's agency is never fixed, and their ability to act in particular ways is called for depending on the situation at hand and the limitations that need to be overcome.
+
+## Kinds of agency
+These are all roles, attitudes or activities that switch or overlap depending on context, or on the activity of focus.
+This is more about *recognizing* roles and how they shift in different inter-related contexts.
+
+An **originator** creates original entities.
+Founding directors are the originators of projects. While projects may be prompted by earlier work and lingering questions or concerns, the act of establishing a project is a significant milestone.
+The act of creating a trench in the context of the overall site situates the field director as the originator.
+The act of creating a trench in the context of the progression of work and the recording of its contents situates the trench supervisor as the originator.
+
+A **schematizer** identifies, distinguishes, relates and prioritizes attention towards particular entities or kinds of entities.
+Schematizers set rules regarding how things should be done, framing subsequent work done by others. Writing the excavation manual, giving an instructional demonstration of how to characterize sediments, introducing staff and their roles at the start of a project are all examples of schematizing.
+
+A **formalizer** fits 'fuzzy' notions into concrete, discrete and orderly structures.
+They may also implement stricter and enforceable rules within recording systems. Translates between imprecise archaeological practices and the formal demands of the broader scientific enterprise.
+Thinking ahead, and in terms of the 'big-picture', the progression of work in the long term.
+
+A **motivator** rallies people and creates an environment where people are not only excited to perform their tasks, but to do them properly and as stipulated by established guidelines.
+This can be specific people on site who act as role models, visiting experts who prompt greater rigour, or local liaisons who garner support to accept foreigners into their communities.
+
+An **automaton** is someone who responds to direction given by others. Automatons are typically novices, but may graduate to become 1st level intermediaries if they are able to abstract their experiences out from directly local circumstances as [knowledge](knowledge "wikilink"), and incorporate these experiences and knowledge into future work.
+
+A **consultant** is someone who works in their own manner and has wide leeway to work independently, but is ultimately motivated to contribute to the projects communal aims.
+Specialists are typically consultants, except when their work is integral to the project and relate to core schematization that inform further work.
+Consultants' work tends to be offshoots of the core project and the results of their inquiry are often used as supportive evidence rather than as direct/original/root claims; however, they may prompt further core work to be done, but this may be more a matter of good timing than standard procedure.
+
+## Related terms
+- agent
+- actor
+- actant
+- act
+- action
+- activity
+- object
+- subject
+

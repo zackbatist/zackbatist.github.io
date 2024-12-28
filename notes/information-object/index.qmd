@@ -1,0 +1,21 @@
+---
+title: Information object
+permalink: /Information_object/
+---
+
+## Functional information objects
+
+Used as tools that act on things, i.e. the hammer
+
+## Intermediate information objects
+
+Acted upon, ingested, input, i.e. the nail
+
+## Reference objects
+
+Neither acting on or acted upon, reference material, i.e. the ikea manual, checklist of things to do Relates to the notion that methods are documents.
+
+## Knowledge objects
+
+Not actually information objects, but important to distinguish due to similar terminology.
+Not tangible things, more like an extended network of interconnected knowledge objects, which are packaged with other knowledge objects that can be dug down into (to uncover underlying assumptions; 'common knowledge' refers to these underlying assumptions that have been brought up to the surface) or extrapolated from to derive new or extended knowledge.

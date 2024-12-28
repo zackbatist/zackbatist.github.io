@@ -1,0 +1,160 @@
+# Transcript Notation {#transcript_notation}
+
+The needs for E-CURATORS are unique and thus there is no one pre-defined transcription notion system that \"fits\" these needs. Where the initial thought was to lean more towards Jefferson Notation, I think that an adapted GAT 2 (**G***esprächs***a***nalytisches***T***ranskriptionssystem)* notation is a) better suited and b) easier to read and use.
+
+## The Approach {#the_approach}
+
+Literary transcription appears to be the best approach for the needs of the E-CURATORS Project. Where it is tempting and more time efficient to go with a standard orthography approach, deviations from standard pronunciation by the speaker would be lost. Literary transcription includes utterances such as "umm" "ahh", hesitation markers, and false starts, which may produce meaningful results in the coding process. Further, an eye dialect perhaps provides *too* much detail, and is critiqued for poor readability, inconsistency and incorrect phonetics. Therefore, prosodic components such as how the words are spoken in terms of the characteristics of pitch, loudness and duration will be ignored. However, paralinguistic component should be considered. These include vocal features occurring during speaking but not as part of the linguistic system, for example include audible breathing, crying, aspiration and laughter. See below for suggested notation on how laughter should be notated.
+
+## Terminology
+
+***transcription**:  *refers to any graphic representation of selective aspects of verbal, prosodic and paralinguistic behaviour; in summary transcription is limited to vocal behaviour
+
+***description**: supplement to denote paralinguistic or extralinguistic behaviours as well as non-linguistic activities observed
+
+**extralinguistic communication**: communicative behaviour includes *non-vocal* bodily movements (e.g. hand gestures and gaze) occurring during a verbal interaction. Both the speaker and listeners can demonstrate in extralinguistic behaviours. It is common practice in qualitative research for these behaviours to be described rather than transcribed.
+
+**Non-verbal vocal actions and events**: verbal communication may not be the primary activity of all participants. A participant may initiate a verbal response or react to a verbal request with a *non-linguistic* activity. Within a dialogical interaction non-linguistic activity may initiate brief verbal responses. See below for how this is denoted.
+
+## The Notation {#the_notation}
+
+### Overlaps and simultaneous speech {#overlaps_and_simultaneous_speech}
+
+Opening square brackets are inserted at exactly the point in speaking where the overlap starts, and closing square brackets, where it ends. In both Jefferson and GAT, the respective brackets are aligned with each other within the text, however this is fairly tedious to do in MaxQDA. Perhaps just the indication of overlap with the brackets is sufficient? Will need to discuss this further. Please refer to Selting and Auer page 13 for a fuller discussion of this.
+
+**Example:** a fictitious dialogue sequence between Subject 1 and Subject 2:
+
+> **Subject 1:** Are you going too?
+>
+> **Subject 2:** No, I have to \[work.
+>
+> **Subject 1:** How about a\] drink to celebrate \[the day?
+>
+> **Subject 2:** That\] would be great.
+
+### Laughter
+
+Kowal and O'Connell note two type of notation conventions for laughter.
+The first being what they term as \"ha-ha laughter\" where the approximate number and phonetic laughter syllables are transcribed, i.e. HA HA HA HA.
+The second being overlaid laughter, which occurs as annotation conventions: so-called ha-ha laughter was transcribed by an approximation to the number and phonetic constitution of laughter syllables; so-called overlaid laughter, overlay on spoken-word syllables.
+This is difficult to transcribe so it is showed by surrounding those parts of an utterance which were produced laughing with curly brackets.
+
+**Example:** a fictitious dialogue sequence between Subject 1 and Subject 2:
+
+> **Subject 1:** What do you do?
+>
+> **Subject 2:** HA HA HA HA HA AHH
+>
+> **Subject 1:** I want to know, what do you do?
+>
+> **Subject 2:** {Transcribe music.} Read books. {Swim at the river. Go > out at night.}
+
+### Non-verbal vocal actions and events {#non_verbal_vocal_actions_and_events}
+
+Non-verbal vocal actions and events are denoted with two rounded brackets (( )).
+If the non-verbal action cannot be attributed to any one speaker the notion is entered as a new line in the transcript with its own timestamp.
+
+**Example:** a fictitious dialogue sequence between Subject 1 and Subject 2:
+
+> **Subject 1:** Hello ((coughs)) I am ready.
+>
+> ((recording device beeps))
+>
+> **Subject 2:** Great.
+
+### Intelligibility
+
+Intelligible or unclear speech are denoted with a \"unclear\" placed within rounded brackets, (unclear). GAT has suggestions for uncertainties/alternatives in speech, however adding in assumptions may lead to bias.
+
+**Example:** a fictitious dialogue sequence between Subject 1 and Subject 2:
+
+> **Subject 1:** Are you sleeping?
+>
+> **Subject 2:** (unclear) I was.
+>
+> **Subject 1:** Oh never mind then.
+
+  -------------- -----------------------------------------------------------------------------------------------------------------------------
+  **Notation** **Description**
+  (.)    A full stop inside brackets denotes a micro pause, a notable pause but of no significant length.
+  (0.2)    A number inside brackets denotes a timed pause. This is a pause long enough to time and subsequently show in transcription.
+  CAPITALS   Where capital letters appear, it denotes that something was said loudly or even shouted.
+  \[     Square brackets denote a point where overlapping speech occurs.
+  { }    Underlined text where overlaid laughter occurs.
+  ((  ))   Non-verbal vocal actions and events encased within two rounded brackets.
+  (unclear)  Intelligible or unclear speech are denoted with a \"unclear\" placed within rounded brackets.
+  \--    Double hyphens, usually at the end of a word or line, indicate an abrupt cutoff.
+  -------------- -----------------------------------------------------------------------------------------------------------------------------
+
+  : Notation Summary
+
+### Adapted From {#adapted_from}
+
+Kowal, Sabine, and Daniel C. O'Connell. 2004. "Transcription as a Crucial Step of Data Analysis." In *A Companion to Qualitative Research*, edited by Uwe Flick, Ernst von Kardorff, and Ines Steinke, 64--78. London ; Thousand Oaks, Calif: Sage Publications. http://books.google.com/books?hl=en&lr=&id=F6O-Ru4Ag1IC&oi=fnd&pg=PP2&dq=flick+companion&ots=mkDSZnv1Sm&sig=EjFePGRyg7hyVbI7lCQkj_GBL5I.
+
+Selting, Margret, and Peter Auer. 2011. "A System for Transcribing Talk-in-Interaction: GAT 2." Translated by Elizabeth Couper-Kuhlen and Dagmar Barth-Weingarten. *Gesprächsforschung--Online-Zeitschrift Zur Verbalen Interaktion* 12: 1--51. http://www.gespraechsforschung-online.de/fileadmin/dateien/heft2011/px-gat2-englisch.pdf
+
+Jefferson, G. (2004). Glossary of transcript symbols with an introduction. In G. H. Lerner (Ed). Conversation Analysis: Studies from the First Generation. (pp: 13-31). Amsterdam: John Benjamins.
+
+# Importing transcripts {#importing_transcripts}
+
+If you use an external transcription tool, ensure that transcripts conform to the following rules:
+
+- Transcripts should be saved as a text file (.txt) and have an identical file name as the media that they are derived from.
+- Leave one blank line between each paragraph.
+- Each paragraph should begin with a timestamp, followed by the speaker\'s designation.
+- There should be no space before or after the timestamp, and no hashtags (`#`) should be used.
+  - If your transcription software adds these, they can be removed using your text editor\'s find-and-replace function.
+
+` 00:03:40.5Zack: What will digging this hole accomplish for the project?`\
+` `\
+` 00:03:44.3Jim: It will fill a gap in time and space.`
+
+- Ensure that speakers\' names are spelled consistently throughout the
+  document.
+
+To import transcripts:
+
+1. Under the Import ribbon, select Focus Group
+2. Select the text file containing the properly-formatted transcript from the file menu.
+
+A new document will be created containing the imported transcript.
+
+\[image of the document window\]
+
+Timestamps will be displayed using the clock icon, and will not be displayed in the text.
+
+\[zoomed in image of the clock icon\]
+
+Speakers\' names will be styled bold, and will also form the basis of an auto-code implementation so that the \[zoomed in images of the speakers\' auto-coding, and of the filters created in the documents and codes windows\]
+
+# Timestamps
+
+## Creating time stamps {#creating_time_stamps}
+
+When transcribing using the MaxQDA built-in transcription tool, it is necessary to record time stamps.
+
+Time stamps can be recorded within MaxQDA as part of the transcription process. They can also be created on their own by right clicking anywhere within a document.
+
+## Importing timestamps {#importing_timestamps}
+
+MaxQDA 2018 does not play nicely with timestamps. Timestamps can only be imported as part of imported transcripts. They can not be imported on their own or be automatically assigned to transcripts that already exist within MaxQDA.
+
+When importing a transcript containing timestamps, the timestamps must be formatted in the following way: `HH:MM:SS.m`, with no spaces between the final digit and the text that the time stamp precedes. Example:
+
+`00:00:27.6Zack: Hi, how are you?`
+
+## Exporting timestamps {#exporting_timestamps}
+
+A document\'s time stamps can be displayed as a table and exported as an Excel file, however this information does not indicate where they belong in the text. It may be possible, however, to align an Excel export of time stamps with an Excel export of a document\'s text (arranged by paragraph). This involves lots of manual work, and consistent recording practices at the time of time stamps\'s creation.
+
+Merging MaxQDA projects does not preserve time stamps.
+
+At the moment, these time stamps are essentially useless since they will be lost during any merge. However, we keep the original MaxQDA file created for each transcription job with the hope that the developers incorporate more effective tools for handling time stamps in the future. We will
+
+MaxQDA files created for the purpose of transcription should be named in the following way:
+
+`[Interviewee]_[YYMMDD]_[Version]_[TranscriberInitials]`. Example:
+BrandonOlson-2019-06-06-ZB.mx18. They should be stored in
+`admin/transcripts`.
+

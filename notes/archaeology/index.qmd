@@ -1,0 +1,109 @@
+---
+title: Archaeology
+alias: https://wiki.zackbatist.info/index.php/Archaeology/
+---
+
+The effort to understand alternative lived experiences through the lens
+of material culture.
+
+## Interdisciplinarity
+
+Disciplinary boundaries break down, fall apart, dissolve into the
+background when dealing with a pragmatic situation. You have a set of
+materials, a set of circumstances, and a hunch about what kinds of
+methods or activities might be amenable to obtaining a viable or useful
+result or output. Archaeological projects rely on people who have
+navigated or wayfared their way in a direction that is useful to the
+projects' purposes. Archaeology does not 'borrow' from other
+disciplines. In fact, it is a locus where wayfaring individuals may get
+together and assemble their experiences to address questions of
+archaeological concern. A key difference between archaeologists who
+specialize in X and X-ologists who dabble in archaeology is the ability
+to consider constraints or limitations imposed by the fragmentary input
+materials, the alignment to broader goals and understandings of what
+kinds of knowledge are capable to achieve. Archaeologists are
+'realistic', they know when something may be genuinely useful and how to
+call bullshit, but this requires or is founded upon a presumption of a
+common sense of purpose or communal understanding of goals.
+
+### Relations with other disciplines
+
+As a field-based discipline, archaeology shares ethos with ecology,
+geology and palaeontology. More specifically, they share the following
+qualities:
+
+- Very DIY, problem-solving, pragmatic data collection
+- Very underfunded, scrappy
+- Collecting specimens as representative samples of broader classes or phenomena
+- Uncontrolled, opportunistic data collection and observation methods...
+
+### Internal divisions
+
+The use of particular tools, implementation of particular methods, or
+focus on particular materials are often recognized as markers of
+distinct specialisms within the discipline.
+
+#### classical v. prehistoric v. historic v. contemporary
+
+#### digital archaeology
+
+Data manipulation using a specific set of tools and methods is typically
+identified with a subfield of **digital archaeology**.
+
+Parallels with **digital humanities**...
+
+## Metadisciplinarity
+
+Archaeologists tend to be very self-aware. Most introductory textbooks
+about archaeological theory simply relate the history of archaeological
+thought to the reader. Self-awareness is particularly important in
+recognizing and correcting with archaeology's colonial origins and
+continuing tendencies. There is also a tendency for archaeologists to
+theorize about the discipline in non-robust ways. For instance, some
+archaeologists have recently been obsessed with Latour's actor-network
+theory to document socio-technical systems and interactions, without
+necessarily reflecting upon the limits of the approach [@collins1992a] or anything
+that critically extends Latour's original work (i.e. Knorr-Cetina's
+Epistemic Cultures, a lost of work coming out of feminist posthumanism).
+I think that a lot of uncertainty has arisen from the 'post-theoretical'
+period that we are thought to inhabit (if we are to follow the
+chronological model of archaeological theory), which I would prefer to
+call pragmatism as driven by neoliberalism. Thinking about systems and
+interoperability of agents/actants may help reify and legitimate the
+actants even when they are rarely well-defined or justified, and
+explanations regarding their variable motivations and outlooks
+pertaining to their assumed interactions are rarely explored in depth.
+
+Some common tropes include:
+
+- infrastructures as information pipelines, helping transform 'raw' data
+  into refined and value-added products
+- the \[<https://en.wikipedia.org/wiki/DIKW_pyramid>\|
+  data-information-knowledge-wisdom pyramid\]
+- use of munsell charts as representations of trained perspectives
+
+## Some important concepts
+
+### Artefact
+
+### Culture
+
+Series of norms, tendencies, practices or customs adhered to by human
+communities. Sometimes identified as distinct entities, especially while
+following the culture-historical model of culture change. This approach
+is characterized by boundary maps that distinguish cultural territories
+for a given time period. This has led to the use of cultural labels to
+describe regional or spatial spans or extents. This can be useful in
+teaching but only in an introductory sense, since one would hope that
+students would move beyond such a reductionist attitude pertaining to
+culture and consider the role of the map-maker and of the underlying
+data's integrity as crucial factors worth noting.
+
+#### Duality between nature and culture
+
+## See also
+
+- [The archaeological record](Archaeological_record "wikilink")
+- [The archaeological toolbox](Archaeological_toolbox "wikilink")
+- [Archaeological project](Archaeological_project "wikilink")
+

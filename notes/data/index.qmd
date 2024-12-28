@@ -1,0 +1,41 @@
+---
+title: Data
+permalink: /Data/
+---
+
+Records obtained through [procedural/methodological activities or investigative processes](procedure "wikilink").
+
+Data has three functions:
+
+- To describe the observable sets of characteristics, properties of features pertaining to objects of interest
+- To serve as the evidential basis upon which inferred claims are either verified or refuted, and
+- To serve as communicative records made about objects of interest, which are inscribed upon some medium, and can be consulted, accessed or used as stand-ins for the objects that they have been constructed to represent [@fotiadis1992].
+
+In this third functional capacity, archaeological data relates to the broader set of [records](record "wikilink") and activities that comprise an [information system](information_system "wikilink"), which allows archaeological work to be distributed among collaborating peers.
+Therefore, archaeological data also embody the commitments imparted by the communities, interests and expectations that drive the systems under which the data are derived [@fotiadis1993; @gero1996, and response by @politis2001; @thorpe2012].
+
+## Record
+Media that stands in for or signifies a physical or conceptual entity.
+
+**Examples:**
+
+- tags
+- recording sheets
+- trench reports
+- photographs
+- drawings
+- data points
+
+## Dataset
+A series of [records](record "wikilink"), recorded and/or collated in a consistent manner, motivated by a need, desire or warrant to render them comparable. Archaeological datasets are a kind of [mediating object](mediating_object "wikilink") that hold significant value when applying digital methods (GIS, network analysis, etc.).
+
+**Examples:**
+
+- excel spreadsheets
+- a folder containing photos for photogrammetric composition
+- an assembled sample of lithics (i.e. all diagnostic finds pertaining to the mesolithic spread out on the table).
+
+
+## Database
+A system that serves to define, relate, update, retrieve and administer access to an organized collection of data. Databases are generally stored and accessed electronically from a computer system. While tech-savvy people typically limit their definition of a database to implementations of database management systems (DBMS) designed from a computationally-technical perspective, it is common for archaeologists to treat collections of discrete spreadsheets, which tend to be more user-friendly for less technical users, in ways that correspond with the definition provided above. Relational databases, which are commonly employed to manage archaeological data collected by a particular project, relate heterogeneous datasets by aligning them against mutual reference keys. Databases are also sometimes referred to as **archives**, typically when referring to the preservation of their contents for posterity. The term archive is also commonly used to refer to collections of physical records, which are often kept after being transcribed into digital formats.
+

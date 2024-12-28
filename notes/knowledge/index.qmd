@@ -1,0 +1,20 @@
+---
+title: Knowledge
+permalink: /Knowledge/
+---
+
+Things that one knows. Similar to Knorr-Cetina's [-@knorrcetina2001] "objects of knowledge", which expands upon Rheinberger's [-@rheinberger1997] "epistemic objects".
+For Knorr-Cetina, knowledge objects are like well-organized drawers in a filing cabinet.
+In contrast, gaps in knowledge or unexpected behaviour are characterized as untidy and incomplete drawers that exist in an unresolved state.
+For Knorr-Cetina, science is an endeavour focusing on deriving a coherent understanding of the world, which involves the use of already established knowledge objects in the validation of newly arrived at ideas.
+However, my notion of knowledge differs from this in that it is not necessarily useful in a utilitarian sense.
+Instead, it refers to the 'thick' substrate that new knowledge must be compatible with. It is the context within which archaeological activities are undertaken, which inform and motivate them.
+
+**Legitimate knowledge** is grounded and recognized by methodological rigour (i.e. the appropriateness and integrity of methods and data, see below), and therefore differs from Latour and Woolgar's [-@latour1986] characterization of **"facts"** as detached from the contexts from which they are derived.
+
+## Metaphors & Memnonics
+
+I tend to use the term in both singular and plural forms, which has implications for how I think about how knowledge is partitioned.
+My instinct is to refer to knowledge as amalgamations of "chunks", similar to chunks of knotted bread torn from a loaf.
+
+It is currently very common to conceive of archaeological research as a linear progression akin to resource extraction, whereby 'raw' data is gradually refined to be made useful for particular purposes, while accumulating interpretive impurities throughout such processing stages. 

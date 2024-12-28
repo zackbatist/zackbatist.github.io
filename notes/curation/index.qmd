@@ -1,0 +1,11 @@
+---
+title: Curation
+alias: https://wiki.zackbatist.info/index.php/Curation/
+---
+
+**Curation** encompasses a theoretical perspective, developed by Dallas [-@dallas2007; -@dallas2015], that I adopt as a way to consider how [mediating objects](mediating_objects "wikilink") are continuously selected, interpreted, engaged with, transformed and ascribed new meanings through series of situated and pragmatic activities. [Mediating objects](Mediating_objects "wikilink") capacity to mediate between multiple perspectives (by virtue of their externality, portability and [indexicality](indexicality "wikilink")) is prioritized over their roles as documentary or evidential record. [Mediating objects](Mediating_objects "wikilink") are considered as sites of negotiation, whose value may vary when incorporated into different sets of activities, according to the warrants, constraints and expectations that each activity entails. Archaeology is considered as a [continuum or network of practice](continuum_or_network_of_practice "wikilink"), as opposed to a [linear progression or research cycle](pipeline_model "wikilink"). This entails taking a pragmatic approach to understanding the situatedness, historicity and social contingency of archaeological work. (Peircian notion of the index, his preference for upholding knowledge through multiple cables rather than a singular chain (and adoption by @wylie1989), pragmatic maxim implies the possibility of alternative approaches, i.e. a continuum of possible engagements)
+
+> Peirce approaches the problem of verification from the perspective of is pragmatic maxim. He shifts the burden of testing away from the outcome of a single study conducted by one scientist to the outcome of multiple studies conducted by the scientific community. Truth is thus not an absolute, but rather a never-ending social inquiry and its status is rendered by the scientific community not at any particular moment in time, but in the long-run @preucel2006: 254.
+
+Draws from the notion of digital curation [@yakel2007].
+

@@ -1,0 +1,40 @@
+---
+title: Activity system
+alias: https://wiki.zackbatist.info/index.php/Activity_system
+---
+
+**Activity systems** are systematic articulations of various aspects of practice, which are helpful for documenting how procedures, or normative plans of action, are enacted.
+**Activities** are comprised of a series of **actions**, which contribute towards, but do not completely satisfy on their own, the **activity's objectives**. **Actions** are therefore considered to be intermediate processes that work in tandem to achieve greater ends [@leontev1974: 23].
+**Actions** are executed in response to specific **tasks**, which are goals that are constrained by specific conditions.
+In order to realize these goals, actors conduct **operations**, which are dictated by these practical conditions [@leontev1974: 25-26].
+Successful operations that lead to the completion of a task bring about new conditions that call for new tasks to address following their own sets of actions and operations.
+Such chains of tasks warranting further actions and operations are referred to as **procuedures** or **routines** [@leontev1974: 26-27].
+In order to achieve an activity's objectives, it is necessary to mobilize a series of tools.
+**Tools** are the physical or conceptual entities that are harnessed in the operationalization of tasks.
+Tools enable operations to go forward by allowing actors to overcome the conditions that separate actors' current states from their desired goals [@leontev1974: 27-28].
+
+It's also important to distinguish between **tools** and mediating objects.
+In my mind, tools are like independent variables, whose effects, when applied in certain ways, are predictable, consistent and well understood; this motivates their selection as helpful entities.
+On the other hand, mediating objects are like dependent variables, interchangeable entities that 'flow through' an activity, that are acted upon and elicit varied responses, which are then slotted into or normalized against controlled schemas or formats when rendered as an activity's outputs.
+
+I draw from the vocabulary of activity theory as a handy way to break down and articulate various aspects of practice, particularly to document how procedures, or normative plans of action, are actually enacted.
+I think that the emphasis on goal-setting and goal-attainment may be very useful for examining the situatedness of practice, particularly with regards to the different goals that people set, the different roles that common tools and mediating objects may have, and the potential for activities and the goals that drive them to be interdependent, nested or otherwise conducted in parallel, complementary or mutualistic ways.
+As such, I am not interested in documenting activity systems for the sake of articulating a map of interconnected components and relations [cf. @engestrom2000].
+Instead, I will use the framework provided as a means eliciting the characteristics of collaborative intersections. 
+
+
+## Procedures
+An abstract listing of actions, that if followed, would result in a desired effect.
+
+- Potential effectiveness of tasks dependent on understandings of:
+  - the available materials
+  - the possibilities and limitations that the materials afford (knowledge for)
+  - the methods that may be implemented to express/attain those possibilities given the materials (knowledge that **\<--\>** knowledge how)
+  - by creative agents in decision-making roles
+- will to adopt, recognition of value
+- comparison of tools, cost/benefit analysis
+- scoping, defining boundaries, specifically regarding possibilities and potential
+- projection, speculation about potential outcomes
+- recognition of people's work, assemblage of symbols or stereotypes associated with roles or activities
+- recognizing domains under which work can be assigned, based on recognition of skill sets and designated roles
+

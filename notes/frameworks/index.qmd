@@ -1,0 +1,16 @@
+---
+title: frameworks
+---
+
+## Distributed cognition
+
+Highlight the interlocking convergence of a system's components, which all contribute to the accomplishment of common goals. From a distributed cognition standpoint, the coherence of a system depends upon the shared goals and overall trajectory of all the system’s components [@hutchins1995].
+Distributed cognition helps trace the network of relationships, dependencies or functional subsystems that must be maintained in order for the entire system to succeed in unison. 
+
+## Situated cognition
+Situated cognition examines the improvised, contingent and embodied experiences of human activity. It prioritizes emphasis on subjects' outlooks, which are contextualized by their prior experiences. In this sense, situated cognition is closely related to Lave and Wenger’s theory of situated learning (also commonly referred to as a ‘communities of practice’ approach), which examines how individuals acquire professional skills in relation to their social environments (Lave and Wenger 1991). Situated cognition lends itself to investigating rather fluid, open-ended and affect-oriented actions, and is geared towards understanding how actors draw from their prior experiences to navigate through unique situations. It may be applied to examine how people who are learning new skills learn how to work in new ways relative to what they are used to. In such situations, situated cognition enables observers to examine how people align their perspectives as work progresses, and to better understand how people's general outlooks may have changed with the guidance of more experienced mentors.
+
+@lave1991
+@suchman2007
+
+

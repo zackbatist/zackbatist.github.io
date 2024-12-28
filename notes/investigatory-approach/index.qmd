@@ -1,0 +1,31 @@
+---
+title: Investigatory approach
+permalink: /Investigatory_approach/
+---
+
+1. Naïve view of information systems that support series of pragmatic engagements
+
+- Map flows of mediating objects between/across activities
+- Meant to disrupt the notion of a linear, progressive, unidirectional flow, toward network or continuum model
+- To what extent are these systems pre-formulated? How are templates or recipes used and modified to suit specific situations?
+- To what extent are these information systems improvised? What pragmatic concerns are dealt with, and how are constraints overcome?
+  - Specifically relating to points or connections that demand user / actor action or input.
+
+2. Situated/perspectival concerns
+
+- Move away from the pseudo-omniscient perspective outlined in III.a, to highlight how these engagements are actually situated, pragmatic experiences.
+- These systems are mediating devices, and facilitate understanding across diverse perspectives.
+- How do these engagements and infrastructural connections contribute to or reflect patterns relating to disciplinary identity/community formation?
+- What kinds of assumptions or taken for granted behaviours are being made concerning engagement with mediating objects, and how might these assumptions relate to the establishment of common knowledge bases or commonly understood research protocols?
+
+3. Access to information flows and information commons
+
+- Back to a somewhat omniscient voice, taking a step back after identifying trends in the second section.
+- Delegation/distribution of work necessitates networks of dependencies
+  - Identify / characterize different kinds of agency that may correspond with these relations.
+  - Identify different roles and their pertinent expectations and responsibilities.
+    - e.g.supportive agency as distinct from creative agency; who is the machine and who drives the machine?
+    - Who does ‘automated’ labour and who steers it in particular directions?
+- Highlight where social/professional protocol/norms mesh with technical or administrative infrastructures to maintain such relations.
+- Demonstrate how these normalized relations and flows are characteristic of a distinctively archaeological epistemic culture (à la @knorrcetina1999).
+

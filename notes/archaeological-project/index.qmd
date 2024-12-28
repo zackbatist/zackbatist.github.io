@@ -1,0 +1,13 @@
+---
+title: Archaeological projects
+alias: https://wiki.zackbatist.info/index.php/Archaeological_project
+---
+
+Archaeological projects are discrete collectives of knowledge production, which are held together by:
+
+- establishing priorities and overarching research goals;
+- establishing [organizational structures](organizational-structure "wikilink") that dictate roles and responsibilities;
+- establishing technical [procedures](procedure "wikilink"), protocols and [infrastructures](infrastructure "wikilink") that facilitate understanding among project participants;
+- allocating space, resources and funding that enables work to be done;
+- fostering a sense of belonging through recognition as member of a team; and
+- providing opportunities for students to learn through legitimate peripheral participation (e.g. situated learning) and by allocating responsibility to graduate students.

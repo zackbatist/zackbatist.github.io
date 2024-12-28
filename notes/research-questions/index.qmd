@@ -1,0 +1,39 @@
+E-CURATORS looks into pervasive curation practices manifested in archaeological research and communication work "in the wild", i.e. outside custodial collections or professional stewardship.
+
+## Research Questions
+* What are the most important kinds of pervasive digital curation activity in emerging archaeological practice, and what is their compositional structure, actors, goals, procedures, methods and mediating tools?
+
+* What kinds of digital information objects are involved in pervasive archaeological digital curation practice, what are their significant properties and how are they manifested in data representation schemes, metadata and paradata?
+
+* What are the implications of these practices on questions of integrity and authenticity, reliability, longevity, and functionality of digital archaeological objects for future scholarly work, education, communication and community engagement?
+
+* What kinds of systems, methods, procedures and practices could be adopted by actors (researchers, museum curators, amateur archaeologists, archivists, data managers, etc.) to ensure the integrity and authenticity, longevity, reliability and functionality of digital archaeological objects?
+
+* What is the impact of pervasive digital curation infrastructures, processes and methods on questions of cultural appropriation and contestation involving researchers, professional archaeologists,amateurs, and local, indigenous and descendant communities, and which values, principles and procedures can be adopted to ensure ethical, inclusive and reciprocal practice?
+
+## Some phenomena we look at
+* Adoption of mobile devices to capture and document archaeological evidence in excavation and survey
+
+* Use of off-the-shelf mobile apps to construct three-dimensional models of archaeological artefacts, or to geo-locate archaeological information resources
+
+* Instant online aggregation of captured data and resources in research archives, databases and repositories at the time of capture
+
+* Use of synchronous and asynchronous communication technologies to connect researchers with data and enable interpretation “at the trowel’s edge”
+
+* Collaborative annotation, enrichment and interpretation of archaeological data using Web 2.0 technologies, crowdsourcing and social tagging
+
+* Adoption of virtual reality (VR) and augmented reality (AR) visualization methods and equipment used in other fields (such as the media and gaming industries) for the generation and assessment of archaeological hypotheses, interpretation and communication
+
+* Use of blogs, wikis and social media networks to co-create and co-curate archaeological information objects
+
+* Open access provision of data outside established archaeological data infrastructures
+
+* The use of gamification, storytelling and social media networks for public communication, learning and mediation
+
+##E-CURATORS aims to...
+* Produce a formal conceptual model and an evidence-based account of pervasive practices of digital curation in archaeological research and communication
+
+* Identify and assess their implication on issues of epistemic and pragmatic importance for the future of the digital archaeological record
+
+* Elicit requirements for digital infrastructures, as well as methods, procedures and best practice recommendations capable of addressing these issues
+

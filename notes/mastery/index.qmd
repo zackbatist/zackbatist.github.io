@@ -1,0 +1,28 @@
+---
+title: Mastery
+permalink: /Mastery/
+---
+
+A person's relative ability to act in accordance with the tenets of a particular domain.
+
+## Degrees of understanding
+
+### Novices
+
+A **novice** is someone who lacks the intuitive understanding and practical ability to act that experts possess. Expertise accrues through experience as novices carry out tasks, which allows them to consider how operations lead to broader outcomes and have implications for the successful implementation of activities.
+
+### Intermediate
+
+### Experts
+
+An **expert** is someone who intuitively understands the limits and possibilities of one's approach, who is aware of typical pragmatic constraints that may get in the way, and who is capable of carrying out actions to attain a goal with confidence and methodological rigour.
+
+## Transitioning between phases
+
+(activity theory? Lave and Wenger 1991? Are these necessarily opposed to each other?)
+
+## Related concepts
+
+### Intuition
+
+**Intuition / intuitive** refers to the ability to immediately understand a situation and what needs to be done in order to implement a task. Typically associated with *expert* or those with *intermediate* knowledge or experience. Arises from past experiences, especially experience where all stages of the task were completed, and where the value of the task was made clear. Also manifested by or associated with the ability to translate (though not necessarily articulate) between abstract [procedures](procedure "wikilink") and direct [practical experiences](practice "wikilink").

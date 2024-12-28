@@ -1,0 +1,19 @@
+---
+title: Qualities
+permalink: /Qualities/
+---
+
+A series of intuitive characteristics that I often rely on to convey the nature of a thing or person. This page is an attempt to break down the assumptions that I make when referring to these qualities in a casual or colloquial manner.
+
+## List of qualities
+
+- digital:
+- analog / traditional:
+- pro / advanced:
+- specialized / nerdy:
+- basic / generic:
+- grungy:
+- haughty / canonical:
+- reflexive / post-processual:
+- pragmatic / scientific / processual:
+- activist:
