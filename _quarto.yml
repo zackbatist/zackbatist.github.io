@@ -29,7 +29,8 @@ website:
     right:
       - href: publications.qmd
       - href: projects.qmd
-      - href: posts.qmd
+      - text: Blog
+        href: https://blog.zackbatist.info
       - href: cv.pdf
         text: CV
         target: _blank
@@ -45,7 +46,8 @@ website:
       - publications.qmd
       - projects.qmd
       # - notes.qmd
-      - posts.qmd
+      - text: Blog
+        href: https://blog.zackbatist.info
 format:
   html:
     theme: 
