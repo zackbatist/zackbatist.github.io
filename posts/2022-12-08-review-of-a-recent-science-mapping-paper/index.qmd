@@ -1,5 +1,5 @@
 ---
-title: "Comments on a recent 'science mapping' paper"
+title: Comments on a recent 'science mapping' paper
 date: 2022-12-08
 aliases: 
   - https://blog.zackbatist.info/2022/12/08/review-of-a-recent-science-mapping-paper/
@@ -7,7 +7,6 @@ categories:
   - bibliometrics
   - network analysis
   - science studies
-citation: true
 draft: false
 ---
 

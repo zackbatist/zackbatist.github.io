@@ -9,7 +9,6 @@ categories:
   - open archaeology
   - open data
   - open-archaeo
-citation: true
 draft: false
 ---
 

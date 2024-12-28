@@ -4,12 +4,7 @@ author:
   - name: Zachary Batist
     orcid: 0000-0003-0435-508X
 date: 2024-12-31
-categories:
-  - figuration
-  - archaeological practice
-  - digital workflows
-  - craft
-  - DIY archaeology
+categories: ''
 # description: A reflection on the challenges I experienced integrating and reusing data during my Masters thesis.
 subtitle: |
   Archeologia e Calcolatori --- 

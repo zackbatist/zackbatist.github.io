@@ -1,5 +1,5 @@
 ---
-title: "Open science and its weird conception of data"
+title: Open science and its weird conception of data
 date: 2022-11-28
 aliases: 
   - https://blog.zackbatist.info/2022/11/28/open-science-and-its-weird-conception-of-data/
@@ -7,7 +7,6 @@ categories:
   - notions of data
   - open data
   - open science
-citation: true
 draft: false
 ---
 

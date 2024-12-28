@@ -1,5 +1,5 @@
 ---
-title: "open-archaeo data paper"
+title: open-archaeo data paper
 date: 2023-09-11
 aliases: 
   - https://blog.zackbatist.info/2023/09/11/open-archaeo-data-paper/
@@ -8,7 +8,6 @@ categories:
   - open archaeology
   - open-archaeo
   - publication
-citation: true
 draft: false
 ---
 

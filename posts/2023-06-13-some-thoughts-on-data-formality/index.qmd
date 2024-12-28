@@ -1,5 +1,5 @@
 ---
-title: "Some thoughts on data formality"
+title: Some thoughts on data formality
 date: 2023-06-13
 aliases: 
   - https://blog.zackbatist.info/2023/06/13/some-thoughts-on-data-formality/
@@ -9,7 +9,6 @@ categories:
   - notions of data
   - open data
   - workflows
-citation: true
 draft: false
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "ArcheoFOSS XVII"
+title: ArcheoFOSS XVII
 date: 2023-12-17
 aliases: 
   - https://blog.zackbatist.info/2023/12/17/archeofoss-xvii/
@@ -10,7 +10,6 @@ categories:
   - DObsiss
   - fediverse
   - open archaeology
-citation: true
 draft: false
 ---
 

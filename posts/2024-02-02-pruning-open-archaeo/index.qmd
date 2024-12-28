@@ -1,5 +1,5 @@
 ---
-title: "Pruning open-archaeo"
+title: Pruning open-archaeo
 date: 2024-02-02
 aliases: 
   - https://blog.zackbatist.info/2024/02/02/pruning-open-archaeo/

@@ -1,5 +1,5 @@
 ---
-title: "Mastodon and the potential for community growth"
+title: Mastodon and the potential for community growth
 date: 2022-11-23
 aliases: 
   - https://blog.zackbatist.info/2022/11/23/mastodon-and-the-potential-for-community-growth/
@@ -7,7 +7,6 @@ categories:
   - archaeo-social
   - mastodon
   - meta
-citation: true
 draft: false
 ---
 

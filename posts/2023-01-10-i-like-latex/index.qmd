@@ -1,5 +1,5 @@
 ---
-title: "I like LaTeX"
+title: I like LaTeX
 date: 2023-01-10
 aliases: 
   - https://blog.zackbatist.info/2023/01/10/i-like-latex/
@@ -8,7 +8,6 @@ categories:
   - latex
   - pain text
   - writing
-citation: true
 draft: false
 ---
 

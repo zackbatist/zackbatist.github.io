@@ -1,5 +1,5 @@
 ---
-title: "Comments on 'The rise and fall of peer review'"
+title: Comments on 'The rise and fall of peer review'
 date: 2022-12-17
 aliases: 
   - https://blog.zackbatist.info/2022/12/17/comments-on-the-rise-and-fall-of-peer-review/
@@ -7,7 +7,6 @@ categories:
   - open science
   - peer review
   - science core
-citation: true
 draft: false
 ---
 

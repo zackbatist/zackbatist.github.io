@@ -3,3 +3,4 @@ date-format: long
 title-block-banner: false
 bibliography: ../assets/zack.bib
 csl: ../assets/chicago-author-date.csl
+citation: false

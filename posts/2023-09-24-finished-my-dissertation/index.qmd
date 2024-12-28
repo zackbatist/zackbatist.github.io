@@ -1,5 +1,5 @@
 ---
-title: "Finished my dissertation!"
+title: Finished my dissertation!
 date: 2023-09-24
 aliases: 
   - https://blog.zackbatist.info/2023/09/24/finished-my-dissertation/
@@ -9,7 +9,6 @@ categories:
   - open data
   - open science
   - science studies
-citation: true
 draft: false
 ---
 

@@ -10,7 +10,6 @@ categories:
   - open data
   - publication
   - science studies
-citation: true
 draft: false
 ---
 

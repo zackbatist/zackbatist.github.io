@@ -1,5 +1,5 @@
 ---
-title: "Abstract submitted for DAB23 (Bern, Switzerland)"
+title: Abstract submitted for DAB23 (Bern, Switzerland)
 date: 2022-11-27
 aliases: 
   - https://blog.zackbatist.info/2022/11/27/abstract-submitted-for-dab23-bern-switzerland/
@@ -9,7 +9,6 @@ categories:
   - DAB23
   - open archaeology
   - ooen science
-citation: true
 draft: false
 ---
 
