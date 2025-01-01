@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./assets/favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,8 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9583c2d66753f238abd66955c1aec078.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-72f87c9c34715715cafd8e07d21bc205.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-6474a3b61b8b59e191467ae795b1202a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-a371a66292feb997baafce0185179e09.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -75,65 +73,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -261,68 +201,26 @@ window.Quarto = {
 </header>
 
 
+<p><strong>CITF Postdoc</strong><br>
+Articulating social, collaborative and discursive aspects of epidemiological data-sharing initiatives, and how they relate to, overlap with or conflict with technical, institutional and epistemic factors<br>
+<a href="https://zackbatist.info/CITF-Postdoc">zackbatist.info/CITF-Postdoc</a><br>
+<a href="https://github.com/zackbatist/CITF-Postdoc">github.com/zackbatist/CITF-Postdoc</a></p>
+<p><strong>open-archaeo</strong><br>
+A list of open source archaeological software and resources<br>
+<a href="https://open-archaeo.info">open-archaeo.info</a><br>
+<a href="https://github.com/zackbatist/open-archaeo">github.com/zackbatist/open-archaeo</a></p>
+<p><strong>diamond.open-archaeo</strong><br>
+A list of open venues for publishing, reviewing and curating archaeological research<br>
+<a href="https://diamond.open-archaeo.info/">diamond.open-archaeo.info</a><br>
+<a href="https://github.com/open-archaeo/diamond.open-archaeo.info">github.com/open-archaeo/diamond.open-archaeo.info</a></p>
+<p><strong>Database of Obsidian Sourcing Studies (DObsiSS)</strong><br>
+A list of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records<br>
+<a href="https://zackbatist.info/DObsiSS">zackbatist.info/DObsiSS</a><br>
+<a href="https://github.com/zackbatist/DObsiSS">github.com/zackbatist/DObsiSS</a></p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table table-striped table-hover">
-<thead>
-<tr>
-<th>
-Project
-</th>
-<th>
-Description
-</th>
-<th>
-Tags
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="ZGF0YS1zaGFyaW5n" data-listing-file-modified-sort="1735057573118" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="CITF Postdoc" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./projects/citf-postdoc/index.html" class="title listing-title">CITF Postdoc</a>
-</td>
-<td>
-<span class="listing-description">Articulating social, collaborative and discursive aspects of epidemiological data-sharing initiatives, and how they relate to, overlap with or conflict with technical, institutional and epistemic factors<br> <a class="link me-1" href="https://zackbatist.info/CITF-Postdoc" target="_blank_">zackbatist.info/CITF-Postdoc</a> </span>
-</td>
-<td>
-<span class="listing-categories">data-sharing</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="b3BlbiUyMHNvdXJjZSUyMHNvZnR3YXJlJTJDcmVzZWFyY2glMjBzb2Z0d2FyZSUyMGVuZ2luZWVyaW5n" data-listing-file-modified-sort="1735057476858" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="open-archaeo" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./projects/open-archaeo/index.html" class="title listing-title">open-archaeo</a>
-</td>
-<td>
-<span class="listing-description">A list of open source archaeological software and resources<br> <a class="link me-1" href="https://open-archaeo.info/" target="_blank_">open-archaeo.info</a><br> <a class="link me-1" href="https://github.com/zackbatist/open-archaeo" target="_blank_">github.com/zackbatist/open-archaeo</a> </span>
-</td>
-<td>
-<span class="listing-categories">open source software, research software engineering</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="b2JzaWRpYW4lMjBzb3VyY2luZw==" data-listing-file-modified-sort="1735057442941" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Database of Obsidian Sourcing Studies" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./projects/dobsiss/index.html" class="title listing-title">Database of Obsidian Sourcing Studies</a>
-</td>
-<td>
-<span class="listing-description">A list of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records<br> <a class="link me-1" href="https://zackbatist.info/DObsiSS/" target="_blank_">zackbatist.info/DObsiSS</a><br> <a class="link me-1" href="https://github.com/zackbatist/DObsiSS" target="_blank_">github.com/zackbatist/DObsiSS</a> </span>
-</td>
-<td>
-<span class="listing-categories">obsidian sourcing</span>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
