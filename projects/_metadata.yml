@@ -1,7 +1,0 @@
-title-block-banner: false
-date-format: "YYYY"
-toc: false
-format: 
-  html: 
-    grid: 
-      body-width: 1000px

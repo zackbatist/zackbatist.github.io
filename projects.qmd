@@ -2,26 +2,25 @@
 title: Projects
 description: |
   Some initiatives that I led or worked on
-date-format: "YYYY"
-listing: 
-  contents: projects
-  type: table
-  sort-ui: false
-  filter-ui: false
-  table-striped: true
-  table-hover: true
-  field-display-names: 
-    years: Time
-    title: Project
-    subtitle: Links
-    categories: Tags
-    description: Description
-  categories: false
-  image-align: left
-  sort: "rank desc"
-  fields: [title, description, categories]
-format: 
-  html: 
-    grid: 
-      body-width: 1000px
 ---
+
+**CITF Postdoc**\
+Articulating social, collaborative and discursive aspects of epidemiological data-sharing initiatives, and how they relate to, overlap with or conflict with technical, institutional and epistemic factors\
+[zackbatist.info/CITF-Postdoc](https://zackbatist.info/CITF-Postdoc)\
+[github.com/zackbatist/CITF-Postdoc](https://github.com/zackbatist/CITF-Postdoc)
+
+**open-archaeo**\
+A list of open source archaeological software and resources\
+[open-archaeo.info](https://open-archaeo.info)\
+[github.com/zackbatist/open-archaeo](https://github.com/zackbatist/open-archaeo)
+
+**diamond.open-archaeo**\
+A list of open venues for publishing, reviewing and curating archaeological research\
+[diamond.open-archaeo.info](https://diamond.open-archaeo.info/)\
+[github.com/open-archaeo/diamond.open-archaeo.info](https://github.com/open-archaeo/diamond.open-archaeo.info)
+
+**Database of Obsidian Sourcing Studies (DObsiSS)**\
+A list of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records\
+[zackbatist.info/DObsiSS](https://zackbatist.info/DObsiSS)\
+[github.com/zackbatist/DObsiSS](https://github.com/zackbatist/DObsiSS)
+

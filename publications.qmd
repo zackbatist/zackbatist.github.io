@@ -2,24 +2,125 @@
 title: Publications
 description: |
   A list of creative works that I created and contributed to
-listing: 
-  contents: publications
-  type: default
-  categories: false
-  image-align: left
-  sort: "date desc"
-  fields: [title, author, categories, date]
-  date-format: iso
 format: 
   html: 
     grid: 
       body-width: 1000px
-include-in-header: 
-  - text: |
-      <style>
-      .listing-title {
-          width: 1000px;
-      }
-      </style>
-      
 ---
+
+## Journal Articles
+Zachary Batist\
+In press. **Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.**
+Archeologia e Calcolatori (special issue comprising papers presented at ArcheoFOSS XVII) 35(2): 47-54.\
+DOI: [10.19282/ac.35.2.2024.06](https://doi.org/10.19282/ac.35.2.2024.06)
+| [BibTeX](/bibtex/batist2024b.bib)
+
+Zachary Batist\
+2024. **On the value of informal communication in archaeological data work.**
+Open Archaeology 10(1): 20240014.\
+DOI: [10.1515/opar-2024-0014](https://doi.org/10.1515/opar-2024-0014)
+| [BibTeX](/bibtex/batist2024a.bib)
+
+Zachary Batist and Joe Roe\
+2024. **Open archaeology, open source? Collaborative practices in an emerging community of archaeological software engineers.**
+Internet Archaeology 67.\
+DOI: [10.11141/ia.67.13](https://doi.org/10.11141/ia.67.13)
+| [Quarto Compendium](https://github.com/zackbatist/openarchaeo-collaboration)
+| [Postprint](https://zackbatist.info/openarchaeo-collaboration/)
+| [BibTeX](/bibtex/batist2024.bib)
+
+Zachary Batist and Joe Roe\
+2023. **open-archaeo: a resource for documenting archaeological software development practices.**
+Journal of Open Archaeology Data 11(9): 1-7.\
+DOI: [10.5334/joad.111](https://doi.org/10.5334/joad.111)
+| [BibTeX](/bibtex/batist2023.bib)
+
+Zachary Batist, Val Masters, Tiffany C. Torma, Michael Carter, Neal Ferris, Isto Huvila, Seamus Ross and Costis Dallas\
+2021. **Figurations of Digital Archaeological Practice in Two Mediterranean Fieldwork Projects.**
+Open Archaeology (Special Issue on Archaeological Practice on Shifting Grounds) 7(1): 1731-1755.\
+DOI: [10.1515/opar-2020-0217](https://doi.org/10.1515/opar-2020-0217)
+| [BibTeX](/bibtex/batist2021.bib)
+
+Daniel Contreras, Zachary Batist, Ciara Zogheib and Tristan Carter\
+2021. **Matching Pragmatic Lithic Analysis and Proper Data Architecture: The QuARI R Shiny Database Interface.**
+Advances in Archaeological Practice 9(4): 299-311.\
+DOI: [10.1017/aap.2021.11](https://doi.org/10.1017/aap.2021.11)
+| [GitHub](https://github.com/zackbatist/QuARI)
+| [BibTeX](/bibtex/contreras2021.bib)
+
+Tristan Carter, Zachary Batist, Kathryn Campeau, Yosef Garfinkel and Katharina Streit\
+2017. **Investigating Pottery Neolithic Socio-Economic "Regression" in the Southern Levant: Characterising Obsidian Consumption at Sha’ar Hagolan (N. Israel).**
+Journal of Archaeological Science: Reports 15: 305-317.\
+DOI: [10.1016/j.jasrep.2017.08.016](https://doi.org/10.1016/j.jasrep.2017.08.016)
+| [BibTeX](/bibtex/carter2017.bib)
+
+Kyle P. Freund and Zachary Batist\
+2014. **Sardinian Obsidian Circulation and Early Maritime Navigation in the Neolithic as Shown through Social Network Analysis.**
+Journal of Island and Coastal Archaeology 9(3): 364-380.\
+DOI: [10.1080/15564894.2014.881937](https://doi.org/10.1080/15564894.2014.881937)
+| [BibTeX](/bibtex/freund2014.bib)
+
+Martin Loignon, Weimin Miao, Lianggao Hu, Andrew Bier, Tarek A. Bismar, P. James Scrivens, Koren Mann, Mark Basik, Amélie Bouchard, Pierre O. Fiset, Zachary Batist and Gerald Batist\
+2009. **Frequent Nrf2 depletion due to Cul3 overexpression in breast cancer is associated with sensitivity to carcinogens, oxidative stress and chemotherapy.**
+Molecular Cancer Therapeutics 8(8): 2432-2440.\
+DOI: [10.1158/1535-7163.MCT-08-1186](https://doi.org/10.1158/1535-7163.MCT-08-1186)
+| [BibTeX](/bibtex/loignon2009.bib)
+
+## Book Contributions
+Zachary Batist\
+2018. **Using Raspberry Pi in the Field.**
+In the Open Digital Archaeology Textbook Environment (ODATE), Ed. Shawn Graham. eCampus Ontario.\
+[Book Section](https://o-date.github.io/draft/book/d-printing-raspberry-pi-and-maker-archaeology.html#using-raspberry-pi-in-the-field)
+| [Book](https://o-date.github.io)
+| [BibTeX](/bibtex/batist2018.bib)\
+
+## Datasets
+**open-archaeo**\
+A list of open source archaeological software and resources.\
+[Zenodo](https://doi.org/10.5281/zenodo.8299651)
+| [GitHub](https://github.com/zackbatist/open-archaeo)
+| [Website](https://open-archaeo.info)
+
+**The Database of Obsidian Sourcing Studies (DObsiSS)**\
+A listing of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records.\
+[Zenodo](http://dx.doi.org/10.5281/zenodo.55848)
+| [GitHub](https://github.com/zackbatist/DObsiSS)
+| [Website](https://zackbatist.info/DObsiSS)
+
+## Software
+**Queryable Artefact Record Interface (QuARI)**\
+A database interface designed to facilitate the irregular, iterative, and non-linear workflows that are commonly employed in lithic analysis.\
+[GitHub](https://github.com/zackbatist/QuARI)
+| [Publication](https://doi.org/10.1017/aap.2021.11)
+
+## Theses
+Zachary Batist\
+2023. **Archaeological data work as continuous and collaborative practice.**\
+Doctoral Dissertation.
+Faculty of Information at the University of Toronto.\
+Supervised by Costis Dallas.
+[handle.net/1807/130306](https://hdl.handle.net/1807/130306)
+| [BibTeX](/bibtex/batist2023a.bib)
+
+Zachary Batist\
+2015. **Obsidian Circulation Networks in Southwest Asia and Anatolia (12,000 - 5700 B.P.): A Comparative Approach.**\
+Master's Thesis.
+Department of Anthropology at McMaster University.\
+Supervised by Tristan Carter.
+[handle.net/11375/16528](http://hdl.handle.net/11375/16528)
+| [BibTeX](/bibtex/batist2015.bib)
+
+Zachary Batist\
+2012. **Feasting In Bronze Age Greece: A Network Analysis Approach**\
+Bachelor's Thesis.
+Directed Interdisciplinary Studies at Carleton University.\
+Supervised by Shawn Graham.
+
+## Works in Progress
+Zachary Batist\
+In review. **Locating creative agency in archaeological data work.**
+Cambridge Archaeological Journal.
+
+Zachary Batist\
+In review. **Balancing situated and objective representations in archaeological fieldwork.**
+Advances in Archaeological Practice.
