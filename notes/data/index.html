@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -59,8 +39,8 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6474a3b61b8b59e191467ae795b1202a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-a371a66292feb997baafce0185179e09.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-9583c2d66753f238abd66955c1aec078.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-72f87c9c34715715cafd8e07d21bc205.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -99,7 +79,7 @@ div.csl-indent {
 <body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -152,24 +132,7 @@ div.csl-indent {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns">
-<div id="title-block-header-title" class="quarto-title page-columns page-full page-layout-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);">
-<h1 class="title">Data</h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-body">
-
-    
-  
-    
-  </div>
-  
-
-
-
-</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
@@ -198,6 +161,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="https://blog.zackbatist.info" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Blog</span></a>
   </div>
@@ -212,39 +181,47 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#record" id="toc-record" class="nav-link active" data-scroll-target="#record">Record</a></li>
+  <li><a href="#records" id="toc-records" class="nav-link active" data-scroll-target="#records">Records</a></li>
   <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
   <li><a href="#database" id="toc-database" class="nav-link" data-scroll-target="#database">Database</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
-<!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
-<!-- 
 <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title"> 
--->
-<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
-<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
+<div class="quarto-title">
+<h1 class="title">Data</h1>
+</div>
 
 
 
-<p>Records obtained through <a href="procedure" title="wikilink">procedural/methodological activities or investigative processes</a>.</p>
-<p>Data has three functions:</p>
+<div class="quarto-title-meta column-body">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Records obtained through methodological activities or investigative processes.</p>
+<p>Data have three functions:</p>
 <ul>
-<li>To describe the observable sets of characteristics, properties of features pertaining to objects of interest</li>
-<li>To serve as the evidential basis upon which inferred claims are either verified or refuted, and</li>
-<li>To serve as communicative records made about objects of interest, which are inscribed upon some medium, and can be consulted, accessed or used as stand-ins for the objects that they have been constructed to represent <span class="citation" data-cites="fotiadis1992">(<a href="#ref-fotiadis1992" role="doc-biblioref">Fotiadis 1992</a>)</span>.</li>
+<li>to describe the observable sets of characteristics, properties of features pertaining to objects of interest;</li>
+<li>to serve as the evidential basis upon which inferred claims are either verified or refuted; and</li>
+<li>to serve as communicative records made about objects of interest, which are inscribed upon some medium, and can be consulted, accessed or used as stand-ins for the objects that they have been constructed to represent.</li>
 </ul>
-<p>In this third functional capacity, archaeological data relates to the broader set of <a href="record" title="wikilink">records</a> and activities that comprise an <a href="information_system" title="wikilink">information system</a>, which allows archaeological work to be distributed among collaborating peers. Therefore, archaeological data also embody the commitments imparted by the communities, interests and expectations that drive the systems under which the data are derived <span class="citation" data-cites="fotiadis1993 gero1996 thorpe2012">Politis (<a href="#ref-politis2001" role="doc-biblioref">2001</a>)</span>.</p>
-<section id="record" class="level2">
-<h2 class="anchored" data-anchor-id="record">Record</h2>
-<p>Media that stands in for or signifies a physical or conceptual entity.</p>
+<p>In the third functional capacity, data relates to the broader set of records and activities that comprise an information system, which allows work to be distributed among collaborating peers. Therefore, data also embody the commitments imparted by the communities, interests and expectations that drive the systems under which the data are derived.</p>
+<section id="records" class="level2">
+<h2 class="anchored" data-anchor-id="records">Records</h2>
+<p>Media that stand in for or signify a physical or conceptual entity.</p>
 <p><strong>Examples:</strong></p>
 <ul>
-<li>tags</li>
 <li>recording sheets</li>
 <li>trench reports</li>
 <li>photographs</li>
@@ -254,7 +231,7 @@ div.csl-indent {
 </section>
 <section id="dataset" class="level2">
 <h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
-<p>A series of <a href="record" title="wikilink">records</a>, recorded and/or collated in a consistent manner, motivated by a need, desire or warrant to render them comparable. Archaeological datasets are a kind of <a href="mediating_object" title="wikilink">mediating object</a> that hold significant value when applying digital methods (GIS, network analysis, etc.).</p>
+<p>A series of records, recorded and/or collated in a consistent manner, motivated by a need, desire or warrant to render them comparable. Archaeological datasets are a kind of mediating object that hold significant value when applying digital methods (GIS, network analysis, etc.).</p>
 <p><strong>Examples:</strong></p>
 <ul>
 <li>excel spreadsheets</li>
@@ -264,29 +241,12 @@ div.csl-indent {
 </section>
 <section id="database" class="level2">
 <h2 class="anchored" data-anchor-id="database">Database</h2>
-<p>A system that serves to define, relate, update, retrieve and administer access to an organized collection of data. Databases are generally stored and accessed electronically from a computer system. While tech-savvy people typically limit their definition of a database to implementations of database management systems (DBMS) designed from a computationally-technical perspective, it is common for archaeologists to treat collections of discrete spreadsheets, which tend to be more user-friendly for less technical users, in ways that correspond with the definition provided above. Relational databases, which are commonly employed to manage archaeological data collected by a particular project, relate heterogeneous datasets by aligning them against mutual reference keys. Databases are also sometimes referred to as <strong>archives</strong>, typically when referring to the preservation of their contents for posterity. The term archive is also commonly used to refer to collections of physical records, which are often kept after being transcribed into digital formats.</p>
-
+<p>A system that serves to define, relate, update, retrieve and administer access to an organized collection of data. Databases are generally stored and accessed electronically from a computer system. While tech-savvy people typically limit their definition of a database to implementations of database management systems (DBMS) designed from a computationally-technical perspective, it is common for archaeologists to treat collections of discrete spreadsheets, which tend to be more user-friendly for less technical users, in ways that correspond with the definition provided above. Relational databases, which are commonly employed to manage archaeological data collected by a particular project, relate heterogeneous datasets by aligning them against mutual reference keys.</p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-fotiadis1992" class="csl-entry" role="listitem">
-Fotiadis, Michael. 1992. <span>“Units of Data as Deployment of Disciplinary Codes.”</span> In <em>Representations in <span>Archaeology</span></em>, edited by Jean-Claude Gardin and Christopher S. Peebles, 132–48. Indiana University Press.
-</div>
-<div id="ref-fotiadis1993" class="csl-entry" role="listitem">
-———. 1993. <span>“Regions of the <span>Imagination</span>: <span>Archaeologists</span>, <span>Local People</span>, and the <span>Archaeological Record</span> in <span>Fieldwork</span>, <span>Greece</span>.”</span> <em>Journal of European Archaeology</em> 1 (2): 151–68. <a href="https://doi.org/10.1179/096576693800719310">https://doi.org/10.1179/096576693800719310</a>.
-</div>
-<div id="ref-gero1996" class="csl-entry" role="listitem">
-Gero, Joan M. 1996. <span>“Archaeological Practice and Gendered Encounters with Field Data.”</span> <em>Gender and Archaeology</em>, 251–80.
-</div>
-<div id="ref-politis2001" class="csl-entry" role="listitem">
-Politis, Gustavo. 2001. <span>“On Archaeological Praxis, Gender Bias and Indigenous Peoples in <span>South America</span>.”</span> <em>Journal of Social Archaeology</em> 1 (1): 90–107. <a href="https://doi.org/10.1177/146960530100100107">https://doi.org/10.1177/146960530100100107</a>.
-</div>
-<div id="ref-thorpe2012" class="csl-entry" role="listitem">
-Thorpe, Reuben. 2012. <span>“Often <span>Fun</span>, <span>Usually Messy</span>: <span>Fieldwork</span>, <span>Recording</span> and <span>Higher Orders</span> of <span>Things</span>.”</span> In <em>Reconsidering <span>Archaeological Fieldwork</span>: <span>Exploring On-Site Relationships Between Theory</span> and <span>Practice</span></em>, edited by Hannah Cobb, Harris Harris Oliver J. T., Cara Jones, and Philip Richardson, 31–52. Springer, Boston, MA. <a href="https://doi.org/10.1007/978-1-4614-2338-6_3">https://doi.org/10.1007/978-1-4614-2338-6_3</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
