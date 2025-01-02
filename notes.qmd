@@ -2,16 +2,20 @@
 title: Notes
 description: |
   Just some extended strands of thought
-title-block-banner: false
-date-format: "YYYY"
 listing: 
   contents: notes
   sort: "date desc"
-  type: default
+  type: table
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, date]
+  fields: [title]
   image-align: left
-
+  max-items: 999
+  table-striped: true
+  table-hover: true
+format: 
+  html: 
+    grid: 
+      body-width: 1000px
 ---

@@ -1,6 +1,5 @@
 ---
-title: Activity system
-alias: https://wiki.zackbatist.info/index.php/Activity_system
+title: Activity systems
 ---
 
 **Activity systems** are systematic articulations of various aspects of practice, which are helpful for documenting how procedures, or normative plans of action, are enacted.
@@ -21,20 +20,3 @@ I draw from the vocabulary of activity theory as a handy way to break down and a
 I think that the emphasis on goal-setting and goal-attainment may be very useful for examining the situatedness of practice, particularly with regards to the different goals that people set, the different roles that common tools and mediating objects may have, and the potential for activities and the goals that drive them to be interdependent, nested or otherwise conducted in parallel, complementary or mutualistic ways.
 As such, I am not interested in documenting activity systems for the sake of articulating a map of interconnected components and relations [cf. @engestrom2000].
 Instead, I will use the framework provided as a means eliciting the characteristics of collaborative intersections. 
-
-
-## Procedures
-An abstract listing of actions, that if followed, would result in a desired effect.
-
-- Potential effectiveness of tasks dependent on understandings of:
-  - the available materials
-  - the possibilities and limitations that the materials afford (knowledge for)
-  - the methods that may be implemented to express/attain those possibilities given the materials (knowledge that **\<--\>** knowledge how)
-  - by creative agents in decision-making roles
-- will to adopt, recognition of value
-- comparison of tools, cost/benefit analysis
-- scoping, defining boundaries, specifically regarding possibilities and potential
-- projection, speculation about potential outcomes
-- recognition of people's work, assemblage of symbols or stereotypes associated with roles or activities
-- recognizing domains under which work can be assigned, based on recognition of skill sets and designated roles
-

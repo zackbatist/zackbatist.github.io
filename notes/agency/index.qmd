@@ -1,12 +1,11 @@
 ---
 title: Agency
-alias: https://wiki.zackbatist.info/index.php/Agency
 ---
 
 I do not consider agency to be a measurable or rankable quality. For me, agency is a relational quality. It is about how people fit into particular roles, as part of specific situations.
 One's agency is never fixed, and their ability to act in particular ways is called for depending on the situation at hand and the limitations that need to be overcome.
 
-## Kinds of agency
+# Kinds of agency
 These are all roles, attitudes or activities that switch or overlap depending on context, or on the activity of focus.
 This is more about *recognizing* roles and how they shift in different inter-related contexts.
 
@@ -30,14 +29,4 @@ An **automaton** is someone who responds to direction given by others. Automaton
 A **consultant** is someone who works in their own manner and has wide leeway to work independently, but is ultimately motivated to contribute to the projects communal aims.
 Specialists are typically consultants, except when their work is integral to the project and relate to core schematization that inform further work.
 Consultants' work tends to be offshoots of the core project and the results of their inquiry are often used as supportive evidence rather than as direct/original/root claims; however, they may prompt further core work to be done, but this may be more a matter of good timing than standard procedure.
-
-## Related terms
-- agent
-- actor
-- actant
-- act
-- action
-- activity
-- object
-- subject
 

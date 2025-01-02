@@ -1,0 +1,303 @@
+---
+title: E-CURATORS
+description: Compilation of notes from the E-CURATORS wiki
+toc-expand: true
+---
+
+# Overview
+E-CURATORS looks into pervasive curation practices manifested in archaeological research and communication work "in the wild", i.e. outside custodial collections or professional stewardship.
+
+## Research Questions
+* What are the most important kinds of pervasive digital curation activity in emerging archaeological practice, and what is their compositional structure, actors, goals, procedures, methods and mediating tools?
+* What kinds of digital information objects are involved in pervasive archaeological digital curation practice, what are their significant properties and how are they manifested in data representation schemes, metadata and paradata?
+* What are the implications of these practices on questions of integrity and authenticity, reliability, longevity, and functionality of digital archaeological objects for future scholarly work, education, communication and community engagement?
+* What kinds of systems, methods, procedures and practices could be adopted by actors (researchers, museum curators, amateur archaeologists, archivists, data managers, etc.) to ensure the integrity and authenticity, longevity, reliability and functionality of digital archaeological objects?
+* What is the impact of pervasive digital curation infrastructures, processes and methods on questions of cultural appropriation and contestation involving researchers, professional archaeologists,amateurs, and local, indigenous and descendant communities, and which values, principles and procedures can be adopted to ensure ethical, inclusive and reciprocal practice?
+
+## Some phenomena we look at
+* Adoption of mobile devices to capture and document archaeological evidence in excavation and survey
+* Use of off-the-shelf mobile apps to construct three-dimensional models of archaeological artefacts, or to geo-locate archaeological information resources
+* Instant online aggregation of captured data and resources in research archives, databases and repositories at the time of capture
+* Use of synchronous and asynchronous communication technologies to connect researchers with data and enable interpretation “at the trowel’s edge”
+* Collaborative annotation, enrichment and interpretation of archaeological data using Web 2.0 technologies, crowdsourcing and social tagging
+* Adoption of virtual reality (VR) and augmented reality (AR) visualization methods and equipment used in other fields (such as the media and gaming industries) for the generation and assessment of archaeological hypotheses, interpretation and communication
+* Use of blogs, wikis and social media networks to co-create and co-curate archaeological information objects
+* Open access provision of data outside established archaeological data infrastructures
+* The use of gamification, storytelling and social media networks for public communication, learning and mediation
+
+## E-CURATORS aims to...
+* Produce a formal conceptual model and an evidence-based account of pervasive practices of digital curation in archaeological research and communication
+* Identify and assess their implication on issues of epistemic and pragmatic importance for the future of the digital archaeological record
+* Elicit requirements for digital infrastructures, as well as methods, procedures and best practice recommendations capable of addressing these issues
+
+# Conceptual Model
+Here are some ideas on how we task our ontology / conceptual model in our methodology.
+
+An ontology-based approach to qualitative data analysis, such as we advocate, calls for expressing the implied conceptualisation of a field (in our case, archaeological digital practice, including aspects of cognition and motivation of actors that shape action in the practice, as well as the role of diverse, both conceptual and physical/digital, mediating tools) in terms of a formal specification which will capture: (a) the main entities in the field at the level of granularity that captures our intuitions on how the field is structured, and (b) their properties and relationships (and their properties) that are relevant to our conception of the field.
+Relationships include ontological (mainly specialisation/generalisation, thorugh a class hierarchy, as well as mereological through a part-of hierarchy if relevant) and semantic ones related to the specifics of our field (e.g. Activity has_actor Actor, Document has_format Format).
+This formal representation should allow simple stuff (evidence presented in an interview, an archaeological activity described or observed) to be expressed simply, more complex stuff to be represented in an analogously more complex manner, and should allow us to pose useful questions and make useful inferences about the kinds of questions we are asking.
+
+While an ontology can be perfectly defined (in tools such as Protege) as a class hierarchy, and then semantic relationships are buried within properties in the property sheet of each class, most ontology builders will provide the important conceptual structures captured by the ontology in one or more "top level" diagrams.
+Examples are the "activities as meetings between actors, objects, place and timespans" diagram of CIDOC CRM, or the main structure and agency, procedure etc. perspective diagrams of Scholarly Ontology.
+
+## Using the model
+The use of the model within E-CURATORS is twofold:
+
+(a) It is a starting point for defining the QDA code system, i.e. simple regular hierarchy (taxonomy) of terms (codes, in QDA parlance). Typically, the main entity class names (the ones that define will become top-level codes in the hierarchy, and then subclass names *as well as* types become subcodes).
+The challenge here is to capture at top level the significant facets from entities in the domain, and to capture also relationships (e.g. with goals and motives) that may be hidden way down in the specialisation hierarchy.
+
+(b) It is the reference model to construct a schema for the (graph) database that we want to create using Neo4J, to export and further process the coded-annotated data from MaxQDA.
+The main consideration for this is twofold:
+
+Firstly, what kind of expressiveness can we expect from the coded qualitative data, i.e. what kinds of relationships between, say, Actors, Activities etc. will be retrievable from the (multiple) codings of segments of data so that we can export them in an Excel spreadsheet and import them to generate automatically graph data within Neo4J?
+We can use complex code searches for this, e.g. find the (overlapping, identical, contiguous) segments that are coded both with a specific code (and its subcodes) and another code (and its subcodes) and surmise that the two are linked through a relationship in the conceptual model.
+Some experimentation with a coded paragraph of text, examining the resulting xls output, may be helpful to determine the possibilities.
+One idea is to define a "container" code, e.g. "Context", which we can use to highlight/code a continuous longer segment of text that refers to the same activity, or topic, in a participant's interview, and then seek to just create an output xls with codes from different code facets/hierarchies, e.g. actors (people and collectivities), activities, archaeological entities, tools etc. that belong to each such context, and then recreate separate graphs for each individual context by imputing relationships between entities postulated by our conceptual model.
+
+Secondly, what kinds of questions/queries we envisage interrogating the database with?
+These should be derived from our interest in substantive questions within E-CURATORS, on the structure of digitally-mediated / archaeology-related activities people engage with, on the identities motivations, and affiliations of people, on the goals stated for specific things they do, on the use of methods, routines, procedural knowledge etc. in accomplishing specific tasks, on the use and role of particular digital technologies, devices, tools, online infrastructures etc., on the problems and issues encountered by people, and the ways, ideas, approaches, solutions they are considering or employing in their activity, etc.
+But each dataset (from different E-CURATORS case study) may present us with further yet unanticipated dimensions.
+What we know already is more or less captured in texts already circulated within our workspace so far, and remains at a general, hopefully shared across cases, level, and a useful approach would be to scan ADS interviews and reverse-engineer a set of queries that are implicit in the material (i.e. questions that this evidence attends to), and, then, subset entities, relationships and properties from the conceptual model into Neo4J property lists/schemas for individual kinds of objects, which will then be used to convert MaxQDA outputs in .xls into graph database structures.
+
+# Project Workflow
+We don't have a comprehensive task sequence plan (Gannt / PERT etc.). But here is a table representing the Work Breakdown Structure for the core tasks in the project, not taking into account, however, aspects of validating the results with the community, sustainability, impact etc.
+
+1. Conceptual modelling
+- Systematic literature review and desk research on archaeological research practice and related scholarly work, to identify theoretical concepts and ideas, relevant to the study
+- Scope definition, consisting of refining study concepts and research questions, and identifying relevant sensitizing concepts on the basis of evidence and insights from the literature review and desk research
+- Definition of formal conceptual model aimed to capture successfully relevant aspects of archaeological research, based on a review of relevant ontologies and models
+- Definition of analytical schema, including. a “code system”, amenable for use as an instrument for qualitative data analysis of transcribed and annotated data in research sites of the project, and a graph database schema for further data analysis, visualization and summarization.
+
+2. Data constitution
+- Identification and appraisal of case studies and participants who will be approached in each case study site to be involved in the study
+- Research ethics protocol, involving assessment of risk, informed consent, data retention and privacy issues, and research ethics approval
+- Solicitation and informed consent obtained from the research site coordinator and from each individual participant, who agree to provide evidence for the study, and to have personal information on their activities and views shared publicly as part of project research communication and outreach
+- Fieldwork planning and data collection, consisting of 3-4 day visits to each research site, resulting in audio and video recording of interviews, note-taking, and documentary research data collection
+- Transcription and data processing of recorded interviews, observation notes and documentary evidence
+- Memoing, to capture initial research team reflection on questions, insights and sensitising concepts from each case study
+- Descriptive coding of transcripts, documentary evidence and observational notes, using and extending the analytical scheme adopted
+
+3. Analysis and theory building
+- Analysis, including tabulation, filtering, summarisation, and visualisation of coded and annotated data
+- Theoretical coding, based on identification of themes, explanatory concepts and ideas linking coded data with sensitising concepts of the study and theoretical frameworks in the literature
+- Theory building, based on modelling and formal representation of interpretive and explanatory concepts and syllogisms derived from memos and coded qualitative data
+- Saturation, based on identifying gaps and performing additional data collection, and iteration of the data constitution steps above
+- Synthesis and triangulation across levels of analysis, multiple case studies, as well as explanations and interpretive insights from applicable theoretical frameworks
+
+# Transcription
+The needs for E-CURATORS are unique and thus there is no one pre-defined transcription notion system that fits these needs.
+Where the initial thought was to lean more towards Jefferson Notation, I think that an adapted GAT 2 (**G**esprächs***a**nalytisches***T**ranskriptionssystem) notation is better suited and easier to read and use.
+
+## The Approach
+Literary transcription appears to be the best approach for the needs of the E-CURATORS Project.
+Where it is tempting and more time efficient to go with a standard orthography approach, deviations from standard pronunciation by the speaker would be lost.
+Literary transcription includes utterances such as "umm", "ahh", hesitation markers, and false starts, which may produce meaningful results in the coding process.
+Further, an eye dialect perhaps provides too much detail, and is critiqued for poor readability, inconsistency and incorrect phonetics.
+Therefore, prosodic components such as how the words are spoken in terms of the characteristics of pitch, loudness and duration will be ignored.
+However, paralinguistic component should be considered.
+These include vocal features occurring during speaking but not as part of the linguistic system, for example include audible breathing, crying, aspiration and laughter.
+See below for suggested notation on how laughter should be notated.
+
+## Terminology
+- **transcription**:  refers to any graphic representation of selective aspects of verbal, prosodic and paralinguistic behaviour; in summary transcription is limited to vocal behaviour
+- **description**: supplement to denote paralinguistic or extralinguistic behaviours as well as non-linguistic activities observed
+- **extralinguistic communication**: communicative behaviour includes *non-vocal* bodily movements (e.g. hand gestures and gaze) occurring during a verbal interaction. Both the speaker and listeners can demonstrate in extralinguistic behaviours. It is common practice in qualitative research for these behaviours to be described rather than transcribed.
+- **non-verbal vocal actions and events**: verbal communication may not be the primary activity of all participants. A participant may initiate a verbal response or react to a verbal request with a *non-linguistic* activity. Within a dialogical interaction non-linguistic activity may initiate brief verbal responses. See below for how this is denoted.
+
+## The Notation
+| Notation  | Description                                                                                                                  |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| (.)       | A full stop inside brackets denotes a micro pause, a notable pause but of no significant length.                             |
+| (0.2)     | A number inside brackets denotes a timed pause. This is a pause long enough to time and subsequently show in transcription.  |
+| CAPITALS  | Where capital letters appear, it denotes that something was said loudly or even shouted.                                     |
+| [ ]       | Square brackets denote a point where overlapping speech occurs.                                                              |
+| { }       | Underlined text where overlaid laughter occurs.                                                                              |
+| ((  ))    | Non-verbal vocal actions and events encased within two rounded brackets.                                                     |
+| (unclear) | Intelligible or unclear speech are denoted with a \"unclear\" placed within rounded brackets.                                |
+| --        | Double hyphens, usually at the end of a word or line, indicate an abrupt cutoff.                                             |
+
+Adapted from @kowal2014, @selting2011 and @jefferson2004.
+
+### Overlaps and simultaneous speech
+Opening square brackets are inserted at exactly the point in speaking where the overlap starts, and closing square brackets, where it ends.
+In both Jefferson and GAT, the respective brackets are aligned with each other within the text, however this is fairly tedious to do in MaxQDA.
+Perhaps just the indication of overlap with the brackets is sufficient? Will need to discuss this further.
+Please refer to @selting2011 (page 13) for a fuller discussion of this.
+
+> **Subject 1:** Are you going too?
+>
+> **Subject 2:** No, I have to \[work.
+>
+> **Subject 1:** How about a\] drink to celebrate \[the day?
+>
+> **Subject 2:** That\] would be great.
+
+### Laughter
+Kowal and O'Connell note two type of notation conventions for laughter.
+The first being what they term as "ha-ha laughter" where the approximate number and phonetic laughter syllables are transcribed, i.e. HA HA HA HA.
+The second being overlaid laughter, which occurs as annotation conventions: so-called ha-ha laughter was transcribed by an approximation to the number and phonetic constitution of laughter syllables; so-called overlaid laughter, overlay on spoken-word syllables.
+This is difficult to transcribe so it is showed by surrounding those parts of an utterance which were produced laughing with curly brackets.
+
+> **Subject 1:** What do you do?
+>
+> **Subject 2:** HA HA HA HA HA AHH
+>
+> **Subject 1:** I want to know, what do you do?
+>
+> **Subject 2:** {Transcribe music.} Read books. {Swim at the river. Go > out at night.}
+
+### Non-verbal vocal actions and events
+
+Non-verbal vocal actions and events are denoted with two rounded brackets (( )).
+If the non-verbal action cannot be attributed to any one speaker the notion is entered as a new line in the transcript with its own timestamp.
+
+> **Subject 1:** Hello ((coughs)) I am ready.
+>
+> ((recording device beeps))
+>
+> **Subject 2:** Great.
+
+### Intelligibility
+
+Intelligible or unclear speech are denoted with a "unclear" placed within rounded brackets, (unclear). GAT has suggestions for uncertainties/alternatives in speech, however adding in assumptions may lead to bias.
+
+> **Subject 1:** Are you sleeping?
+>
+> **Subject 2:** (unclear) I was.
+>
+> **Subject 1:** Oh never mind then.
+
+## Importing transcripts to MaxQDA
+If you use an external transcription tool, ensure that transcripts conform to the following rules:
+
+- Ensure that speakers' names are spelled consistently throughout the document.
+- Transcripts should be saved as a text file (.txt) and have an identical file name as the media that they are derived from.
+- Leave one blank line between each paragraph.
+- Each paragraph should begin with a timestamp, followed by the speaker's designation.
+- There should be no space before or after the timestamp, and no hashtags (#) should be used.
+  - If your transcription software adds these, they can be removed using your text editor's find-and-replace function.
+
+> 00:03:40.5Zack: What will digging this hole accomplish for the project?
+> 
+> 00:03:44.3Jim: It will fill a gap in time and space.
+
+To import transcripts:
+
+1. Under the Import ribbon, select Focus Group
+2. Select the text file containing the properly-formatted transcript from the file menu.
+
+A new document will be created containing the imported transcript.
+Timestamps will be displayed using the clock icon, and will not be displayed in the text.
+Speakers' names will be styled bold, and will also form the basis of an auto-code implementation.
+
+## Timestamps
+When transcribing using the MaxQDA built-in transcription tool, it is necessary to record time stamps.
+Time stamps can be recorded within MaxQDA as part of the transcription process. They can also be created on their own by right clicking anywhere within a document.
+
+MaxQDA 2018 does not play nicely with timestamps.
+Timestamps can only be imported as part of imported transcripts.
+They can not be imported on their own or be automatically assigned to transcripts that already exist within MaxQDA.
+
+When importing a transcript containing timestamps, the timestamps must be formatted in the following way: `HH:MM:SS.m`, with no spaces between the final digit and the text that the time stamp precedes.
+For example:
+
+> 00:00:27.6Zack: Hi, how are you?
+
+A document's time stamps can be displayed as a table and exported as an Excel file, however this information does not indicate where they belong in the text.
+It may be possible, however, to align an Excel export of time stamps with an Excel export of a document's text (arranged by paragraph).
+This involves lots of manual work, and consistent recording practices at the time of time stamps's creation.
+
+Merging MaxQDA projects does not preserve time stamps.
+At the moment, these time stamps are essentially useless since they will be lost during any merge.
+However, we keep the original MaxQDA file created for each transcription job with the hope that the developers incorporate more effective tools for handling time stamps in the future.
+
+MaxQDA files created for the purpose of transcription should be named in the following way:
+
+`[Interviewee]_[YYMMDD]_[Version]_[TranscriberInitials]`
+For example: `BrandonOlson-2019-06-06-ZB.mx18`
+
+# Literature Review
+## Data collection and cleaning procedure
+We will be using Publish or Perish (PoP) to conduct all queries, which will accessing Google Scholar, Scopus and Web of Science.
+Each have their own specifications, so the keywords will be defined in a spreadsheet and then concatenated to generate usable strings.
+These databases impose string character limits for search strings, so we will be generating many small queries rather than lengthier strings that contain multiple keywords.
+This will generate a massive amount of data with lots of overlap, but there are ways of dealing with this (this is the purpose of this page).
+One benefit is that we will get a more granular sense of what concepts relate to each item generated in the query results, which may be very valuable during the analytical stage.
+
+## Search parameters
+Here are some notes pertaining to the search parameters that we will be using:
+
+### Google Scholar
+
+- Character limit is 100 per query
+- To specify keyword in publication title: `source:`<xx>`{=html} ()`
+- 1000 results per   query by default
+- Does not provide DOIs
+- Can specify to search titles only
+- No API, must use Publish or Perish
+
+### Scopus
+
+- 200 results per query by default
+- Implicit synonym-matching/autocorrect (archaeology/archeology are interchangeable, but archaeological/archeological may not be)
+- To specify keyword in publication title: `SRCTITLE()`
+- To specify keyword in title only: `TITLE()`
+- In PoP, journal keywords are entered in separate field
+- Journal field (`SRCTITLE()`) does not allow wildcards or boolean terms (`AND/OR/NOT/\*`)
+- Limited recent publications
+- Punctuation is ignored: heart-attack or heart attack return the same results
+- The hyphen is treated as punctuation and therefore ignored if it is not in an exact phrase
+- Wildcards must be used with words because they cannot be standalone
+- When an hyphen is placed between a wildcard and a word, the wildcard will be dropped, e.g.:
+- title-abs-key (*-art) will be searched as title-abs-key(art)
+- abs(iwv-*) will be searched as abs(iwv)
+- To find documents that contain an exact phrase, enclose the phrase in braces: {oyster toadfish}
+- {heart-attack} and {heart attack} will return different results because the dash is included.
+- Wildcards are searched as actual characters, e.g. {health care?} returns results such as: Who pays for health care?
+
+### Web of Science
+
+- Can only search titles
+- Each search term in the query must be explicitly tagged with a field tag. Different fields must be connected with search operators.
+- Extraneous spaces are ignored by the product. For example, extra spaces around opening and closing parentheses ( ) and equal (=) signs are ignored.
+- The dollar sign ($) is useful for finding both the British and American spellings of the same word. For example, flavo\$r finds flavor and flavour.
+- The search engine treats hyphens (-) and apostrophes (') in names as spaces. For example:
+- AU=O Brien returns the same number of results as AU=O\'Brien.
+- More info: https://images.webofknowledge.com//WOKRS531NR4/help/WOS/hp_advanced_examples.html
+
+### CrossRef
+
+## API access in R
+Refer to the following resources for ways of accessing these data sources using R.
+
+- Scopus: https://github.com/muschellij2/rscopus
+- Web of Science: https://github.com/vt-arc/wosr
+- CrossRef: https://github.com/ropensci/rcrossref
+- Google Scholar
+
+## Data cleaning
+Some of the keywords remain vague and will generate too many irrelevant results, so we need to devise a methodological approach to weed out irrelevant items in bulk.
+Costis had suggested that we remove a certain amount from the items with the lowerst PageRank when less than a certain threshold amount of that subset are deemed relevant by a human reviewer.
+However, this remains somewhat unclear to me and it would be very helpful if Costis could write this out in more detail.
+Verify that the results are sorted by relevance, and then export them from PoP as BibTex (.bib) files. We will then import them into Zotero as independent collections.
+
+Zotero does not have batch import functionality, so I'm trying to figure out a workaround that would save us time and energy.
+Here's what I propose:
+
+1. Use the Web API to create the collections.
+  - See the docs: https://www.zotero.org/support/dev/web_api/v3/write_requests#creating_a_collection
+  - also: https://www.zotero.org/support/dev/web_api/v3/write_requests#creating_multiple_objects
+  - API access in R: https://github.com/giocomai/zoteroR
+
+2. Go through the collections and import the contents of bib files via the clipboard (control + shift + command + i on a mac)
+  - Can't import the actual bibliographic items using the API, it's limited to 50 write commands per write request.
+
+We will use Zotero's merge function to combine items with matching metadata across all collections.
+Their association with each collection will be maintained, but there will be only one item spread across them.
+We will therefore be able to combine the different sets of metadata provided by each database for overlapping items.
+This will be crucial, since Google Scholar does not include DOIs in their results, but Scopus and Web of Science do.
+
+After this is done, we will export a .bib file for each collection, and pass them into an R script I wrote that uses the DOI to query the CrossRef database, obtain article abstracts when they are available, and export a new .bib file with that metadata included (https://gist.github.com/zackbatist/bfeaa66b64c7afe749a7f5c6f9e596c2).
+We will then re-import those .bib files to Zotero, and begin weeding out irrelevant items based on their abstracts.
+We may need to look up the article and obtain the abstract manually if abstracts were not included in the CrossRef database.
+This final stage of sorting and cleaning the data will generate a list of around 100-120 articles, whose full-text PDFs will be imported to MaxQDA for qualitative coding.

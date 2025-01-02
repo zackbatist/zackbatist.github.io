@@ -1,5 +1,5 @@
 ---
-title: data sharing
+title: Data sharing
 ---
 
 Data sharing is a very general term for the transmission of data among people.
@@ -7,10 +7,21 @@ Open data is one way in which data can be shared.
 
 Status quo tends to assume a dichotomous opposition between those who produce data and those who use data. 
 
-## Data producer
+**Data producers:**
+
 Scattered and independent data producers 'extract' 'raw data' as per the pipeline analogy, and are limited by their scope of their individual interests.
 Field or lab based archaeologists (≈ data producers) are perceived as crafty problem solvers who improvise their ways around localized obstacles. 
 
-## Data user
+**Data users:**
+
 Data users rely on and often integrate data produced by others, whose results tend to 'step back' to see 'big picture' trends.
 Digital archaeologists (≈ data users) are perceived as overly-prescriptive newcomers/outsiders whose contributions add novel value to existing work at the risk of formalizing/standardizing fluid datasets and producing disingenuously-simplified conclusions. 
+
+
+However, some problems with this approach are becoming evident:
+
+- Recent surveys demonstrate extremely low levels of 'data reuse'.
+- Emphasis is placed on making shared files citeable and creditable so that they conform with traditional academic regimes of value, yet such data sets are still generally treated and valued differently despite these efforts.
+- Data sets are very often shared with little or no documentation and in a non- sustainable manner (i.e. in proprietary formats, on proprietary platforms), which reflects the pervasive attitude that sharing poorly documented data is better than sharing nothing at all.
+- Sharing data is commonly used as a way to raise one's public profile, especially on social media, resulting in a parallel but not necessarily constructive social economy that emphasizes personal commitment to research rather than the quality of research outputs in their own right.
+

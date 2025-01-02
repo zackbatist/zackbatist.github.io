@@ -1,9 +1,0 @@
----
-title: Epistemic culture
-permalink: /Epistemic_culture/
----
-
-Epistemic cultures are cultures of creating and warranting knowledge; 'epistemic' refers to knowledge and truth-related goals and practices as central elements of scientific and professional fields [@knorrcetina2015].
-Framing scientific research as culture helps investigate knowledge production as collective, materializing, interactive, historical, social, political and informally learned human process.
-It allows me to see archaeological practice as peculiar.
-It allows me to consider how normative assumptions and dispositions are taken for granted as the only viable ways or acting or thinking.

@@ -1,6 +1,5 @@
 ---
 title: Knowledge
-permalink: /Knowledge/
 ---
 
 Things that one knows. Similar to Knorr-Cetina's [-@knorrcetina2001] "objects of knowledge", which expands upon Rheinberger's [-@rheinberger1997] "epistemic objects".
@@ -10,11 +9,24 @@ For Knorr-Cetina, science is an endeavour focusing on deriving a coherent unders
 However, my notion of knowledge differs from this in that it is not necessarily useful in a utilitarian sense.
 Instead, it refers to the 'thick' substrate that new knowledge must be compatible with. It is the context within which archaeological activities are undertaken, which inform and motivate them.
 
-**Legitimate knowledge** is grounded and recognized by methodological rigour (i.e. the appropriateness and integrity of methods and data, see below), and therefore differs from Latour and Woolgar's [-@latour1986] characterization of **"facts"** as detached from the contexts from which they are derived.
+**Legitimate knowledge** is grounded and recognized by methodological rigour (i.e. the appropriateness and integrity of methods and data, see below), and therefore differs from Latour and Woolgar's [-@latour1986] characterization of "facts" as detached from the contexts from which they are derived.
 
 ## Metaphors & Memnonics
-
 I tend to use the term in both singular and plural forms, which has implications for how I think about how knowledge is partitioned.
 My instinct is to refer to knowledge as amalgamations of "chunks", similar to chunks of knotted bread torn from a loaf.
 
 It is currently very common to conceive of archaeological research as a linear progression akin to resource extraction, whereby 'raw' data is gradually refined to be made useful for particular purposes, while accumulating interpretive impurities throughout such processing stages. 
+
+## Indexicality
+This draws from Gardin's [-@gardin1989: 15-16] logicist approach, which considers descriptive propositions as constituting the evidential basis for derived interpretive propositions, as linked together through a series of intermediate propositions via argumentation.
+The articulation (e.g. jointed, hinged in nature) of **mediating objects** and **activities** may be drawn out as long chains, which may be used to infer propositions about connected mediating object and notions that they represent.
+
+**For example:** Soil samples are the mediating objects that flow into the activity of flotation, which produces different sets of mediating objects including botanical samples and heavy residue.
+Botanical samples may then be processed by an activity that entails identifying and sorting the materials, and carbonized remains might be produced as a derived set of mediating objects.
+These may be used for the purpose of radiocarbon analysis activities, which produces uncalibrated datasets (another set of mediating objects) that are fed into a calibration program (activity) to produce calibrated dates (yet another set of mediating objects).
+In this sense, mediating objects are entities that play a practical role in ongoing work.
+This contrasts with my conception of knowledge, which is more distant, abstract, borderless and fundamental (in the sense that new work has to reckon with existing knowledge).
+
+## Mediating objects
+The physical and conceptual entities that activities rely upon and produce.
+They are processed and transformed through an activity's curatorial processes/flows.

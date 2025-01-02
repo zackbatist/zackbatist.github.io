@@ -1,0 +1,42 @@
+---
+title: Archaeology as a discipline
+---
+
+The effort to understand alternative lived experiences through the lens of material culture.
+
+## Interdisciplinarity
+
+Disciplinary boundaries break down, fall apart, dissolve into the background when dealing with a pragmatic situation.
+You have a set of materials, a set of circumstances, and a hunch about what kinds of methods or activities might be amenable to obtaining a viable or useful result or output.
+Archaeological projects rely on people who have navigated or wayfared their way in a direction that is useful to the projects' purposes.
+Archaeology does not 'borrow' from other disciplines.
+In fact, it is a locus where wayfaring individuals may get together and assemble their experiences to address questions of archaeological concern.
+A key difference between archaeologists who specialize in X and X-ologists who dabble in archaeology is the ability to consider constraints or limitations imposed by the fragmentary input materials, the alignment to broader goals and understandings of what kinds of knowledge are capable to achieve.
+Archaeologists are 'realistic', they know when something may be genuinely useful and how to call bullshit, but this requires or is founded upon a presumption of a common sense of purpose or communal understanding of goals.
+
+## Relations with other disciplines
+
+As a field-based discipline, archaeology shares ethos with ecology, geology and palaeontology.
+More specifically, they share the following qualities:
+
+- Very DIY, problem-solving, pragmatic data collection
+- Very underfunded, scrappy
+- Collecting specimens as representative samples of broader classes or phenomena
+- Uncontrolled, opportunistic data collection and observation methods...
+
+## Metadisciplinarity
+
+Archaeologists tend to be very self-aware.
+Most introductory textbooks about archaeological theory simply relate the history of archaeological thought to the reader.
+Self-awareness is particularly important in recognizing and correcting with archaeology's colonial origins and continuing tendencies.
+There is also a tendency for archaeologists to theorize about the discipline in non-robust ways.
+For instance, some archaeologists have recently been obsessed with Latour's actor-network theory to document socio-technical systems and interactions, without necessarily reflecting upon the limits of the approach [@collins1992a] or anything that critically extends Latour's original work (i.e. Knorr-Cetina's Epistemic Cultures, a lost of work coming out of feminist posthumanism).
+I think that a lot of uncertainty has arisen from the 'post-theoretical' period that we are thought to inhabit (if we are to follow the chronological model of archaeological theory), which I would prefer to call pragmatism as driven by neoliberalism.
+Thinking about systems and interoperability of agents/actants may help reify and legitimate the actants even when they are rarely well-defined or justified, and explanations regarding their variable motivations and outlooks pertaining to their assumed interactions are rarely explored in depth.
+
+Some common tropes include:
+
+- infrastructures as information pipelines, helping transform 'raw' data into refined and value-added products
+- the [data-information-knowledge-wisdom pyramid](https://en.wikipedia.org/wiki/DIKW_pyramid)
+- use of munsell charts as representations of trained perspectives
+

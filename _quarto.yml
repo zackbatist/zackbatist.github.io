@@ -45,7 +45,7 @@ website:
     contents:
       - publications.qmd
       - projects.qmd
-      # - notes.qmd
+      - notes.qmd
       - text: Blog
         href: https://blog.zackbatist.info
 format:

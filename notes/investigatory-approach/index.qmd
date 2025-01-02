@@ -1,9 +1,9 @@
 ---
 title: Investigatory approach
-permalink: /Investigatory_approach/
 ---
+The overall investigatory approach I took for my dissertation research
 
-1. Naïve view of information systems that support series of pragmatic engagements
+**1. Naïve view of information systems that support series of pragmatic engagements**
 
 - Map flows of mediating objects between/across activities
 - Meant to disrupt the notion of a linear, progressive, unidirectional flow, toward network or continuum model
@@ -11,14 +11,14 @@ permalink: /Investigatory_approach/
 - To what extent are these information systems improvised? What pragmatic concerns are dealt with, and how are constraints overcome?
   - Specifically relating to points or connections that demand user / actor action or input.
 
-2. Situated/perspectival concerns
+**2. Situated/perspectival concerns**
 
 - Move away from the pseudo-omniscient perspective outlined in III.a, to highlight how these engagements are actually situated, pragmatic experiences.
 - These systems are mediating devices, and facilitate understanding across diverse perspectives.
 - How do these engagements and infrastructural connections contribute to or reflect patterns relating to disciplinary identity/community formation?
 - What kinds of assumptions or taken for granted behaviours are being made concerning engagement with mediating objects, and how might these assumptions relate to the establishment of common knowledge bases or commonly understood research protocols?
 
-3. Access to information flows and information commons
+**3. Access to information flows and information commons**
 
 - Back to a somewhat omniscient voice, taking a step back after identifying trends in the second section.
 - Delegation/distribution of work necessitates networks of dependencies

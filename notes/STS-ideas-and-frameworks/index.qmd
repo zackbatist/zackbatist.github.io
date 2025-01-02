@@ -1,0 +1,59 @@
+---
+title: STS ideas and frameworks
+---
+
+Science and Technology Studies (STS) and Sociology of Scientific Knowledge (SSK) Examine archaeological research as cultural practice, or as ways of understanding the world through a complex series of physical and conceptual interactions between humans and the objects that captivate their interests [@pickering1992a].
+Knowledge is not created in a vacuum; it is derived from prior knowledge and experiences that are deemed relevant to particular topics of research interest. 
+
+# Epistemic culture
+Epistemic cultures are cultures of creating and warranting knowledge; 'epistemic' refers to knowledge and truth-related goals and practices as central elements of scientific and professional fields [@knorrcetina2015].
+Framing scientific research as culture helps investigate knowledge production as collective, materializing, interactive, historical, social, political and informally learned human process.
+It allows me to see archaeological practice as peculiar.
+It allows me to consider how normative assumptions and dispositions are taken for granted as the only viable ways or acting or thinking.
+
+# Activity Theory
+Examines the systematically-organized series of relations that comprise activities.
+Activities are understood as the relations between human subjects and the physical or conceptual tools or environments with or within which they act, and the motives or objectives that drive the system forward in a particular direction [@leontev1974: 22-23].
+Activity theory is useful to examine how people mobilize a series of physical and conceptual tools to overcome the conditions that separate actors' current states from their desired goals.
+In this sense, activity theory prioritizes the situated perspectives and experiences of human subjects while still trying to account for the agency that tools exhibit in their experiences as components of activity systems delegated towards addressing particular tasks.
+More specifically, activity theory helps to draw generalized accounts of practices employed in research projects.
+Documenting taken-for-granted aspects of work in a structured manner provides a unique window into how such practices contribute to broader disciplinary norms or professional mindsets.
+Recorded conversations and observations of enacted practices may be compared to determine how goals and strategies for achieving them are drawn up with the actual implementation of tasks.
+This contributes to understanding how certain challenges are perceived by involved stakeholders, how contingencies are accounted for, and how indicators of success may change as work progresses.
+Using activity theory effectively is not about describing the minute processes of enacted work, but rather about investigating how tasks and operations are strategically implemented as part of a coordinated effort to achieve broader goals.
+
+# Distributed cognition
+
+Highlight the interlocking convergence of a system's components, which all contribute to the accomplishment of common goals. From a distributed cognition standpoint, the coherence of a system depends upon the shared goals and overall trajectory of all the system’s components [@hutchins1995].
+Distributed cognition helps trace the network of relationships, dependencies or functional subsystems that must be maintained in order for the entire system to succeed in unison. 
+
+# Situated cognition
+Situated cognition examines the improvised, contingent and embodied experiences of human activity.
+It prioritizes emphasis on subjects' outlooks, which are contextualized by their prior experiences.
+In this sense, situated cognition is closely related to Lave and Wenger’s [-@lave1991] theory of situated learning (also commonly referred to as a "communities of practice" approach), which examines how individuals acquire professional skills in relation to their social environments.
+Situated cognition lends itself to investigating rather fluid, open-ended and affect-oriented actions, and is geared towards understanding how actors draw from their prior experiences to navigate through unique situations.
+It may be applied to examine how people who are learning new skills learn how to work in new ways relative to what they are used to.
+In such situations, situated cognition enables observers to examine how people align their perspectives as work progresses, and to better understand how people's general outlooks may have changed with the guidance of more experienced mentors.
+
+# Actor-network theory
+Actor-network theory (ANT) posits that all things that comprise the world are co-created through their relations with other things.
+Non-human objects not only frame how human beings inhabit the world, but "push back" upon human actions with significant effects.
+"a disparate family of material-semiotic tools, sensibilities and methods of analysis that treat everything in the social and natural worlds as a continuously generated effect of the webs of relations within which they are located. It assumes that nothing has reality or form outside the enactment of those relations.
+Its studies explore and characterise the webs and the practices that carry them" [@law2008: 141].
+
+## In SSK
+ANT was used to better understand the physical and communicative mechanisms --- which are made up of non-human agents and information objects --- that scientists relied upon to capture, document and ascribe meaning to particular facets of the world.
+ANT posits that scientists can only identify, characterize and understand objects of interest by co-creating their conceptions of reality alongside non-human agents.
+Latour and Woolgar stated that science is primarily concerned with the creation of an ordered account of reality, rather than the transfer of information pertaining to the world into human-understandable formats.
+They characterize the latter of these two propositions as the practices enacted in order to fulfill the former aim.
+However, from a pragmatic perspective, these two processes may be rendered as intertwined and inseparable threads of a unified experience of knowledge production [@latour1986: 245].
+
+## Example
+The photographic outputs of a bioassay, which was a predominant object of discussion in their work, determines and represents the existence and qualities of discrete proteins that have been extracted from cell samples through reactions with specially selected reagents, marked with dyes selected for their non-reactive qualities, and pulled through a filtration medium that separates proteins according to their mass, molecular structure, and electromagnetic properties.
+A large number of material entities are thus selected and mobilized due to the researcher’s understanding that such an assemblage might contribute to the representation of a targeted set of phenomena.
+More specifically, certain reagents are added to cell samples that bind with proteins that constitute cell walls, allowing for inner proteins to be extracted.
+Other reagents that only bind to particular targeted proteins and that have been engineered to have certain identifiable physical and electromagnetic properties impart these qualities onto the now merged molecule composed of both targeted protein and reagent. Dyes that complement the design of the reagent and of the overall bioassay protocol are bound to these molecules, rendering them visible to the human eye.
+Molecules are then pulled through a conductive gel whose own material characteristics and density allow for only electrically charged molecules to be pulled through, given the placement of a polar-opposite charge at the far end of the gel.
+Once movement of the proteins have settled, (caused, in part, by the gradual solidification of the gel that inhibits further movement) the entire gel is photographed and the relative positions of dyed molecules are marked to denote their discrete existence and other relevant qualities rendered through association with their respective reagents.
+Knowledge is thus obtained by humans through the selective assembly of various material actors, whose interactions are already understood and deemed reliable, in order to render an account of reality based upon their projected experiences.
+

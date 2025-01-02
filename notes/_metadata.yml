@@ -1,13 +1,9 @@
-# Freeze computed outputs
-execute: 
-  freeze: true
-title-block-banner: true
+title-block-banner: false
 date-format: "YYYY"
-bibliography: ../assets/zack.bib
+bibliography: ../zack.bib
 csl: ../assets/chicago-author-date.csl
+bread-crumbs: true
 format: 
   html: 
-    code-overflow: wrap
-    template-partials: 
-      - ../assets/_partials/title-block-link-buttons/title-block.html
-
+    grid: 
+      body-width: 1000px
