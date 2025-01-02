@@ -1,7 +1,5 @@
 ---
 title: Projects
-description: |
-  Some initiatives that I led or worked on
 ---
 
 **CITF Postdoc**\

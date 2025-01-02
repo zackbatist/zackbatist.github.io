@@ -1,13 +1,10 @@
 ---
 title: Publications
-description: |
-  A list of creative works that I created and contributed to
 format: 
   html: 
     grid: 
       body-width: 1000px
 ---
-
 ## Journal Articles
 Zachary Batist\
 In press. **Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.**
