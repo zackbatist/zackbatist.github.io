@@ -34,7 +34,8 @@ As Database Manager, I maintained relational databases, established data entry a
 I also developed [QuARI](https://github.com/zackbatist/QuARI), a database interface designed to facilitate the irregular, iterative and non-linear workflows that are commonly employed in lithic analysis ([10.1017/aap.2021.11](https://doi.org/10.1017/aap.2021.11)).
 
 **Database of Obsidian Sourcing Studies (DObsiSS)**\
-A list of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records.\
+A list of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records.
+Created for my Master's thesis.\
 [zackbatist.info/DObsiSS](https://zackbatist.info/DObsiSS)\
-[github.com/zackbatist/DObsiSS](https://github.com/zackbatist/DObsiSS)
-
+[github.com/zackbatist/DObsiSS](https://github.com/zackbatist/DObsiSS)\
+[handle.net/11375/16528](http://hdl.handle.net/11375/16528)\
