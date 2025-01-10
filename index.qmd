@@ -1,7 +1,9 @@
 ---
 title: Zack Batist
 pagetitle: Zack Batist
-# subtitle: "Postdoctoral Researcher at McGill University"
+subtitle: |
+  Postdoctoral Researcher at McGill University\
+  [CITF Databank](https://databank.citf.mcgill.ca/), School of Population and Global Health
 
 about:
   template: solana
@@ -26,17 +28,6 @@ format:
   html: 
     grid: 
       body-width: 1000px
-
-include-in-header: 
-  - text: |
-      <style>
-      div.about-entity {
-        margin-top: -25px;
-      }
-      div.about-links {
-        margin-top: -5px;
-      }
-      </style>
 
 ---
 
