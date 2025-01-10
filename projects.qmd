@@ -1,24 +1,40 @@
 ---
 title: Projects
+format: 
+  html: 
+    grid: 
+      body-width: 1000px
 ---
 
 **CITF Postdoc**\
-Articulating social, collaborative and discursive aspects of epidemiological data-sharing initiatives, and how they relate to, overlap with or conflict with technical, institutional and epistemic factors\
+Articulating social, collaborative and discursive aspects of epidemiological data-sharing initiatives, and how they relate to, overlap with or conflict with technical, institutional and epistemic factors.\
 [zackbatist.info/CITF-Postdoc](https://zackbatist.info/CITF-Postdoc)\
 [github.com/zackbatist/CITF-Postdoc](https://github.com/zackbatist/CITF-Postdoc)
 
 **open-archaeo**\
-A list of open source archaeological software and resources\
+A list of open source archaeological software and resources.\
 [open-archaeo.info](https://open-archaeo.info)\
 [github.com/zackbatist/open-archaeo](https://github.com/zackbatist/open-archaeo)
 
 **diamond.open-archaeo**\
-A list of open venues for publishing, reviewing and curating archaeological research\
+A list of open venues for publishing, reviewing and curating archaeological research.\
 [diamond.open-archaeo.info](https://diamond.open-archaeo.info/)\
 [github.com/open-archaeo/diamond.open-archaeo.info](https://github.com/open-archaeo/diamond.open-archaeo.info)
 
+**E-CURATORS**\
+Led by Costis Dallas at the University of Toronto's Faculty of Information.
+Investigated pervasive curation practices manifested in archaeological research and communication work "in the wild", i.e. outside custodial collections or professional stewardship.
+As a senior research asisstant, I was responsible for establishing qualitative and quantitative research protocols, collecting and analyzing observational and interview data, designing and maintaining graph databases which served as the project’s backbone, coordinating with international and inter-institutional collaborators, leading in-depth training workshops for junior research assistants, and leading publication of our findings ([10.1515/opar-2020-0217](https://doi.org/10.1515/opar-2020-0217)).
+
+**Stelida Naxos Archaeology Project (SNAP)**\
+[stelida.mcmaster.ca](https://stelida.mcmaster.ca/)\
+Led by Tristan Carter at McMaster University's Department of Anthopology.
+A geo-archaeological excavation of a chert source and associated early prehistoric stone tool workshops, conceivably first exploited as long as 260,000 years ago, with some of its early visitors likely including Neanderthals.
+As Database Manager, I maintained relational databases, established data entry and processing workflows, curated the project's digital resources, and [optimized the project's tech stack for rough fieldwork environments](https://github.com/zackbatist/DIYFieldworkDatabase).
+I also developed [QuARI](https://github.com/zackbatist/QuARI), a database interface designed to facilitate the irregular, iterative and non-linear workflows that are commonly employed in lithic analysis ([10.1017/aap.2021.11](https://doi.org/10.1017/aap.2021.11)).
+
 **Database of Obsidian Sourcing Studies (DObsiSS)**\
-A list of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records\
+A list of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers and other scholarly records.\
 [zackbatist.info/DObsiSS](https://zackbatist.info/DObsiSS)\
 [github.com/zackbatist/DObsiSS](https://github.com/zackbatist/DObsiSS)
 
