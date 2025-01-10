@@ -7,7 +7,7 @@ format:
 ---
 ## Journal Articles
 Zachary Batist\
-In press. **Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.**
+2024. **Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.**
 Archeologia e Calcolatori (special issue comprising papers presented at ArcheoFOSS XVII) 35(2): 47-54.\
 DOI: [10.19282/ac.35.2.2024.06](https://doi.org/10.19282/ac.35.2.2024.06)
 | [BibTeX](/bibtex/batist2024b.bib)
