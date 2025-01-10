@@ -22,25 +22,14 @@ website:
       <a class="link me-1" href="https://orcid.org/0000-0003-1072-5198" title="orcid" target="_blank" rel="noopener">{{< ai orcid >}}</a>
       <a class="link me-1" href="https://archaeo.social/@zackbatist" title="Mastodon" target="_blank"rel="noopener">{{< fa brands mastodon >}}</a>
       <a class="link me-1" href="https://zackbatist.info/blog/index.xml" title="rss" target="_blank" rel="noopener">{{< fa rss-square >}}</a>
-  navbar:
-    tools:
-    - icon: github
-      href: https://www.github.com/zackbatist
-    right:
-      - href: publications.qmd
-      - href: projects.qmd
-      - text: Blog
-        href: https://blog.zackbatist.info
-      - href: cv.pdf
-        text: CV
-        target: _blank
-      
   sidebar: 
     logo: "assets/picture.png"
     pinned: true
-    align: center
+    alignment: center
     style: docked
-    search: true
+    type: dark
+    background: secondary
+    search: false
     collapse-level: 2
     contents:
       - publications.qmd
