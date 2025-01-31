@@ -1,0 +1,30 @@
+---
+title: Defining formalism and related concepts
+# description: ""
+date: last-modified
+categories: 
+  - general thoughts
+---
+
+
+I use the term "formal" quite a bit, and to me it has always represented a specific notion.
+I also identify several variants of the term in various telling contexts.
+Here I define and articulate this pattern of meaning, just to finally put it down in writing and to have something to reference.
+I may write this up into a paper one day.
+
+Form: a (pre-)defined shape or structure, the verb is a bit more ambiguous but this is appropriate because forks as nouns are not created, they already exist.
+
+Therefore the noun to form is akin to a nominalization, which may be counter-intuitibe because a nominal form is turning a verb into a noun.
+Formation is also similar to the nominalizaton, as in a continental formation being the product of a think having been formed.
+
+Form also as a document whose variables are defined and potential values expected.
+
+Formulaic is following a series of rules or functions.
+Formula is the noun of formulaic.
+Formula is also an abstraction or procedural representation of a method, ie the formula to create a chemical compound or to derive a value mathematically is like a recipe.
+
+Form as in proper form, as in according to professional expectations or etiquette.
+
+Formal as in according to institutional expectations.
+
+
