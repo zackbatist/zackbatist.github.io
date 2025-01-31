@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Just some extended strands of thought">
+<meta name="dcterms.date" content="2025-01-01">
 
-<title>Notes – Zack Batist</title>
+<title>Defining formalism and related concepts – Zack Batist</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,30 +24,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5bd6ac4bf84e34c3f1d6f31c48195a72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-bfea8301d665cadbdcd346908ee0953b.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5bd6ac4bf84e34c3f1d6f31c48195a72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-bfea8301d665cadbdcd346908ee0953b.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,65 +73,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -146,7 +86,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./notes.html">Notes</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Defining formalism and related concepts</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -157,8 +97,8 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./assets/picture.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../assets/picture.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -168,19 +108,19 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./publications.html" class="sidebar-item-text sidebar-link">
+  <a href="../publications.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./projects.html" class="sidebar-item-text sidebar-link">
+  <a href="../projects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Projects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notes.html" class="sidebar-item-text sidebar-link active">
+  <a href="../notes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Notes</span></a>
   </div>
 </li>
@@ -203,19 +143,23 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Notes</h1>
-</div>
-
-<div>
-  <div class="description">
-    <p>Just some extended strands of thought</p>
+<h1 class="title">Defining formalism and related concepts</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">general thoughts</div>
   </div>
-</div>
+  </div>
+
 
 
 <div class="quarto-title-meta column-page-right">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -225,122 +169,17 @@ window.Quarto = {
 </header>
 
 
+<p>I use the term “formal” quite a bit, and to me it has always represented a specific notion. I also identify several variants of the term in various telling contexts. Here I define and articulate this pattern of meaning, just to finally put it down in writing and to have something to reference. I may write this up into a paper one day.</p>
+<p>Form: a (pre-)defined shape or structure, the verb is a bit more ambiguous but this is appropriate because forks as nouns are not created, they already exist.</p>
+<p>Therefore the noun to form is akin to a nominalization, which may be counter-intuitibe because a nominal form is turning a verb into a noun. Formation is also similar to the nominalizaton, as in a continental formation being the product of a think having been formed.</p>
+<p>Form also as a document whose variables are defined and potential values expected.</p>
+<p>Formulaic is following a series of rules or functions. Formula is the noun of formulaic. Formula is also an abstraction or procedural representation of a method, ie the formula to create a chemical compound or to derive a value mathematically is like a recipe.</p>
+<p>Form as in proper form, as in according to professional expectations or etiquette.</p>
+<p>Formal as in according to institutional expectations.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table table-striped table-hover">
-<thead>
-<tr>
-<th>
-Title
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1735844770829" data-listing-reading-time-sort="6" data-listing-word-count-sort="1137" data-listing-title-sort="STS ideas and frameworks" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/STS-ideas-and-frameworks/index.html" class="title listing-title">STS ideas and frameworks</a>
-</td>
-</tr>
-<tr data-index="1" data-listing-file-modified-sort="1735241447097" data-listing-reading-time-sort="5" data-listing-word-count-sort="916" data-listing-title-sort="Archaeology as continuum of practice" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/continuum-of-practice/index.html" class="title listing-title">Archaeology as continuum of practice</a>
-</td>
-</tr>
-<tr data-index="2" data-listing-file-modified-sort="1735844772950" data-listing-reading-time-sort="2" data-listing-word-count-sort="245" data-listing-title-sort="Curation" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/curation/index.html" class="title listing-title">Curation</a>
-</td>
-</tr>
-<tr data-index="3" data-listing-file-modified-sort="1735844178684" data-listing-reading-time-sort="3" data-listing-word-count-sort="437" data-listing-title-sort="Archaeology as a discipline" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/archaeology-as-a-discipline/index.html" class="title listing-title">Archaeology as a discipline</a>
-</td>
-</tr>
-<tr data-index="4" data-listing-file-modified-sort="1735844995396" data-listing-reading-time-sort="2" data-listing-word-count-sort="274" data-listing-title-sort="Data sharing" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/data-sharing/index.html" class="title listing-title">Data sharing</a>
-</td>
-</tr>
-<tr data-index="5" data-listing-file-modified-sort="1734795286070" data-listing-reading-time-sort="6" data-listing-word-count-sort="1080" data-listing-title-sort="On the limits of actor-network theory" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/limits-of-ant/index.html" class="title listing-title">On the limits of actor-network theory</a>
-</td>
-</tr>
-<tr data-index="6" data-listing-file-modified-sort="1735845772118" data-listing-reading-time-sort="3" data-listing-word-count-sort="479" data-listing-title-sort="Agency" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/agency/index.html" class="title listing-title">Agency</a>
-</td>
-</tr>
-<tr data-index="7" data-listing-file-modified-sort="1735845845538" data-listing-reading-time-sort="3" data-listing-word-count-sort="406" data-listing-title-sort="Activity systems" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/activity-systems/index.html" class="title listing-title">Activity systems</a>
-</td>
-</tr>
-<tr data-index="8" data-listing-file-modified-sort="1735845556693" data-listing-reading-time-sort="3" data-listing-word-count-sort="467" data-listing-title-sort="Knowledge" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/knowledge/index.html" class="title listing-title">Knowledge</a>
-</td>
-</tr>
-<tr data-index="9" data-listing-file-modified-sort="1735843363267" data-listing-reading-time-sort="2" data-listing-word-count-sort="306" data-listing-title-sort="Investigatory approach" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/investigatory-approach/index.html" class="title listing-title">Investigatory approach</a>
-</td>
-</tr>
-<tr data-index="10" data-listing-file-modified-sort="1735848477900" data-listing-reading-time-sort="22" data-listing-word-count-sort="4254" data-listing-title-sort="E-CURATORS" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/E-CURATORS/index.html" class="title listing-title">E-CURATORS</a>
-</td>
-</tr>
-<tr data-index="11" data-listing-file-modified-sort="1735842687810" data-listing-reading-time-sort="2" data-listing-word-count-sort="229" data-listing-title-sort="Archaeological record" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/archaeological-record/index.html" class="title listing-title">Archaeological record</a>
-</td>
-</tr>
-<tr data-index="12" data-listing-file-modified-sort="1735842593544" data-listing-reading-time-sort="2" data-listing-word-count-sort="318" data-listing-title-sort="Data" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/data/index.html" class="title listing-title">Data</a>
-</td>
-</tr>
-<tr data-index="13" data-listing-file-modified-sort="1735842734100" data-listing-reading-time-sort="1" data-listing-word-count-sort="83" data-listing-title-sort="Archaeological projects" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/archaeological-project/index.html" class="title listing-title">Archaeological projects</a>
-</td>
-</tr>
-<tr data-index="14" data-listing-file-modified-sort="1735846054093" data-listing-reading-time-sort="3" data-listing-word-count-sort="551" data-listing-title-sort="Information systems and organizational structures" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/information-systems-organizationa-structures/index.html" class="title listing-title">Information systems and organizational structures</a>
-</td>
-</tr>
-<tr data-index="15" data-categories="Z2VuZXJhbCUyMHRob3VnaHRz" data-listing-date-sort="1738099806000" data-listing-file-modified-sort="1738099806444" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="201" data-listing-title-sort="Defining formalism and related concepts" data-listing-filename-sort="formal.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./notes/formal.html" class="title listing-title">Defining formalism and related concepts</a>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
