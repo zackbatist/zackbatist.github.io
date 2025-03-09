@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Zack Batist">
+<meta name="dcterms.date" content="2025-03-09">
 
-<title>STS ideas and frameworks – Zack Batist</title>
+<title>Migrating from wordpress – Zack Batist</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,51 +22,31 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../assets/favicon.ico" rel="icon">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-5bd6ac4bf84e34c3f1d6f31c48195a72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-bfea8301d665cadbdcd346908ee0953b.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b9da7eacfba3a755a01a630aa4cd62db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-70cce2b94e0b1122854b3a22b572735a.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -105,7 +87,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">STS ideas and frameworks</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Migrating from wordpress</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -116,8 +98,8 @@ div.csl-indent {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../assets/picture.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../assets/picture.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -127,25 +109,25 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../publications.html" class="sidebar-item-text sidebar-link">
+  <a href="../publications.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../projects.html" class="sidebar-item-text sidebar-link">
+  <a href="../projects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Projects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../notes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Notes</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts.html" class="sidebar-item-text sidebar-link">
+  <a href="../posts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Posts</span></a>
   </div>
 </li>
@@ -154,36 +136,39 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#epistemic-culture" id="toc-epistemic-culture" class="nav-link active" data-scroll-target="#epistemic-culture">Epistemic culture</a></li>
-  <li><a href="#activity-theory" id="toc-activity-theory" class="nav-link" data-scroll-target="#activity-theory">Activity Theory</a></li>
-  <li><a href="#distributed-cognition" id="toc-distributed-cognition" class="nav-link" data-scroll-target="#distributed-cognition">Distributed cognition</a></li>
-  <li><a href="#situated-cognition" id="toc-situated-cognition" class="nav-link" data-scroll-target="#situated-cognition">Situated cognition</a></li>
-  <li><a href="#actor-network-theory" id="toc-actor-network-theory" class="nav-link" data-scroll-target="#actor-network-theory">Actor-network theory</a>
-  <ul class="collapse">
-  <li><a href="#in-ssk" id="toc-in-ssk" class="nav-link" data-scroll-target="#in-ssk">In SSK</a></li>
-  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">STS ideas and frameworks</h1>
-</div>
+<h1 class="title">Migrating from wordpress</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">meta</div>
+    <div class="quarto-category">writing</div>
+    <div class="quarto-category">website</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta column-page-right">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Zack Batist </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 9, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -193,62 +178,22 @@ div.csl-indent {
 </header>
 
 
-<p>Science and Technology Studies (STS) and Sociology of Scientific Knowledge (SSK) Examine archaeological research as cultural practice, or as ways of understanding the world through a complex series of physical and conceptual interactions between humans and the objects that captivate their interests <span class="citation" data-cites="pickering1992a">(<a href="#ref-pickering1992a" role="doc-biblioref">Pickering 1992</a>)</span>. Knowledge is not created in a vacuum; it is derived from prior knowledge and experiences that are deemed relevant to particular topics of research interest.</p>
-<section id="epistemic-culture" class="level1">
-<h1>Epistemic culture</h1>
-<p>Epistemic cultures are cultures of creating and warranting knowledge; ‘epistemic’ refers to knowledge and truth-related goals and practices as central elements of scientific and professional fields <span class="citation" data-cites="knorrcetina2001">(<a href="#ref-knorrcetina2001" role="doc-biblioref">Knorr Cetina 2001</a>)</span>. Framing scientific research as culture helps investigate knowledge production as collective, materializing, interactive, historical, social, political and informally learned human process. It allows me to see archaeological practice as peculiar. It allows me to consider how normative assumptions and dispositions are taken for granted as the only viable ways or acting or thinking.</p>
-</section>
-<section id="activity-theory" class="level1">
-<h1>Activity Theory</h1>
-<p>Examines the systematically-organized series of relations that comprise activities. Activities are understood as the relations between human subjects and the physical or conceptual tools or environments with or within which they act, and the motives or objectives that drive the system forward in a particular direction <span class="citation" data-cites="leontev1974">(<a href="#ref-leontev1974" role="doc-biblioref">Leont’ev 1974</a>: 22-23)</span>. Activity theory is useful to examine how people mobilize a series of physical and conceptual tools to overcome the conditions that separate actors’ current states from their desired goals. In this sense, activity theory prioritizes the situated perspectives and experiences of human subjects while still trying to account for the agency that tools exhibit in their experiences as components of activity systems delegated towards addressing particular tasks. More specifically, activity theory helps to draw generalized accounts of practices employed in research projects. Documenting taken-for-granted aspects of work in a structured manner provides a unique window into how such practices contribute to broader disciplinary norms or professional mindsets. Recorded conversations and observations of enacted practices may be compared to determine how goals and strategies for achieving them are drawn up with the actual implementation of tasks. This contributes to understanding how certain challenges are perceived by involved stakeholders, how contingencies are accounted for, and how indicators of success may change as work progresses. Using activity theory effectively is not about describing the minute processes of enacted work, but rather about investigating how tasks and operations are strategically implemented as part of a coordinated effort to achieve broader goals.</p>
-</section>
-<section id="distributed-cognition" class="level1">
-<h1>Distributed cognition</h1>
-<p>Highlight the interlocking convergence of a system’s components, which all contribute to the accomplishment of common goals. From a distributed cognition standpoint, the coherence of a system depends upon the shared goals and overall trajectory of all the system’s components <span class="citation" data-cites="hutchins1995">(<a href="#ref-hutchins1995" role="doc-biblioref">Hutchins 1995</a>)</span>. Distributed cognition helps trace the network of relationships, dependencies or functional subsystems that must be maintained in order for the entire system to succeed in unison.</p>
-</section>
-<section id="situated-cognition" class="level1">
-<h1>Situated cognition</h1>
-<p>Situated cognition examines the improvised, contingent and embodied experiences of human activity. It prioritizes emphasis on subjects’ outlooks, which are contextualized by their prior experiences. In this sense, situated cognition is closely related to Lave and Wenger’s <span class="citation" data-cites="lave1991">(<a href="#ref-lave1991" role="doc-biblioref">1991</a>)</span> theory of situated learning (also commonly referred to as a “communities of practice” approach), which examines how individuals acquire professional skills in relation to their social environments. Situated cognition lends itself to investigating rather fluid, open-ended and affect-oriented actions, and is geared towards understanding how actors draw from their prior experiences to navigate through unique situations. It may be applied to examine how people who are learning new skills learn how to work in new ways relative to what they are used to. In such situations, situated cognition enables observers to examine how people align their perspectives as work progresses, and to better understand how people’s general outlooks may have changed with the guidance of more experienced mentors.</p>
-</section>
-<section id="actor-network-theory" class="level1">
-<h1>Actor-network theory</h1>
-<p>Actor-network theory (ANT) posits that all things that comprise the world are co-created through their relations with other things. Non-human objects not only frame how human beings inhabit the world, but “push back” upon human actions with significant effects. “a disparate family of material-semiotic tools, sensibilities and methods of analysis that treat everything in the social and natural worlds as a continuously generated effect of the webs of relations within which they are located. It assumes that nothing has reality or form outside the enactment of those relations. Its studies explore and characterise the webs and the practices that carry them” <span class="citation" data-cites="law2008">(<a href="#ref-law2008" role="doc-biblioref">Law 2008</a>: 141)</span>.</p>
-<section id="in-ssk" class="level2">
-<h2 class="anchored" data-anchor-id="in-ssk">In SSK</h2>
-<p>ANT was used to better understand the physical and communicative mechanisms — which are made up of non-human agents and information objects — that scientists relied upon to capture, document and ascribe meaning to particular facets of the world. ANT posits that scientists can only identify, characterize and understand objects of interest by co-creating their conceptions of reality alongside non-human agents. Latour and Woolgar stated that science is primarily concerned with the creation of an ordered account of reality, rather than the transfer of information pertaining to the world into human-understandable formats. They characterize the latter of these two propositions as the practices enacted in order to fulfill the former aim. However, from a pragmatic perspective, these two processes may be rendered as intertwined and inseparable threads of a unified experience of knowledge production <span class="citation" data-cites="latour1986">(<a href="#ref-latour1986" role="doc-biblioref">Latour and Woolgar 1986</a>: 245)</span>.</p>
-</section>
-<section id="example" class="level2">
-<h2 class="anchored" data-anchor-id="example">Example</h2>
-<p>The photographic outputs of a bioassay, which was a predominant object of discussion in their work, determines and represents the existence and qualities of discrete proteins that have been extracted from cell samples through reactions with specially selected reagents, marked with dyes selected for their non-reactive qualities, and pulled through a filtration medium that separates proteins according to their mass, molecular structure, and electromagnetic properties. A large number of material entities are thus selected and mobilized due to the researcher’s understanding that such an assemblage might contribute to the representation of a targeted set of phenomena. More specifically, certain reagents are added to cell samples that bind with proteins that constitute cell walls, allowing for inner proteins to be extracted. Other reagents that only bind to particular targeted proteins and that have been engineered to have certain identifiable physical and electromagnetic properties impart these qualities onto the now merged molecule composed of both targeted protein and reagent. Dyes that complement the design of the reagent and of the overall bioassay protocol are bound to these molecules, rendering them visible to the human eye. Molecules are then pulled through a conductive gel whose own material characteristics and density allow for only electrically charged molecules to be pulled through, given the placement of a polar-opposite charge at the far end of the gel. Once movement of the proteins have settled, (caused, in part, by the gradual solidification of the gel that inhibits further movement) the entire gel is photographed and the relative positions of dyed molecules are marked to denote their discrete existence and other relevant qualities rendered through association with their respective reagents. Knowledge is thus obtained by humans through the selective assembly of various material actors, whose interactions are already understood and deemed reliable, in order to render an account of reality based upon their projected experiences.</p>
+<p>I’m moving my blog from WordPress to a <a href="https://quarto.org/">quarto</a>-based system, which I’m already using to maintain other aspects of my professional website. The blog is now located at <a href="https://zackbatist.info/posts">zackbatist.info/posts</a>.</p>
+<p>I’m doing this for a few reasons:</p>
+<ul>
+<li>To make my site more consistent from a visitor perspective</li>
+<li>To match my other writing habits and workflows</li>
+<li>To save some money on VPS hosting</li>
+<li>I’ve been having some weird database corruption issues</li>
+<li>All the WordPress drama</li>
+</ul>
+<p>This means that I’ll no longer be using the <a href="https://blog.zackbatist.info">blog.zackbatist.info</a> subdomain, and all existing links will be broken. I reformatted all the older posts and added the existing URLs to the new versions’ metadata, but this won’t actually do any active redirection.</p>
+<p>I’m also shutting down my mediawiki instance (<a href="https://wiki.zackbatist.info%5D">wiki.zackbatist.info</a>, which I was barely using to begin with. I consolidated and refactored all the pages worth keeping and will continue to write additional notes at <a href="https://zackbatist.info/notes">zackbatist.info/notes</a>.</p>
+<p>Please update your RSS feeds if you want to keep following!</p>
 
 
 
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-hutchins1995" class="csl-entry" role="listitem">
-Hutchins, Edwin. 1995. <span>“How a <span>Cockpit Remembers Its Speeds</span>.”</span> <em>Cognitive Science</em> 19 (3): 265–88. <a href="https://doi.org/10.1207/s15516709cog1903_1">https://doi.org/10.1207/s15516709cog1903_1</a>.
-</div>
-<div id="ref-knorrcetina2001" class="csl-entry" role="listitem">
-Knorr Cetina, Karin. 2001. <span>“Objectual Practice.”</span> In <em>The <span>Practice Turn</span> in <span>Contemporary Theory</span></em>, edited by Theodore R. Schatzki, Karin Knorr Cetina, and Eike von Savigny, 175–88. London; New York: Routledge.
-</div>
-<div id="ref-latour1986" class="csl-entry" role="listitem">
-Latour, Bruno, and Steve Woolgar. 1986. <em>Laboratory <span>Life</span>: <span>The Construction</span> of <span>Scientific Facts</span></em>. 2nd ed. Princeton, New Jersey: Princeton University Press.
-</div>
-<div id="ref-lave1991" class="csl-entry" role="listitem">
-Lave, Jean, and Etienne Wenger. 1991. <em>Situated Learning: <span>Legitimate</span> Peripheral Participation</em>. Cambridge, United Kingdom: Cambridge University Press.
-</div>
-<div id="ref-law2008" class="csl-entry" role="listitem">
-Law, John. 2008. <span>“Actor <span>Network Theory</span> and <span>Material Semiotics</span>.”</span> In <em>The <span>New Blackwell Companion</span> to <span>Social Theory</span></em>, edited by Bryan S. Turneressor, 141–58. Wiley-Blackwell. <a href="https://doi.org/10.1002/9781444304992.ch7">https://doi.org/10.1002/9781444304992.ch7</a>.
-</div>
-<div id="ref-leontev1974" class="csl-entry" role="listitem">
-Leont’ev, A. N. 1974. <span>“The <span>Problem</span> of <span>Activity</span> in <span>Psychology</span>.”</span> <em>Soviet Psychology</em> 13 (2): 4–33. <a href="https://doi.org/10.2753/RPO1061-040513024">https://doi.org/10.2753/RPO1061-040513024</a>.
-</div>
-<div id="ref-pickering1992a" class="csl-entry" role="listitem">
-Pickering, Andrew. 1992. <em>Science as <span>Practice</span> and <span>Culture</span></em>. University of Chicago Press. <a href="https://books.google.com?id=U_mL2pPGY7YC">https://books.google.com?id=U_mL2pPGY7YC</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

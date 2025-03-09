@@ -11,7 +11,38 @@
 <description>Rambles about archaeological practice, open science, and collaboration
 </description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Sun, 29 Dec 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 09 Mar 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Migrating from wordpress</title>
+  <dc:creator>Zack Batist</dc:creator>
+  <link>https://zackbatist.info/posts/2025-03-09-migrating-from-wordpress.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’m moving my blog from WordPress to a <a href="https://quarto.org/">quarto</a>-based system, which I’m already using to maintain other aspects of my professional website. The blog is now located at <a href="https://zackbatist.info/posts">zackbatist.info/posts</a>.</p>
+<p>I’m doing this for a few reasons:</p>
+<ul>
+<li>To make my site more consistent from a visitor perspective</li>
+<li>To match my other writing habits and workflows</li>
+<li>To save some money on VPS hosting</li>
+<li>I’ve been having some weird database corruption issues</li>
+<li>All the WordPress drama</li>
+</ul>
+<p>This means that I’ll no longer be using the <a href="https://blog.zackbatist.info">blog.zackbatist.info</a> subdomain, and all existing links will be broken. I reformatted all the older posts and added the existing URLs to the new versions’ metadata, but this won’t actually do any active redirection.</p>
+<p>I’m also shutting down my mediawiki instance (<a href="https://wiki.zackbatist.info%5D">wiki.zackbatist.info</a>, which I was barely using to begin with. I consolidated and refactored all the pages worth keeping and will continue to write additional notes at <a href="https://zackbatist.info/notes">zackbatist.info/notes</a>.</p>
+<p>Please update your RSS feeds if you want to keep following!</p>
+
+
+
+ ]]></description>
+  <category>meta</category>
+  <category>writing</category>
+  <category>website</category>
+  <guid>https://zackbatist.info/posts/2025-03-09-migrating-from-wordpress.html</guid>
+  <pubDate>Sun, 09 Mar 2025 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Starting as a postdoc at McGill</title>
   <dc:creator>Zack Batist</dc:creator>
