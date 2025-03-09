@@ -38,7 +38,7 @@ website:
       - publications.qmd
       - projects.qmd
       - notes.qmd
-      - blog.qmd
+      - posts.qmd
 format:
   html:
     theme: 

@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Posts
 description: |
   Rambles about archaeological practice, open science, and collaboration
 listing: 
