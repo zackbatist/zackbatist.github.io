@@ -1,5 +1,5 @@
 ---
-title: Migrating from wordpress
+title: Migrating from Wordpress
 date: 2025-03-09
 aliases:
   - https://blog.zackbatist.info/2025/03/09/migrating-from-wordpress/
@@ -22,6 +22,6 @@ I'm doing this for a few reasons:
 
 This means that I'll no longer be using the [blog.zackbatist.info](https://blog.zackbatist.info) subdomain, and all existing links will be broken. I reformatted all the older posts and added the existing URLs to the new versions' metadata, but this won't actually do any active redirection.
 
-I'm also shutting down my mediawiki instance ([wiki.zackbatist.info](https://wiki.zackbatist.info]), which I was barely using to begin with. I consolidated and refactored all the pages worth keeping and will continue to write additional notes at [zackbatist.info/notes](https://zackbatist.info/notes).
+I'm also shutting down my mediawiki instance ([wiki.zackbatist.info](https://wiki.zackbatist.info)), which I was barely using to begin with. I consolidated and refactored all the pages worth keeping and will continue to write additional notes at [zackbatist.info/notes](https://zackbatist.info/notes).
 
 Please update your RSS feeds if you want to keep following!
