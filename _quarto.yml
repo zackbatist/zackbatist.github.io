@@ -24,7 +24,7 @@ website:
       <a class="link me-1" href="https://github.com/zackbatist" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
       <a class="link me-1" href="https://orcid.org/0000-0003-1072-5198" title="orcid" target="_blank" rel="noopener">{{< ai orcid >}}</a>
       <a class="link me-1" href="https://archaeo.social/@zackbatist" title="Mastodon" target="_blank"rel="noopener">{{< fa brands mastodon >}}</a>
-      <a class="link me-1" href="https://zackbatist.info/blog/index.xml" title="rss" target="_blank" rel="noopener">{{< fa rss-square >}}</a>
+      <a class="link me-1" href="https://zackbatist.info/posts.xml" title="rss" target="_blank" rel="noopener">{{< fa rss-square >}}</a>
   sidebar:
     logo: "assets/picture.png"
     pinned: true
