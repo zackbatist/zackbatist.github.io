@@ -1,0 +1,169 @@
+---
+title: I like LaTeX
+date: 2023-01-10
+aliases: 
+  - https://blog.zackbatist.info/2023/01/10/i-like-latex/
+categories: 
+  - dissertation
+  - latex
+  - pain text
+  - writing
+draft: false
+---
+
+So I think I finally understand LaTeX. Of course there's still a lot for me to learn, but I think I'm at a point where I am really harnessing its true value.
+
+I've been working with plaintext since I started writing my dissertation. Until very recently my workflow closely resembled an RMarkdown setup, and largely corresponded with [this guide written by Ben Marwick](https://github.com/benmarwick/atom-for-scholarly-writing-with-markdown). My simple understanding is that Pandoc passes the Markdown through LaTeX to produce a viable PDF, which makes it possible to scatter LaTeX throughout the content and in the YAML front matter. So I had a mish-mash of both Markdown and LaTeX conventions in most of my documents. For instance, I was using the comprehensive [graphicx](https://ctan.org/pkg/graphicx?lang=en) package to render my figures and I was referring to endnotes stored in a separate tex file using the [sepfootnotes](https://ctan.org/pkg/sepfootnotes?lang=en) package, all while using [Pandoc's citeproc](https://pandoc.org/MANUAL.html#citations) bibliographic referencing system. Eventually I came to realize that my workflow was fundamentally built upon LaTeX, or comprises functions that closely correlate with common LaTeX macros.
+
+I worked using this hybrid Markdown/LaTeX setup for years, until last week when I was prompted by a member of my supervisory committee to compile a unified document so he could better understand the flow of my thesis. I had anticipated that I would need to convert everything to pure LaTeX at some point, and it was as good a time as any.
+
+Previously, I had mashed together code from various Stack Overflow posts in order to generate something functional, but it's a completely different experience when you start from scratch. I started by following the Overleaf guide on [how to structure a thesis using LaTeX](https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_1)%3A_Basic_Structure), and now I have a very robust and elegant setup that compiles a single, tidy, and systematic PDF from multiple sources. Here's the current state of my main tex file:
+
+```latex
+% Page layout %
+\documentclass{report}
+\usepackage[margin=1in]{geometry}
+
+% Line and paragraph spacing %
+\usepackage{setspace}
+\doublespacing
+\setlength{\lineskip}{3.5pt}
+\setlength{\lineskiplimit}{2pt}
+\setlength{\parindent}{20pt}
+
+% Table of contents %
+\usepackage{tocloft}
+\setlength{\cftbeforesecskip}{4pt}
+\usepackage[page,titletoc,title]{appendix}
+
+% Verbatim %
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\},breaksymbol=}
+
+% Data references %
+\usepackage{sepfootnotes}
+\newendnotes{x}
+\newendnotes{y}
+\newendnotes{z}
+\input{refs/XXXX-refs.tex}
+\input{refs/YYYY-refs.tex}
+\input{refs/ZZZZ-refs.tex}
+\input{refs/misc-refs.tex}
+\renewcommand\thexnote{A\arabic {xnote}}
+\renewcommand\theynote{B\arabic {ynote}}
+\renewcommand\theznote{C\arabic {znote}}
+\usepackage[multiple]{footmisc}
+
+% Figures and text boxes %
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage{float}
+\usepackage{mdframed}
+\mdfdefinestyle{quotes}{
+linecolor=black,linewidth=1pt,
+leftmargin=1cm,rightmargin=1cm,
+skipabove=12pt,skipbelow=12pt
+}
+
+% Block quotes %
+\usepackage{csquotes}
+
+% Tables %
+\usepackage{tabularx}
+
+% Epigraph %
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{4in}
+\renewcommand{\textflush}{flushright}
+\renewcommand{\epigraphsize}{\footnotesize}
+\setlength\epigraphrule{1pt}
+
+% Bibliographic citations %
+\usepackage[
+citestyle=authoryear,
+bibstyle=authoryear,
+maxcitenames=2,
+maxbibnames=99,
+uniquelist=false,
+date=year,
+url=false
+]{biblatex}
+\addbibresource{/Users/zackbatist/Dropbox/zotero/zack.bib}
+
+\renewcommand*{\postnotedelim}{\addcolon\space}
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+
+% Hyperlinks %
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{
+linkcolor=black,
+citecolor=blue,
+urlcolor=blue
+}
+
+% Title page %
+\title{
+{Thesis Title}\\
+{\large University of Toronto}\\
+{\normalsize Faculty of Information}\\
+% {\includegraphics{university.jpg}}
+}
+\author{Zack Batist}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% Front matter %
+% \chapter*{Abstract}
+% \chapter*{Dedication}
+% \chapter*{Declaration}
+% \chapter*{Acknowledgements}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Content %
+\chapter{Introduction}
+\input{chapters/introduction.tex}
+\chapter{Notions of Archaeological Data}
+\input{chapters/notions-of-archaeological-data.tex}
+\chapter{Theories of Discursive Action}
+\input{chapters/theories-of-discursive-action.tex}
+\chapter{Methods}
+\input{chapters/methods.tex}
+\chapter{Social Worlds}
+\input{chapters/social-worlds.tex}
+\chapter{Sites of Discursive Negotiation}
+\input{chapters/sites-of-discursive-negotiation.tex}
+\chapter{Sociotechnical Tensions Relating to Data}
+\input{chapters/sociotechnical-tensions-relating-to-data.tex}
+\chapter{Discussion / Future Directions}
+(in progress)
+
+% Bibliograpy %
+\printbibliography[heading=bibintoc]
+
+% Appendices %
+\begin{appendices}
+\chapter{Summary of Code System}
+\chapter{Data Management Protocols}
+\chapter{Open Data Supplement}
+\section{Case A}
+\thexnotes
+\section{Case B}
+\theynotes
+\section{Case C}
+\theznotes
+\end{appendices}
+
+\end{document}
+```
+
+A large part of this work involves figuring out trends in the package ecosystem. I really struggled to differentiate between the various packages for bibliographic formatting, footnotes, figures and floats and their cross-compatibility. Some packages seem to be developed according to common tendencies, sort of like the R Tidyverse (in the sense of holding a generally common syntax, not in terms of cult behaviour), based around central cores such as [biblatex](https://ctan.org/pkg/biblatex?lang=en) and [hyperref](https://ctan.org/pkg/hyperref?lang=en).
+
+I've also been using LaTeX to format [my CV](../../cv.pdf), and today I started using it to create slides [for an upcoming conference presentation](https://dab23.archaeological.science/abstracts/batist/). I like how programmatic the CV feels — you script a macro once, call the function along with the text you want it to parse, and you got a pretty little table of all your career accomplishments! I'm still kind of undecided about using beamer for conference slides, but I do like how it encourages me to write concurrently as I create the slides.
+

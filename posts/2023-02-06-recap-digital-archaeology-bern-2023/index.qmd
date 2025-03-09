@@ -1,0 +1,35 @@
+---
+title: "Recap: Digital Archaeology Bern 2023"
+date: 2023-02-06
+aliases: 
+  - https://blog.zackbatist.info/2023/02/06/recap-digital-archaeology-bern-2023/
+categories: 
+  - conference
+  - DAB23
+  - open archaeology
+  - open data
+  - open-archaeo
+draft: false
+---
+
+Last week I travelled to Switzerland to participate in [Digital Archaeology Bern (2023)](https://dab23.archaeological.science/). The conference was themed "advancing open research into the next decade" and served as a way to take stock of developments since the [2012 World Archaeology Special Issue on Open Archaeology](https://www.tandfonline.com/toc/rwar20/44/4) and Ben Marwick's influential 2017 paper [Computational Reproducibility in Archaeological Research](https://doi.org/10.1007/s10816-015-9272-9), which came out 10 and 5 years ago, respectively. I think that the conference was a remarkable success, and all 50-60 participants were actively engaged in critical discussions on what it means to do open archaeology. You can find my slides and presentation notes on GitHub (https://github.com/zackbatist/DAB23).
+
+Although there were some elements of this, the conference was not just superficial open-boosting. Most, if not, all participants highlighted challenges and unanticipated implications of being open that they have recently experienced. Looking back, a few themes stood out:
+
+- Thinking about value proposition that openness entails, which necessarily involves accounting for specific use cases and imagined future stakeholders.
+- Thinking about the needs and values of all stakeholders involved in doing archaeology, including local and Indigenous communities, land-owners, archivists, government agencies, and related parties, and what openness means for them.
+- Thinking about how we might reconcile our values as archaeologists with the values demanded and afforded by the infrastructures and communities with whom we must work.
+
+I got to meet so many interesting people. I already knew many of them from social media, virtually-hosted talks, or brief in-person interactions at the CAA back in 2018, and it was really great to put a face to each person's name. Most serious work in digital archaeology, especially productive work developing open data infrastructures, is being done in Europe, and I was very grateful to have this opportunity to connect with that crowd (especially since I'm currently entering the post-PhD academic job market). I think my paper was well-received and valued, and it opened the door to many interesting discussions during the breaks between sessions and elsewhere.
+
+I was also able to tack on a couple days at the start to work with Joe Roe on an article we've been writing for the better part of 3 years, about collaborative aspects of open source software development among archaeologists. [We presented a paper at the 2021 CAA conference](https://github.com/zackbatist/caa2021-openarchaeo) on the composition of [open-archaeo](http://open-archaeo.info/), the list of open source software and resources made by and for archaeology that I maintain, and we're trying to expand on it a little bit more with some network analysis type stuff. So this time together really gave us an opportunity to discuss what we really want out of the paper, to actually talk through the results, and generally helped motivate us to get this done. We still have some work cut out for us, but that probably warrants its own blog post.
+
+Anyway, here are some cool pictures from the trip!
+
+![View of the street from my hostel](IMG_1118-1200x1600.jpg)
+
+![Lithics on display at the Laténium](396594BF-8D85-4415-BAE1-845284D219CC-1200x1500.jpg)
+
+![Some stuff I saw when I got lost one morning](5E5B8638-7A9A-4764-8F19-7C3C864C3132-2048x1536.jpg)
+
+![View of the city from a perch near the university](IMG_1121-2048x942.jpg)

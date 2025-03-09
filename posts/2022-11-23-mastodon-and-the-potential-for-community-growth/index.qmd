@@ -1,0 +1,29 @@
+---
+title: Mastodon and the potential for community growth
+date: 2022-11-23
+aliases: 
+  - https://blog.zackbatist.info/2022/11/23/mastodon-and-the-potential-for-community-growth/
+categories: 
+  - archaeo-social
+  - mastodon
+  - meta
+draft: false
+---
+
+It's a weird time to be starting a blog. Twitter has imploded and many of my colleagues have started using mastodon instead. There's a lot of talk about the virtues of decentralization and of establishing and maintaining firm community values as reflected in content moderation policies and practices. Of course, all of this discourse is happening in microblog format, and is restricted by the usual inability to have any kind of nuanced conversation on the web. I feel that when posting on twitter and on mastodon alike, I'm bound to a formal position, and I find it hard to establish a tone that is my own. This makes it difficult for me to be casual, and to express my thoughts in a way that makes sense to me, especially when my ideas are really half-baked or vaguely critical. So I started this blog to help me retain a more tentative voice that I often express in casual conversations, and which I'm terrified of letting out in more formal or professional spaces.
+
+The shift to mastodon has been interesting. It definitely has a very different vibe, but there's a chance that this might just be due to the novelty of the experience. Sure, there are affordances built in to the platform that enable or encourage certain behaviours, such as content warnings, image descriptions and various means of controlling post visibility, but the value of these features will depend on whether people take action and actually use them.
+
+I think that the biggest change, whose ramifications we're just starting to see, has to do with community governance. On twitter, the usual and pretty much only way of responding to inadequate content moderation was to complain and put up with it. But on mastodon there are three main ways you can deal with it:
+
+1. put up with it,
+2. switch to another instance, or
+3. get involved, give feedback, make change
+
+People are very used to the first option, and the latter two require more work. The second option involves a bit of work to find another instance that appeals to you, to create a new introduction post and build out your profile again, and to re-link all your other socials, etc. The third option seems like the most exciting one, since it actually feels like a potential venue for dynamic community building, for personal and collective growth. The distinction between the second and third options may also have lot to do with a weird tension between techno-libertarian  and anarcho-syndicalist visions of (web-based) community building (but more on that in another post…).
+
+This is the sort of thing that is on my mind as [archaeo.social](https://archaeo.social/about) continues to develop. [Joe Roe](https://archaeo.social/@joeroe) started archaeo.social as a mastodon instance for archaeologists, and I joined him soon after to help with content moderation and to plan some community guidelines (still in progress). I'm learning a lot through this whole experience. I'm learning to be more patient, more open to other perspectives, less controlling, and less apprehensive. It's still early days, and Joe is encouraging me to sit tight, let the community do its thing, get them to shape the path ahead, which scares the hell out of me. Hours before archaeo.social launched, I even posted a very critical toot about how this would be bound to fail, but look at me now, riding shotgun!
+
+![Me being wrong on the internet, hopefully.](Screen-Shot-2022-11-23-at-3.10.14-AM.png)
+
+In retrospect, that kind of attitude I posted a couple weeks ago may be what's holding us back. We need to try things out and play around to find out what else could come from all of this. I'm very eager to have been wrong.

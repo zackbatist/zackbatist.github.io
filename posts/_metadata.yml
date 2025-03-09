@@ -1,0 +1,6 @@
+author: Zack Batist
+date-format: long
+title-block-banner: false
+bibliography: ../zack.bib
+csl: ../assets/chicago-author-date.csl
+citation: false

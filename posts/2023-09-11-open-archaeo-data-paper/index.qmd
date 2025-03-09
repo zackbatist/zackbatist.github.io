@@ -1,0 +1,21 @@
+---
+title: open-archaeo data paper
+date: 2023-09-11
+aliases: 
+  - https://blog.zackbatist.info/2023/09/11/open-archaeo-data-paper/
+categories: 
+  - foss
+  - open archaeology
+  - open-archaeo
+  - publication
+draft: false
+---
+
+Today, [Joe Roe](https://joeroe.io/) and I published a data paper in the Journal of Open Archaeology Data on [open-archaeo](https://github.com/zackbatist/open-archaeo), the comprehensive list of open source archaeological software and resources that we maintain. In this paper, we outline the data collection methods and conceptual model, and highlight open-archaeo's value as a public resource and as a dataset for examining the emerging community of practice surrounding open source software development in research contexts. In fact, open-archaeo serves as the basis for an extended dataset in a study we are currently working on (investigating collaborative coding experiences) and we think there is a lot of potential for additional analysis in the future.
+
+**Open-archaeo: A Resource for Documenting Archaeological Software Development Practices**\
+[https://doi.org/10.5334/joad.111](https://doi.org/10.5334/joad.111)
+
+Open-archaeo (https://open-archaeo.info) is a comprehensive list of open software and resources created by and for archaeologists. It is a living collection—itself an open project—which as of writing includes 548 entries and associated metadata. Open-archaeo documents what kinds of software and resources archaeologists have produced, enabling further investigation of research software engineering and digital peer-production practices in the discipline, both under-explored aspects of archaeological research practice.
+
+![Conceptual model documenting relationships between data recorded in open-archaeo and other relevant information in the source material and elsewhere on the web.](open-archaeo-CM.png)

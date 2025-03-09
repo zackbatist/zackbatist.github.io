@@ -1,0 +1,28 @@
+---
+title: ArcheoFOSS XVII
+date: 2023-12-17
+aliases: 
+  - https://blog.zackbatist.info/2023/12/17/archeofoss-xvii/
+categories: 
+  - archaeo-social
+  - archeoFOSS
+  - conference
+  - DObsiss
+  - fediverse
+  - open archaeology
+draft: false
+---
+
+This week I participated in ArcheoFOSS in Turin, Italy. I've always been keen to present at this conference but somehow never really felt I had much important to say (aside from open-archaeo stuff, but Joe Roe and I already presented about it at the [2021 CAA conference](https://github.com/zackbatist/caa2021-openarchaeo), and more detailed analysis is still in the works). But this year Joe and I took the opportunity to co-lead a panel on archaeology and the fediverse based on our experiences administrating and moderating the archaeo-social mastodon instance. Our panel was meant to highlight key challenges and opportunities for collectively-owned and community-led scholarly social media, and while it only consisted of a few papers, it definitely got the ball rolling on further critical discussion regarding the role of the fediverse and decentralized communication protocols in online archaeological discourse. Joe and I are initiating work on a position paper that assembles the main ideas presented during the panel and subsequent discussion, so stay tuned for more on that. In the meantime, you can access our introductory remarks on [zenodo](https://doi.org/10.5281/zenodo.10362684) and [github](https://github.com/archaeo-social/archeofoss23_fediverse).
+
+I also presented a paper on the challenges I experienced integrating and reusing data during my Master's thesis, which I completed 8 years ago, basically summarizing its failures (trying to channel Shawn Graham's [Failing Gloriously](https://doi.org/10.31356/dpb015)). This basically served as a venue for finally presenting my long-held yet unpublished uncertainties about the value of analyses that integrate legacy data, drawn from my personal experiences.
+
+I really appreciated how low-key and relaxing the conference was. It was great to just have a casual experience with a relatively small group of like-minded researchers. I was very fortunate to be able to travel to Turin and participate in person. I also went on a nice post-conference excursion to Genoa, which is a truly lovely city. Thanks to Stefano Costa for informing me about the best places to visit and eat!
+
+![Mole Antonelliana, Turin](IMG_1542-1200x1600.png)
+
+![Po River, Turin](IMG_1556-2048x1536.png)
+
+![Po River, Turin](IMG_1566-2048x1536.png)
+
+![Sunset in Genoa](IMG_1582-2048x975.jpg)

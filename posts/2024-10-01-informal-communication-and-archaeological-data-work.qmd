@@ -1,0 +1,21 @@
+---
+title: "New Paper: Informal communication and archaeological data work"
+date: 2024-10-01
+aliases: 
+  - https://blog.zackbatist.info/2024/10/01/new-paper-informal-communication-and-archaeological-data-work/
+categories: 
+  - abstract
+  - formality
+  - notions of data
+  - open data
+  - publication
+  - science studies
+draft: false
+---
+
+The first peer-reviewed paper deriving from my dissertation is finally published in Open Archaeology! It showcases qualitative research on scholarly communication within archaeological projects — specifically the role of informal communication styles in archaeological knowledge production, and how they complement more formally structured documentary media.
+
+**On the Value of Informal Communication in Archaeological Data Work**\
+[https://doi.org/10.1515/opar-2024-0014](https://doi.org/10.1515/opar-2024-0014)
+
+Archaeological data simultaneously serve as formal documentary evidence that supports and legitimizes chains of analytical inference and as communicative media that bind together scholarly activities distributed across time, place, and social circumstance. This contributes to a sense of "epistemic anxiety," whereby archaeologists require that data be objective and decisive to support computational analysis but also intuitively understand data to be subjective and situated based on their own experiences as participants in an archaeological community of practice. In this article, I present observations of and elicitations about archaeological practices relating to the constitution and transformation of data in three cases in order to articulate this tension and document how archaeologists cope with it. I found that archaeologists rely on a wide variety of situated representations of archaeological experiences – which are either not recorded at all or occupy entirely separate and unpublished data streams – to make sense of more formal records. This undervalued information is crucial for ensuring that relatively local, bounded, and private collaborative ties may be extended beyond the scope of a project and, therefore, should be given more attention as we continue to develop open data infrastructures.
