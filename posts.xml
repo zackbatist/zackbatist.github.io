@@ -11,11 +11,34 @@
 <description>Rambles about archaeological practice, open science, and collaboration
 </description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Tue, 01 Oct 2024 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 29 Dec 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Starting as a postdoc at McGill</title>
+  <dc:creator>Zack Batist</dc:creator>
+  <link>https://zackbatist.info/posts/2024-12-29-mcgill-postdoc.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’m delighted to finally share that I’ll be starting as a postdoc at McGill University in January!</p>
+<p>I’ll be joining the team at the Covid-19 Immunity Task Force to investigate data-sharing initiatives in epidemiological research, including the <a href="https://databank.citf.mcgill.ca/">CITF Databank</a>. My project will articulate the myriad social, technical, institutional and epistemic mechanisms that scaffold different approaches to data-sharing, and identify factors that enhance the value of data-sharing initiatives. Although this strays a little from my roots in archaeology, it’s actually a natural fit to continue exploring data-sharing as a social, collaborative and value-laden experience.</p>
+<p>I set up a little website where I’m posting my research protocols and reflections on my work as it unfolds, and you can follow along at <a href="https://zackbatist.info/CITF-Postdoc">zackbatist.info/CITF-Postdoc</a>.</p>
+
+
+
+ ]]></description>
+  <category>CITF</category>
+  <category>data-sharing</category>
+  <category>postdoc</category>
+  <category>science studies</category>
+  <guid>https://zackbatist.info/posts/2024-12-29-mcgill-postdoc.html</guid>
+  <pubDate>Sun, 29 Dec 2024 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>New Paper: Informal communication and archaeological data work</title>
   <dc:creator>Zack Batist</dc:creator>
-  <link>https://zackbatist.info/posts/2024-10-01-informal-communication-and-archaeological-data-work/</link>
+  <link>https://zackbatist.info/posts/2024-10-01-informal-communication-and-archaeological-data-work.html</link>
   <description><![CDATA[ 
 
 
@@ -35,13 +58,13 @@
   <category>open data</category>
   <category>publication</category>
   <category>science studies</category>
-  <guid>https://zackbatist.info/posts/2024-10-01-informal-communication-and-archaeological-data-work/</guid>
+  <guid>https://zackbatist.info/posts/2024-10-01-informal-communication-and-archaeological-data-work.html</guid>
   <pubDate>Tue, 01 Oct 2024 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>New paper: Exploring collaborative practices in archaeological software development</title>
   <dc:creator>Zack Batist</dc:creator>
-  <link>https://zackbatist.info/posts/2024-07-18-exploring-collaborative-practices-in-archaeological-software-development/</link>
+  <link>https://zackbatist.info/posts/2024-07-18-exploring-collaborative-practices-in-archaeological-software-development.html</link>
   <description><![CDATA[ 
 
 
@@ -69,13 +92,13 @@
   <category>open science</category>
   <category>open-archaeo</category>
   <category>science studies</category>
-  <guid>https://zackbatist.info/posts/2024-07-18-exploring-collaborative-practices-in-archaeological-software-development/</guid>
+  <guid>https://zackbatist.info/posts/2024-07-18-exploring-collaborative-practices-in-archaeological-software-development.html</guid>
   <pubDate>Thu, 18 Jul 2024 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Pruning open-archaeo</title>
   <dc:creator>Zack Batist</dc:creator>
-  <link>https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo/</link>
+  <link>https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo.html</link>
   <description><![CDATA[ 
 
 
@@ -91,15 +114,15 @@
   author = {Batist, Zack},
   title = {Pruning Open-Archaeo},
   date = {2024-02-02},
-  url = {https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo/},
+  url = {https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo.html},
   langid = {en}
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-batist2024" class="csl-entry quarto-appendix-citeas">
 Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
-2024. <a href="https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo/">https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo/</a>.
+2024. <a href="https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo.html">https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo.html</a>.
 </div></div></section></div> ]]></description>
   <category>open-archaeo</category>
-  <guid>https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo/</guid>
+  <guid>https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo.html</guid>
   <pubDate>Fri, 02 Feb 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
@@ -154,7 +177,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
 <item>
   <title>Finished my dissertation!</title>
   <dc:creator>Zack Batist</dc:creator>
-  <link>https://zackbatist.info/posts/2023-09-24-finished-my-dissertation/</link>
+  <link>https://zackbatist.info/posts/2023-09-24-finished-my-dissertation.html</link>
   <description><![CDATA[ 
 
 
@@ -175,7 +198,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>open data</category>
   <category>open science</category>
   <category>science studies</category>
-  <guid>https://zackbatist.info/posts/2023-09-24-finished-my-dissertation/</guid>
+  <guid>https://zackbatist.info/posts/2023-09-24-finished-my-dissertation.html</guid>
   <pubDate>Sun, 24 Sep 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
@@ -211,7 +234,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
 <item>
   <title>Some thoughts on data formality</title>
   <dc:creator>Zack Batist</dc:creator>
-  <link>https://zackbatist.info/posts/2023-06-13-some-thoughts-on-data-formality/</link>
+  <link>https://zackbatist.info/posts/2023-06-13-some-thoughts-on-data-formality.html</link>
   <description><![CDATA[ 
 
 
@@ -234,7 +257,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>notions of data</category>
   <category>open data</category>
   <category>workflows</category>
-  <guid>https://zackbatist.info/posts/2023-06-13-some-thoughts-on-data-formality/</guid>
+  <guid>https://zackbatist.info/posts/2023-06-13-some-thoughts-on-data-formality.html</guid>
   <pubDate>Tue, 13 Jun 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
@@ -295,7 +318,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
 <item>
   <title>I like LaTeX</title>
   <dc:creator>Zack Batist</dc:creator>
-  <link>https://zackbatist.info/posts/2023-01-10-i-like-latex/</link>
+  <link>https://zackbatist.info/posts/2023-01-10-i-like-latex.html</link>
   <description><![CDATA[ 
 
 
@@ -758,13 +781,13 @@ font-style: inherit;">document</span>}</span></code></pre></div>
   <category>latex</category>
   <category>pain text</category>
   <category>writing</category>
-  <guid>https://zackbatist.info/posts/2023-01-10-i-like-latex/</guid>
+  <guid>https://zackbatist.info/posts/2023-01-10-i-like-latex.html</guid>
   <pubDate>Tue, 10 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Comments on ‘The rise and fall of peer review’</title>
   <dc:creator>Zack Batist</dc:creator>
-  <link>https://zackbatist.info/posts/2022-12-17-comments-on-the-rise-and-fall-of-peer-review/</link>
+  <link>https://zackbatist.info/posts/2022-12-17-comments-on-the-rise-and-fall-of-peer-review.html</link>
   <description><![CDATA[ 
 
 
@@ -793,7 +816,7 @@ font-style: inherit;">document</span>}</span></code></pre></div>
   <category>open science</category>
   <category>peer review</category>
   <category>science core</category>
-  <guid>https://zackbatist.info/posts/2022-12-17-comments-on-the-rise-and-fall-of-peer-review/</guid>
+  <guid>https://zackbatist.info/posts/2022-12-17-comments-on-the-rise-and-fall-of-peer-review.html</guid>
   <pubDate>Sat, 17 Dec 2022 05:00:00 GMT</pubDate>
 </item>
 <item>
@@ -861,7 +884,7 @@ font-style: inherit;">document</span>}</span></code></pre></div>
 <item>
   <title>Open science and its weird conception of data</title>
   <dc:creator>Zack Batist</dc:creator>
-  <link>https://zackbatist.info/posts/2022-11-28-open-science-and-its-weird-conception-of-data/</link>
+  <link>https://zackbatist.info/posts/2022-11-28-open-science-and-its-weird-conception-of-data.html</link>
   <description><![CDATA[ 
 
 
@@ -949,7 +972,7 @@ Wellen, Richard. 2004. <span>“Taking on <span>Commercial Scholarly Journals</s
   <category>notions of data</category>
   <category>open data</category>
   <category>open science</category>
-  <guid>https://zackbatist.info/posts/2022-11-28-open-science-and-its-weird-conception-of-data/</guid>
+  <guid>https://zackbatist.info/posts/2022-11-28-open-science-and-its-weird-conception-of-data.html</guid>
   <pubDate>Mon, 28 Nov 2022 05:00:00 GMT</pubDate>
 </item>
 <item>
