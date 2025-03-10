@@ -46,13 +46,13 @@ DOI: [10.1017/aap.2021.11](https://doi.org/10.1017/aap.2021.11)
 | [BibTeX](/bibtex/contreras2021.bib)
 
 Tristan Carter, Zachary Batist, Kathryn Campeau, Yosef Garfinkel and Katharina Streit\
-2017. **Investigating Pottery Neolithic Socio-Economic "Regression" in the Southern Levant: Characterising Obsidian Consumption at Sha’ar Hagolan (N. Israel).**
+2017. **Investigating Pottery Neolithic Socio-Economic "Regression" in the Southern Levant: Characterising Obsidian Consumption at Sha'ar Hagolan (N. Israel).**
 Journal of Archaeological Science: Reports 15: 305-317.\
 DOI: [10.1016/j.jasrep.2017.08.016](https://doi.org/10.1016/j.jasrep.2017.08.016)
 | [BibTeX](/bibtex/carter2017.bib)
 
 Kyle P. Freund and Zachary Batist\
-2014. **Sardinian Obsidian Circulation and Early Maritime Navigation in the Neolithic as Shown through Social Network Analysis.**
+1.    **Sardinian Obsidian Circulation and Early Maritime Navigation in the Neolithic as Shown through Social Network Analysis.**
 Journal of Island and Coastal Archaeology 9(3): 364-380.\
 DOI: [10.1080/15564894.2014.881937](https://doi.org/10.1080/15564894.2014.881937)
 | [BibTeX](/bibtex/freund2014.bib)

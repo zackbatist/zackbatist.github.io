@@ -24,13 +24,13 @@ Using activity theory effectively is not about describing the minute processes o
 
 # Distributed cognition
 
-Highlight the interlocking convergence of a system's components, which all contribute to the accomplishment of common goals. From a distributed cognition standpoint, the coherence of a system depends upon the shared goals and overall trajectory of all the system’s components [@hutchins1995].
+Highlight the interlocking convergence of a system's components, which all contribute to the accomplishment of common goals. From a distributed cognition standpoint, the coherence of a system depends upon the shared goals and overall trajectory of all the system's components [@hutchins1995].
 Distributed cognition helps trace the network of relationships, dependencies or functional subsystems that must be maintained in order for the entire system to succeed in unison. 
 
 # Situated cognition
 Situated cognition examines the improvised, contingent and embodied experiences of human activity.
 It prioritizes emphasis on subjects' outlooks, which are contextualized by their prior experiences.
-In this sense, situated cognition is closely related to Lave and Wenger’s [-@lave1991] theory of situated learning (also commonly referred to as a "communities of practice" approach), which examines how individuals acquire professional skills in relation to their social environments.
+In this sense, situated cognition is closely related to Lave and Wenger's [-@lave1991] theory of situated learning (also commonly referred to as a "communities of practice" approach), which examines how individuals acquire professional skills in relation to their social environments.
 Situated cognition lends itself to investigating rather fluid, open-ended and affect-oriented actions, and is geared towards understanding how actors draw from their prior experiences to navigate through unique situations.
 It may be applied to examine how people who are learning new skills learn how to work in new ways relative to what they are used to.
 In such situations, situated cognition enables observers to examine how people align their perspectives as work progresses, and to better understand how people's general outlooks may have changed with the guidance of more experienced mentors.
@@ -50,7 +50,7 @@ However, from a pragmatic perspective, these two processes may be rendered as in
 
 ## Example
 The photographic outputs of a bioassay, which was a predominant object of discussion in their work, determines and represents the existence and qualities of discrete proteins that have been extracted from cell samples through reactions with specially selected reagents, marked with dyes selected for their non-reactive qualities, and pulled through a filtration medium that separates proteins according to their mass, molecular structure, and electromagnetic properties.
-A large number of material entities are thus selected and mobilized due to the researcher’s understanding that such an assemblage might contribute to the representation of a targeted set of phenomena.
+A large number of material entities are thus selected and mobilized due to the researcher's understanding that such an assemblage might contribute to the representation of a targeted set of phenomena.
 More specifically, certain reagents are added to cell samples that bind with proteins that constitute cell walls, allowing for inner proteins to be extracted.
 Other reagents that only bind to particular targeted proteins and that have been engineered to have certain identifiable physical and electromagnetic properties impart these qualities onto the now merged molecule composed of both targeted protein and reagent. Dyes that complement the design of the reagent and of the overall bioassay protocol are bound to these molecules, rendering them visible to the human eye.
 Molecules are then pulled through a conductive gel whose own material characteristics and density allow for only electrically charged molecules to be pulled through, given the placement of a polar-opposite charge at the far end of the gel.

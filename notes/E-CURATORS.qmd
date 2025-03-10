@@ -18,7 +18,7 @@ E-CURATORS looks into pervasive curation practices manifested in archaeological 
 * Adoption of mobile devices to capture and document archaeological evidence in excavation and survey
 * Use of off-the-shelf mobile apps to construct three-dimensional models of archaeological artefacts, or to geo-locate archaeological information resources
 * Instant online aggregation of captured data and resources in research archives, databases and repositories at the time of capture
-* Use of synchronous and asynchronous communication technologies to connect researchers with data and enable interpretation “at the trowel’s edge”
+* Use of synchronous and asynchronous communication technologies to connect researchers with data and enable interpretation "at the trowel's edge"
 * Collaborative annotation, enrichment and interpretation of archaeological data using Web 2.0 technologies, crowdsourcing and social tagging
 * Adoption of virtual reality (VR) and augmented reality (AR) visualization methods and equipment used in other fields (such as the media and gaming industries) for the generation and assessment of archaeological hypotheses, interpretation and communication
 * Use of blogs, wikis and social media networks to co-create and co-curate archaeological information objects
@@ -66,7 +66,7 @@ We don't have a comprehensive task sequence plan (Gannt / PERT etc.). But here i
 - Systematic literature review and desk research on archaeological research practice and related scholarly work, to identify theoretical concepts and ideas, relevant to the study
 - Scope definition, consisting of refining study concepts and research questions, and identifying relevant sensitizing concepts on the basis of evidence and insights from the literature review and desk research
 - Definition of formal conceptual model aimed to capture successfully relevant aspects of archaeological research, based on a review of relevant ontologies and models
-- Definition of analytical schema, including. a “code system”, amenable for use as an instrument for qualitative data analysis of transcribed and annotated data in research sites of the project, and a graph database schema for further data analysis, visualization and summarization.
+- Definition of analytical schema, including. a "code system", amenable for use as an instrument for qualitative data analysis of transcribed and annotated data in research sites of the project, and a graph database schema for further data analysis, visualization and summarization.
 
 2. Data constitution
 - Identification and appraisal of case studies and participants who will be approached in each case study site to be involved in the study

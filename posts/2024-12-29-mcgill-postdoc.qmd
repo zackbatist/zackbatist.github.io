@@ -11,8 +11,8 @@ categories:
 draft: false
 ---
 
-I’m delighted to finally share that I’ll be starting as a postdoc at McGill University in January!
+I'm delighted to finally share that I'll be starting as a postdoc at McGill University in January!
 
-I’ll be joining the team at the Covid-19 Immunity Task Force to investigate data-sharing initiatives in epidemiological research, including the [CITF Databank](https://databank.citf.mcgill.ca/). My project will articulate the myriad social, technical, institutional and epistemic mechanisms that scaffold different approaches to data-sharing, and identify factors that enhance the value of data-sharing initiatives. Although this strays a little from my roots in archaeology, it’s actually a natural fit to continue exploring data-sharing as a social, collaborative and value-laden experience.
+I'll be joining the team at the Covid-19 Immunity Task Force to investigate data-sharing initiatives in epidemiological research, including the [CITF Databank](https://databank.citf.mcgill.ca/). My project will articulate the myriad social, technical, institutional and epistemic mechanisms that scaffold different approaches to data-sharing, and identify factors that enhance the value of data-sharing initiatives. Although this strays a little from my roots in archaeology, it's actually a natural fit to continue exploring data-sharing as a social, collaborative and value-laden experience.
 
-I set up a little website where I’m posting my research protocols and reflections on my work as it unfolds, and you can follow along at [zackbatist.info/CITF-Postdoc](https://zackbatist.info/CITF-Postdoc).
+I set up a little website where I'm posting my research protocols and reflections on my work as it unfolds, and you can follow along at [zackbatist.info/CITF-Postdoc](https://zackbatist.info/CITF-Postdoc).

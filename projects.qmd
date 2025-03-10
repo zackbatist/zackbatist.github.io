@@ -24,7 +24,7 @@ A list of open venues for publishing, reviewing and curating archaeological rese
 **E-CURATORS**\
 Led by Costis Dallas at the University of Toronto's Faculty of Information.
 Investigated pervasive curation practices manifested in archaeological research and communication work "in the wild", i.e. outside custodial collections or professional stewardship.
-As a senior research asisstant, I was responsible for establishing qualitative and quantitative research protocols, collecting and analyzing observational and interview data, designing and maintaining graph databases which served as the project’s backbone, coordinating with international and inter-institutional collaborators, leading in-depth training workshops for junior research assistants, and leading publication of our findings ([10.1515/opar-2020-0217](https://doi.org/10.1515/opar-2020-0217)).
+As a senior research asisstant, I was responsible for establishing qualitative and quantitative research protocols, collecting and analyzing observational and interview data, designing and maintaining graph databases which served as the project's backbone, coordinating with international and inter-institutional collaborators, leading in-depth training workshops for junior research assistants, and leading publication of our findings ([10.1515/opar-2020-0217](https://doi.org/10.1515/opar-2020-0217)).
 
 **Stelida Naxos Archaeology Project (SNAP)**\
 [stelida.mcmaster.ca](https://stelida.mcmaster.ca/)\
