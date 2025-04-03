@@ -19,7 +19,8 @@ website:
     left: |
       <a href="https://webring.archaeo.social/previous?host=zackbatist.info">&larr;</a>
       <a href="https://webring.archaeo.social">ARCHAEORING</a>
-      <a href="https://webring.archaeo.social/previous?host=zackbatist.info">&rarr;</a>
+      <a href="https://webring.archaeo.social/next?host=zackbatist.info">&rarr;</a>
+      <a href="https://webring.archaeo.social/random?host=zackbatist.info" style="font-size: 20px">&rarrw;</a>
     center: |
       <a class="link me-1" href="https://github.com/zackbatist" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
       <a class="link me-1" href="https://orcid.org/0000-0003-1072-5198" title="orcid" target="_blank" rel="noopener">{{< ai orcid >}}</a>
