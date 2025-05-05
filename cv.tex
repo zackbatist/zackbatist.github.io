@@ -120,6 +120,7 @@
 \newcommand{\Duration}[2]{\fontsize{10pt}{0}\selectfont #1 -- #2}
 \newcommand{\Year}[1]{\fontsize{10pt}{0}\selectfont #1}
 \newcommand{\Ongoing}{present}
+\newcommand{\Abandoned}{abandoned}
 %\newcommand{\Ongoing}{$\ast$}
 \newcommand{\Future}{future}
 \newcommand{\Review}{in review}
@@ -198,6 +199,8 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage{multicol}
+
 \begin{document}
 
 % No header for the first page
@@ -234,6 +237,20 @@
 % \end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Areas of Expertise}
+\begin{multicols}{2}
+  \begin{itemize}
+      \item Scholar of scientific practice
+      \item Research data management
+      \item Open science infrastructure
+      \item Scientific software development
+      \item Meta-research
+      \item Digital archaeology practice
+      \item Qualitative data analysis
+      \item Network analysis
+  \end{itemize}
+\end{multicols}
+
 \section{Current Position}
 \begin{EntriesTable}
   \Duration{2025}{} &
@@ -377,36 +394,37 @@
   \DOI{10.1158/1535-7163.MCT-08-1186}
 \end{EntriesTable}
 
+\newpage
 \subsubsection{Articles in Progress}
 \begin{EntriesTable}
 \Year{\Review}  &
   \Me.
   \textbf{Locating creative agency in archaeological data work.}
-  Cambridge Archaeological Journal.
+  Peer Community in Archaeology.
+  \DOI{10.17613/8eqy4-n1m82}
+  \GitHub{zackbatist/locating-creative-agency}
 \\
 \Year{\Review}  &
   \Me.
   \textbf{Balancing situated and objective representations in archaeological fieldwork.}
   Advances in Archaeological Practice.
+  \GitHub{zackbatist/fuzzy-concrete}
 \\
 % \Year{\Progress}  &
-%   \Me.
-%   \textbf{Scaffolding archaeological projects through data management protocols.}\newline
-%   \emph{Articulates the social and technical apparatus that govern how specialist work and information are distributed throughout an archaeological project.}\\
-  \Year{\Progress}  &
+%   \Me, Julie Lund { \&} Isak Roalkvam
+%   \textbf{Bibliometric network analysis of Viking Age research (BibVik)}
+%   \newline
+%   \emph{A project whose goal is to identify trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age.}
+%   \GitHub{zackbatist/BibVik}
+%   \Website{https://zackbatist.info/BibVik}
+% \\
+\Year{\Progress}  &
   \Me.
   \textbf{The situation of data papers in archaeological knowledge production.}\newline
-  \emph{Traces how published archaeological datasets are situated within broader citation networks, through empirical analysis of open bibliometric metadata.}\\
-% \Year{\Progress}  &
-%   \Me.
-%   \textbf{Distribution and internalization of roles in distributed and multi-stakeholder projects.}\newline
-%   \emph{Articulates a theory of role-relations in cooperative work environments that I developed throughout my PhD.}\\
-% \Year{\Progress}  &
-%   \Me.
-%   \textbf{Open data, overstated: an exploration of small-scale, offline and private acts of data-sharing within archaeological projects.}\newline
-%   \emph{Framing archaeological knowledge production in terms participating as a member of a commons, and accounting for the roles, relationships and boundaries that commoning entails.}\\
+  \emph{Traces how published archaeological datasets are situated within broader citation networks, through empirical analysis of open bibliometric metadata.}
+\\
 \Year{\Progress}  &
-\JoeRoe { \&} \Me.
+  \JoeRoe { \&} \Me.
   \textbf{Archaeology in the fediverse: reclaiming ownership of scholarly social media.}\newline
   \emph{Position paper articulating the discussion held during our panel at ArcheoFOSS XVII.}
 \end{EntriesTable}
@@ -455,6 +473,24 @@
   \DOI{10.5281/zenodo.55848}
   \GitHub{zackbatist/DObsiSS}
   \Website{zackbatist.info/DObsiSS}
+\end{EntriesTable}
+
+\newpage
+\subsection{Other Open Initiatives}
+\begin{EntriesTable}
+  \Duration{2024}{\Ongoing}  &
+    \textbf{Diamond Open Archaeology}
+    A listing of diamond open access archaeology journals.
+    \DOI{10.5281/zenodo.15026607}
+    \GitHub{open-archaeo/diamond}
+    \Website{diamond.open-archaeo.info}
+\\
+  \Duration{2025}{}  &
+  \textbf{open-archaeo/ai}
+  A community-led and collaboratively built survey of AI applications in archaeology, which emphasizes how AI methods relate to other and existing archaeological practices, including research ethics and open science.
+  Currently abandoned / in stasis.
+  \GitHub{open-archaeo/ai}
+  \Website{ai.open-archaeo.info}
 \end{EntriesTable}
 
 % \section{Presentations}
@@ -667,6 +703,7 @@
   Department of Anthropology, McMaster University
 \end{EntriesTable}
 
+\newpage
 \subsection{Workshops \& Short Courses}
 \begin{EntriesTable}
 \Year{2022}  &
@@ -751,7 +788,7 @@
 \section{Outreach}
 \begin{EntriesTable}
 \Duration{2022}{\Ongoing} &
-  \textbf{Personal blog}, \href{https://blog.zackbatist.info}{blog.zackbatist.info}
+  \textbf{Personal blog}, \href{https://zackbatist.info/posts}{zackbatist.info/posts}
   \newline
   Posts about my research and professional activities
 \end{EntriesTable}
@@ -760,11 +797,17 @@
 \section{Academic Service \& Affiliations}
 % \subsection{Editor}
 % \begin{EntriesTable}
-%   \Duration{2019}{\Ongoing} & Topic editor for the \textit{Journal of Open Source Software}
+% \Duration{2025}{\Ongoing} &
+%   \textbf{Drift: Roamings in the Margins of Archaeology}, \href{https://drift-journal.org/}{drift-journal.org}
 % \end{EntriesTable}
 
 \subsection{Community leadership}
 \begin{EntriesTable}
+\Duration{2025}{\Ongoing} &
+  \textbf{Co-Coordinator} (and member since 2019), Scientific Scripting Languages in Archaeology Special Interest Group (\href{https://sslarch.github.io/}{sslarch.github.io})
+  \newline
+  Computer Applications in Archaeology
+  \\
 \Duration{2018}{\Ongoing} &
   \textbf{Founder and Maintainer}, \href{https://open-archaeo.info}{open-archaeo.info}
   \newline
@@ -822,6 +865,7 @@
 %   Internal MSc dissertation examiner (Natacha Medeiros Rocha), \UERJ.
 % \end{EntriesTable}
 
+\newpage
 \subsection{Conference \& Panel Organizer}
 \begin{EntriesTable}
 \Year{2023} &
@@ -843,11 +887,6 @@
 
 \subsection{Interest Groups}
 \begin{EntriesTable}
-\Duration{2018}{\Ongoing} &
-  Scientific Scripting Languages in Archaeology Special Interest Group (\href{https://sslarch.github.io/}{sslarch.github.io})
-  \newline
-  Computer Applications in Archaeology
-  \\
 \Duration{2018}{2022} &
   UofT Coders (\href{https://uoftcoders.github.io/studyGroup/}{uoftcoders.github.io})
   \newline

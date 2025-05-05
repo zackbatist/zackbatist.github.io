@@ -6,6 +6,10 @@ format:
       body-width: 1000px
 ---
 
+<!-- **Bibliometric network analysis of Viking Age research (BibVik)**\
+A project whose goal is to identify trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age.\
+[github.com/zackbatist/BibVik](https://github.com/zackbatist/BibVik) -->
+
 **CITF Postdoc**\
 Articulating social, collaborative and discursive aspects of epidemiological data-sharing initiatives, and how they relate to, overlap with or conflict with technical, institutional and epistemic factors.\
 [zackbatist.info/CITF-Postdoc](https://zackbatist.info/CITF-Postdoc)\
