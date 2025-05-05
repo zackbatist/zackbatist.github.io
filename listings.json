@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/2025-05-05-ai-and-extraction-from-the-open-scientific-commons.html",
       "/posts/2025-03-09-migrating-from-wordpress.html",
       "/posts/2024-12-29-mcgill-postdoc.html",
       "/posts/2024-10-01-informal-communication-and-archaeological-data-work.html",
@@ -23,21 +24,21 @@
   {
     "listing": "/notes.html",
     "items": [
-      "/notes/STS-ideas-and-frameworks/index.html",
-      "/notes/continuum-of-practice/index.html",
-      "/notes/curation/index.html",
-      "/notes/archaeology-as-a-discipline/index.html",
-      "/notes/data-sharing/index.html",
-      "/notes/limits-of-ant/index.html",
-      "/notes/agency/index.html",
-      "/notes/activity-systems/index.html",
-      "/notes/knowledge/index.html",
-      "/notes/investigatory-approach/index.html",
-      "/notes/E-CURATORS/index.html",
-      "/notes/archaeological-record/index.html",
-      "/notes/data/index.html",
-      "/notes/archaeological-project/index.html",
-      "/notes/information-systems-organizationa-structures/index.html",
+      "/notes/E-CURATORS.html",
+      "/notes/agency.html",
+      "/notes/archaeological-project.html",
+      "/notes/STS-ideas-and-frameworks.html",
+      "/notes/activity-systems.html",
+      "/notes/continuum-of-practice.html",
+      "/notes/archaeology-as-a-discipline.html",
+      "/notes/knowledge.html",
+      "/notes/limits-of-ant.html",
+      "/notes/investigatory-approach.html",
+      "/notes/curation.html",
+      "/notes/information-systems-organizationa-structures.html",
+      "/notes/archaeological-record.html",
+      "/notes/data.html",
+      "/notes/data-sharing.html",
       "/notes/formal.html"
     ]
   }
