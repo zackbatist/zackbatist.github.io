@@ -1,0 +1,34 @@
+---
+title: "Blog for Week 11 - Natural Places and the Nature / Culture Divide"
+date: 2015-01-21
+draft: true
+---
+
+The articles that I read this week dealt with the impact of the physical landscape on human behaviour and associated material manifestations.
+I started by reading Ingold's (1996) book chapter, which was primarily concerned with the dissolution of the oft-conceived nature/culture divide.
+Ingold attempted to portray humans as entities embedded within the same fabric as what is often termed "natural" or "environmental".
+In particular, he focuses his attention towards contemporary views of hunter-gatherer groups.
+Ingold offers alternative views of the roles of three hunter-gatherer groups, by viewing the management of nature less as economic or subsistence oriented behaviour but rather through the lens of social or spiritual perspectives.
+Instead of understanding hunting and gathering as behaviour guided by principles of optimization/maximization/minimization, which tend to distinguish humans as consumers of nature and hence as distinct from the natural world, Ingold suggests that the utilization of certain natural resources is embedded within social worldviews that are not as strongly oriented towards this aspect of human exceptionalism.
+
+Although Ingold did not explicitly recognize the agency of the environment and non-human organisms (he did acknowledge that they do possess agency, but rather broadly), these ideas were picked up by Bauer (2014) and Bradley (2000).
+Bauer showed how the landscape could explicitly shape human activities and alter the social fabric of humans.
+More specifically, he notes that certain geological formations allowed for individuals at particular locations to construct monuments alongside quarries that were already being mined, whereas this was not possible in other areas.
+In this way, it is understood that geological processes effect how places imbued with special meaning were constructed.
+Similarly, Bradley looked at the places where metal artefacts were found in sacrificial contexts, in order to reconstruct the worldviews of those who engaged in relationships with naturalistic deities.
+
+The work of Bauer and Bradley gave me more things to think about. Bauer was very concerned with the ascription of agency to the landscape, and this prompted me to reassess what is capable of possessing agency, and whether the definition of agency should be expanded.
+He sites Latour (2005:71), whose broad definition of an agent encompasses "any thing that does modify a state of affairs by making a difference".
+I was a bit reserved to accept this definition since, from a perspective that emphasizes complexity theory, non-linear causation and chaos theory, virtually anything could possess agency.
+This ultimately devalues the term.
+Moreover, it is difficult for me to wrap my head around the ascription of agency to broad-scale entities such as geological formations.
+I am more prone to accept as agents things that humans interact with on a day-to-day basis on a comparable scale, such as buildings and moveable objects; however geological "things" exist/occur at vastly different orders of magnitude.
+It is true that we enact culture in a particular environment that influences our behaviours to some degree, but when all is said and done it is the current state of the environment as sensed through our senses (which changes from moment to moment) that effects how I will act.
+In other words, the fact that the earth formed throughout billions of years does not impact my actions, however the current environment, which exists as a result of previous natural activity, does.
+
+Bradley's work seems to be more agreeable in this sense, since what he terms "natural places" are actually ascribed agency by the people who attend to them.
+They are noticeable contemporary features of the landscape, and are consistently part of contemporary consideration.
+Bauer's work reminded me of discussions concerning the development of agriculture in the Levant as a potential response to the Younger Dryas climatic fluctuation, which has been criticized by many (but certainly not by everyone) for its environmental deterministic tendencies.
+It is also reminiscent of discussions concerning global warming and climate change today, which is nearly imperceivable due to the long term effects of the associated phenomena.
+In a way, one key strategy of environmental movements is getting people to recognize the effects that global warming has or will have on peoples' day-to-day lives;
+or in other words, to get people to recognize the agency of "mother earth".

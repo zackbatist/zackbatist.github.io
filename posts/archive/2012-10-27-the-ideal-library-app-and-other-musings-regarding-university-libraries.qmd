@@ -1,0 +1,82 @@
+---
+title: The ideal library app, and other musings regarding university libraries
+date: 2012-10-27
+categories:
+  - library tech
+  - mobile tech
+  - technology in the library
+draft: true
+---
+
+This week I came up with an excellent idea that I submitted to the McMaster library's suggestion box.
+My suggestion is for an app that would help students search for books on their phones, find them in the stacks, discover other useful material similar to what they searched for, and make use of library resources that students may not be unaware of.
+There are so many deficiencies within the "process" of going to the library that can be improved upon drastically.
+I spent much of [this week](http://openaccessweek.org/) contemplating what an ideal library app would look like and imagining the ideal library system.
+Below are some of my ideas that can help solve many common problems by utilizing mobile technology in a constructive and innovative way.
+Feel free to comment with any input or ideas that I may have overlooked.
+
+Searching for books on the go or within the stacks is quite difficult.
+The current process of going to the library requires the formulation of a mission, preparation of a hit list, and then embarking on a hunt.
+You have a book in mind, you go search it within the catalogue on a PC, write it down on a post-it and then head to the stacks.
+But what if you remember another book you may need, but there is no PC nearby? The library website is not mobile-optimized, which is very inconvenient.
+There are computers on each floor, but remembering the call numbers can be confusing.
+This hypothetical app would have a clean, mobile-optimized interface for searching through the catalogue.
+Metadata and call numbers can be saved to a favourites list (which is already implemented in your library account) so people can find books on the go.
+This also eliminates the clutter of little pieces of paper with illegible notes, which is one of my biggest pet peeves.
+
+Additionally, I often find myself in the stacks and I stumble upon useful material that did not appear in my search results.
+Scanning the shelves is a very useful way to find books you may have missed, however this is time consuming, and people of various heights or people with disabilities may not be able to see books on certain shelves.
+A possible solution involves the placement of QR codes on shelving units, which when scanned would display all the books on that shelf.
+This could take the form of lists or cover flows for an aesthetic touch.
+Additionally, this can be personalized by utilizing the library's subject category system, as well as the traditional Dewey Decimal System to display books that are most relevant above others.
+
+QR codes can also be used to inform students about library resources.
+One common gripe that librarians expressed when I attended THATCamp GTA at Ryerson University in October 2011 was that students weren't using the library as a resource, but merely as a quiet place to study.
+QR codes placed on posters, screens or stickers can be used to provide more in-depth information regarding library resources such as schedules for workshops, announcements of lecture series or links to tutoring services.
+More logistical information can also be transmitted via QR code, such as citation style guides (sent directly to dropbox perhaps), access to the suggestion box, hours of operation.
+
+Self-checkout could also be much easier by using this app.
+The self checkout machines do not work with my student card for some mysterious reason, and I'm not the only one with this issue.
+Lines for checkout can be quite long, often when only one librarian is on duty.
+If library accounts are linked with phones people wouldn't have to scan their cards at all.
+You would just have to scan the barcode on the book, demagnetize it, and walk out of the library.
+Simple.
+
+Push notifications could also be used as reminders to return their books on time.
+Receipts that indicate when a book is due are easy to lose, and students are only reminded to return books the day after its due when the library notifies that a charge has been made on their account.
+The ability to receive notifications a day or two before and renew books from the app can be extremely useful.
+It could facilitate the promptness of book returns and save students money.
+Payment of library fees is also possible using an app.
+
+Currently, the use of mobile technology by universities usually takes the form of a re-skinned website or the display of already existing information on a phone's browser.
+Companies that "app-ify" the websites of universities really do nothing to enhance the experience of students.
+The app that I'm proposing actually fills a genuine need rather than simply boasting a mobile-savvy attitude for the university.
+This app can act as a model, utilizing the innovative technology that exists within modern mobile phones instead of merely treating it like a miniature browser.
+All of the potential features mentioned above are feasible: the catalog, relevant metadata and student accounts are all there.
+But this shouldn't stop libraries from developing their online facilities further.
+APIs can be opened up, there could be synchronous connections with interlibrary loans systems, and digital repositories could be made more accessible.
+The current system is far from ideal, and we must keep developing the existing infrastructure into something greater.
+We live in the 21st century, but our library systems are archaic.
+We need to move forward.
+
+#### Comments
+
+**A.M. Christensen:**
+This is an excellent idea!
+I would add that it would be great to add, to the QR code or some other fashion, books that should be on a given shelf, but have been moved to remote storage.
+As you say, shelf browsing is a great way to find related materials, but that doesn't work when things are never on the shelf.
+Cover flow could be very nice for this.
+And the ability to tag books would be nice.
+I frequently remember books by their size and/or color.
+So it would be great to be able to associate that info in my notes.
+
+**Zack:**
+Thanks!
+That's a great point that I hadn't considered.
+Maybe it could even be hooked up to worldcat.
+I'm sure they have an API.
+Add Zotero functionality and it's golden!\
+I was also just thinking, there could be even more extensive use of crowdsourcing.
+A wiki server can be set up that associates each book with a page where people can include notes or references to other related sources.
+All metadata can be included, as well as lists of sources that cited the book, scraped from google scholar.
+Anything could potentially be included, such as the results of any citation analysis, topic modelling, or any other meta-analysis.

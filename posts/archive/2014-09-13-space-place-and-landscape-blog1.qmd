@@ -1,0 +1,61 @@
+---
+title: "Space, Place and Landscape - Blog #1"
+date: 2014-09-13
+draft: true
+---
+
+This week I read William Balée's 2006 article _The Research Program of Historical Ecology_ along with some other writings on more ecologically-driven approaches to anthropological notions of space, place and landscape.
+Balée starts off by outlining the main postulates of historical ecology, which he considers to be a set of ideas adopted by certain likeminded scholars that frame discussion along similar lines of thought.
+The author summarizes these tenets as follows:
+
+> (a) Practically all environments on Earth have been affected by humans, including in a broad sense behavioural activities of the genus _Homo_, although others would limit the wide-ranging effect of humans on the environment to only the entire time dating from the beginning of the Holocene, that is, the time coinciding with the beginning of agriculture;
+> (b) human nature is not programmed genetically or otherwise to lessen or augment species diversity and other environmental parameters;
+> (c) it follows that kinds of societies defined by various socioeconomic, political and cultural criteria impact landscapes in dissimilar ways ... and
+> (d) human interactions with landscapes in a broad variety of historical and ecological contexts may be studied as a total (integrative) phenomenon
+
+Historical ecology is framed by Balée as being empirical yet guided by social theoretic perspectives that tend to be primarily situated on the middle to low theory range.
+He compares the research program of primary interest with other ways of thinking about human-environment interaction, and after wading through some of the more pedantic differentiation or commonalities posed by the author, I do actually recognize some diversity.
+Following Dr. Roddick's suggestion, I tried to think about the disciplinary divisions as a landscape of sorts, and I even sketched out a mind-map on a napkin.
+
+[caption id="attachment_474" align="aligncenter" width="695"]<a href="http://www.zackbatist.ca/blog/wp-content/uploads/2014/09/Photo-2014-09-10-7-07-58-PM.jpg"><img class="wp-image-474 size-large" src="http://www.zackbatist.ca/blog/wp-content/uploads/2014/09/Photo-2014-09-10-7-07-58-PM-1024x720.jpg" alt="" width="695" height="488" /></a> Mind-map of disciplines dealing with human-environment interaction[/caption]\r\n\r\n
+
+Although I won't summarize all of that chicken scratch right now, it is clear that historical ecology takes on more of the middle and low ranges of theory, in that the effects of certain actions are thoroughly assessed, and that human social, economic and cultural organization is considered in a rather broad way that focuses on cultural processes akin to most other current anthropological perspectives adopted by archaeologists.
+However Balée does take for granted certain ideas that I feel should be re-evaluated.
+For instance, his notion that historical ecology arose out of the inadequacy of prior schools of thought to consider human-environment interaction in _complex societies_ (p. 76) presumes that a strict division exists between societies deemed either as complex or simple, at least in the minds of certain scholars.
+While historical ecology does seem to bridge this dichotomy by thinking of cultural process in a broader sense, a more thorough overview of what is meant by those terms as used in this review, and as they were used by those who the author is critical of, would have been nice to include.
+
+Another concern I have is how _impact_ is considered and defined.
+The scale of time or of actions (e.g. the interplay between the idea of one person ploughing a field or tending to crops vs. 'agriculture' being defined as a socio-economic phenomenon) for a change wrought by humans to be considered long-term isn't clearly defined, however it is implied that the triggering or disturbance of an agglomerating system by a human is of primary consideration.
+This confusion is understandable since individual actors and actions are often difficult to highlight in such a system that is said to represent 'society' and the impact of the collective (especially when looking back in time), but little acknowledgement of these challenges is given.
+I think that this is important when thinking about middle-range assessments because everything we observe in such a way is the result of many individual actions performed by people who possess their own agency alongside and separate from their neighbours or other members of the collective.
+I think that Balée dismisses the discipline of environmental history too harshly, and that its tendency to focus on evaluation of historical case studies may actually be useful for examining the potential impacts of certain kinds of actors to the development of a system.
+
+This is a great overview of the disciplinary boundaries and theoretical variation that exist in a seemingly focused field of study, but in general it also reinforces an archetype of the position of anthropology among other neighbouring disciplines such as classics, environmental science and history.
+Classics tends to be more focused on minutia in particular societies as viewed from a socio-political perspective, (I think that classics has the potential to go way beyond the study of Classical Greece and Rome, and to develop its own middle-range perspectives, but I'll hold off on this discussion for now).
+environmental science grounds the foundation of arguments in facts of nature from a scientific angle, and history allows us to think about the relationships between temporal scales, whereas anthropological archaeology deals with socio-economic and cultural dynamics on a very middle-range theoretical scale.
+In this article historical ecology, which is highly influenced by anthropological perspectives, is positioned as a unifying knot that can tie the other sub-disciplines mentioned together, (This brings to mind the quote by Alfred Kroeber, "Anthropology is the most humanistic of the sciences and the most scientific of the humanities.") but anthropology may also be perceived of as having its very own focus that should be recognized more explicitly.
+Social theory is a great way to tease out these idiosyncrasies and enable the work done among these disciplines to be stitched together in a more complementary fashion.
+
+#### Comments
+**Andy:**
+Hi Zack,
+That's quite a mind map!
+(It would be interesting to see that digitally).
+You can imagine how this would represent one corner of our theoretical landscape, with some like Balée and Clark Erickson (anyone note that he was thanked at the end of this article?) spending considerable time, whereas others doing landscape studies may not visit at all.
+Which, of course, begs the question why/why not?
+I wonder if you can explain this a bit: "it is clear that historical ecology takes on more of the middle and low ranges of theory, in that the effects of certain actions are thoroughly assessed, and that human social, economic and cultural organization is considered in a rather broad way that focuses on cultural processes akin to most other current anthropological perspectives adopted by archaeologists."
+A little later you suggest that anthropological archaeology deals primarily at the middle-range level (as opposed to history).
+Perhaps others have thoughts too?
+
+**Zack:**
+Maybe I'm using these terms wrong, but I was referring to the low/middle/high ranges of theory mentioned briefly in the last class.
+High theory was described as more lofty, low theory was referred to with regards to more direct interpretation of the material record, and middle was described as situated somewhere between the  other two.
+I may have been generalizing when I stated my views on the focuses of different disciplines, but I do think that there are certain emphases on these ranges, guided by the questions that each tries to address and the evidence that tends to be considered.
+
+**Sean:**
+My understanding is that middle-range theory had its origins in things like ethnoarchaeology and experimental archaeology, which allow us to make certain assumptions (or interpretations) of behaviours or activities in the past based on current observations.
+It considers things like taphonomic processes and bioturbation, and other effects of time and environment on the archaeological record, to judge how cultural deposits are disturbed over long periods of time.
+Call me crazy, but that sounds awfully similar to what we have been reading about historical ecology.
+It takes input from various fields and observations in the present (i.e. geography, biology, agriculture, fishing, forestry, you name it) and applies them to the past, ultimately curious in the cumulative effects of human interaction with the environment (a.k.a. landscape).
+I think that because of this, and because it examines communities on a regional scale and therefore their interactions with other communities or cultures, historical ecology is primarily a middle and high range theory.
+It looks at long-term processes that are applicable cross-culturally and within complex landscapes.

@@ -1,0 +1,71 @@
+---
+title: "Space, Place and Landscape - Blog #4"
+# subtitle: Modelling the landscape
+date: 2014-10-17
+draft: true
+---
+
+I found this article written by Andrew Bevan of University College London really interesting and most relevant to my own interests.
+It is much more methodological in nature, and deals with issues that I hope to tackle throughout my doctoral studies.
+While I did take notes on some of the more minute methodological details, I'll try to limit my comments here to broader issues that are more relevant to the course content.
+
+This paper seems very processual in nature, however I don't mean that in a negative way as is sometimes implied in some of our discussions.
+Bevan does invoke concepts from general/complex systems theory to document the settlement patterns on Kythera, however he does refrain from explicitly making certain conclusions in statistically-oriented language.
+For instance, in the section dealing with the development of intra-island hierarchies and site distributions, Bevan evaluated the potential relationships betweens the sizes of sites, the distances between them, and the concentrations of scatters, and his plots were interpreted in order to detect a potential hierarchy.
+He also noted the dynamic social, economic and political processes that would have led to such systems.
+Although Bevan never said so explicitly, his results are reminiscent of models depicting preferential attachment, which are observed in numerous natural and social settings, and which result in power law (also referred to as scale-free) statistical distributions.
+While this is not the setting to go into [this specific phenomena and its implications](https://www.scottbot.net/HIAL/?p=17824), I bring this up since such models are often criticized by social scientists because they tend to dehumanize the phenomena that underlie the material (transformed into data) being analyzed.
+Bevan sidestepped this issue by writing in archaeological terms, however the implication that humans simply react and impose reactions may still be troubling to some.
+
+Similarly, in other sections, Bevan relies on models that restrict areas of human habitation to settings that support the "lowest common denominator" of comfort and survival.
+Although it was never made explicit, Bevan seems to follow a form of Maslow's hierarchy of needs, which prioritizes physiological requirements and safety concerns over social considerations as primary movers of human activity.
+
+While I doubt Bevan would adopt Maslow's exact scheme, I'm of the opinion that humans are social in nature in accordance with the social brain theory [@dunbar1998] and would give more credence to human interactions alongside largely independent needs.
+In light of the issues discussed in this course, these concerns relate to the role of individuals in society, and questions the degree to which we frame agency as imposed by social pressures, environmental variables, or personal motivations.
+
+In any case, it is difficult to argue with the results that Bevan obtained.
+His evaluations do result in nice correlations that are discussed in light of anthropological and archaeological concerns, and he breaks down the assumptions that he makes in a responsible way.
+One could nit-pick on certain aspects of his methodology and data collections procedures, but with the exception of certain larger issues (using Kastri as an arbitrary reference point, for instance) this article seems well done in light of broader theoretical concerns.
+As mentioned earlier, Bevan avoids much criticism by not going too far with statistical analysis, but the underlying issues of humanistic considerations are still there and will be debated.
+My own stance is that we are animals and may be evaluated as such, but this does not have to be a restricting factor.
+For instance, as I mentioned in a previous comment regarding simulation of human activities and interactions, it may be considered more beneficial to use such methods to uncover the roles of certain processes through playing around with and tweaking various parameters (by _making_ a game), rather than evaluating the final results or searching for _the_ formula (_playing_ or _experiencing_ the game).
+All in all, I do see the usefulness of systems-based and computationally-modeled approaches, however they must be considered within anthropological and archaeological frameworks.
+
+#### Commens
+**Alex:**
+I really enjoyed this post Zack and it definitely helped me to better understand Bevan's article.
+I had difficulties with this week's readings, no doubt because of my lack of experience with GIS or any computational models to study archaeological sites.
+But I can't deny that the conclusions reached in each of the articles, and specifically Bevan's, were both sound and convincing.
+
+Nevertheless, like you mentioned, I was wary of Bevan's method because I felt that his reduction of the traces of fundamentally human experience into data had a tendency to "dehumanize the phenomena."
+It struck me that due to Bevan's use of GIS, he was only able to speculate (with strong, circumstantial evidence of course) certain anthropological conclusions concerning cultural activity on Kythera.
+
+I don't think this necessarily weakens Bevan's argument though, as his focus was not on uncovering lived social experience but determining "the way the landscape was structured."
+In this way, I would be intrigued to see how the use of GIS or other computational models could support or engage with more post-processual theories we've looked at (it seems to me @kosiba2013 may have done this more effectively).
+
+**Sean:**
+To use Kosiba and Bauer's terms, I think Bevan employs more of an interpretative application of GIS, rather than an econometric stance of human adaptation to climatic and geographic conditions.
+In my opinion, he does a good job of introducing the human voice (or at least some of the "decisions and dispositions" responsible for shaping a constructed landscape) into an otherwise robotic practice of computer modelling that sometimes makes rash assumptions about human nature.
+I especially enjoyed his section 3.1 on point pattern analysis, where he uses a randomized set of points in an attempt to flush out some of the human agency in site selection.
+The random points are plotted against actual site locations to identify patterns in distances between sites.
+As it turns out, there were significantly more actual sites located between 300 and 400 m apart than for the random points, which were averaged from 1000 simulation sets.
+The authors determined that this represented a deliberate spacing of contemporary sites, attributed to some combination of human motivating factors that for now can only be hypothesized.
+
+While Bevan made a respectable, and largely successful, "interpretative leap from surface remains to actual settlement systems and their implications in testable, quantifiable ways" (2002:254), I think he still fell short in fully appreciating human interactions with their environment.
+In following Kosiba and Bauer's conclusions about the interpretative system in GIS, the people in Bevan's account "are lost within accounts that describe landscapes only in abstract, reductive terms of sites and regions" (2012:66).
+It seems that in the end, Bevan's results concentrated primarily on numbers (i.e. population estimates) and frequency/distribution of rural sites.
+Perhaps he was not able to speculate more on the human decisions and activities involved because of the relative historic under appreciation or rural sites in the archaeological record.
+Perhaps this GIS approach was a crucial first step towards a more inclusive interpretation that consists of the political landscape, made up of all the "social categories and spatial boundaries that influence and guide how people perceive their surroundings" [@kosiba2013: 67].
+
+In the end, Alex I think you're correct in thinking that Bevan's argument is not weakened by his ultimate reliance on speculative conclusions about the cultural forces responsible for the observed patterns.
+Like you said, his focus was to determine how the landscape was structured, not to uncover the social and political institutional foundations for the organization of Neopalatial rural Kytheran landscapes.
+I do think that is the next step in expanding this field of research, however, and am also interested to find out how others might engage with the current theoretical playing field.
+
+**Zack:**
+Sean, I definitely agree with your notion that this study is one step in a larger and more inclusive interpretation of the social and political landscape, and realistically a totally holistic approach would not be possible without drawing from various perspectives.
+And I also appreciate Alex pointing out Bevan's stated purpose, which I had not seriously considered in my post.
+This article seems like it would fit well within an edited volume containing different views on the landscape of Kythera.
+
+I'm left wondering whether it is necessary to adopt more phenomenological issues in GIS studies, or whether it is acceptable to take on a more systematic perspective on its own.
+In general I don't see much overlap between these perspectives in the archaeology of island interactions, perhaps because the boundaries and limitations imposed by such geographies make it tempting to conduct similar systematic investigations (see @knappett2008a and @broodbank2000 for examples of this).
+I think that viewshed analysis and other mappings relating to human senses is a potential way of more effectively linking the phenomenological and systematic perspectives, however as noted in the comments on Daiana's blog, such an opportunity was not fully taken advantage of by @willians2006

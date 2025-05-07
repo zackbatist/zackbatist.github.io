@@ -1,0 +1,32 @@
+---
+title: Git as I go
+date: 2014-02-27
+categories:
+  - git
+draft: true
+---
+
+Over the past few weeks I've been getting acquainted with git, a version control mechanism that allows users to share code, text or other editable media in a collaborative environment.
+I'm learning that Github is a great venue for hosting text-based datasets and disseminating preliminary results in a comfortable way.
+
+I've always been an advocate for open access to data and I had considered various options for storing and disseminating the database that I am constructing for my Master's thesis.
+I really like text-based solutions since they are easy to modify across virtually any platform, they are easily convertible to more complex file formats, and there is a general air of simplicity when working with them.
+(I now use TextEdit as my primary word processor, switching over to word only whenever I need to do some advanced formatting or track changes.)
+Now, while I am using FileMaker to enter my data and Excel as a file-conversion intermediary, I am working on transforming my dataset to JSON and its spinoff dialects, geoJSON and bibJSON in particular.
+JSON is readable by both humans and computers, enabling easy modifications and additions of new data, with versatile ways of displaying and disseminating the information being stored.
+
+Github makes it very easy to read JSON and many other text-based file formats, including tabular data files.
+Github has even integrated the [Leaflet](https://help.github.com/articles/mapping-geojson-files-on-github#styling-markers) mapping tool so geoJSON data can be perused cartographically.
+I also like Github because it generates stable links for easy sharing, my data can be used by others with similar or widely different goals, and the effort that I put into the collation of this data can be fully recognized, and even expanded upon.
+However, Github was never intended to be a database-sharing platform and there are some limitations for this kind of use.
+It would be great if bibliographic entries could be generated so others can cite my work appropriately.
+Additionally, an option for some form of storage designed for longevity would better suit the goals of academics.
+Maybe there will be a push in this direction now that [PLOS has updated their open data policy](http://blogs.plos.org/everyone/2014/02/24/plos-new-data-policy-public-access-data/).
+
+I've also started to push some of my preliminary analyses to Github as I work on them.
+Working transparently definitely impacts my mindset since I am encouraged to produce more meaningful results, stay organized, and participate with others doing similar things.
+I get to show off a bit too, extending my visibility to people at a distance.
+However saying something meaningful about the results I obtain is the other side of the coin that I must not forget about.
+
+In general, I think this is a good direction for me.
+It feels great to get my work out there, even in an incomplete state.

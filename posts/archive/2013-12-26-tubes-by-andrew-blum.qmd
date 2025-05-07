@@ -1,0 +1,41 @@
+---
+title: Tubes by Andrew Blum
+date: 2013-12-26
+categories:
+  - archaeological networks
+  - series of tubes
+  - the internet
+draft: true
+---
+
+_Tubes_ by Andrew Blum is an interesting book (primarily geared towards non-academics) about the physicality of the internet.
+People tend to participate in the world wide web without considering the fact that the internet is based upon tangible infrastructure.
+It is indeed a [series of tubes](https://www.youtube.com/watch?v=_cZC67wXUTs) through which we communicate, socialize, trade and interact with distant parts of the world.
+Because of the great things that this heightened connectivity brings us, it is easy to get caught up in the relational aspects as a general user.
+Blum's tour of the internet as a device of human construction really brings to light the forces that make it all possible.
+While his primary focus is to _find_ the internet --- to explore it as one would traverse a continent --- he accomplishes much more than that.
+Blum also provides a great overview of the economic and social aspects that make the internet tick.
+
+I feel as though Tubes deals with many issues that archaeologists using network analysis face as well.
+Scattered archaeological evidence indicates that mechanisms for exchange existed.
+Presumably artefacts and ideas other than what is manifested in the archaeological record traversed the area alongside these physical objects.
+In one sense, networks based on the distribution of artefacts are reconstructed in order to raise the possibility that they acted as conduits for broader interaction.
+From another perspective, networks based on hypothetical models may emphasize the potential for connections to occur with variable weight, and archaeological material may be used as guides for setting values to the parameters set forth under the model.
+So two clear ways of conducting archaeological network analysis are described briefly here, but one thing is clear: the interplay between the physical manifestations of what archaeologists twist into networks and the social, economic and geographical factors that fostered connectivity is a crucial aspect to each mode of thought.
+In a very similar vein, Andrew Blum highlights the economic, social and geographical variables that underpin the entire system, and he synthesizes them all to characterize the structure and complexity of the system as a whole.
+
+Blum also recognizes that whether or not users of the internet understand the inner workings of the system that directs many aspects of their lives, it still plays a major role.
+The western world is much more connected through the internet than the global south, and the lack of even participation may prove to be detrimental.
+The distribution of connections that form the internet immensely influences entire populations, and even alters our perceptions of world around us.
+Moreover the network is dynamic, following economic and socio-cultural fluctuations --- the ways that these forces change over time may have profound effects on the electronic linkages that form.
+Again, a striking similarity between the topics that Blum covers and archaeological network analysis is apparent.
+While prehistoric travellers and traders may not have recognized the extent of the networks that they traversed, the paths that they followed, perhaps influenced by social-cultural or economic concerns, influenced where they would end up and what kinds of information crossed their paths.
+
+I guess I don't really have any specific point to make here, except to draw attention to how these issues that archaeologists face are being addressed by Blum in an interesting way.
+However I do think that archaeologists should consider deeper integration between network analysis and geography-oriented methodologies, since the data that we look at tends to be geographical in nature --- the distribution of artefacts is often used as the basis networks constructed from archaeological material, and physical distance or elevation data are often considered important variables within interaction models.
+I singled out geography as an area in need of more focus, but as mentioned above I consider economic or social processes as crucial elements to account for as well.
+However, geographical data is relatively easy to collect, can be quantified and neatly organized into digital databases, and can be analyzed using already-developed tools, whereas social and economic considerations are often inferred from careful analysis and interpretation of manifestations in the archaeological record.
+In any case, it is important to develop frameworks that will enable these different-yet-complementary facets of archaeological (and related) networks to be integrated.
+These considerations are measured in different ways, are analyzed differently, and are discussed differently, but it is necessary to bridge these gaps carefully and explicitly in order to stitch them together effectively.
+I think that the development of such a framework, perhaps in the form of a set of guidelines or questions that are important to consider, should be a main priority in the coming years as interest in these fields continues to expand.
+

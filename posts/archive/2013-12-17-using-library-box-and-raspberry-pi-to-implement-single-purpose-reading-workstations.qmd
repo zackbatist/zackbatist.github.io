@@ -1,0 +1,24 @@
+---
+title: Using Library Box and Raspberry Pi to implement single-purpose reading workstations
+date: 2013-12-17
+draft: true
+---
+
+Earlier this week I wrote about the potential of stepping back from the internet, moving back towards a more functionalist computing environment.
+That's not to say that we should inhibit linkages between computers.
+I've been reading about the Pirate Box, as well as it's fork Library Box, and I think that these devices represent a big step towards better support of scaled back network systems.
+These devices, developed using open source technology, generate networks that allow connected members to share files and interact, without connecting to the internet at large.
+Of course, any home or office network has these capabilities, the focus on the functionality of a single main feature breeds novel ideas regarding its implementation.
+
+Drawing on Library Box's potential on university campuses, I can imagine a network of single purpose devices being utilized in order to aid research efforts.
+Perhaps in a library setting raspberry pi computers can be set up along with inexpensive sets of periphery devices (monitor, mouse, keyboard), and the only software installed being reading software and a very simple text-editor.
+These devices would solely be used to retrieve files from a Library Box, read them, and take notes.
+That's it.
+Single purpose device such as these would reduce distractions and enable students to focus on their work.
+
+Such a network is doable, and moreover it is incredibly cheap to implement.
+The cost of a raspberry pi device is 25$ or 35$, depending on which model is used.
+Mice are also quite cheap, and monitors may be allocated through donations or partnerships with hardware manufacturers.
+Depending on the size of the network, multiple Library Boxes may be required, but such a project may be scaled over a long period of time, spreading the costs over a few years.
+Additionally, it would be encouraged to utilize free, libre and open source software (FLOSS) in the spirit of the Pirate Box's origins.
+

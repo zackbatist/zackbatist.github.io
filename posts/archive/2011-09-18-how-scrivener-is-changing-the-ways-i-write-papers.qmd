@@ -1,0 +1,37 @@
+---
+title: How Scrivener is Changing the Ways I Write Papers
+date: 2011-09-18
+categories:
+  - Mental health breaks
+  - Scrivener
+  - Writing
+  - Writing software
+draft: true
+---
+
+Over the past few days I've been experimenting with [Scrivener](http://www.literatureandlatte.com/scrivener.php), an organizational tool for people who write essays, screenplays, or other lengthy papers.
+Usually academics use traditional word processors such as Microsoft Word, LibreOffice or Apple Pages, but Scrivener can hardly fit into the same category.
+Instead of focusing on content creation, Scrivener's main appeal is its ability to help you organize your thoughts and rearrange a paper so everything fits the way you like it.
+
+What I especially like about this software is that it appeals to visual learners like myself.
+Sometimes when I'm facing a wall of text I just think to myself: what the hell should I do now? With Scrivener, the user interacts with the content in a special way that gets the author more involved with whatever project he or she is working on.
+It reminds me of my desk at home.
+It's what I like to call an organized mess, and even though everything is jumbled around all over the place I know where everything is.
+Just don't move anything around or the whole system will be ruined!
+
+One thing that I'll have to get used to is writing in short sections.
+I guess "switching fatigue" is to be expected since I'm so used to the old setup of having an infinite supply of pages, one after the other.
+This reminds me of the way that Dr. Graham taught _The Historian's Craft_ when I took it last year.
+He would punctuate class time into "mental health breaks" when we could discuss the lecture, talk with one another or just goof off.
+I'm not sure if he was just speculating or if there's actually anything behind this, but his reasoning is that every way we consume content is separated into sections by commercial breaks, or it's within their very natures (think blog posts, tweets, headlines, youtube clips, etc...).
+It's about time that this trend of perforating consumable content reached the ways that we write papers.
+
+Anyways, I've been fiddling around and creating index cards in Scrivener.
+This is helping me get my thoughts organized.
+I'm still coming up with a basic outline for my thesis, but I'll post it when I feel it's focused enough.
+Expect it soon.
+
+#### Comments
+
+**[Shawn Graham](http://electricarchaeologist.wordpress.com):**
+Hi Zack. My reasoning for mental health breaks --- it all has to do with attention span. But that is indeed related to the way blog posts, tweets etc are written: short sharp focused (ideally) thought-units, which maps very nicely to the way Scrivener lays out the writing process.

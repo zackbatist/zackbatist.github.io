@@ -1,0 +1,17 @@
+---
+title: Re-evaluating Heterarchy and Peer-Polity Interaction
+date: 2014-09-16
+draft: true
+---
+
+One of the major criticisms made by my thesis committee was on my suggestion that peer-polity interaction be more readily adopted as a framework to base future network analysis studies upon.
+Although now I am beginning to realize my error, I think that this stems from my misunderstanding of what peer-polity interaction really was meant to address --- the scaling up of polities into "fully fledged" city states (although I must read more to verify this and gain a more complete understanding --- Renfrew, Ma, Schortman, Snodgrass, etc).
+The value that I saw (and still see) with peer-polity interaction is regarding the focus on relationships among unranked entities on the same plane, which have the potential to be ranked given the unevenness of relationships among them.
+This notion is probably better evoked by heterarchy, as defined by Crumley (and by Schortman who raises similar points more explicitly regarding PPI as well).
+But is peer-polity interaction an instance of heterarchical thought?
+It does emphasize the tenets of heterarchy, but perhaps with a certain more focused aim in mind.
+However I must find out what this aim truly is through more focused reading of the aforementioned sources, among others.
+Schortman seems to be key for understanding the relationship between heterarchy and PPI.
+
+So I think that I can adequately re-focus chapter 2 (or was it 3?), which currently attempts to highlight comparative approaches and ppi specifically, to discussion more focused on heterarchy more broadly.
+Specifically, its potential use for the analysis of distributed systems is quite pertinent.

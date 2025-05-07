@@ -1,0 +1,95 @@
+---
+title: The ideal reference management app
+date: 2013-02-15
+categories:
+  - app ideas
+  - apps for academics
+  - Digital Humanities
+  - digital workflows
+  - reference management
+draft: true
+---
+
+One of my interests is the utilization of software and hardware to effectively get things done.
+Beyond formulating my own workflows, I am interested in discovering novel ways that others arrange their digital desktops.
+After discussing digital workflows in my writing class a couple weeks ago, I started using Sente, a reference management application.
+I've used Zotero before for similar purposes, but I found it difficult to navigate around the interface comfortably and I ended up abandoning it.
+Sente on the other hand, has a more familiar user interface, conforming to the style of the other apps that I use on a regular basis.
+However, it is lacking some of the functionality that other refernece management apps have.
+After looking into other options I found that no software has everything that I'm looking for in one neat package.
+
+So I began imagining the ultimate reference management application.
+I sometimes come up with visions of an app I wish someone would make, but they tend to simply remain as visions.
+I've posted one great idea on this blog back in October, about how I would design an ideal library app.
+(After bouncing my ideas off friends and colleagues, and discovering that this solution is actually useful, novel, and in demand, I'm hoping to team up with some of the librarians at McMaster to develop it.
+There is interest in it, but I must wait for administrative shuffles to be made before proceeding.)
+Writing about it on my blog really helped me develop my ideas, so below is a rough brainstorm of some ways I'd like it to work if faced with no obstacles.
+
+---
+
+## Overview
+
+The application is browser-based.
+My inspiration is largely garnered from Astrid, Google Wave, Google Docs and Gmail, so try to see it through those lenses.
+One of my main goals is to centralize and unify the collection of references.
+An omnibox will be used to search a wide array of databases, catalogues and data repositories, scrape citation info by inputting a URL, search a shared Dropbox folder storing PDFs or other documents, and simply search through already organized references.
+
+## Interface
+
+**Index:**
+The main interface, called the "Index", is primarily focused on a list of references, containing only essential citation data.
+Selecting a reference reveals more detailed citation info, any tags a user may have applied, and an embed if applicable.
+Selecting a reference also shows your history of **actions**, which includes creation, attaching PDFs, annotations, shares, as well as internal links to highlighted parts and comments within.
+This is inspired by Astrid's detailed history for tasks.
+A central search box would allow users to search and collect citation info from multiple databases (such as Google Scholar, WorldCat, JSTOR), library catalogues, or even open data repositories (like TDAR, Open Context or Pleiades).
+References may be "archived" when not needed, and pinned to your "inbox" when they relate to your current work.
+This is inspired by Gmail's archive function.
+
+**Annotations:**
+PDFs are opened in another browser tab, where they can be annotated.
+The annotations tab contains the entire document, along with a tools pane.
+Tools include: cighlight, comment, quote, free-draw, and screenshot.
+Various utilities may also be included: calculator, sketch pad, mini Google Maps module, dictionary and thesaurus, Wolfram Alpha and Wikipedia.
+All text-based annotations are in plain text.
+All text-based annotations are compatible with XML, Markup and LATEX.
+SoundCloud-like annotations will be used for audio and video content.
+
+**Adding references:**
+Search databases, catalogues and open data repositories via a central, omnibox-like search utility.
+A browser extension allows users to pull citation information directly from a web page, similarly to Zotero.
+Alternatively, it may be possible to do this by pasting a URL into the omnibox.
+Manual input is also supported of course.
+PDFs and other materials can be attached to references by searching through a public Dropbox folder containing these files.
+VPN credentials or library login info can be input for easier retrieval of PDFs.
+
+**Collaboration and Sharing:**
+A side pane from the Index would allow connected users to chat with each other.
+This would be in the style of Google Wave.
+Chats are conversation based.
+You can drag references from the Index to the chat in order to share it with the participants.
+Annotations can also be shared.
+You can view what others are typing in real time.
+You can have the option to share specific kinds of annotations
+
+**Compiling bibliographies:**
+Bibliographies are compiled into .html files in "plain text" and opened in a new tab, along with a shortlink.
+This ensures that anyone can view it, even if they don't have specialty software to open proprietary file types.
+This also allows bibliographic information to be copied and pasted to any text editor with ease.
+Bibliographies can be exported to a variety of file formats as well.
+Collections of references assigned to a tag can be compiled into an RSS feed.
+
+**Workflow:**
+Integration with Google Calendar, Google Docs, Dropbox.
+
+**Things to keep in mind:**
+I've noticed that books seem to be exceptional in any iteration of reference management applications.
+There needs to be a better way to handle books.
+
+There's also the issue of sharing copyrighted material stored in a public Dropbox folder.
+Files can't legally be shared with others, but there's no laws against sharing files with yourself.
+Perhaps the Dropbox folder could act a database itself, and this app could essentially "organize" the files into folders respective of their authors, dates of publication, or other bibliographic information specified by the user.
+Then, files associated with annotations could be linked with the PDF's as an "overlay".
+The only legal issue would be sharing of PDFs with others, but this sort of things varies across institutions.
+
+It doesn't really seem like I'll be working on this anytime in the near (or distant?) future.
+In any case, because this is the _ideal_ reference management app it would be licensed under creative commons and be freely available :)

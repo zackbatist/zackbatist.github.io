@@ -1,0 +1,19 @@
+---
+title: So much going on
+date: 2012-03-28
+categories:
+  - CAA
+  - ConnectedPast
+  - DayofDH
+draft: true
+---
+
+So this week is a biggie for archaeologists who pander in the digital realm.
+[The Connected Past](http://connectedpast.soton.ac.uk/) was this weekend at the University of Southampton, and some great people were presenting.
+Many of the topics are directly related to what I'm working on right now.
+Too bad it was in the UK, eh.
+Also currently going on at Southampton is the Computer Applications and Quantitative Methods in Archaeology conference, which seems like a blast.
+And to top it off, the Day of DH was yesterday.
+People have been tweeting like mad but I've been way too busy and it's impossible for me to keep up.
+Too bad for me I guess.
+

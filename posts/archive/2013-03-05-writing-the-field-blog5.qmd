@@ -1,0 +1,57 @@
+---
+title: "Writing the Field - Blog #5"
+date: 2013-03-05
+categories:
+  - Writing the Field
+  - Network analysis
+  - Writing
+draft: true
+---
+
+This 5th blog post for Writing the Field takes looks at what I consider a great article and a poor one.
+I will primarily examine writing style and form, and other aspects relating to structure.
+
+## The Good (@broodbank1993)
+This article is one of the first studies of regional interaction of the Cycladic Islands that utilized network analysis methods.
+Broodbank takes off from ideas presented in a previous publication, when he posited that a handful of major Neolithic centres were able to control maritime trade, taking advantage of their unique positions in the system of interaction.
+This paper attempts to identify these loci using Proximal Point Analysis (PPA), and explain how their position within trade networks may have contributed to their advancement.
+
+Right off the bat, Broodbank quotes Mary Helms' [-@helms1988] _Ulysses' Sail_, and opens up a discussion on the construction of value.
+In particular, there is a focus on the transmission of knowledge as a source of power, a topic which is referred to throughout the text and acts as a basis for the author's arguments.
+The use of theory is not compartmentalized, and is utilized comprehensively to construct the author's arguments.
+At the same time, Broodbank uses solid methods that scaffold the theory.
+However, @knappett2008a have briefly critiqued Broodbank's use of PPA and suggest that alternative models (namely a gravity model) may be better suited for similar research.
+
+I also like how Broodbank asks many questions.
+Some are hypothetical, the answers to which are only understood at a later point in the text, and some are answered right away.
+In all cases, they make the reader think about what it is Broodbank is searching for.
+They re-frame the reader in the same light as the author, and reposition the main focus to his point of view.
+This is a very clever way of ensuring compatibility between the author and the reader.
+
+## The Bad (@fitzhugh2011)
+This book chapter, which appeared in _Information and its Role in Hunter-Gatherer Bands_, edited by Robert Whallon, William A.
+Lovis and Robert K. Hitchcock, is a piece of writing that I think could be written better.
+The authors develop a model that aims to frame linkages between hunter-gatherer groups within constraints posed by the environment.
+This topic is appropriate for the publication this text appears in, however there are some structural issues that need to be addressed.
+There are also some issues with the study itself, and I briefly touch on them.
+
+After introducing the topic, identifying assumptions, and defining key terms, the chapter seems to be divided into two main portions.
+The first part presents the underlying theory about the potential relations that may exist between hunter-gatherer groups.
+This is a key part of the text, since it lays out the model the authors propose.
+This model consists of two variables, (a) the cost of interaction between groups and (b) the predictability of the environment.
+The matching of high and low values (but nothing in between) for these variables suggests four possible outcomes, and the authors characterize how they would envision interactions between hunter-gatherer groups under each set of circumstances.
+Although the four sets of variables and their characteristic modes of interaction were described very well in a summary of the model, this was preceded by a thorough yet somewhat confusing discussion on certain types of linkages that we'd expect to observe in various circumstances.
+The confusion stems from the heavy use of the same word, or variations of that word, multiple times in some sentences (for example, the words 'predictability', 'non-predictability', 'high-predictability', and 'low-predictability' are all used very often).
+
+Additionally, some of the arguments Fitzhugh, Phillips and Gjesfjeld make are in part based on very general statements regarding the behaviour of modern hunter-gatherers, that seemingly follow a logic of 'common sense'.
+However, many of these assertions are not backed up by any ethnographic references.
+There are also many instances where it may be beneficial to engage with the literature surrounding social anthropological views towards systems thinking, but there was little to no effort to do so.
+Additionally, I noticed a few instances when the authors made questionable assertions about the properties of network and possible implications for maintaining network coherence (p. 89-90, 95-96).
+
+The second part of this text was concerned with a case study that aimed to situate the model discussed above to the Kuril Island Chain, located between Japan and Russia in the North Pacific Ocean.
+The authors identified source groups of pottery and obsidian artefacts that were found on many of the islands (they did not specify whether the sources of the raw materials were identified as well, although they did note which end of the island chain they originated from), and they attempted to trace the circulation of these artefacts throughout the archipelago.
+The authors provided details regarding the environmental conditions of the region as well.
+Thus, values for the two variables of the proposed model were defined, and the authors determined which modes of interaction the island network would support based on the set of circumstances that are evident.
+Even though only a small portion of the artefacts analyzed were chronologically dated, the goal of the authors was to formulate a predictive framework for understanding hunter-gatherer interaction patterns, and to test whether the Kuril island chain would support such a framework.
+The authors did accurately predict the kinds of connections that were evident based on their model, and even though the chronology was mixed up, the _potential modes_ of interaction that the geography allowed matched what was evident in the archaeological record.
+However, this model should be tested using other archipelagoes since the Kuril island chain is rather linear, and the matching of artefacts with material source may have been evident based on geographical proximity rather than conformity to this model.

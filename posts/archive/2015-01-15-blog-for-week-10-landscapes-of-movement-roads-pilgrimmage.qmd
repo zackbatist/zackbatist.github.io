@@ -1,0 +1,76 @@
+---
+title: "Blog for Week 10 - Landscapes of Movement: Roads & Pilgrimmage"
+date: 2015-01-15
+draft: true
+---
+
+Since I missed a few classes last semester due to intensive thesis work, I did not engage in class discussions regarding certain sets of readings.
+If anyone from class is still receiving updates, feel free to leave comments.
+This first post corresponds with Week 10 in the syllabus: _Landscapes of Movement: Roads & Pilgrimmage_, and the papers are as follows:
+
+- Ardren, Traci and Justin Lowry (2011): The Travels of Maya Merchants in the Ninth And Tenth Centuries AD: Investigations at Xuenkal and the Greater Cupul Province, Yucatan, Mexico. World Archaeology 43(3):428-443.
+- Sorge, Antonio and Roddick, Andrew P. (2012) Mobile Humanity: The Delocalization of Anthropological Research. Reviews in Anthropolog 41(4): 273-301.
+- Ur, Jason A (2009) Emergent landscapes of movement in early Bronze Age northern Mesopotamia. In Snead, J.E.. Erickson C.L. and Darling J.A. (Eds.) Landscapes of Movement: Paths, Trails, and Roads in Anthropological Perspective, pp. 180- 203. University of Pennsylvania Press, Philadelphia.
+
+Ardren and Lowry examined the physical geography, as modified through human activity (i.e. the construction of cities, settlements and monuments), and modelled the movements of a merchant bringing goods from the coast of the Gulf of Mexico to Chichen Itza, a major Mayan capital city.
+Their aim was to reconstruct the travels of Mayan traders, and their work seems to have consisted of tracing merchants' likely itineraries (including likely routes taken and their corresponding timing), and comparison of the observable archaeological record with their presumed behaviours.
+What is interesting about this paper is how the authors attempted to account for the limitations and motivations experienced and considered by a merchant --- by imagining these factors from a first person perspective.
+I do note some limitations, however.
+First of all, it is presumed that all merchants had the same motivations and experiences.
+This renders the agentic aspect of the first person perspective completely moot, since the discussion is reoriented towards the examination of mercantile behaviour as an institution rather than as collective activities.
+Additionally, the authors presume that a trader's primary goal was to reach Chichen Itza from Isla Cerritos along a direct and optimized trajectory.
+The mapped trajectory makes sense within the bounded survey region, but there may have also been other potentially rewarding target markets to visit outside of this arbitrarily defined tract.
+The authors also presume that each merchant was acting in a freelance and competitive manner, and were guided by rewards offered by buyers in the capital.
+Must large monumental mounds necessarily represent gravitational centres?
+Essentially, I find that the authors take on the sensory perspective of the trader, and yet primarily consider the motivations of elites situated in the capital.
+Alternatively, there may have been more value for merchants in maintaining cooperative relationships with other traders inhabiting the region, as well as with the inhabitants of settlements surrounding the capital.
+Their familiarity with the environments that they traversed suggests that merchants were locals to the area, and that the distributions of artefacts originating from the coastal ports may not have been the result of explicit mercantile behaviour, but as a buildup of social relationships (i.e. relationships that are not explicitly defined in economic terms) among members of various inland communities.
+
+Ur's paper seems to be more straightforward.
+The author identified trails left behind through repetitive and concentrated activity, and interpreted their orientations as the routes between fields that cattle herders would follow before arriving at open grazing areas.
+Since farmers used tracts of land located just outside the city, the movements of cattle had to be guided between fields in order to avoid trampling on crops.
+The points where the trails end thus demarcate borders of fields, where cattle then spread out to pasture.
+Ur notes that these borders can be used to estimate population densities and to better understand the subsistence economy in this archaeological setting.
+This seems like a very solid study, and the vast number of sites exhibiting these trails poses interesting potential for comparison among them.
+However there is still the risk of generalizing the local economies at each site when conducting such multi-site studies, and it is important to recognize variability through assessment of each site as a whole before drawing comparisons among them.
+
+As Sorge and Roddick point out, it is quite difficult to recognize peoples' individuality when looking towards the deep past.
+I also imagine that it would be difficult to broaden ones' understanding of a person and generalize their behaviour among others in his or her community.
+At what point is it acceptable or not acceptable to ascribe highly similar motivations and behaviours to unacknowledged members of a community based upon focused observations of a single member, and vice versa regarding the characterization of an individual based upon an understanding of collective action?
+In multi-site analysis this assumption that "sites" equal their inhabitants is extremely prevalent.
+In an ideal world, dynamic processes within sites should be considered to a greater extent when examining interactions between them.
+However this may also be very impractical.
+Assuming that a common goal of multi-site studies is to reconstruct past behaviours, it may be downright impossible, since any such model can never reach perfect resolution relative to the archaeological phenomena being examined.
+
+One other striking note I made, perhaps while implicitly comparing the work of Ardren and Lowry (2011) and Ur (2009), is that the landscape itself should not be the focus of study.
+Instead, I believe that it might be better to evaluate how people physically coped with, altered, or interacted with the landscape as a material.
+This latter approach is better poised to reconstruct human behaviours and the rationales behind them based upon assessments grounded in physical evidence, rather than attempts of estimating the perceptions of generalized individuals through largely cognitive assessments.
+I believe that this point is illustrated in other work discussed throughout this class as well; for instance, Joyce's (2004) and Pauketat and Alt's (2005) applications of historical processualism are exemplary of the former approach, and Van Dyke's (2008) and Fowles' (2009) phenomenological observations pertain to the latter.
+Whereas Ur (2009) was concerned with the physical transformation of the landscape in response to human activities, Ardren and Lowry's (2011) work was based upon presumed understandings of ways by which environments were perceived by those exhibiting generalized and easily predictable behaviour, and how these perceived landscapes might have influenced peoples' behaviour.
+
+#### Comments
+**Andy:**
+Hi Zack,
+Three quick (if broad) questions:
+Assuming that a common goal of multi-site studies is to reconstruct past behaviours...
+What is the common goal?
+Could you extract that from our (sometimes convoluted!) discussion?
+Was Ur's paper straightforward?
+Certainly his method was, but I wonder if his actual approach was.
+I thought this was a rather elegant analysis.
+Is he simply looking at the physical response to human activities?
+Doesn't he include some phenomenological aspects of the rulers movements through the landscape as well?
+
+**Zack:**
+I agree that Ur's paper was elegant, and his commentary on the imposition of certain behaviours relating to inter-settlement travel from the bottom-up was especially interesting.
+The responses to the physical landscape are what stood out to me since this seems like the most practical way of conducting landscape archaeology in prehistoric contexts.
+I think that Ur's evocation of the travelling elite definitely serves to reinforce a particular view of socio-politics in this setting, however it is reliant on certain assumptions gained from textual sources that are not readily available in most other prehistoric archaeological contexts.
+
+I guess the goals of archaeologists conducting multi-sited studies differ according to their research questions. Ur's goal was to leverage the northern Mesopotamian trail system in order to better understand the roles of elites and of commoners in that society.
+Ardren and Lowry aimed to re-model past economic processes by predicting "common sense" behaviours.
+Ardren and Lowry had a pre-conceived idea of the role of the merchant in society, and this conception guided their dataset and analysis from the top-down.
+On the other hand, Ur depicted a way of better understanding social issues by re-imagining peoples' experiences.
+Although Ur's study was more so based on a bottom-up approach, he was still constructing a model;
+whereas the features of his model (imagined experiences, phenomenology) are largely grounded in theory, whereas Ardren and Lowry used distance and artefact counts instead.
+In this sense, the problems of generalization and presumption persists.
+However I do see that it is relatively simple and easy to reconstruct certain generalized behaviours based on physical geography, but that it is often much more fulfilling to assess peoples' experiences and relationships through application of social theory.
