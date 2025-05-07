@@ -1,0 +1,31 @@
+---
+title: "SP&L intro draft, and some other thoughts"
+date: 2015-01-02
+draft: false
+---
+
+I've been doing lots of reading in preparation for my Space, Place and Landscape Paper while on vacation.
+One book in particular really had a large impact, Timothy Pauketat's _Chiefdoms and Other Archaeological Delusions_ (2007).
+It is a fantastic synthesis of historical processualism that doesn't get too bogged down with citation chains or jargon, and was extremely relatable.
+It definitely got me to think about practice theory in a more practical way.
+I followed up by re-reading many key articles concerning the emergence of the Halaf and how it is defined, all with a renewed perspective that solidified how I want to tackle this paper.
+I wrote a short draft for my introduction, which more realistically outlines its aims.
+I also think that the structure outlined in a previous post will be modified by merging the overview concerning "what the Halaf?" with the section on common assumptions and problems.
+This introduction (with more meat added to it, perhaps) will precede that section:
+
+In archaeology pertaining to the prehistory of southwest Asia and Anatolia, the Halaf is commonly referred to as a cultural identity, a geographical expanse, a chronological period, and a specific form of material culture.
+As Stuart Campbell (1999) has pointed out, the true meaning of the Halaf has been mis-conceptualized ever since the initial identification of Halaf-style pottery in 1911 (Von Oppenheimer?) at the eponymous Tell Halaf type-site.
+The Halaf as a cultural identity has persistently been referred to as a physical entity that occupied space and time, and physically manifested on maps as the area between concretely delineated cultural borders.
+Realistically however, such references seem to be based upon a foundation laid down during the early 20th century that does not adequately represent past realities (Campbell 1999).
+Moreover, any discussion concerning the ways in which the Halaf emerged from prior cultural contexts defined in similar ways, or of other regionally oriented trends developed under a similar framework, will only work to refine this extended construct.
+In order to more effectively understand past realities, it is necessary to decouple the available data from the aforementioned restrictive and top-down framework.
+Instead, the archaeological data should be situated within a social perspective that captures its role within the formation of community identities, and use such interpretations to derive conclusions concerning broader scale interactions or delimitations.
+Moreover, it is important to maintain a heterarchical perspective that allows for the nature of a social system (e.g. power relationships, clusters of shared identity, etc.) to be understood as the result of the distributed and collective agency of all members of society.
+
+The aim of this paper is to characterize the Halaf from a renewed social perspective through a reassessment of regional models and an analysis of obsidian circulation networks.
+More specifically, a practice theoretic approach will be taken to evaluate the variability of material culture across northern Mesopotamia and the northern Levant regions during the 6th millennium B.C., with a particular focus on the ways by which obsidian was procured, worked and used.
+Although similar work has been conducted quite recently (cf. Campbell 2000:21-22; Campbell and Healey 2013; Healey 2007; Healey and Campbell 2014), here I hope to more explicitly relate the principles of practice theory as derived from Pauketat (2007), Pauketat and Alt (2005) and Joyce (2004), who emphasize the formation of political economies in their work –-- a topic that lies at the heart of discussion surrounding the nature of the Halaf.
+
+I also started the next section, and I'm going at a slower yet more thoughtful pace.
+I'm trying to be more strategic in my writing, but sometimes it seems that I'm overthinking or over-interpreting things.
+I also may need to expand my reading base concerning overviews of the Halaf, since I find myself relying on a handful of sources. They are quite authoritative and are cited often, but I think this is creating a bit of an echo chamber effect.

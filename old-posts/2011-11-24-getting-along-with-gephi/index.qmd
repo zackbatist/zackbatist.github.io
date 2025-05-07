@@ -1,0 +1,31 @@
+---
+title: Getting Along with Gephi
+date: 2011-11-24
+categories:
+  - data entry
+  - Gephi
+  - learning by doing!
+  - network analysis
+draft: false
+---
+
+Over the last week or two I've been getting used to working with [Gephi](http://gephi.org) to visualize networks.
+I've tinkered around before but now I finally had some real data to work with, even if it's very rudimentary.
+I realize that I'm going to need to add to it, but one step at a time.
+Carleton doesn't have copies of many of the excavation reports that I need, so I may need to venture afar to collect and record the data I need.
+Who's up for a road trip?
+
+Even though the network I ran is very simple, it's still progress in the right direction.
+Take a look:
+
+![](v5-new1.png)
+
+Dr. Graham took a look at the data and arranged it so the nodes represent the purpose of the pottery, rather than the type.
+I tweaked it a bit before posting it, just to make it look better.
+Here it is:
+
+![](sites-to-purpose-tweak.png)
+
+So far I'm getting the hang of things.
+I find that by controlling the software I can get a better grasp of what network analysis is all about.
+I'm guess you can say I'm a big proponent of **learning by doing!**

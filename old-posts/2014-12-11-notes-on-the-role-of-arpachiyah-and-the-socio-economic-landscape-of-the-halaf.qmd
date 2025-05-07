@@ -1,0 +1,62 @@
+---
+title: Notes on paper for Space, Place and Landscape --- on the role of Arpachiyah and the socio-economic landscape of the Halaf
+date: 2014-12-11
+draft: false
+---
+
+Halaf suddenly arose and spread across a large area --- between 5200 and 4500 BCE (7200 - 6500 BP)
+Simple band around the rim is standard ceramic ware, but more complex designs as well, up to 3 colour
+Architecture differed as well --- round houses with domed our flat roofs, as opposed to rectangular houses earlier and later.
+Rectangular architecture used in "secondary buildings" according to Campbell (1992).
+Emerged from the Hassuna, which was distributed across northern Syria and Iraq, more or less at the same time at each locale.
+This suggests that "the spread of a single cultural tradition over much of the northern portion of the Near East can no longer be dated to a time late in the Halaf, perhaps about 4700 B.C.E.,but must be placed much earlier, at the end of the Hassuna, around 5200 B.C.E." (Campbell 1992: 183).
+The Halaf seems to have arose with the aid of already established social "infrastructure" that spanned a wide region, and it's specific origin point can therefore not be deduced.
+The Halaf occurs during the mid-point between the beginnings of agriculture and the rise of the first cities, so is a natural place to look for the processes that led from one to the other.
+Large increase in population from the early Halaf to the late, due to the intensification of agriculture in northern Iraq and Syria.
+Davidson 1981 and Davidson and McKerrall 1980 have conducted NAA on Halaf pottery and found that it was probably manufactured in only a few locations, and traded elsewhere.
+Perhaps this ties in with LeBlanc and Watson 1973, who found variations of Halaf motifs correspond with distance.
+Obsidian is found in large quantities in northern Iraq and Syria despite the long distance to eastern Anatolian sources.
+Obsidian is found mainly as finished blades, suggesting that it was worked elsewhere and that contacts with these producers was stable and and consistent.
+No indication from Campbell 1992 regarding the specific sources of these blades.
+"With a single exception, none of the chipping debris that must have been generated during the manufacture of these blades has been found at a late Halaf site." (Campbell 1992: 184-185).
+
+Arpachiyah Burnt House - Level TT6 --- last Halaf level at Arpachiyah.
+Extremely rich finds found there.
+Polychrome pottery perhaps not as common as often believed.
+Also stone bowls --- one of obsidian in the burnt house.
+Also obsidian links.
+Also seals and seal impressions.
+All of this material suggests that Arpachiyah exhibited control over others in the region in a formalized and direct manner.
+The large amounts of obsidian at Arpachiyah suggest a central role in exchange, and heightened ability to acquire needed resources.
+Davidson and McKerrall 1980 showed that 30-40% of pottery from Tepe Gawra originated from Arpachiyah using NAA.
+The Burnt House was probably last of a series of earlier iterations of similar design, suggesting that this control was not short-lived.
+The eponymous Burnt House is Later Halaf.
+Despite all this, the small size of Tell Arpachiyah and the variability of Halaf motifs suggest that control was rather limited to a small area.
+However central position in a trade network, or perhaps a social network, may have bolstered richness despite the small area covered.
+
+Some larger Halaf sites are hinted but not excavated as of 1992 --- Nineveh may have a Halaf layer, and Takyan Hoyuk is 12 hectares (Algaze et al 1991).
+What will this paper be about?
+I will draw attention to the distinction of north-eastern Mesopotamia during the Halaf period as shown through my network analysis and through other evaluations conducted by Campbell, Healey, etc.
+How will my paper distinguish itself? How can this be publishable as original research?
+I think I will have to orient this paper in a more theoretical light. This suits the motivations of this course.
+What aspects of the course can I touch upon?
+Building history up, rather than looking back upon it.
+How places are used as identifiers of power --- the Burnt House as a place of social significance rather than Arpachiyah as deriving power from its spatial location.
+The resistance of and nullification of power --- Week 7: Power, Political Landscapes, and Monumental Spaces (Dahomey as an analogy).
+Draw attention to the lack of truly phenomenological or sensory approaches.
+
+Is the story of the Burnt House an event or reflective of longer term activities and behaviours?
+It seems that Campbell has trouble deciding, since he discusses the physical acts of individual agents as representative of longer-term norms.
+If burning down the house was not an act of everyday life (is this an acceptable and reasonable "if" to presume?) then how can it be reflective of typical life?
+It seems to be treated as a threshold, or a reaction to previous actions; as such, trying to figure out the state of living in pre-burning Arpachiyah is impossible by evaluating this non-typical event.
+I think if emphasis were placed on household or domestic features, a more purposeful evaluation can be made.
+In Campbell 1992, he starts off with a rather phenomenological approach but then gets bogged down by the luxury and elite goods and the broad-scale regional comparisons.
+At this point we know of the significance of Arpachiyah, and that there were regional centres.
+I generally agree with Kristiansen's view that there was a shift to less decentralized and more hierarchical modes of regional organization, but can we say anything more than that?
+How does my network for Period 4 address this?
+There is clearly a distinction of NE Mesopotamia with an influx of new obsidian raw materials, and these are primarily arriving as worked products.
+I could analyze a new network consisting of sites within the "zone of Halaf influence" --- Zagros Mountains to Euphrates and slightly beyond.
+I could filter the ties differently, at intervals of 5% similarity and graph density, number of modules, etc for each iteration, as well as mini-max (maximum threshold for minimum connectivity of the entire network).
+Maybe c-finder would be useful for highlighting overlap of influence that may have prompted conflict.
+Sites with varied assemblages, which do not fit into a particular GN module or have high betweenness centrality, may be considered to have been less dependent on a particular resource provider (consumer wins with increased competition) and may exhibit more market-oriented economic behaviour.
+On the other hand, those that are tighter-knit within a cluster are more dependent on a particular supplier and are likely engaged in chief-chief relationships whereby a power struggle is always present and decided upon by a few elite individuals who represent the larger group through their dealings with other leaders.

@@ -1,0 +1,30 @@
+---
+title: The Scope of Digital Humanities
+date: 2011-09-13
+categories:
+  - Carleton
+  - Digital Humanities
+draft: false
+---
+
+I finally finished Alison Babeu's [Rome Wasn't Digitized in a Day](http://www.clir.org/pubs/abstract/pub150abst.html) and I find it is a very useful overview of the large array of digital tools available to classicists, and how they are used by digital humanists.
+As an undergraduate student who, at least in part, studies classics, I was surprised at how much the web is used by classicists.
+Although it is true that most of these resources are mainly used in research rather than teaching.
+
+I was especially interested in the section about how classicists find, make use of, cite and collaborate using digital resources.
+While I was reading this part of the book I realized that many of my professors did not put a lot of emphasis on the digital tools available, and that the classics department, along with other departments that I have studied under, have lacked the incorporation of digital tools in classes.
+Again, that is not to say that my professors do not conduct research using digital means, and perhaps the problem lies with limitations of the infrastructure and technology that Carleton has to offer.
+
+But now that I have been opened up to the world of digital humanities I'm beginning to see its' presence more and more.
+There is a huge network on [twitter](https://twitter.com/#!/dancohen/digitalhumanities/members) that I never knew about, and I even registered for a [THATCamp](http://gta2011.thatcamp.org) un-conference in Toronto at the end of October.
+
+After reading this book, I now realize that even though there are still many academics who cling to traditional research methods, there is a big push to bring the humanities into the digital realm.
+
+#### Comments:
+
+**A.M. Christensen:**
+Hi Zack, I found your blog via Shawn Graham's. As a classics prof., I agree with you that we could often times do more to inform students about the digital tools out there. Of course some of us are still learning what's out there and how to use them too! You have an interesting topic and I look forward to seeing what you develop. I've been contemplating incorporating blogging into my students' work so I hope you don't mind if I follow you around here and see how someone else's experience goes!
+
+**Zack:**
+Thanks for following!
+It's always great motivation when others are interested.

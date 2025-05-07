@@ -1,0 +1,13 @@
+---
+title: Brief THATCamp Recap
+date: 2011-10-23
+categories:
+  - THATCamp
+  - un-conference
+draft: false
+---
+
+Today's THATCamp was a huge success.
+I got a chance to meet many awesome people and interact in an informal setting.
+I really like the format of this sort of event and even though it was my first conference I felt very comfortable.
+I'm definitely sold on the value of un-conferences.

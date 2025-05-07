@@ -1,0 +1,41 @@
+---
+title: The limitations of Today's technology, and visions for the future of computing technology
+date: 2013-01-10
+draft: false
+---
+
+Today I was linked an article that really caught my attention since it's about something that I think about all the time but was never able to put into words.
+This is my attempt to do just that.
+The article is about the various computer interfaces that are displayed in movies and on television throughout the past 50 years.
+The main observation made by the author is that the focus shifts from hardware to software, which represents the comfort level of the contemporary audience with computers and modern technology.
+The rows of unmarked buttons, nonsensical interfaces and digital noise characteristic of computers depicted in [_Star Trek: TOS_](https://www.ex-astris-scientia.org/inconsistencies/computers_tos.htm) or _Alien_ acted to confirmed people's feelings of computers in the 60s and 70s.
+In contrast, the glossy touch screens of the computer systems on the Enterprise D of _Star Trek TNG_ and the fluidity of computer interaction in _Minority Report_ may be the result of the growing comfort levels that were developed as computers became bigger parts of people's lives.
+
+Lately I've been thinking about what we use technology for.
+While flying on an airplane last week I opened my computer to read some articles I saved using Pocket, and once I finished my list of "to reads" I was wondering what else I could do to kill time for the rest of my 4 hour flight.
+I briefly conjured up a short list of some things that I could do using my computer (that I genuinely enjoy doing) without being connected to the internet.
+All of these things required me to be online prior at some point or another in order to gather the content that would be consumed or manipulated.
+It seems that most things worth doing on a computer require an internet connection.
+Almost every app I have installed is based on some kind of internet-based functionality, and almost all of the documents, videos, pictures, music, etc contained on my drive have been downloaded through an online connection at some point or another.
+Last week when my mom wanted to view her vacation photos to her ipad while in a hotel room with no wifi, I was surprised when I realized that she would have to transfer them through a hard connection to my dad's laptop where the SD card would be directly input.
+It seems that everything goes through the tubes at some point or another.
+
+Now, I don't want this to seem like an attack on the internet.
+I practically live online.
+But I feel it's necessary to point out that we have computers that are capable of doing so much, yet it seems like we are ultimately limiting ourselves due to our need to be continuously online.
+It's odd that the iphone that sits in my pocket contains over 130,000 times as much RAM as was used to send people to the moon, but I can't get much functionality out of it without connecting to the internet first.
+
+Again, I'm not hating on the internet, but I do feel that we need to reconsider the nature of modern technology today.
+I was discussing a  similar topic with my aunt the other day and I felt that I had to justify the benefits of the internet to her, which is drowned out in a sea of consumable content that gives the web its notoriety.
+She believes that "internet culture" is degrading "genuine" human interactions and that social skills are being underdeveloped.
+But the way I see it, this is not the case.
+We live in the real world (or meatspace as I prefer to call it) and the internet is simply a medium in which we interact.
+There are many limitations that are characteristic of this system, and because of the depth to which the internet has penetrated our lives we have grown to live with them.
+If you take a good hard look at the consumer electronics market, you'll note that certain elements of design shape the ways we interact online.
+For instance, the constant use of keyboards results in a text-based internet which resulted in the popularity of discussion boards.
+Because every laptop has a keyboard as the main focal point, users are influenced to use it as the primary input device.
+The use of tablets is allowing for much greater flexibility in this regard, however the use of skeumorphic design that imitates laptop-based attributes acts as a barrier to a functionalist use of technology.
+
+Similar to the producers of sci-fi and speculative fiction of the pre-internet age, I envision a future that utilizes technology in a constructive way, emphasizing the role of human input and decision making, while being flexible enough to get the job done.
+Essentially, I think that computers should return to their roots, adopting a functionalist design strategy that enables people to get things done. I tend think of modern technology as a tool, an extension of my own body that I use to ease my way of life, facilitate my own needs, and fulfill my wants.
+This reflects the attitudes of pre-internet computer users, who envisioned future starship officers and voyagers of outer space as utilizers of advanced technology, enabling them to maneuver their ships or solve complicated problems with relative ease.

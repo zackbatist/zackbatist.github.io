@@ -1,0 +1,79 @@
+---
+title: "Writing the Field - Blog #4"
+date: 2013-02-26
+categories:
+  - Writing the Field
+draft: false
+---
+
+For this week's Writing the Field blog post, I annotated 3 articles that are relevant to my own research.
+
+## @brughmans2010
+This paper presents network analysis as a flexible set of analytical tools that can be applied to explore a variety of archaeological topics, while rejecting the notion that network analysis methods can be applied as a standardized, 'cookie-cutter' set of practices.
+Brughmans touches on some major issues surrounding the use of network analysis by archaeologists, and strongly suggests that archaeologists should carefully consider the issues and subsequent ramifications on interpretation when applying network analysis to their research.
+These issues that Brughmans suggests archaeologists of this sub-specialty should consider are:
+
+- The role of archaeological data in networks
+- The diversity of network structures, their consequences and their interpretation
+- The critical use of quantitative tools
+- The inﬂuence of other disciplines, especially sociology
+
+The author evaluates recent studies that utilized network analysis methods to examine various topics of archaeological concern, and points towards the ways that each sought to answer the questions at hand.
+He does this by highlighting the nature of the data, how the analysis of said data was interpreted, the specific methods that were chosen to enlighten our understanding of the archaeological topic being examined, and whether the study was conducted with an archaeological framework in mind.
+Additionally, Brughmans conducts his own analysis as a case study, pointing towards his considerations of these issues as he formulates various conclusions.
+By looking closely at how archaeologists have dealt with these issues, which may be very implicit in some cases, Brughmans illustrates how network analysis can be tremendously useful, but only while suiting the analyses to the questions at hand.
+
+Just as a builder must examine a blueprint of the building he wishes to construct, understand the properties of the foundation he builds upon, and utilize the proper tools when appropriate, a network analyst must define the nature of the relationships he or she wishes to explore, understand which tools to use and what the ramifications will be, while keeping in mind the nature of the dataset.
+Brughmans shows that there are no standardized methods or modes of interpretation, and that network analysis must be done in light of the wider archaeological and contextual frameworks that surround the topic being researched.
+I am currently constructing an archaeological framework, reading about various archaeological topics that relate to what I am examining as part of my research (this is the focus of my literature review).
+This is also helping me more clearly define the relationships I will examine and how they can be drawn out of the data I will be using.
+
+## @sindbaek2007
+In this paper, Sindbæk examines the structure of communication and exchange networks in Viking Age Scandinavia by analysing the travels of Anskar as depicted in the Vita Anskarii, and by tracing a web of imported artefacts that is indicative of regional trade and interaction.
+This article also challenges the viability of two well-observed archaeological models regarding regional exchange (the down-the-line model and central place theory) by indicating how they conflict with models that explain the development of complex networks, such as the ones Sindbæk analyses. Sindbæk points out that the down-the-line model treats all sites as having equal opportunities for trade and exchange that is assumed to occur randomly among neighbouring sites.
+However recent observations on common properties of complex networks indicate that this kind of organization rarely occurs.
+Sindbæk also argues that central place theory is flawed since it assumes that certain sites will have eventually grown into the large urban centres that are evident today, which ignores the development process.
+A complex network approach, on the other hand, takes such dynamic processes into account.
+
+By taking on a complex network theory approach and by utilizing network analysis methods, Sindbæk shows that networks based on both the travels of Anskar and the co-presence of imported artefacts form small-world systems with scale-free structures.
+That is, a few highly connected sites act as hubs that broker interactions between clusters of smaller, more sparsely connected sites.
+Interestingly, these two networks, which represent communication and exchange systems respectively, correspond with each other at various points.
+The author also utilizes his analyses to illustrate his concerns regarding the down-the-line model and central place theory.
+
+Sindbæk's article is a tremendously helpful analysis that has helped me develop some ideas for my own research.
+The identification of clusters that are evident in the network topology, which Sindbæk colour-coded and arranged by region, got me thinking more about the incorporation of geographical and economic aspects into my analyses.
+The discussions concerning the down-the-line model and central place theory were very insightful as well, however I am unsure about what kind of impact these arguments have had on the broader archaeological community.
+Also, whether it was intended or not, the analysis and discussion of Anskar's travels and how this impacts our understanding of Viking Age communications systems really helped humanize the way I look at network analysis.
+
+## @watkins2008
+In this article, Watkins recognizes that archaeologists still tend to identify 'cultures' based on the identification of similar artefact styles, and proposes an alternative, bottom-up approach to these inter-site similarities that become more evident during the Early Neolithic.
+The author asserts that as individual sites began to exchange materials and information, exhibiting the three modes of interaction as described in Renfrew's model of peer-polity interaction (competition and competitive emulation, symbolic entrainment and the transmission of innovation, and increased flow in the exchange of goods), a broader 'level' of shared material culture and practices emerges.
+
+Although it is not made explicit, this point of view seems to be influenced by general systems theory.
+In essence, Watkins describes how multiple agents (communities) interact in such a way so that a deeper system emerges.
+This bottom-up approach, which views similar material culture or innovations as the product of developing interactions, holds potential to explain rather than simply describe the distribution of cultural assemblages.
+This article acts as a strong theoretical base that I must refer back to while conducting my own research on the emergence of broader systems in the same setting that Watkins examined.
+
+#### Comments
+**Andy:**
+Hi Zack,
+Looks like you have found some very useful articles -- and very up to date.
+You say, regarding the Sindbæk article, "I am unsure about what kind of impact these arguments have had on the broader archaeological community." Google scholar says that 8 have cited this paper, and about half are viking scholars.
+However, one article that came up that is worth perusing, perhaps, is the 2012 chapter "Interactions in space for archaeological models" by TS Evans, RJ Rivers and our friend C Knappett.
+I wonder about that Watkins piece.
+It doesn't sound all that theoretically sophisticated, and yet it is being cited quite often.
+I may have to take a gander at both this one and the very interesting Sindbæk myself!
+Did you find the annotation process useful to highlight areas of potential further interest.
+You say, "I am currently constructing an archaeological framework, reading about various archaeological topics that relate to what I am examining as part of my research" in the words of Luker, are you beginning to discover the "frames"?
+Can you articulate them
+
+**Zack:**
+Hi Andy, thanks for commenting.
+I am indeed delving into my 'frames', as Luker would put it.
+I've been thinking a lot about the angles from which I want to approach, especially in light of Brughmans' article above, and another review by him I read recently.
+I haven't posted an outline yet because I'm having a hard time committing to what I have in mind at the moment, but I'll have something up soon.
+Regarding the citations to Sindbaek's article, after a quick scan I've noticed that most of the non-region-specific articles lack much engagement with his ideas or criticisms, and are rather superficial.
+I'm a bit surprised about this.
+Also, I'm familiar with the work of Evans, Rivers and Knappett from my undergraduate thesis work, but I should re-read it in light of some new understandings I've gained.
+The Watkins article was very enlightening. He gives a very different perspective, which is especially interesting for me since I'm in the midst of learning about this setting, and it's still very fresh in my mind.
+

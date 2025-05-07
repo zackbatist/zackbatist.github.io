@@ -1,0 +1,107 @@
+---
+title: "Writing the Field - Blog #2"
+date: 2013-02-03
+categories:
+  - Writing the Field
+  - MA thesis
+  - social writing
+draft: false
+---
+
+The second blog post for Writing the Field is meant to outline a piece of writing that I hope to complete this semester.
+I decided that I will work on an introduction to my MA thesis, explaining my research goals and defining the paramaters of my inquiries.
+Admittedly, I have had a hard time defining my research question, and I really need to solidify my research objectives.
+
+My MA research will utilize social network analysis to gain a better understanding of regional interactions from the Epi-Palaeolithic to the Chalcolithic in SW Asia and Mesopotamia.
+Using obsidian sourcing data I will construct a network of interaction in order to document the growing complexity of regional exchange that was occurring during this broad period.
+During the Pre-Pottery Neolithic obsidian begins to be traded more widely, and objects are often found very distant from their volcanic sources.
+It is my intention to document and explain the growing complexity of interaction in this region, similarly to how @golitko2012 examined the obsidian exchange from the Mayan Classic to Postclassic periods.
+Certain 'groupings' of sites that consumed obsidian in a similar manner (either by source, typology, use or context of deposition) will become more evident through SNA methods, and I hope to compare these groupings to the occurrence of other archaeological materials (pottery styles, architectural motifs, burial customs, etc).
+
+At the moment my thoughts are scattered, and I need to pick up the pieces and arrange them nicely.
+My research question is not very well-thought out, and I'm having a hard time coming up with an brief 'elevator pitch' that accurately describes what I am working on.
+By collecting my thoughts and writing them out I will be able to solidify my ideas and come up with a concrete research objective. Essentially I will describe how obsidian was used throughout prehistory in SW Asia and Mesopotamia, and how archaeologists have made use of the obsidian data.
+These are the benefits of introducing my thesis in this way:
+By outlining how obsidian was procured, manufactured and consumed, I provide a glimpse of the assumptions I'm making.
+It goes over the history of the examination of obsidian, describing past interpretations by archaeologists.
+Of course, emphasis will be placed on studies of regional interaction.
+This also gives me an opportunity to reflect on ideas developed by archaeologists who do not specialize in this region.</li>\n	<li>It sets my research within broader archaeological debates.</li>\n	<li>It allows me to segway into the benefits of using SNA methods.
+Most importantly, it allows me to set up the necessary 'foundations' that need to be explained before I get to my research objective.
+I find it difficult to just talk about what I am researching without situating my work within broader discussions.
+I find that all of the above is necessary to evoke before introducing my work.
+This introductory chapter will probably exceed the 20-25 pages expected for this class.
+However, I do find it necessary to complete this chapter before the summer, when I will be compiling a database of obsidian artefacts.
+Having a proper understanding of your objectives is necessary in order to collect relevant data.
+
+I will divide this piece of writing into components, and assign due dates for each one.
+The final piece is due April 12.
+The component outlining the production and consumption of obsidian will be due February 24.
+The part examining past archaeological interpretations of obsidian will be due March 15.
+A finished draft will be due March 20 and a second draft will be due March 27, as is stated in the course syllabus.
+
+I'll also post the outlines for each component, listing all the aspects I will cover.
+Maybe I'll make a google doc, and I'll write in a different colour every time I add contrent or change things around.
+This will make me think critically about how I write since it is being shown to a wider audience, and it will allow me to see my train of thought once this is all finished.
+Also, if any of my peers in this class have any suggestions they can comment on the google doc. But perhaps this is taking things too far, I don't want to write in fear of constant criticism.
+On the other hand, this kind of pressure can act as a great motivator.
+I like the idea of writing in non-isolation, and I was even thinking about regularly writing in this wordpress text editor  because I somehow feel more comfortable blogging.
+I think that it has to do with the public exposure and the relative informality that I associate with blogging.
+I feel that it would be beneficial to apply the way I blog to my academic writing, so maybe this is the way to go? Dr. Roddick talks about how we need to make writing more social, but does this also imply complete transparency? Perhaps I'll try this out, and if it doesn't work I'll call it quits and go back to 'normal' writing.
+
+**EDIT:**
+After thinking about it, I'm considering doing a literature review instead, looking towards other relevant studies.
+This accomplishes the same goal, and the only thing I'll be removing really is the first portion regarding the production and consumption of obsidian.
+
+**EDIT 2:**
+After some more contemplation I've settled on a topic.
+Essentially I'll be answering these questions:
+How have archaeologists looked at obsidian circulation, and how can SNA be used to engage in these discussions?
+
+**EDIT 3:**
+I realize that I never provided a concrete outline for this, so I included one below:
+
+#### Comments
+**Matthew:**
+Hi Zack,
+Seems to me that you have in the very least a rudimentary understanding about how you're going to begin your thesis.
+It's still very early, but it's great that you're taking the time to work out the details of your research question now, instead of waiting until next October (I'm definitely guilty of that).
+You alluded, briefly, to obsidian sourcing.
+Are you going to be analyzing trace element concentrations in the XRF lab? How well documented are the geological sources of obsidian that have been analyzed to date?
+Trace element concentrations in obsidian, particularly in the Mediterranean region likely vary depending on geochemistry of the lithosphere vis a vis the chemistry of the volcanic plume.
+Is this relatively uniform for the Mediterranean basin, or does regional geochemistry vary significantly enough to produce distinct geographic boundaries of obsidian sources?
+
+**Zack:**
+Hi Matt,
+I'm going to be working with already published obsidian sourcing data, although there is a possibility that I'll be able to do some characterization myself.
+For the vast majority of the data, a very large portion of which is published in a massive compendium, I'll have to trust the published results, unless there is reason not to.
+In any case I'll take into account the concerns you raised.
+
+**K-Bish:**
+Hello Zack,
+I think that you've done a good job of going through and narrowing your focus.
+This really helps to outline your discussion and start researching from here.
+Have you considered really explaining and introducing aspects of Social Network Analysis (SNA)?
+I remember it briefly being discussed in a past bioarchaeology course but this may be something necessary to fully explain or to examine the theory behind if you intend on working with it.
+This could be a point or section included in your 4th section, as well as a basic introduction within the beginning part of your introduction.
+This will provide you a chance to overview the theorists and literature that relates to SNA. 
+Something to consider!
+
+**Zack:**
+Noted!
+Thanks for pointing this out.
+
+**Andy:**
+Hi Zack,
+I'm not sure what you have settled on after your rethinking, but if I can make a suggestion:
+don't plan on writing your introduction to your thesis. This is usually the last chapter you should be writing (yes, after your conclusion!).
+The reason is that you don't know, exactly, what you are introducing until you have done a bunch of work. Also, an intro to a thesis is generally pretty short, so a paper longer than 25 pages is probably no longer an introduction.
+At this stage, I think this class project would be best served by (a) defining your research question and (b) a literature review.
+There is no reason that these can't be together for the purpose of this class.
+In fact by tacking back and forth between a lit. review you will likely be able to tighten up the issues of interest (in light of the published sources you can draw upon).
+This is a similar suggestion I have for Lia over at her blog, and I think you guys will be going through a pretty similar process.
+Ok?
+
+**Zack:**
+Hi Andy, thanks for your suggestions.
+I know I've been back and forth a bit and I decided that I am indeed going to do a lit review. Like you said, it's a great way to identify key areas to focus on.
+I spoke with other people about this around the department and they made similar suggestions.

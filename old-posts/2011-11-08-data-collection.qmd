@@ -1,0 +1,22 @@
+---
+title: Data Collection
+date: 2011-11-08
+categories:
+  - Data collection
+  - Goals
+draft: false
+---
+
+It's been a couple of weeks since I posted here, so here's a quick update of what's going on.
+
+I've been keeping myself busy by collecting data from excavation reports, which is kind of slow and tedious.
+I'm trying to record the properties of vessels used for food and drink preparation and consumption from 34 major sites in the Aegean.
+
+So far, I've been keeping track of specific properties of pottery such as decorative themes and wether or not a vessel is burnished or slipped, etc.
+My thinking was that I could use these data to interpret the use of the vessel.
+But now I realize that I can just skip recording these details and interpret these data right on the spreadsheet.
+Adding this step later on would slow me down and I may not be able to run an analysis before the end of the semester, as planned.
+Additionally, these properties are not recorded to the same extent in every excavation report.
+
+Deciding what data suits your goals is tough.
+I have to keep in mind what my aims are, and be consistent throughout the project.
