@@ -8,7 +8,7 @@ categories:
 draft: false
 ---
 
-There’s a pretty clear tension between researchers' obligations to publish their work (ideally, in a widely accessible manner) and the use of these materials to train AI.
+There's a pretty clear tension between researchers' obligations to publish their work (ideally, in a widely accessible manner) and the use of these materials to train AI.
 On one hand, researchers produce knowledge for communal benefit, and on the other hand their work is being used for some pretty egregious purposes.
 A lot has already been written about this tension, but I'm not really satisfied with any explanations or recommendations I've read so far.
 Chief among my concerns is that an impasse is often contrived by framing it through technical, legal or procedural outlooks which take for granted several assumptions about the status quo.
