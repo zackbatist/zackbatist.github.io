@@ -3,12 +3,8 @@ title: Projects
 format: 
   html: 
     grid: 
-      body-width: 1000px
+      body-width: 1100px
 ---
-
-<!-- **Bibliometric network analysis of Viking Age research (BibVik)**\
-A project whose goal is to identify trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age.\
-[github.com/zackbatist/BibVik](https://github.com/zackbatist/BibVik) -->
 
 **CITF Postdoc**\
 Articulating social, collaborative and discursive aspects of epidemiological data-sharing initiatives, and how they relate to, overlap with or conflict with technical, institutional and epistemic factors.\
@@ -24,6 +20,14 @@ A list of open source archaeological software and resources.\
 A list of open venues for publishing, reviewing and curating archaeological research.\
 [diamond.open-archaeo.info](https://diamond.open-archaeo.info/)\
 [github.com/open-archaeo/diamond.open-archaeo.info](https://github.com/open-archaeo/diamond.open-archaeo.info)
+
+**Bibliometric network analysis of Viking Age research (BibVik)**\
+Identifying trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age.\
+[github.com/zackbatist/BibVik](https://github.com/zackbatist/BibVik)
+
+<!-- **Toward Participatory Data Stewardship**\
+Led by Alex Bernier (McGill) and Hortense Gallois (SFU)
+Conducting co-creation workshops with Huntington’s disease patient communities directed toward producing standardized and patient-directed data governance tools. -->
 
 **E-CURATORS**\
 Led by Costis Dallas at the University of Toronto's Faculty of Information.

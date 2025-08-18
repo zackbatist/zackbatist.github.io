@@ -7,6 +7,20 @@ format:
 ---
 ## Journal Articles
 Zachary Batist\
+In press. **Balancing situated and objective representations in archaeological fieldwork.**
+Advances in Archaeological Practice.\
+DOI: [10.1017/aap.2025.10101](http://doi.org/10.1017/aap.2025.10101)
+| [Preprint](https://zackbatist.info/fuzzy-concrete/)
+| BibTeX
+
+Zachary Batist\
+2025. **Locating creative agency in archaeological data work.**
+Peer Community in Archaeology.\
+DOI: [10.17613/8eqy4-n1m82](https://doi.org/10.17613/8eqy4-n1m82)
+| [Preprint](https://zackbatist.info/locating-creative-agency/)
+| BibTeX
+
+Zachary Batist\
 2024. **Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.**
 Archeologia e Calcolatori (special issue comprising papers presented at ArcheoFOSS XVII) 35(2): 47-54.\
 DOI: [10.19282/ac.35.2.2024.06](https://doi.org/10.19282/ac.35.2.2024.06)
@@ -52,7 +66,7 @@ DOI: [10.1016/j.jasrep.2017.08.016](https://doi.org/10.1016/j.jasrep.2017.08.016
 | [BibTeX](/bibtex/carter2017.bib)
 
 Kyle P. Freund and Zachary Batist\
-1.    **Sardinian Obsidian Circulation and Early Maritime Navigation in the Neolithic as Shown through Social Network Analysis.**
+2014. **Sardinian Obsidian Circulation and Early Maritime Navigation in the Neolithic as Shown through Social Network Analysis.**
 Journal of Island and Coastal Archaeology 9(3): 364-380.\
 DOI: [10.1080/15564894.2014.881937](https://doi.org/10.1080/15564894.2014.881937)
 | [BibTeX](/bibtex/freund2014.bib)
@@ -115,9 +129,13 @@ Supervised by Shawn Graham.
 
 ## Works in Progress
 Zachary Batist\
-In review. **Locating creative agency in archaeological data work.**
-Cambridge Archaeological Journal.
+In progress. **Data Management is People Management: On Abstraction of Data and Labor in Archaeological Projects.**\
+DOI: TBD
+| [Preprint](https://zackbatist.info/data-tech-poli-arch/)
+| BibTeX
 
-Zachary Batist\
-In review. **Balancing situated and objective representations in archaeological fieldwork.**
-Advances in Archaeological Practice.
+Alex Bernier, Isabel Baltzan, Tina Wey, Zachary Batist and Isabel Fortier.\
+In progress. **Data Governance in Longitudinal Mother-Child Cohorts: An Empirical Assessment of the Canadian ReACH Studies.**\
+DOI: TBD
+| Preprint
+| BibTeX
