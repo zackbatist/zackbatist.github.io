@@ -89,13 +89,3 @@ Ideally, we would be able to do something like what Alex Brandsen [-@brandsen202
 All of this makes the difference between a lazy meta-science approach and good social scientific research.
 It is not acceptable for us to simply pick up the data that's already available, since unfortunately this includes significant biases that would severely hinder our findings.
 So we need to actively make the data work for us so that they address our research questions, rather than do things the other way around..
-
-
-
-```bash
-docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:latest-crf-multi-arch
-
-curl -v -H "Accept: application/x-bibtex" --form input=@./x.pdf localhost:8070/api/processReferences
-
-curl -v -H "Accept: application/x-bibtex" --form input=@./x.pdf --form consolidateCitations=1 localhost:8070/api/processReferences
-```
