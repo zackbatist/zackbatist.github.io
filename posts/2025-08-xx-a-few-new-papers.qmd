@@ -1,0 +1,35 @@
+---
+title: "A few new papers"
+date: 2025-07-xx
+categories: 
+  - abstract
+  - publication
+  - data work
+  - archaeological fieldwork
+  - science studies
+draft: true
+---
+
+Over the past several months, two additional papers deriving from my dissertation have been successfully peer reviewed and/or published.
+These are in addition to the first one: **On the Value of Informal Communication in Archaeological Data Work**, which was published by Open Archaeology last year [[DOI: 10.1515/opar-2024-0014].](https://doi.org/10.1515/opar-2024-0014/)
+
+**Locating Creative Agency in Archaeological Data Work**\
+[DOI: 10.17613/8eqy4-n1m82](https://doi.org/10.17613/8eqy4-n1m82) / [Preprint](https://zackbatist.info/locating-creative-agency/) / [GitHub](https://github.com/zackbatist/locating-creative-agency)
+
+Through comparison of illustration, photography, photogrammetry practices, and different approaches for collecting and managing spatial data, I identify the roles that fieldworkers and other actors play while constituting data.
+I submitted it for open review through Peer Community in Archaeology after a couple failed attempts to get it published in a traditional archaeology journal.
+The open review process was a great experience!
+You can read the reviews [at the PCI-archaeo website](https://doi.org/10.24072/pci.archaeo.100608), and I also included the anonymous reviews from the prior submissions in the [git repository](https://github.com/zackbatist/locating-creative-agency/blob/main/sections/14_peer-reviews.qmd).
+
+**Balancing situated and objective representations in archaeological fieldwork**\
+[DOI: 10.1017/aap.2025.10101](http://doi.org/10.1017/aap.2025.10101) / [Preprint](https://zackbatist.info/fuzzy-concrete/) / [GitHub](https://github.com/zackbatist/fuzzy-concrete)
+
+This one has just been published in Advances in Archaeological Practice.
+It articulates tensions between systemic warrants to formalize archaeological observations and the embodied experiences of actually collecting data during fieldwork.
+I also include the peer-reviews in the [git repository](https://github.com/zackbatist/fuzzy-concrete/blob/main/sections/13_peer-review.qmd).
+
+**Data Management is People Management: On Abstraction of Data and Labor in Archaeological Projects**\
+DOI: TBD / [Preprint](https://zackbatist.info/data-tech-poli-arch/) / [GitHub](https://github.com/zackbatist/data-tech-poli-arch)
+
+I'm working on yet another (and final) paper from my dissertation that I'll be presenting at the [Data and Technology Politics in Archaeology Workshop](https://uib.no/en/nia/179128/data-and-technology-politics-archaeology), which is part of the Exploring the Layers of Digital Archaeological Practice Workshop Series.
+The paper is to be presented at the Norwegian Institute at Athens (December 3 - 4, 2025) and will be published as part of the workshop proceedings next year.
