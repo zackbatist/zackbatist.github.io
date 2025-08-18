@@ -105,9 +105,7 @@
 \newcommand{\Gist}[1]{\newline \faGithub\ \href{https://gist.github.com/#1}{#1}}
 \newcommand{\Website}[1]{\newline \faGlobe\ \href{https://#1}{#1}}
 \newcommand{\ZenodoDOI}[1]{\newline \aiZenodo\ \href{https://doi.org/#1}{#1}}
-\newcommand{\Slides}[1]{\newline • Slides: \faTv\ \href{https://#1}{#1}}
-\newcommand{\SlidesDOI}[1]{\newline • Slides: \faTv\ \DOILink{#1}}
-\newcommand{\PosterDOI}[1]{\newline • Poster: \faImage\ \DOILink{#1}}
+% \newcommand{\Slides}[1]{\newline \faStickyNote\ \href{https://#1}{#1}}
 \newcommand{\OA}{\aiOpenAccess\enspace}
 \newcommand{\Invited}{\newline • \textbf{Invited talk}}
 \newcommand{\Role}[1]{\newline • Role: #1}
@@ -123,8 +121,8 @@
 \newcommand{\Abandoned}{abandoned}
 %\newcommand{\Ongoing}{$\ast$}
 \newcommand{\Future}{future}
-\newcommand{\Review}{in review}
-\newcommand{\Press}{in press}
+\newcommand{\Review}{In review}
+\newcommand{\Press}{In press}
 \newcommand{\Progress}{In progress}
 \newcommand{\Accepted}{accepted}
 \newcommand{\Appointment}[4]{\textbf{#1} \newline #2 \newline #3 \newline #4}
@@ -325,6 +323,19 @@
 \section{Publications}
 \subsection{Journal articles}
 \begin{EntriesTable}
+\Year{\Review}  &
+  \Me.
+  \textbf{Locating creative agency in archaeological data work.}
+  Peer Community in Archaeology.
+  \DOI{10.17613/8eqy4-n1m82}
+  \GitHub{zackbatist/locating-creative-agency}
+\\
+\Year{\Press}  &
+  \Me.
+  \textbf{Balancing situated and objective representations in archaeological fieldwork.}
+  Advances in Archaeological Practice.
+  \GitHub{zackbatist/fuzzy-concrete}
+\\
 \Year{2024}  &
   \Me.
   \textbf{Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.}
@@ -394,39 +405,40 @@
   \DOI{10.1158/1535-7163.MCT-08-1186}
 \end{EntriesTable}
 
-\newpage
+% \newpage
 \subsubsection{Articles in Progress}
 \begin{EntriesTable}
-\Year{\Review}  &
-  \Me.
-  \textbf{Locating creative agency in archaeological data work.}
-  Peer Community in Archaeology.
-  \DOI{10.17613/8eqy4-n1m82}
-  \GitHub{zackbatist/locating-creative-agency}
+\Year{\Progress}  &
+  \Me, Julie Lund { \&} Isak Roalkvam
+  \textbf{Bibliometric network analysis of Viking Age research (BibVik)}
+  \newline
+  \emph{A project whose goal is to identify trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age.}
+  \GitHub{zackbatist/BibVik}
+  \Website{https://zackbatist.info/BibVik}
 \\
-\Year{\Review}  &
+\Year{\Progress}  &
   \Me.
-  \textbf{Balancing situated and objective representations in archaeological fieldwork.}
-  Advances in Archaeological Practice.
-  \GitHub{zackbatist/fuzzy-concrete}
+  \textbf{Constructing the Commons: Archaeological Projects as Organized, Collective Enterprises.}
+  For the Data and Technology Politics in Archaeology Workshop.
+  \newline
+  \emph{Critically evaluates the mediating devices that occur throughout the continuum of archaeological practice, and characterizes them as points of convergence where collaborative commitments are reified and reproduced.}
+  \GitHub{zackbatist/data-tech-poli-arch}
+\\
+\Year{\Progress}  &
+Bernier, A., Baltzan, I., Wey, T., \Me. { \&} Fortier, I.
+  \textbf{Data Governance in Longitudinal Mother-Child Cohorts: An Empirical Assessment of the Canadian ReACH Studies.}
+  \newline
+  \emph{Compares data use conditions that distinct research teams assign to their datasets.}
 \\
 % \Year{\Progress}  &
-%   \Me, Julie Lund { \&} Isak Roalkvam
-%   \textbf{Bibliometric network analysis of Viking Age research (BibVik)}
-%   \newline
-%   \emph{A project whose goal is to identify trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age.}
-%   \GitHub{zackbatist/BibVik}
-%   \Website{https://zackbatist.info/BibVik}
+%   \Me.
+%   \textbf{The situation of data papers in archaeological knowledge production.}\newline
+%   \emph{Traces how published archaeological datasets are situated within broader citation networks, through empirical analysis of open bibliometric metadata.}
 % \\
-\Year{\Progress}  &
-  \Me.
-  \textbf{The situation of data papers in archaeological knowledge production.}\newline
-  \emph{Traces how published archaeological datasets are situated within broader citation networks, through empirical analysis of open bibliometric metadata.}
-\\
-\Year{\Progress}  &
-  \JoeRoe { \&} \Me.
-  \textbf{Archaeology in the fediverse: reclaiming ownership of scholarly social media.}\newline
-  \emph{Position paper articulating the discussion held during our panel at ArcheoFOSS XVII.}
+% \Year{\Progress}  &
+%   \JoeRoe { \&} \Me.
+%   \textbf{Archaeology in the fediverse: reclaiming ownership of scholarly social media.}\newline
+%   \emph{Position paper articulating the discussion held during our panel at ArcheoFOSS XVII.}
 \end{EntriesTable}
 
 \subsection{Book contributions}
@@ -475,7 +487,7 @@
   \Website{zackbatist.info/DObsiSS}
 \end{EntriesTable}
 
-\newpage
+% \newpage
 \subsection{Other Open Initiatives}
 \begin{EntriesTable}
   \Duration{2024}{\Ongoing}  &
@@ -703,7 +715,7 @@
   Department of Anthropology, McMaster University
 \end{EntriesTable}
 
-\newpage
+% \newpage
 \subsection{Workshops \& Short Courses}
 \begin{EntriesTable}
 \Year{2022}  &
@@ -720,6 +732,42 @@
   \newline
   The Archaeology Centre, University of Toronto
   \GitHub{zackbatist/archaeo-db-workshop}
+\end{EntriesTable}
+
+\subsection{Invited Presentations}
+\begin{EntriesTable}
+\Year{2025 (Oct.)}  &
+  \textbf{TBD}
+  \newline
+  INF 649: Digital Curation
+  \newline
+  Instructed by Ilja Frissen
+  \newline
+  School of Information Studies, McGill University
+  \\
+\Year{2025 (Apr.)}  &
+  \textbf{Articulating data harmonization as pragmatic, collaborative experiences}
+  \newline
+  \href{https://mchi.mcgill.ca/}{McGill Clinical and Health Information Research Group}
+  \newline
+  School of Population and Global Health, McGill University
+  \Website{zackbatist.info/CITF-Postdoc/MCHI-2025}
+  \\
+\Year{2024 (Nov.)}  &
+  \textbf{Curating archaeological research data in practice, from the field to the archive}
+  \newline
+  INF 649: Digital Curation
+  \newline
+  Instructed by Ilja Frissen
+  \newline
+  School of Information Studies, McGill University
+  \\
+\Year{2024 (Oct.)}  &
+  \textbf{Exploring collaborative practices in archaeological software development}
+  \newline
+  A coffee talk for Dr. Jean-Baptiste Poline and colleagues
+  \newline
+  \href{https://neurodatascience.github.io/}{Neuro Data Science ORIGAMI Lab}, McGill University
 \end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -865,7 +913,7 @@
 %   Internal MSc dissertation examiner (Natacha Medeiros Rocha), \UERJ.
 % \end{EntriesTable}
 
-\newpage
+% \newpage
 \subsection{Conference \& Panel Organizer}
 \begin{EntriesTable}
 \Year{2023} &
