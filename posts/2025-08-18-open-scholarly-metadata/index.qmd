@@ -1,10 +1,9 @@
 ---
 title: Scholarly metadata about monographs and grey literature
-# subtitle:  xx
 description: Report on activities relating to the retrieval, extraction and collation of bibliographic metadata pertaining to the corpus.
 date-modified: last-modified
 date-format: long
-draft: true
+draft: false
 ---
 
 Since the spring, I've been working with Julie Lund and Isak Roalkvam on a project to analyze the development of ideas concerning the origins of the Viking Age through a bibliometric analysis of a large corpus of published work.
@@ -76,16 +75,18 @@ One significant aspect of the Grobid tool is the ability to "[consolidate](https
 However this simply re-introduces the same biases as mentioned above.
 I did create a [GitHub Issue](https://github.com/kermitt2/grobid/issues/1322) to inquire about the feasibility of consolidating against Google Scholar, and I regret that I haven't had much time to reach out for more in depth support, which the maintainers have kindly offered.
 
-# Good enough data?
+# Moving forward
 So right now we're at a point where we need to reckon with what we really need to get the job done.
 Realistically, to construct networks, we only really need unique identifiers for each record, not the full record.
 So that might simplify our processes.
 We may also simply sample the dataset based on preliminary exploratory findings.
 
-Ideally, we would be able to do something like what Alex Brandsen [-@brandsen2023] accomplished, but neither of us is really that skilled in machine learning or natural language processing, at least not yet, anyway.
+Ideally, we would be able to do something like what Alex Brandsen [-@brandsen2023] accomplished: extracting specific kinds of information from archaeological publications using machine learning techniques.
+But neither of us really has that kind of practical expertise, at least not yet, anyway.
 
 ![Screenshot from @brandsen2023 highlighting named entity recognition detected in archaeological publications.](brandsen.png)
 
-All of this makes the difference between a lazy meta-science approach and good social scientific research.
+Overall, the situation is kind of challenging, but potentially very rewarding too.
+Grappling with these issues makes the difference between a rather uniformly lazy meta-science approach and good social scientific research.
 It is not acceptable for us to simply pick up the data that's already available, since unfortunately this includes significant biases that would severely hinder our findings.
-So we need to actively make the data work for us so that they address our research questions, rather than do things the other way around..
+So we need to actively make the data work for us so that they address our research questions, rather than do things the other way around.
