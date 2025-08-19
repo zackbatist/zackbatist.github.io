@@ -11,7 +11,84 @@
 <description>Rambles about archaeological practice, open science, and collaboration
 </description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Mon, 05 May 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 18 Aug 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Scholarly metadata pertaining to monographs and grey literature</title>
+  <dc:creator>Zack Batist</dc:creator>
+  <link>https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Since the spring, I’ve been working with Julie Lund and Isak Roalkvam on a project to analyze the development of ideas concerning the origins of the Viking Age through a bibliometric analysis of a large corpus of published work. The project itself is very interesting, and I will post more about it when we get some significant findings, but now I just want to share some frustrations and challenges we’ve been experiencing, which may represent a bigger problem with <a href="https://www.cambridge.org/core/elements/philosophy-of-open-science/0D049ECF635F3B676C03C6868873E406#A-sec-6">representativeness of scholarly pluralism in open science</a>.</p>
+<p>Basically, we want to explore the web of citations being made in hundreds of scientific works, and in order to do this we need to obtain information about each work and about the works that they are citing. We will then analyze the network analysis of bibliographic citations, while also incorporating some additional information such as affiliations as well as qualitative evaluation of topics covered by each paper.</p>
+<p>However, we’re facing significant problems obtaining reliable scholarly metadata about monographs, chapters of edited volumes, and grey literature — which makes up a significant portion of archaeological literature. So in this post I outline the series of decisions we made and the roadblocks we experienced. We still haven’t quite arrived at a solution, so in a way what you’re about to read is an articulation of a work in progress, but one which reveals some inadequacies with the open infrastructures that we have built and a testament to the overconfidence we ascribe to them.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="toot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Metadata is only useful if it exists."><img src="https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/toot.png" class="img-fluid figure-img" alt="Metadata is only useful if it exists."></a></p>
+<figcaption>Metadata is only useful if it exists.</figcaption>
+</figure>
+</div>
+<section id="tapping-scholarly-metadata-resources" class="level1">
+<h1>Tapping scholarly metadata resources</h1>
+<p>The most common approach in bibliometric studies, or in meta-research that rely in whole or in part on scholarly metadata, is to access <a href="https://www.crossref.org/">Crossref</a>. Crossref is an open resource that registers information from virtually all modern academic publishers. It is one of a few such registries, existing alongside <a href="https://scopus.com/">Scopus</a>, <a href="https://www.webofscience.com/">Web of Science</a> and <a href="https://scholar.google.ca/">Google Scholar</a>. What makes Crossref distinct is that it’s a registry rather than an original source of data — publishers enter required and optional metadata into Crossref, and Crossref draws associated records together using a unique digital object identifier. A similar process applies for <a href="https://datacite.org/">DataCite</a>, which specializes in data resources, as opposed to published journal articles, and <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a>, which specializes on topics relating to medicine. Several additional services like <a href="https://openalex.org/">OpenAlex</a>, <a href="https://www.lens.org/">Lens</a> and <a href="https://www.semanticscholar.org/">Semantic Scholar</a> run on top of Crossref and other related data sources, but they are fundamentally based on the same data submitted by publishers. <a href="https://scholar.social/@steko/114873209915515620">This is why your Zotero library is so messy.</a></p>
+<section id="problems-of-scope" class="level2">
+<h2 class="anchored" data-anchor-id="problems-of-scope">Problems of scope</h2>
+<p>Crossref is the most open scholarly metadata resource, but it’s also quite limited in its scope: it’s primarily comprised of journal articles, and has very limited coverage of monographs, book chapters, pre-prints, and experimental genres and styles. Using Crossref as data source for meta-research is therefore much more appropriate for analysis based in science, technology, engineering and medicine (STEM), since these fields rely fairly uniformly on journal publishing. On the other hand, the social sciences and humanities (SSH) regularly publish their work as whole monographs or as chapters within edited volumes, publish in smaller journals or government-hosted “grey literature” venues not registered by Crossref, and participate in experimental publishing practices. In other words, the range of scholarly works is much broader in SSH than the scopes that delimit Crossref and other scholarly metadata registries.</p>
+<p>Since the corpus we want to compile includes monographs, chapters in edited volumes and grey literature, we are unable to rely on Crossref and other scholarly metadata resources alone. Moreover, after briefly investigating the field of scholarly metadata, I was left extremely disappointed by the prospect that we would ever be able to obtain reliable metadata at scale pertaining to these missing kinds of resources. It’s especially difficult to obtain the lists of references cited in each of these resources..</p>
+<p>While Google Scholar has by far the best range of resources, it has a few significant drawbacks:</p>
+<ul>
+<li>There is no API. It can be scraped using some workarounds (see <a href="https://harzing.com/resources/publish-or-perish/manual/using/data-sources/google-scholar">the documentation provided by Publish of Perish</a>), but this is not ideal.</li>
+<li>It does not provide unique identifiers such as DOI, and these need to be added through reference to the Crossref API, which re-introduces the problem of scope.</li>
+<li>It does not include lists of references cited, which is a core set of information we need.</li>
+</ul>
+<p>With regards to Scopus and Web of Science, based on my own brief experiences, they do include a significant amount of data on monographs and book chapters, but the quality seems very inconsistent. Quality is especially quite low for monographs not written in English, which is the case for much of the literature included in our analysis of largely Scandinavian-led archaeology.</p>
+</section>
+<section id="open-citations" class="level2">
+<h2 class="anchored" data-anchor-id="open-citations">Open Citations</h2>
+<p>A key aspect of our study is analysis of citations, and it’s fantastic that the <a href="https://opencitations.net/">Open Citations</a> database exists to support this kind of work. However, initial testing showed significant discrepancies between the numbers of citations in Open Citations, Crossref and Google Scholar. So for the sake of consistency, we decided it would be best to rely on one source of information; i.e., if we are using Crossref, use the information provided by Crossref in all respects.</p>
+<p>Moreover, although I haven’t tested it explicitly, it seems that Open Citations primarily indexes <em>recent</em> journal articles, similarly to Crossref. This may significantly impact the accuracy of its data, especially in fields that rely on monographs and grey literature.</p>
+<p>Web of Science also includes a significant amount of data about bibliographic references made by various works, but like with other aspects of its database, the scope of this facet, especially when it comes to books, is inconsistent.</p>
+<p>I was also referred to look at OpenAlex to investigate webs of references. However, it is now well documented that this aspect of the Open Alex database is extremely deficient and unreliable <span class="citation" data-cites="alperin2024 culbert2025">(see Alperin et al. 2024; Culbert et al. 2025)</span>.</p>
+</section>
+</section>
+<section id="extracting-metadata-from-pdfs" class="level1">
+<h1>Extracting metadata from PDFs</h1>
+<p>To work around these issues, we tried circumventing scholarly metadata resources and looking directly into the texts themselves, especially monographs and grey literature whose coverage is most significantly lacking. Specifically, we experimented with <a href="https://grobid.readthedocs.io/">Grobid</a>, a machine learning system designed to extract scholarly metadata about individual files and about the references they cite.</p>
+<p>Grobid is actually quite good at reading PDFs of journal articles, but generally fails to produce reliable data for monographs and grey literature. This is because of the training data that informs the machine learning algorithm: it is only designed to work with journal articles. It’s also not trained on what the maintainer refers to as “humanities style references”, which may refer to references to books, but may also include footnote-style references or references that include <em>ibid</em>, <em>id</em> or other Latin abbreviations beyond <em>et al</em>. Moreover, it is primarily trained on a corpus of works written in the English language. This is evident through discussion in this GitHub issue posted by a team looking to extract information from dissertations: <a href="https://github.com/kermitt2/grobid/issues/809" class="uri">https://github.com/kermitt2/grobid/issues/809</a>. Of course, this is a matter of training the model to pick up on these things, but generally speaking there is so much diversity in SSH works and citation styles that I will always be less confident in the results.</p>
+<p>One significant aspect of the Grobid tool is the ability to “<a href="https://grobid.readthedocs.io/en/latest/Consolidation/">consolidate</a>” the reference, which effectively normalizes the extracted records against the Crossref database, or against a combination of the Crossref, PubMed and <a href="https://www.inist.fr/services/acceder/istex/">ISTEX</a> databases. However this simply re-introduces the same biases as mentioned above. I did create a <a href="https://github.com/kermitt2/grobid/issues/1322">GitHub Issue</a> to inquire about the feasibility of consolidating against Google Scholar, and I regret that I haven’t had much time to reach out for more in depth support, which the maintainers have kindly offered.</p>
+</section>
+<section id="moving-forward" class="level1">
+<h1>Moving forward</h1>
+<p>So right now we’re at a point where we need to reckon with what we really need to get the job done. Realistically, to construct networks, we only really need unique identifiers for each record, not the full record. So that might simplify our processes. We may also simply sample the dataset based on preliminary exploratory findings.</p>
+<p>Ideally, we would be able to do something like what Alex Brandsen <span class="citation" data-cites="brandsen2023">(2023)</span> accomplished: extracting specific kinds of information from archaeological publications using machine learning techniques. But neither of us really has that kind of practical expertise, at least not yet, anyway.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="brandsen.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Screenshot from @brandsen2023 highlighting named entity recognition detected in archaeological publications."><img src="https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/brandsen.png" class="img-fluid figure-img" alt="Screenshot from Brandsen (2023) highlighting named entity recognition detected in archaeological publications."></a></p>
+<figcaption>Screenshot from <span class="citation" data-cites="brandsen2023">Brandsen (2023)</span> highlighting named entity recognition detected in archaeological publications.</figcaption>
+</figure>
+</div>
+<p>Overall, the situation is kind of challenging, but potentially very rewarding too. Grappling with these issues makes the difference between a rather uniformly lazy meta-science approach and good social scientific research. It is not acceptable for us to simply pick up the data that’s already available, since unfortunately this includes significant biases that would severely hinder our findings. So we need to actively make the data work for us so that they address our research questions, rather than do things the other way around.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-alperin2024" class="csl-entry">
+Alperin, Juan Pablo, Jason Portenoy, Kyle Demes, Vincent Larivière, and Stefanie Haustein. 2024. <span>“An Analysis of the Suitability of <span>OpenAlex</span> for Bibliometric Analyses.”</span> April 26, 2024. <a href="https://doi.org/10.48550/arXiv.2404.17663">https://doi.org/10.48550/arXiv.2404.17663</a>.
+</div>
+<div id="ref-brandsen2023" class="csl-entry">
+Brandsen, Alex. 2023. <span>“Information <span>Extraction</span> and <span>Machine Learning</span> for <span>Archaeological Texts</span>.”</span> In <em>Discourse and <span>Argumentation</span> in <span>Archaeology</span>: <span>Conceptual</span> and <span>Computational Approaches</span></em>, edited by Cesar Gonzalez-Perez, Patricia Martin-Rodilla, and Martín Pereira-Fariña, 229–61. Quantitative <span>Archaeology</span> and <span>Archaeological Modelling</span>. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-031-37156-1_11">https://doi.org/10.1007/978-3-031-37156-1_11</a>.
+</div>
+<div id="ref-culbert2025" class="csl-entry">
+Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Donner, and Philipp Mayr. 2025. <span>“Reference Coverage Analysis of <span>OpenAlex</span> Compared to <span>Web</span> of <span>Science</span> and <span>Scopus</span>.”</span> <em>Scientometrics</em> 130 (4): 2475–92. <a href="https://doi.org/10.1007/s11192-025-05293-3">https://doi.org/10.1007/s11192-025-05293-3</a>.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/</guid>
+  <pubDate>Mon, 18 Aug 2025 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>AI and extraction from the open scientific commons</title>
   <dc:creator>Zack Batist</dc:creator>
@@ -1117,83 +1194,6 @@ Wellen, Richard. 2004. <span>“Taking on <span>Commercial Scholarly Journals</s
   <category>meta</category>
   <guid>https://zackbatist.info/posts/2022-11-23-mastodon-and-the-potential-for-community-growth/</guid>
   <pubDate>Wed, 23 Nov 2022 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Scholarly metadata about monographs and grey literature</title>
-  <dc:creator>Zack Batist</dc:creator>
-  <link>https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Since the spring, I’ve been working with Julie Lund and Isak Roalkvam on a project to analyze the development of ideas concerning the origins of the Viking Age through a bibliometric analysis of a large corpus of published work. The project itself is very interesting, and I will post more about it when we get some significant findings, but now I just want to share some frustrations and challenges we’ve been experiencing, which may represent a bigger problem with <a href="https://www.cambridge.org/core/elements/philosophy-of-open-science/0D049ECF635F3B676C03C6868873E406#A-sec-6">representativeness of scholarly pluralism in open science</a>.</p>
-<p>Basically, we want to explore the web of citations being made in hundreds of scientific works, and in order to do this we need to obtain information about each work and about the works that they are citing. We will then analyze the network analysis of bibliographic citations, while also incorporating some additional information such as affiliations as well as qualitative evaluation of topics covered by each paper.</p>
-<p>However, we’re facing significant problems obtaining reliable scholarly metadata about monographs, chapters of edited volumes, and grey literature — which makes up a significant portion of archaeological literature. So in this post I outline the series of decisions we made and the roadblocks we experienced. We still haven’t quite arrived at a solution, so in a way what you’re about to read is an articulation of a work in progress, but one which reveals some inadequacies with the open infrastructures that we have built and a testament to the overconfidence we ascribe to them.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="toot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Metadata is only useful if it exists."><img src="https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/toot.png" class="img-fluid figure-img" alt="Metadata is only useful if it exists."></a></p>
-<figcaption>Metadata is only useful if it exists.</figcaption>
-</figure>
-</div>
-<section id="tapping-scholarly-metadata-resources" class="level1">
-<h1>Tapping scholarly metadata resources</h1>
-<p>The most common approach in bibliometric studies, or in meta-research that rely in whole or in part on scholarly metadata, is to access <a href="https://www.crossref.org/">Crossref</a>. Crossref is an open resource that registers information from virtually all modern academic publishers. It is one of a few such registries, existing alongside <a href="https://scopus.com/">Scopus</a>, <a href="https://www.webofscience.com/">Web of Science</a> and <a href="https://scholar.google.ca/">Google Scholar</a>. What makes Crossref distinct is that it’s a registry rather than an original source of data — publishers enter required and optional metadata into Crossref, and Crossref draws associated records together using a unique digital object identifier. A similar process applies for <a href="https://datacite.org/">DataCite</a>, which specializes in data resources, as opposed to published journal articles, and <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a>, which specializes on topics relating to medicine. Several additional services like <a href="https://openalex.org/">OpenAlex</a>, <a href="https://www.lens.org/">Lens</a> and <a href="https://www.semanticscholar.org/">Semantic Scholar</a> run on top of Crossref and other related data sources, but they are fundamentally based on the same data submitted by publishers. <a href="https://scholar.social/@steko/114873209915515620">This is why your Zotero library is so messy.</a></p>
-<section id="problems-of-scope" class="level2">
-<h2 class="anchored" data-anchor-id="problems-of-scope">Problems of scope</h2>
-<p>Crossref is the most open scholarly metadata resource, but it’s also quite limited in its scope: it’s primarily comprised of journal articles, and has very limited coverage of monographs, book chapters, pre-prints, and experimental genres and styles. Using Crossref as data source for meta-research is therefore much more appropriate for analysis based in science, technology, engineering and medicine (STEM), since these fields rely fairly uniformly on journal publishing. On the other hand, the social sciences and humanities (SSH) regularly publish their work as whole monographs or as chapters within edited volumes, publish in smaller journals or government-hosted “grey literature” venues not registered by Crossref, and participate in experimental publishing practices. In other words, the range of scholarly works is much broader in SSH than the scopes that delimit Crossref and other scholarly metadata registries.</p>
-<p>Since the corpus we want to compile includes monographs, chapters in edited volumes and grey literature, we are unable to rely on Crossref and other scholarly metadata resources alone. Moreover, after briefly investigating the field of scholarly metadata, I was left extremely disappointed by the prospect that we would ever be able to obtain reliable metadata at scale pertaining to these missing kinds of resources. It’s especially difficult to obtain the lists of references cited in each of these resources..</p>
-<p>While Google Scholar has by far the best range of resources, it has a few significant drawbacks:</p>
-<ul>
-<li>There is no API. It can be scraped using some workarounds (see <a href="https://harzing.com/resources/publish-or-perish/manual/using/data-sources/google-scholar">the documentation provided by Publish of Perish</a>), but this is not ideal.</li>
-<li>It does not provide unique identifiers such as DOI, and these need to be added through reference to the Crossref API, which re-introduces the problem of scope.</li>
-<li>It does not include lists of references cited, which is a core set of information we need.</li>
-</ul>
-<p>With regards to Scopus and Web of Science, based on my own brief experiences, they do include a significant amount of data on monographs and book chapters, but the quality seems very inconsistent. Quality is especially quite low for monographs not written in English, which is the case for much of the literature included in our analysis of largely Scandinavian-led archaeology.</p>
-</section>
-<section id="open-citations" class="level2">
-<h2 class="anchored" data-anchor-id="open-citations">Open Citations</h2>
-<p>A key aspect of our study is analysis of citations, and it’s fantastic that the <a href="https://opencitations.net/">Open Citations</a> database exists to support this kind of work. However, initial testing showed significant discrepancies between the numbers of citations in Open Citations, Crossref and Google Scholar. So for the sake of consistency, we decided it would be best to rely on one source of information; i.e., if we are using Crossref, use the information provided by Crossref in all respects.</p>
-<p>Moreover, although I haven’t tested it explicitly, it seems that Open Citations primarily indexes <em>recent</em> journal articles, similarly to Crossref. This may significantly impact the accuracy of its data, especially in fields that rely on monographs and grey literature.</p>
-<p>Web of Science also includes a significant amount of data about bibliographic references made by various works, but like with other aspects of its database, the scope of this facet, especially when it comes to books, is inconsistent.</p>
-<p>I was also referred to look at OpenAlex to investigate webs of references. However, it is now well documented that this aspect of the Open Alex database is extremely deficient and unreliable <span class="citation" data-cites="alperin2024 culbert2025">(see Alperin et al. 2024; Culbert et al. 2025)</span>.</p>
-</section>
-</section>
-<section id="extracting-metadata-from-pdfs" class="level1">
-<h1>Extracting metadata from PDFs</h1>
-<p>To work around these issues, we tried circumventing scholarly metadata resources and looking directly into the texts themselves, especially monographs and grey literature whose coverage is most significantly lacking. Specifically, we experimented with <a href="https://grobid.readthedocs.io/">Grobid</a>, a machine learning system designed to extract scholarly metadata about individual files and about the references they cite.</p>
-<p>Grobid is actually quite good at reading PDFs of journal articles, but generally fails to produce reliable data for monographs and grey literature. This is because of the training data that informs the machine learning algorithm: it is only designed to work with journal articles. It’s also not trained on what the maintainer refers to as “humanities style references”, which may refer to references to books, but may also include footnote-style references or references that include <em>ibid</em>, <em>id</em> or other Latin abbreviations beyond <em>et al</em>. Moreover, it is primarily trained on a corpus of works written in the English language. This is evident through discussion in this GitHub issue posted by a team looking to extract information from dissertations: <a href="https://github.com/kermitt2/grobid/issues/809" class="uri">https://github.com/kermitt2/grobid/issues/809</a>. Of course, this is a matter of training the model to pick up on these things, but generally speaking there is so much diversity in SSH works and citation styles that I will always be less confident in the results.</p>
-<p>One significant aspect of the Grobid tool is the ability to “<a href="https://grobid.readthedocs.io/en/latest/Consolidation/">consolidate</a>” the reference, which effectively normalizes the extracted records against the Crossref database, or against a combination of the Crossref, PubMed and <a href="https://www.inist.fr/services/acceder/istex/">ISTEX</a> databases. However this simply re-introduces the same biases as mentioned above. I did create a <a href="https://github.com/kermitt2/grobid/issues/1322">GitHub Issue</a> to inquire about the feasibility of consolidating against Google Scholar, and I regret that I haven’t had much time to reach out for more in depth support, which the maintainers have kindly offered.</p>
-</section>
-<section id="moving-forward" class="level1">
-<h1>Moving forward</h1>
-<p>So right now we’re at a point where we need to reckon with what we really need to get the job done. Realistically, to construct networks, we only really need unique identifiers for each record, not the full record. So that might simplify our processes. We may also simply sample the dataset based on preliminary exploratory findings.</p>
-<p>Ideally, we would be able to do something like what Alex Brandsen <span class="citation" data-cites="brandsen2023">(2023)</span> accomplished: extracting specific kinds of information from archaeological publications using machine learning techniques. But neither of us really has that kind of practical expertise, at least not yet, anyway.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="brandsen.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Screenshot from @brandsen2023 highlighting named entity recognition detected in archaeological publications."><img src="https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/brandsen.png" class="img-fluid figure-img" alt="Screenshot from Brandsen (2023) highlighting named entity recognition detected in archaeological publications."></a></p>
-<figcaption>Screenshot from <span class="citation" data-cites="brandsen2023">Brandsen (2023)</span> highlighting named entity recognition detected in archaeological publications.</figcaption>
-</figure>
-</div>
-<p>Overall, the situation is kind of challenging, but potentially very rewarding too. Grappling with these issues makes the difference between a rather uniformly lazy meta-science approach and good social scientific research. It is not acceptable for us to simply pick up the data that’s already available, since unfortunately this includes significant biases that would severely hinder our findings. So we need to actively make the data work for us so that they address our research questions, rather than do things the other way around.</p>
-
-
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-alperin2024" class="csl-entry">
-Alperin, Juan Pablo, Jason Portenoy, Kyle Demes, Vincent Larivière, and Stefanie Haustein. 2024. <span>“An Analysis of the Suitability of <span>OpenAlex</span> for Bibliometric Analyses.”</span> April 26, 2024. <a href="https://doi.org/10.48550/arXiv.2404.17663">https://doi.org/10.48550/arXiv.2404.17663</a>.
-</div>
-<div id="ref-brandsen2023" class="csl-entry">
-Brandsen, Alex. 2023. <span>“Information <span>Extraction</span> and <span>Machine Learning</span> for <span>Archaeological Texts</span>.”</span> In <em>Discourse and <span>Argumentation</span> in <span>Archaeology</span>: <span>Conceptual</span> and <span>Computational Approaches</span></em>, edited by Cesar Gonzalez-Perez, Patricia Martin-Rodilla, and Martín Pereira-Fariña, 229–61. Quantitative <span>Archaeology</span> and <span>Archaeological Modelling</span>. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-031-37156-1_11">https://doi.org/10.1007/978-3-031-37156-1_11</a>.
-</div>
-<div id="ref-culbert2025" class="csl-entry">
-Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Donner, and Philipp Mayr. 2025. <span>“Reference Coverage Analysis of <span>OpenAlex</span> Compared to <span>Web</span> of <span>Science</span> and <span>Scopus</span>.”</span> <em>Scientometrics</em> 130 (4): 2475–92. <a href="https://doi.org/10.1007/s11192-025-05293-3">https://doi.org/10.1007/s11192-025-05293-3</a>.
-</div>
-</div></section></div> ]]></description>
-  <guid>https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/</guid>
-  <pubDate>Tue, 19 Aug 2025 03:18:36 GMT</pubDate>
 </item>
 </channel>
 </rss>
