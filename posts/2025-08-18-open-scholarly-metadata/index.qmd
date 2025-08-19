@@ -1,6 +1,7 @@
 ---
-title: Scholarly metadata about monographs and grey literature
-description: Report on activities relating to the retrieval, extraction and collation of bibliographic metadata pertaining to the corpus.
+title: Scholarly metadata pertaining to monographs and grey literature
+description: Report on activities relating to the retrieval, extraction and collation of bibliographic metadata pertaining to a corpus of archaeological publications.
+date: 2025-08-18
 date-modified: last-modified
 date-format: long
 draft: false
