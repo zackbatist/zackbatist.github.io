@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Zack Batist">
+<meta name="description" content="Report on activities relating to the retrieval, extraction and collation of bibliographic metadata pertaining to the corpus.">
 
-<title>Archaeology as continuum of practice – Zack Batist</title>
+<title>Scholarly metadata about monographs and grey literature – Zack Batist</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -43,28 +79,31 @@ div.csl-indent {
 }</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../assets/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5bd6ac4bf84e34c3f1d6f31c48195a72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-bfea8301d665cadbdcd346908ee0953b.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b9da7eacfba3a755a01a630aa4cd62db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-70cce2b94e0b1122854b3a22b572735a.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -92,6 +131,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<meta name="quarto:status" content="draft">
 
 
 </head>
@@ -99,13 +139,13 @@ div.csl-indent {
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Archaeology as continuum of practice</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Scholarly metadata about monographs and grey literature</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -116,8 +156,8 @@ div.csl-indent {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      <img src="../assets/picture.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../assets/picture.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -127,25 +167,25 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../publications.html" class="sidebar-item-text sidebar-link">
+  <a href="../../publications.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../projects.html" class="sidebar-item-text sidebar-link">
+  <a href="../../projects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Projects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Notes</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../posts.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Posts</span></a>
   </div>
 </li>
@@ -154,23 +194,52 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#tapping-scholarly-metadata-resources" id="toc-tapping-scholarly-metadata-resources" class="nav-link active" data-scroll-target="#tapping-scholarly-metadata-resources">Tapping scholarly metadata resources</a>
+  <ul class="collapse">
+  <li><a href="#problems-of-scope" id="toc-problems-of-scope" class="nav-link" data-scroll-target="#problems-of-scope">Problems of scope</a></li>
+  <li><a href="#open-citations" id="toc-open-citations" class="nav-link" data-scroll-target="#open-citations">Open Citations</a></li>
+  </ul></li>
+  <li><a href="#extracting-metadata-from-pdfs" id="toc-extracting-metadata-from-pdfs" class="nav-link" data-scroll-target="#extracting-metadata-from-pdfs">Extracting metadata from PDFs</a></li>
+  <li><a href="#good-enough-data" id="toc-good-enough-data" class="nav-link" data-scroll-target="#good-enough-data">Good enough data?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Archaeology as continuum of practice</h1>
+<h1 class="title">Scholarly metadata about monographs and grey literature</h1>
+</div>
+
+<div>
+  <div class="description">
+    Report on activities relating to the retrieval, extraction and collation of bibliographic metadata pertaining to the corpus.
+  </div>
 </div>
 
 
+<div class="quarto-title-meta column-body">
 
-<div class="quarto-title-meta column-page-right">
-
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Zack Batist </p>
+          </div>
+  </div>
     
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">August 18, 2025</p>
+    </div>
+  </div>
     
   </div>
   
@@ -179,41 +248,68 @@ div.csl-indent {
 </header>
 
 
-<p>This notion of a continuum or network of practice is characterized by recognition of the diverse array of work enacted through collective effort to contribute to information commons. It accomplishes this by taking a pragmatic approach to understanding the situatedness, historicity and social contingency of work <span class="citation" data-cites="dallas2015 dallas2016a">(<a href="#ref-dallas2015" role="doc-biblioref">Dallas 2015, 440</a>; <a href="#ref-dallas2016a" role="doc-biblioref">2016</a>)</span>.[^4] <span class="citation" data-cites="dallas2016a">Dallas (<a href="#ref-dallas2016a" role="doc-biblioref">2016</a>)</span> is explicit in his promotion of a landscape metaphor whose ecosystems and inhabitants negotiate their differences in a pragmatic manner rather than one that emphasizes control and resource. Moreover, this relates to Cole’s <span class="citation" data-cites="cole1996a">(<a href="#ref-cole1996a" role="doc-biblioref">1996</a>)</span> notion that culture is a permeable and layered substance that nurtures growth and development across uneven social landscapes. These views exemplify a broader trajectory that imagines knowledge work in ecological terms <span class="citation" data-cites="star1995">(cf. <a href="#ref-star1995" role="doc-biblioref">Star 1995</a>)</span>.</p>
-<p>In writing about specific issues regarding how scholarly content originating from various domains is professionally curated, Dallas brings attention to the ways in which such ecological metaphors might actually be applied. In his view, intellectual and pragmatic inquiry pertaining to the mindsets of the domains of knowledge production is necessary in order to better curate the meanings and intents behind archived material. Curation, for Dallas, is a continual process of interpretation and re-presentation; as objects (either physical or conceptual) are engaged with from various perspectives, they are ascribed new meanings. In other words, each interlocutor who engages with an object passing through their care as part of a curatorial process renews the object’s meaning in ways that both reflect the object’s history and shape its potential down the line. It is thus necessary, according to Dallas, to inquire about the ways in which domain specialists come to know an object and situate it as part of their lives in order to preserve and present the object in ways that adequately reflect its accrued meanings. This requires greater integration of domain specialists as part of curatorial workflows in order to better account for their outlooks as active stakeholders.</p>
-<p>This outlook is interesting because it more clearly makes use of the notion that objects are sites of negotiation. <span class="citation" data-cites="dallas2015">Dallas (<a href="#ref-dallas2015" role="doc-biblioref">2015</a>)</span> applies these ideas to consider the ways in which the archaeological record is formulated and made meaningful in various ways throughout inherently collaborative, discursive and interdisciplinary archaeological projects. Indeed, his use-case is exemplary since relics, ruins and artefacts out of their original contexts serve as opportunistic lenses through which fragmentary glimpses of alternative realities might be captured. As <span class="citation" data-cites="huvila2016a">Huvila (<a href="#ref-huvila2016a" role="doc-biblioref">2016</a>)</span> notes, archaeological site reports, which are typically considered to represent the conclusive findings of a project, are produced from a series of complex negotiations among stakeholder specialists, but also present lopsided accounts of the knowledge recovered from the site; the organizational structure of archaeological projects, and the inherent epistemic limitations that guide the logistics and culture of the discipline, shape the final product and influence how it will be used in later secondary research contexts. In this sense, archaeological projects resemble, to some degree, “wicked” problems, whose contradictions, incompleteness and social complexity render them resistant to completely satisfying resolutions <span class="citation" data-cites="rittel1973">(<a href="#ref-rittel1973" role="doc-biblioref">Rittel and Webber 1973</a>)</span>. However, further inquiry into the ways in which meanings are ascribed throughout the course of a project, as they accrue via pragmatic and situated experiences, may help to gain a better understanding of the tensions and relationships at play. By highlighting the complex textures of work contributed by various members of a project, those who wish to use the generated knowledge in alternative arenas of practice may gain a better feel for the ways in which it was woven, and thus use it more effectively.</p>
-<p>Paying close attention to the minute and pragmatic aspects of practice, is, according to Latour and Woolgar <span class="citation" data-cites="latour1999">(<a href="#ref-latour1999" role="doc-biblioref">1999, 24</a>)</span>, what those in the fields of ‘science studies’ do best. By studying the particularities of what scientists actually do, and the ways in which they relate to things through series of coordinated social and technological mechanisms, we may be able to understand flows of knowledge across a continuum of understanding. By observing how professionals communicate and connect with each other and with the phenomena that captivate their interests, we can come to better understand the epistemic culture — the mindsets that drive curiosity and foster growth — which shapes the ways that they understand the world <span class="citation" data-cites="knorrcetina1999">(<a href="#ref-knorrcetina1999" role="doc-biblioref">Knorr Cetina 1999</a>)</span>. As a result, scientific research, framed as a wide variety of active and cooperative engagements among people and objects, become situated alongside other ways of knowing. This is particularly important in a world where Mertonian notions of scholarly tribalism between the sciences, social sciences and humanities remain pervasive, despite many years of critique demonstrating that all scholarship actually occurs along an open continuum. In addition to helping foster more genuine cross-disciplinary encounters, recognition of the cultural situatedness of scholarship will enable scholars to more effectively operate in public and contribute towards the potential resolution of wicked problems.</p>
-<hr>
-<p>An emerging perspective that sees archaeology as a continuum or network of practice. Emphasis is placed on situatedness, historicity and social contingency of archaeological work. Archaeological activities are viewed as acts of curation, whereby mediating objects are selected, interpreted, engaged with, transformed and ascribed new meanings in accordance with the particular methodological approaches employed. The mediating objects derived from a set of activities may then be leveraged as viable inputs for other activities, which may produce additional sets of outputs via their own investigative processes. Mediating objects may be accessed by multiple perspectives (by virtue of their externality, portability and indexicality) and their value may vary when incorporated into different sets of activities, according to the warrants, constraints and expectations that each activity entails. The processes involved in ensuring that mediating objects are compatible between perspectives are acts of collaboration, communication and community building.</p>
-<p>Notion of segmentation / articulation?</p>
+<p>Since the spring, I’ve been working with Julie Lund and Isak Roalkvam on a project to analyze the development of ideas concerning the origins of the Viking Age through a bibliometric analysis of a large corpus of published work. The project itself is very interesting, and I will post more about it when we get some significant findings, but now I just want to share some frustrations and challenges we’ve been experiencing, which may represent a bigger problem with <a href="https://www.cambridge.org/core/elements/philosophy-of-open-science/0D049ECF635F3B676C03C6868873E406#A-sec-6">representativeness of scholarly pluralism in open science</a>.</p>
+<p>Basically, we want to explore the web of citations being made in hundreds of scientific works, and in order to do this we need to obtain information about each work and about the works that they are citing. We will then analyze the network analysis of bibliographic citations, while also incorporating some additional information such as affiliations as well as qualitative evaluation of topics covered by each paper.</p>
+<p>However, we’re facing significant problems obtaining reliable scholarly metadata about monographs, chapters of edited volumes, and grey literature — which makes up a significant portion of archaeological literature. So in this post I outline the series of decisions we made and the roadblocks we experienced. We still haven’t quite arrived at a solution, so in a way what you’re about to read is an articulation of a work in progress, but one which reveals some inadequacies with the open infrastructures that we have built and a testament to the overconfidence we ascribe to them.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="toot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Metadata is only useful if it exists."><img src="toot.png" class="img-fluid figure-img" alt="Metadata is only useful if it exists."></a></p>
+<figcaption>Metadata is only useful if it exists.</figcaption>
+</figure>
+</div>
+<section id="tapping-scholarly-metadata-resources" class="level1">
+<h1>Tapping scholarly metadata resources</h1>
+<p>The most common approach in bibliometric studies, or in meta-research that rely in whole or in part on scholarly metadata, is to access <a href="https://www.crossref.org/">Crossref</a>. Crossref is an open resource that registers information from virtually all modern academic publishers. It is one of a few such registries, existing alongside <a href="https://scopus.com/">Scopus</a>, <a href="https://www.webofscience.com/">Web of Science</a> and <a href="https://scholar.google.ca/">Google Scholar</a>. What makes Crossref distinct is that it’s a registry rather than an original source of data — publishers enter required and optional metadata into Crossref, and Crossref draws associated records together using a unique digital object identifier. A similar process applies for <a href="https://datacite.org/">DataCite</a>, which specializes in data resources, as opposed to published journal articles, and <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a>, which specializes on topics relating to medicine. Several additional services like <a href="https://openalex.org/">OpenAlex</a>, <a href="https://www.lens.org/">Lens</a> and <a href="https://www.semanticscholar.org/">Semantic Scholar</a> run on top of Crossref and other related data sources, but they are fundamentally based on the same data submitted by publishers. <a href="https://scholar.social/@steko/114873209915515620">This is why your Zotero library is so messy.</a></p>
+<section id="problems-of-scope" class="level2">
+<h2 class="anchored" data-anchor-id="problems-of-scope">Problems of scope</h2>
+<p>Crossref is the most open scholarly metadata resource, but it’s also quite limited in its scope: it’s primarily comprised of journal articles, and has very limited coverage of monographs, book chapters, pre-prints, and experimental genres and styles. Using Crossref as data source for meta-research is therefore much more appropriate for analysis based in science, technology, engineering and medicine (STEM), since these fields rely fairly uniformly on journal publishing. On the other hand, the social sciences and humanities (SSH) regularly publish their work as whole monographs or as chapters within edited volumes, publish in smaller journals or government-hosted “grey literature” venues not registered by Crossref, and participate in experimental publishing practices. In other words, the range of scholarly works is much broader in SSH than the scopes that delimit Crossref and other scholarly metadata registries.</p>
+<p>Since the corpus we want to compile includes monographs, chapters in edited volumes and grey literature, we are unable to rely on Crossref and other scholarly metadata resources alone. Moreover, after briefly investigating the field of scholarly metadata, I was left extremely disappointed by the prospect that we would ever be able to obtain reliable metadata at scale pertaining to these missing kinds of resources. It’s especially difficult to obtain the lists of references cited in each of these resources..</p>
+<p>While Google Scholar has by far the best range of resources, it has a few significant drawbacks:</p>
+<ul>
+<li>There is no API. It can be scraped using some workarounds (see <a href="https://harzing.com/resources/publish-or-perish/manual/using/data-sources/google-scholar">the documentation provided by Publish of Perish</a>), but this is not ideal.</li>
+<li>It does not provide unique identifiers such as DOI, and these need to be added through reference to the Crossref API, which re-introduces the problem of scope.</li>
+<li>It does not include lists of references cited, which is a core set of information we need.</li>
+</ul>
+<p>With regards to Scopus and Web of Science, based on my own brief experiences, they do include a significant amount of data on monographs and book chapters, but the quality seems very inconsistent. Quality is especially quite low for monographs not written in English, which is the case for much of the literature included in our analysis of largely Scandinavian-led archaeology.</p>
+</section>
+<section id="open-citations" class="level2">
+<h2 class="anchored" data-anchor-id="open-citations">Open Citations</h2>
+<p>A key aspect of our study is analysis of citations, and it’s fantastic that the <a href="https://opencitations.net/">Open Citations</a> database exists to support this kind of work. However, initial testing showed significant discrepancies between the numbers of citations in Open Citations, Crossref and Google Scholar. So for the sake of consistency, we decided it would be best to rely on one source of information; i.e., if we are using Crossref, use the information provided by Crossref in all respects.</p>
+<p>Moreover, although I haven’t tested it explicitly, it seems that Open Citations primarily indexes <em>recent</em> journal articles, similarly to Crossref. This may significantly impact the accuracy of its data, especially in fields that rely on monographs and grey literature.</p>
+<p>Web of Science also includes a significant amount of data about bibliographic references made by various works, but like with other aspects of its database, the scope of this facet, especially when it comes to books, is inconsistent.</p>
+<p>I was also referred to look at OpenAlex to investigate webs of references. However, it is now well documented that this aspect of the Open Alex database is extremely deficient and unreliable <span class="citation" data-cites="alperin2024 culbert2025">(see <a href="#ref-alperin2024" role="doc-biblioref"><strong>alperin2024?</strong></a>; <a href="#ref-culbert2025" role="doc-biblioref"><strong>culbert2025?</strong></a>)</span>.</p>
+</section>
+</section>
+<section id="extracting-metadata-from-pdfs" class="level1">
+<h1>Extracting metadata from PDFs</h1>
+<p>To work around these issues, we tried circumventing scholarly metadata resources and looking directly into the texts themselves, especially monographs and grey literature whose coverage is most significantly lacking. Specifically, we experimented with <a href="https://grobid.readthedocs.io/">Grobid</a>, a machine learning system designed to extract scholarly metadata about individual files and about the references they cite.</p>
+<p>Grobid is actually quite good at reading PDFs of journal articles, but generally fails to produce reliable data for monographs and grey literature. This is because of the training data that informs the machine learning algorithm: it is only designed to work with journal articles. It’s also not trained on what the maintainer refers to as “humanities style references”, which may refer to references to books, but may also include footnote-style references or references that include <em>ibid</em>, <em>id</em> or other Latin abbreviations beyond <em>et al</em>. Moreover, it is primarily trained on a corpus of works written in the English language. This is evident through discussion in this GitHub issue posted by a team looking to extract information from dissertations: <a href="https://github.com/kermitt2/grobid/issues/809" class="uri">https://github.com/kermitt2/grobid/issues/809</a>. Of course, this is a matter of training the model to pick up on these things, but generally speaking there is so much diversity in SSH works and citation styles that I will always be less confident in the results.</p>
+<p>One significant aspect of the Grobid tool is the ability to “<a href="https://grobid.readthedocs.io/en/latest/Consolidation/">consolidate</a>” the reference, which effectively normalizes the extracted records against the Crossref database, or against a combination of the Crossref, PubMed and <a href="https://www.inist.fr/services/acceder/istex/">ISTEX</a> databases. However this simply re-introduces the same biases as mentioned above. I did create a <a href="https://github.com/kermitt2/grobid/issues/1322">GitHub Issue</a> to inquire about the feasibility of consolidating against Google Scholar, and I regret that I haven’t had much time to reach out for more in depth support, which the maintainers have kindly offered.</p>
+</section>
+<section id="good-enough-data" class="level1">
+<h1>Good enough data?</h1>
+<p>So right now we’re at a point where we need to reckon with what we really need to get the job done. Realistically, to construct networks, we only really need unique identifiers for each record, not the full record. So that might simplify our processes. We may also simply sample the dataset based on preliminary exploratory findings.</p>
+<p>Ideally, we would be able to do something like what Alex Brandsen <span class="citation" data-cites="brandsen2023">(<a href="#ref-brandsen2023" role="doc-biblioref">2023</a>)</span> accomplished, but neither of us is really that skilled in machine learning or natural language processing, at least not yet anyway.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="brandsen.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Screenshot from @brandsen2023 highlighting named entity recognition detected in archaeological publications."><img src="brandsen.png" class="img-fluid figure-img" alt="Screenshot from Brandsen (2023) highlighting named entity recognition detected in archaeological publications."></a></p>
+<figcaption>Screenshot from <span class="citation" data-cites="brandsen2023">Brandsen (<a href="#ref-brandsen2023" role="doc-biblioref">2023</a>)</span> highlighting named entity recognition detected in archaeological publications.</figcaption>
+</figure>
+</div>
+<p>All of this makes the difference between a lazy meta-science approach and good social scientific research. We need to actively make the data work for us and address our research questions. The questions come first and lead the collection of data, not the other way around. This requires us to create a new data source, rather than simply pick up what’s available, which unfortunately includes significant biases that would severely hinder our findings.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> <span class="at">--init</span> <span class="at">--ulimit</span> core=0 <span class="at">-p</span> 8070:8070 lfoppiano/grobid:latest-crf-multi-arch</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-v</span> <span class="at">-H</span> <span class="st">"Accept: application/x-bibtex"</span> <span class="at">--form</span> input=@./x.pdf localhost:8070/api/processReferences</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-v</span> <span class="at">-H</span> <span class="st">"Accept: application/x-bibtex"</span> <span class="at">--form</span> input=@./x.pdf <span class="at">--form</span> consolidateCitations=1 localhost:8070/api/processReferences</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-cole1996a" class="csl-entry" role="listitem">
-Cole, Michael. 1996. <span>“Putting Culture in the Middle.”</span> In <em>Cultural <span>Psychology</span>: <span>A Once</span> and <span>Future Discipline</span></em>, 116–45. Belknap Press.
-</div>
-<div id="ref-dallas2015" class="csl-entry" role="listitem">
-Dallas, Costis. 2015. <span>“Curating <span>Archaeological Knowledge</span> in the <span>Digital Continuum</span>: <span>From Practice</span> to <span>Infrastructure</span>.”</span> <em>Open Archaeology</em> 1 (1): 176–207. <a href="https://doi.org/10.1515/opar-2015-0011">https://doi.org/10.1515/opar-2015-0011</a>.
-</div>
-<div id="ref-dallas2016a" class="csl-entry" role="listitem">
-———. 2016. <span>“Digital Curation Beyond the <span>‘<span>Wild</span> Frontier’</span>: <span>A</span> Pragmatic Approach.”</span> <em>Archival Science</em> 16 (4): 421–57. <a href="https://doi.org/10.1007/s10502-015-9252-6">https://doi.org/10.1007/s10502-015-9252-6</a>.
-</div>
-<div id="ref-huvila2016a" class="csl-entry" role="listitem">
-Huvila, Isto. 2016. <span>“Awkwardness of Becoming a Boundary Object: <span>Mangle</span> and Materialities of Reports, Documentation Data, and the Archaeological Work.”</span> <em>The Information Society</em> 32 (4): 280–97. <a href="https://doi.org/10.1080/01972243.2016.1177763">https://doi.org/10.1080/01972243.2016.1177763</a>.
-</div>
-<div id="ref-knorrcetina1999" class="csl-entry" role="listitem">
-Knorr Cetina, Karin. 1999. <em>Epistemic <span>Cultures</span>: <span>How</span> the <span>Sciences Make Knowledge</span></em>. Harvard University Press.
-</div>
-<div id="ref-latour1999" class="csl-entry" role="listitem">
-Latour, Bruno. 1999. <em>Pandora’s <span>Hope</span>: <span>Essays</span> on the <span>Reality</span> of <span>Science Studies</span></em>. Harvard University Press. <a href="https://books.google.com?id=RMu6wbzVrVkC">https://books.google.com?id=RMu6wbzVrVkC</a>.
-</div>
-<div id="ref-rittel1973" class="csl-entry" role="listitem">
-Rittel, H. W., and Melvin M. Webber. 1973. <span>“Planning Problems Are Wicked.”</span> <em>Polity</em> 4:155–69. <a href="http://cec.prodwebb.lu.se/sites/cec.prodwebb.lu.se/files/rittel_and_webber_1973_planning_problems_are_wicked_problems.pdf">http://cec.prodwebb.lu.se/sites/cec.prodwebb.lu.se/files/rittel_and_webber_1973_planning_problems_are_wicked_problems.pdf</a>.
-</div>
-<div id="ref-star1995" class="csl-entry" role="listitem">
-Star, Susan Leigh. 1995. <em>Ecologies of <span>Knowledge</span>: <span>Work</span> and <span>Politics</span> in <span>Science</span> and <span>Technology</span></em>. SUNY Press. <a href="https://books.google.com?id=wpv9HZKaCnwC">https://books.google.com?id=wpv9HZKaCnwC</a>.
+<div id="ref-brandsen2023" class="csl-entry" role="listitem">
+Brandsen, Alex. 2023. <span>“Information <span>Extraction</span> and <span>Machine Learning</span> for <span>Archaeological Texts</span>.”</span> In <em>Discourse and <span>Argumentation</span> in <span>Archaeology</span>: <span>Conceptual</span> and <span>Computational Approaches</span></em>, edited by Cesar Gonzalez-Perez, Patricia Martin-Rodilla, and Martín Pereira-Fariña, 229–61. Quantitative <span>Archaeology</span> and <span>Archaeological Modelling</span>. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-031-37156-1_11">https://doi.org/10.1007/978-3-031-37156-1_11</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -791,6 +887,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
