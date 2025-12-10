@@ -10,13 +10,45 @@
 <atom:link href="https://zackbatist.info/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Rambles about archaeological practice, open science, and collaboration
 </description>
-<generator>quarto-1.6.39</generator>
-<lastBuildDate>Mon, 18 Aug 2025 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Tue, 09 Dec 2025 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>A few new papers from 2025</title>
+  <dc:creator>Zack Batist</dc:creator>
+  <link>https://zackbatist.info/posts/2025-12-10-a-few-new-papers-from-2025.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Two additional papers deriving from my dissertation have been successfully peer reviewed and/or published during 2025. These complement <strong>On the Value of Informal Communication in Archaeological Data Work</strong>, which was published by Open Archaeology last year <a href="https://doi.org/10.1515/opar-2024-0014">[DOI: 10.1515/opar-2024-0014].</a></p>
+<p><strong>Locating Creative Agency in Archaeological Data Work</strong><br>
+<a href="https://doi.org/10.17613/8eqy4-n1m82">DOI: 10.17613/8eqy4-n1m82</a> / <a href="https://zackbatist.info/locating-creative-agency/">Preprint</a> / <a href="https://github.com/zackbatist/locating-creative-agency">GitHub</a></p>
+<p>Through comparison of illustration, photography, photogrammetry practices, and different approaches for collecting and managing spatial data, I identified the roles that fieldworkers and other actors play while constituting data. I submitted this paper for open review through Peer Community in Archaeology, which was a great experience! You can read the reviews <a href="https://doi.org/10.24072/pci.archaeo.100608">at the PCI-archaeo website</a>.</p>
+<p><strong>Balancing situated and objective representations in archaeological fieldwork</strong><br>
+<a href="http://doi.org/10.1017/aap.2025.10101">DOI: 10.1017/aap.2025.10101</a> / <a href="https://zackbatist.info/fuzzy-concrete/">Preprint</a> / <a href="https://github.com/zackbatist/fuzzy-concrete">GitHub</a></p>
+<p>This paper has just been published in Advances in Archaeological Practice. It articulates tensions between systemic warrants to formalize archaeological observations and the embodied experiences of actually collecting data during fieldwork. I also include the peer-reviews in the <a href="https://github.com/zackbatist/fuzzy-concrete/blob/main/sections/13_peer-review.qmd">git repository</a>.</p>
+<p><strong>Data Management is People Management: On Abstraction of Data and Labor in Archaeological Projects</strong><br>
+DOI: TBD / <a href="https://zackbatist.info/data-tech-poli-arch/">Preprint</a> / <a href="https://github.com/zackbatist/data-tech-poli-arch">GitHub</a></p>
+<p>I recently presented another outcome from my dissertation at the <a href="https://uib.no/en/nia/179128/data-and-technology-politics-archaeology">Data and Technology Politics in Archaeology Workshop</a> at the Norwegian Institute at Athens last week. A revised version of this will be published in the workshop proceedings sometime next year.</p>
+
+
+
+ ]]></description>
+  <category>publication</category>
+  <category>data work</category>
+  <category>archaeological fieldwork</category>
+  <category>science studies</category>
+  <guid>https://zackbatist.info/posts/2025-12-10-a-few-new-papers-from-2025.html</guid>
+  <pubDate>Tue, 09 Dec 2025 23:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Scholarly metadata pertaining to monographs and grey literature</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -87,13 +119,14 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
 </div>
 </div></section></div> ]]></description>
   <guid>https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/</guid>
-  <pubDate>Mon, 18 Aug 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 17 Aug 2025 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>AI and extraction from the open scientific commons</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2025-05-05-ai-and-extraction-from-the-open-scientific-commons.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -131,13 +164,14 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>commons</category>
   <category>ai</category>
   <guid>https://zackbatist.info/posts/2025-05-05-ai-and-extraction-from-the-open-scientific-commons.html</guid>
-  <pubDate>Mon, 05 May 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 04 May 2025 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Migrating from Wordpress</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2025-03-09-migrating-from-wordpress.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -162,13 +196,14 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>writing</category>
   <category>website</category>
   <guid>https://zackbatist.info/posts/2025-03-09-migrating-from-wordpress.html</guid>
-  <pubDate>Sun, 09 Mar 2025 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 08 Mar 2025 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Starting as a postdoc at McGill</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2024-12-29-mcgill-postdoc.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -185,13 +220,14 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>postdoc</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2024-12-29-mcgill-postdoc.html</guid>
-  <pubDate>Sun, 29 Dec 2024 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 28 Dec 2024 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>New Paper: Informal communication and archaeological data work</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2024-10-01-informal-communication-and-archaeological-data-work.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -211,13 +247,14 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>publication</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2024-10-01-informal-communication-and-archaeological-data-work.html</guid>
-  <pubDate>Tue, 01 Oct 2024 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 30 Sep 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>New paper: Exploring collaborative practices in archaeological software development</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2024-07-18-exploring-collaborative-practices-in-archaeological-software-development.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -245,13 +282,14 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>open-archaeo</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2024-07-18-exploring-collaborative-practices-in-archaeological-software-development.html</guid>
-  <pubDate>Thu, 18 Jul 2024 04:00:00 GMT</pubDate>
+  <pubDate>Wed, 17 Jul 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Pruning open-archaeo</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -275,13 +313,14 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
 </div></div></section></div> ]]></description>
   <category>open-archaeo</category>
   <guid>https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo.html</guid>
-  <pubDate>Fri, 02 Feb 2024 05:00:00 GMT</pubDate>
+  <pubDate>Thu, 01 Feb 2024 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>ArcheoFOSS XVII</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2023-12-17-archeofoss-xvii/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -324,13 +363,14 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>fediverse</category>
   <category>open archaeology</category>
   <guid>https://zackbatist.info/posts/2023-12-17-archeofoss-xvii/</guid>
-  <pubDate>Sun, 17 Dec 2023 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 16 Dec 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Finished my dissertation!</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2023-09-24-finished-my-dissertation.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -351,13 +391,14 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>open science</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2023-09-24-finished-my-dissertation.html</guid>
-  <pubDate>Sun, 24 Sep 2023 04:00:00 GMT</pubDate>
+  <pubDate>Sat, 23 Sep 2023 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>open-archaeo data paper</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2023-09-11-open-archaeo-data-paper/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -381,13 +422,14 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>open-archaeo</category>
   <category>publication</category>
   <guid>https://zackbatist.info/posts/2023-09-11-open-archaeo-data-paper/</guid>
-  <pubDate>Mon, 11 Sep 2023 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 10 Sep 2023 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Some thoughts on data formality</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2023-06-13-some-thoughts-on-data-formality.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -410,13 +452,14 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>open data</category>
   <category>workflows</category>
   <guid>https://zackbatist.info/posts/2023-06-13-some-thoughts-on-data-formality.html</guid>
-  <pubDate>Tue, 13 Jun 2023 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 12 Jun 2023 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Recap: Digital Archaeology Bern 2023</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2023-02-06-recap-digital-archaeology-bern-2023/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -465,7 +508,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>open data</category>
   <category>open-archaeo</category>
   <guid>https://zackbatist.info/posts/2023-02-06-recap-digital-archaeology-bern-2023/</guid>
-  <pubDate>Mon, 06 Feb 2023 05:00:00 GMT</pubDate>
+  <pubDate>Sun, 05 Feb 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>I like LaTeX</title>
@@ -476,11 +519,12 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
 
 
 
+
 <p>So I think I finally understand LaTeX. Of course there’s still a lot for me to learn, but I think I’m at a point where I am really harnessing its true value.</p>
 <p>I’ve been working with plaintext since I started writing my dissertation. Until very recently my workflow closely resembled an RMarkdown setup, and largely corresponded with <a href="https://github.com/benmarwick/atom-for-scholarly-writing-with-markdown">this guide written by Ben Marwick</a>. My simple understanding is that Pandoc passes the Markdown through LaTeX to produce a viable PDF, which makes it possible to scatter LaTeX throughout the content and in the YAML front matter. So I had a mish-mash of both Markdown and LaTeX conventions in most of my documents. For instance, I was using the comprehensive <a href="https://ctan.org/pkg/graphicx?lang=en">graphicx</a> package to render my figures and I was referring to endnotes stored in a separate tex file using the <a href="https://ctan.org/pkg/sepfootnotes?lang=en">sepfootnotes</a> package, all while using <a href="https://pandoc.org/MANUAL.html#citations">Pandoc’s citeproc</a> bibliographic referencing system. Eventually I came to realize that my workflow was fundamentally built upon LaTeX, or comprises functions that closely correlate with common LaTeX macros.</p>
 <p>I worked using this hybrid Markdown/LaTeX setup for years, until last week when I was prompted by a member of my supervisory committee to compile a unified document so he could better understand the flow of my thesis. I had anticipated that I would need to convert everything to pure LaTeX at some point, and it was as good a time as any.</p>
 <p>Previously, I had mashed together code from various Stack Overflow posts in order to generate something functional, but it’s a completely different experience when you start from scratch. I started by following the Overleaf guide on <a href="https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_1)%3A_Basic_Structure">how to structure a thesis using LaTeX</a>, and now I have a very robust and elegant setup that compiles a single, tidy, and systematic PDF from multiple sources. Here’s the current state of my main tex file:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">% Page layout %</span></span>
 <span id="cb1-2"><span class="bu" style="color: null;
@@ -922,7 +966,7 @@ background-color: null;
 font-weight: bold;
 font-style: inherit;">\end</span>{<span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">document</span>}</span></code></pre></div>
+font-style: inherit;">document</span>}</span></code></pre></div></div>
 <p>A large part of this work involves figuring out trends in the package ecosystem. I really struggled to differentiate between the various packages for bibliographic formatting, footnotes, figures and floats and their cross-compatibility. Some packages seem to be developed according to common tendencies, sort of like the R Tidyverse (in the sense of holding a generally common syntax, not in terms of cult behaviour), based around central cores such as <a href="https://ctan.org/pkg/biblatex?lang=en">biblatex</a> and <a href="https://ctan.org/pkg/hyperref?lang=en">hyperref</a>.</p>
 <p>I’ve also been using LaTeX to format <a href="../../cv.pdf">my CV</a>, and today I started using it to create slides <a href="https://dab23.archaeological.science/abstracts/batist/">for an upcoming conference presentation</a>. I like how programmatic the CV feels — you script a macro once, call the function along with the text you want it to parse, and you got a pretty little table of all your career accomplishments! I’m still kind of undecided about using beamer for conference slides, but I do like how it encourages me to write concurrently as I create the slides.</p>
 
@@ -934,13 +978,14 @@ font-style: inherit;">document</span>}</span></code></pre></div>
   <category>pain text</category>
   <category>writing</category>
   <guid>https://zackbatist.info/posts/2023-01-10-i-like-latex.html</guid>
-  <pubDate>Tue, 10 Jan 2023 05:00:00 GMT</pubDate>
+  <pubDate>Mon, 09 Jan 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Comments on ‘The rise and fall of peer review’</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2022-12-17-comments-on-the-rise-and-fall-of-peer-review.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -969,13 +1014,14 @@ font-style: inherit;">document</span>}</span></code></pre></div>
   <category>peer review</category>
   <category>science core</category>
   <guid>https://zackbatist.info/posts/2022-12-17-comments-on-the-rise-and-fall-of-peer-review.html</guid>
-  <pubDate>Sat, 17 Dec 2022 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 16 Dec 2022 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Comments on a recent ‘science mapping’ paper</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2022-12-08-review-of-a-recent-science-mapping-paper/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1031,13 +1077,14 @@ font-style: inherit;">document</span>}</span></code></pre></div>
   <category>network analysis</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2022-12-08-review-of-a-recent-science-mapping-paper/</guid>
-  <pubDate>Thu, 08 Dec 2022 05:00:00 GMT</pubDate>
+  <pubDate>Wed, 07 Dec 2022 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Open science and its weird conception of data</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2022-11-28-open-science-and-its-weird-conception-of-data.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1094,7 +1141,7 @@ Hodder, Ian. 1989. <span>“Writing Archaeology: <span>Site</span> Reports in Co
 Huggett, Jeremy. 2020. <span>“Is <span>Big Digital Data Different</span>? <span>Towards</span> a <span>New Archaeological Paradigm</span>.”</span> <em>Journal of Field Archaeology</em> 45 (February):S8–17. <a href="https://doi.org/10.1080/00934690.2020.1713281">https://doi.org/10.1080/00934690.2020.1713281</a>.
 </div>
 <div id="ref-huggett2022a" class="csl-entry">
-———. 2022. <span>“Is <span>Less More</span>? <span>Slow Data</span> and <span>Datafication</span> in <span>Archaeology</span>.”</span> In <em>Critical <span>Archaeology</span> in the <span>Digital Age</span>: <span>Proceedings</span> of the 12th <span>IEMA Visiting Scholar</span>’s <span>Conference</span></em>, edited by Kevin Garstki, 97–110. Los Angeles, CA: Cotsen Institute of Archaeology Press. <a href="https://escholarship.org/uc/item/0vh9t9jq#page=112">https://escholarship.org/uc/item/0vh9t9jq#page=112</a>.
+———. 2022. <span>“Data <span>Legacies</span>, <span>Epistemic Anxieties</span>, and <span>Digital Imaginaries</span> in <span>Archaeology</span>.”</span> <em>Digital</em> 2 (2): 267–95. <a href="https://doi.org/10.3390/digital2020016">https://doi.org/10.3390/digital2020016</a>.
 </div>
 <div id="ref-joyce2002" class="csl-entry">
 Joyce, Rosemary. 2002. <em>The <span>Languages</span> of <span>Archaeology</span>: <span>Dialogue</span>, <span>Narrative</span>, and <span>Writing</span></em>. Wiley. <a href="https://books.google.com?id=k51TlhQeeQsC">https://books.google.com?id=k51TlhQeeQsC</a>.
@@ -1125,13 +1172,14 @@ Wellen, Richard. 2004. <span>“Taking on <span>Commercial Scholarly Journals</s
   <category>open data</category>
   <category>open science</category>
   <guid>https://zackbatist.info/posts/2022-11-28-open-science-and-its-weird-conception-of-data.html</guid>
-  <pubDate>Mon, 28 Nov 2022 05:00:00 GMT</pubDate>
+  <pubDate>Sun, 27 Nov 2022 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Abstract submitted for DAB23 (Bern, Switzerland)</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2022-11-27-abstract-submitted-for-dab23-bern-switzerland/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1157,13 +1205,14 @@ Wellen, Richard. 2004. <span>“Taking on <span>Commercial Scholarly Journals</s
   <category>open archaeology</category>
   <category>ooen science</category>
   <guid>https://zackbatist.info/posts/2022-11-27-abstract-submitted-for-dab23-bern-switzerland/</guid>
-  <pubDate>Sun, 27 Nov 2022 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 26 Nov 2022 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Mastodon and the potential for community growth</title>
   <dc:creator>Zack Batist</dc:creator>
   <link>https://zackbatist.info/posts/2022-11-23-mastodon-and-the-potential-for-community-growth/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1193,7 +1242,7 @@ Wellen, Richard. 2004. <span>“Taking on <span>Commercial Scholarly Journals</s
   <category>mastodon</category>
   <category>meta</category>
   <guid>https://zackbatist.info/posts/2022-11-23-mastodon-and-the-potential-for-community-growth/</guid>
-  <pubDate>Wed, 23 Nov 2022 05:00:00 GMT</pubDate>
+  <pubDate>Tue, 22 Nov 2022 23:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
