@@ -1,0 +1,33 @@
+---
+title: "A few new papers from 2025"
+date: 2025-12-10
+categories: 
+  - publication
+  - data work
+  - archaeological fieldwork
+  - science studies
+draft: false
+---
+
+Two additional papers deriving from my dissertation have been successfully peer reviewed and/or published during 2025.
+These complement **On the Value of Informal Communication in Archaeological Data Work**, which was published by Open Archaeology last year [[DOI: 10.1515/opar-2024-0014].](https://doi.org/10.1515/opar-2024-0014)
+
+**Locating Creative Agency in Archaeological Data Work**\
+[DOI: 10.17613/8eqy4-n1m82](https://doi.org/10.17613/8eqy4-n1m82) / [Preprint](https://zackbatist.info/locating-creative-agency/) / [GitHub](https://github.com/zackbatist/locating-creative-agency)
+
+Through comparison of illustration, photography, photogrammetry practices, and different approaches for collecting and managing spatial data, I identified the roles that fieldworkers and other actors play while constituting data.
+I submitted this paper for open review through Peer Community in Archaeology, which was a great experience!
+You can read the reviews [at the PCI-archaeo website](https://doi.org/10.24072/pci.archaeo.100608).
+
+**Balancing situated and objective representations in archaeological fieldwork**\
+[DOI: 10.1017/aap.2025.10101](http://doi.org/10.1017/aap.2025.10101) / [Preprint](https://zackbatist.info/fuzzy-concrete/) / [GitHub](https://github.com/zackbatist/fuzzy-concrete)
+
+This paper has just been published in Advances in Archaeological Practice.
+It articulates tensions between systemic warrants to formalize archaeological observations and the embodied experiences of actually collecting data during fieldwork.
+I also include the peer-reviews in the [git repository](https://github.com/zackbatist/fuzzy-concrete/blob/main/sections/13_peer-review.qmd).
+
+**Data Management is People Management: On Abstraction of Data and Labor in Archaeological Projects**\
+DOI: TBD / [Preprint](https://zackbatist.info/data-tech-poli-arch/) / [GitHub](https://github.com/zackbatist/data-tech-poli-arch)
+
+I recently presented another outcome from my dissertation at the [Data and Technology Politics in Archaeology Workshop](https://uib.no/en/nia/179128/data-and-technology-politics-archaeology) at the Norwegian Institute at Athens last week.
+A revised version of this will be published in the workshop proceedings sometime next year.
