@@ -5,6 +5,12 @@ date: 2025-08-18
 date-modified: last-modified
 date-format: long
 draft: false
+categories: 
+  - scholarly metadata
+  - meta-research
+  - bibliometrics
+  - machine learning
+  - BibVik
 ---
 
 Since the spring, I've been working with Julie Lund and Isak Roalkvam on a project to analyze the development of ideas concerning the origins of the Viking Age through a bibliometric analysis of a large corpus of published work.
