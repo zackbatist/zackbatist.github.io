@@ -11,7 +11,7 @@
 <description>Rambles about archaeological practice, open science, and collaboration
 </description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Tue, 09 Dec 2025 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 10 Dec 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>A few new papers from 2025</title>
   <dc:creator>Zack Batist</dc:creator>
@@ -41,7 +41,7 @@ DOI: TBD / <a href="https://zackbatist.info/data-tech-poli-arch/">Preprint</a> /
   <category>archaeological fieldwork</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2025-12-10-a-few-new-papers-from-2025.html</guid>
-  <pubDate>Tue, 09 Dec 2025 23:00:00 GMT</pubDate>
+  <pubDate>Wed, 10 Dec 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Scholarly metadata pertaining to monographs and grey literature</title>
@@ -118,8 +118,13 @@ Brandsen, Alex. 2023. <span>“Information <span>Extraction</span> and <span>Mac
 Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Donner, and Philipp Mayr. 2025. <span>“Reference Coverage Analysis of <span>OpenAlex</span> Compared to <span>Web</span> of <span>Science</span> and <span>Scopus</span>.”</span> <em>Scientometrics</em> 130 (4): 2475–92. <a href="https://doi.org/10.1007/s11192-025-05293-3">https://doi.org/10.1007/s11192-025-05293-3</a>.
 </div>
 </div></section></div> ]]></description>
+  <category>scholarly metadata</category>
+  <category>meta-research</category>
+  <category>bibliometrics</category>
+  <category>machine learning</category>
+  <category>BibVik</category>
   <guid>https://zackbatist.info/posts/2025-08-18-open-scholarly-metadata/</guid>
-  <pubDate>Sun, 17 Aug 2025 22:00:00 GMT</pubDate>
+  <pubDate>Mon, 18 Aug 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>AI and extraction from the open scientific commons</title>
@@ -164,7 +169,7 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>commons</category>
   <category>ai</category>
   <guid>https://zackbatist.info/posts/2025-05-05-ai-and-extraction-from-the-open-scientific-commons.html</guid>
-  <pubDate>Sun, 04 May 2025 22:00:00 GMT</pubDate>
+  <pubDate>Mon, 05 May 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Migrating from Wordpress</title>
@@ -196,7 +201,7 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>writing</category>
   <category>website</category>
   <guid>https://zackbatist.info/posts/2025-03-09-migrating-from-wordpress.html</guid>
-  <pubDate>Sat, 08 Mar 2025 23:00:00 GMT</pubDate>
+  <pubDate>Sun, 09 Mar 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Starting as a postdoc at McGill</title>
@@ -220,7 +225,7 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>postdoc</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2024-12-29-mcgill-postdoc.html</guid>
-  <pubDate>Sat, 28 Dec 2024 23:00:00 GMT</pubDate>
+  <pubDate>Sun, 29 Dec 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>New Paper: Informal communication and archaeological data work</title>
@@ -247,7 +252,7 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>publication</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2024-10-01-informal-communication-and-archaeological-data-work.html</guid>
-  <pubDate>Mon, 30 Sep 2024 22:00:00 GMT</pubDate>
+  <pubDate>Tue, 01 Oct 2024 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>New paper: Exploring collaborative practices in archaeological software development</title>
@@ -282,7 +287,7 @@ Culbert, Jack H., Anne Hobert, Najko Jahn, Nick Haupka, Marion Schmidt, Paul Don
   <category>open-archaeo</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2024-07-18-exploring-collaborative-practices-in-archaeological-software-development.html</guid>
-  <pubDate>Wed, 17 Jul 2024 22:00:00 GMT</pubDate>
+  <pubDate>Thu, 18 Jul 2024 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Pruning open-archaeo</title>
@@ -313,7 +318,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
 </div></div></section></div> ]]></description>
   <category>open-archaeo</category>
   <guid>https://zackbatist.info/posts/2024-02-02-pruning-open-archaeo.html</guid>
-  <pubDate>Thu, 01 Feb 2024 23:00:00 GMT</pubDate>
+  <pubDate>Fri, 02 Feb 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>ArcheoFOSS XVII</title>
@@ -363,7 +368,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>fediverse</category>
   <category>open archaeology</category>
   <guid>https://zackbatist.info/posts/2023-12-17-archeofoss-xvii/</guid>
-  <pubDate>Sat, 16 Dec 2023 23:00:00 GMT</pubDate>
+  <pubDate>Sun, 17 Dec 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Finished my dissertation!</title>
@@ -391,7 +396,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>open science</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2023-09-24-finished-my-dissertation.html</guid>
-  <pubDate>Sat, 23 Sep 2023 22:00:00 GMT</pubDate>
+  <pubDate>Sun, 24 Sep 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>open-archaeo data paper</title>
@@ -422,7 +427,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>open-archaeo</category>
   <category>publication</category>
   <guid>https://zackbatist.info/posts/2023-09-11-open-archaeo-data-paper/</guid>
-  <pubDate>Sun, 10 Sep 2023 22:00:00 GMT</pubDate>
+  <pubDate>Mon, 11 Sep 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Some thoughts on data formality</title>
@@ -452,7 +457,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>open data</category>
   <category>workflows</category>
   <guid>https://zackbatist.info/posts/2023-06-13-some-thoughts-on-data-formality.html</guid>
-  <pubDate>Mon, 12 Jun 2023 22:00:00 GMT</pubDate>
+  <pubDate>Tue, 13 Jun 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Recap: Digital Archaeology Bern 2023</title>
@@ -508,7 +513,7 @@ Batist, Zack. 2024. <span>“Pruning Open-Archaeo.”</span> February 2,
   <category>open data</category>
   <category>open-archaeo</category>
   <guid>https://zackbatist.info/posts/2023-02-06-recap-digital-archaeology-bern-2023/</guid>
-  <pubDate>Sun, 05 Feb 2023 23:00:00 GMT</pubDate>
+  <pubDate>Mon, 06 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>I like LaTeX</title>
@@ -978,7 +983,7 @@ font-style: inherit;">document</span>}</span></code></pre></div></div>
   <category>pain text</category>
   <category>writing</category>
   <guid>https://zackbatist.info/posts/2023-01-10-i-like-latex.html</guid>
-  <pubDate>Mon, 09 Jan 2023 23:00:00 GMT</pubDate>
+  <pubDate>Tue, 10 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Comments on ‘The rise and fall of peer review’</title>
@@ -1014,7 +1019,7 @@ font-style: inherit;">document</span>}</span></code></pre></div></div>
   <category>peer review</category>
   <category>science core</category>
   <guid>https://zackbatist.info/posts/2022-12-17-comments-on-the-rise-and-fall-of-peer-review.html</guid>
-  <pubDate>Fri, 16 Dec 2022 23:00:00 GMT</pubDate>
+  <pubDate>Sat, 17 Dec 2022 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Comments on a recent ‘science mapping’ paper</title>
@@ -1077,7 +1082,7 @@ font-style: inherit;">document</span>}</span></code></pre></div></div>
   <category>network analysis</category>
   <category>science studies</category>
   <guid>https://zackbatist.info/posts/2022-12-08-review-of-a-recent-science-mapping-paper/</guid>
-  <pubDate>Wed, 07 Dec 2022 23:00:00 GMT</pubDate>
+  <pubDate>Thu, 08 Dec 2022 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Open science and its weird conception of data</title>
@@ -1172,7 +1177,7 @@ Wellen, Richard. 2004. <span>“Taking on <span>Commercial Scholarly Journals</s
   <category>open data</category>
   <category>open science</category>
   <guid>https://zackbatist.info/posts/2022-11-28-open-science-and-its-weird-conception-of-data.html</guid>
-  <pubDate>Sun, 27 Nov 2022 23:00:00 GMT</pubDate>
+  <pubDate>Mon, 28 Nov 2022 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Abstract submitted for DAB23 (Bern, Switzerland)</title>
@@ -1205,7 +1210,7 @@ Wellen, Richard. 2004. <span>“Taking on <span>Commercial Scholarly Journals</s
   <category>open archaeology</category>
   <category>ooen science</category>
   <guid>https://zackbatist.info/posts/2022-11-27-abstract-submitted-for-dab23-bern-switzerland/</guid>
-  <pubDate>Sat, 26 Nov 2022 23:00:00 GMT</pubDate>
+  <pubDate>Sun, 27 Nov 2022 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Mastodon and the potential for community growth</title>
@@ -1242,7 +1247,7 @@ Wellen, Richard. 2004. <span>“Taking on <span>Commercial Scholarly Journals</s
   <category>mastodon</category>
   <category>meta</category>
   <guid>https://zackbatist.info/posts/2022-11-23-mastodon-and-the-potential-for-community-growth/</guid>
-  <pubDate>Tue, 22 Nov 2022 23:00:00 GMT</pubDate>
+  <pubDate>Wed, 23 Nov 2022 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
