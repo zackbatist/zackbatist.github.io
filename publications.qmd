@@ -7,18 +7,18 @@ format:
 ---
 ## Journal Articles
 Zachary Batist\
-In press. **Balancing situated and objective representations in archaeological fieldwork.**
+2025. **Balancing situated and objective representations in archaeological fieldwork.**
 Advances in Archaeological Practice.\
 DOI: [10.1017/aap.2025.10101](http://doi.org/10.1017/aap.2025.10101)
 | [Preprint](https://zackbatist.info/fuzzy-concrete/)
-| BibTeX
+| [BibTeX](/bibtex/batist2025a.bib)
 
 Zachary Batist\
 2025. **Locating creative agency in archaeological data work.**
 Peer Community in Archaeology.\
 DOI: [10.17613/8eqy4-n1m82](https://doi.org/10.17613/8eqy4-n1m82)
 | [Preprint](https://zackbatist.info/locating-creative-agency/)
-| BibTeX
+| [BibTeX](/bibtex/batist2025.bib)
 
 Zachary Batist\
 2024. **Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.**
