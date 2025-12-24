@@ -3,6 +3,9 @@ project:
   preview:
     port: 7777
     browser: false
+  resources:
+    - cv.pdf
+    - cv.html
 
 website:
   title: Zack Batist
@@ -57,5 +60,5 @@ filters:
   - include-files.lua
   - quarto
 execute:
-  freeze: auto
+  freeze: true
 
