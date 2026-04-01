@@ -6,10 +6,26 @@ format:
       body-width: 1100px
 ---
 
+## Current Projects
 **CITF Postdoc**\
 Articulating social, collaborative and discursive aspects of epidemiological data-sharing initiatives, and how they relate to, overlap with or conflict with technical, institutional and epistemic factors.\
 [zackbatist.info/CITF-Postdoc](https://zackbatist.info/CITF-Postdoc)\
 [github.com/zackbatist/CITF-Postdoc](https://github.com/zackbatist/CITF-Postdoc)
+
+**Deriving insights for research data sharing from a large-scale data sharing initiative in Canada**\
+A systematic analysis of records generated in the creation of the COVID-19 Immunity Task Force (CITF) Databank and of interviews with its partners, to develop insights to support new and ongoing data sharing initiatives.\
+
+**Bibliometric network analysis of Viking Age research (BibVik)**\
+Identifying trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age.\
+<!-- [github.com/zackbatist/BibVik](https://github.com/zackbatist/BibVik) -->
+
+**Name TBD**\
+Concerned with positive leadership as a key factor in bringing out the most from an academic environment, through the historical example of Stefan Meyer, Professor and Director of the Radium Institute in Vienna, who mentored several prominent women scientists during the interwar period.\
+
+## Continuous Projects
+**archaeo.social**\
+Mastodon instance and social media collective for archaeology.\
+[about.archaeo.social](https://about.archaeo.social/)\
 
 **open-archaeo**\
 A list of open source archaeological software and resources.\
@@ -21,14 +37,12 @@ A list of open venues for publishing, reviewing and curating archaeological rese
 [diamond.open-archaeo.info](https://diamond.open-archaeo.info/)\
 [github.com/open-archaeo/diamond.open-archaeo.info](https://github.com/open-archaeo/diamond.open-archaeo.info)
 
-**Bibliometric network analysis of Viking Age research (BibVik)**\
-Identifying trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age.\
-[github.com/zackbatist/BibVik](https://github.com/zackbatist/BibVik)
+**Digital Archaeology Maintainathon**\
+A list of open venues for publishing, reviewing and curating archaeological research.\
+[sslarch.github.io/maintainathon](https://sslarch.github.io/maintainathon)\
+[github.com/sslarch/maintainathon](https://github.com/sslarch/maintainathon)
 
-<!-- **Toward Participatory Data Stewardship**\
-Led by Alex Bernier (McGill) and Hortense Gallois (SFU)
-Conducting co-creation workshops with Huntington’s disease patient communities directed toward producing standardized and patient-directed data governance tools. -->
-
+## Past Projects
 **E-CURATORS**\
 Led by Costis Dallas at the University of Toronto's Faculty of Information.
 Investigated pervasive curation practices manifested in archaeological research and communication work "in the wild", i.e. outside custodial collections or professional stewardship.
@@ -47,3 +61,9 @@ Created for my Master's thesis.\
 [zackbatist.info/DObsiSS](https://zackbatist.info/DObsiSS)\
 [github.com/zackbatist/DObsiSS](https://github.com/zackbatist/DObsiSS)\
 [handle.net/11375/16528](http://hdl.handle.net/11375/16528)\
+
+<!--
+**Toward Participatory Data Stewardship**\
+Led by Alex Bernier (McGill) and Hortense Gallois (SFU)
+Conducting co-creation workshops with Huntington’s disease patient communities directed toward producing standardized and patient-directed data governance tools.
+-->
