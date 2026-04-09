@@ -22,6 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -45,296 +46,21 @@ div.csl-indent {
 }</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
 <link href="../assets/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8c0d0dc4545af9479f617a90d7f5063c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-1d5da8bfe02aeedb00cb33cbfb477501.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-8c0d0dc4545af9479f617a90d7f5063c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-abba60c7b863426f1dd778d2b3fd6e6d.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 
 
 </head>
 
-<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">On the Mycenaean Palatial Redistribution System</li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      <img src="../assets/picture.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../assets/picture.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
-      </a>
-      <div class="sidebar-tools-main">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
-      </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../publications.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publications</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Projects</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../posts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Posts</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#the-mycenaean-palatial-redistribution-system-at-pylos" id="toc-the-mycenaean-palatial-redistribution-system-at-pylos" class="nav-link active" data-scroll-target="#the-mycenaean-palatial-redistribution-system-at-pylos">The Mycenaean Palatial Redistribution System at Pylos</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<body>
 
 <div class="callout callout-style-default callout-note callout-titled">
   <div class="callout-header d-flex align-content-center">
@@ -350,100 +76,65 @@ div.csl-indent {
   </div>
 </div>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<header id="title-block-header">
 <h1 class="title">On the Mycenaean Palatial Redistribution System</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Palatial Administration</div>
-    <div class="quarto-category">Redistribution</div>
-  </div>
-  </div>
+<p class="author">Zack Batist</p>
 
-
-
-<div class="quarto-title-meta column-body">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Zack Batist </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">October 5, 2011</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<p class="date">October 5, 2011</p>
 </header>
 
-
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-mycenaean-palatial-redistribution-system-at-pylos" id="toc-the-mycenaean-palatial-redistribution-system-at-pylos">The Mycenaean Palatial Redistribution System at Pylos</a></li>
+  <li><a href="#references" id="toc-references">References</a></li>
+  </ul>
+</nav>
 <p>Last week I wrote a short essay on the Mycenaean redistribution system, mainly focused on the palace at Pylos. I realized that I did not know enough about the palatial administration in order to start focusing on the meat of my project, so this is mainly to provide background. Keep in mind that this is not that detailed, and that I did not have too much time for this since I was spending time with family because of religious holidays last week. But even though I didn’t write this out in great detail I still learned a lot about the palatial administration, which was the main goal of this assignment.</p>
 <p>For further reading I plan to read Karl Polanyi’s book <em>Trade and Markets in Early Empires</em> (1957), and the works of other authors that I stumbled upon while doing this such as Killen, Halstead, Wright among others.</p>
 <hr>
-<section id="the-mycenaean-palatial-redistribution-system-at-pylos" class="level2">
-<h2 class="anchored" data-anchor-id="the-mycenaean-palatial-redistribution-system-at-pylos">The Mycenaean Palatial Redistribution System at Pylos</h2>
-<p>The Mycenaean palaces are commonly viewed as economic centres, where raw materials, finished products, and allocations of land were recorded and redistributed among members of the palace and also among the. The <em>damos</em> were local communities that were ultimately under control of the palace <span class="citation" data-cites="shelmerdine2008a">(<a href="#ref-shelmerdine2008a" role="doc-biblioref">Shelmerdine, Bennet, and Preston 2008</a>: 300-301)</span>. This model of redistribution has been studied primarily by looking at the administrative records, in the form of clay tablets bearing inscriptions written in the language referred to as Linear B. These documents recorded the flow of resources received by the palace, the process of turning these resources into manufactured goods by specialized workers, and the subsequent selective sharing of the finished products among the members of the community, among other economic concerns. Essentially, resources were pooled by a central authority, and then redistributed to others. This economic model was described and made popular by the economic anthropologist and philosopher Karl Polanyi, described this redistribution process from a cross-cultural perpective, and it has had significant influence on scholars in many disciplines <span class="citation" data-cites="polanyi1971">(<a href="#ref-polanyi1971" role="doc-biblioref">Polanyi 1971</a>)</span>.</p>
-<p>Polanyi’s model of redistribution was intentionally broad, so that it could apply to multiple contexts. It can even be argued that 21st century Canada follows a redistributive system in a sense. There is no doubt that the Mycenaean palace of Pylos conducted this sort of economic activity, but it is up to modern scholars to differentiate how Mycenaeans at Pylos mobilized and shared resources compared to how other societies managed their respective commodities. <span class="citation" data-cites="nakassis2011">Nakassis, Parkinson, and Galaty (<a href="#ref-nakassis2011" role="doc-biblioref">2011</a>: 180)</span> put it best:</p>
-<blockquote class="blockquote">
+<h2 id="the-mycenaean-palatial-redistribution-system-at-pylos" class="anchored">The Mycenaean Palatial Redistribution System at Pylos</h2>
+<p>The Mycenaean palaces are commonly viewed as economic centres, where raw materials, finished products, and allocations of land were recorded and redistributed among members of the palace and also among the. The <em>damos</em> were local communities that were ultimately under control of the palace <span class="citation" data-cites="shelmerdine2008a">(Shelmerdine, Bennet, and Preston 2008: 300-301)</span>. This model of redistribution has been studied primarily by looking at the administrative records, in the form of clay tablets bearing inscriptions written in the language referred to as Linear B. These documents recorded the flow of resources received by the palace, the process of turning these resources into manufactured goods by specialized workers, and the subsequent selective sharing of the finished products among the members of the community, among other economic concerns. Essentially, resources were pooled by a central authority, and then redistributed to others. This economic model was described and made popular by the economic anthropologist and philosopher Karl Polanyi, described this redistribution process from a cross-cultural perpective, and it has had significant influence on scholars in many disciplines <span class="citation" data-cites="polanyi1971">(Polanyi 1971)</span>.</p>
+<p>Polanyi’s model of redistribution was intentionally broad, so that it could apply to multiple contexts. It can even be argued that 21st century Canada follows a redistributive system in a sense. There is no doubt that the Mycenaean palace of Pylos conducted this sort of economic activity, but it is up to modern scholars to differentiate how Mycenaeans at Pylos mobilized and shared resources compared to how other societies managed their respective commodities. <span class="citation" data-cites="nakassis2011">Nakassis, Parkinson, and Galaty (2011: 180)</span> put it best:</p>
+<blockquote>
 <p>Indeed, the purpose of the concept of redistribution for Polanyi and his students was to allow them to investigate the differences between different redistributive systems, embedded as they were in society at large, not to construct a monolithic model of “redistribution” and apply it wholesale to different historical contexts. That is, we ought not to be discussing whether a given society is redistributive or not, but how it is redistributive.</p>
 </blockquote>
-<p>This is a very important point, and discussing redistribution without a description of the particular context in which the concept is described, can result in misinterpretation. Redistribution need not only refer to an economic system associated with a particular era, but it can be used to described social events in history as well. For example, one topic of personal interest is about commemorative and ritual feasts involve consuming large amounts of resources, and these too can be viewed as a form of redistribution <span class="citation" data-cites="nakassis2011">(<a href="#ref-nakassis2011" role="doc-biblioref">Nakassis, Parkinson, and Galaty 2011</a>: 181)</span>.</p>
-<p>There seem to be two main entities that constitute the Mycenaean economic organization: the palace and the <em>damos</em>. The palace is often viewed by historians and Aegeanists as the central economic hub of a region, and was the domain of the ruler, known as the <em>wanax</em>. The <em>damos</em>, on the other hand, were local communities that were run on a day-to-day basis by local people, but they were influenced by the palace. In Messenia, the region under control of the palace of Pylos, there were 16 <em>damos</em> that were mentioned in the tablets, which were divided into two provinces. As inferred by the Pylian tablets, Ke-ke-me-na land was considered to be controlled by the <em>damos</em>, and Ki-ti-me-na land was under the control of the _wanax_or his kin <span class="citation" data-cites="shelmerdine2008a">(<a href="#ref-shelmerdine2008a" role="doc-biblioref">Shelmerdine, Bennet, and Preston 2008</a>: 74-75)</span>. Since ki-ti-me-na land was operated by the palace, resources generated by it were distributed to palace residents and those close to the <em>wanax</em>. Land owned and operated by the <em>damos</em> (ke-ke-me-na) was still indirectly restricted by the palace. The <em>damos</em> were taxed on important commodities and the distribution of ke-ke-me-na land among the elite members of the damos was controlled by the palace. Thus, the <em>wanax</em> could reward certain smaller communities by lowering taxes, and grant more land to individuals who supported him.</p>
-<p>We can clearly see that the palace and the <em>damos</em> were formally separate entities, but that the former still maintained a controlling influence over the latter. The palace was obviously in a position to manipulate markets and costs in the _damos _to its own advantage. The _wanax_used this power to solidify his rule by distributing land among his followers and rewarding those in his favour. However, it is noteworthy that not all of the land in Messenia was recorded in the Pylian tablets, so the historical picture as documented in the written records is incomplete. <span class="citation" data-cites="lupack2011">Lupack (<a href="#ref-lupack2011" role="doc-biblioref">2011</a>: 213-214)</span> suggests that there were large tracts of untaxed land that is not accounted for,&nbsp;and even proposes that the religious sphere held its own land, independent of the palace. So, it is at least possible that the <em>wanax</em> did not control all of the <em>damos</em>.</p>
-<p>Some industries were heavily controlled by the palace, and the entire process from harvest of raw materials into their manufacture into finished products was duly recorded. <span class="citation" data-cites="schon2011">Schon (<a href="#ref-schon2011" role="doc-biblioref">2011</a>)</span> provides an overview of three such industries, showing exactly how much control the palace had over them.</p>
-<p>The palace also employed the ta-ra-si-ja system to influence certain industries. Using this system, resources were allocated to craftsmen to make a finished product, which would be distributed by the palace. <span class="citation" data-cites="killen2001">Killen (<a href="#ref-killen2001" role="doc-biblioref">2001</a>)</span> noticed that this system was used mainly under certain circumstances: in decentralized industries, industries that only required one raw material, and industries that employed low-level workers.</p>
-<p>The administrative system of the Mycenaean states, was evidently organized, yet there seems to be a lack of standardization&nbsp;in regards to the management and mobilization of resources <span class="citation" data-cites="schon2011">(<a href="#ref-schon2011" role="doc-biblioref">Schon 2011</a>: 220)</span>. As noted, even though the <em>damos</em> were somewhat autonomous, the palace and the elite supporters of the <em>wanax</em> had a lot of control over the distribution of land and the manufacture of finished goods. However, it is very important to note that the evidence used to study the redistribution systems of the bronze age Aegean are limited, and many things that were not recorded by the palace scribes remain unaccounted for.&nbsp; Additionally, the research concerning the economic administration at Pylos can not necessarily be applied to other territories on mainland Greece since there were almost certainly regional differences. While I will use analyze the redistributive model using network analysis in my thesis, I remain aware of its limitations and of the need to place it in context.</p>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>This is a very important point, and discussing redistribution without a description of the particular context in which the concept is described, can result in misinterpretation. Redistribution need not only refer to an economic system associated with a particular era, but it can be used to described social events in history as well. For example, one topic of personal interest is about commemorative and ritual feasts involve consuming large amounts of resources, and these too can be viewed as a form of redistribution <span class="citation" data-cites="nakassis2011">(Nakassis, Parkinson, and Galaty 2011: 181)</span>.</p>
+<p>There seem to be two main entities that constitute the Mycenaean economic organization: the palace and the <em>damos</em>. The palace is often viewed by historians and Aegeanists as the central economic hub of a region, and was the domain of the ruler, known as the <em>wanax</em>. The <em>damos</em>, on the other hand, were local communities that were run on a day-to-day basis by local people, but they were influenced by the palace. In Messenia, the region under control of the palace of Pylos, there were 16 <em>damos</em> that were mentioned in the tablets, which were divided into two provinces. As inferred by the Pylian tablets, Ke-ke-me-na land was considered to be controlled by the <em>damos</em>, and Ki-ti-me-na land was under the control of the _wanax_or his kin <span class="citation" data-cites="shelmerdine2008a">(Shelmerdine, Bennet, and Preston 2008: 74-75)</span>. Since ki-ti-me-na land was operated by the palace, resources generated by it were distributed to palace residents and those close to the <em>wanax</em>. Land owned and operated by the <em>damos</em> (ke-ke-me-na) was still indirectly restricted by the palace. The <em>damos</em> were taxed on important commodities and the distribution of ke-ke-me-na land among the elite members of the damos was controlled by the palace. Thus, the <em>wanax</em> could reward certain smaller communities by lowering taxes, and grant more land to individuals who supported him.</p>
+<p>We can clearly see that the palace and the <em>damos</em> were formally separate entities, but that the former still maintained a controlling influence over the latter. The palace was obviously in a position to manipulate markets and costs in the _damos _to its own advantage. The _wanax_used this power to solidify his rule by distributing land among his followers and rewarding those in his favour. However, it is noteworthy that not all of the land in Messenia was recorded in the Pylian tablets, so the historical picture as documented in the written records is incomplete. <span class="citation" data-cites="lupack2011">Lupack (2011: 213-214)</span> suggests that there were large tracts of untaxed land that is not accounted for,&nbsp;and even proposes that the religious sphere held its own land, independent of the palace. So, it is at least possible that the <em>wanax</em> did not control all of the <em>damos</em>.</p>
+<p>Some industries were heavily controlled by the palace, and the entire process from harvest of raw materials into their manufacture into finished products was duly recorded. <span class="citation" data-cites="schon2011">Schon (2011)</span> provides an overview of three such industries, showing exactly how much control the palace had over them.</p>
+<p>The palace also employed the ta-ra-si-ja system to influence certain industries. Using this system, resources were allocated to craftsmen to make a finished product, which would be distributed by the palace. <span class="citation" data-cites="killen2001">Killen (2001)</span> noticed that this system was used mainly under certain circumstances: in decentralized industries, industries that only required one raw material, and industries that employed low-level workers.</p>
+<p>The administrative system of the Mycenaean states, was evidently organized, yet there seems to be a lack of standardization&nbsp;in regards to the management and mobilization of resources <span class="citation" data-cites="schon2011">(Schon 2011: 220)</span>. As noted, even though the <em>damos</em> were somewhat autonomous, the palace and the elite supporters of the <em>wanax</em> had a lot of control over the distribution of land and the manufacture of finished goods. However, it is very important to note that the evidence used to study the redistribution systems of the bronze age Aegean are limited, and many things that were not recorded by the palace scribes remain unaccounted for.&nbsp; Additionally, the research concerning the economic administration at Pylos can not necessarily be applied to other territories on mainland Greece since there were almost certainly regional differences. While I will use analyze the redistributive model using network analysis in my thesis, I remain aware of its limitations and of the need to place it in context.</p>
+<h2 id="references" class="anchored">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-killen2001" class="csl-entry" role="listitem">
-Killen, John T. 2001. <span>“Some <span>Thoughts</span> on Ta-Ra-Si-Ja.”</span> In <em>Economy and <span>Politics</span> in the <span>Mycenaean Palace States</span>: <span>Proceedings</span> of a <span>Conference Held</span> on 1–3 <span>July</span> 1999 in the <span>Faculty</span> of <span>Classics</span>, <span>Cambridge</span></em>, 161–80. Cambridge Philological Society Cambridge.
+Killen, John T. 2001. <span>“Some Thoughts on Ta-Ra-Si-Ja.”</span> In <em>Economy and Politics in the Mycenaean Palace States: Proceedings of a Conference Held on 1–3 July 1999 in the Faculty of Classics, Cambridge</em>, 161–80. Cambridge Philological Society Cambridge.
 </div>
 <div id="ref-lupack2011" class="csl-entry" role="listitem">
-Lupack, Susan. 2011. <span>“Redistribution in <span>Aegean Palatial Societies</span>. <span>A View</span> from <span>Outside</span> the <span>Palace</span>: <span>The Sanctuary</span> and the <span>Damos</span> in <span>Mycenaean Economy</span> and <span>Society</span>.”</span> <em>American Journal of Archaeology</em> 115 (2): 207–17. <a href="https://doi.org/10.3764/aja.115.2.0207">https://doi.org/10.3764/aja.115.2.0207</a>.
+Lupack, Susan. 2011. <span>“Redistribution in Aegean Palatial Societies. A View from Outside the Palace: The Sanctuary and the Damos in Mycenaean Economy and Society.”</span> <em>American Journal of Archaeology</em> 115 (2): 207–17. <a href="https://doi.org/10.3764/aja.115.2.0207">https://doi.org/10.3764/aja.115.2.0207</a>.
 </div>
 <div id="ref-nakassis2011" class="csl-entry" role="listitem">
-Nakassis, Dimitri, William A. Parkinson, and Michael L. Galaty. 2011. <span>“Redistribution in <span>Aegean Palatial Societies</span>. <span>Redistributive Economies</span> from a <span>Theoretical</span> and <span>Cross-Cultural Perspective</span>.”</span> <em>American Journal of Archaeology</em> 115 (2): 177–84. <a href="https://doi.org/10.3764/aja.115.2.0177">https://doi.org/10.3764/aja.115.2.0177</a>.
+Nakassis, Dimitri, William A. Parkinson, and Michael L. Galaty. 2011. <span>“Redistribution in Aegean Palatial Societies. Redistributive Economies from a Theoretical and Cross-Cultural Perspective.”</span> <em>American Journal of Archaeology</em> 115 (2): 177–84. <a href="https://doi.org/10.3764/aja.115.2.0177">https://doi.org/10.3764/aja.115.2.0177</a>.
 </div>
 <div id="ref-polanyi1971" class="csl-entry" role="listitem">
 Polanyi, Karl. 1971. <em>Trade and Market in the Early Empires: Economies in History and Theory</em>. Vol. 6154. Henry Regnery Company.
 </div>
 <div id="ref-schon2011" class="csl-entry" role="listitem">
-Schon, Robert. 2011. <span>“Redistribution in <span>Aegean Palatial Societies</span>. <span>By Appointment</span> to <span>His Majesty</span> the <span>Wanax</span>: <span>Value-Added Goods</span> and <span>Redistribution</span> in <span>Mycenaean Palatial Economies</span>.”</span> <em>American Journal of Archaeology</em> 115 (2): 219–27. <a href="https://doi.org/10.3764/aja.115.2.0219">https://doi.org/10.3764/aja.115.2.0219</a>.
+Schon, Robert. 2011. <span>“Redistribution in Aegean Palatial Societies. By Appointment to His Majesty the Wanax: Value-Added Goods and Redistribution in Mycenaean Palatial Economies.”</span> <em>American Journal of Archaeology</em> 115 (2): 219–27. <a href="https://doi.org/10.3764/aja.115.2.0219">https://doi.org/10.3764/aja.115.2.0219</a>.
 </div>
 <div id="ref-shelmerdine2008a" class="csl-entry" role="listitem">
-Shelmerdine, Cynthia W., John Bennet, and Laura Preston. 2008. <span>“Mycenaean <span>States</span>.”</span> In <em>The <span>Cambridge Companion</span> to the <span>Aegean Bronze Age</span></em>, edited by Cynthia W. Shelmerdine. Cambridge: Cambridge University Press. <a href="https://www.cambridge.org/core/books/cambridge-companion-to-the-aegean-bronze-age/mycenaean-states/E382236599BFEC3AB09AA3981820BB9F">https://www.cambridge.org/core/books/cambridge-companion-to-the-aegean-bronze-age/mycenaean-states/E382236599BFEC3AB09AA3981820BB9F</a>.
+Shelmerdine, Cynthia W., John Bennet, and Laura Preston. 2008. <span>“Mycenaean States.”</span> In <em>The Cambridge Companion to the Aegean Bronze Age</em>, edited by Cynthia W. Shelmerdine. Cambridge: Cambridge University Press. <a href="https://www.cambridge.org/core/books/cambridge-companion-to-the-aegean-bronze-age/mycenaean-states/E382236599BFEC3AB09AA3981820BB9F">https://www.cambridge.org/core/books/cambridge-companion-to-the-aegean-bronze-age/mycenaean-states/E382236599BFEC3AB09AA3981820BB9F</a>.
 </div>
 </div>
 
 
-</section>
-
-</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -542,7 +233,7 @@ Shelmerdine, Cynthia W., John Bennet, and Laura Preston. 2008. <span>“Mycenaea
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'quarto',
+        theme: 'light-border',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -842,20 +533,6 @@ Shelmerdine, Cynthia W., John Bennet, and Laura Preston. 2008. <span>“Mycenaea
     }
   });
   </script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p><a href="https://webring.archaeo.social/previous?host=zackbatist.info">←</a> <a href="https://webring.archaeo.social">ARCHAEORING</a> <a href="https://webring.archaeo.social/next?host=zackbatist.info">→</a> <a href="https://webring.archaeo.social/random?host=zackbatist.info" style="font-size: 20px">↝</a></p>
-</div>   
-    <div class="nav-footer-center">
-<p><a class="link me-1" href="https://github.com/zackbatist" title="github" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-label="github"></i></a> <a class="link me-1" href="https://orcid.org/0000-0003-1072-5198" title="orcid" target="_blank" rel="noopener"><i class="ai  ai-orcid"></i></a> <a class="link me-1" href="https://archaeo.social/@zackbatist" title="Mastodon" target="_blank" rel="noopener"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></a> <a class="link me-1" href="https://zackbatist.info/posts.xml" title="rss" target="_blank" rel="noopener"><i class="fa-solid fa-rss-square" aria-label="rss-square"></i></a></p>
-</div>
-    <div class="nav-footer-right">
-<p>This page built with ❤️ and <a href="https://quarto.org/" target="_blank" rel="noopener">Quarto</a> | <a class="link me-1" href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a></p>
-</div>
-  </div>
-</footer>
 
 
 
