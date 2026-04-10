@@ -45,9 +45,9 @@ website:
       - posts.qmd
 format:
   html:
-    theme: none
-      # light: cosmo
-      # dark: [cosmo, assets/theme-dark.scss]
+    theme: 
+      light: cosmo
+      dark: [cosmo, assets/theme-dark.scss]
     page-layout: full
     code-copy: true
     code-link: true
