@@ -22,7 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -46,24 +45,299 @@ div.csl-indent {
 }</style>
 
 
-<link href="../../assets/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-html-abba60c7b863426f1dd778d2b3fd6e6d.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-8c0d0dc4545af9479f617a90d7f5063c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1d5da8bfe02aeedb00cb33cbfb477501.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-8c0d0dc4545af9479f617a90d7f5063c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
 </head>
 
-<body>
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">What I’ve Been Working On</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../assets/picture.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../assets/picture.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../publications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publications</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Posts</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#november-write-up-for-honours-project" id="toc-november-write-up-for-honours-project" class="nav-link active" data-scroll-target="#november-write-up-for-honours-project">November Write-Up for Honours Project</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
 
 <div class="callout callout-style-default callout-note callout-titled">
   <div class="callout-header d-flex align-content-center">
@@ -79,43 +353,66 @@ div.csl-indent {
   </div>
 </div>
 
-<header id="title-block-header">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <h1 class="title">What I’ve Been Working On</h1>
-<p class="author">Zack Batist</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Gephi</div>
+    <div class="quarto-category">Network analysis</div>
+  </div>
+  </div>
 
-<p class="date">November 24, 2011</p>
+
+
+<div class="quarto-title-meta column-body">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Zack Batist </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 24, 2011</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#november-write-up-for-honours-project" id="toc-november-write-up-for-honours-project">November Write-Up for Honours Project</a></li>
-  <li><a href="#references" id="toc-references">References</a></li>
-  </ul>
-</nav>
+
 <p>I wrote a summary of what I’ve done recently and what I hope to accomplish with this project. I originally intended this to be a preliminary report for Dr.&nbsp;Graham. Take a look:</p>
-<h2 id="november-write-up-for-honours-project" class="anchored">November Write-Up for Honours Project</h2>
+<section id="november-write-up-for-honours-project" class="level2">
+<h2 class="anchored" data-anchor-id="november-write-up-for-honours-project">November Write-Up for Honours Project</h2>
 <p>Network analysis is used to study the interactions of various entities, whether they are social connections, trade links, political hierarchies, or larger economic models. Rather than examining the attributive properties of each individual component, the relationships between them are the main focus. In the case of this project, I am examining the relationship between various Bronze Age archaeological sites in the Aegean, and the types of pottery that were used by their inhabitants.</p>
-<p>In part I am modeling this project off of a similar paper by <a href="http://archaeologicalnetworks.wordpress.com">Tom Brughmans</a> titled “Connecting the Dots: Towards Archaeological Network Analysis” <span class="citation" data-cites="brughmans2010">(Brughmans 2010)</span>. Brughmans provides a model for making relational and spatial networks, and uses a case study to demonstrate how the distribution and co-presence of artifacts can be mapped on a network. He used data provided by Dr.&nbsp;Jeroen Poblome and Dr.&nbsp;Philip Bes of the Kathelieke Universiteit Leuven as part of the <a href="http://millennium.arts.kuleuven.ac.be/icrates">ICRATES platform</a>, and was specifically working with Roman tableware.</p>
+<p>In part I am modeling this project off of a similar paper by <a href="http://archaeologicalnetworks.wordpress.com">Tom Brughmans</a> titled “Connecting the Dots: Towards Archaeological Network Analysis” <span class="citation" data-cites="brughmans2010">(<a href="#ref-brughmans2010" role="doc-biblioref">Brughmans 2010</a>)</span>. Brughmans provides a model for making relational and spatial networks, and uses a case study to demonstrate how the distribution and co-presence of artifacts can be mapped on a network. He used data provided by Dr.&nbsp;Jeroen Poblome and Dr.&nbsp;Philip Bes of the Kathelieke Universiteit Leuven as part of the <a href="http://millennium.arts.kuleuven.ac.be/icrates">ICRATES platform</a>, and was specifically working with Roman tableware.</p>
 <p>The nature of the raw data is crucial to this kind of project. Brughmans used a pre-compiled database of pottery, assembled from dozens of sites around the Mediterranean, with input from the lead excavators. This can be very useful for Roman historians, however there is no such database of pottery available for scholars of the Aegean during the Bronze Age. It is up to individual researchers to assemble a collection of vessels and their properties, which can be a slow and arduous process.</p>
 <p>The inconsistency of the data can be problematic, and I certainly ran into this problem while compiling the database of pottery. Researchers at different institutions in various settings may disagree on cataloging techniques, and the excavator’s decisions of what to include or not include when publishing his or her data can effect the theoretical research of scholars who may depend on the raw information. Many of the original excavation reports that I must examine can be up to 150 years old, and the information provided can be either incomplete or not up to date. Scholars that excavated long ago may have excluded some information from publication, assuming that it was irrelevant or unimportant, but did not realize that statistical and analytical methods could be employed to further our knowledge about the history of the site.</p>
 <p>At first I started recording the properties of individual vessels that have been found during excavations. The type of vessel, its date, the slip, the fabric, and the decoration were the main attributes that were noted. It was my hope that I would be able to determine the level of luxury based on these three latter properties, however this would require me to take liberties beyond what is academically acceptable. Of course, determining the status of the vessels would only apply to those meant for serving and consumption of food and drinks, or other ceramics that would be displayed in a social setting. There would be little reason to decorate cooking vessels used for food preparation since there is little social significance involved with the “behind the scenes” domestic tasks.</p>
 <p>Another major problem with this method that I now recognize is the disproportionate progress of excavations. Even if all of the pottery that has been found was recorded properly and consistently without any of the problems outlined above, excavations may still be ongoing and undisturbed deposits may still lie below the surface. The uneven representation of the archaeological record is something that must be taken into account when running these visualizations, and the prevalence of certain types of vessels should be understood with scrutiny.</p>
-<p>With my former goal in mind, I compiled a database of the pottery included in the excavation reports of Palaikastro, Kommos and Kastri, all of which are situated on Crete. Recording the individual vessels for just these three sites took a very long time, mainly because of the problems with data entry that I mentioned above. Looking back, I realize that my biggest mistake was not properly defining what my goals were for this project. <span class="citation" data-cites="brughmans2010">Brughmans (2010: 285)</span> put it best:</p>
-<blockquote>
+<p>With my former goal in mind, I compiled a database of the pottery included in the excavation reports of Palaikastro, Kommos and Kastri, all of which are situated on Crete. Recording the individual vessels for just these three sites took a very long time, mainly because of the problems with data entry that I mentioned above. Looking back, I realize that my biggest mistake was not properly defining what my goals were for this project. <span class="citation" data-cites="brughmans2010">Brughmans (<a href="#ref-brughmans2010" role="doc-biblioref">2010</a>: 285)</span> put it best:</p>
+<blockquote class="blockquote">
 <p>Research aims will determine for the most part what networks are identified and explored in the data available. Although they are complex on their own, these networks will never cover the full complexity of an archaeological dataset. It therefore becomes crucial to define the nature of the components of a network, their relationships, the network itself, and the meaning of the procedure of every type of analysis from the outset. This is undoubtedly the most important stage in any network analysis, as one could calculate the structure of virtually any kind of relationship between data, but if we do not know what this structure and the resulting patterning represent any results will be meaningless.</p>
 </blockquote>
-<p>However, just to see what could be produced with the data that I already collected, I ran a visualization of what I had so far (<span class="citation" data-cites="v4-new">(<strong>v4-new?</strong>)</span>). Because each relationship between a site and an individual piece of pottery is accounted for, the edges between certain nodes were weighted more than others. My renewed opinion is that it is better to leave out the weights corresponding to prevalence of pottery types. We can still gather valuable results from viewing the distribution of certain vessels without the added weights, while maintaining a proper level of confidence.</p>
+<p>However, just to see what could be produced with the data that I already collected, I ran a visualization of what I had so far (<span class="citation" data-cites="v4-new">(<a href="#ref-v4-new" role="doc-biblioref"><strong>v4-new?</strong></a>)</span>). Because each relationship between a site and an individual piece of pottery is accounted for, the edges between certain nodes were weighted more than others. My renewed opinion is that it is better to leave out the weights corresponding to prevalence of pottery types. We can still gather valuable results from viewing the distribution of certain vessels without the added weights, while maintaining a proper level of confidence.</p>
 <p><a href="v4-new.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="v4-new.png" id="v4-new" class="img-fluid"></a></p>
 <p>In such a way, the visualization can be used to compare the co-presence of pottery types between archaeological sites throughout the Aegean, just as Brughmans did with Roman tableware. It is also possible to look at the adoption of certain types of vessels over time for a particular site. If done properly, links should be made that connect similar pottery types with periods immediately before and after each other. This can help us create dendograms depicting the typologies of ceramic vessels for a particular site. Then the dendograms can be compared with those of neighboring towns, and patterns of regionalism can be noted. This can even fit in with a larger network of the Aegean, with each region’s variation acting as a different module in a larger context. I think that this is an exciting prospect, and I am excited that this can fit into a broader context.</p>
-<p>Additionally, it is possible to measure the betweeness centrality within a module representing a particular region, and if types with high values are also present outside of this specified area, we can determine the amount of contact that the region had with the rest of the Aegean. Perhaps this can be traced as a layer to the spatial network created by Carl Knappet, Tim Evans and Ray Rivers that mapped sailing routes in the Aegean <span class="citation" data-cites="knappett2008a">(Knappett, Evans, and Rivers 2008)</span>. It would be very interesting to see whether or not the two networks compliment each other.</p>
-<p>Now that I have demonstrated what can be done in the near future, I’ll explain the results that have already been attained (<span class="citation" data-cites="v5-new1">(<strong>v5-new1?</strong>)</span>). This network does not focus on a specific time period, but rather examines the site as a whole. Once more data is collected for various sites it will be possible to visualize shorter intervals. As expected, the modularity for this network suggests that there are three main groupings of pottery, each arranged around a particular archaeological site. However, at Kastri there seems to be no types of pottery that occur solely at that site. This is probably because of the incompleteness of the data and the unavailability of certain excavation reports. Once all of the data is available I’m sure the network will look quite different.</p>
+<p>Additionally, it is possible to measure the betweeness centrality within a module representing a particular region, and if types with high values are also present outside of this specified area, we can determine the amount of contact that the region had with the rest of the Aegean. Perhaps this can be traced as a layer to the spatial network created by Carl Knappet, Tim Evans and Ray Rivers that mapped sailing routes in the Aegean <span class="citation" data-cites="knappett2008a">(<a href="#ref-knappett2008a" role="doc-biblioref">Knappett, Evans, and Rivers 2008</a>)</span>. It would be very interesting to see whether or not the two networks compliment each other.</p>
+<p>Now that I have demonstrated what can be done in the near future, I’ll explain the results that have already been attained (<span class="citation" data-cites="v5-new1">(<a href="#ref-v5-new1" role="doc-biblioref"><strong>v5-new1?</strong></a>)</span>). This network does not focus on a specific time period, but rather examines the site as a whole. Once more data is collected for various sites it will be possible to visualize shorter intervals. As expected, the modularity for this network suggests that there are three main groupings of pottery, each arranged around a particular archaeological site. However, at Kastri there seems to be no types of pottery that occur solely at that site. This is probably because of the incompleteness of the data and the unavailability of certain excavation reports. Once all of the data is available I’m sure the network will look quite different.</p>
 <p><a href="v5-new1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="v5-new1.png" id="v5-new1" class="img-fluid"></a></p>
 <p>The betweeness centrality and other properties regarding path length do not seem to have any significance at this point, probably due to the rudimentary data. Since there are only three sites in the network, the maximum impact that a single node can have on the entire network is dependent on how many edges it has. Right now, the network is very simple, but as more data gets collected and input I imagine it will get much more complex and some interesting patterns might emerge. As I mentioned above, measuring the betweeness centrality can be very useful later on when examining the interaction between modules in a larger Aegean-wide context.</p>
 <p>Clearly, the next steps for me to take should be to record more data so that it can be added to the network. Without working on this first step I cannot advance to the next. In order for me to do this I need to acquire these reports from the archaeological sites, which has been very troublesome so far. Many of these reports are not available at any libraries accessible to me, so I must loan them from universities in other cities.</p>
 <p>I am very eager to begin the interpretive phase of this project and start analyzing the results. There are many interesting things that can be done using network analysis, and I am seeing a lot of value in these methods. Hopefully all of these things outlined here can be incorporated into my honours project. Even if time acts as a constraint, perhaps I will complete these goals later on in my academic career.</p>
-<h2 id="references" class="anchored">References</h2>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-brughmans2010" class="csl-entry" role="listitem">
 Brughmans, Tom. 2010. <span>“Connecting the Dots: Towards Archaeological Network Analysis.”</span> <em>Oxford Journal of Archaeology</em> 29 (3): 277–303. <a href="https://doi.org/10.1111/j.1468-0092.2010.00349.x">https://doi.org/10.1111/j.1468-0092.2010.00349.x</a>.
@@ -124,17 +421,31 @@ Brughmans, Tom. 2010. <span>“Connecting the Dots: Towards Archaeological Netwo
 Knappett, Carl, Tim Evans, and Ray Rivers. 2008. <span>“Modelling Maritime Interaction in the Aegean Bronze Age.”</span> <em>Antiquity</em> 82 (318): 1009–24. <a href="https://doi.org/10.1017/S0003598X0009774X">https://doi.org/10.1017/S0003598X0009774X</a>.
 </div>
 </div>
-<h4 id="comments" class="anchored">Comments:</h4>
+<section id="comments" class="level4">
+<h4 class="anchored" data-anchor-id="comments">Comments:</h4>
 <p><strong><a href="http://pennenstreek.wordpress.com">Mattea</a>:</strong> Hi Zack, I’m a student at Carleton too, and found out about your project on wine in the Aegean through Doctor Graham’s blog. I really love my ancient history, micro-history, and gastronomical history so I’m going to come back and look at this from time to time. What I’ve read so far looks super amazing: I love that you tried to recreate the wine. I loved Horrible Histories as a kid by Terry Deary, and he has a wine recipe in his Rotten Romans book. Anywho, I also wanted to briefly comment that you mention the “Kathelieke Universiteit Leuven” in your report, and forgive me for mentioning this, but I just wanted to let you know the correct spelling is Katholieke Universiteit Leuven. I just mention this because I’m Belgian and know the spelling. I hope that’s okay. Keep up the great work!</p>
 <p><strong>Zack:</strong> Hi Mattea. Thanks for your interest! Although this blog was made to to document my honours project, which Dr.&nbsp;Graham is supervising, it has gone a bit off track and less specific. However, I plan to write more frequently, so having people actually read it is a great motivator. Maybe we’ll even see each other on campus this semester. And thanks for the comment on the spelling, I’ll make the proper changes.</p>
 
 
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-    tabsets.forEach(function(tabset) {
-      const tabby = new Tabby('#' + tabset.id);
-    });
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -233,7 +544,7 @@ Knappett, Carl, Tim Evans, and Ray Rivers. 2008. <span>“Modelling Maritime Int
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'light-border',
+        theme: 'quarto',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -533,6 +844,20 @@ Knappett, Carl, Tim Evans, and Ray Rivers. 2008. <span>“Modelling Maritime Int
     }
   });
   </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="https://webring.archaeo.social/previous?host=zackbatist.info">←</a> <a href="https://webring.archaeo.social">ARCHAEORING</a> <a href="https://webring.archaeo.social/next?host=zackbatist.info">→</a> <a href="https://webring.archaeo.social/random?host=zackbatist.info" style="font-size: 20px">↝</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p><a class="link me-1" href="https://github.com/zackbatist" title="github" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-label="github"></i></a> <a class="link me-1" href="https://orcid.org/0000-0003-1072-5198" title="orcid" target="_blank" rel="noopener"><i class="ai  ai-orcid"></i></a> <a class="link me-1" href="https://archaeo.social/@zackbatist" title="Mastodon" target="_blank" rel="noopener"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></a> <a class="link me-1" href="https://zackbatist.info/posts.xml" title="rss" target="_blank" rel="noopener"><i class="fa-solid fa-rss-square" aria-label="rss-square"></i></a></p>
+</div>
+    <div class="nav-footer-right">
+<p>This page built with ❤️ and <a href="https://quarto.org/" target="_blank" rel="noopener">Quarto</a> | <a class="link me-1" href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a></p>
+</div>
+  </div>
+</footer>
 <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;

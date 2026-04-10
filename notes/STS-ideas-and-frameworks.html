@@ -20,7 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -44,60 +43,358 @@ div.csl-indent {
 }</style>
 
 
-<link href="../assets/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html-abba60c7b863426f1dd778d2b3fd6e6d.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-aafad85b77508d78c3b81d28408382c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-5fcaa6759314111989c3861e790cd248.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-aafad85b77508d78c3b81d28408382c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
 </head>
 
-<body>
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
-
-<header id="title-block-header">
-<h1 class="title">STS ideas and frameworks</h1>
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">STS ideas and frameworks</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
-
-<nav id="TOC" role="doc-toc">
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../assets/picture.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../assets/picture.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publications</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../posts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Posts</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#epistemic-culture" id="toc-epistemic-culture">Epistemic culture</a></li>
-  <li><a href="#activity-theory" id="toc-activity-theory">Activity Theory</a></li>
-  <li><a href="#distributed-cognition" id="toc-distributed-cognition">Distributed cognition</a></li>
-  <li><a href="#situated-cognition" id="toc-situated-cognition">Situated cognition</a></li>
-  <li><a href="#actor-network-theory" id="toc-actor-network-theory">Actor-network theory</a>
-  <ul>
-  <li><a href="#in-ssk" id="toc-in-ssk">In SSK</a></li>
-  <li><a href="#example" id="toc-example">Example</a></li>
+  <li><a href="#epistemic-culture" id="toc-epistemic-culture" class="nav-link active" data-scroll-target="#epistemic-culture">Epistemic culture</a></li>
+  <li><a href="#activity-theory" id="toc-activity-theory" class="nav-link" data-scroll-target="#activity-theory">Activity Theory</a></li>
+  <li><a href="#distributed-cognition" id="toc-distributed-cognition" class="nav-link" data-scroll-target="#distributed-cognition">Distributed cognition</a></li>
+  <li><a href="#situated-cognition" id="toc-situated-cognition" class="nav-link" data-scroll-target="#situated-cognition">Situated cognition</a></li>
+  <li><a href="#actor-network-theory" id="toc-actor-network-theory" class="nav-link" data-scroll-target="#actor-network-theory">Actor-network theory</a>
+  <ul class="collapse">
+  <li><a href="#in-ssk" id="toc-in-ssk" class="nav-link" data-scroll-target="#in-ssk">In SSK</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
   </ul></li>
   </ul>
 </nav>
-<p>Science and Technology Studies (STS) and Sociology of Scientific Knowledge (SSK) Examine archaeological research as cultural practice, or as ways of understanding the world through a complex series of physical and conceptual interactions between humans and the objects that captivate their interests <span class="citation" data-cites="pickering1992a">(Pickering 1992)</span>. Knowledge is not created in a vacuum; it is derived from prior knowledge and experiences that are deemed relevant to particular topics of research interest.</p>
-<h1 id="epistemic-culture">Epistemic culture</h1>
-<p>Epistemic cultures are cultures of creating and warranting knowledge; ‘epistemic’ refers to knowledge and truth-related goals and practices as central elements of scientific and professional fields <span class="citation" data-cites="knorrcetina2001">(Knorr Cetina 2001)</span>. Framing scientific research as culture helps investigate knowledge production as collective, materializing, interactive, historical, social, political and informally learned human process. It allows me to see archaeological practice as peculiar. It allows me to consider how normative assumptions and dispositions are taken for granted as the only viable ways or acting or thinking.</p>
-<h1 id="activity-theory">Activity Theory</h1>
-<p>Examines the systematically-organized series of relations that comprise activities. Activities are understood as the relations between human subjects and the physical or conceptual tools or environments with or within which they act, and the motives or objectives that drive the system forward in a particular direction <span class="citation" data-cites="leontev1974">(Leont’ev 1974: 22-23)</span>. Activity theory is useful to examine how people mobilize a series of physical and conceptual tools to overcome the conditions that separate actors’ current states from their desired goals. In this sense, activity theory prioritizes the situated perspectives and experiences of human subjects while still trying to account for the agency that tools exhibit in their experiences as components of activity systems delegated towards addressing particular tasks. More specifically, activity theory helps to draw generalized accounts of practices employed in research projects. Documenting taken-for-granted aspects of work in a structured manner provides a unique window into how such practices contribute to broader disciplinary norms or professional mindsets. Recorded conversations and observations of enacted practices may be compared to determine how goals and strategies for achieving them are drawn up with the actual implementation of tasks. This contributes to understanding how certain challenges are perceived by involved stakeholders, how contingencies are accounted for, and how indicators of success may change as work progresses. Using activity theory effectively is not about describing the minute processes of enacted work, but rather about investigating how tasks and operations are strategically implemented as part of a coordinated effort to achieve broader goals.</p>
-<h1 id="distributed-cognition">Distributed cognition</h1>
-<p>Highlight the interlocking convergence of a system’s components, which all contribute to the accomplishment of common goals. From a distributed cognition standpoint, the coherence of a system depends upon the shared goals and overall trajectory of all the system’s components <span class="citation" data-cites="hutchins1995">(Hutchins 1995)</span>. Distributed cognition helps trace the network of relationships, dependencies or functional subsystems that must be maintained in order for the entire system to succeed in unison.</p>
-<h1 id="situated-cognition">Situated cognition</h1>
-<p>Situated cognition examines the improvised, contingent and embodied experiences of human activity. It prioritizes emphasis on subjects’ outlooks, which are contextualized by their prior experiences. In this sense, situated cognition is closely related to Lave and Wenger’s <span class="citation" data-cites="lave1991">(1991)</span> theory of situated learning (also commonly referred to as a “communities of practice” approach), which examines how individuals acquire professional skills in relation to their social environments. Situated cognition lends itself to investigating rather fluid, open-ended and affect-oriented actions, and is geared towards understanding how actors draw from their prior experiences to navigate through unique situations. It may be applied to examine how people who are learning new skills learn how to work in new ways relative to what they are used to. In such situations, situated cognition enables observers to examine how people align their perspectives as work progresses, and to better understand how people’s general outlooks may have changed with the guidance of more experienced mentors.</p>
-<h1 id="actor-network-theory">Actor-network theory</h1>
-<p>Actor-network theory (ANT) posits that all things that comprise the world are co-created through their relations with other things. Non-human objects not only frame how human beings inhabit the world, but “push back” upon human actions with significant effects. “a disparate family of material-semiotic tools, sensibilities and methods of analysis that treat everything in the social and natural worlds as a continuously generated effect of the webs of relations within which they are located. It assumes that nothing has reality or form outside the enactment of those relations. Its studies explore and characterise the webs and the practices that carry them” <span class="citation" data-cites="law2008">(Law 2008: 141)</span>.</p>
-<h2 id="in-ssk" class="anchored">In SSK</h2>
-<p>ANT was used to better understand the physical and communicative mechanisms — which are made up of non-human agents and information objects — that scientists relied upon to capture, document and ascribe meaning to particular facets of the world. ANT posits that scientists can only identify, characterize and understand objects of interest by co-creating their conceptions of reality alongside non-human agents. Latour and Woolgar stated that science is primarily concerned with the creation of an ordered account of reality, rather than the transfer of information pertaining to the world into human-understandable formats. They characterize the latter of these two propositions as the practices enacted in order to fulfill the former aim. However, from a pragmatic perspective, these two processes may be rendered as intertwined and inseparable threads of a unified experience of knowledge production <span class="citation" data-cites="latour1986">(Latour and Woolgar 1986: 245)</span>.</p>
-<h2 id="example" class="anchored">Example</h2>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">STS ideas and frameworks</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-body">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Science and Technology Studies (STS) and Sociology of Scientific Knowledge (SSK) Examine archaeological research as cultural practice, or as ways of understanding the world through a complex series of physical and conceptual interactions between humans and the objects that captivate their interests <span class="citation" data-cites="pickering1992a">(<a href="#ref-pickering1992a" role="doc-biblioref">Pickering 1992</a>)</span>. Knowledge is not created in a vacuum; it is derived from prior knowledge and experiences that are deemed relevant to particular topics of research interest.</p>
+<section id="epistemic-culture" class="level1">
+<h1>Epistemic culture</h1>
+<p>Epistemic cultures are cultures of creating and warranting knowledge; ‘epistemic’ refers to knowledge and truth-related goals and practices as central elements of scientific and professional fields <span class="citation" data-cites="knorrcetina2001">(<a href="#ref-knorrcetina2001" role="doc-biblioref">Knorr Cetina 2001</a>)</span>. Framing scientific research as culture helps investigate knowledge production as collective, materializing, interactive, historical, social, political and informally learned human process. It allows me to see archaeological practice as peculiar. It allows me to consider how normative assumptions and dispositions are taken for granted as the only viable ways or acting or thinking.</p>
+</section>
+<section id="activity-theory" class="level1">
+<h1>Activity Theory</h1>
+<p>Examines the systematically-organized series of relations that comprise activities. Activities are understood as the relations between human subjects and the physical or conceptual tools or environments with or within which they act, and the motives or objectives that drive the system forward in a particular direction <span class="citation" data-cites="leontev1974">(<a href="#ref-leontev1974" role="doc-biblioref">Leont’ev 1974</a>: 22-23)</span>. Activity theory is useful to examine how people mobilize a series of physical and conceptual tools to overcome the conditions that separate actors’ current states from their desired goals. In this sense, activity theory prioritizes the situated perspectives and experiences of human subjects while still trying to account for the agency that tools exhibit in their experiences as components of activity systems delegated towards addressing particular tasks. More specifically, activity theory helps to draw generalized accounts of practices employed in research projects. Documenting taken-for-granted aspects of work in a structured manner provides a unique window into how such practices contribute to broader disciplinary norms or professional mindsets. Recorded conversations and observations of enacted practices may be compared to determine how goals and strategies for achieving them are drawn up with the actual implementation of tasks. This contributes to understanding how certain challenges are perceived by involved stakeholders, how contingencies are accounted for, and how indicators of success may change as work progresses. Using activity theory effectively is not about describing the minute processes of enacted work, but rather about investigating how tasks and operations are strategically implemented as part of a coordinated effort to achieve broader goals.</p>
+</section>
+<section id="distributed-cognition" class="level1">
+<h1>Distributed cognition</h1>
+<p>Highlight the interlocking convergence of a system’s components, which all contribute to the accomplishment of common goals. From a distributed cognition standpoint, the coherence of a system depends upon the shared goals and overall trajectory of all the system’s components <span class="citation" data-cites="hutchins1995">(<a href="#ref-hutchins1995" role="doc-biblioref">Hutchins 1995</a>)</span>. Distributed cognition helps trace the network of relationships, dependencies or functional subsystems that must be maintained in order for the entire system to succeed in unison.</p>
+</section>
+<section id="situated-cognition" class="level1">
+<h1>Situated cognition</h1>
+<p>Situated cognition examines the improvised, contingent and embodied experiences of human activity. It prioritizes emphasis on subjects’ outlooks, which are contextualized by their prior experiences. In this sense, situated cognition is closely related to Lave and Wenger’s <span class="citation" data-cites="lave1991">(<a href="#ref-lave1991" role="doc-biblioref">1991</a>)</span> theory of situated learning (also commonly referred to as a “communities of practice” approach), which examines how individuals acquire professional skills in relation to their social environments. Situated cognition lends itself to investigating rather fluid, open-ended and affect-oriented actions, and is geared towards understanding how actors draw from their prior experiences to navigate through unique situations. It may be applied to examine how people who are learning new skills learn how to work in new ways relative to what they are used to. In such situations, situated cognition enables observers to examine how people align their perspectives as work progresses, and to better understand how people’s general outlooks may have changed with the guidance of more experienced mentors.</p>
+</section>
+<section id="actor-network-theory" class="level1">
+<h1>Actor-network theory</h1>
+<p>Actor-network theory (ANT) posits that all things that comprise the world are co-created through their relations with other things. Non-human objects not only frame how human beings inhabit the world, but “push back” upon human actions with significant effects. “a disparate family of material-semiotic tools, sensibilities and methods of analysis that treat everything in the social and natural worlds as a continuously generated effect of the webs of relations within which they are located. It assumes that nothing has reality or form outside the enactment of those relations. Its studies explore and characterise the webs and the practices that carry them” <span class="citation" data-cites="law2008">(<a href="#ref-law2008" role="doc-biblioref">Law 2008</a>: 141)</span>.</p>
+<section id="in-ssk" class="level2">
+<h2 class="anchored" data-anchor-id="in-ssk">In SSK</h2>
+<p>ANT was used to better understand the physical and communicative mechanisms — which are made up of non-human agents and information objects — that scientists relied upon to capture, document and ascribe meaning to particular facets of the world. ANT posits that scientists can only identify, characterize and understand objects of interest by co-creating their conceptions of reality alongside non-human agents. Latour and Woolgar stated that science is primarily concerned with the creation of an ordered account of reality, rather than the transfer of information pertaining to the world into human-understandable formats. They characterize the latter of these two propositions as the practices enacted in order to fulfill the former aim. However, from a pragmatic perspective, these two processes may be rendered as intertwined and inseparable threads of a unified experience of knowledge production <span class="citation" data-cites="latour1986">(<a href="#ref-latour1986" role="doc-biblioref">Latour and Woolgar 1986</a>: 245)</span>.</p>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
 <p>The photographic outputs of a bioassay, which was a predominant object of discussion in their work, determines and represents the existence and qualities of discrete proteins that have been extracted from cell samples through reactions with specially selected reagents, marked with dyes selected for their non-reactive qualities, and pulled through a filtration medium that separates proteins according to their mass, molecular structure, and electromagnetic properties. A large number of material entities are thus selected and mobilized due to the researcher’s understanding that such an assemblage might contribute to the representation of a targeted set of phenomena. More specifically, certain reagents are added to cell samples that bind with proteins that constitute cell walls, allowing for inner proteins to be extracted. Other reagents that only bind to particular targeted proteins and that have been engineered to have certain identifiable physical and electromagnetic properties impart these qualities onto the now merged molecule composed of both targeted protein and reagent. Dyes that complement the design of the reagent and of the overall bioassay protocol are bound to these molecules, rendering them visible to the human eye. Molecules are then pulled through a conductive gel whose own material characteristics and density allow for only electrically charged molecules to be pulled through, given the placement of a polar-opposite charge at the far end of the gel. Once movement of the proteins have settled, (caused, in part, by the gradual solidification of the gel that inhibits further movement) the entire gel is photographed and the relative positions of dyed molecules are marked to denote their discrete existence and other relevant qualities rendered through association with their respective reagents. Knowledge is thus obtained by humans through the selective assembly of various material actors, whose interactions are already understood and deemed reliable, in order to render an account of reality based upon their projected experiences.</p>
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-hutchins1995" class="csl-entry" role="listitem">
 Hutchins, Edwin. 1995. <span>“How a Cockpit Remembers Its Speeds.”</span> <em>Cognitive Science</em> 19 (3): 265–88. <a href="https://doi.org/10.1207/s15516709cog1903_1">https://doi.org/10.1207/s15516709cog1903_1</a>.
 </div>
@@ -119,14 +416,22 @@ Leont’ev, A. N. 1974. <span>“The Problem of Activity in Psychology.”</span
 <div id="ref-pickering1992a" class="csl-entry" role="listitem">
 Pickering, Andrew. 1992. <em>Science as Practice and Culture</em>. University of Chicago Press. <a href="https://books.google.com?id=U_mL2pPGY7YC">https://books.google.com?id=U_mL2pPGY7YC</a>.
 </div>
-</div>
-
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-    tabsets.forEach(function(tabset) {
-      const tabby = new Tabby('#' + tabset.id);
-    });
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -225,7 +530,7 @@ Pickering, Andrew. 1992. <em>Science as Practice and Culture</em>. University of
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'light-border',
+        theme: 'quarto',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -525,6 +830,20 @@ Pickering, Andrew. 1992. <em>Science as Practice and Culture</em>. University of
     }
   });
   </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="https://webring.archaeo.social/previous?host=zackbatist.info">←</a> <a href="https://webring.archaeo.social">ARCHAEORING</a> <a href="https://webring.archaeo.social/next?host=zackbatist.info">→</a> <a href="https://webring.archaeo.social/random?host=zackbatist.info" style="font-size: 20px">↝</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p><a class="link me-1" href="https://github.com/zackbatist" title="github" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-label="github"></i></a> <a class="link me-1" href="https://orcid.org/0000-0003-1072-5198" title="orcid" target="_blank" rel="noopener"><i class="ai  ai-orcid"></i></a> <a class="link me-1" href="https://archaeo.social/@zackbatist" title="Mastodon" target="_blank" rel="noopener"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></a> <a class="link me-1" href="https://zackbatist.info/posts.xml" title="rss" target="_blank" rel="noopener"><i class="fa-solid fa-rss-square" aria-label="rss-square"></i></a></p>
+</div>
+    <div class="nav-footer-right">
+<p>This page built with ❤️ and <a href="https://quarto.org/" target="_blank" rel="noopener">Quarto</a> | <a class="link me-1" href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a></p>
+</div>
+  </div>
+</footer>
 
 
 
