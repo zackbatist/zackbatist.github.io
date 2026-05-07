@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Editor — Zachary Batist</title>
+<style>
+:root {
+  --bg: #f5f5f2; --fg: #111; --muted: #555; --faint: #999;
+  --rule: #d0d0ca; --panel: #fff; --input-bg: #fff;
+  --accent: #2d4a6b; --accent-light: #dce5f0;
+  --success: #1a7a4a; --success-light: #d4edda;
+  --tag-bg: #e5e5e0; --code-bg: #eeeee9;
+  --nav-w: 280px;
+}
+body[data-theme="dark"] {
+  --bg: #1a1d20; --fg: #DDE6ED; --muted: #9DB2BF; --faint: #6a8090;
+  --rule: #2e3338; --panel: #222529; --input-bg: #1a1d20;
+  --accent: #7aafd4; --accent-light: #1e2d3d;
+  --success: #3dbf7a; --success-light: #1a2e22;
+  --tag-bg: #2a2f33; --code-bg: #1e2124;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, sans-serif; font-size: 17px; line-height: 1.5; color: var(--fg); background: var(--bg); transition: background 0.2s, color 0.2s; }
+.layout { display: grid; grid-template-columns: var(--nav-w) 1fr; min-height: 100vh; }
+
+.sidebar { font-size: 17px; background: var(--panel); border-right: 0.5px solid var(--rule); padding: 1rem 0 4rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+.sidebar-head { display: flex; align-items: center; justify-content: space-between; padding: 0 1rem 0.6rem; color: var(--muted); }
+.theme-btn { font-size: inherit; background: none; border: 0.5px solid var(--rule); border-radius: 3px; padding: 2px 7px; cursor: pointer; color: var(--faint); }
+.theme-btn:hover { color: var(--fg); }
+.sidebar-load { padding: 0 1rem 0.6rem; }
+.sidebar-load input[type=file] { display: none; }
+.file-label { display: block; background: var(--accent); color: #fff; border-radius: 4px; padding: 5px 10px; text-align: center; cursor: pointer; margin-bottom: 0.35rem; }
+.file-label:hover { opacity: 0.85; }
+.load-st { color: var(--faint); min-height: 1.2em; }
+.load-st.ok { color: var(--success); }
+.load-st.err { color: #d00; }
+.nav-group { border-top: 0.5px solid var(--rule); padding: 0.25rem 0; }
+.nav-group:first-of-type { border-top: none; }
+.nav-item { display: block; padding: 4px 1rem; color: var(--muted); cursor: pointer; text-decoration: none; border-left: 2px solid transparent; }
+.nav-item:hover { color: var(--fg); }
+.nav-item.active { color: var(--accent); border-left-color: var(--accent); }
+
+.main { padding: 1.5rem 2rem 6rem; max-width: 900px; }
+.page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 0.5px solid var(--rule); }
+.page-header h1 { font-weight: 600; }
+.hdr-actions { display: flex; gap: 0.5rem; }
+.btn { font-size: inherit; padding: 5px 14px; border-radius: 4px; cursor: pointer; border: 0.5px solid var(--rule); background: var(--panel); color: var(--fg); }
+.btn:hover { border-color: var(--muted); }
+.btn:disabled { opacity: 0.38; cursor: default; pointer-events: none; }
+.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-primary:hover { opacity: 0.88; }
+.btn-success { background: var(--success); color: #fff; border-color: var(--success); }
+.status { color: var(--faint); padding: 0.5rem 0.8rem; background: var(--code-bg); border-radius: 4px; margin-bottom: 1rem; }
+.status.ok { background: var(--success-light); color: var(--success); }
+.status.err { background: #fde8e8; color: #a00; }
+
+.section-panel { display: none; }
+.section-panel.active { display: block; }
+.sec-title { font-weight: 600; color: var(--muted); margin-bottom: 0.9rem; text-transform: uppercase; letter-spacing: 0.06em;  }
+
+.entry-list { margin-bottom: 1rem; }
+.entry-item { background: var(--panel); border: 0.5px solid var(--rule); border-radius: 4px; margin-bottom: 0.35rem; }
+.entry-hdr { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.75rem; cursor: pointer; border-radius: 4px; }
+.entry-hdr:hover { background: var(--bg); }
+.entry-yr { color: var(--faint); white-space: nowrap; min-width: 5rem; }
+.entry-prev { color: var(--muted); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.entry-acts { display: flex; gap: 0.25rem; flex-shrink: 0; }
+.ebtn {  padding: 2px 8px; border-radius: 3px; cursor: pointer; border: 0.5px solid var(--rule); background: var(--bg); color: var(--muted); }
+.ebtn:hover { color: var(--fg); border-color: var(--muted); }
+.ebtn.del { color: #c00; }
+.ebtn.del:hover { border-color: #c00; background: #fde8e8; }
+.entry-body { display: none; padding: 0.75rem; border-top: 0.5px solid var(--rule); background: var(--bg); border-radius: 0 0 4px 4px; }
+.entry-body.open { display: block; }
+
+.add-sec { background: var(--panel); border: 0.5px solid var(--rule); border-radius: 4px; padding: 1rem; margin-bottom: 1.25rem; }
+.add-sec h3 { font-weight: 600; margin-bottom: 0.75rem; color: var(--accent); }
+
+.fg { display: flex; flex-direction: column; gap: 4px; }
+.fl {  color: var(--muted); }
+input, textarea, select { font-family: inherit; font-size: inherit; color: var(--fg); background: var(--input-bg); border: 0.5px solid var(--rule); border-radius: 3px; padding: 5px 8px; width: 100%; }
+input:focus, textarea:focus, select:focus { outline: none; border-color: var(--accent); }
+textarea { resize: vertical; min-height: 52px; }
+textarea.mono { font-family: monospace;  min-height: 100px; }
+input[type=checkbox] { width: auto; }
+.form-row { display: grid; gap: 8px 12px; margin-bottom: 8px; }
+.r2 { grid-template-columns: 1fr 1fr; }
+.r4 { grid-template-columns: 2fr 70px 70px 90px; }
+.sep { height: 0.5px; background: var(--rule); margin: 10px 0; }
+
+.authors-box { border: 0.5px solid var(--rule); border-radius: 3px; padding: 5px; min-height: 32px; display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px; background: var(--input-bg); }
+.chip { display: inline-flex; align-items: center; gap: 3px; background: var(--tag-bg); border-radius: 3px; padding: 2px 7px;  color: var(--muted); }
+.chip.me { background: var(--accent-light); color: var(--accent); }
+.chip-x { background: none; border: none; cursor: pointer; color: var(--faint); font-size: 15px; line-height: 1; padding: 0; }
+.author-row { display: grid; grid-template-columns: 1fr auto auto; gap: 6px; align-items: center; }
+.me-lbl { display: flex; align-items: center; gap: 4px;  color: var(--muted); cursor: pointer; white-space: nowrap; }
+
+.links-wrap { margin-bottom: 5px; }
+.link-row { display: grid; grid-template-columns: 110px 1fr auto; gap: 6px; align-items: center; margin-bottom: 5px; }
+.lx { background: none; border: none; cursor: pointer; color: #c00; font-size: 18px; padding: 0 2px; line-height: 1; }
+.add-link {  color: var(--faint); background: none; border: none; cursor: pointer; text-decoration: underline; padding: 0; }
+.add-link:hover { color: var(--fg); }
+
+.fetch-row { display: grid; grid-template-columns: 1fr auto; gap: 6px; margin-bottom: 6px; }
+.fetch-st {  color: var(--faint); min-height: 1.2em; margin-bottom: 4px; }
+.fetch-st.ok { color: var(--success); }
+.fetch-st.err { color: #d00; }
+
+.check-row { display: flex; align-items: center; gap: 6px; cursor: pointer; margin: 6px 0; }
+.form-actions { margin-top: 10px; }
+
+.misc-note {  color: var(--faint); background: var(--code-bg); border-radius: 3px; padding: 0.5rem 0.75rem; margin-bottom: 0.75rem; }
+.misc-note code { font-family: monospace;  background: var(--rule); padding: 1px 4px; border-radius: 2px; }
+.lang-row { display: grid; grid-template-columns: 130px 1fr auto; gap: 6px; align-items: center; margin-bottom: 5px; }
+.sub-label {  font-weight: 500; color: var(--muted); margin: 0.75rem 0 0.4rem; }
+</style>
+</head>
+<body>
+<div class="layout">
+
+<aside class="sidebar">
+  <div class="sidebar-head">
+    <span>CV Editor</span>
+    <button class="theme-btn" id="theme-btn">Dark</button>
+  </div>
+  <div class="sidebar-load">
+    <label class="file-label" for="file-input">📂 Load cv.html</label>
+    <input type="file" id="file-input" accept=".html">
+    <div id="load-st" class="load-st">No file loaded.</div>
+  </div>
+  <div class="nav-group">
+    <a class="nav-item" data-section="position">Position</a>
+    <a class="nav-item" data-section="education">Education</a>
+  </div>
+  <div class="nav-group">
+    <a class="nav-item" data-section="articles">Journal Articles</a>
+    <a class="nav-item" data-section="book">Book Contributions</a>
+    <a class="nav-item" data-section="proceedings">Conference Proceedings</a>
+    <a class="nav-item" data-section="theses">Theses</a>
+    <a class="nav-item" data-section="software">Software</a>
+    <a class="nav-item" data-section="datasets">Datasets</a>
+  </div>
+  <div class="nav-group">
+    <a class="nav-item" data-section="grants">Grants & Fellowships</a>
+    <a class="nav-item" data-section="awards">Awards & Honours</a>
+  </div>
+  <div class="nav-group">
+    <a class="nav-item" data-section="ta">Teaching Assistant</a>
+    <a class="nav-item" data-section="workshops">Workshops & Short Courses</a>
+  </div>
+  <div class="nav-group">
+    <a class="nav-item" data-section="invited">Invited Presentations</a>
+    <a class="nav-item" data-section="conference">Conference Presentations</a>
+  </div>
+  <div class="nav-group">
+    <a class="nav-item" data-section="initiatives">Other Open Initiatives</a>
+  </div>
+  <div class="nav-group">
+    <a class="nav-item" data-section="leadership">Community Leadership</a>
+    <a class="nav-item" data-section="committees">Committees</a>
+    <a class="nav-item" data-section="organizing">Conference & Panel Organizer</a>
+    <a class="nav-item" data-section="interestGroups">Interest Groups</a>
+  </div>
+  <div class="nav-group">
+    <a class="nav-item" data-section="misc">Reviewer, Certifications, Languages & Outreach</a>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="page-header">
+    <h1>CV Editor</h1>
+    <div class="hdr-actions">
+      <button class="btn" id="preview-btn" disabled>Preview</button>
+      <button class="btn btn-primary" id="download-btn" disabled>Download cv.html</button>
+    </div>
+  </div>
+  <div id="status" class="status">Load a cv.html file to begin editing.</div>
+  <div id="sections"></div>
+</main>
+</div>
+
+<datalist id="year-opts">
+  <option value="In progress">
+  <option value="In review">
+  <option value="Submitted">
+  <option value="Forthcoming">
+</datalist>
+
+<datalist id="link-types">
+  <option value="doi">
+  <option value="preprint">
+  <option value="postprint">
+  <option value="github">
+  <option value="slides">
+  <option value="website">
+  <option value="hdl">
+  <option value="bib">
+</datalist>
+
+<script>
+let originalSource = '';
+let CV = null;
+let knownAuthors = [];
+
+// Section definitions: path in CV object + form type
+const SECTIONS = {
+  position:       { path: ['position'],                       form: 'simple' },
+  education:      { path: ['education'],                      form: 'simple' },
+  articles:       { path: ['publications','articles'],        form: 'article' },
+  book:           { path: ['publications','book'],            form: 'book' },
+  proceedings:    { path: ['publications','proceedings'],     form: 'proceedings' },
+  theses:         { path: ['publications','theses'],          form: 'thesis' },
+  software:       { path: ['softwareData','software'],        form: 'software' },
+  datasets:       { path: ['softwareData','datasets'],        form: 'dataset' },
+  initiatives:    { path: ['softwareData','initiatives'],     form: 'simple' },
+  grants:         { path: ['grantsAwards','grants'],          form: 'simple' },
+  awards:         { path: ['grantsAwards','awards'],          form: 'simple' },
+  ta:             { path: ['teaching','ta'],                  form: 'simple' },
+  workshops:      { path: ['teaching','workshops'],           form: 'simple' },
+  invited:        { path: ['presentations','invited'],        form: 'talk' },
+  conference:     { path: ['presentations','conference'],     form: 'talk', poster: true },
+  leadership:     { path: ['service','leadership'],           form: 'simple' },
+  committees:     { path: ['service','committees'],           form: 'simple' },
+  organizing:     { path: ['service','organizing'],           form: 'simple' },
+  interestGroups: { path: ['service','interestGroups'],       form: 'simple' },
+  misc:           { path: null,                               form: 'misc' }
+};
+
+const PUB_FORMS = new Set(['article','book','proceedings','thesis','software','dataset']);
+
+function getSection(id) {
+  const p = SECTIONS[id].path; if (!p||!CV) return null;
+  return p.reduce((o,k)=>o&&o[k], CV);
+}
+function setSection(id, val) {
+  const p = SECTIONS[id].path; if (!p) return;
+  let o=CV; for (let i=0;i<p.length-1;i++) o=o[p[i]];
+  o[p[p.length-1]]=val;
+  document.getElementById('download-btn').disabled=false;
+  document.getElementById('preview-btn').disabled=false;
+}
+
+function collectFromCV(cv) {
+  const authors = new Set();
+  const linkTypes = new Set(['doi','preprint','postprint','github','slides','website','hdl','bib']);
+  Object.values(SECTIONS).forEach(({path})=>{
+    if (!path) return;
+    const val = path.reduce((o,k)=>o&&o[k],cv);
+    if (!Array.isArray(val)) return;
+    val.forEach(e=>{
+      (e.authors||[]).forEach(a=>{if(a.name)authors.add(a.name);});
+      (e.links||[]).forEach(l=>{if(l.type)linkTypes.add(l.type);});
+    });
+  });
+  knownAuthors = [...authors].sort();
+  // Update datalists
+  const authDl = document.getElementById('author-opts');
+  if (authDl) { authDl.innerHTML=''; knownAuthors.forEach(a=>{const o=document.createElement('option');o.value=a;authDl.appendChild(o);}); }
+  const ltDl = document.getElementById('link-types');
+  if (ltDl) { ltDl.innerHTML=''; [...linkTypes].forEach(t=>{const o=document.createElement('option');o.value=t;ltDl.appendChild(o);}); }
+}
+
+document.getElementById('file-input').addEventListener('change', function(e) {
+  const file = e.target.files[0]; if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    originalSource = ev.target.result;
+    try {
+      CV = extractCV(originalSource);
+      collectFromCV(CV);
+      setStatus('ok', `✓ Loaded: ${file.name}`);
+      document.getElementById('load-st').textContent = `✓ ${file.name}`;
+      document.getElementById('load-st').className = 'load-st ok';
+      renderAllSections();
+      document.getElementById('download-btn').disabled = false;
+      document.getElementById('preview-btn').disabled = false;
+    } catch(err) {
+      setStatus('err', `Error: ${err.message}`);
+      document.getElementById('load-st').textContent = '✗ Parse error';
+      document.getElementById('load-st').className = 'load-st err';
+    }
+  };
+  reader.readAsText(file);
+});
+
+// Add author datalist to document
+const authDl = document.createElement('datalist');
+authDl.id = 'author-opts';
+document.body.appendChild(authDl);
+
+function extractCV(source) {
+  const start = source.indexOf('const CV = {');
+  const end = source.indexOf('}; // end CV');
+  if (start === -1 || end === -1) throw new Error('Marker not found. File must contain "const CV = {...}; // end CV"');
+  const objStr = source.slice(start + 'const CV = '.length, end + 1);
+  return JSON.parse(objStr);
+}
+function injectCV(source, cvObj) {
+  const start = source.indexOf('const CV = {');
+  const end = source.indexOf('}; // end CV') + '}; // end CV'.length;
+  return source.slice(0, start) + 'const CV = ' + JSON.stringify(cvObj, null, 2) + '; // end CV' + source.slice(end);
+}
+function setStatus(cls, msg) {
+  const el = document.getElementById('status');
+  el.className = 'status'+(cls?' '+cls:''); el.textContent = msg;
+}
+
+function renderAllSections() {
+  const container = document.getElementById('sections');
+  container.innerHTML = '';
+  Object.keys(SECTIONS).forEach(id => {
+    const panel = document.createElement('div');
+    panel.className = 'section-panel'; panel.id = 'panel-'+id;
+    panel.appendChild(id==='misc' ? renderMiscPanel() : renderSectionPanel(id));
+    container.appendChild(panel);
+  });
+  activateSection('position');
+  document.querySelectorAll('.nav-item[data-section]').forEach(a => {
+    a.addEventListener('click', e => { e.preventDefault(); activateSection(a.dataset.section); });
+  });
+}
+
+function activateSection(id) {
+  document.querySelectorAll('.section-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(a=>a.classList.remove('active'));
+  document.getElementById('panel-'+id)?.classList.add('active');
+  document.querySelector(`.nav-item[data-section="${id}"]`)?.classList.add('active');
+}
+
+function renderSectionPanel(id) {
+  const entries = getSection(id)||[];
+  const frag = document.createDocumentFragment();
+  const t = document.createElement('div'); t.className='sec-title';
+  t.textContent = id.replace(/([A-Z])/g,' $1').replace(/^./,c=>c.toUpperCase());
+  frag.appendChild(t);
+  const list = document.createElement('div'); list.className='entry-list';
+  entries.forEach((entry,i) => list.appendChild(renderEntryItem(id,entry,i)));
+  frag.appendChild(list);
+  frag.appendChild(renderAddForm(id));
+  return frag;
+}
+
+function entryPreview(entry) {
+  if (entry.authors?.length) return `${entry.authors[0].name} — ${(entry.title||'').substring(0,55)}`;
+  return (entry.content||'').replace(/<[^>]+>/g,'').substring(0,80);
+}
+
+function mkBtn(text, cls, fn) {
+  const b = document.createElement('button'); b.className=cls; b.textContent=text;
+  b.onclick = e => { e.stopPropagation(); fn(); }; return b;
+}
+
+function renderEntryItem(sid, entry, idx) {
+  const item = document.createElement('div'); item.className='entry-item';
+  const hdr = document.createElement('div'); hdr.className='entry-hdr';
+  const yr = document.createElement('span'); yr.className='entry-yr';
+  yr.textContent = [entry.year, entry.month].filter(Boolean).join(' ');
+  const prev = document.createElement('span'); prev.className='entry-prev'; prev.textContent=entryPreview(entry);
+  const acts = document.createElement('div'); acts.className='entry-acts';
+  acts.append(
+    mkBtn('edit','ebtn',()=>toggleEdit(sid,idx)),
+    mkBtn('↑','ebtn',()=>moveEntry(sid,idx,-1)),
+    mkBtn('↓','ebtn',()=>moveEntry(sid,idx,1)),
+    mkBtn('✕','ebtn del',()=>deleteEntry(sid,idx))
+  );
+  hdr.append(yr,prev,acts);
+  const body = document.createElement('div'); body.className='entry-body'; body.id=`body-${sid}-${idx}`;
+  item.append(hdr,body);
+  return item;
+}
+
+function toggleEdit(sid,idx) {
+  const body = document.getElementById(`body-${sid}-${idx}`);
+  if (body.classList.contains('open')) { body.classList.remove('open'); return; }
+  const entries = getSection(sid);
+  body.innerHTML = '';
+  body.appendChild(buildForm(sid, entries[idx], updated => {
+    entries[idx]=updated; setSection(sid,entries); refreshSection(sid);
+  }));
+  body.classList.add('open');
+}
+
+function deleteEntry(sid,idx) {
+  if (!confirm('Delete this entry?')) return;
+  const e=getSection(sid); e.splice(idx,1); setSection(sid,e); refreshSection(sid);
+}
+function moveEntry(sid,idx,dir) {
+  const e=getSection(sid); const ni=idx+dir;
+  if (ni<0||ni>=e.length) return;
+  [e[idx],e[ni]]=[e[ni],e[idx]]; setSection(sid,e); refreshSection(sid);
+}
+function refreshSection(sid) {
+  const panel=document.getElementById('panel-'+sid); panel.innerHTML='';
+  panel.appendChild(sid==='misc'?renderMiscPanel():renderSectionPanel(sid));
+}
+
+function renderAddForm(sid) {
+  const wrap = document.createElement('div'); wrap.className='add-sec';
+  const h3 = document.createElement('h3'); h3.textContent='+ Add entry'; wrap.appendChild(h3);
+  const {form} = SECTIONS[sid];
+  const formWrap = document.createElement('div');
+
+  if (PUB_FORMS.has(form)) {
+    const fetchRow = document.createElement('div'); fetchRow.className='fetch-row';
+    const fetchIn = document.createElement('input');
+    fetchIn.placeholder = 'DOI, handle.net URL, or article URL to auto-fill';
+    const fetchSt = document.createElement('div'); fetchSt.className='fetch-st';
+    const fc = document.createElement('div');
+    const fetchBtn = mkBtn('Fetch','btn', ()=>doFetch(fetchIn.value,fetchSt,fc,sid,updated=>{
+      const entries=getSection(sid)||[]; entries.unshift(updated); setSection(sid,entries); refreshSection(sid); activateSection(sid);
+    }));
+    fetchIn.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();fetchBtn.click();}});
+    fetchRow.append(fetchIn,fetchBtn);
+    formWrap.append(fetchRow,fetchSt,mkSep());
+    buildForm(sid,{},updated=>{
+      const entries=getSection(sid)||[]; entries.push(updated); setSection(sid,entries); refreshSection(sid); activateSection(sid);
+    },fc);
+    formWrap.appendChild(fc);
+  } else {
+    formWrap.appendChild(buildForm(sid,{},updated=>{
+      const entries=getSection(sid)||[]; entries.push(updated); setSection(sid,entries); refreshSection(sid); activateSection(sid);
+    }));
+  }
+  wrap.appendChild(formWrap);
+  return wrap;
+}
+
+function mkSep() { const d=document.createElement('div'); d.className='sep'; return d; }
+
+function buildYearField(val) {
+  const wrap=document.createElement('div'); wrap.style.cssText='display:grid;grid-template-columns:1fr auto;gap:5px';
+  const sel=document.createElement('select');
+  const yearOpt=document.createElement('option'); yearOpt.value='__year__'; yearOpt.textContent='Year…';
+  const customOpt=document.createElement('option'); customOpt.value='__custom__'; customOpt.textContent='Custom…';
+  [yearOpt,...['In progress','In review','Submitted','Forthcoming'].map(o=>{const op=document.createElement('option');op.value=o;op.textContent=o;return op;}),customOpt].forEach(o=>sel.appendChild(o));
+  const txt=document.createElement('input'); txt.style.display='none'; txt.placeholder='year or status';
+  if(['In progress','In review','Submitted','Forthcoming'].includes(val)){sel.value=val;}
+  else if(val){sel.value='__year__';txt.style.display='';txt.value=val;}
+  else{sel.value='__year__';txt.style.display='';}
+  sel.addEventListener('change',()=>{txt.style.display=(sel.value==='__year__'||sel.value==='__custom__')?'':'none';});
+  wrap.append(sel,txt);
+  wrap.getValue=()=>(sel.value==='__year__'||sel.value==='__custom__')?txt.value.trim():sel.value;
+  wrap.addEventListener=(...args)=>sel.addEventListener(...args);
+  return wrap;
+}
+
+function buildForm(sid, entry, onSave, container) {
+  entry = entry||{};
+  const {form, poster:hasPosters} = SECTIONS[sid];
+  const wrap = container||document.createElement('div');
+  if (container) container.innerHTML='';
+
+  function fg(label) {
+    const g=document.createElement('div'); g.className='fg';
+    if (label){const l=document.createElement('label');l.className='fl';l.textContent=label;g.appendChild(l);}
+    return g;
+  }
+  function inp(val,ph,list) {
+    const i=document.createElement('input');
+    i.value=val||''; i.placeholder=ph||'';
+    if(list) i.setAttribute('list',list);
+    return i;
+  }
+  function ta(val,mono) {
+    const t=document.createElement('textarea');
+    if(mono) t.className='mono';
+    t.value=val||''; return t;
+  }
+
+  // Year / Month
+  const r1=document.createElement('div'); r1.className='form-row'; r1.style.cssText='display:grid;grid-template-columns:2fr 1fr;gap:8px 12px;margin-bottom:8px';
+  const yFg=fg('Year / Status');
+  const yField=buildYearField(entry.year); yFg.appendChild(yField); r1.appendChild(yFg);
+  const mFg=fg('Month'); const mIn=inp(entry.month,'e.g. April'); mFg.appendChild(mIn); r1.appendChild(mFg);
+  wrap.appendChild(r1);
+
+  let autoGen = null;
+  let authorsState=(entry.authors||[]).map(a=>({...a}));
+  let linksState=(entry.links||[]).map(l=>({...l}));
+  let fields={};
+  let titleIn,contentIn,descIn,citeIn,absIn,bibIn,posterChk;
+
+  if (PUB_FORMS.has(form)) {
+    wrap.appendChild(mkSep());
+
+    // Authors
+    const authFg=fg('Authors'); wrap.appendChild(authFg);
+    const authBox=document.createElement('div'); authBox.className='authors-box'; authFg.appendChild(authBox);
+    function refreshChips() {
+      authBox.innerHTML='';
+      authorsState.forEach((a,i)=>{
+        const chip=document.createElement('span'); chip.className='chip'+(a.me?' me':'');
+        chip.textContent=a.name+(a.me?' (me)':'');
+        const rx=document.createElement('button'); rx.className='chip-x'; rx.textContent='×';
+        rx.onclick=()=>{authorsState.splice(i,1);refreshChips();}; chip.appendChild(rx); authBox.appendChild(chip);
+      });
+    }
+    refreshChips();
+    const authRow=document.createElement('div'); authRow.className='author-row'; authFg.appendChild(authRow);
+    const nameIn=inp('','Name (Last, First or First Last)','author-opts'); authRow.appendChild(nameIn);
+    const meL=document.createElement('label'); meL.className='me-lbl';
+    const meChk=document.createElement('input'); meChk.type='checkbox';
+    meL.append(meChk,document.createTextNode('me')); authRow.appendChild(meL);
+    const addAuthBtn=mkBtn('Add ↵','btn',()=>{
+      if(!nameIn.value.trim())return;
+      authorsState.push({name:nameIn.value.trim(),...(meChk.checked?{me:true}:{})});
+      if(!knownAuthors.includes(nameIn.value.trim())){
+        knownAuthors.push(nameIn.value.trim()); knownAuthors.sort();
+        const dl=document.getElementById('author-opts');
+        if(dl){dl.innerHTML='';knownAuthors.forEach(a=>{const o=document.createElement('option');o.value=a;dl.appendChild(o);});}
+      }
+      nameIn.value=''; meChk.checked=false; refreshChips();
+    });
+    nameIn.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();addAuthBtn.click();}});
+    authRow.appendChild(addAuthBtn);
+    wrap.appendChild(mkSep());
+
+    // Title
+    if (form==='software'||form==='dataset') {
+      const tFg=fg('Title'); titleIn=inp(entry.title||'',''); tFg.appendChild(titleIn); wrap.appendChild(tFg);
+    } else {
+      const tFg=fg('Title'); titleIn=ta(entry.title); tFg.appendChild(titleIn); wrap.appendChild(tFg);
+    }
+
+    // Venue fields per BibLaTeX entry type
+    if (form==='article') {
+      // @article: journaltitle, volume, number, pages
+      const vr=document.createElement('div'); vr.className='form-row r4'; vr.style.marginTop='8px';
+      const jFg=fg('Journal'); const jIn=inp(entry.venue?.journal,''); jFg.appendChild(jIn); vr.appendChild(jFg);
+      const volFg=fg('Vol.'); const volIn=inp(entry.venue?.volume,''); volFg.appendChild(volIn); vr.appendChild(volFg);
+      const issFg=fg('Issue'); const issIn=inp(entry.venue?.issue,''); issFg.appendChild(issIn); vr.appendChild(issFg);
+      const pgFg=fg('Pages'); const pgIn=inp(entry.venue?.pages,''); pgFg.appendChild(pgIn); vr.appendChild(pgFg);
+      wrap.appendChild(vr); fields={journal:jIn,volume:volIn,issue:issIn,pages:pgIn};
+    } else if (form==='book') {
+      // @incollection: booktitle, editor, publisher, location
+      const btFg=fg('Book title'); const btIn=ta(entry.venue?.booktitle||''); btFg.appendChild(btIn); btFg.style.marginTop='8px'; wrap.appendChild(btFg);
+      const vr2=document.createElement('div'); vr2.className="form-row"; vr2.style.cssText="display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px 12px;margin-top:8px";
+      const edFg=fg('Editor(s)'); const edIn=inp(entry.venue?.editor||'','','author-opts'); edFg.appendChild(edIn); vr2.appendChild(edFg);
+      const pubFg=fg('Publisher'); const pubIn=inp(entry.venue?.publisher||'',''); pubFg.appendChild(pubIn); vr2.appendChild(pubFg);
+      const locFg=fg('Location'); const locIn=inp(entry.venue?.location||'',''); locFg.appendChild(locIn); vr2.appendChild(locFg);
+      wrap.appendChild(vr2);
+      fields={booktitle:btIn,editor:edIn,publisher:pubIn,location:locIn};
+    } else if (form==='proceedings') {
+      // @inproceedings: booktitle, editor, publisher, location
+      const btFg=fg('Proceedings title'); const btIn=ta(entry.venue?.booktitle||''); btFg.appendChild(btIn); btFg.style.marginTop='8px'; wrap.appendChild(btFg);
+      const vr2=document.createElement('div'); vr2.className="form-row"; vr2.style.cssText="display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px 12px;margin-top:8px";
+      const edFg=fg('Editor(s)'); const edIn=inp(entry.venue?.editor||'','','author-opts'); edFg.appendChild(edIn); vr2.appendChild(edFg);
+      const pubFg=fg('Publisher'); const pubIn=inp(entry.venue?.publisher||'',''); pubFg.appendChild(pubIn); vr2.appendChild(pubFg);
+      const locFg=fg('Location'); const locIn=inp(entry.venue?.location||'',''); locFg.appendChild(locIn); vr2.appendChild(locFg);
+      wrap.appendChild(vr2);
+      fields={booktitle:btIn,editor:edIn,publisher:pubIn,location:locIn};
+    } else if (form==='thesis') {
+      // @thesis: type, institution
+      const vr=document.createElement('div'); vr.style.cssText='display:grid;grid-template-columns:120px 1fr;gap:8px 12px;margin-top:8px';
+      const typFg=fg('Degree'); const typSel=document.createElement('select');
+      [['phdthesis','PhD'],['mathesis',"Master's"]].forEach(([v,l])=>{
+        const o=document.createElement('option');o.value=v;o.textContent=l;typSel.appendChild(o);
+      });
+      if(entry.venue?.type) typSel.value=entry.venue.type;
+      typFg.appendChild(typSel); vr.appendChild(typFg);
+      const instFg=fg('Institution'); const instIn=inp(entry.venue?.institution||'',''); instFg.appendChild(instIn); vr.appendChild(instFg);
+      const supFg=fg('Supervisor'); const supIn=inp(entry.venue?.supervisor||'',''); supFg.appendChild(supIn);
+      wrap.appendChild(vr); wrap.appendChild(supFg);
+      fields={_type:typSel,institution:instIn,supervisor:supIn};
+    } else if (form==='software') {
+      // @software: version (optional), url via links
+      const verFg=fg('Version (optional)'); const verIn=inp(entry.version||'','e.g. 1.0.0'); verFg.appendChild(verIn); verFg.style.marginTop='8px'; wrap.appendChild(verFg);
+      fields={version:verIn};
+    } else if (form==='dataset') {
+      // @dataset: publisher (repository), doi via links
+      const pubFg=fg('Publisher / Repository'); const pubIn=inp(entry.venue?.publisher||'','e.g. Zenodo'); pubFg.appendChild(pubIn); pubFg.style.marginTop='8px'; wrap.appendChild(pubFg);
+      fields={publisher:pubIn};
+    }
+
+    // Description
+    const dFg=fg('Description (optional muted line)'); descIn=ta(entry.desc); dFg.appendChild(descIn); wrap.appendChild(dFg);
+    wrap.appendChild(mkSep());
+
+    // Links
+    wrap.appendChild(buildLinksEl(linksState));
+    wrap.appendChild(mkSep());
+
+    // Abstract / Citation / BibLaTeX
+    const aFg=fg('Abstract'); absIn=ta(entry.abstract); aFg.appendChild(absIn); wrap.appendChild(aFg);
+
+    const autoNote=document.createElement('div');
+    autoNote.style.cssText='font-size:13px;color:var(--faint);margin:6px 0 4px';
+    autoNote.textContent='Citation and BibLaTeX are auto-generated from the fields above. Edit to override.';
+    wrap.appendChild(autoNote);
+
+    const cFg=fg('Citation (Chicago)'); citeIn=ta(entry.cite); cFg.appendChild(citeIn); wrap.appendChild(cFg);
+    const bFg=fg('BibLaTeX'); bibIn=ta(entry.bib,true); bFg.appendChild(bibIn); wrap.appendChild(bFg);
+
+    // Auto-generate on any field change
+    autoGen = function() {
+      const e={
+        authors:authorsState,
+        title:titleIn?.value||'',
+        year:yField.getValue(),
+        venue:form==='article'?{journal:fields.journal?.value,volume:fields.volume?.value,issue:fields.issue?.value,pages:fields.pages?.value}:
+              (form==='book'||form==='proceedings')?{booktitle:fields.booktitle?.value,editor:fields.editor?.value,publisher:fields.publisher?.value,location:fields.location?.value}:
+              form==='thesis'?{type:fields._type?.value,institution:fields.institution?.value}:{}
+      };
+      const doiLink=linksState.find(l=>l.type==='doi');
+      const doi=doiLink?doiLink.url.replace(/^https?:\/\/doi\.org\//,''):'';
+      if(!citeIn.dataset.manual) citeIn.value=genCite(e,doi);
+      if(!bibIn.dataset.manual) bibIn.value=genBib(e,doi);
+    }
+    citeIn.addEventListener('input',()=>{citeIn.dataset.manual='1';});
+    bibIn.addEventListener('input',()=>{bibIn.dataset.manual='1';});
+    // Wire up auto-gen to relevant inputs
+    [yField,mIn].forEach(el=>el.addEventListener('input',autoGen));
+    if(titleIn) titleIn.addEventListener('input',autoGen);
+    Object.values(fields).forEach(f=>{if(f&&f.addEventListener)f.addEventListener('input',autoGen);});
+
+  } else if (form==='talk') {
+    wrap.appendChild(mkSep());
+    // Authors (optional for invited talks)
+    const authFg=fg('Authors'); wrap.appendChild(authFg);
+    const authBox=document.createElement('div'); authBox.className='authors-box'; authFg.appendChild(authBox);
+    function refreshChips2(){authBox.innerHTML='';authorsState.forEach((a,i)=>{const chip=document.createElement('span');chip.className='chip'+(a.me?' me':'');chip.textContent=a.name+(a.me?' (me)':'');const rx=document.createElement('button');rx.className='chip-x';rx.textContent='×';rx.onclick=()=>{authorsState.splice(i,1);refreshChips2();};chip.appendChild(rx);authBox.appendChild(chip);});}
+    refreshChips2();
+    const authRow2=document.createElement('div'); authRow2.className='author-row'; authFg.appendChild(authRow2);
+    const nameIn2=inp('','Name','author-opts'); authRow2.appendChild(nameIn2);
+    const meL2=document.createElement('label'); meL2.className='me-lbl';
+    const meChk2=document.createElement('input'); meChk2.type='checkbox';
+    meL2.append(meChk2,document.createTextNode('me')); authRow2.appendChild(meL2);
+    const addBtn2=mkBtn('Add ↵','btn',()=>{if(!nameIn2.value.trim())return;authorsState.push({name:nameIn2.value.trim(),...(meChk2.checked?{me:true}:{})});nameIn2.value='';meChk2.checked=false;refreshChips2();});
+    nameIn2.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();addBtn2.click();}});
+    authRow2.appendChild(addBtn2);
+    wrap.appendChild(mkSep());
+
+    const tFg=fg('Title'); titleIn=ta(entry.title); tFg.appendChild(titleIn); wrap.appendChild(tFg);
+    const vFg=fg('Event / Venue'); const vIn=inp(entry.venue||'','e.g. Conference name, location'); vFg.appendChild(vIn); wrap.appendChild(vFg);
+    fields={_venue:vIn};
+
+    if (hasPosters) {
+      const pRow=document.createElement('label'); pRow.className='check-row';
+      posterChk=document.createElement('input'); posterChk.type='checkbox'; posterChk.checked=!!entry.poster;
+      pRow.append(posterChk,document.createTextNode('Poster')); wrap.appendChild(pRow);
+    }
+    wrap.appendChild(buildLinksEl(linksState));
+
+  } else {
+    // Simple
+    wrap.appendChild(mkSep());
+    const cFg=fg('Text'); contentIn=ta(entry.content); contentIn.style.minHeight='44px'; cFg.appendChild(contentIn); wrap.appendChild(cFg);
+    const dFg=fg('Description (muted, optional)'); descIn=ta(entry.desc); dFg.appendChild(descIn); wrap.appendChild(dFg);
+    wrap.appendChild(buildLinksEl(linksState));
+  }
+
+  // Save
+  const saveBtn=mkBtn('Save entry','btn btn-success',()=>{
+    if(autoGen) autoGen();
+    const updated={year:yField.getValue(),links:linksState.filter(l=>l.url)};
+    if(mIn.value.trim()) updated.month=mIn.value.trim();
+    if(PUB_FORMS.has(form)){
+      updated.authors=authorsState;
+      updated.title=(form==='software'||form==='dataset')?titleIn.value.trim():titleIn.value.trim();
+      if(form==='article') updated.venue={journal:fields.journal.value,volume:fields.volume.value,issue:fields.issue.value,pages:fields.pages.value};
+      else if(form==='book'||form==='proceedings') updated.venue={booktitle:fields.booktitle.value,editor:fields.editor.value,publisher:fields.publisher.value,location:fields.location.value};
+      else if(form==='thesis') updated.venue={type:fields._type.value,institution:fields.institution.value,supervisor:fields.supervisor.value};
+      else if(form==='software'){if(fields.version.value.trim())updated.version=fields.version.value.trim();updated.venue={};}
+      else if(form==='dataset') updated.venue={publisher:fields.publisher.value};
+      if(descIn?.value.trim()) updated.desc=descIn.value.trim();
+      if(citeIn?.value.trim()) updated.cite=citeIn.value.trim();
+      if(absIn?.value.trim()) updated.abstract=absIn.value.trim();
+      if(bibIn?.value.trim()) updated.bib=bibIn.value.trim();
+    } else if(form==='talk'){
+      if(authorsState.length) updated.authors=authorsState;
+      if(titleIn?.value.trim()) updated.title=titleIn.value.trim();
+      if(fields._venue?.value.trim()) updated.venue=fields._venue.value.trim();
+      if(hasPosters&&posterChk?.checked) updated.poster=true;
+    } else {
+      if(contentIn?.value.trim()) updated.content=contentIn.value.trim();
+      if(descIn?.value.trim()) updated.desc=descIn.value.trim();
+    }
+    onSave(updated);
+  });
+  const actRow=document.createElement('div'); actRow.className='form-actions'; actRow.appendChild(saveBtn);
+  wrap.appendChild(actRow);
+  return wrap;
+}
+
+function buildLinksEl(state) {
+  const fg2=document.createElement('div'); fg2.className='fg';
+  const l=document.createElement('label'); l.className='fl'; l.textContent='Links'; fg2.appendChild(l);
+  const lw=document.createElement('div'); lw.className='links-wrap'; fg2.appendChild(lw);
+  function refresh(){
+    lw.innerHTML='';
+    state.forEach((lk,i)=>{
+      const r=document.createElement('div'); r.className='link-row';
+      const tIn=document.createElement('input'); tIn.value=lk.type||inferType(lk.url); tIn.setAttribute('list','link-types'); tIn.placeholder='type';
+      tIn.oninput=()=>{state[i].type=tIn.value;};
+      const uIn=document.createElement('input'); uIn.value=lk.url||''; uIn.placeholder='URL';
+      uIn.oninput=()=>{state[i].url=uIn.value;if(!tIn.value)tIn.value=inferType(uIn.value);};
+      const rx=document.createElement('button'); rx.className='lx'; rx.textContent='×';
+      rx.onclick=()=>{state.splice(i,1);refresh();};
+      r.append(tIn,uIn,rx); lw.appendChild(r);
+    });
+  }
+  refresh();
+  const addBtn=document.createElement('button'); addBtn.className='add-link'; addBtn.textContent='+ add link';
+  addBtn.onclick=()=>{state.push({type:'',url:''});refresh();};
+  fg2.appendChild(addBtn);
+  return fg2;
+}
+
+function inferType(url) {
+  if(!url) return '';
+  if(url.includes('doi.org')) return 'doi';
+  if(url.includes('github.com')) return 'github';
+  if(url.includes('hdl.handle.net')) return 'hdl';
+  if(/preprint/i.test(url)) return 'preprint';
+  if(/postprint/i.test(url)) return 'postprint';
+  if(/slides?/i.test(url)) return 'slides';
+  return 'website';
+}
+
+async function doFetch(input,stEl,fc,sid,onSave) {
+  input=input.trim(); if(!input)return;
+  stEl.textContent='Fetching…'; stEl.className='fetch-st';
+  try {
+    const data=await fetchMetadata(input);
+    stEl.textContent='✓ Populated — review and save.'; stEl.className='fetch-st ok';
+    buildForm(sid,data,onSave,fc);
+  } catch(e) {
+    stEl.textContent='Error: '+e.message; stEl.className='fetch-st err';
+  }
+}
+
+async function fetchMetadata(input) {
+  let doi=input.replace(/^https?:\/\/doi\.org\//i,'').replace(/^doi:/i,'').trim();
+  if(input.includes('hdl.handle.net')||input.startsWith('hdl:')) {
+    const hdlId=input.replace(/^https?:\/\/hdl\.handle\.net\//,'').replace(/^hdl:/,'');
+    const data=await scrapeURL(`https://hdl.handle.net/${hdlId}`);
+    data.links=[{type:'hdl',url:`https://hdl.handle.net/${hdlId}`,label:hdlId},...(data.links||[])];
+    return data;
+  }
+  if(doi.startsWith('10.')) {
+    const res=await fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}`);
+    if(!res.ok) throw new Error(`Crossref HTTP ${res.status}`);
+    return parseCrossref((await res.json()).message,doi);
+  }
+  if(input.startsWith('http')) return await scrapeURL(input);
+  throw new Error('Enter a DOI (10.xxx), handle.net URL, or article URL.');
+}
+
+async function scrapeURL(url) {
+  const res=await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`);
+  if(!res.ok) throw new Error(`HTTP ${res.status}`);
+  return parseMetaTags((await res.json()).contents||'',url);
+}
+
+function parseMetaTags(html,sourceUrl) {
+  const doc=new DOMParser().parseFromString(html,'text/html');
+  const meta=n=>{const el=doc.querySelector(`meta[name="${n}"], meta[property="${n}"]`);return el?el.getAttribute('content'):'';}
+  const data={};
+  data.title=(meta('citation_title')||meta('dc.title')||meta('og:title')||doc.title||'').trim();
+  if(data.title&&!data.title.endsWith('.')) data.title+='.';
+  const citAuthors=[...doc.querySelectorAll('meta[name="citation_author"]')].map(e=>e.content);
+  if(citAuthors.length) data.authors=citAuthors.map((a,i)=>({name:i===0?a:a.split(',').reverse().map(s=>s.trim()).join(' ')}));
+  const dateStr=meta('citation_publication_date')||meta('citation_date')||meta('dc.date')||'';
+  const ym=dateStr.match(/\d{4}/); if(ym) data.year=ym[0];
+  const journal=meta('citation_journal_title');
+  if(journal){data.venue={journal};const vol=meta('citation_volume');if(vol)data.venue.volume=vol;const iss=meta('citation_issue');if(iss)data.venue.issue=iss;const fp=meta('citation_firstpage');const lp=meta('citation_lastpage');if(fp&&lp)data.venue.pages=`${fp}–${lp}`;}
+  else{data.venue={};}
+  const doi=meta('citation_doi');
+  data.links=doi?[{type:'doi',url:`https://doi.org/${doi}`,label:doi}]:[{type:'website',url:sourceUrl,label:sourceUrl}];
+  const abs=meta('citation_abstract')||meta('dc.description')||meta('og:description')||'';
+  if(abs&&abs.length>50) data.abstract=abs.trim();
+  if(data.authors&&data.year){data.cite=genCite(data,doi);data.bib=genBib(data,doi);}
+  return data;
+}
+
+function parseCrossref(msg,doi) {
+  const e={};
+  const pub=msg.published||msg['published-print']||msg['published-online'];
+  if(pub?.['date-parts']?.[0]) e.year=String(pub['date-parts'][0][0]);
+  if(msg.author) e.authors=msg.author.map((a,i)=>({name:i===0?`${a.family||''}, ${a.given||''}`.trim().replace(/^,\s*|,\s*$/g,''):`${a.given||''} ${a.family||''}`.trim()}));
+  if(msg.title?.[0]) e.title=msg.title[0].replace(/<[^>]+>/g,'')+'.';
+  if(msg.type==='journal-article'){e.venue={journal:msg['container-title']?.[0]};if(msg.volume)e.venue.volume=msg.volume;if(msg.issue)e.venue.issue=msg.issue;if(msg.page)e.venue.pages=msg.page.replace('-','–');}
+  else if(msg.type==='book-chapter'){e.venue={booktitle:msg['container-title']?.[0],publisher:msg.publisher};}
+  else{e.venue={};}
+  e.links=[{type:'doi',url:`https://doi.org/${doi}`,label:doi}];
+  if(msg.abstract) e.abstract=msg.abstract.replace(/<[^>]+>/g,'').trim();
+  e.cite=genCite(e,doi); e.bib=genBib(e,doi);
+  return e;
+}
+
+function genCite(e,doi) {
+  if(!e.authors||!e.title||!e.year) return '';
+  const auths=e.authors.map(a=>a.name).join(', ');
+  const title=e.title.replace(/\.$/,'');
+  const v=e.venue||{}; let loc=v.journal||'';
+  if(v.volume){loc+=` ${v.volume}`;if(v.issue)loc+=` (${v.issue})`;}
+  if(v.pages) loc+=`: ${v.pages}`;
+  return `${auths}. ${e.year}. "${title}." ${loc}.${doi?' https://doi.org/'+doi+'.':''}`;
+}
+
+function genBib(e,doi) {
+  if(!e.authors||!e.year) return '';
+  const key=(e.authors[0].name.split(',')[0].toLowerCase().replace(/[^a-z]/g,'')||'author')+e.year;
+  const authBib=(e.authors||[]).map(a=>{const p=a.name.split(',');return p.length===2?`${p[0].trim()}, ${p[1].trim()}`:a.name;}).join(' and ');
+  const v=e.venue||{};
+  let type='article';
+  if(v.type==='phdthesis'||v.type==='mathesis') type='thesis';
+  else if(v.booktitle) type='inproceedings';
+  else if(!v.journal) type='misc';
+  let b=`@${type}{${key},\n  author = {${authBib}},\n  title = {${(e.title||'').replace(/\.$/,'')}},\n`;
+  if(type==='thesis'){b+=`  type = {${v.type}},\n`;if(v.institution)b+=`  institution = {${v.institution}},\n`;}
+  if(v.journal) b+=`  journaltitle = {${v.journal}},\n`;
+  if(v.booktitle) b+=`  booktitle = {${v.booktitle}},\n`;
+  if(v.editor) b+=`  editor = {${v.editor}},\n`;
+  if(v.publisher) b+=`  publisher = {${v.publisher}},\n`;
+  if(v.location) b+=`  location = {${v.location}},\n`;
+  b+=`  date = {${e.year}},\n`;
+  if(v.volume) b+=`  volume = {${v.volume}},\n`;
+  if(v.issue) b+=`  number = {${v.issue}},\n`;
+  if(v.pages) b+=`  pages = {${v.pages.replace('–','--')}},\n`;
+  if(doi) b+=`  doi = {${doi}},\n`;
+  b=b.replace(/,\n$/,'\n'); b+='}'; return b;
+}
+
+function renderMiscPanel() {
+  const frag=document.createDocumentFragment();
+  const t=document.createElement('div'); t.className='sec-title'; t.textContent='Reviewer, Certifications, Languages & Outreach'; frag.appendChild(t);
+  const note=document.createElement('div'); note.className='misc-note';
+  note.innerHTML='Each subsection renders as its own <code>&lt;section&gt;</code> in cv.html.';
+  frag.appendChild(note);
+
+  function listSection(title, key, placeholder) {
+    const items = typeof CV[key]==='string' ? CV[key].split('·').map(s=>s.trim()).filter(Boolean) : [];
+    CV[key+'_list'] = items;
+    const wrap=document.createElement('div'); wrap.style.marginBottom='1rem';
+    const lbl=document.createElement('div'); lbl.className='sub-label'; lbl.textContent=title; wrap.appendChild(lbl);
+    const itemsWrap=document.createElement('div');
+    function refresh() {
+      itemsWrap.innerHTML='';
+      items.forEach((item,i)=>{
+        const r=document.createElement('div'); r.className='lang-row';
+        const inp2=document.createElement('input'); inp2.value=item; inp2.placeholder=placeholder;
+        inp2.oninput=()=>{items[i]=inp2.value;CV[key]=items.join(' · ');document.getElementById('download-btn').disabled=false;};
+        const rm=mkBtn('×','ebtn del',()=>{items.splice(i,1);CV[key]=items.join(' · ');document.getElementById('download-btn').disabled=false;refresh();});
+        r.append(inp2,rm); itemsWrap.appendChild(r);
+      });
+    }
+    refresh(); wrap.appendChild(itemsWrap);
+    const addBtn=mkBtn(`+ Add ${title.toLowerCase().replace(/s$/,'')}`, 'btn', ()=>{items.push('');refresh();document.getElementById('download-btn').disabled=false;});
+    addBtn.style.marginTop='0.35rem'; wrap.appendChild(addBtn);
+    frag.appendChild(wrap);
+  }
+
+  listSection('Reviewer', 'reviewer', 'Journal or venue name');
+  listSection('Certifications', 'certifications', 'Certification name');
+
+  // Languages
+  const langWrap2=document.createElement('div'); langWrap2.style.marginBottom='1rem';
+  const langLbl=document.createElement('div'); langLbl.className='sub-label'; langLbl.textContent='Languages'; langWrap2.appendChild(langLbl);
+  const langItems=document.createElement('div');
+  function refreshLang(){
+    langItems.innerHTML='';
+    (CV.languages||[]).forEach((l,i)=>{
+      const r=document.createElement('div'); r.className='lang-row';
+      const yr=document.createElement('input'); yr.value=l.year||''; yr.placeholder='Language';
+      yr.oninput=()=>{CV.languages[i].year=yr.value;document.getElementById('download-btn').disabled=false;};
+      const ct=document.createElement('input'); ct.value=l.content||''; ct.placeholder='Level';
+      ct.oninput=()=>{CV.languages[i].content=ct.value;document.getElementById('download-btn').disabled=false;};
+      const rm=mkBtn('×','ebtn del',()=>{CV.languages.splice(i,1);refreshLang();document.getElementById('download-btn').disabled=false;});
+      r.append(yr,ct,rm); langItems.appendChild(r);
+    });
+  }
+  refreshLang(); langWrap2.appendChild(langItems);
+  const addLang=mkBtn('+ Add language','btn',()=>{if(!CV.languages)CV.languages=[];CV.languages.push({year:'',content:''});refreshLang();document.getElementById('download-btn').disabled=false;});
+  addLang.style.marginTop='0.35rem'; langWrap2.appendChild(addLang);
+  frag.appendChild(langWrap2);
+
+  // Outreach — simple entries
+  const outWrap=document.createElement('div');
+  const outLbl=document.createElement('div'); outLbl.className='sub-label'; outLbl.textContent='Outreach'; outWrap.appendChild(outLbl);
+  const outItems=document.createElement('div');
+  function refreshOut(){
+    outItems.innerHTML='';
+    (CV.outreach||[]).forEach((o,i)=>{
+      const r=document.createElement('div'); r.style.cssText='display:flex;gap:6px;align-items:start;margin-bottom:5px';
+      const inp2=document.createElement('input'); inp2.value=(o.content||'').replace(/<[^>]+>/g,''); inp2.style.flex='1';
+      inp2.oninput=()=>{CV.outreach[i].content=inp2.value;document.getElementById('download-btn').disabled=false;};
+      const rm=mkBtn('×','ebtn del',()=>{CV.outreach.splice(i,1);refreshOut();document.getElementById('download-btn').disabled=false;});
+      r.append(inp2,rm); outItems.appendChild(r);
+    });
+  }
+  refreshOut(); outWrap.appendChild(outItems);
+  const addOut=mkBtn('+ Add outreach','btn',()=>{
+    if(!CV.outreach) CV.outreach=[];
+    CV.outreach.push({year:'',content:''});
+    refreshOut();
+    document.getElementById('download-btn').disabled=false;
+  });
+  addOut.style.marginTop='0.35rem'; outWrap.appendChild(addOut);
+  frag.appendChild(outWrap);
+  return frag;
+}
+
+document.getElementById('download-btn').addEventListener('click',()=>{
+  if(!CV||!originalSource)return;
+  const blob=new Blob([injectCV(originalSource,CV)],{type:'text/html'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='cv.html'; a.click();
+  URL.revokeObjectURL(a.href);
+});
+document.getElementById('preview-btn').addEventListener('click',()=>{
+  if(!CV||!originalSource)return;
+  const blob=new Blob([injectCV(originalSource,CV)],{type:'text/html'});
+  window.open(URL.createObjectURL(blob),'_blank');
+});
+
+(function(){
+  const btn = document.getElementById('theme-btn');
+  let dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  function setTheme(d) {
+    dark = d;
+    document.body.setAttribute('data-theme', d ? 'dark' : 'light');
+    document.body.style.colorScheme = d ? 'dark' : 'light';
+    btn.textContent = d ? 'Light' : 'Dark';
+  }
+  setTheme(dark);
+  btn.addEventListener('click', () => setTheme(!dark));
+})();
+</script>
+</body>
+</html>

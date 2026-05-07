@@ -22,7 +22,7 @@ about:
       target: _blank
     - icon: star-fill
       text: CV
-      href: cv.pdf
+      href: cv.html
       target: _blank
 format: 
   html: 

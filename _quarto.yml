@@ -39,10 +39,11 @@ website:
     search: false
     collapse-level: 2
     contents:
-      - publications.qmd
-      - projects.qmd
+      - text: CV
+        href: cv.html
       - notes.qmd
       - posts.qmd
+      - projects.qmd
 format:
   html:
     theme: 

@@ -1,12 +1,2137 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Redirecting to CV</title>
-    <meta http-equiv="refresh" content="0; url='cv.pdf'">
-    <link rel="canonical" href="https://zackbatist.info/cv.pdf">
-  </head>
-  <body>
-    <p>Redirecting to <a href="cv.pdf">CV PDF</a>...</p>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Vitæ — Zachary Batist</title>
+<meta name="description" content="Curriculum Vitæ of Zachary Batist, postdoctoral researcher at McGill University.">
+<meta property="og:title" content="Curriculum Vitæ — Zachary Batist">
+<meta property="og:description" content="Postdoctoral researcher at McGill University. Research data management, open research infrastructure, scholar of scientific practice.">
+<meta property="og:url" content="https://zackbatist.info/cv.html">
+<meta property="og:type" content="profile">
+<style>
+:root {
+  --bg: #eeeee9; --fg: #111; --muted: #555; --faint: #888; --link: #333;
+  --rule: #d0d0ca; --tag-bg: #e5e5e0; --bib-bg: #e5e5e0;
+  --year: 6.5rem; --nav-h: 2.5rem;
+}
+[data-theme="dark"] {
+  --bg: #222529; --fg: #DDE6ED; --muted: #9DB2BF; --faint: #6a8090;
+  --link: #9DB2BF; --rule: #3a3f45; --tag-bg: #2a2f33; --bib-bg: #1a1d20;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-padding-top: calc(var(--nav-h) + 1rem); }
+body { font-family: Georgia, serif; font-size: 14px; line-height: 1.6; color: var(--fg); background: var(--bg); max-width: 980px; margin: 0 auto; padding: calc(var(--nav-h) + 2.5rem) 2rem 6rem; transition: background 0.2s, color 0.2s; }
+a { color: var(--link); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { border-bottom-color: var(--muted); }
+em { font-style: italic; } strong { font-weight: 600; }
+nav { position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h); background: var(--bg); border-bottom: 0.5px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; z-index: 100; transition: background 0.2s, border-color 0.2s; }
+.nav-links { display: flex; gap: 1.1rem; overflow-x: auto; scrollbar-width: none; }
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a { font-family: -apple-system, sans-serif; font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); border: none; white-space: nowrap; transition: color 0.15s; }
+.nav-links a:hover { color: var(--fg); }
+.nav-actions { display: flex; gap: 0.5rem; flex-shrink: 0; margin-left: 1rem; }
+.nav-btn { font-family: -apple-system, sans-serif; font-size: 0.65rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); background: none; border: 0.5px solid var(--rule); border-radius: 3px; padding: 2px 7px; cursor: pointer; transition: color 0.15s, border-color 0.15s; white-space: nowrap; line-height: 1.6; }
+.nav-btn:hover { color: var(--fg); border-color: var(--muted); }
+.nav-btn a { color: inherit; border: none; }
+header { margin-bottom: 2.5rem; }
+header h1 { font-size: 1.4rem; font-weight: normal; letter-spacing: 0.01em; margin-bottom: 0.4rem; }
+.pos { color: var(--muted); font-size: 0.88rem; line-height: 1.6; margin-bottom: 0.5rem; }
+.contact { font-size: 0.82rem; color: var(--muted); font-family: -apple-system, sans-serif; }
+.contact a { color: var(--muted); border: none; }
+.contact .sep { margin: 0 0.4rem; opacity: 0.4; }
+.updated { font-size: 0.75rem; color: var(--faint); font-family: -apple-system, sans-serif; margin-top: 0.35rem; }
+section { margin-bottom: 2rem; }
+h2 { font-size: 0.78rem; font-weight: normal; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); border-bottom: 0.5px solid var(--rule); padding-bottom: 0.25rem; margin-bottom: 0.75rem; font-family: -apple-system, sans-serif; }
+h3 { font-size: 0.72rem; font-weight: normal; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); margin: 1.25rem 0 0.6rem; font-family: -apple-system, sans-serif; }
+.e { display: grid; grid-template-columns: var(--year) 1fr; gap: 0 1.25rem; margin-bottom: 0.7rem; align-items: start; }
+.y { font-size: 0.8rem; color: var(--muted); font-family: -apple-system, sans-serif; padding-top: 0.15em; white-space: nowrap; }
+.y .mo { display: block; font-size: 0.7rem; color: var(--faint); margin-top: 0.05em; }
+.c { min-width: 0; }
+.desc { font-size: 0.84rem; color: var(--muted); margin-top: 0.15rem; line-height: 1.5; }
+.l { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem; font-family: -apple-system, sans-serif; font-size: 0.72rem; align-items: center; }
+.l a { color: var(--faint); background: var(--tag-bg); border: 0.5px solid var(--rule); border-radius: 3px; padding: 1px 6px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; }
+.l a:hover { color: var(--fg); border-color: var(--muted); }
+.l a[href*="doi.org"]::before,
+.l a[data-type="doi"]::before        { content: "DOI "; font-weight: 600; }
+.l a[href*="github.com"]::before,
+.l a[data-type="github"]::before     { content: "gh "; font-weight: 600; }
+.l a[href*="hdl.handle.net"]::before,
+.l a[data-type="hdl"]::before        { content: "hdl "; font-weight: 600; }
+.l a[data-type="preprint"]::before   { content: "↗ "; }
+.l a[data-type="postprint"]::before  { content: "↗ "; }
+.l a[data-type="slides"]::before     { content: "↗ "; }
+.l a[data-type="website"]::before    { content: "↗ "; }
+.l a[data-type="bib"]::before        { content: "bib "; font-weight: 600; }
+.l a[href*="zackbatist.info"]::before,
+.l a[href*="open-archaeo.info"]::before,
+.l a[href*="diamond.open-archaeo"]::before,
+.l a[href*="sslarch.github.io"]::before,
+.l a[href*="o-date.github.io"]::before,
+.l a[href*="archaeo.social"]::before  { content: "↗ "; }
+.tag { font-family: -apple-system, sans-serif; font-size: 0.72rem; color: var(--faint); background: var(--tag-bg); border: 0.5px solid var(--rule); border-radius: 3px; padding: 1px 6px; white-space: nowrap; }
+.pill-btn { font-family: -apple-system, sans-serif; font-size: 0.72rem; color: var(--faint); background: var(--tag-bg); border: 0.5px solid var(--rule); border-radius: 3px; padding: 1px 6px; cursor: pointer; white-space: nowrap; line-height: 1.6; transition: color 0.15s, border-color 0.15s, background 0.15s; }
+.pill-btn:hover { color: var(--fg); border-color: var(--muted); }
+.pill-btn.active { border-color: var(--muted); color: var(--fg); background: var(--rule); }
+.pill-sep { font-family: -apple-system, sans-serif; font-size: 0.72rem; color: var(--rule); user-select: none; padding: 0 0.1rem; }
+.entry-panel { display: none; margin-top: 0.4rem; background: var(--bib-bg); border-left: 2px solid var(--rule); border-radius: 0 3px 3px 0; position: relative; }
+.entry-panel.open { display: block; }
+.entry-panel .panel-body { padding: 0.5rem 2rem 0.5rem 0.65rem; font-size: 0.84rem; line-height: 1.65; color: var(--muted); text-align: justify; }
+.entry-panel pre { font-family: monospace; font-size: 11.5px; line-height: 1.55; color: var(--muted); padding: 0.5rem 2rem 0.5rem 0.65rem; white-space: pre-wrap; word-break: break-word; }
+.panel-copy { position: absolute; top: 0.3rem; right: 0.3rem; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: var(--bg); border: 0.5px solid var(--rule); border-radius: 4px; cursor: pointer; opacity: 0.55; transition: opacity 0.15s; padding: 0; }
+.panel-copy:hover { opacity: 1; }
+.panel-copy svg { width: 11px; height: 11px; stroke: var(--muted); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; display: block; }
+.author-toggle { font-family: -apple-system, sans-serif; font-size: 0.72rem; color: var(--faint); background: none; border: none; padding: 0 0 0 0.25rem; cursor: pointer; border-bottom: 1px dashed var(--rule); line-height: 1.6; }
+.author-toggle:hover { color: var(--fg); }
+.areas { font-size: 0.88rem; color: var(--muted); line-height: 1.8; font-family: -apple-system, sans-serif; }
+@media (max-width: 580px) { :root { --year: 5rem; } .e { gap: 0 0.75rem; } .nav-links { display: none; } }
+@media print { nav { display: none; } html { scroll-padding-top: 0; } body { padding: 2rem; font-size: 11pt; max-width: none; background: white; color: black; } a { border: none; color: black; } .l a::after { content: " " attr(href); font-size: 0.8em; } .l a::before { font-weight: normal !important; } .pill-btn, .entry-panel { display: none; } }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-links" id="nav-links"></div>
+  <div class="nav-actions">
+    <button class="nav-btn" id="toggle">Dark</button>
+    <span class="nav-btn"><a href="cv.pdf" target="_blank">PDF</a></span>
+  </div>
+</nav>
+<header>
+  <h1>Zachary Batist</h1>
+  <p class="pos">Postdoctoral Researcher, Covid-19 Immunity Task Force Databank<br>Department of Epidemiology, Biostatistics and Occupational Health<br>School of Public and Global Health, McGill University</p>
+  <p class="contact">
+    <a href="https://zackbatist.info" target="_blank">zackbatist.info</a><span class="sep">·</span>
+    <a href="https://github.com/zackbatist" target="_blank">github.com/zackbatist</a><span class="sep">·</span>
+    <a href="https://orcid.org/0000-0003-0435-508X" target="_blank">ORCID 0000-0003-0435-508X</a><span class="sep">·</span>
+    <a href="https://archaeo.social/@zackbatist" target="_blank">archaeo.social/@zackbatist</a>
+  </p>
+  <p class="updated">Updated <time datetime="2026-05">May 2026</time></p>
+</header>
+<div id="cv-root"></div>
+
+<script>
+// ── CV DATA ───────────────────────────────────────────────────────────────────
+// Edit this object to update the CV.
+// Use cv-editor.html to add/edit entries with a form interface.
+// Schema documented in cv-docs.qmd.
+const CV = {
+  "expertise": "Research data management · Open research infrastructure · Scientific software development · Community-driven infrastructure · Scholar of scientific practice · Critical and feminist meta-research · Bridging policy with real-world experiences · Pan-disciplinary experience and outlook",
+  "position": [
+    {
+      "year": "2025 –",
+      "content": "Postdoctoral Researcher, Covid-19 Immunity Task Force Databank\nDepartment of Epidemiology, Biostatistics and Occupational Health, McGill University",
+      "links": [
+        {
+          "url": "https://zackbatist.info/CITF-Postdoc",
+          "label": "zackbatist.info/CITF-Postdoc"
+        },
+        {
+          "url": "https://github.com/zackbatist/CITF-Postdoc",
+          "label": "zackbatist/CITF-Postdoc"
+        }
+      ]
+    },
+    {
+      "year": "2018 – 2023",
+      "content": "Research Assistant, E–CURATORS: Pervasive Digital Curation Activities, Objects and Infrastructures in Archaeological Research and Communication, Faculty of Information, University of Toronto."
+    },
+    {
+      "year": "2016 – 2021",
+      "content": "Database Manager, Stelida Naxos Archaeology Project."
+    },
+    {
+      "year": "2007 – 2009",
+      "content": "Research Assistant, Molecular Pharmacology Laboratory, Lady Davis Institute for Medical Research."
+    }
+  ],
+  "education": [
+    {
+      "year": "2023",
+      "content": "PhD, Faculty of Information, University of Toronto."
+    },
+    {
+      "year": "2015",
+      "content": "MA, Department of Anthropology, McMaster University."
+    },
+    {
+      "year": "2012",
+      "content": "BA, Directed Interdisciplinary Studies, Carleton University."
+    },
+    {
+      "year": "2009",
+      "content": "DEC, Social Sciences, Dawson College."
+    }
+  ],
+  "publications": {
+    "articles": [
+      {
+        "year": "2025",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Balancing situated and objective representations in archaeological fieldwork.",
+        "venue": {
+          "journal": "Advances in Archaeological Practice",
+          "volume": "13",
+          "issue": "4",
+          "pages": "514–527"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.1017/aap.2025.10101",
+            "label": "10.1017/aap.2025.10101"
+          },
+          {
+            "url": "https://zackbatist.info/fuzzy-concrete/",
+            "label": "Preprint"
+          },
+          {
+            "url": "https://github.com/zackbatist/fuzzy-concrete",
+            "label": "zackbatist/fuzzy-concrete"
+          }
+        ],
+        "cite": "Batist, Zachary. 2025. \"Balancing Situated and Objective Representations in Archaeological Fieldwork.\" Advances in Archaeological Practice 13 (4): 514–527. https://doi.org/10.1017/aap.2025.10101.",
+        "abstract": "Archaeology comprises both systematic and pragmatic attitudes and processes concerned with the collection and maintenance of data. Thus, it needs to obtain formally defined data while also grappling with the fuzzy and uncertain nature of archaeological encounters, especially in fieldwork environments. This produces an epistemic tension, as archaeologists struggle to reconcile their desire to produce concrete outcomes based on objective facts and their intuitive understanding that data are in fact products of situated decisions and actions. Through observations of archaeological practices, interviews with archaeologists at work, and analysis of the documents they produced while recording objects of archaeological concern, this article describes how archaeologists cope with this tension and integrate it into their work experiences.",
+        "bib": "@article{batist2025a,\n  author = {Batist, Zachary},\n  title = {Balancing Situated and Objective Representations in Archaeological Fieldwork},\n  journal = {Advances in Archaeological Practice},\n  year = {2025},\n  volume = {13},\n  number = {4},\n  pages = {514--527},\n  doi = {10.1017/aap.2025.10101}\n}"
+      },
+      {
+        "year": "2025",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Locating creative agency in archaeological data work.",
+        "venue": {
+          "journal": "Peer Community in Archaeology"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.17613/8eqy4-n1m82",
+            "label": "10.17613/8eqy4-n1m82"
+          },
+          {
+            "url": "https://zackbatist.info/locating-creative-agency/",
+            "label": "Preprint"
+          },
+          {
+            "url": "https://github.com/zackbatist/locating-creative-agency",
+            "label": "zackbatist/locating-creative-agency"
+          }
+        ],
+        "cite": "Batist, Zachary. 2025. \"Locating Creative Agency in Archaeological Data Work.\" Peer Community in Archaeology. https://doi.org/10.17613/8eqy4-n1m82.",
+        "abstract": "The workflows that are now commonplace across archaeological projects mask social and epistemic structures and principles. More specifically, they re-distribute creative agency to promote specific kinds of outcomes based on discrete data models. This paper draws attention to the mechanisms through which data are created and curated, focusing on the social and technical apparatus through which archaeologists control the creation and flow of information. Based on observations of and elicitations about archaeological data work in fieldwork settings at two cases, I articulate how the management of data and of labour are inherently intertwined, and how workflows are operationalized by managerial systems to ensure that data are created and curated toward productive ends.",
+        "bib": "@article{batist2025,\n  author = {Batist, Zachary},\n  title = {Locating Creative Agency in Archaeological Data Work},\n  journal = {Peer Community in Archaeology},\n  year = {2025},\n  doi = {10.17613/8eqy4-n1m82}\n}"
+      },
+      {
+        "year": "2024",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.",
+        "venue": {
+          "journal": "Archeologia e Calcolatori",
+          "volume": "35",
+          "issue": "2",
+          "pages": "47–54"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.19282/ac.35.2.2024.06",
+            "label": "10.19282/ac.35.2.2024.06"
+          }
+        ],
+        "cite": "Batist, Zachary. 2024. \"Does Not Compute! Accounting for Social and Situated Experiences While Integrating and Analyzing Obsidian Sourcing Data.\" Archeologia e Calcolatori 35 (2): 47–54. https://doi.org/10.19282/ac.35.2.2024.06.",
+        "bib": "@article{batist2024b,\n  author = {Batist, Zachary},\n  title = {Does Not Compute! Accounting for Social and Situated Experiences While Integrating and Analyzing Obsidian Sourcing Data},\n  journal = {Archeologia e Calcolatori},\n  year = {2024},\n  volume = {35},\n  number = {2},\n  pages = {47--54},\n  doi = {10.19282/ac.35.2.2024.06}\n}"
+      },
+      {
+        "year": "2024",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "On the value of informal communication in archaeological data work.",
+        "venue": {
+          "journal": "Open Archaeology",
+          "volume": "10",
+          "issue": "1",
+          "pages": "20240014"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.1515/opar-2024-0014",
+            "label": "10.1515/opar-2024-0014"
+          }
+        ],
+        "cite": "Batist, Zachary. 2024. \"On the Value of Informal Communication in Archaeological Data Work.\" Open Archaeology 10 (1): 20240014. https://doi.org/10.1515/opar-2024-0014.",
+        "abstract": "Archaeological data simultaneously serve as formal documentary evidence that supports and legitimizes chains of analytical inference and as communicative media that bind together scholarly activities distributed across time, place, and social circumstance. This contributes to a sense of \"epistemic anxiety,\" whereby archaeologists require that data be objective and decisive to support computational analysis but also intuitively understand data to be subjective and situated based on their own experiences as participants in an archaeological community of practice. In this article, I present observations of and elicitations about archaeological practices relating to the constitution and transformation of data in three cases in order to articulate this tension and document how archaeologists cope with it.",
+        "bib": "@article{batist2024a,\n  author = {Batist, Zachary},\n  title = {On the Value of Informal Communication in Archaeological Data Work},\n  journal = {Open Archaeology},\n  year = {2024},\n  volume = {10},\n  number = {1},\n  pages = {20240014},\n  doi = {10.1515/opar-2024-0014}\n}"
+      },
+      {
+        "year": "2024",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          },
+          {
+            "name": "Joe Roe"
+          }
+        ],
+        "title": "Open archaeology, open source? Collaborative practices in an emerging community of archaeological software engineers.",
+        "venue": {
+          "journal": "Internet Archaeology",
+          "volume": "67"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.11141/ia.67.13",
+            "label": "10.11141/ia.67.13"
+          },
+          {
+            "url": "https://zackbatist.info/openarchaeo-collaboration/",
+            "label": "Postprint"
+          },
+          {
+            "url": "https://github.com/zackbatist/openarchaeo-collaboration",
+            "label": "zackbatist/openarchaeo-collaboration"
+          }
+        ],
+        "cite": "Batist, Zachary, and Joe Roe. 2024. \"Open Archaeology, Open Source? Collaborative Practices in an Emerging Community of Archaeological Software Engineers.\" Internet Archaeology 67. https://doi.org/10.11141/ia.67.13.",
+        "bib": "@article{batist2024,\n  author = {Batist, Zachary and Roe, Joe},\n  title = {Open Archaeology, Open Source? Collaborative Practices in an Emerging Community of Archaeological Software Engineers},\n  journal = {Internet Archaeology},\n  year = {2024},\n  volume = {67},\n  doi = {10.11141/ia.67.13}\n}"
+      },
+      {
+        "year": "2023",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          },
+          {
+            "name": "Joe Roe"
+          }
+        ],
+        "title": "open-archaeo: a resource for documenting archaeological software development practices.",
+        "venue": {
+          "journal": "Journal of Open Archaeology Data",
+          "volume": "11",
+          "issue": "9",
+          "pages": "1–7"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.5334/joad.111",
+            "label": "10.5334/joad.111"
+          }
+        ],
+        "cite": "Batist, Zachary, and Joe Roe. 2023. \"Open-Archaeo: A Resource for Documenting Archaeological Software Development Practices.\" Journal of Open Archaeology Data 11 (9): 1–7. https://doi.org/10.5334/joad.111.",
+        "abstract": "Open-archaeo (open-archaeo.info) is a comprehensive list of open software and resources created by and for archaeologists. It is a living collection — itself an open project — which as of writing includes 548 entries and associated metadata. Open-archaeo documents what kinds of software and resources archaeologists have produced, enabling further investigation of research software engineering and digital peer-production practices in the discipline.",
+        "bib": "@article{batist2023,\n  author = {Batist, Zachary and Roe, Joe},\n  title = {open-archaeo: A Resource for Documenting Archaeological Software Development Practices},\n  journal = {Journal of Open Archaeology Data},\n  year = {2023},\n  volume = {11},\n  number = {9},\n  pages = {1--7},\n  doi = {10.5334/joad.111}\n}"
+      },
+      {
+        "year": "2021",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          },
+          {
+            "name": "Val Masters"
+          },
+          {
+            "name": "Tiffany C. Torma"
+          },
+          {
+            "name": "Michael Carter"
+          },
+          {
+            "name": "Neal Ferris"
+          },
+          {
+            "name": "Isto Huvila"
+          },
+          {
+            "name": "Seamus Ross"
+          },
+          {
+            "name": "Costis Dallas"
+          }
+        ],
+        "truncate": 3,
+        "title": "Figurations of digital archaeological practice in two Mediterranean fieldwork projects.",
+        "venue": {
+          "journal": "Open Archaeology",
+          "volume": "7",
+          "issue": "1",
+          "pages": "1731–1755"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.1515/opar-2020-0217",
+            "label": "10.1515/opar-2020-0217"
+          }
+        ],
+        "cite": "Batist, Zachary, Val Masters, Tiffany C. Torma, Michael Carter, Neal Ferris, Isto Huvila, Seamus Ross, and Costis Dallas. 2021. \"Figurations of Digital Archaeological Practice in Two Mediterranean Fieldwork Projects.\" Open Archaeology 7 (1): 1731–1755. https://doi.org/10.1515/opar-2020-0217.",
+        "abstract": "Archaeological practice is increasingly enacted within pervasive and invisible digital infrastructures, tools, and services that affect how participants engage in learning and fieldwork, and how evidence, knowledge, and expertise are produced. This article discusses the collective imaginings regarding the present and future of digital archaeological practice held by researchers working in two archaeological projects in the Eastern Mediterranean, who have normalized the use of digital tools and the adoption of digital workflows as part of their everyday research practice.",
+        "bib": "@article{batist2021,\n  author = {Batist, Zachary and Masters, Val and Torma, Tiffany C. and Carter, Michael and Ferris, Neal and Huvila, Isto and Ross, Seamus and Dallas, Costis},\n  title = {Figurations of Digital Archaeological Practice in Two Mediterranean Fieldwork Projects},\n  journal = {Open Archaeology},\n  year = {2021},\n  volume = {7},\n  number = {1},\n  pages = {1731--1755},\n  doi = {10.1515/opar-2020-0217}\n}"
+      },
+      {
+        "year": "2021",
+        "authors": [
+          {
+            "name": "Contreras, Daniel"
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          },
+          {
+            "name": "Ciara Zogheib"
+          },
+          {
+            "name": "Tristan Carter"
+          }
+        ],
+        "title": "Matching pragmatic lithic analysis and proper data architecture: The QuARI R Shiny database interface.",
+        "venue": {
+          "journal": "Advances in Archaeological Practice",
+          "volume": "9",
+          "issue": "4",
+          "pages": "299–311"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.1017/aap.2021.11",
+            "label": "10.1017/aap.2021.11"
+          },
+          {
+            "url": "https://github.com/zackbatist/QuARI",
+            "label": "zackbatist/QuARI"
+          }
+        ],
+        "cite": "Contreras, Daniel, Zachary Batist, Ciara Zogheib, and Tristan Carter. 2021. \"Matching Pragmatic Lithic Analysis and Proper Data Architecture: The QuARI R Shiny Database Interface.\" Advances in Archaeological Practice 9 (4): 299–311. https://doi.org/10.1017/aap.2021.11.",
+        "bib": "@article{contreras2021,\n  author = {Contreras, Daniel and Batist, Zachary and Zogheib, Ciara and Carter, Tristan},\n  title = {Matching Pragmatic Lithic Analysis and Proper Data Architecture: The QuARI R Shiny Database Interface},\n  journal = {Advances in Archaeological Practice},\n  year = {2021},\n  volume = {9},\n  number = {4},\n  pages = {299--311},\n  doi = {10.1017/aap.2021.11}\n}"
+      },
+      {
+        "year": "2017",
+        "authors": [
+          {
+            "name": "Carter, Tristan"
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          },
+          {
+            "name": "Kathryn Campeau"
+          },
+          {
+            "name": "Yosef Garfinkel"
+          },
+          {
+            "name": "Katharina Streit"
+          }
+        ],
+        "title": "Investigating Pottery Neolithic socio-economic 'regression' in the Southern Levant: Characterising obsidian consumption at Sha'ar Hagolan (N. Israel).",
+        "venue": {
+          "journal": "Journal of Archaeological Science: Reports",
+          "volume": "15",
+          "pages": "305–317"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.1016/j.jasrep.2017.08.016",
+            "label": "10.1016/j.jasrep.2017.08.016"
+          }
+        ],
+        "cite": "Carter, Tristan, Zachary Batist, Kathryn Campeau, Yosef Garfinkel, and Katharina Streit. 2017. \"Investigating Pottery Neolithic Socio-Economic 'Regression' in the Southern Levant: Characterising Obsidian Consumption at Sha'ar Hagolan (N. Israel).\" Journal of Archaeological Science: Reports 15: 305–317. https://doi.org/10.1016/j.jasrep.2017.08.016.",
+        "abstract": "This paper details the characterisation of 34 obsidian artefacts from Sha'ar Hagolan in the Jordan Valley, a major Pottery Neolithic site of the southern Levantine Yarmukian culture (6400–6000 cal BCE). Employing an integrated approach that melds sourcing data from EDXRF spectroscopy with the artefacts' techno-typological characteristics, we contrast Sha'ar Hagolan's lithic traditions with those of the Pre-Pottery Neolithic southern Levantine sites in the context of alleged socioeconomic disruptions in the Pottery Neolithic. The results indicate that the community's obsidian consumption habits largely followed deep-time regional traditions — the use of Cappadocian raw materials to make pressure blades, with only a small proportion of eastern Anatolian products.",
+        "bib": "@article{carter2017,\n  author = {Carter, Tristan and Batist, Zachary and Campeau, Kathryn and Garfinkel, Yosef and Streit, Katharina},\n  title = {Investigating Pottery Neolithic Socio-Economic ``Regression'' in the Southern Levant: Characterising Obsidian Consumption at Sha'ar Hagolan (N. Israel)},\n  journal = {Journal of Archaeological Science: Reports},\n  year = {2017},\n  volume = {15},\n  pages = {305--317},\n  doi = {10.1016/j.jasrep.2017.08.016}\n}"
+      },
+      {
+        "year": "2014",
+        "authors": [
+          {
+            "name": "Freund, Kyle P."
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          }
+        ],
+        "title": "Sardinian obsidian circulation and early maritime navigation in the Neolithic as shown through social network analysis.",
+        "venue": {
+          "journal": "Journal of Island and Coastal Archaeology",
+          "volume": "9",
+          "issue": "3",
+          "pages": "364–380"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.1080/15564894.2014.881937",
+            "label": "10.1080/15564894.2014.881937"
+          }
+        ],
+        "cite": "Freund, Kyle P., and Zachary Batist. 2014. \"Sardinian Obsidian Circulation and Early Maritime Navigation in the Neolithic as Shown through Social Network Analysis.\" Journal of Island and Coastal Archaeology 9 (3): 364–380. https://doi.org/10.1080/15564894.2014.881937.",
+        "abstract": "Scholars typically argue that cultural interaction between the West Mediterranean islands of Sardinia and Corsica and the European mainland took place through the Tuscan Archipelago, via such intermediary islands as Elba and Pianosa. This path is posited as the prime route in and out of these islands for both people and objects throughout prehistory, largely due to the belief that early — pre-sail — seafarers would have wished to avoid more treacherous open-sea voyages. This article tests this hypothesis using social network analysis to identify the strengths of inter-site relationships through time based on the relative proportions of West Mediterranean obsidian raw materials at 79 Neolithic sites. Contrary to previous interpretations, our results suggest that obsidian also took a more direct open-sea path upwards of 200 km from Corsica to the coastal regions of Provence and Languedoc in southern France.",
+        "bib": "@article{freund2014,\n  author = {Freund, Kyle P. and Batist, Zachary},\n  title = {Sardinian Obsidian Circulation and Early Maritime Navigation in the Neolithic as Shown through Social Network Analysis},\n  journal = {Journal of Island and Coastal Archaeology},\n  year = {2014},\n  volume = {9},\n  number = {3},\n  pages = {364--380},\n  doi = {10.1080/15564894.2014.881937}\n}"
+      },
+      {
+        "year": "2009",
+        "authors": [
+          {
+            "name": "Loignon, Martin"
+          },
+          {
+            "name": "Weimin Miao"
+          },
+          {
+            "name": "Lianggao Hu"
+          },
+          {
+            "name": "Andrew Bier"
+          },
+          {
+            "name": "Tarek A. Bismar"
+          },
+          {
+            "name": "P. James Scrivens"
+          },
+          {
+            "name": "Koren Mann"
+          },
+          {
+            "name": "Mark Basik"
+          },
+          {
+            "name": "Amélie Bouchard"
+          },
+          {
+            "name": "Pierre O. Fiset"
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          },
+          {
+            "name": "Gerald Batist"
+          }
+        ],
+        "truncate": 3,
+        "title": "Frequent Nrf2 depletion due to Cul3 overexpression in breast cancer is associated with sensitivity to carcinogens, oxidative stress and chemotherapy.",
+        "venue": {
+          "journal": "Molecular Cancer Therapeutics",
+          "volume": "8",
+          "issue": "8",
+          "pages": "2432–2440"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.1158/1535-7163.MCT-08-1186",
+            "label": "10.1158/1535-7163.MCT-08-1186"
+          }
+        ],
+        "cite": "Loignon, Martin, Weimin Miao, Lianggao Hu, Andrew Bier, Tarek A. Bismar, P. James Scrivens, Koren Mann, Mark Basik, Amélie Bouchard, Pierre O. Fiset, Zachary Batist, and Gerald Batist. 2009. \"Frequent Nrf2 Depletion due to Cul3 Overexpression in Breast Cancer Is Associated with Sensitivity to Carcinogens, Oxidative Stress and Chemotherapy.\" Molecular Cancer Therapeutics 8 (8): 2432–2440. https://doi.org/10.1158/1535-7163.MCT-08-1186.",
+        "bib": "@article{loignon2009,\n  author = {Loignon, Martin and Miao, Weimin and Hu, Lianggao and Bier, Andrew and Bismar, Tarek A. and Scrivens, P. James and Mann, Koren and Basik, Mark and Bouchard, Amélie and Fiset, Pierre O. and Batist, Zachary and Batist, Gerald},\n  title = {Frequent Nrf2 Depletion due to Cul3 Overexpression in Breast Cancer Is Associated with Sensitivity to Carcinogens, Oxidative Stress and Chemotherapy},\n  journal = {Molecular Cancer Therapeutics},\n  year = {2009},\n  volume = {8},\n  number = {8},\n  pages = {2432--2440},\n  doi = {10.1158/1535-7163.MCT-08-1186}\n}"
+      }
+    ],
+    "inprogress": [
+      {
+        "year": "In progress",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          },
+          {
+            "name": "Melissa Ouellet"
+          },
+          {
+            "name": "Sadun Khezri"
+          },
+          {
+            "name": "Tanya Murphy"
+          },
+          {
+            "name": "Aklil Noza"
+          },
+          {
+            "name": "Samira Abbasgholizadeh-Rahimi"
+          },
+          {
+            "name": "Guillaume Bourque"
+          },
+          {
+            "name": "David Buckeridge"
+          }
+        ],
+        "truncate": 3,
+        "title": "LLM-assisted topic modelling of Canadian COVID-19 Immunity Task Force data sharing operations.",
+        "venue": {
+          "journal": "BMC Medical Informatics and Decision Making"
+        },
+        "desc": "Investigates administrative aspects of data sharing through analysis of operational emails.",
+        "links": [
+          {
+            "url": "https://github.com/zackbatist/CITF-emails",
+            "label": "zackbatist/CITF-emails"
+          },
+          {
+            "url": "https://zackbatist.info/CITF-emails/topic-modelling/",
+            "label": "zackbatist.info/CITF-emails/topic-modelling"
+          }
+        ],
+        "abstract": "Despite growing policy commitments to open data sharing, little empirical evidence exists on the day-to-day operational realities of coordinating large-scale health research data sharing. This study analyzes 6,833 emails from the inbox of a central operations manager at the Canadian COVID-19 Immunity Task Force (CITF) Databank, spanning correspondence with 100 partnering studies from February 2021 to September 2025. NMF topic modeling identified 14 topics organized into four thematic categories: Agreements & Contracts, Data Operations, Study Documentation, and Coordination. Studies spent a median of 395 days negotiating data sharing agreements and 398 days in data preparation, compared to only 22 days for technical cataloguing — an 18:1 ratio of administrative to technical time. Data sharing is primarily an administrative and governance challenge rather than a technical one."
+      },
+      {
+        "year": "In progress",
+        "authors": [
+          {
+            "name": "Bernier, Alex"
+          },
+          {
+            "name": "Isabel Baltzan"
+          },
+          {
+            "name": "Tina Wey"
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          },
+          {
+            "name": "Isabel Fortier"
+          }
+        ],
+        "title": "Data governance in longitudinal mother-child cohorts: An empirical assessment of the Canadian ReACH Studies.",
+        "venue": {},
+        "desc": "Compares data use conditions that distinct research teams assign to their datasets."
+      },
+      {
+        "year": "In progress",
+        "authors": [
+          {
+            "name": "Khezri, Sadun"
+          },
+          {
+            "name": "Tanya Murphy"
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          },
+          {
+            "name": "Aklil Noza"
+          },
+          {
+            "name": "Melissa Ouellet"
+          },
+          {
+            "name": "Tina Wey"
+          },
+          {
+            "name": "Anouar Nechba"
+          },
+          {
+            "name": "Rita Wissa"
+          },
+          {
+            "name": "[53 PI names]"
+          },
+          {
+            "name": "Alexander Bernier"
+          },
+          {
+            "name": "Ma'n Zawati"
+          },
+          {
+            "name": "Bruce Mazer"
+          },
+          {
+            "name": "Olivia Oxlade"
+          },
+          {
+            "name": "Tim Evans"
+          },
+          {
+            "name": "David Buckeridge"
+          }
+        ],
+        "truncate": 3,
+        "title": "The CITF Databank: A harmonized dataset of SARS-CoV-2 immunity data from Canadian research studies.",
+        "venue": {},
+        "desc": "Marker paper outlining the CITF Databank."
+      },
+      {
+        "year": "In review",
+        "authors": [
+          {
+            "name": "Farahnak, Farhood"
+          },
+          {
+            "name": "Wafik S. El-Deiry"
+          },
+          {
+            "name": "Yves A. Lussier"
+          },
+          {
+            "name": "Razelle Kurzrock"
+          },
+          {
+            "name": "Shai Magidi"
+          },
+          {
+            "name": "Catherine Bresson"
+          },
+          {
+            "name": "Shirin A. Enger"
+          },
+          {
+            "name": "Jia Liu"
+          },
+          {
+            "name": "Jair Bar"
+          },
+          {
+            "name": "Jeremy L. Warner"
+          },
+          {
+            "name": "Tobias Meissner"
+          },
+          {
+            "name": "Eitan Rubin"
+          },
+          {
+            "name": "Jens Rueter"
+          },
+          {
+            "name": "Himabindu Gaddipati"
+          },
+          {
+            "name": "Mandar Kulkarni"
+          },
+          {
+            "name": "Zhen Chen"
+          },
+          {
+            "name": "Sewanti Limaye"
+          },
+          {
+            "name": "Rachel Elsey"
+          },
+          {
+            "name": "Brenda M. Rubenstein"
+          },
+          {
+            "name": "Anthony M. Joshua"
+          },
+          {
+            "name": "Humaid O. Al-Shamsi"
+          },
+          {
+            "name": "Khaled M. Musallam"
+          },
+          {
+            "name": "Fanny Wunder"
+          },
+          {
+            "name": "Jacques Raynaud"
+          },
+          {
+            "name": "Guy Berchem"
+          },
+          {
+            "name": "Manon Gantenbein"
+          },
+          {
+            "name": "Amal Al Omari"
+          },
+          {
+            "name": "Said Dermime"
+          },
+          {
+            "name": "Hikmat Abdel-Razeq"
+          },
+          {
+            "name": "Pierre Saintigny"
+          },
+          {
+            "name": "Andrés Cervantes"
+          },
+          {
+            "name": "Roger R. Reddel"
+          },
+          {
+            "name": "Adel T. Aref"
+          },
+          {
+            "name": "Juan Martin-Liberal"
+          },
+          {
+            "name": "Conxi Lázaro"
+          },
+          {
+            "name": "David Cordero Romera"
+          },
+          {
+            "name": "Marina Sekacheva"
+          },
+          {
+            "name": "Raanan Berger"
+          },
+          {
+            "name": "C.S. Pramesh"
+          },
+          {
+            "name": "Ioana Berindan-Neagoe"
+          },
+          {
+            "name": "Eugenia Girda"
+          },
+          {
+            "name": "Alejandro Piris-Gimenez"
+          },
+          {
+            "name": "Carol J. Farhangfar"
+          },
+          {
+            "name": "Mohammed E. Salem"
+          },
+          {
+            "name": "Rodrigo Dienstmann"
+          },
+          {
+            "name": "Ramon Salazar"
+          },
+          {
+            "name": "Naftali Z. Frankel"
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          },
+          {
+            "name": "Yuri Quintana"
+          },
+          {
+            "name": "Gerald Batist"
+          }
+        ],
+        "truncate": 3,
+        "title": "Worldwide Innovative Network (WIN) Consortium: Building a common global cancer database.",
+        "venue": {
+          "journal": "Nature Reviews in Clinical Oncology"
+        }
+      },
+      {
+        "year": "In progress",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          },
+          {
+            "name": "Julie Lund"
+          },
+          {
+            "name": "Isak Roalkvam"
+          }
+        ],
+        "title": "Bibliometric analysis of Viking Age research.",
+        "venue": {},
+        "desc": "Identifies trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age."
+      },
+      {
+        "year": "In progress",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          },
+          {
+            "name": "Shirin Abbasinejad Enger"
+          }
+        ],
+        "title": "Positive mentorship in the history of radiology.",
+        "venue": {},
+        "desc": "Concerned with positive leadership in academic research environments, through the historical example of Stefan Meyer, who mentored several prominent women scientists during the interwar period."
+      }
+    ],
+    "book": [
+      {
+        "year": "2018",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Using Raspberry Pi in the field.",
+        "venue": {
+          "booktitle": "The Open Digital Archaeology Textbook Environment (ODATE)",
+          "editor": "Shawn Graham",
+          "publisher": "eCampus Ontario"
+        },
+        "desc": "★ Award for Outstanding Work in Digital Archaeology, Archaeological Institute of America.",
+        "links": [
+          {
+            "url": "https://o-date.github.io/draft/book/d-printing-raspberry-pi-and-maker-archaeology.html#using-raspberry-pi-in-the-field",
+            "label": "Book Section"
+          },
+          {
+            "url": "https://o-date.github.io",
+            "label": "o-date.github.io"
+          }
+        ],
+        "cite": "Batist, Zachary. 2018. \"Using Raspberry Pi in the Field.\" In The Open Digital Archaeology Textbook Environment (ODATE), edited by Shawn Graham. eCampus Ontario. https://o-date.github.io.",
+        "bib": "@incollection{batist2018,\n  author = {Batist, Zachary},\n  title = {Using Raspberry Pi in the Field},\n  booktitle = {The Open Digital Archaeology Textbook Environment (ODATE)},\n  editor = {Graham, Shawn},\n  publisher = {eCampus Ontario},\n  year = {2018},\n  url = {https://o-date.github.io}\n}"
+      }
+    ],
+    "proceedings": [
+      {
+        "year": "In review",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Data management is people management: On abstraction of data and labor in archaeological projects.",
+        "venue": {
+          "booktitle": "Data and Technology Politics in Archaeology Workshop"
+        },
+        "links": [
+          {
+            "url": "https://zackbatist.info/data-tech-poli-arch/",
+            "label": "Preprint"
+          },
+          {
+            "url": "https://github.com/zackbatist/data-tech-poli-arch",
+            "label": "zackbatist/data-tech-poli-arch"
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Documenting archaeological knowledge construction as information practices.",
+        "venue": {
+          "booktitle": "Human History and Digital Future: Proceedings of the 46th CAA Conference",
+          "publisher": "Tübingen University Press"
+        },
+        "links": [
+          {
+            "url": "https://doi.org/10.15496/publikation-94869",
+            "label": "10.15496/publikation-94869"
+          }
+        ],
+        "cite": "Batist, Zachary. 2022. \"Documenting Archaeological Knowledge Construction as Information Practices.\" In Human History and Digital Future: Proceedings of the 46th CAA Conference. Tübingen University Press. https://doi.org/10.15496/publikation-94869.",
+        "abstract": "Archaeology is a complex and communal undertaking that brings together people with varied backgrounds, who mobilize a wide range of tools and expert knowledge to assemble the archaeological record. In recognizing objects of interest and characterizing their significance through encoded disciplinary language, we situate our tacit, local experiences within an archaeological epistemic culture, or common modes of reasoning. Communication among archaeologists is therefore considered as a process of enculturation, whereby a shared understanding of the pragmatic conditions and expectations that underlie a record's construction facilitates its continued use by others. This paper presents the preliminary results from doctoral research, which attempts to better understand this archaeological epistemic culture and to develop information infrastructures that facilitate the interoperability of archaeological data across research contexts.",
+        "bib": "@inproceedings{batist2022,\n  author = {Batist, Zachary},\n  title = {Documenting Archaeological Knowledge Construction as Information Practices},\n  booktitle = {Human History and Digital Future: Proceedings of the 46th CAA Conference},\n  publisher = {T{\\\"u}bingen University Press},\n  year = {2022},\n  doi = {10.15496/publikation-94869}\n}"
+      }
+    ],
+    "theses": [
+      {
+        "year": "2023",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Archaeological data work as continuous and collaborative practice.",
+        "venue": {
+          "type": "phdthesis",
+          "institution": "University of Toronto",
+          "supervisor": "Costis Dallas"
+        },
+        "links": [
+          {
+            "url": "https://hdl.handle.net/1807/130306",
+            "label": "1807/130306"
+          }
+        ],
+        "cite": "Batist, Zachary. 2023. \"Archaeological Data Work as Continuous and Collaborative Practice.\" Doctoral dissertation, University of Toronto. https://hdl.handle.net/1807/130306.",
+        "abstract": "This dissertation critically examines the sociotechnical structures that archaeologists rely on to coordinate their research and manage their data. I frame data as discursive media that communicate archaeological encounters, which enable archaeologists to form productive collaboration relationships. All archaeological activities involve data work, as archaeologists simultaneously account for the decisions and circumstances that framed the information they rely on to perform their own practices, while anticipating how their information outputs will be used by others in the future. All archaeological activities are therefore loci of practical epistemic convergence, where meanings are negotiated in relation to communally-held objectives.",
+        "bib": "@phdthesis{batist2023a,\n  author = {Batist, Zachary},\n  title = {Archaeological Data Work as Continuous and Collaborative Practice},\n  school = {University of Toronto},\n  year = {2023},\n  url = {https://hdl.handle.net/1807/130306}\n}"
+      },
+      {
+        "year": "2015",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Obsidian Circulation Networks in Southwest Asia and Anatolia (12,000–5700 B.P.): A Comparative Approach.",
+        "venue": {
+          "type": "mastersthesis",
+          "institution": "McMaster University",
+          "supervisor": "Tristan Carter"
+        },
+        "links": [
+          {
+            "url": "https://hdl.handle.net/11375/16528",
+            "label": "11375/16528"
+          }
+        ],
+        "cite": "Batist, Zachary. 2015. \"Obsidian Circulation Networks in Southwest Asia and Anatolia (12,000–5700 B.P.): A Comparative Approach.\" Master's thesis, McMaster University. https://hdl.handle.net/11375/16528.",
+        "bib": "@mastersthesis{batist2015,\n  author = {Batist, Zachary},\n  title = {Obsidian Circulation Networks in Southwest Asia and Anatolia (12,000--5700 B.P.): A Comparative Approach},\n  school = {McMaster University},\n  year = {2015},\n  url = {https://hdl.handle.net/11375/16528}\n}"
+      },
+      {
+        "year": "2012",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Feasting in Bronze Age Greece: A Network Analysis Approach.",
+        "venue": {
+          "type": "bachelorsthesis",
+          "institution": "Carleton University",
+          "supervisor": "Shawn Graham"
+        }
+      }
+    ]
+  },
+  "softwareData": {
+    "software": [
+      {
+        "year": "2025 –",
+        "content": "qc-atelier.",
+        "desc": "A series of utilities to support the Qualitative Coding software package.",
+        "links": [
+          {
+            "url": "https://github.com/zackbatist/CITF-Postdoc",
+            "label": "zackbatist/CITF-Postdoc"
+          }
+        ]
+      },
+      {
+        "year": "2020 – 2021",
+        "content": "Queryable Artefact Record Interface (QuARI).",
+        "desc": "A database interface designed to facilitate the irregular, iterative, and non-linear workflows commonly employed in lithic analysis.",
+        "links": [
+          {
+            "url": "https://github.com/zackbatist/QuARI",
+            "label": "zackbatist/QuARI"
+          },
+          {
+            "url": "https://doi.org/10.1017/aap.2021.11",
+            "label": "10.1017/aap.2021.11"
+          }
+        ]
+      }
+    ],
+    "datasets": [
+      {
+        "year": "2018 –",
+        "content": "open-archaeo.",
+        "desc": "A comprehensive list of open source archaeological software and resources.",
+        "links": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.8299651",
+            "label": "10.5281/zenodo.8299651"
+          },
+          {
+            "url": "https://github.com/zackbatist/open-archaeo",
+            "label": "zackbatist/open-archaeo"
+          },
+          {
+            "url": "https://open-archaeo.info",
+            "label": "open-archaeo.info"
+          }
+        ]
+      },
+      {
+        "year": "2014 – 2017",
+        "content": "The Database of Obsidian Sourcing Studies (DObsiSS).",
+        "desc": "A listing of chemically characterized archaeological obsidian, compiled from published journal articles, excavation reports, conference papers, and other scholarly records.",
+        "links": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.55848",
+            "label": "10.5281/zenodo.55848"
+          },
+          {
+            "url": "https://github.com/zackbatist/DObsiSS",
+            "label": "zackbatist/DObsiSS"
+          },
+          {
+            "url": "https://zackbatist.info/DObsiSS",
+            "label": "zackbatist.info/DObsiSS"
+          }
+        ]
+      }
+    ],
+    "initiatives": [
+      {
+        "year": "2025 –",
+        "content": "Digital Archaeology Maintainathon.",
+        "desc": "A week-long drive to encourage maintenance of code and data, and to help instill good para-coding practices among archaeological researchers.",
+        "links": [
+          {
+            "url": "https://sslarch.github.io/maintainathon/",
+            "label": "sslarch.github.io/maintainathon"
+          },
+          {
+            "url": "https://github.com/sslarch/maintainathon",
+            "label": "sslarch/maintainathon"
+          }
+        ]
+      },
+      {
+        "year": "2024 –",
+        "content": "Diamond Open Archaeology.",
+        "desc": "A listing of diamond open access archaeology journals.",
+        "links": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.15026607",
+            "label": "10.5281/zenodo.15026607"
+          },
+          {
+            "url": "https://github.com/open-archaeo/diamond",
+            "label": "open-archaeo/diamond"
+          },
+          {
+            "url": "https://diamond.open-archaeo.info",
+            "label": "diamond.open-archaeo.info"
+          }
+        ]
+      }
+    ]
+  },
+  "grantsAwards": {
+    "grants": [
+      {
+        "year": "2019 – 2021",
+        "content": "SSHRC Doctoral Fellowship. <em>Archaeological data curation as continuous and collaborative practice.</em> Award ID: 752-2019-2233. ($20,000)"
+      },
+      {
+        "year": "2019",
+        "content": "Research Travel Grant ($500). Faculty of Arts and Science, University of Toronto."
+      },
+      {
+        "year": "2017",
+        "content": "Joseph and Maria Shaw Graduate Student Travel Award ($500). The Archaeology Centre, University of Toronto."
+      },
+      {
+        "year": "2015",
+        "content": "McMaster University Travel Scholarship for OpenCon 2015 ($2500). McMaster University Library."
+      },
+      {
+        "year": "2015",
+        "content": "Edith M. Wightman Travel Scholarship ($1000). School of Graduate Studies, McMaster University."
+      },
+      {
+        "year": "2015",
+        "content": "Travel Assistance Grant ($500). School of Graduate Studies, McMaster University."
+      },
+      {
+        "year": "2015",
+        "content": "Graduate Student Travel Award ($120). Archaeological Institute of America."
+      },
+      {
+        "year": "2014",
+        "content": "McMaster University Travel Scholarship for OpenCon 2014 ($2500, declined). McMaster University Library."
+      },
+      {
+        "year": "2011",
+        "content": "Full Tuition Scholarship (declined). Digital Humanities Summer Institute, University of Victoria."
+      }
+    ],
+    "awards": [
+      {
+        "year": "2014",
+        "content": "Robert P. Wolff Thesis Prize. Society for Philosophy & Culture, McMaster University."
+      },
+      {
+        "year": "2012",
+        "content": "Dean's Honour List. Carleton University."
+      },
+      {
+        "year": "2012",
+        "content": "Michael Kelway Oliver Scholarship. Carleton University."
+      }
+    ]
+  },
+  "teaching": {
+    "ta": [
+      {
+        "year": "2020",
+        "content": "Curatorial Practice (MSL 2000). Faculty of Information, University of Toronto."
+      },
+      {
+        "year": "2017 – 2020",
+        "content": "Representing, Documenting, and Accessing the Cultural Record (INF 1321). Faculty of Information, University of Toronto."
+      },
+      {
+        "year": "2017",
+        "content": "Information Policy, Regulation and Law (INF 2181). Faculty of Information, University of Toronto."
+      },
+      {
+        "year": "2016",
+        "content": "Archaeology and Popular Culture (ANTH 2PC3). Department of Anthropology, McMaster University."
+      },
+      {
+        "year": "2014 – 2015",
+        "content": "World Archaeology (ANTH 2WA3E). Department of Anthropology, McMaster University."
+      },
+      {
+        "year": "2012, 2015",
+        "content": "Introduction to Anthropology: Identity, Race and Power (ANTH 1AB3E). Department of Anthropology, McMaster University."
+      },
+      {
+        "year": "2013",
+        "content": "Introduction to Anthropology: Sex, Food and Death (ANTH 1AA3). Department of Anthropology, McMaster University."
+      }
+    ],
+    "workshops": [
+      {
+        "year": "2022",
+        "content": "Using Qualitative Data Analysis Software. The Ethnography Lab Methods Café: Software in Ethnographic Research Methods, Department of Anthropology, University of Toronto."
+      },
+      {
+        "year": "2018",
+        "content": "Designing and Implementing Relational Databases. Archaeological Information Interest Group, The Archaeology Centre, University of Toronto.",
+        "links": [
+          {
+            "url": "https://github.com/zackbatist/archaeo-db-workshop",
+            "label": "zackbatist/archaeo-db-workshop"
+          }
+        ]
+      }
+    ]
+  },
+  "presentations": {
+    "invited": [
+      {
+        "year": "2026",
+        "month": "March",
+        "content": "Investigating archaeological information commons as coordinated, collective and community-driven action. Digital Archaeology and Heritage Lab Digital Lunch Series, Department of Archaeology, University of York."
+      },
+      {
+        "year": "2025",
+        "month": "December",
+        "content": "Archaeological Data Work in Practice. Digital Heritage Seminar, instructed by Piraye Hacıgüzeller. Antwerp Cultural Heritage Sciences (ARCHES), University of Antwerp."
+      },
+      {
+        "year": "2025",
+        "month": "October",
+        "content": "Open Data in Practice. INF 649: Digital Curation, instructed by Ilja Frissen. School of Information Studies, McGill University."
+      },
+      {
+        "year": "2025",
+        "month": "April",
+        "content": "Articulating data harmonization as pragmatic, collaborative experiences. McGill Clinical and Health Information Research Group, School of Population and Global Health, McGill University.",
+        "links": [
+          {
+            "url": "https://zackbatist.info/CITF-Postdoc/MCHI-2025",
+            "label": "Slides"
+          }
+        ]
+      },
+      {
+        "year": "2024",
+        "month": "November",
+        "content": "Curating archaeological research data in practice, from the field to the archive. INF 649: Digital Curation, instructed by Ilja Frissen. School of Information Studies, McGill University."
+      },
+      {
+        "year": "2024",
+        "month": "October",
+        "content": "Exploring collaborative practices in archaeological software development. Coffee talk for Jean-Baptiste Poline and colleagues, Neuro Data Science ORIGAMI Lab, McGill University."
+      }
+    ],
+    "conference": [
+      {
+        "year": "2026",
+        "month": "June",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Where do we draw the line? On legitimate uses of AI and open information commons, and commitment to community values.",
+        "venue": "2026 INKE Gathering, Université de Montréal",
+        "links": [
+          {
+            "url": "https://zackbatist.info/inke-2026",
+            "label": "Slides"
+          },
+          {
+            "url": "https://github.com/zackbatist/inke-2026",
+            "label": "zackbatist/inke-2026"
+          }
+        ]
+      },
+      {
+        "year": "2026",
+        "month": "April",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          },
+          {
+            "name": "Isak Roalkvam"
+          },
+          {
+            "name": "Julie Lund"
+          }
+        ],
+        "title": "A protocol for analyzing citational practice in Viking Age archaeology.",
+        "venue": "Citational Politics and Practices in Viking Age Archaeology and Beyond, University of Oslo",
+        "links": [
+          {
+            "url": "https://zackbatist.info/BibVik/analytical-protocol-slides",
+            "label": "Slides"
+          }
+        ]
+      },
+      {
+        "year": "2026",
+        "month": "April",
+        "authors": [
+          {
+            "name": "Roe, Joe"
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          },
+          {
+            "name": "James A.F. Yates"
+          },
+          {
+            "name": "Andrea Titolo"
+          }
+        ],
+        "title": "archaeo.social and archaeo.dev: decentralised, collective digital infrastructure for archaeologists.",
+        "venue": "53rd Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2026), Vienna",
+        "poster": true,
+        "links": [
+          {
+            "url": "https://github.com/archaeo-social/caa26_archaeo-dev",
+            "label": "archaeo-social/caa26_archaeo-dev"
+          }
+        ]
+      },
+      {
+        "year": "2023",
+        "month": "December",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.",
+        "venue": "ArcheoFOSS XVII — Open Science and Archaeology: Archiving the Knowledge, Department of Historical Studies, University of Turin"
+      },
+      {
+        "year": "2023",
+        "month": "February",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Documenting the collaborative commitments that support data sharing within archaeological project collectives.",
+        "venue": "Digital Archaeology Bern 2023, Bern Computational and Digital Archaeology Lab, University of Bern",
+        "links": [
+          {
+            "url": "https://github.com/zackbatist/DAB23",
+            "label": "zackbatist/DAB23"
+          }
+        ]
+      },
+      {
+        "year": "2021",
+        "month": "June",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          },
+          {
+            "name": "Joe Roe"
+          }
+        ],
+        "title": "Open archaeology: a survey of collaborative software engineering in archaeological research.",
+        "venue": "49th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2021), Limassol, Cyprus (virtual)",
+        "links": [
+          {
+            "url": "https://github.com/zackbatist/caa2021-openarchaeo",
+            "label": "zackbatist/caa2021-openarchaeo"
+          }
+        ]
+      },
+      {
+        "year": "2019",
+        "month": "September",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Distributing knowledge of digital workflows via workshops and support groups.",
+        "venue": "Our Networks, Re: Infrastructure, Toronto"
+      },
+      {
+        "year": "2019",
+        "month": "October",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Untangling and extending the discursive relations mediated by archaeological data through grounded research.",
+        "venue": "On Shifting Grounds — The Study of Archaeological Practices in a Changing World, COST-Arkwork and Department of History and Archaeology, University of Crete"
+      },
+      {
+        "year": "2018",
+        "month": "April",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Documenting archaeological knowledge construction as socially-embedded information practices.",
+        "venue": "PhD Research Days 2018, Faculty of Information, University of Toronto"
+      },
+      {
+        "year": "2018",
+        "month": "March",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Documenting archaeological knowledge construction as distributed information practices.",
+        "venue": "46th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2018), Tübingen",
+        "links": [
+          {
+            "url": "https://doi.org/10.15496/publikation-87754",
+            "label": "10.15496/publikation-87754"
+          }
+        ]
+      },
+      {
+        "year": "2017",
+        "month": "May",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          },
+          {
+            "name": "Costis Dallas"
+          }
+        ],
+        "title": "A view from the bridge: human- and thing-centred approaches to research practice, disciplinary discourse and local engagement with the archaeological record.",
+        "venue": "TAG (North America) 2017 — The Medium is the Message: Media and Mediation in Archaeology, Toronto"
+      },
+      {
+        "year": "2017",
+        "month": "March",
+        "authors": [
+          {
+            "name": "Carter, Tristan"
+          },
+          {
+            "name": "Kathryn Campeau"
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          },
+          {
+            "name": "Yosef Garfinkel"
+          },
+          {
+            "name": "David Rosenberg"
+          },
+          {
+            "name": "Yosef Rowan"
+          },
+          {
+            "name": "Katharina Streit"
+          }
+        ],
+        "title": "Social interaction at distance over the long term: obsidian sourcing from the Southern Levant (9th–4th millennia cal BC).",
+        "venue": "Society for American Archaeology 82nd Annual Meeting, Vancouver"
+      },
+      {
+        "year": "2017",
+        "month": "January",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Identifying obsidian procurement habits during the Pre-Pottery Neolithic in the Levant using network analysis.",
+        "venue": "Archaeological Institute of America 118th Annual Meeting, Toronto",
+        "poster": true
+      },
+      {
+        "year": "2015",
+        "month": "January",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "The Database of Obsidian Sourcing Studies (DObsiSS): Using Git for collaborative management of archaeological data.",
+        "venue": "American Archaeological Institute 116th Annual Meeting, New Orleans",
+        "poster": true
+      },
+      {
+        "year": "2014",
+        "month": "March",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "An examination of obsidian circulation patterns in terms of relational and geographical distance in Southwest Asia and Anatolia from the Epi-Palaeolithic to Chalcolithic periods (14000–5700 B.P.).",
+        "venue": "Archaeological Sciences and the Ancient Mediterranean Environment, The Archaeology Centre, University of Toronto"
+      },
+      {
+        "year": "2014",
+        "month": "January",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Using network analysis to examine relative resource procurement strategies in Anatolia and Southwest Asia from the Epipaleolithic to Chalcolithic periods (14,000–5700 BP).",
+        "venue": "American Archaeological Institute 115th Annual Meeting, Chicago"
+      },
+      {
+        "year": "2013",
+        "month": "November",
+        "authors": [
+          {
+            "name": "Freund, Kyle P."
+          },
+          {
+            "name": "Zachary Batist",
+            "me": true
+          }
+        ],
+        "title": "Tracking the circulation of Sardinian obsidian using network analysis: lithic procurement, cultural interaction, and early maritime navigation in the Neolithic.",
+        "venue": "Networks of Maritime Connectivity in the Ancient Mediterranean, The Archaeology Centre, University of Toronto"
+      },
+      {
+        "year": "2013",
+        "month": "September",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Using network analysis to examine obsidian assemblage variability in Anatolia and Southwest Asia from the Epi-Palaeolithic to Chalcolithic periods (14000–5700 BP).",
+        "venue": "The Future of Historical Network Research Conference, Historical Network Research, University of Hamburg"
+      },
+      {
+        "year": "2012",
+        "month": "March",
+        "authors": [
+          {
+            "name": "Batist, Zachary",
+            "me": true
+          }
+        ],
+        "title": "Eat, drink and be networked: feasting and Bronze Age networks.",
+        "venue": "Colloquium on Digital History and the Transnational History of Nursing, Department of History, Carleton University"
+      }
+    ]
+  },
+  "service": {
+    "leadership": [
+      {
+        "year": "2026 –",
+        "content": "Founder and Coordinator, Digital Archaeology Maintainathon."
+      },
+      {
+        "year": "2025",
+        "content": "Interim Coordinator (member since 2019), Scientific Scripting Languages in Archaeology Special Interest Group (sslarch), Computer Applications in Archaeology."
+      },
+      {
+        "year": "2022 –",
+        "content": "Community Moderator, <a href=\"https://archaeo.social\" target=\"_blank\">archaeo.social</a>."
+      },
+      {
+        "year": "2022",
+        "content": "Peer Mentor, UofT Coders Peer Mentorship Program, University of Toronto."
+      },
+      {
+        "year": "2018 –",
+        "content": "Founder and Maintainer, <a href=\"https://open-archaeo.info\" target=\"_blank\">open-archaeo.info</a>."
+      },
+      {
+        "year": "2017 – 2021",
+        "content": "Founder and Coordinator, Archaeological Information Interest Group, The Archaeology Centre, University of Toronto."
+      },
+      {
+        "year": "2013 – 2014",
+        "content": "Webmaster, Nexus: The Canadian Student Journal of Anthropology, Department of Anthropology, McMaster University."
+      }
+    ],
+    "committees": [
+      {
+        "year": "2019 – 2020",
+        "content": "Graduate Student Union Faculty Representative, Faculty of Information Doctoral Student Association, University of Toronto."
+      },
+      {
+        "year": "2016 – 2019",
+        "content": "Tech Fund Committee Member and Coordinator, Faculty of Information Doctoral Student Association, University of Toronto."
+      },
+      {
+        "year": "2013 – 2014",
+        "content": "Graduate Student Association Faculty Representative, Faculty of Social Sciences, McMaster University."
+      }
+    ],
+    "organizing": [
+      {
+        "year": "2026",
+        "month": "April",
+        "content": "Citational Politics and Practices in Viking Age Archaeology and Beyond. Co-organized with Julie Lund and Isak Roalkvam, Department of Archaeology, Conservation and History, University of Oslo.",
+        "links": [
+          {
+            "url": "https://zackbatist.info/BibVik/workshop",
+            "label": "zackbatist.info/BibVik/workshop"
+          }
+        ]
+      },
+      {
+        "year": "2023",
+        "month": "December",
+        "content": "archaeo.social: archaeology in the Fediverse and the future of scholarly social media. Panel convened for ArcheoFOSS XVII with Joe Roe, Department of Historical Studies, University of Turin.",
+        "links": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.10362684",
+            "label": "10.5281/zenodo.10362684"
+          },
+          {
+            "url": "https://github.com/archaeo-social/archeofoss23_fediverse",
+            "label": "archaeo-social/archeofoss23_fediverse"
+          }
+        ]
+      },
+      {
+        "year": "2014",
+        "content": "Second Annual Interdisciplinary Colloquium, co-organized with Priscilla Medeiros, Faculty of Social Sciences, McMaster University."
+      }
+    ],
+    "interestGroups": [
+      {
+        "year": "2018 – 2022",
+        "content": "UofT Coders, University of Toronto."
+      },
+      {
+        "year": "2018 – 2019",
+        "content": "Digitality Reading Group, University of Toronto."
+      },
+      {
+        "year": "2017 – 2021",
+        "content": "Archaeological Information Interest Group, The Archaeology Centre, University of Toronto."
+      },
+      {
+        "year": "2017 – 2019",
+        "content": "Archaeological Theory Interest Group, The Archaeology Centre, University of Toronto."
+      }
+    ]
+  },
+  "reviewer": "Open Information Science · Computer Applications in Archaeology · Peer Community in Archaeology · Advances in Archaeological Practice",
+  "certifications": "The Carpentries Instructor Training",
+  "languages": [
+    {
+      "year": "English",
+      "content": "Mother tongue"
+    },
+    {
+      "year": "French",
+      "content": "Basic reading and writing"
+    }
+  ],
+  "outreach": [
+    {
+      "year": "2022 –",
+      "content": "Personal blog, <a href=\"https://zackbatist.info/posts\" target=\"_blank\">zackbatist.info/posts</a>."
+    }
+  ],
+  "reviewer_list": [
+    "Open Information Science",
+    "Computer Applications in Archaeology",
+    "Peer Community in Archaeology",
+    "Advances in Archaeological Practice"
+  ],
+  "certifications_list": [
+    "The Carpentries Instructor Training"
+  ]
+}; // end CV
+
+// ── RENDERER ──────────────────────────────────────────────────────────────────
+const COPY_SVG = `<svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+
+function el(tag, attrs, ...children) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (k === 'class') e.className = v;
+    else if (k === 'html') e.innerHTML = v;
+    else e.setAttribute(k, v);
+  }
+  for (const c of children) {
+    if (c == null) continue;
+    e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+  }
+  return e;
+}
+
+function renderAuthors(authors, truncate) {
+  if (!authors || !authors.length) return null;
+  const n = authors.length;
+  const thresh = truncate || 99;
+
+  function buildFull() {
+    const frag = document.createDocumentFragment();
+    authors.forEach((a, i) => {
+      const name = a.me ? Object.assign(document.createElement('strong'), { textContent: a.name }) : document.createTextNode(a.name);
+      frag.appendChild(name);
+      if (i < n - 2) frag.appendChild(document.createTextNode(', '));
+      else if (i === n - 2) frag.appendChild(document.createTextNode(' and '));
+    });
+    return frag;
+  }
+
+  function buildShort() {
+    const frag = document.createDocumentFragment();
+    const shown = authors.slice(0, thresh);
+    shown.forEach((a, i) => {
+      const name = a.me ? Object.assign(document.createElement('strong'), { textContent: a.name }) : document.createTextNode(a.name);
+      frag.appendChild(name);
+      if (i < shown.length - 1) frag.appendChild(document.createTextNode(', '));
+    });
+    const rest = authors.slice(thresh);
+    const meInRest = rest.find(a => a.me);
+    const suffix = `…and ${rest.length} more${meInRest ? ' including Zachary Batist' : ''}`;
+    const tog = el('button', { class: 'author-toggle' }, suffix);
+    let expanded = false;
+    tog.addEventListener('click', () => {
+      expanded = !expanded;
+      wrap.innerHTML = '';
+      if (expanded) {
+        wrap.appendChild(buildFull());
+        const less = el('button', { class: 'author-toggle' }, 'show less');
+        less.addEventListener('click', () => { expanded = false; rebuild(); });
+        wrap.appendChild(less);
+      } else { rebuild(); }
+    });
+    frag.appendChild(tog);
+    return frag;
+  }
+
+  const wrap = document.createElement('span');
+  function rebuild() { wrap.innerHTML = ''; wrap.appendChild(n > thresh ? buildShort() : buildFull()); }
+  rebuild();
+  return wrap;
+}
+
+function renderVenue(venue) {
+  if (!venue) return null;
+  const parts = [];
+  if (venue.journal) {
+    let v = `<em>${venue.journal}</em>`;
+    if (venue.volume) { v += ` ${venue.volume}`; if (venue.issue) v += ` (${venue.issue})`; }
+    if (venue.pages) v += `: ${venue.pages}`;
+    parts.push(v);
+  } else if (venue.booktitle) {
+    let v = `In <em>${venue.booktitle}</em>`;
+    if (venue.editor) v += `, edited by ${venue.editor}`;
+    if (venue.publisher) v += `. ${venue.publisher}`;
+    parts.push(v);
+  } else if (venue.type === 'phdthesis') {
+    parts.push(`Doctoral dissertation, Faculty of Information, ${venue.institution}. Supervised by ${venue.supervisor}`);
+  } else if (venue.type === 'mastersthesis') {
+    parts.push(`Master's thesis, Department of Anthropology, ${venue.institution}. Supervised by ${venue.supervisor}`);
+  } else if (venue.type === 'bachelorsthesis') {
+    parts.push(`Bachelor's thesis, Directed Interdisciplinary Studies, ${venue.institution}. Supervised by ${venue.supervisor}`);
+  }
+  const span = document.createElement('span');
+  span.innerHTML = parts.join('. ');
+  return span;
+}
+
+const LINK_ORDER = ['doi','hdl','preprint','postprint','github','slides','website','bib'];
+
+function sortedLinks(links) {
+  if (!links) return [];
+  return [...links].sort((a,b) => {
+    const ai = LINK_ORDER.indexOf(a.type||'website');
+    const bi = LINK_ORDER.indexOf(b.type||'website');
+    return (ai===-1?99:ai) - (bi===-1?99:bi);
+  });
+}
+
+function renderLinks(links) {
+  if (!links || !links.length) return null;
+  const div = el('div', { class: 'l' });
+  sortedLinks(links).forEach(lk => {
+    const a = el('a', { href: lk.url, target: '_blank', ...(lk.type ? { 'data-type': lk.type } : {}) }, lk.label);
+    div.appendChild(a);
+  });
+  return div;
+}
+
+function renderPanel(entry) {
+  const hasCite = !!entry.cite;
+  const hasAbstract = !!entry.abstract;
+  const hasBib = !!entry.bib;
+  if (!hasCite && !hasAbstract && !hasBib) return null;
+
+  const panel = el('div', { class: 'entry-panel' });
+  panel.dataset.cite = entry.cite || '';
+  panel.dataset.abstract = entry.abstract || '';
+  panel.dataset.bib = entry.bib || '';
+  const body = el('div', { class: 'panel-body' });
+  const pre = el('pre');
+  pre.style.display = 'none';
+  const copyBtn = el('button', { class: 'panel-copy', html: COPY_SVG });
+  copyBtn.style.display = 'none';
+  panel.append(body, pre, copyBtn);
+
+  return panel;
+}
+
+function renderPills(entry, panel) {
+  const hasCite = !!entry.cite;
+  const hasAbstract = !!entry.abstract;
+  const hasBib = !!entry.bib;
+  if (!hasCite && !hasAbstract && !hasBib) return null;
+
+  const pills = [];
+  if (hasCite) pills.push(['cite', 'cite']);
+  if (hasAbstract) pills.push(['abstract', 'abstract']);
+  if (hasBib) pills.push(['bib', 'bib']);
+
+  const frag = document.createDocumentFragment();
+
+  let current = null;
+  pills.forEach(([type, label]) => {
+    const btn = el('button', { class: 'pill-btn' }, label);
+    btn.addEventListener('click', () => {
+      if (current === type) {
+        panel.classList.remove('open');
+        btn.classList.remove('active');
+        current = null;
+        return;
+      }
+      frag.querySelectorAll && frag.querySelectorAll('.pill-btn'); // noop
+      panel.closest('.c').querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      current = type;
+      panel.classList.add('open');
+
+      const body = panel.querySelector('.panel-body');
+      const pre = panel.querySelector('pre');
+      const copyBtn = panel.querySelector('.panel-copy');
+
+      function showCopy(text) {
+        copyBtn.style.display = 'flex';
+        copyBtn.onclick = () => {
+          navigator.clipboard.writeText(text).then(() => {
+            const svg = copyBtn.innerHTML;
+            copyBtn.innerHTML = '✓';
+            copyBtn.style.fontSize = '11px';
+            setTimeout(() => { copyBtn.innerHTML = svg; copyBtn.style.fontSize = ''; }, 1800);
+          });
+        };
+      }
+
+      if (type === 'cite') {
+        body.style.display = 'block'; body.textContent = panel.dataset.cite;
+        pre.style.display = 'none'; showCopy(panel.dataset.cite);
+      } else if (type === 'abstract') {
+        body.style.display = 'block'; body.textContent = panel.dataset.abstract;
+        pre.style.display = 'none'; showCopy(panel.dataset.abstract);
+      } else if (type === 'bib') {
+        body.style.display = 'none';
+        pre.style.display = 'block'; pre.textContent = panel.dataset.bib;
+        showCopy(panel.dataset.bib);
+      }
+    });
+    frag.appendChild(btn);
+  });
+  return frag;
+}
+
+function renderLinksWithPills(entry) {
+  const links = renderLinks(entry.links);
+  const panel = renderPanel(entry);
+  const pills = panel ? renderPills(entry, panel) : null;
+  if (!links && !pills) return { linksEl: null, panelEl: null };
+  const linksEl = links || el('div', { class: 'l' });
+  if (!links && pills) linksEl.className = 'l';
+  if (pills) pills.childNodes && Array.from(pills.childNodes).forEach(n => linksEl.appendChild(n));
+  return { linksEl, panelEl: panel };
+}
+
+function addSep(linksEl, entry) {
+  // Add separator before first pill-btn if links exist
+  const firstPill = linksEl && linksEl.querySelector('.pill-btn');
+  if (firstPill && linksEl.querySelector('a')) {
+    const sep = el('span', { class: 'pill-sep' }, '|');
+    linksEl.insertBefore(sep, firstPill);
+  }
+}
+
+function renderSimpleEntry(entry) {
+  const yEl = el('span', { class: 'y' }, entry.year);
+  if (entry.month) yEl.appendChild(el('span', { class: 'mo' }, entry.month));
+  const c = el('div', { class: 'c' });
+  if (entry.content) {
+    const p = el('p', { html: entry.content.replace(/\n/g, '<br>') });
+    c.appendChild(p);
+  }
+  if (entry.desc) c.appendChild(el('p', { class: 'desc', html: entry.desc }));
+  const { linksEl, panelEl } = renderLinksWithPills(entry);
+  if (linksEl) { addSep(linksEl, entry); c.appendChild(linksEl); }
+  if (panelEl) c.appendChild(panelEl);
+  return el('div', { class: 'e' }, yEl, c);
+}
+
+function renderPubEntry(entry) {
+  const isThesis = entry.venue && ['phdthesis','mastersthesis','bachelorsthesis'].includes(entry.venue.type);
+  const yEl = el('span', { class: 'y' }, entry.year);
+  if (entry.month) yEl.appendChild(el('span', { class: 'mo' }, entry.month));
+  const c = el('div', { class: 'c' });
+
+  // Authors
+  const authEl = renderAuthors(entry.authors, entry.truncate);
+  if (authEl) { c.appendChild(authEl); c.appendChild(document.createTextNode('. ')); }
+
+  // Title — italic for theses
+  if (isThesis) {
+    c.appendChild(el('em', {}, entry.title));
+  } else {
+    c.appendChild(document.createTextNode('\u201C' + entry.title + '\u201D'));
+  }
+  c.appendChild(document.createTextNode(' '));
+
+  // Venue
+  const venueEl = renderVenue(entry.venue);
+  if (venueEl) { c.appendChild(venueEl); c.appendChild(document.createTextNode('.')); }
+
+  if (entry.desc) c.appendChild(el('p', { class: 'desc', html: entry.desc }));
+  if (entry.poster) {
+    const l = el('div', { class: 'l' });
+    l.appendChild(el('span', { class: 'tag' }, 'poster'));
+    c.appendChild(l);
+  }
+
+  const { linksEl, panelEl } = renderLinksWithPills(entry);
+  if (linksEl) {
+    if (entry.poster) {
+      linksEl.querySelectorAll('a').forEach(a => linksEl.querySelector('.l') ? null : null);
+    }
+    addSep(linksEl, entry);
+    c.appendChild(linksEl);
+  }
+  if (entry.poster && linksEl) {
+    const tagSpan = el('span', { class: 'tag' }, 'poster');
+    linksEl.insertBefore(tagSpan, linksEl.firstChild);
+  }
+  if (panelEl) c.appendChild(panelEl);
+  return el('div', { class: 'e' }, yEl, c);
+}
+
+function renderPresEntry(entry) {
+  const yEl = el('span', { class: 'y' }, entry.year);
+  if (entry.month) yEl.appendChild(el('span', { class: 'mo' }, entry.month));
+  const c = el('div', { class: 'c' });
+
+  if (entry.authors && entry.authors.length) {
+    const authEl = renderAuthors(entry.authors, entry.truncate);
+    c.appendChild(authEl);
+    c.appendChild(document.createTextNode('. \u201C' + entry.title + '\u201D '));
+    if (entry.venue) c.appendChild(document.createTextNode(entry.venue + '.'));
+  } else {
+    c.appendChild(document.createTextNode(entry.content || ''));
+  }
+
+  const lEl = renderLinks(entry.links);
+  if (lEl || entry.poster) {
+    const linksEl = lEl || el('div', { class: 'l' });
+    if (entry.poster) linksEl.insertBefore(el('span', { class: 'tag' }, 'poster'), linksEl.firstChild);
+    c.appendChild(linksEl);
+  }
+  return el('div', { class: 'e' }, yEl, c);
+}
+
+function section(id, title, content) {
+  const s = el('section', { id });
+  s.appendChild(el('h2', {}, title));
+  s.appendChild(content);
+  return s;
+}
+
+function subsection(id, title, entries, renderer) {
+  const frag = document.createDocumentFragment();
+  frag.appendChild(el('h3', { id }, title));
+  entries.forEach(e => frag.appendChild(renderer(e)));
+  return frag;
+}
+
+function build() {
+  const root = document.getElementById('cv-root');
+
+  // Nav
+  const navSections = [
+    ['#education', 'Education'],
+    ['#publications', 'Publications'],
+    ['#software-data', 'Software & Data'],
+    ['#grants-awards', 'Grants & Awards'],
+    ['#teaching', 'Teaching'],
+    ['#presentations', 'Presentations'],
+    ['#service', 'Service']
+  ];
+  const navLinks = document.getElementById('nav-links');
+  navSections.forEach(([href, label]) => {
+    navLinks.appendChild(el('a', { href }, label));
+  });
+
+  // Expertise
+  const expSec = el('section', { id: 'expertise' });
+  expSec.appendChild(el('h2', {}, 'Areas of Expertise'));
+  expSec.appendChild(el('p', { class: 'areas', html: CV.expertise }));
+  root.appendChild(expSec);
+
+  // Position
+  const posSec = el('section', { id: 'position' });
+  posSec.appendChild(el('h2', {}, 'Position'));
+  CV.position.forEach(e => posSec.appendChild(renderSimpleEntry(e)));
+  root.appendChild(posSec);
+
+  // Education
+  const eduSec = el('section', { id: 'education' });
+  eduSec.appendChild(el('h2', {}, 'Education'));
+  CV.education.forEach(e => eduSec.appendChild(renderSimpleEntry(e)));
+  root.appendChild(eduSec);
+
+  // Publications
+  const pubSec = el('section', { id: 'publications' });
+  pubSec.appendChild(el('h2', {}, 'Publications'));
+  pubSec.appendChild(subsection('articles', 'Journal Articles', CV.publications.articles, renderPubEntry));
+  pubSec.appendChild(subsection('inprogress', 'In Progress', CV.publications.inprogress, renderPubEntry));
+  pubSec.appendChild(subsection('book', 'Book Contributions', CV.publications.book, renderPubEntry));
+  pubSec.appendChild(subsection('proceedings', 'Conference Proceedings', CV.publications.proceedings, renderPubEntry));
+  pubSec.appendChild(subsection('theses', 'Theses', CV.publications.theses, renderPubEntry));
+  root.appendChild(pubSec);
+
+  // Software & Data
+  const sdSec = el('section', { id: 'software-data' });
+  sdSec.appendChild(el('h2', {}, 'Software & Data'));
+  sdSec.appendChild(subsection('software', 'Software', CV.softwareData.software, renderSimpleEntry));
+  sdSec.appendChild(subsection('datasets', 'Datasets', CV.softwareData.datasets, renderSimpleEntry));
+  sdSec.appendChild(subsection('initiatives', 'Other Open Initiatives', CV.softwareData.initiatives, renderSimpleEntry));
+  root.appendChild(sdSec);
+
+  // Grants & Awards
+  const gaSec = el('section', { id: 'grants-awards' });
+  gaSec.appendChild(el('h2', {}, 'Grants & Awards'));
+  gaSec.appendChild(subsection('grants', 'Grants & Fellowships', CV.grantsAwards.grants, renderSimpleEntry));
+  gaSec.appendChild(subsection('awards', 'Awards & Honours', CV.grantsAwards.awards, renderSimpleEntry));
+  root.appendChild(gaSec);
+
+  // Teaching
+  const teachSec = el('section', { id: 'teaching' });
+  teachSec.appendChild(el('h2', {}, 'Teaching'));
+  teachSec.appendChild(subsection('ta', 'Teaching Assistant', CV.teaching.ta, renderSimpleEntry));
+  teachSec.appendChild(subsection('workshops', 'Workshops & Short Courses', CV.teaching.workshops, renderSimpleEntry));
+  root.appendChild(teachSec);
+
+  // Presentations
+  const presSec = el('section', { id: 'presentations' });
+  presSec.appendChild(el('h2', {}, 'Presentations'));
+  presSec.appendChild(subsection('invited', 'Invited Presentations', CV.presentations.invited, renderSimpleEntry));
+  presSec.appendChild(subsection('conference', 'Conference Presentations', CV.presentations.conference, renderPresEntry));
+  root.appendChild(presSec);
+
+  // Service
+  const svcSec = el('section', { id: 'service' });
+  svcSec.appendChild(el('h2', {}, 'Academic Service & Affiliations'));
+  svcSec.appendChild(subsection('leadership', 'Community Leadership', CV.service.leadership, renderSimpleEntry));
+  svcSec.appendChild(subsection('committees', 'Committees', CV.service.committees, renderSimpleEntry));
+  svcSec.appendChild(subsection('organizing', 'Conference & Panel Organizer', CV.service.organizing, renderSimpleEntry));
+  svcSec.appendChild(subsection('interest-groups', 'Interest Groups', CV.service.interestGroups, renderSimpleEntry));
+  root.appendChild(svcSec);
+
+  // Misc sections
+  [
+    ['reviewer', 'Reviewer', CV.reviewer],
+    ['certifications', 'Certifications', CV.certifications]
+  ].forEach(([id, title, text]) => {
+    const s = el('section', { id });
+    s.appendChild(el('h2', {}, title));
+    s.appendChild(el('p', { style: 'font-size:0.92rem', html: text }));
+    root.appendChild(s);
+  });
+
+  const langSec = el('section', { id: 'languages' });
+  langSec.appendChild(el('h2', {}, 'Languages'));
+  CV.languages.forEach(e => langSec.appendChild(renderSimpleEntry(e)));
+  root.appendChild(langSec);
+
+  const outSec = el('section', { id: 'outreach' });
+  outSec.appendChild(el('h2', {}, 'Outreach'));
+  CV.outreach.forEach(e => outSec.appendChild(renderSimpleEntry(e)));
+  root.appendChild(outSec);
+}
+
+build();
+
+// ── THEME ─────────────────────────────────────────────────────────────────────
+(function () {
+  var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var btn = document.getElementById('toggle');
+  function setTheme(isDark) {
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    btn.textContent = isDark ? 'Light' : 'Dark';
+  }
+  setTheme(dark);
+  btn.addEventListener('click', function () {
+    setTheme(document.documentElement.getAttribute('data-theme') !== 'dark');
+  });
+})();
+
+// ── AUTHOR TRUNCATION ────────────────────────────────────────────────────────
+// Handled inline by renderAuthors()
+</script>
+</body>
 </html>
