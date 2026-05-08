@@ -650,11 +650,31 @@ function buildForm(sid, entry, onSave, container) {
     wrap.appendChild(buildLinksEl(linksState));
   }
 
+  // Context note
+  wrap.appendChild(mkSep());
+  const cnFg=document.createElement('div');
+  const cnLabel=document.createElement('label'); cnLabel.className='fl'; cnLabel.textContent='Context note'; cnFg.appendChild(cnLabel);
+  const cnRow=document.createElement('div'); cnRow.style.cssText='display:grid;grid-template-columns:1fr auto;gap:6px;margin-bottom:6px';
+  const cnSel=document.createElement('select');
+  const cnNone=document.createElement('option'); cnNone.value=''; cnNone.textContent='None'; cnSel.appendChild(cnNone);
+  Object.entries(CV.notes||{}).forEach(([k,n])=>{
+    const o=document.createElement('option'); o.value=k; o.textContent=n.title; cnSel.appendChild(o);
+  });
+  cnSel.value=entry.note||'';
+  const cnVis=document.createElement('label'); cnVis.style.cssText='display:flex;align-items:center;gap:4px;font-size:13px;white-space:nowrap;cursor:pointer';
+  const cnVisChk=document.createElement('input'); cnVisChk.type='checkbox'; cnVisChk.checked=!!(entry.note);
+  cnVis.append(cnVisChk,document.createTextNode('Assign'));
+  cnRow.append(cnSel,cnVis); cnFg.appendChild(cnRow);
+  const cnText=ta(entry.noteText||''); cnText.placeholder='Entry-specific note text (describes how this entry relates to the project)'; cnFg.appendChild(cnText);
+  wrap.appendChild(cnFg);
+
   // Save
   const saveBtn=mkBtn('Save entry','btn btn-success',()=>{
     if(autoGen) autoGen();
     const updated={year:yField.getValue(),links:linksState.filter(l=>l.url)};
     if(mIn.value.trim()) updated.month=mIn.value.trim();
+    // Context note
+    if(cnSel.value) { updated.note=cnSel.value; if(cnText.value.trim()) updated.noteText=cnText.value.trim(); }
     if(PUB_FORMS.has(form)){
       updated.authors=authorsState;
       updated.title=(form==='software'||form==='dataset')?titleIn.value.trim():titleIn.value.trim();
@@ -899,6 +919,49 @@ function renderMiscPanel() {
   });
   addOut.style.marginTop='0.35rem'; outWrap.appendChild(addOut);
   frag.appendChild(outWrap);
+
+  // Context Notes management
+  const cnTitle=document.createElement('div'); cnTitle.className='sub-label'; cnTitle.style.marginTop='1rem'; cnTitle.textContent='Context Notes'; frag.appendChild(cnTitle);
+  const cnNote=document.createElement('div'); cnNote.className='misc-note';
+  cnNote.textContent='Context notes appear in the margin of cv.html alongside annotated entries. Assign a context and entry-specific text to each entry via its edit form.';
+  frag.appendChild(cnNote);
+
+  const cnWrap=document.createElement('div');
+  function refreshContextNotes() {
+    cnWrap.innerHTML='';
+    const notes=CV.notes||{};
+    Object.entries(notes).forEach(([key,note])=>{
+      const block=document.createElement('div'); block.style.cssText='border:0.5px solid var(--rule);border-radius:4px;padding:0.6rem;margin-bottom:0.5rem;background:var(--bg)';
+      const hdr=document.createElement('div'); hdr.style.cssText='display:flex;gap:8px;align-items:center;margin-bottom:6px';
+      const keyLbl=document.createElement('span'); keyLbl.style.cssText='font-size:12px;color:var(--faint);font-family:monospace;flex:1'; keyLbl.textContent=key;
+      const hidChk=document.createElement('input'); hidChk.type='checkbox'; hidChk.checked=!!note.hidden;
+      const hidLbl=document.createElement('label'); hidLbl.style.cssText='display:flex;align-items:center;gap:4px;font-size:13px;cursor:pointer;white-space:nowrap';
+      hidLbl.append(hidChk,document.createTextNode('Hidden in cv'));
+      hidChk.onchange=()=>{CV.notes[key].hidden=hidChk.checked;document.getElementById('download-btn').disabled=false;};
+      const delBtn=mkBtn('✕','ebtn del',()=>{if(confirm('Delete this context?')){delete CV.notes[key];document.getElementById('download-btn').disabled=false;refreshContextNotes();}});
+      hdr.append(keyLbl,hidLbl,delBtn); block.appendChild(hdr);
+      const fl=s=>{const l=document.createElement('label');l.className='fl';l.textContent=s;return l;};
+      const titleIn=document.createElement('input'); titleIn.value=note.title||''; titleIn.placeholder='Title';
+      titleIn.oninput=()=>{CV.notes[key].title=titleIn.value;document.getElementById('download-btn').disabled=false;};
+      const textIn=document.createElement('textarea'); textIn.value=note.text||''; textIn.style.minHeight='52px';
+      textIn.oninput=()=>{CV.notes[key].text=textIn.value;document.getElementById('download-btn').disabled=false;};
+      const urlIn=document.createElement('input'); urlIn.value=note.url||''; urlIn.placeholder='URL (optional)';
+      urlIn.oninput=()=>{CV.notes[key].url=urlIn.value;document.getElementById('download-btn').disabled=false;};
+      [fl('Title'),titleIn,fl('Description'),textIn,fl('URL'),urlIn].forEach(el=>block.appendChild(el));
+      cnWrap.appendChild(block);
+    });
+  }
+  refreshContextNotes(); frag.appendChild(cnWrap);
+  const addCnRow=document.createElement('div'); addCnRow.style.cssText='display:grid;grid-template-columns:1fr auto;gap:6px;margin-top:4px';
+  const addCnKey=document.createElement('input'); addCnKey.placeholder='New context key (e.g. newproject)';
+  const addCnBtn=mkBtn('+ Add','btn',()=>{
+    const k=addCnKey.value.trim().replace(/\s+/g,'').toLowerCase(); if(!k) return;
+    if(!CV.notes) CV.notes={};
+    CV.notes[k]={title:k,text:'',hidden:false};
+    addCnKey.value=''; document.getElementById('download-btn').disabled=false; refreshContextNotes();
+  });
+  addCnRow.append(addCnKey,addCnBtn); frag.appendChild(addCnRow);
+
   return frag;
 }
 
