@@ -22,11 +22,11 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-padding-top: calc(var(--nav-h) + 1rem); }
 body { font-family: Georgia, serif; font-size: 15px; line-height: 1.6; color: var(--fg); background: var(--bg); margin: 0; padding: 0; transition: background 0.2s, color 0.2s; }
-.page-wrap { max-width: 1180px; margin: 0 auto; padding: calc(var(--nav-h) + 2.5rem) 2rem 6rem; }
+.page-wrap { max-width: 1520px; margin: 0 auto; padding: calc(var(--nav-h) + 2.5rem) 2rem 6rem; }
 a { color: var(--link); text-decoration: none; border-bottom: 1px solid var(--rule); }
 a:hover { border-bottom-color: var(--muted); }
 em { font-style: italic; } strong { font-weight: 600; }
-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h); background: var(--bg); border-bottom: 0.5px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; z-index: 100; transition: background 0.2s, border-color 0.2s; max-width: 1180px; margin: 0 auto; left: 50%; transform: translateX(-50%); width: 100%; }
+nav { position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h); background: var(--bg); border-bottom: 0.5px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; z-index: 100; transition: background 0.2s, border-color 0.2s; max-width: 1520px; margin: 0 auto; left: 50%; transform: translateX(-50%); width: 100%; }
 .nav-links { display: flex; gap: 1.1rem; overflow-x: auto; scrollbar-width: none; }
 .nav-links::-webkit-scrollbar { display: none; }
 .nav-links a { font-family: -apple-system, sans-serif; font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); border: none; white-space: nowrap; transition: color 0.15s; }
@@ -41,6 +41,19 @@ header h1 { font-size: 1.4rem; font-weight: normal; letter-spacing: 0.01em; marg
 .contact { font-size: 0.82rem; color: var(--muted); font-family: -apple-system, sans-serif; }
 .contact a { color: var(--muted); border-bottom: 1px solid var(--muted); }
 .contact a:hover { color: var(--fg); border-bottom-color: var(--fg); }
+.author-orcid { font-size: 0.75em; color: var(--faint); border: none; vertical-align: super; text-decoration: none; }
+.author-orcid:hover { color: var(--accent); }
+.author-corr { font-size: 0.75em; color: var(--faint); vertical-align: super; }
+.author-affil { font-size: 0.75em; color: var(--faint); }
+.author-ref { position: relative; display: inline; cursor: default; }
+.author-ref[data-card] { cursor: pointer; border-bottom: 1px dotted var(--rule); }
+.author-ref[data-card]:hover { border-bottom-color: var(--muted); }
+.author-hcard { display: none; position: absolute; top: calc(100% + 5px); left: 0; z-index: 50; width: max-content; max-width: 320px; background: #fff; border: 0.5px solid var(--rule); border-radius: 6px; padding: 0.5rem 0.7rem; font-family: -apple-system, sans-serif; font-size: 0.78rem; line-height: 1.6; color: var(--muted); box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+.author-ref[data-card]:hover .author-hcard { display: block; }
+[data-theme="dark"] .author-hcard { background: #2a2f33; }
+.author-hcard-affil { color: var(--fg); font-size: 0.85rem; margin-bottom: 0.3rem; }
+.author-hcard-link { display: block; color: var(--link); text-decoration: none; border: none; }
+.author-hcard-link:hover { text-decoration: underline; }
 .contact .sep { margin: 0 0.4rem; opacity: 0.4; }
 .updated { font-size: 0.75rem; color: var(--faint); font-family: -apple-system, sans-serif; margin-top: 0.35rem; }
 section { margin-bottom: 2rem; }
@@ -86,8 +99,9 @@ h3 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform
 .author-toggle:hover { color: var(--fg); }
 .areas { font-size: 0.88rem; color: var(--muted); line-height: 1.8; font-family: -apple-system, sans-serif; }
 /* ── Margin notes ────────────────────────────────────────────────────────── */
-.cv-outer { display: grid; grid-template-columns: 1fr 320px; gap: 0 2rem; align-items: start; }
-.cv-margin { position: relative; }
+.cv-outer { display: flex; gap: 2rem; align-items: start; }
+#cv-root { max-width: 1100px; flex: 1; min-width: 0; }
+.cv-margin { width: 420px; flex-shrink: 0; position: relative; }
 .e { display: grid; grid-template-columns: var(--year) 1fr; gap: 0 1.25rem; margin-bottom: 0.7rem; align-items: start; }
 .mn { position: absolute; left: 0; right: 0; font-family: -apple-system, sans-serif; font-size: 0.72rem; line-height: 1.5; color: var(--faint); opacity: 0; transition: opacity 0.25s; pointer-events: none; padding-bottom: 1rem; display: flex; align-items: flex-start; gap: 7px; }
 .mn.visible { opacity: 1; pointer-events: auto; }
@@ -97,7 +111,7 @@ h3 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform
 .mn-title { font-weight: 500; color: var(--muted); margin-bottom: 0.1rem; }
 .mn a { color: var(--faint); border-bottom: 1px solid var(--rule); }
 .mn a:hover { color: var(--muted); }
-@media (max-width: 820px) { .cv-outer { grid-template-columns: 1fr; } .cv-margin { display: none; } }
+@media (max-width: 820px) { .cv-outer { flex-direction: column; } .cv-margin { display: none; } }
 @media print { nav { display: none; } html { scroll-padding-top: 0; } body { padding: 2rem; font-size: 11pt; max-width: none; background: white; color: black; } a { border: none; color: black; } .l a::after { content: " " attr(href); font-size: 0.8em; } .l a::before { font-weight: normal !important; } .pill-btn, .entry-panel { display: none; } }
 </style>
 </head>
@@ -105,6 +119,7 @@ h3 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform
 <nav>
   <div class="nav-links" id="nav-links"></div>
   <div class="nav-actions">
+    <button class="nav-btn" id="author-info-toggle" title="Show author affiliations and links on hover">Author info</button>
     <button class="nav-btn" id="notes-toggle" title="Show contextual notes alongside entries">Notes</button>
     <button class="nav-btn" id="toggle">Dark</button>
     <span class="nav-btn"><a href="cv.pdf" target="_blank">PDF</a></span>
@@ -186,10 +201,7 @@ const CV = {
       {
         "year": "2025",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Balancing situated and objective representations in archaeological fieldwork.",
         "venue": {
@@ -221,10 +233,7 @@ const CV = {
       {
         "year": "2025",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Locating creative agency in archaeological data work.",
         "venue": {
@@ -253,10 +262,7 @@ const CV = {
       {
         "year": "2024",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.",
         "venue": {
@@ -279,10 +285,7 @@ const CV = {
       {
         "year": "2024",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "On the value of informal communication in archaeological data work.",
         "venue": {
@@ -306,13 +309,8 @@ const CV = {
       {
         "year": "2024",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          },
-          {
-            "name": "Joe Roe"
-          }
+          "batistz",
+          "roej"
         ],
         "title": "Open archaeology, open source? Collaborative practices in an emerging community of archaeological software engineers.",
         "venue": {
@@ -341,13 +339,8 @@ const CV = {
       {
         "year": "2023",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          },
-          {
-            "name": "Joe Roe"
-          }
+          "batistz",
+          "roej"
         ],
         "title": "open-archaeo: a resource for documenting archaeological software development practices.",
         "venue": {
@@ -371,31 +364,14 @@ const CV = {
       {
         "year": "2021",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          },
-          {
-            "name": "Val Masters"
-          },
-          {
-            "name": "Tiffany C. Torma"
-          },
-          {
-            "name": "Michael Carter"
-          },
-          {
-            "name": "Neal Ferris"
-          },
-          {
-            "name": "Isto Huvila"
-          },
-          {
-            "name": "Seamus Ross"
-          },
-          {
-            "name": "Costis Dallas"
-          }
+          "batistz",
+          "mastersv",
+          "tormatc",
+          "carterm",
+          "ferrisn",
+          "huvilai",
+          "rosss",
+          "dallasc"
         ],
         "truncate": 3,
         "title": "Figurations of digital archaeological practice in two Mediterranean fieldwork projects.",
@@ -420,19 +396,10 @@ const CV = {
       {
         "year": "2021",
         "authors": [
-          {
-            "name": "Contreras, Daniel"
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          },
-          {
-            "name": "Ciara Zogheib"
-          },
-          {
-            "name": "Tristan Carter"
-          }
+          "contrerasd",
+          "batistz",
+          "zogheibc",
+          "cartert"
         ],
         "title": "Matching pragmatic lithic analysis and proper data architecture: The QuARI R Shiny database interface.",
         "venue": {
@@ -459,22 +426,11 @@ const CV = {
       {
         "year": "2017",
         "authors": [
-          {
-            "name": "Carter, Tristan"
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          },
-          {
-            "name": "Kathryn Campeau"
-          },
-          {
-            "name": "Yosef Garfinkel"
-          },
-          {
-            "name": "Katharina Streit"
-          }
+          "cartert",
+          "batistz",
+          "campeauk",
+          "garfinkely",
+          "streitk"
         ],
         "title": "Investigating Pottery Neolithic socio-economic 'regression' in the Southern Levant: Characterising obsidian consumption at Sha'ar Hagolan (N. Israel).",
         "venue": {
@@ -497,13 +453,8 @@ const CV = {
       {
         "year": "2014",
         "authors": [
-          {
-            "name": "Freund, Kyle P."
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          }
+          "freundkp",
+          "batistz"
         ],
         "title": "Sardinian obsidian circulation and early maritime navigation in the Neolithic as shown through social network analysis.",
         "venue": {
@@ -527,43 +478,18 @@ const CV = {
       {
         "year": "2009",
         "authors": [
-          {
-            "name": "Loignon, Martin"
-          },
-          {
-            "name": "Weimin Miao"
-          },
-          {
-            "name": "Lianggao Hu"
-          },
-          {
-            "name": "Andrew Bier"
-          },
-          {
-            "name": "Tarek A. Bismar"
-          },
-          {
-            "name": "P. James Scrivens"
-          },
-          {
-            "name": "Koren Mann"
-          },
-          {
-            "name": "Mark Basik"
-          },
-          {
-            "name": "Amélie Bouchard"
-          },
-          {
-            "name": "Pierre O. Fiset"
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          },
-          {
-            "name": "Gerald Batist"
-          }
+          "loignonm",
+          "miaow",
+          "hul",
+          "biera",
+          "bismarta",
+          "scrivenspj",
+          "mannk",
+          "basikm",
+          "boucharda",
+          "fisetpo",
+          "batistz",
+          "batistg"
         ],
         "truncate": 3,
         "title": "Frequent Nrf2 depletion due to Cul3 overexpression in breast cancer is associated with sensitivity to carcinogens, oxidative stress and chemotherapy.",
@@ -587,31 +513,14 @@ const CV = {
       {
         "year": "In progress",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          },
-          {
-            "name": "Melissa Ouellet"
-          },
-          {
-            "name": "Sadun Khezri"
-          },
-          {
-            "name": "Tanya Murphy"
-          },
-          {
-            "name": "Aklil Noza"
-          },
-          {
-            "name": "Samira Abbasgholizadeh-Rahimi"
-          },
-          {
-            "name": "Guillaume Bourque"
-          },
-          {
-            "name": "David Buckeridge"
-          }
+          "batistz",
+          "ouelletm",
+          "khezris",
+          "murphyt",
+          "nozaa",
+          "abbasgholizadehrahimis",
+          "bourqueg",
+          "buckeridged"
         ],
         "truncate": 3,
         "title": "LLM-assisted topic modelling of Canadian COVID-19 Immunity Task Force data sharing operations.",
@@ -636,22 +545,11 @@ const CV = {
       {
         "year": "In progress",
         "authors": [
-          {
-            "name": "Bernier, Alex"
-          },
-          {
-            "name": "Isabel Baltzan"
-          },
-          {
-            "name": "Tina Wey"
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          },
-          {
-            "name": "Isabel Fortier"
-          }
+          "berniera",
+          "baltzani",
+          "weyt",
+          "batistz",
+          "fortieri"
         ],
         "title": "Data governance in longitudinal mother-child cohorts: An empirical assessment of the Canadian ReACH Studies.",
         "venue": {},
@@ -662,52 +560,21 @@ const CV = {
       {
         "year": "In progress",
         "authors": [
-          {
-            "name": "Khezri, Sadun"
-          },
-          {
-            "name": "Tanya Murphy"
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          },
-          {
-            "name": "Aklil Noza"
-          },
-          {
-            "name": "Melissa Ouellet"
-          },
-          {
-            "name": "Tina Wey"
-          },
-          {
-            "name": "Anouar Nechba"
-          },
-          {
-            "name": "Rita Wissa"
-          },
-          {
-            "name": "[53 PI names]"
-          },
-          {
-            "name": "Alexander Bernier"
-          },
-          {
-            "name": "Ma'n Zawati"
-          },
-          {
-            "name": "Bruce Mazer"
-          },
-          {
-            "name": "Olivia Oxlade"
-          },
-          {
-            "name": "Tim Evans"
-          },
-          {
-            "name": "David Buckeridge"
-          }
+          "khezris",
+          "murphyt",
+          "batistz",
+          "nozaa",
+          "ouelletm",
+          "weyt",
+          "nechbaa",
+          "wissar",
+          "names[p",
+          "berniera2",
+          "zawatim",
+          "mazerb",
+          "oxladeo",
+          "evanst",
+          "buckeridged"
         ],
         "truncate": 3,
         "title": "The CITF Databank: A harmonized dataset of SARS-CoV-2 immunity data from Canadian research studies.",
@@ -719,157 +586,56 @@ const CV = {
       {
         "year": "In review",
         "authors": [
-          {
-            "name": "Farahnak, Farhood"
-          },
-          {
-            "name": "Wafik S. El-Deiry"
-          },
-          {
-            "name": "Yves A. Lussier"
-          },
-          {
-            "name": "Razelle Kurzrock"
-          },
-          {
-            "name": "Shai Magidi"
-          },
-          {
-            "name": "Catherine Bresson"
-          },
-          {
-            "name": "Shirin A. Enger"
-          },
-          {
-            "name": "Jia Liu"
-          },
-          {
-            "name": "Jair Bar"
-          },
-          {
-            "name": "Jeremy L. Warner"
-          },
-          {
-            "name": "Tobias Meissner"
-          },
-          {
-            "name": "Eitan Rubin"
-          },
-          {
-            "name": "Jens Rueter"
-          },
-          {
-            "name": "Himabindu Gaddipati"
-          },
-          {
-            "name": "Mandar Kulkarni"
-          },
-          {
-            "name": "Zhen Chen"
-          },
-          {
-            "name": "Sewanti Limaye"
-          },
-          {
-            "name": "Rachel Elsey"
-          },
-          {
-            "name": "Brenda M. Rubenstein"
-          },
-          {
-            "name": "Anthony M. Joshua"
-          },
-          {
-            "name": "Humaid O. Al-Shamsi"
-          },
-          {
-            "name": "Khaled M. Musallam"
-          },
-          {
-            "name": "Fanny Wunder"
-          },
-          {
-            "name": "Jacques Raynaud"
-          },
-          {
-            "name": "Guy Berchem"
-          },
-          {
-            "name": "Manon Gantenbein"
-          },
-          {
-            "name": "Amal Al Omari"
-          },
-          {
-            "name": "Said Dermime"
-          },
-          {
-            "name": "Hikmat Abdel-Razeq"
-          },
-          {
-            "name": "Pierre Saintigny"
-          },
-          {
-            "name": "Andrés Cervantes"
-          },
-          {
-            "name": "Roger R. Reddel"
-          },
-          {
-            "name": "Adel T. Aref"
-          },
-          {
-            "name": "Juan Martin-Liberal"
-          },
-          {
-            "name": "Conxi Lázaro"
-          },
-          {
-            "name": "David Cordero Romera"
-          },
-          {
-            "name": "Marina Sekacheva"
-          },
-          {
-            "name": "Raanan Berger"
-          },
-          {
-            "name": "C.S. Pramesh"
-          },
-          {
-            "name": "Ioana Berindan-Neagoe"
-          },
-          {
-            "name": "Eugenia Girda"
-          },
-          {
-            "name": "Alejandro Piris-Gimenez"
-          },
-          {
-            "name": "Carol J. Farhangfar"
-          },
-          {
-            "name": "Mohammed E. Salem"
-          },
-          {
-            "name": "Rodrigo Dienstmann"
-          },
-          {
-            "name": "Ramon Salazar"
-          },
-          {
-            "name": "Naftali Z. Frankel"
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          },
-          {
-            "name": "Yuri Quintana"
-          },
-          {
-            "name": "Gerald Batist"
-          }
+          "farahnakf",
+          "eldeiryws",
+          "lussierya",
+          "kurzrockr",
+          "magidis",
+          "bressonc",
+          "engersa",
+          "liuj",
+          "barj",
+          "warnerjl",
+          "meissnert",
+          "rubine",
+          "rueterj",
+          "gaddipatih",
+          "kulkarnim",
+          "chenz",
+          "limayes",
+          "elseyr",
+          "rubensteinbm",
+          "joshuaam",
+          "alshamsiho",
+          "musallamkm",
+          "wunderf",
+          "raynaudj",
+          "berchemg",
+          "gantenbeinm",
+          "omariaa",
+          "dermimes",
+          "abdelrazeqh",
+          "saintignyp",
+          "cervantesa",
+          "reddelrr",
+          "arefat",
+          "martinliberalj",
+          "lzaroc",
+          "romeradc",
+          "sekachevam",
+          "bergerr",
+          "prameshc",
+          "berindanneagoei",
+          "girdae",
+          "pirisgimeneza",
+          "farhangfarcj",
+          "salemme",
+          "dienstmannr",
+          "salazarr",
+          "frankelnz",
+          "batistz",
+          "quintanay",
+          "batistg"
         ],
         "truncate": 3,
         "title": "Worldwide Innovative Network (WIN) Consortium: Building a common global cancer database.",
@@ -880,16 +646,9 @@ const CV = {
       {
         "year": "In progress",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          },
-          {
-            "name": "Julie Lund"
-          },
-          {
-            "name": "Isak Roalkvam"
-          }
+          "batistz",
+          "lundj",
+          "roalkvami"
         ],
         "title": "Bibliometric analysis of Viking Age research.",
         "venue": {},
@@ -900,13 +659,8 @@ const CV = {
       {
         "year": "In progress",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          },
-          {
-            "name": "Shirin Abbasinejad Enger"
-          }
+          "batistz",
+          "engersa2"
         ],
         "title": "Positive mentorship in the history of radiology.",
         "venue": {},
@@ -917,10 +671,7 @@ const CV = {
       {
         "year": "2018",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Using Raspberry Pi in the field.",
         "venue": {
@@ -949,10 +700,7 @@ const CV = {
       {
         "year": "In review",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Data management is people management: On abstraction of data and labor in archaeological projects.",
         "venue": {
@@ -974,10 +722,7 @@ const CV = {
       {
         "year": "2022",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Documenting archaeological knowledge construction as information practices.",
         "venue": {
@@ -1001,10 +746,7 @@ const CV = {
       {
         "year": "2023",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Archaeological data work as continuous and collaborative practice.",
         "venue": {
@@ -1027,10 +769,7 @@ const CV = {
       {
         "year": "2015",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Obsidian Circulation Networks in Southwest Asia and Anatolia (12,000–5700 B.P.): A Comparative Approach.",
         "venue": {
@@ -1052,10 +791,7 @@ const CV = {
       {
         "year": "2012",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Feasting in Bronze Age Greece: A Network Analysis Approach.",
         "venue": {
@@ -1338,10 +1074,7 @@ const CV = {
         "year": "2026",
         "month": "June",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Where do we draw the line? On legitimate uses of AI and open information commons, and commitment to community values.",
         "venue": "2026 INKE Gathering, Université de Montréal",
@@ -1362,16 +1095,9 @@ const CV = {
         "year": "2026",
         "month": "April",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          },
-          {
-            "name": "Isak Roalkvam"
-          },
-          {
-            "name": "Julie Lund"
-          }
+          "batistz",
+          "roalkvami",
+          "lundj"
         ],
         "title": "A protocol for analyzing citational practice in Viking Age archaeology.",
         "venue": "Citational Politics and Practices in Viking Age Archaeology and Beyond, University of Oslo",
@@ -1388,19 +1114,10 @@ const CV = {
         "year": "2026",
         "month": "April",
         "authors": [
-          {
-            "name": "Roe, Joe"
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          },
-          {
-            "name": "James A.F. Yates"
-          },
-          {
-            "name": "Andrea Titolo"
-          }
+          "roej",
+          "batistz",
+          "yatesja",
+          "titoloa"
         ],
         "title": "archaeo.social and archaeo.dev: decentralised, collective digital infrastructure for archaeologists.",
         "venue": "53rd Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2026), Vienna",
@@ -1418,10 +1135,7 @@ const CV = {
         "year": "2023",
         "month": "December",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Does not compute! Accounting for social and situated experiences while integrating and analyzing obsidian sourcing data.",
         "venue": "ArcheoFOSS XVII — Open Science and Archaeology: Archiving the Knowledge, Department of Historical Studies, University of Turin",
@@ -1432,10 +1146,7 @@ const CV = {
         "year": "2023",
         "month": "February",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Documenting the collaborative commitments that support data sharing within archaeological project collectives.",
         "venue": "Digital Archaeology Bern 2023, Bern Computational and Digital Archaeology Lab, University of Bern",
@@ -1452,13 +1163,8 @@ const CV = {
         "year": "2021",
         "month": "June",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          },
-          {
-            "name": "Joe Roe"
-          }
+          "batistz",
+          "roej"
         ],
         "title": "Open archaeology: a survey of collaborative software engineering in archaeological research.",
         "venue": "49th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2021), Limassol, Cyprus (virtual)",
@@ -1475,10 +1181,7 @@ const CV = {
         "year": "2019",
         "month": "September",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Distributing knowledge of digital workflows via workshops and support groups.",
         "venue": "Our Networks, Re: Infrastructure, Toronto",
@@ -1489,10 +1192,7 @@ const CV = {
         "year": "2019",
         "month": "October",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Untangling and extending the discursive relations mediated by archaeological data through grounded research.",
         "venue": "On Shifting Grounds — The Study of Archaeological Practices in a Changing World, COST-Arkwork and Department of History and Archaeology, University of Crete",
@@ -1503,10 +1203,7 @@ const CV = {
         "year": "2018",
         "month": "April",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Documenting archaeological knowledge construction as socially-embedded information practices.",
         "venue": "PhD Research Days 2018, Faculty of Information, University of Toronto",
@@ -1516,10 +1213,7 @@ const CV = {
         "year": "2018",
         "month": "March",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Documenting archaeological knowledge construction as distributed information practices.",
         "venue": "46th Computer Applications and Quantitative Methods in Archaeology Conference (CAA 2018), Tübingen",
@@ -1536,13 +1230,8 @@ const CV = {
         "year": "2017",
         "month": "May",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          },
-          {
-            "name": "Costis Dallas"
-          }
+          "batistz",
+          "dallasc"
         ],
         "title": "A view from the bridge: human- and thing-centred approaches to research practice, disciplinary discourse and local engagement with the archaeological record.",
         "venue": "TAG (North America) 2017 — The Medium is the Message: Media and Mediation in Archaeology, Toronto",
@@ -1553,28 +1242,13 @@ const CV = {
         "year": "2017",
         "month": "March",
         "authors": [
-          {
-            "name": "Carter, Tristan"
-          },
-          {
-            "name": "Kathryn Campeau"
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          },
-          {
-            "name": "Yosef Garfinkel"
-          },
-          {
-            "name": "David Rosenberg"
-          },
-          {
-            "name": "Yosef Rowan"
-          },
-          {
-            "name": "Katharina Streit"
-          }
+          "cartert",
+          "campeauk",
+          "batistz",
+          "garfinkely",
+          "rosenbergd",
+          "rowany",
+          "streitk"
         ],
         "title": "Social interaction at distance over the long term: obsidian sourcing from the Southern Levant (9th–4th millennia cal BC).",
         "venue": "Society for American Archaeology 82nd Annual Meeting, Vancouver",
@@ -1585,10 +1259,7 @@ const CV = {
         "year": "2017",
         "month": "January",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Identifying obsidian procurement habits during the Pre-Pottery Neolithic in the Levant using network analysis.",
         "venue": "Archaeological Institute of America 118th Annual Meeting, Toronto",
@@ -1600,10 +1271,7 @@ const CV = {
         "year": "2015",
         "month": "January",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "The Database of Obsidian Sourcing Studies (DObsiSS): Using Git for collaborative management of archaeological data.",
         "venue": "American Archaeological Institute 116th Annual Meeting, New Orleans",
@@ -1615,10 +1283,7 @@ const CV = {
         "year": "2014",
         "month": "March",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "An examination of obsidian circulation patterns in terms of relational and geographical distance in Southwest Asia and Anatolia from the Epi-Palaeolithic to Chalcolithic periods (14000–5700 B.P.).",
         "venue": "Archaeological Sciences and the Ancient Mediterranean Environment, The Archaeology Centre, University of Toronto",
@@ -1629,10 +1294,7 @@ const CV = {
         "year": "2014",
         "month": "January",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Using network analysis to examine relative resource procurement strategies in Anatolia and Southwest Asia from the Epipaleolithic to Chalcolithic periods (14,000–5700 BP).",
         "venue": "American Archaeological Institute 115th Annual Meeting, Chicago"
@@ -1641,13 +1303,8 @@ const CV = {
         "year": "2013",
         "month": "November",
         "authors": [
-          {
-            "name": "Freund, Kyle P."
-          },
-          {
-            "name": "Zachary Batist",
-            "me": true
-          }
+          "freundkp",
+          "batistz"
         ],
         "title": "Tracking the circulation of Sardinian obsidian using network analysis: lithic procurement, cultural interaction, and early maritime navigation in the Neolithic.",
         "venue": "Networks of Maritime Connectivity in the Ancient Mediterranean, The Archaeology Centre, University of Toronto",
@@ -1658,10 +1315,7 @@ const CV = {
         "year": "2013",
         "month": "September",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Using network analysis to examine obsidian assemblage variability in Anatolia and Southwest Asia from the Epi-Palaeolithic to Chalcolithic periods (14000–5700 BP).",
         "venue": "The Future of Historical Network Research Conference, Historical Network Research, University of Hamburg",
@@ -1672,10 +1326,7 @@ const CV = {
         "year": "2012",
         "month": "March",
         "authors": [
-          {
-            "name": "Batist, Zachary",
-            "me": true
-          }
+          "batistz"
         ],
         "title": "Eat, drink and be networked: feasting and Bronze Age networks.",
         "venue": "Colloquium on Digital History and the Transnational History of Nursing, Department of History, Carleton University"
@@ -1696,7 +1347,14 @@ const CV = {
       },
       {
         "year": "2022 –",
-        "content": "Community Moderator, <a href=\"https://archaeo.social\" target=\"_blank\">archaeo.social</a>."
+        "content": "Community Moderator",
+        "links": [
+          {
+            "type": "website",
+            "url": "https://archaeo.social",
+            "label": "archaeo.social"
+          }
+        ]
       },
       {
         "year": "2022",
@@ -1704,7 +1362,14 @@ const CV = {
       },
       {
         "year": "2018 –",
-        "content": "Founder and Maintainer, <a href=\"https://open-archaeo.info\" target=\"_blank\">open-archaeo.info</a>."
+        "content": "Founder and Maintainer",
+        "links": [
+          {
+            "type": "website",
+            "url": "https://open-archaeo.info",
+            "label": "open-archaeo.info"
+          }
+        ]
       },
       {
         "year": "2017 – 2021",
@@ -1799,7 +1464,14 @@ const CV = {
   "outreach": [
     {
       "year": "2022 –",
-      "content": "Personal blog, <a href=\"https://zackbatist.info/posts\" target=\"_blank\">zackbatist.info/posts</a>."
+      "content": "Personal blog",
+      "links": [
+        {
+          "type": "website",
+          "url": "https://zackbatist.info/posts",
+          "label": "zackbatist.info/posts"
+        }
+      ]
     }
   ],
   "notes": {
@@ -1838,11 +1510,434 @@ const CV = {
       "url": "https://zackbatist.info/DObsiSS",
       "hidden": false
     }
+  },
+  "authorDisplay": {
+    "showOrcid": false,
+    "showAffiliation": false,
+    "showEmail": false,
+    "showCorresponding": true
+  },
+  "people": {
+    "batistz": {
+      "family": "Batist",
+      "given": "Zachary",
+      "me": true
+    },
+    "roej": {
+      "family": "Roe",
+      "given": "Joe"
+    },
+    "mastersv": {
+      "family": "Masters",
+      "given": "Val"
+    },
+    "tormatc": {
+      "family": "Torma",
+      "given": "Tiffany C."
+    },
+    "carterm": {
+      "family": "Carter",
+      "given": "Michael"
+    },
+    "ferrisn": {
+      "family": "Ferris",
+      "given": "Neal"
+    },
+    "huvilai": {
+      "family": "Huvila",
+      "given": "Isto"
+    },
+    "rosss": {
+      "family": "Ross",
+      "given": "Seamus"
+    },
+    "dallasc": {
+      "family": "Dallas",
+      "given": "Costis"
+    },
+    "contrerasd": {
+      "family": "Contreras",
+      "given": "Daniel"
+    },
+    "zogheibc": {
+      "family": "Zogheib",
+      "given": "Ciara"
+    },
+    "cartert": {
+      "family": "Carter",
+      "given": "Tristan"
+    },
+    "campeauk": {
+      "family": "Campeau",
+      "given": "Kathryn"
+    },
+    "garfinkely": {
+      "family": "Garfinkel",
+      "given": "Yosef"
+    },
+    "streitk": {
+      "family": "Streit",
+      "given": "Katharina"
+    },
+    "freundkp": {
+      "family": "Freund",
+      "given": "Kyle P."
+    },
+    "loignonm": {
+      "family": "Loignon",
+      "given": "Martin"
+    },
+    "miaow": {
+      "family": "Miao",
+      "given": "Weimin"
+    },
+    "hul": {
+      "family": "Hu",
+      "given": "Lianggao"
+    },
+    "biera": {
+      "family": "Bier",
+      "given": "Andrew"
+    },
+    "bismarta": {
+      "family": "Bismar",
+      "given": "Tarek A."
+    },
+    "scrivenspj": {
+      "family": "Scrivens",
+      "given": "P. James"
+    },
+    "mannk": {
+      "family": "Mann",
+      "given": "Koren"
+    },
+    "basikm": {
+      "family": "Basik",
+      "given": "Mark"
+    },
+    "boucharda": {
+      "family": "Bouchard",
+      "given": "Amélie"
+    },
+    "fisetpo": {
+      "family": "Fiset",
+      "given": "Pierre O."
+    },
+    "batistg": {
+      "family": "Batist",
+      "given": "Gerald"
+    },
+    "ouelletm": {
+      "family": "Ouellet",
+      "given": "Melissa"
+    },
+    "khezris": {
+      "family": "Khezri",
+      "given": "Sadun"
+    },
+    "murphyt": {
+      "family": "Murphy",
+      "given": "Tanya"
+    },
+    "nozaa": {
+      "family": "Noza",
+      "given": "Aklil"
+    },
+    "abbasgholizadehrahimis": {
+      "family": "Abbasgholizadeh-Rahimi",
+      "given": "Samira"
+    },
+    "bourqueg": {
+      "family": "Bourque",
+      "given": "Guillaume"
+    },
+    "buckeridged": {
+      "family": "Buckeridge",
+      "given": "David"
+    },
+    "berniera": {
+      "family": "Bernier",
+      "given": "Alex"
+    },
+    "baltzani": {
+      "family": "Baltzan",
+      "given": "Isabel"
+    },
+    "weyt": {
+      "family": "Wey",
+      "given": "Tina"
+    },
+    "fortieri": {
+      "family": "Fortier",
+      "given": "Isabel"
+    },
+    "nechbaa": {
+      "family": "Nechba",
+      "given": "Anouar"
+    },
+    "wissar": {
+      "family": "Wissa",
+      "given": "Rita"
+    },
+    "names[p": {
+      "family": "names]",
+      "given": "[53 PI"
+    },
+    "berniera2": {
+      "family": "Bernier",
+      "given": "Alexander"
+    },
+    "zawatim": {
+      "family": "Zawati",
+      "given": "Ma'n"
+    },
+    "mazerb": {
+      "family": "Mazer",
+      "given": "Bruce"
+    },
+    "oxladeo": {
+      "family": "Oxlade",
+      "given": "Olivia"
+    },
+    "evanst": {
+      "family": "Evans",
+      "given": "Tim"
+    },
+    "farahnakf": {
+      "family": "Farahnak",
+      "given": "Farhood"
+    },
+    "eldeiryws": {
+      "family": "El-Deiry",
+      "given": "Wafik S."
+    },
+    "lussierya": {
+      "family": "Lussier",
+      "given": "Yves A."
+    },
+    "kurzrockr": {
+      "family": "Kurzrock",
+      "given": "Razelle"
+    },
+    "magidis": {
+      "family": "Magidi",
+      "given": "Shai"
+    },
+    "bressonc": {
+      "family": "Bresson",
+      "given": "Catherine"
+    },
+    "engersa": {
+      "family": "Enger",
+      "given": "Shirin A."
+    },
+    "liuj": {
+      "family": "Liu",
+      "given": "Jia"
+    },
+    "barj": {
+      "family": "Bar",
+      "given": "Jair"
+    },
+    "warnerjl": {
+      "family": "Warner",
+      "given": "Jeremy L."
+    },
+    "meissnert": {
+      "family": "Meissner",
+      "given": "Tobias"
+    },
+    "rubine": {
+      "family": "Rubin",
+      "given": "Eitan"
+    },
+    "rueterj": {
+      "family": "Rueter",
+      "given": "Jens"
+    },
+    "gaddipatih": {
+      "family": "Gaddipati",
+      "given": "Himabindu"
+    },
+    "kulkarnim": {
+      "family": "Kulkarni",
+      "given": "Mandar"
+    },
+    "chenz": {
+      "family": "Chen",
+      "given": "Zhen"
+    },
+    "limayes": {
+      "family": "Limaye",
+      "given": "Sewanti"
+    },
+    "elseyr": {
+      "family": "Elsey",
+      "given": "Rachel"
+    },
+    "rubensteinbm": {
+      "family": "Rubenstein",
+      "given": "Brenda M."
+    },
+    "joshuaam": {
+      "family": "Joshua",
+      "given": "Anthony M."
+    },
+    "alshamsiho": {
+      "family": "Al-Shamsi",
+      "given": "Humaid O."
+    },
+    "musallamkm": {
+      "family": "Musallam",
+      "given": "Khaled M."
+    },
+    "wunderf": {
+      "family": "Wunder",
+      "given": "Fanny"
+    },
+    "raynaudj": {
+      "family": "Raynaud",
+      "given": "Jacques"
+    },
+    "berchemg": {
+      "family": "Berchem",
+      "given": "Guy"
+    },
+    "gantenbeinm": {
+      "family": "Gantenbein",
+      "given": "Manon"
+    },
+    "omariaa": {
+      "family": "Omari",
+      "given": "Amal Al"
+    },
+    "dermimes": {
+      "family": "Dermime",
+      "given": "Said"
+    },
+    "abdelrazeqh": {
+      "family": "Abdel-Razeq",
+      "given": "Hikmat"
+    },
+    "saintignyp": {
+      "family": "Saintigny",
+      "given": "Pierre"
+    },
+    "cervantesa": {
+      "family": "Cervantes",
+      "given": "Andrés"
+    },
+    "reddelrr": {
+      "family": "Reddel",
+      "given": "Roger R."
+    },
+    "arefat": {
+      "family": "Aref",
+      "given": "Adel T."
+    },
+    "martinliberalj": {
+      "family": "Martin-Liberal",
+      "given": "Juan"
+    },
+    "lzaroc": {
+      "family": "Lázaro",
+      "given": "Conxi"
+    },
+    "romeradc": {
+      "family": "Romera",
+      "given": "David Cordero"
+    },
+    "sekachevam": {
+      "family": "Sekacheva",
+      "given": "Marina"
+    },
+    "bergerr": {
+      "family": "Berger",
+      "given": "Raanan"
+    },
+    "prameshc": {
+      "family": "Pramesh",
+      "given": "C.S."
+    },
+    "berindanneagoei": {
+      "family": "Berindan-Neagoe",
+      "given": "Ioana"
+    },
+    "girdae": {
+      "family": "Girda",
+      "given": "Eugenia"
+    },
+    "pirisgimeneza": {
+      "family": "Piris-Gimenez",
+      "given": "Alejandro"
+    },
+    "farhangfarcj": {
+      "family": "Farhangfar",
+      "given": "Carol J."
+    },
+    "salemme": {
+      "family": "Salem",
+      "given": "Mohammed E."
+    },
+    "dienstmannr": {
+      "family": "Dienstmann",
+      "given": "Rodrigo"
+    },
+    "salazarr": {
+      "family": "Salazar",
+      "given": "Ramon"
+    },
+    "frankelnz": {
+      "family": "Frankel",
+      "given": "Naftali Z."
+    },
+    "quintanay": {
+      "family": "Quintana",
+      "given": "Yuri"
+    },
+    "lundj": {
+      "family": "Lund",
+      "given": "Julie"
+    },
+    "roalkvami": {
+      "family": "Roalkvam",
+      "given": "Isak"
+    },
+    "engersa2": {
+      "family": "Enger",
+      "given": "Shirin Abbasinejad"
+    },
+    "yatesja": {
+      "family": "Yates",
+      "given": "James A.F."
+    },
+    "titoloa": {
+      "family": "Titolo",
+      "given": "Andrea"
+    },
+    "rosenbergd": {
+      "family": "Rosenberg",
+      "given": "David"
+    },
+    "rowany": {
+      "family": "Rowan",
+      "given": "Yosef"
+    }
   }
 }; // end CV
 
 // ── RENDERER ──────────────────────────────────────────────────────────────────
 const COPY_SVG = `<svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+
+function inferLinkType(url) {
+  if (!url) return 'website';
+  if (url.includes('doi.org')) return 'doi';
+  if (url.includes('github.com')) return 'github';
+  if (url.includes('hdl.handle.net')) return 'hdl';
+  if (/preprint/i.test(url)) return 'preprint';
+  if (/slides?/i.test(url)) return 'slides';
+  return 'website';
+}
 
 function el(tag, attrs, ...children) {
   const e = document.createElement(tag);
@@ -1858,16 +1953,78 @@ function el(tag, attrs, ...children) {
   return e;
 }
 
+function resolveAuthor(a) {
+  // a is either a key string or legacy {name, me} object
+  if (typeof a === 'string') {
+    const p = (CV.people||{})[a];
+    if (p) return { displayName: formatAuthorName(p, 'lastfirst'), me: !!p.me, orcid: p.orcid, affiliation: p.affiliation, email: p.email, corresponding: !!p.corresponding };
+    return { displayName: a, me: false };
+  }
+  return { displayName: a.name||'', me: !!a.me };
+}
+
+function formatAuthorName(p, style) {
+  const f=p.family||'', g=p.given||'';
+  if (!f && !g) return p.name||'?';
+  if (style==='lastfirst') return g ? f+', '+g : f;
+  if (style==='firstlast') return g ? g+' '+f : f;
+  if (style==='initials') return g ? f+', '+g.split(/\s+/).map(w=>w[0]?w[0]+'.':'').join(' ') : f;
+  return g ? g+' '+f : f;
+}
+
 function renderAuthors(authors, truncate) {
   if (!authors || !authors.length) return null;
   const n = authors.length;
   const thresh = truncate || 99;
+  const ad = CV.authorDisplay || {};
+
+  function makeNameEl(a, i) {
+    const resolved = resolveAuthor(a);
+    const p = typeof a === 'string' ? (CV.people||{})[a] : null;
+    const displayName = p ? (i === 0 ? formatAuthorName(p,'lastfirst') : formatAuthorName(p,'firstlast')) : resolved.displayName;
+
+    // Determine if this author has any hoverable data — optionally skip for "me"
+    const hasCard = p && (p.affiliation || p.orcid || p.url || p.email || p.github)
+                    && !(resolved.me && (CV.authorDisplay||{}).skipMeCard);
+
+    const wrap = el('span', { class: 'author-ref', ...(hasCard ? {'data-card': '1'} : {}) });
+
+    const nameEl = resolved.me ? Object.assign(document.createElement('strong'), { textContent: displayName }) : document.createTextNode(displayName);
+    wrap.appendChild(nameEl);
+
+    if (resolved.corresponding) {
+      wrap.appendChild(el('span', { class: 'author-corr' }, '*'));
+    }
+
+    if (hasCard) {
+      const card = el('span', { class: 'author-hcard' });
+      if (p.affiliation) card.appendChild(el('div', { class: 'author-hcard-affil' }, p.affiliation));
+      if (p.orcid) {
+        const ol = el('a', { class: 'author-hcard-link', href: 'https://orcid.org/'+p.orcid, target: '_blank' });
+        ol.textContent = 'ORCID '+p.orcid; card.appendChild(ol);
+      }
+      if (p.github) {
+        const gl = el('a', { class: 'author-hcard-link', href: 'https://github.com/'+p.github.replace(/^@/,''), target: '_blank' });
+        gl.textContent = 'gh '+p.github.replace(/^@/,''); card.appendChild(gl);
+      }
+      if (p.url) {
+        const ul = el('a', { class: 'author-hcard-link', href: p.url, target: '_blank' });
+        ul.textContent = p.url.replace(/^https?:\/\//,''); card.appendChild(ul);
+      }
+      if (p.email) {
+        const el2 = el('a', { class: 'author-hcard-link', href: 'mailto:'+p.email });
+        el2.textContent = p.email; card.appendChild(el2);
+      }
+      wrap.appendChild(card);
+    }
+
+    return wrap;
+  }
 
   function buildFull() {
     const frag = document.createDocumentFragment();
     authors.forEach((a, i) => {
-      const name = a.me ? Object.assign(document.createElement('strong'), { textContent: a.name }) : document.createTextNode(a.name);
-      frag.appendChild(name);
+      frag.appendChild(makeNameEl(a, i));
       if (i < n - 2) frag.appendChild(document.createTextNode(', '));
       else if (i === n - 2) frag.appendChild(document.createTextNode(' and '));
     });
@@ -1878,13 +2035,14 @@ function renderAuthors(authors, truncate) {
     const frag = document.createDocumentFragment();
     const shown = authors.slice(0, thresh);
     shown.forEach((a, i) => {
-      const name = a.me ? Object.assign(document.createElement('strong'), { textContent: a.name }) : document.createTextNode(a.name);
-      frag.appendChild(name);
+      frag.appendChild(makeNameEl(a, i));
       if (i < shown.length - 1) frag.appendChild(document.createTextNode(', '));
     });
     const rest = authors.slice(thresh);
-    const meInRest = rest.find(a => a.me);
-    const suffix = `…and ${rest.length} more${meInRest ? ' including Zachary Batist' : ''}`;
+    const meInRest = rest.some(a => { const r=resolveAuthor(a); return r.me; });
+    const meName = Object.values(CV.people||{}).find(p=>p.me);
+    const meFull = meName ? formatAuthorName(meName,'firstlast') : 'Zachary Batist';
+    const suffix = `…and ${rest.length} more${meInRest ? ' including '+meFull : ''}`;
     const tog = el('button', { class: 'author-toggle' }, suffix);
     let expanded = false;
     tog.addEventListener('click', () => {
@@ -1994,6 +2152,7 @@ function renderPills(entry, panel) {
         panel.classList.remove('open');
         btn.classList.remove('active');
         current = null;
+        window.dispatchEvent(new Event('cv-layout-change'));
         return;
       }
       frag.querySelectorAll && frag.querySelectorAll('.pill-btn'); // noop
@@ -2029,6 +2188,7 @@ function renderPills(entry, panel) {
         pre.style.display = 'block'; pre.textContent = panel.dataset.bib;
         showCopy(panel.dataset.bib);
       }
+      window.dispatchEvent(new Event('cv-layout-change'));
     });
     frag.appendChild(btn);
   });
@@ -2060,8 +2220,7 @@ function renderSimpleEntry(entry) {
   if (entry.month) yEl.appendChild(el('span', { class: 'mo' }, entry.month));
   const c = el('div', { class: 'c' });
   if (entry.content) {
-    const p = el('p', { html: entry.content.replace(/\n/g, '<br>') });
-    c.appendChild(p);
+    c.appendChild(el('p', { html: entry.content.replace(/\n/g, '<br>') }));
   }
   if (entry.desc) c.appendChild(el('p', { class: 'desc', html: entry.desc }));
   const { linksEl, panelEl } = renderLinksWithPills(entry);
@@ -2280,7 +2439,24 @@ build();
   btn.addEventListener('click', function () { setTheme(!dark); });
 })();
 
-// ── MARGIN NOTES ──────────────────────────────────────────────────────────────
+// ── AUTHOR INFO TOGGLE ───────────────────────────────────────────────────────
+(function () {
+  var btn = document.getElementById('author-info-toggle');
+  var on = localStorage.getItem('cv-author-info') !== 'off';
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  function set(val) {
+    on = val;
+    style.textContent = on ? '' : '.author-ref[data-card] { border-bottom: none !important; cursor: default !important; } .author-hcard { display: none !important; }';
+    btn.textContent = on ? 'Author info on' : 'Author info off';
+    btn.style.opacity = on ? '1' : '0.5';
+    localStorage.setItem('cv-author-info', on ? 'on' : 'off');
+  }
+  set(on);
+  btn.addEventListener('click', function () { set(!on); });
+})();
+
+
 (function () {
   var NOTES = CV.notes || {};
 
@@ -2341,29 +2517,27 @@ build();
 
   // Position notes vertically aligned to their entry top
   function positionAll() {
-    var colTop = marginCol.getBoundingClientRect().top + window.scrollY;
+    var marginRect = marginCol.getBoundingClientRect();
     var positions = [];
     Object.keys(noteEls).forEach(function(noteid) {
       var entryDiv = document.querySelector('.e[data-noteid="' + noteid + '"]');
-      if (!entryDiv) return;
-      var entryTop = entryDiv.getBoundingClientRect().top + window.scrollY;
-      positions.push({ id: noteid, top: entryTop - colTop, right: false });
+      if (!entryDiv || !noteEls[noteid]) return;
+      var top = entryDiv.getBoundingClientRect().top - marginRect.top;
+      positions.push({ id: noteid, top: top });
     });
     positions.sort(function(a,b) { return a.top - b.top; });
-    var minGap = 36;
-    for (var i = 1; i < positions.length; i++) {
-      var prev = positions[i-1];
-      var curr = positions[i];
-      if (!prev.right && curr.top - prev.top < minGap) {
-        curr.right = true;
-      }
-    }
     positions.forEach(function(p) {
-      var el = noteEls[p.id];
-      if (!el) return;
-      el.style.top = p.top + 'px';
-      el.style.left = p.right ? '50%' : '0';
-      el.style.right = p.right ? '-10px' : '0';
+      var el = noteEls[p.id]; if (!el) return;
+      el.style.left = '0'; el.style.right = '0'; el.style.top = p.top + 'px';
+    });
+    requestAnimationFrame(function() {
+      var cursor = -9999;
+      positions.forEach(function(p) {
+        var el = noteEls[p.id]; if (!el) return;
+        var top = Math.max(p.top, cursor + 6);
+        el.style.top = top + 'px';
+        cursor = top + el.offsetHeight;
+      });
     });
   }
 
@@ -2382,6 +2556,7 @@ build();
 
   btn.addEventListener('click', function() { setNotes(!on); });
   window.addEventListener('resize', function() { if (on) positionAll(); });
+  window.addEventListener('cv-layout-change', function() { if (on) positionAll(); });
 
   // Position after layout settles
   setTimeout(function() { setNotes(on); }, 100);
