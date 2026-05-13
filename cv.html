@@ -113,8 +113,7 @@ h3 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform
 .e > .mn { align-self: start; overflow: visible; height: 0; }
 .mn { font-family: -apple-system, sans-serif; font-size: 0.72rem; line-height: 1.5; color: var(--faint); opacity: 0; transition: opacity 0.25s; pointer-events: none; display: flex; align-items: flex-start; gap: 7px; }
 .mn.visible { opacity: 1; pointer-events: auto; }
-.note-col-hdr { display: grid; grid-template-columns: var(--year) 1fr 600px; gap: 0 1.25rem; margin-bottom: 0.5rem; }
-.note-col-hdr::after { content: 'Project context'; grid-column: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--faint); font-family: -apple-system, sans-serif; border-bottom: 0.5px solid var(--rule); padding-bottom: 0.3rem; } width: 5px; height: 5px; border-radius: 50%; background: #2d4a6b; flex-shrink: 0; margin-top: 7px; }
+.mn-dot { display: block; width: 5px; height: 5px; border-radius: 50%; background: #2d4a6b; flex-shrink: 0; margin-top: 3px; }
 [data-theme="dark"] .mn-dot { background: #7aafd4; }
 .mn-body { flex: 1; min-width: 0; }
 .mn-title { font-weight: 500; color: var(--muted); margin-bottom: 0.1rem; }
