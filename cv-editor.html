@@ -307,7 +307,15 @@ function extractCV(src) {
   const s=src.indexOf('const CV = {'), e=src.indexOf('}; // end CV');
   if(s<0||e<0) throw new Error('CV object not found');
   const obj=src.slice(s+'const CV = '.length, e+1);
-  try { return JSON.parse(obj); } catch(_) { return eval('('+obj+')'); }
+  let cv; try { cv=JSON.parse(obj); } catch(_) { cv=eval('('+obj+')'); }
+  // Migrate legacy entry.note -> entry.notes
+  function migrate(arr){(arr||[]).forEach(e=>{if(e.note&&!e.notes){e.notes=[e.note];delete e.note;}});}
+  Object.values(cv.publications||{}).forEach(migrate);
+  Object.values(cv.presentations||{}).forEach(migrate);
+  Object.values(cv.softwareData||{}).forEach(migrate);
+  Object.values(cv.service||{}).forEach(migrate);
+  migrate(cv.outreach);
+  return cv;
 }
 function injectCV(src, cv) {
   const s=src.indexOf('const CV = {'), e=src.indexOf('}; // end CV')+'}; // end CV'.length;
@@ -698,22 +706,46 @@ function buildEntryForm(wrap, entry, sid, form, hasPoster, onSave) {
     wrap.appendChild(buildLinksField(linksState));
   }
 
-  // Context note
+  // Context notes — multi-select chips
   const cnSec=document.createElement('div'); cnSec.className='cn-section';
-  const cnLabel=document.createElement('label'); cnLabel.textContent='Context note'; cnSec.appendChild(cnLabel);
+  const cnLabel=document.createElement('label'); cnLabel.textContent='Context'; cnSec.appendChild(cnLabel);
+  let cnState=[...(entry.notes||(entry.note?[entry.note]:[]))];
+  const cnChips=document.createElement('div'); cnChips.className='chips'; cnChips.style.marginBottom='5px';
+  function refreshCnChips(){
+    cnChips.innerHTML='';
+    cnState.forEach((k,i)=>{
+      const n=(CV.notes||{})[k]||{title:k};
+      const c=document.createElement('span'); c.className='chip';
+      c.textContent=n.title;
+      const x=document.createElement('button'); x.className='chip-x'; x.textContent='×';
+      x.onclick=()=>{cnState.splice(i,1);refreshCnChips();};
+      c.appendChild(x); cnChips.appendChild(c);
+    });
+  }
+  refreshCnChips(); cnSec.appendChild(cnChips);
+  const cnAddRow=document.createElement('div'); cnAddRow.style.cssText='display:grid;grid-template-columns:1fr auto;gap:5px';
   const cnSel=document.createElement('select');
-  const none=document.createElement('option'); none.value=''; none.textContent='None'; cnSel.appendChild(none);
+  const cnNone=document.createElement('option'); cnNone.value=''; cnNone.textContent='Add context…'; cnSel.appendChild(cnNone);
   Object.entries(CV.notes||{}).forEach(([k,n])=>{const o=document.createElement('option');o.value=k;o.textContent=n.title;cnSel.appendChild(o);});
-  cnSel.value=entry.note||''; cnSec.appendChild(cnSel);
-  const cnTxt=ta(entry.noteText||''); cnTxt.placeholder='How this entry relates to the project (optional)'; cnTxt.style.marginTop='5px'; cnSec.appendChild(cnTxt);
+  const cnAddBtn=btn('+','action-btn',()=>{
+    if(cnSel.value&&!cnState.includes(cnSel.value)){cnState.push(cnSel.value);cnSel.value='';refreshCnChips();}
+  });
+  cnAddRow.append(cnSel,cnAddBtn); cnSec.appendChild(cnAddRow);
+  const cnText=ta(entry.noteText||''); cnText.placeholder='Annotation (optional)'; cnText.style.marginTop='5px'; cnSec.appendChild(cnText);
   wrap.appendChild(cnSec);
 
   // Save
+  const saveMsg=document.createElement('span'); saveMsg.style.cssText='font-size:0.8em;color:var(--success);margin-left:0.5rem;opacity:0;transition:opacity 0.3s';
+  function showSaveMsg(fields){
+    saveMsg.textContent='Saved: '+fields.join(', ');
+    saveMsg.style.opacity='1';
+    setTimeout(()=>saveMsg.style.opacity='0',2500);
+  }
   const saveBtn=btn('Save','save-btn',()=>{
     if(autoGen) autoGen();
     const updated={year:yrIn.value.trim(),links:linksState.filter(l=>l.url)};
     if(moIn.value.trim()) updated.month=moIn.value.trim();
-    if(cnSel.value){updated.note=cnSel.value;if(cnTxt.value.trim())updated.noteText=cnTxt.value.trim();}
+    if(cnState.length){updated.notes=[...cnState];if(cnText.value.trim())updated.noteText=cnText.value.trim();}
     if(PUB.has(form)){
       updated.authors=[...authState];
       // Update corresponding author flag in people
@@ -741,9 +773,15 @@ function buildEntryForm(wrap, entry, sid, form, hasPoster, onSave) {
       if(contentIn?.value.trim()) updated.content=contentIn.value.trim();
       if(descIn?.value.trim()) updated.desc=descIn.value.trim();
     }
+    const changed=Object.keys(updated).filter(k=>k!=='links'&&k!=='authors'&&k!=='notes');
+    const changedLabels=[...changed];
+    if(updated.authors) changedLabels.push('authors');
+    if(updated.notes) changedLabels.push('context');
+    if(updated.links) changedLabels.push('links');
+    showSaveMsg(changedLabels);
     onSave(updated);
   });
-  const fa=document.createElement('div'); fa.className='form-actions'; fa.appendChild(saveBtn);
+  const fa=document.createElement('div'); fa.className='form-actions'; fa.append(saveBtn,saveMsg);
   wrap.appendChild(fa);
 }
 
