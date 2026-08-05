@@ -249,8 +249,8 @@ const SECTIONS = {
   software:       { path: ['softwareData','software'],     form: 'software' },
   datasets:       { path: ['softwareData','datasets'],     form: 'dataset' },
   initiatives:    { path: ['softwareData','initiatives'],  form: 'simple' },
-  grants:         { path: ['grantsAwards','grants'],       form: 'simple' },
-  awards:         { path: ['grantsAwards','awards'],       form: 'simple' },
+  grants:         { path: ['grantsAwards','grants'],       form: 'grant' },
+  awards:         { path: ['grantsAwards','awards'],       form: 'grant' },
   ta:             { path: ['teaching','ta'],               form: 'simple' },
   workshops:      { path: ['teaching','workshops'],        form: 'simple' },
   invited:        { path: ['presentations','invited'],     form: 'talk' },
@@ -278,7 +278,7 @@ function setSection(id, val) {
 }
 function dirty() {
   document.getElementById('download-btn').disabled=false;
-  document.getElementById('preview-btn').disabled=false;
+  const pb=document.getElementById('preview-btn'); if(pb) pb.disabled=false;
 }
 
 // ── File load ─────────────────────────────────────────────────────────────────
@@ -309,7 +309,10 @@ function extractCV(src) {
   const obj=src.slice(s+'const CV = '.length, e+1);
   let cv; try { cv=JSON.parse(obj); } catch(_) { cv=eval('('+obj+')'); }
   // Migrate legacy entry.note -> entry.notes
-  function migrate(arr){(arr||[]).forEach(e=>{if(e.note&&!e.notes){e.notes=[e.note];delete e.note;}});}
+  function migrate(arr){(arr||[]).forEach(e=>{
+    if(e.note&&!e.notes){e.notes=[e.note];delete e.note;}
+    if(e.notes&&!Array.isArray(e.notes)){e.notes=[e.notes];}
+  });}
   Object.values(cv.publications||{}).forEach(migrate);
   Object.values(cv.presentations||{}).forEach(migrate);
   Object.values(cv.softwareData||{}).forEach(migrate);
@@ -437,7 +440,7 @@ function buildSectionPanel(id) {
     const fm=document.createElement('div'); fm.className='fetch-msg';
     const ff=document.createElement('button'); ff.className='action-btn'; ff.textContent='Fetch';
     ff.onclick=()=>doFetch(fi.value,fm,formWrap,id,form,poster,updated=>{
-      const arr=getSection(id)||[]; arr.push(updated); setSection(id,arr); refresh(id); activate(id);
+      const arr=getSection(id)||[]; arr.unshift(updated); setSection(id,arr); refresh(id); activate(id);
     });
     fi.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();ff.click();}});
     fb.append(fi,ff); inner.append(fb,fm);
@@ -445,7 +448,7 @@ function buildSectionPanel(id) {
 
   const formWrap=document.createElement('div');
   buildEntryForm(formWrap,{},id,form,poster,updated=>{
-    const arr=getSection(id)||[]; arr.push(updated); setSection(id,arr); refresh(id); activate(id); det.open=false;
+    const arr=getSection(id)||[]; arr.unshift(updated); setSection(id,arr); refresh(id); activate(id); det.open=false;
   });
   inner.appendChild(formWrap); det.appendChild(inner); frag.appendChild(det);
   return frag;
@@ -464,7 +467,7 @@ function entryRow(sid, entry, idx, form, poster) {
     const firstName=firstP.family?firstP.family+(firstP.given?', '+firstP.given:''):firstKey;
     prevText=firstName+' — '+(entry.title||entry.content||'').replace(/<[^>]+>/g,'');
   } else {
-    prevText=(entry.content||entry.title||'').replace(/<[^>]+>/g,'');
+    prevText=(entry.program||entry.content||entry.title||'').replace(/<[^>]+>/g,'');
   }
   prev.textContent=prevText;
   const acts = document.createElement('div'); acts.className='entry-actions';
@@ -529,9 +532,17 @@ function buildEntryForm(wrap, entry, sid, form, hasPoster, onSave) {
     if(a&&a.name){const {family,given}=parseNameString(a.name);if(family)return addPersonToRoster(family,given);}
     return null;
   }).filter(Boolean);
-  let linksState=(entry.links||[]).map(l=>({...l}));
+  let linksState=(entry.links||[]).map(l=>{
+    const u=l.url||'';
+    let label=l.label||u;
+    if(l.type==='doi'||u.includes('doi.org')) label=u.replace(/^https?:\/\/doi\.org\//,'');
+    else if(l.type==='hdl'||u.includes('hdl.handle.net')) label=u.replace(/^https?:\/\/hdl\.handle\.net\//,'');
+    else if(l.type==='github'||u.includes('github.com')) label=u.replace(/^https?:\/\/(www\.)?github\.com\//,'');
+    return {...l, label};
+  });
   let vFields={}, titleIn, contentIn, descIn, citeIn, absIn, bibIn, posterChk;
   let autoGen=null;
+  let gProgramIn, gFunderIn, gTitleIn2, gAmtIn, gIdIn, gNotesIn, gMinorChk;
   // corrSel declared outside if(PUB) so save handler can access it
   const corrRow=document.createElement('div'); corrRow.className='field';
   const corrL=document.createElement('label'); corrL.textContent='Corresponding author (optional)'; corrRow.appendChild(corrL);
@@ -700,6 +711,25 @@ function buildEntryForm(wrap, entry, sid, form, hasPoster, onSave) {
       pRow.append(posterChk,' Poster'); wrap.appendChild(pRow);
     }
     wrap.appendChild(buildLinksField(linksState));
+  } else if(form==='grant') {
+    gProgramIn=document.createElement('input'); gProgramIn.value=entry.program||''; gProgramIn.placeholder='e.g. Doctoral Fellowship, Travel Award';
+    wrap.appendChild(field('Grant / Award program',gProgramIn));
+    gFunderIn=document.createElement('input'); gFunderIn.value=entry.funder||''; gFunderIn.placeholder='Funding institution';
+    wrap.appendChild(field('Funder',gFunderIn));
+    gTitleIn2=document.createElement('input'); gTitleIn2.value=entry.title||''; gTitleIn2.placeholder='Funded project title (if applicable)';
+    wrap.appendChild(field('Project title (optional)',gTitleIn2));
+    const gRow=document.createElement('div'); gRow.className='field-row r2';
+    gAmtIn=document.createElement('input'); gAmtIn.value=entry.amount||''; gAmtIn.placeholder='e.g. $20,000';
+    gIdIn=document.createElement('input'); gIdIn.value=entry.id||''; gIdIn.placeholder='Award ID (optional)';
+    gRow.append(field('Amount',gAmtIn),field('Award ID',gIdIn));
+    wrap.appendChild(gRow);
+    gNotesIn=document.createElement('input'); gNotesIn.value=entry.notes||''; gNotesIn.placeholder='e.g. declined';
+    wrap.appendChild(field('Notes (optional)',gNotesIn));
+    const gMinorLbl=document.createElement('label'); gMinorLbl.style.cssText='display:flex;align-items:center;gap:6px;font-size:0.9em;cursor:pointer;margin:0.5rem 0';
+    gMinorChk=document.createElement('input'); gMinorChk.type='checkbox'; gMinorChk.checked=!!entry.minor;
+    gMinorLbl.append(gMinorChk,' Show in collapsed "additional" section'); wrap.appendChild(gMinorLbl);
+    wrap.appendChild(buildLinksField(linksState));
+    contentIn={value:''}; descIn={value:''};
   } else {
     contentIn=ta(entry.content); contentIn.style.minHeight='44px'; wrap.appendChild(field('Text',contentIn));
     descIn=ta(entry.desc); wrap.appendChild(field('Description — appears as a subtitle below the entry',descIn));
@@ -769,6 +799,14 @@ function buildEntryForm(wrap, entry, sid, form, hasPoster, onSave) {
       if(titleIn?.value.trim()) updated.title=titleIn.value.trim();
       if(vFields.ven?.value.trim()) updated.venue=vFields.ven.value.trim();
       if(hasPoster&&posterChk?.checked) updated.poster=true;
+    } else if(form==='grant') {
+      if(gProgramIn?.value.trim()) updated.program=gProgramIn.value.trim();
+      if(gFunderIn?.value.trim()) updated.funder=gFunderIn.value.trim();
+      if(gTitleIn2?.value.trim()) updated.title=gTitleIn2.value.trim();
+      if(gAmtIn?.value.trim()) updated.amount=gAmtIn.value.trim();
+      if(gIdIn?.value.trim()) updated.id=gIdIn.value.trim();
+      if(gNotesIn?.value.trim()) updated.notes=gNotesIn.value.trim();
+      if(gMinorChk) updated.minor=gMinorChk.checked;
     } else {
       if(contentIn?.value.trim()) updated.content=contentIn.value.trim();
       if(descIn?.value.trim()) updated.desc=descIn.value.trim();
@@ -794,18 +832,36 @@ function buildLinksField(state) {
     wrap.innerHTML='';
     state.forEach((lk,i)=>{
       const r=document.createElement('div'); r.className='link-row';
-      // Type select
       const tSel=document.createElement('select');
       [...LINK_TYPES,'custom'].forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t;tSel.appendChild(o);});
       const inferredType=lk.type||inferType(lk.url)||'website';
       tSel.value=LINK_TYPES.includes(inferredType)?inferredType:'custom';
       state[i].type=tSel.value;
-      tSel.onchange=()=>{state[i].type=tSel.value;};
-      const uIn=document.createElement('input'); uIn.value=lk.url||''; uIn.placeholder='URL';
-      uIn.oninput=()=>{state[i].url=uIn.value;if(!lk.type){const t=inferType(uIn.value);if(t&&LINK_TYPES.includes(t)){tSel.value=t;state[i].type=t;}}};
-      const rm=document.createElement('button'); rm.className='rm-btn'; rm.textContent='×';
-      rm.onclick=()=>{state.splice(i,1);refresh();};
-      r.append(tSel,uIn,rm); wrap.appendChild(r);
+      (idx=>{
+        tSel.onchange=()=>{
+          state[idx].type=tSel.value;
+          const u=state[idx].url||'';
+          if(tSel.value==='doi') state[idx].label=u.replace(/^https?:\/\/doi\.org\//,'');
+          else if(tSel.value==='hdl') state[idx].label=u.replace(/^https?:\/\/hdl\.handle\.net\//,'');
+          else if(tSel.value==='github') state[idx].label=u.replace(/^https?:\/\/(www\.)?github\.com\//,'');
+          else state[idx].label=u;
+        };
+        const uIn=document.createElement('input'); uIn.value=lk.url||''; uIn.placeholder='URL';
+        uIn.oninput=()=>{
+          state[idx].url=uIn.value;
+          // Compute display label from URL
+          const u=uIn.value;
+          if(state[idx].type==='doi'||u.includes('doi.org')) state[idx].label=u.replace(/^https?:\/\/doi\.org\//,'');
+          else if(state[idx].type==='hdl'||u.includes('hdl.handle.net')) state[idx].label=u.replace(/^https?:\/\/hdl\.handle\.net\//,'');
+          else if(state[idx].type==='github'||u.includes('github.com')) state[idx].label=u.replace(/^https?:\/\/(www\.)?github\.com\//,'');
+          else state[idx].label=u;
+          if(!state[idx].type||state[idx].type==='website'){const t=inferType(u);if(t&&LINK_TYPES.includes(t)){tSel.value=t;state[idx].type=t;}}
+        };
+        const rm=document.createElement('button'); rm.className='rm-btn'; rm.textContent='×';
+        rm.onclick=()=>{state.splice(idx,1);refresh();};
+        r.append(tSel,uIn,rm);
+      })(i);
+      wrap.appendChild(r);
     });
   }
   refresh(); f.appendChild(wrap);
@@ -1265,7 +1321,13 @@ function genBib(e,doi) {
 // ── Download / Preview ────────────────────────────────────────────────────────
 document.getElementById('download-btn').addEventListener('click',()=>{
   if(!CV||!source) return;
-  const blob=new Blob([injectCV(source,CV)],{type:'text/html'});
+  const now=new Date();
+  const yyyy=now.getFullYear();
+  const mm=String(now.getMonth()+1).padStart(2,'0');
+  const monthName=['January','February','March','April','May','June','July','August','September','October','November','December'][now.getMonth()];
+  let out=injectCV(source,CV);
+  out=out.replace(/<time datetime="[\d-]+">[^<]+<\/time>/,`<time datetime="${yyyy}-${mm}">${monthName} ${yyyy}</time>`);
+  const blob=new Blob([out],{type:'text/html'});
   const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='cv.html'; a.click(); URL.revokeObjectURL(a.href);
 });
 
