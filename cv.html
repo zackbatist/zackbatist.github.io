@@ -103,6 +103,12 @@ h3 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform
 .panel-copy { position: absolute; top: 0.3rem; right: 0.3rem; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: var(--bg); border: 0.5px solid var(--rule); border-radius: 4px; cursor: pointer; opacity: 0.55; transition: opacity 0.15s; padding: 0; }
 .panel-copy:hover { opacity: 1; }
 .panel-copy svg { width: 11px; height: 11px; stroke: var(--muted); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; display: block; }
+.minor-entries { margin-top: 0.5rem; }
+.minor-entries summary { font-size: 0.82rem; color: var(--faint); cursor: pointer; padding: 0.25rem 0; list-style: none; display: inline-flex; align-items: center; gap: 0.4rem; }
+.minor-entries summary::before { content: '▸'; font-size: 0.7em; }
+.minor-entries[open] summary::before { content: '▾'; }
+.minor-entries summary:hover { color: var(--muted); }
+.minor-entries .e { opacity: 0.75; }
 .author-toggle { font-family: -apple-system, sans-serif; font-size: 0.72rem; color: var(--faint); background: none; border: none; padding: 0 0 0 0.25rem; cursor: pointer; border-bottom: 1px dashed var(--rule); line-height: 1.6; }
 .author-toggle:hover { color: var(--fg); }
 .areas { font-size: 0.88rem; color: var(--muted); line-height: 1.8; font-family: -apple-system, sans-serif; }
@@ -149,7 +155,7 @@ h3 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform
     <li><a href="https://github.com/zackbatist" target="_blank"><span class="contact-label">GitHub</span> zackbatist</a></li>
     <li><a href="https://archaeo.social/@zackbatist" target="_blank"><span class="contact-label">Mastodon</span> @zackbatist@archaeo.social</a></li>
   </ul>
-  <p class="updated">Updated <time datetime="2026-05">May 2026</time></p>
+  <p class="updated">Updated <time datetime="2026-08">August 2026</time></p>
 </header>
 <div class="cv-outer">
   <div id="cv-root"></div>
@@ -318,7 +324,7 @@ const CV = {
           "lundj",
           "roalkvami"
         ],
-        "title": "Bibliometric analysis of Viking Age research (title TBD.",
+        "title": "Bibliometric analysis of Viking Age research (title TBD).",
         "venue": {
           "journal": "",
           "volume": "",
@@ -326,8 +332,8 @@ const CV = {
           "pages": ""
         },
         "desc": "Identifies trends in the published archaeological literature corresponding with shifting attitudes concerning the origins of the Viking Age.",
-        "cite": "Batist, Zachary, Lund, Julie, Roalkvam, Isak. In progress. \"Bibliometric analysis of Viking Age research (title TBD\" .",
-        "bib": "@misc{batistIn progress,\n  author = {Batist, Zachary and Lund, Julie and Roalkvam, Isak},\n  title = {Bibliometric analysis of Viking Age research (title TBD},\n  date = {In progress}\n}"
+        "cite": "Batist, Zachary, Lund, Julie, Roalkvam, Isak. In progress. \"Bibliometric analysis of Viking Age research (title TBD)\" .",
+        "bib": "@misc{batistIn progress,\n  author = {Batist, Zachary and Lund, Julie and Roalkvam, Isak},\n  title = {Bibliometric analysis of Viking Age research (title TBD)},\n  date = {In progress}\n}"
       },
       {
         "year": "In progress",
@@ -349,7 +355,13 @@ const CV = {
       },
       {
         "year": "In press",
-        "links": [],
+        "links": [
+          {
+            "type": "doi",
+            "url": "https://doi.org/10.1200/GO-25-00720",
+            "label": "10.1200/GO-25-00720"
+          }
+        ],
         "authors": [
           "farahnakf",
           "eldeiryws",
@@ -409,8 +421,8 @@ const CV = {
           "issue": "",
           "pages": ""
         },
-        "cite": "Farahnak, Farhood, El-Deiry, Wafik S., Lussier, Yves A., Kurzrock, Razelle, Magidi, Shai, Bresson, Catherine, Enger, Shirin A., Liu, Jia, Bar, Jair, Warner, Jeremy L., Meissner, Tobias, Rubin, Eitan, Rueter, Jens, Gaddipati, Himabindu, Kulkarni, Mandar, Chen, Zhen, Limaye, Sewanti, Elsey, Rachel, Rubenstein, Brenda M., Joshua, Anthony M., Al-Shamsi, Humaid O., Musallam, Khaled M., Wunder, Fanny, Raynaud, Jacques, Berchem, Guy, Gantenbein, Manon, Omari, Amal Al, Dermime, Said, Abdel-Razeq, Hikmat, Saintigny, Pierre, Cervantes, Andrés, Reddel, Roger R., Aref, Adel T., Martin-Liberal, Juan, Lázaro, Conxi, Romera, David Cordero, Sekacheva, Marina, Berger, Raanan, Pramesh, C.S., Berindan-Neagoe, Ioana, Girda, Eugenia, Piris-Gimenez, Alejandro, Farhangfar, Carol J., Salem, Mohammed E., Dienstmann, Rodrigo, Salazar, Ramon, Frankel, Naftali Z., Batist, Zachary, Quintana, Yuri, Batist, Gerald. In press. \"Worldwide Innovative Network (WIN) Consortium: Building a common global cancer database\" Nature Reviews in Clinical Oncology.",
-        "bib": "@article{farahnakIn press,\n  author = {Farahnak, Farhood and El-Deiry, Wafik S. and Lussier, Yves A. and Kurzrock, Razelle and Magidi, Shai and Bresson, Catherine and Enger, Shirin A. and Liu, Jia and Bar, Jair and Warner, Jeremy L. and Meissner, Tobias and Rubin, Eitan and Rueter, Jens and Gaddipati, Himabindu and Kulkarni, Mandar and Chen, Zhen and Limaye, Sewanti and Elsey, Rachel and Rubenstein, Brenda M. and Joshua, Anthony M. and Al-Shamsi, Humaid O. and Musallam, Khaled M. and Wunder, Fanny and Raynaud, Jacques and Berchem, Guy and Gantenbein, Manon and Omari, Amal Al and Dermime, Said and Abdel-Razeq, Hikmat and Saintigny, Pierre and Cervantes, Andrés and Reddel, Roger R. and Aref, Adel T. and Martin-Liberal, Juan and Lázaro, Conxi and Romera, David Cordero and Sekacheva, Marina and Berger, Raanan and Pramesh, C.S. and Berindan-Neagoe, Ioana and Girda, Eugenia and Piris-Gimenez, Alejandro and Farhangfar, Carol J. and Salem, Mohammed E. and Dienstmann, Rodrigo and Salazar, Ramon and Frankel, Naftali Z. and Batist, Zachary and Quintana, Yuri and Batist, Gerald},\n  title = {Worldwide Innovative Network (WIN) Consortium: Building a common global cancer database},\n  journaltitle = {Nature Reviews in Clinical Oncology},\n  date = {In press}\n}"
+        "cite": "Farahnak, Farhood, El-Deiry, Wafik S., Lussier, Yves A., Kurzrock, Razelle, Magidi, Shai, Bresson, Catherine, Enger, Shirin A., Liu, Jia, Bar, Jair, Warner, Jeremy L., Meissner, Tobias, Rubin, Eitan, Rueter, Jens, Gaddipati, Himabindu, Kulkarni, Mandar, Chen, Zhen, Limaye, Sewanti, Elsey, Rachel, Rubenstein, Brenda M., Joshua, Anthony M., Al-Shamsi, Humaid O., Musallam, Khaled M., Wunder, Fanny, Raynaud, Jacques, Berchem, Guy, Gantenbein, Manon, Omari, Amal Al, Dermime, Said, Abdel-Razeq, Hikmat, Saintigny, Pierre, Cervantes, Andrés, Reddel, Roger R., Aref, Adel T., Martin-Liberal, Juan, Lázaro, Conxi, Romera, David Cordero, Sekacheva, Marina, Berger, Raanan, Pramesh, C.S., Berindan-Neagoe, Ioana, Girda, Eugenia, Piris-Gimenez, Alejandro, Farhangfar, Carol J., Salem, Mohammed E., Dienstmann, Rodrigo, Salazar, Ramon, Frankel, Naftali Z., Batist, Zachary, Quintana, Yuri, Batist, Gerald. In press. \"Worldwide Innovative Network (WIN) Consortium: Building a common global cancer database\" Nature Reviews in Clinical Oncology. https://doi.org/10.1200/GO-25-00720.",
+        "bib": "@article{farahnakIn press,\n  author = {Farahnak, Farhood and El-Deiry, Wafik S. and Lussier, Yves A. and Kurzrock, Razelle and Magidi, Shai and Bresson, Catherine and Enger, Shirin A. and Liu, Jia and Bar, Jair and Warner, Jeremy L. and Meissner, Tobias and Rubin, Eitan and Rueter, Jens and Gaddipati, Himabindu and Kulkarni, Mandar and Chen, Zhen and Limaye, Sewanti and Elsey, Rachel and Rubenstein, Brenda M. and Joshua, Anthony M. and Al-Shamsi, Humaid O. and Musallam, Khaled M. and Wunder, Fanny and Raynaud, Jacques and Berchem, Guy and Gantenbein, Manon and Omari, Amal Al and Dermime, Said and Abdel-Razeq, Hikmat and Saintigny, Pierre and Cervantes, Andrés and Reddel, Roger R. and Aref, Adel T. and Martin-Liberal, Juan and Lázaro, Conxi and Romera, David Cordero and Sekacheva, Marina and Berger, Raanan and Pramesh, C.S. and Berindan-Neagoe, Ioana and Girda, Eugenia and Piris-Gimenez, Alejandro and Farhangfar, Carol J. and Salem, Mohammed E. and Dienstmann, Rodrigo and Salazar, Ramon and Frankel, Naftali Z. and Batist, Zachary and Quintana, Yuri and Batist, Gerald},\n  title = {Worldwide Innovative Network (WIN) Consortium: Building a common global cancer database},\n  journaltitle = {Nature Reviews in Clinical Oncology},\n  date = {In press},\n  doi = {10.1200/GO-25-00720}\n}"
       },
       {
         "year": "2025",
@@ -1073,54 +1085,107 @@ const CV = {
   "grantsAwards": {
     "grants": [
       {
-        "year": "2019 – 2021",
-        "content": "SSHRC Doctoral Fellowship. <em>Archaeological data curation as continuous and collaborative practice.</em> Award ID: 752-2019-2233. ($20,000)"
+        "year": "2026",
+        "links": [],
+        "program": "Project Grant Priority Area: Pandemic Preparedness and Health Emergencies Research",
+        "funder": "Canadan Institutes for Health Research (CIHR)",
+        "title": "Deriving insights for research data sharing from a large-scale data sharing initiative in Canada",
+        "amount": "$100,000",
+        "minor": false
+      },
+      {
+        "year": "2019–2021",
+        "program": "Doctoral Fellowship",
+        "funder": "Social Sciences and Humanities Research Council of Canada (SSHRC)",
+        "title": "Archaeological data curation as continuous and collaborative practice",
+        "id": "752-2019-2233",
+        "amount": "$20,000",
+        "minor": false
       },
       {
         "year": "2019",
-        "content": "Research Travel Grant ($500). Faculty of Arts and Science, University of Toronto."
+        "program": "Research Travel Grant",
+        "funder": "Faculty of Arts and Science, University of Toronto",
+        "amount": "$500",
+        "minor": true
       },
       {
         "year": "2017",
-        "content": "Joseph and Maria Shaw Graduate Student Travel Award ($500). The Archaeology Centre, University of Toronto."
+        "program": "Joseph and Maria Shaw Graduate Student Travel Award",
+        "funder": "The Archaeology Centre, University of Toronto",
+        "amount": "$500",
+        "minor": true
       },
       {
         "year": "2015",
-        "content": "McMaster University Travel Scholarship for OpenCon 2015 ($2500). McMaster University Library."
+        "program": "Travel Scholarship for OpenCon 2015",
+        "funder": "McMaster University Library",
+        "amount": "$2,500",
+        "minor": true
       },
       {
         "year": "2015",
-        "content": "Edith M. Wightman Travel Scholarship ($1000). School of Graduate Studies, McMaster University."
+        "program": "Edith M. Wightman Travel Scholarship",
+        "funder": "School of Graduate Studies, McMaster University",
+        "amount": "$1,000",
+        "minor": true
       },
       {
         "year": "2015",
-        "content": "Travel Assistance Grant ($500). School of Graduate Studies, McMaster University."
+        "program": "Travel Assistance Grant",
+        "funder": "School of Graduate Studies, McMaster University",
+        "amount": "$500",
+        "minor": true
       },
       {
         "year": "2015",
-        "content": "Graduate Student Travel Award ($120). Archaeological Institute of America."
+        "program": "Graduate Student Travel Award",
+        "funder": "Archaeological Institute of America",
+        "amount": "$120",
+        "minor": true
       },
       {
         "year": "2014",
-        "content": "McMaster University Travel Scholarship for OpenCon 2014 ($2500, declined). McMaster University Library."
+        "program": "Travel Scholarship for OpenCon 2014",
+        "funder": "McMaster University Library",
+        "amount": "$2,500",
+        "notes": "declined",
+        "minor": true
       },
       {
         "year": "2011",
-        "content": "Full Tuition Scholarship (declined). Digital Humanities Summer Institute, University of Victoria."
+        "program": "Full Tuition Scholarship",
+        "funder": "Digital Humanities Summer Institute, University of Victoria",
+        "notes": "declined",
+        "minor": true
       }
     ],
     "awards": [
       {
+        "year": "2024",
+        "program": "Award for Outstanding Work in Digital Archaeology",
+        "funder": "Archaeological Institute of America",
+        "minor": false
+      },
+      {
         "year": "2014",
-        "content": "Robert P. Wolff Thesis Prize. Society for Philosophy & Culture, McMaster University."
+        "program": "Robert P. Wolff Thesis Prize",
+        "funder": "Society for Philosophy & Culture, McMaster University",
+        "minor": false
       },
       {
         "year": "2012",
-        "content": "Dean's Honour List. Carleton University."
+        "links": [],
+        "program": "Dean's Honour List",
+        "funder": "Carleton University",
+        "minor": false
       },
       {
         "year": "2012",
-        "content": "Michael Kelway Oliver Scholarship. Carleton University."
+        "links": [],
+        "program": "Michael Kelway Oliver Scholarship",
+        "funder": "Carleton University",
+        "minor": false
       }
     ]
   },
@@ -2246,7 +2311,7 @@ function formatAuthorName(p, style) {
 function renderAuthors(authors, truncate) {
   if (!authors || !authors.length) return null;
   const n = authors.length;
-  const thresh = truncate || 99;
+  const thresh = truncate || 4;
   const ad = CV.authorDisplay || {};
 
   function makeNameEl(a, i) {
@@ -2376,7 +2441,11 @@ function renderLinks(links) {
   if (!links || !links.length) return null;
   const div = el('div', { class: 'l' });
   sortedLinks(links).forEach(lk => {
-    const a = el('a', { href: lk.url, target: '_blank', ...(lk.type ? { 'data-type': lk.type } : {}) }, lk.label);
+    const label = lk.type === 'doi' ? lk.url.replace(/^https?:\/\/doi\.org\//, '')
+                : lk.type === 'hdl' ? lk.url.replace(/^https?:\/\/hdl\.handle\.net\//, '')
+                : lk.type === 'github' ? lk.url.replace(/^https?:\/\/(www\.)?github\.com\//, '')
+                : (lk.label || lk.url);
+    const a = el('a', { href: lk.url, target: '_blank', ...(lk.type ? { 'data-type': lk.type } : {}) }, label);
     div.appendChild(a);
   });
   return div;
@@ -2661,8 +2730,40 @@ function build() {
   // Grants & Awards
   const gaSec = el('section', { id: 'grants-awards' });
   gaSec.appendChild(el('h2', {}, 'Grants & Awards'));
-  gaSec.appendChild(subsection('grants', 'Grants & Fellowships', CV.grantsAwards.grants, renderSimpleEntry));
-  gaSec.appendChild(subsection('awards', 'Awards & Honours', CV.grantsAwards.awards, renderSimpleEntry));
+
+  function renderGrantEntry(entry) {
+    const yEl = el('span', { class: 'y' }, entry.year);
+    const c = el('div', { class: 'c' });
+    // Program name is the primary label
+    c.appendChild(el('span', {}, entry.program || entry.content || ''));
+    // Project title as subtitle if present
+    if (entry.title) c.appendChild(el('em', {}, '. ' + entry.title));
+    // Funder and metadata
+    const meta = [entry.funder, entry.amount, entry.id ? 'Award ID: ' + entry.id : null, entry.notes].filter(Boolean);
+    if (meta.length) c.appendChild(el('span', { class: 'desc' }, '. ' + meta.join('. ')));
+    const mnCell = el('div', { class: 'mn' });
+    const eDiv = el('div', { class: 'e' }, yEl, c, mnCell);
+    if (entry.notes && entry.notes.length) { eDiv.setAttribute('data-notes', JSON.stringify(entry.notes)); if (entry.noteText) eDiv.setAttribute('data-note-text', entry.noteText); }
+    return eDiv;
+  }
+
+  function grantSubsection(key, label, arr) {
+    const sec = el('div', {});
+    sec.appendChild(el('h3', {}, label));
+    const major = (arr || []).filter(e => !e.minor);
+    const minor = (arr || []).filter(e => e.minor);
+    major.forEach(e => sec.appendChild(renderGrantEntry(e)));
+    if (minor.length) {
+      const det = el('details', { class: 'minor-entries' });
+      det.appendChild(el('summary', {}, `${minor.length} additional ${key === 'grants' ? 'grants' : 'awards'}`));
+      minor.forEach(e => det.appendChild(renderGrantEntry(e)));
+      sec.appendChild(det);
+    }
+    return sec;
+  }
+
+  gaSec.appendChild(grantSubsection('grants', 'Grants & Fellowships', CV.grantsAwards.grants));
+  gaSec.appendChild(grantSubsection('awards', 'Awards & Honours', CV.grantsAwards.awards));
   root.appendChild(gaSec);
 
   // Teaching
@@ -2752,6 +2853,7 @@ build();
   // Populate .mn cells — context pills + optional annotation
   document.querySelectorAll('.e[data-notes]').forEach(function(eDiv) {
     var keys = JSON.parse(eDiv.dataset.notes || '[]');
+    if (!Array.isArray(keys)) keys = [keys];
     var noteText = eDiv.dataset.noteText || '';
     var mnCell = eDiv.querySelector('.mn');
     if (!mnCell || !keys.length) return;
