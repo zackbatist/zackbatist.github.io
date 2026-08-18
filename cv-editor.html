@@ -199,6 +199,7 @@ body.compact input, body.compact textarea, body.compact select { padding: 4px 7p
     <button class="nav-item" data-section="invited">Invited Presentations</button>
     <button class="nav-item" data-section="conference">Conference Presentations</button>
     <div class="nav-sep"></div>
+    <button class="nav-item" data-section="otherAffiliations">Other Affiliations</button>
     <button class="nav-item" data-section="leadership">Community Leadership</button>
     <button class="nav-item" data-section="committees">Committees</button>
     <button class="nav-item" data-section="organizing">Conference & Panel Organizer</button>
@@ -255,6 +256,7 @@ const SECTIONS = {
   workshops:      { path: ['teaching','workshops'],        form: 'simple' },
   invited:        { path: ['presentations','invited'],     form: 'talk' },
   conference:     { path: ['presentations','conference'],  form: 'talk', poster: true },
+  otherAffiliations: { path: ['service','otherAffiliations'], form: 'simple' },
   leadership:     { path: ['service','leadership'],        form: 'simple' },
   committees:     { path: ['service','committees'],        form: 'simple' },
   organizing:     { path: ['service','organizing'],        form: 'simple' },
