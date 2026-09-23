@@ -183,7 +183,9 @@ const CV = {
           "label": "zackbatist/CITF-Postdoc"
         }
       ]
-    },
+    }
+  ],
+  "pastPositions": [
     {
       "year": "2018 – 2023",
       "content": "Research Assistant, E–CURATORS: Pervasive Digital Curation Activities, Objects and Infrastructures in Archaeological Research and Communication, Faculty of Information, University of Toronto."
@@ -1057,6 +1059,18 @@ const CV = {
     ],
     "initiatives": [
       {
+        "year": "2026 –",
+        "links": [
+          {
+            "url": "https://zackbatist.info/CMDC",
+            "label": "zackbatist.info/CMDC",
+            "type": "website"
+          }
+        ],
+        "content": "Directory of Canadian Metaresearch Initiatives",
+        "desc": "Built for the Canadian Metaresearch Data Challenge; supports discovery of researchers working on overlapping questions and analysis of the field's development."
+      },
+      {
         "year": "2025 –",
         "links": [
           {
@@ -1707,6 +1721,18 @@ const CV = {
     }
   ],
   "outreach": [
+    {
+      "year": "2026",
+      "content": "Decisions and Actions at the Trowel's Edge",
+      "desc": "Interactive role-playing scenes about archaeological data work, drawn from research on how archaeologists make decisions in the field.",
+      "links": [
+        {
+          "type": "website",
+          "url": "https://zackbatist.info/data-work-game/",
+          "label": "zackbatist.info/data-work-game"
+        }
+      ]
+    },
     {
       "year": "2022 –",
       "content": "Personal blog",
@@ -2695,6 +2721,7 @@ function build() {
     ['#education', 'Education'],
     ['#publications', 'Publications'],
     ['#software-data', 'Software & Data'],
+    ['#outreach', 'Art & Outreach'],
     ['#grants-awards', 'Grants & Awards'],
     ['#teaching', 'Teaching'],
     ['#presentations', 'Presentations'],
@@ -2713,7 +2740,7 @@ function build() {
 
   // Position
   const posSec = el('section', { id: 'position' });
-  posSec.appendChild(el('h2', {}, 'Position'));
+  posSec.appendChild(el('h2', {}, 'Current Position'));
   CV.position.forEach(e => posSec.appendChild(renderSimpleEntry(e)));
   root.appendChild(posSec);
 
@@ -2723,13 +2750,24 @@ function build() {
   CV.education.forEach(e => eduSec.appendChild(renderSimpleEntry(e)));
   root.appendChild(eduSec);
 
+  // Past Positions
+  const pastSec = el('section', { id: 'past-positions' });
+  pastSec.appendChild(el('h2', {}, 'Past Positions'));
+  CV.pastPositions.forEach(e => pastSec.appendChild(renderSimpleEntry(e)));
+  root.appendChild(pastSec);
+
   // Publications
   const pubSec = el('section', { id: 'publications' });
   pubSec.appendChild(el('h2', {}, 'Publications'));
-  pubSec.appendChild(subsection('articles', 'Journal Articles', CV.publications.articles, renderPubEntry));
-  pubSec.appendChild(subsection('book', 'Book Contributions', CV.publications.book, renderPubEntry));
-  pubSec.appendChild(subsection('proceedings', 'Conference Proceedings', CV.publications.proceedings, renderPubEntry));
-  pubSec.appendChild(subsection('theses', 'Theses', CV.publications.theses, renderPubEntry));
+  const pubs = CV.publications;
+  const isPublished = e => /^\d{4}/.test(String(e.year).trim());
+  const articlesWip = pubs.articles.filter(e => !isPublished(e));
+  const proceedingsWip = pubs.proceedings.filter(e => !isPublished(e));
+  pubSec.appendChild(subsection('articles', 'Journal Articles', pubs.articles.filter(isPublished), renderPubEntry));
+  if (articlesWip.length) pubSec.appendChild(subsection('articles-in-progress', 'Articles in Progress', articlesWip, renderPubEntry));
+  pubSec.appendChild(subsection('book', 'Book Contributions', pubs.book, renderPubEntry));
+  pubSec.appendChild(subsection('proceedings', 'Conference Proceedings', pubs.proceedings.filter(isPublished), renderPubEntry));
+  if (proceedingsWip.length) pubSec.appendChild(subsection('proceedings-in-progress', 'Proceedings in Progress', proceedingsWip, renderPubEntry));
   root.appendChild(pubSec);
 
   // Software & Data
@@ -2739,6 +2777,11 @@ function build() {
   sdSec.appendChild(subsection('datasets', 'Datasets', CV.softwareData.datasets, renderSimpleEntry));
   sdSec.appendChild(subsection('initiatives', 'Other Open Initiatives', CV.softwareData.initiatives, renderSimpleEntry));
   root.appendChild(sdSec);
+
+  const outSec = el('section', { id: 'outreach' });
+  outSec.appendChild(el('h2', {}, 'Art & Outreach'));
+  CV.outreach.forEach(e => outSec.appendChild(renderSimpleEntry(e)));
+  root.appendChild(outSec);
 
   // Grants & Awards
   const gaSec = el('section', { id: 'grants-awards' });
@@ -2818,11 +2861,6 @@ function build() {
   langSec.appendChild(el('h2', {}, 'Languages'));
   CV.languages.forEach(e => langSec.appendChild(renderSimpleEntry(e)));
   root.appendChild(langSec);
-
-  const outSec = el('section', { id: 'outreach' });
-  outSec.appendChild(el('h2', {}, 'Outreach'));
-  CV.outreach.forEach(e => outSec.appendChild(renderSimpleEntry(e)));
-  root.appendChild(outSec);
 }
 
 build();
