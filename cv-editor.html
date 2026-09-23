@@ -179,8 +179,9 @@ body.compact input, body.compact textarea, body.compact select { padding: 4px 7p
     <input id="nav-search" placeholder="Search sections…" style="width:100%;font-size:0.85em;padding:4px 8px;border:0.5px solid var(--rule);border-radius:4px;background:var(--bg);color:var(--fg)">
   </div>
   <nav class="sidebar-nav" id="sidebar-nav">
-    <button class="nav-item" data-section="position">Position</button>
+    <button class="nav-item" data-section="position">Current Position</button>
     <button class="nav-item" data-section="education">Education</button>
+    <button class="nav-item" data-section="pastPositions">Past Positions</button>
     <div class="nav-sep"></div>
     <button class="nav-item" data-section="articles">Journal Articles</button>
     <button class="nav-item" data-section="book">Book Contributions</button>
@@ -189,6 +190,7 @@ body.compact input, body.compact textarea, body.compact select { padding: 4px 7p
     <button class="nav-item" data-section="software">Software</button>
     <button class="nav-item" data-section="datasets">Datasets</button>
     <button class="nav-item" data-section="initiatives">Other Open Initiatives</button>
+    <button class="nav-item" data-section="outreach">Art & Outreach</button>
     <div class="nav-sep"></div>
     <button class="nav-item" data-section="grants">Grants & Fellowships</button>
     <button class="nav-item" data-section="awards">Awards & Honours</button>
@@ -206,7 +208,6 @@ body.compact input, body.compact textarea, body.compact select { padding: 4px 7p
     <button class="nav-item" data-section="interestGroups">Interest Groups</button>
     <div class="nav-sep"></div>
     <button class="nav-item" data-section="misc">Reviewer, Certifications & Languages</button>
-    <button class="nav-item" data-section="outreach">Outreach</button>
     <div class="nav-sep"></div>
     <button class="nav-item" data-section="people">People</button>
     <button class="nav-item" data-section="contextnotes">Context Notes</button>
@@ -243,6 +244,7 @@ const chipRefreshers = new Set(); // registry of open form chip refresh function
 const SECTIONS = {
   position:       { path: ['position'],                    form: 'simple' },
   education:      { path: ['education'],                   form: 'simple' },
+  pastPositions:  { path: ['pastPositions'],               form: 'simple' },
   articles:       { path: ['publications','articles'],     form: 'article' },
   book:           { path: ['publications','book'],         form: 'book' },
   proceedings:    { path: ['publications','proceedings'],  form: 'proceedings' },
@@ -250,6 +252,7 @@ const SECTIONS = {
   software:       { path: ['softwareData','software'],     form: 'software' },
   datasets:       { path: ['softwareData','datasets'],     form: 'dataset' },
   initiatives:    { path: ['softwareData','initiatives'],  form: 'simple' },
+  outreach:       { path: ['outreach'],               form: 'simple' },
   grants:         { path: ['grantsAwards','grants'],       form: 'grant' },
   awards:         { path: ['grantsAwards','awards'],       form: 'grant' },
   ta:             { path: ['teaching','ta'],               form: 'simple' },
@@ -262,7 +265,6 @@ const SECTIONS = {
   organizing:     { path: ['service','organizing'],        form: 'simple' },
   interestGroups: { path: ['service','interestGroups'],    form: 'simple' },
   people:         { path: null, form: 'people' },
-  outreach:       { path: ['outreach'],               form: 'simple' },
   misc:           { path: null, form: 'misc' },
   contextnotes:   { path: null, form: 'contextnotes' }
 };
