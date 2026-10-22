@@ -115,7 +115,7 @@
 
 % Define a new environment to place all CV entries in a 2-column table.
 % Left column are the dates, right column the entries.
-\newcommand{\TablePad}{\vspace{-0.4cm}}
+\newcommand{\TablePad}{\vspace{-0.34cm}}
 \usepackage{environ}
 \NewEnviron{EntriesTable}{
 \TablePad
@@ -140,10 +140,13 @@
 % Increase the line spacing
 \renewcommand{\baselinestretch}{1.1}
 % and the spacing between rows in tables
-\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.3}
 
 % Remove space between items in itemize and enumerate
 \usepackage{enumitem}
+
+% Keep headings with the entries that follow them
+\usepackage{needspace}
 \setlist{nosep}
 
 % Use custom colors
@@ -250,8 +253,8 @@
 % it. Later subsections close up the gap themselves, so subsections can be added,
 % removed or reordered without touching any spacing.
 \newif\iffirstsub
-\newcommand{\CVSection}[2][-1em]{\vspace{-2em}\section{#2}\vspace{#1}\firstsubtrue}
-\newcommand{\CVSubsection}[2][-1em]{\iffirstsub\else\vspace{-1em}\fi\firstsubfalse\subsection{#2}\vspace{#1}}
+\newcommand{\CVSection}[2][-1em]{\Needspace{7\baselineskip}\vspace{-2.6em}\section{#2}\vspace{#1}\firstsubtrue}
+\newcommand{\CVSubsection}[2][-1em]{\Needspace{5\baselineskip}\iffirstsub\else\vspace{-1.6em}\fi\firstsubfalse\subsection{#2}\vspace{#1}}
 
 \begin{document}
 
@@ -293,7 +296,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % AREAS OF EXPERTISE
-\CVSection[-2em]{Areas of Expertise}
+\vspace{0.6em}\CVSection[-2em]{Areas of Expertise}
 \begin{multicols}{2}
   \begin{itemize}
       \item Research data management
@@ -308,8 +311,8 @@
 \end{multicols}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% CURRENT POSITION
-\CVSection{Current Position}
+% POSITIONS
+\vspace{0.6em}\CVSection{Positions}
 \begin{EntriesTable}
 \Duration{2025}{} &
   \textbf{Postdoctoral Researcher}
@@ -319,6 +322,28 @@
   Department of Epidemiology, Biostatistics and Occupational Health
   \newline
   School of Public and Global Health, McGill University
+\end{EntriesTable}
+
+\firstsubfalse\CVSubsection{Past Positions}
+\begin{EntriesTable}
+\Duration{2018}{2023} &
+  \textbf{Research Assistant}
+  \newline
+  E{\textendash}CURATORS: Pervasive Digital Curation Activities, Objects and Infrastructures in Archaeological Research and Communication
+  \newline
+  Faculty of Information, University of Toronto
+  \\
+\Duration{2016}{2021} &
+  \textbf{Database Manager}
+  \newline
+  Stelida Naxos Archaeology Project
+  \\
+\Duration{2007}{2009} &
+  \textbf{Research Assistant}
+  \newline
+  Molecular Pharmacology Laboratory
+  \newline
+  Lady Davis Institute for Medical Research
 \end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -341,42 +366,18 @@
   %Feasting In Bronze Age Greece: A Network Analysis Approach
   \\
 \Year{2009} &
-  \textbf{DEC}, Social Sciences, Dawson College\\[-0.5cm]
-\end{EntriesTable}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PAST POSITIONS
-\CVSection{Past Positions}
-\begin{EntriesTable}
-\Duration{2018}{2023} &
-  \textbf{Research Assistant}
-  \newline
-  E{\textendash}CURATORS: Pervasive Digital Curation Activities, Objects and Infrastructures in Archaeological Research and Communication
-  \newline
-  Faculty of Information, University of Toronto
-  \\
-\Duration{2016}{2021} &
-  \textbf{Database Manager}
-  \newline
-  Stelida Naxos Archaeology Project
-  \\
-\Duration{2007}{2009} &
-  \textbf{Research Assistant}
-  \newline
-  Molecular Pharmacology Laboratory
-  \newline
-  Lady Davis Institute for Medical Research\\[-0.5cm]
+  \textbf{DEC}, Social Sciences, Dawson College
 \end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PUBLICATIONS
 \CVSection{Publications}
-\CVSubsection[0pt]{Journal Articles}
+\CVSubsection{Journal Articles}
 \begin{EntriesTable}
 \Year{2026} &
   Farahnak, F., W.S. El-Deiry, Y.A. Lussier, R. Kurzrock, S. Magidi, C. Bresson, S.A. Enger, and 40 other authors, \textbf{Z. Batist}, Y. Quintana { \&} G. Batist.
   \textbf{Worldwide Innovative Network (WIN) Consortium: Building a Common Global Cancer Database.}
-  Nature Reviews in Clinical Oncology
+  JCO Global Oncology
   12(8):e2500720.
   \DOI{10.1200/GO-25-00720}
   \\
@@ -421,6 +422,13 @@
   35(2):47-54.
   \DOI{10.19282/ac.35.2.2024.06}
   \\
+\Year{2023} &
+  \Me { \&} \JoeRoe.
+  \textbf{Open-archaeo: a resource for documenting archaeological software development practices.}
+  Journal of Open Archaeology Data.
+  11(9):1-7.
+  \DOI{10.5334/joad.111}
+  \\
 \Year{2021} &
   \Me, \ValMasters, \TiffanyTorma, \NielFerris, \IstoHuvila, \SeamusRoss, \MichaelCarter { \&} \CostisDallas.
   \textbf{Figurations of Digital Archaeological Practice in Two Mediterranean Fieldwork Projects.}
@@ -436,13 +444,6 @@
   9(4):299-311.
   \DOI{10.1017/aap.2021.11}
   % \Sep\GitHub{zackbatist/QuARI}
-  \\
-\Year{2023} &
-  \Me { \&} \JoeRoe.
-  \textbf{Open-archaeo: a resource for documenting archaeological software development practices.}
-  Journal of Open Archaeology Data.
-  11(9):1-7.
-  \DOI{10.5334/joad.111}
   \\
 \Year{2017} &
   \TristanCarter, \Me, \KatieCampeau, \YosefGarfinkel { \&} \KatharinaStreit.
@@ -466,6 +467,7 @@
   \DOI{10.1158/1535-7163.MCT-08-1186}
 \end{EntriesTable}
 
+\Needspace{5\baselineskip}
 \vspace{-2em}
 \subsubsection{Additional Articles in Progress}
 \vspace{-1em}
@@ -474,6 +476,8 @@
   \Me, Ouellet, M., { \&} Buckeridge, D.
   \textbf{RDS-Review.}
   \Website{zackbatist.info/RDS-Review}
+  \newline
+  \emph{A scoping review of the factors that influence the sharing and reuse of research data, including barriers, facilitators, and governance mechanisms, with a focus on health research.}
   \\
 \Year{\Progress} &
   \Me, Ouellet, M., Khezri, S., Murphy, T., Noza, A., Abbasgholizadeh-Rahimi, S., Bourque, G. { \&} Buckeridge, D.
@@ -499,7 +503,6 @@
   \textbf{Positive mentorship in the history of radiology.
   % (Title TBD)
   }
-
   % \Year{\Progress}  &
 %   \Me.
 %   \textbf{The situation of data papers in archaeological knowledge production.}\newline
@@ -521,7 +524,7 @@
   \faIcon{award}\ Award for Outstanding Work in Digital Archaeology, Archaeological Institute of America
 \end{EntriesTable}
 
-\CVSubsection[0pt]{Conference Proceedings}
+\CVSubsection{Conference Proceedings}
 \begin{EntriesTable}
 \Year{\Review} &
   \Me.
@@ -539,12 +542,10 @@
   Human History and Digital Future. Proceedings of the 46th Conference on Computer Applications and Quantitative Methods in Archaeology.
   Tübingen University Press.
   \DOI{10.15496/publikation-94869}
-  \\
 \end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SOFTWARE & DATA
-\CVSection{Software \& Data}
 \CVSubsection{Software}
 \begin{EntriesTable}
 \Duration{2020}{2021} &
@@ -574,7 +575,7 @@
   % \Sep\GitHub{zackbatist/DObsiSS}\Sep\Website{zackbatist.info/DObsiSS}
 \end{EntriesTable}
 
-\CVSubsection{Other Open Initiatives}
+\CVSubsection{Other Initiatives}
 \begin{EntriesTable}
 \Duration{2026}{\Ongoing} &
   \textbf{Directory of Canadian Metaresearch Initiatives}
@@ -603,7 +604,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ART & OUTREACH
-\CVSection{Art \& Outreach}
+\CVSubsection{Art \& Outreach}
 \begin{EntriesTable}
 \Year{2026} &
   \textbf{Decisions and Actions at the Trowel's Edge}
@@ -624,7 +625,13 @@
   \\
 \Duration{2019}{2021} &
   \textbf{SSHRC Doctoral Fellowship}. Archaeological data curation as continuous and collaborative practice. Award ID: {752-2019-2233}. (\$20,000)
-  \\
+\end{EntriesTable}
+
+\Needspace{5\baselineskip}
+\vspace{-2em}
+\subsubsection{Additional Grants}
+\vspace{-1em}
+\begin{EntriesTable}
 \Year{2019} &
   \textbf{Research Travel Grant} (\$500)
   \newline
@@ -688,6 +695,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TEACHING
 \CVSection{Teaching}
+\CVSubsection{Workshops \& Short Courses}
+\begin{EntriesTable}
+\Year{2022 \newline\footnotesize{March}} &
+  \textbf{Using Qualitative Data Analysis Software}
+  \newline
+  The Ethnography Lab Methods Café: Software in Ethnographic Research Methods
+  \newline
+  Department of Anthropology, University of Toronto
+  \\
+\Year{2018 \newline\footnotesize{January}} &
+  \textbf{Designing and Implementing Relational Databases}
+  \newline
+  Archaeological Information Interest Group,
+  The Archaeology Centre, University of Toronto
+  \newline \GitHub{zackbatist/archaeo-db-workshop}
+\end{EntriesTable}
+
 \CVSubsection{Teaching Assistant}
 \begin{EntriesTable}
 \Year{2020} &
@@ -731,23 +755,6 @@
   (ANTH 1AA3)
   \newline
   Department of Anthropology, McMaster University
-\end{EntriesTable}
-
-\CVSubsection{Workshops \& Short Courses}
-\begin{EntriesTable}
-\Year{2022 \newline\footnotesize{March}} &
-  \textbf{Using Qualitative Data Analysis Software}
-  \newline
-  The Ethnography Lab Methods Café: Software in Ethnographic Research Methods
-  \newline
-  Department of Anthropology, University of Toronto
-  \\
-\Year{2018 \newline\footnotesize{January}} &
-  \textbf{Designing and Implementing Relational Databases}
-  \newline
-  Archaeological Information Interest Group,
-  The Archaeology Centre, University of Toronto
-  \newline \GitHub{zackbatist/archaeo-db-workshop}
 \end{EntriesTable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1002,7 +1009,7 @@
 %   \textbf{Drift: Roamings in the Margins of Archaeology}, \href{https://drift-journal.org/}{drift-journal.org}
 % \end{EntriesTable}
 
-\CVSubsection{Other Affiliations}
+\CVSubsection{Affiliations}
 \begin{EntriesTable}
 \Duration{2026}{\Ongoing} &
   \textbf{Independent Visiting Researcher}, Mila / Québec Artificial Intelligence Institute
@@ -1129,7 +1136,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % REVIEWER
-\CVSection[0pt]{Reviewer}
+\CVSection{Reviewer}
 \begin{itemize}
   \item Open Information Science
   \item Computer Applications in Archaeology
@@ -1137,23 +1144,25 @@
   \item Advances in Archaeological Practice
 \end{itemize}
 
-\vspace{1em}
+\vspace{1.5em}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CERTIFICATIONS
-\CVSection[0pt]{Certifications}
+\CVSection{Certifications}
 \begin{itemize}
   \item The Carpentries Instructor Training
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LANGUAGES
-\vspace{1em}
+\vspace{1.5em}
 \CVSection{Languages}
 \TablePad
 \begin{tabularx}{\textwidth}{@{}p{0.1\textwidth} p{0.85\textwidth}@{}}
   \textbf{English} & Mother tongue
   \\
-  \textbf{French}  & Basic reading and writing
+  \textbf{French}  & Reading and writing
 \end{tabularx}
+
+
 
 \end{document}
